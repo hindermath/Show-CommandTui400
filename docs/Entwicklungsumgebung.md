@@ -59,13 +59,17 @@ sie wurden bei der Einrichtung nicht ausgeführt.
 | Reihenfolge prüfen | `speckit-intake-series-status` | `speckit.intake-series-status` |
 
 Codex/Antigravity verwenden `.agents/skills/`, Claude `.claude/skills/`,
-OpenCode `.opencode/commands/` und Copilot `.github/agents/` plus
+OpenCode `.opencode/commands/` mit identischer, versionierter
+Kompatibilitätskopie `.opencode/command/` für den Home-Baseline-Paritätsvertrag
+und Copilot `.github/agents/` plus
 `.github/prompts/`. Claude verwendet ebenfalls die Bindestrich-Skillnamen.
 Die genaue Aufrufschreibweise folgt dem jeweiligen Agenten.
 Optionale `.vscode/settings.json`-Einträge des Upstream-Installationsmanifests
 bleiben maschinenlokal. Editor-Berechtigungen werden nicht als Projekt-Policy
 versioniert. Whitespace in generierten Command-Dateien wurde normalisiert;
 die Upstream-Manifeste dokumentieren weiterhin die ursprüngliche Installation.
+Bei OpenCode-Updates beide Verzeichnisse identisch halten und den gemeinsamen
+Agenten-Paritätstest ausführen.
 
 ```bash
 specify preset list
