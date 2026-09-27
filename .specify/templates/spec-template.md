@@ -1,0 +1,226 @@
+# Feature Specification: [FEATURE NAME]
+
+**Feature Branch**: `[###-feature-name]`
+**Created**: [DATE]
+**Status**: Draft
+**Input**: User description: "$ARGUMENTS"
+
+## User Scenarios & Testing *(mandatory)*
+
+<!--
+  IMPORTANT: User stories should be PRIORITIZED as user journeys ordered by importance.
+  Each user story/journey must be INDEPENDENTLY TESTABLE - meaning if you implement just ONE of them,
+  you should still have a viable MVP (Minimum Viable Product) that delivers value.
+
+  Assign priorities (P1, P2, P3, etc.) to each story, where P1 is the most critical.
+  Think of each story as a standalone slice of functionality that can be:
+  - Developed independently
+  - Tested independently
+  - Deployed independently
+  - Demonstrated to users independently
+-->
+
+### User Story 1 - [Brief Title] (Priority: P1)
+
+[Describe this user journey in plain language]
+
+**Why this priority**: [Explain the value and why it has this priority level]
+
+**Independent Test**: [Describe how this can be tested independently - e.g., "Can be fully tested by [specific action] and delivers [specific value]"]
+
+**Acceptance Scenarios**:
+
+1. **Given** [initial state], **When** [action], **Then** [expected outcome]
+2. **Given** [initial state], **When** [action], **Then** [expected outcome]
+
+---
+
+### User Story 2 - [Brief Title] (Priority: P2)
+
+[Describe this user journey in plain language]
+
+**Why this priority**: [Explain the value and why it has this priority level]
+
+**Independent Test**: [Describe how this can be tested independently]
+
+**Acceptance Scenarios**:
+
+1. **Given** [initial state], **When** [action], **Then** [expected outcome]
+
+---
+
+### User Story 3 - [Brief Title] (Priority: P3)
+
+[Describe this user journey in plain language]
+
+**Why this priority**: [Explain the value and why it has this priority level]
+
+**Independent Test**: [Describe how this can be tested independently]
+
+**Acceptance Scenarios**:
+
+1. **Given** [initial state], **When** [action], **Then** [expected outcome]
+
+---
+
+[Add more user stories as needed, each with an assigned priority]
+
+### Edge Cases
+
+<!--
+  ACTION REQUIRED: The content in this section represents placeholders.
+  Fill them out with the right edge cases.
+-->
+
+- What happens when [boundary condition]?
+- How does system handle [error scenario]?
+
+## Requirements *(mandatory)*
+
+<!--
+  ACTION REQUIRED: The content in this section represents placeholders.
+  Fill them out with the right functional requirements.
+-->
+
+### Functional Requirements
+
+- **FR-001**: System MUST [specific capability, e.g., "allow users to create accounts"]
+- **FR-002**: System MUST [specific capability, e.g., "validate email addresses"]
+- **FR-003**: Users MUST be able to [key interaction, e.g., "reset their password"]
+- **FR-004**: System MUST [data requirement, e.g., "persist user preferences"]
+- **FR-005**: System MUST [behavior, e.g., "log all security events"]
+
+*Example of marking unclear requirements:*
+
+- **FR-006**: System MUST authenticate users via [NEEDS CLARIFICATION: auth method not specified - email/password, SSO, OAuth?]
+- **FR-007**: System MUST retain user data for [NEEDS CLARIFICATION: retention period not specified]
+
+### Constitution Requirements *(mandatory)*
+
+- **CR-001**: If this feature targets a listed Level-2 project, the feature MUST
+  use the matching Level-2 Project Environment Registry entry from
+  `constitution.md` as binding project context.
+- **CR-002**: User-facing artefacts MUST identify their A11Y review path
+  (WCAG 2.2 Level AA where applicable, text-first fallback otherwise).
+  Dependencies, states, and decisions MUST remain understandable without a
+  visual-only representation.
+- **CR-003**: Learner-facing or shared guidance content MUST be DE-first,
+  EN-second unless a synchronized `.EN.md` companion is explicitly chosen.
+  It MUST target CEFR B2, explain technical terms at first use, assume no prior
+  Spec Kit experience, and be understandable from the first training year for
+  IT specialist apprentices and the two IT management occupations.
+- **CR-004**: The feature MUST state whether statistics and AI-agent guidance
+  files require synchronized updates.
+- **CR-005**: The feature MUST name its primary implementation language and
+  either confirm it is on the MSL allow-list (`constitution.md`, Principle XI)
+  or cite the documented non-MSL justification from the Level-2
+  `constitution.md`.
+- **CR-006**: The feature MUST determine the applicable security standards from
+  `constitution.md`, Principles XIV-XIX, and mark non-applicable standards
+  as `N/A` with justification. `NIST SSDF` and `CWE Top 25` are mandatory for
+  all Level-2 work.
+- **CR-007**: If the feature includes web/API/HTTP/auth-bearing services, it
+  MUST declare the selected `OWASP ASVS` level and verification scope.
+- **CR-008**: If the feature creates releasable or distributable artefacts, it
+  MUST declare the intended `SBOM` / `VEX` evidence path and any required
+  provenance / `SLSA` considerations.
+- **CR-009**: The feature MUST state whether AI is used only as a development
+  tool, absent from the released/operated system, or present as a runtime or
+  product component. If AI models, AI services, training/embedding datasets,
+  inference infrastructure, or AI runtime components are part of the released
+  or operated system, it MUST declare the intended `AI-SBOM` evidence path;
+  otherwise it MUST record `AI-SBOM` as `N/A` with a short rationale.
+- **CR-010**: If the feature changes trust boundaries, externally reachable
+  flows, or distributed/service architecture, it MUST state how `CAPEC` and
+  `Zero Trust` applicability will be handled.
+- **CR-011**: The feature MUST state whether it uses the default evidence files
+  in `docs/security/` (`asvs-verification.md`, `supply-chain-evidence.md`,
+  `zero-trust-applicability.md`, `samm-assessment.md`,
+  `cloud-autonomy-applicability.md`, `cloud-compliance-assurance.md`,
+  `regulatory-applicability.md`) or an explicitly justified equivalent
+  governance location.
+- **CR-012**: The feature MUST state which installed Spec-Kit governance
+  presets apply. Registered Level-0, Level-1, and Level-2 repositories default
+  to the exact eight-preset home-baseline matrix unless a justified exception
+  is documented.
+- **CR-013**: The feature MUST record exactly one Documentation Impact
+  decision: `UpdateRequired`, `NoUpdateRequired`, `GeneratedUpdate`, or
+  `FollowUp`. It MUST name affected audiences and documentation families.
+  It MUST also name affected reader paths, canonical source and owner,
+  navigation impact, document class, language strategy and partner,
+  platform/example proof, distribution class, Home-sync need, evidence, and
+  re-evaluation trigger.
+  `FollowUp` also requires owner, risk, due date, re-evaluation trigger,
+  evidence, and scope rationale.
+- **CR-014**: Platform-dependent evidence MUST follow the agent-neutral
+  macOS-first contract: local matching safe mode first; isolated native Linux
+  container or narrowly scoped native Linux CI when no Linux host exists;
+  narrowly scoped native Windows CI when no Windows host exists; exact commit,
+  command, runner/platform, exit code, payload SHA-256, decision SHA-256, and
+  zero-write binding. A partial proof MUST NOT imply a full regression pass.
+
+### Key Entities *(include if feature involves data)*
+
+- **[Entity 1]**: [What it represents, key attributes without implementation]
+- **[Entity 2]**: [What it represents, relationships to other entities]
+
+## Success Criteria *(mandatory)*
+
+<!--
+  ACTION REQUIRED: Define measurable success criteria.
+  These must be technology-agnostic and measurable.
+-->
+
+### Measurable Outcomes
+
+- **SC-001**: [Measurable metric, e.g., "Users can complete account creation in under 2 minutes"]
+- **SC-002**: [Measurable metric, e.g., "System handles 1000 concurrent users without degradation"]
+- **SC-003**: [User satisfaction metric, e.g., "90% of users successfully complete primary task on first attempt"]
+- **SC-004**: [Business metric, e.g., "Reduce support tickets related to [X] by 50%"]
+
+## Assumptions
+
+<!--
+  ACTION REQUIRED: The content in this section represents placeholders.
+  Fill them out with the right assumptions based on reasonable defaults
+  chosen when the feature description did not specify certain details.
+-->
+
+- [Assumption about target users, e.g., "Users have stable internet connectivity"]
+- [Assumption about scope boundaries, e.g., "Mobile support is out of scope for v1"]
+- [Assumption about data/environment, e.g., "Existing authentication system will be reused"]
+- [Dependency on existing system/service, e.g., "Requires access to the existing user profile API"]
+
+<!-- BEGIN spec-kit-diagrams-completion -->
+## Mermaid und Spec-Kit-Abschlussbericht / Mermaid and Spec Kit completion report
+
+Neue Lastenhefte enthalten bei hilfreichen Abläufen, Zuständen oder Abhängigkeiten
+lesbaren Mermaid-Quelltext im Markdown und eine gleichwertige Textalternative.
+Bei einfachen Inhalten die Nichtanwendung kurz begründen. Diagramme bilden die
+verbindlichen Text-/Manifestquellen ab; Farbe allein trägt keine Bedeutung.
+Nach jedem vollständig abgeschlossenen Spec-Kit-Feature-Lauf den vollständigen
+Ergebnisbericht im Chat anzeigen und im Feature-Verzeichnis als
+`completion-report.md` versionieren. Einzelne Planungs-/Status-/Review-Kommandos
+lösen keinen solchen Bericht aus; blockierte oder pausierte Läufe als
+Zwischenbericht kennzeichnen. Vorlage: `.specify/templates/completion-report-template.md`;
+Regel: `docs/spec-kit-diagrams-and-completion-reports.md`.
+Ergebnis, Tests, Dokumentation, Git-gebundene Umfangszahlen, Verlauf und Restpunkte
+belegen. Programmlogik von generierter Evidence, Git-Wandzeit von aktiver
+Arbeitszeit und bestandene von ausgefallenen Prüfungen unterscheiden. Finale
+Merge-/Sync-Evidence im Chat und bestehenden Closeout-Nachweis ergänzen; keine
+zusätzlichen Commits allein für selbstreferenzielle Berichts-/Statistikwerte.
+Diese Projektregel und lokale Vorlagen bei Spec-Kit-Updates erhalten.
+
+*New intakes use readable Mermaid Markdown and equivalent text alternatives for
+useful workflows, states or dependencies; justify omission for simple content.
+Diagrams reflect authoritative text/manifests and never rely on color alone.
+After each completed feature run, show the full outcome report in chat and
+version completion-report.md in the feature directory using the shared template
+and rule above. Individual planning/status/review commands do not trigger it;
+paused/blocked runs receive interim reports. Evidence outcomes, tests, docs,
+Git-bound counts, delivery history and remaining work. Distinguish code from
+volume generated as evidence, elapsed from active time, and passed from failed
+checks. Add final merge/sync proof in chat and existing closeout evidence, without
+commits solely for self-referential counts or IDs. Preserve local rules/templates
+across Spec Kit updates.*
+<!-- END spec-kit-diagrams-completion -->

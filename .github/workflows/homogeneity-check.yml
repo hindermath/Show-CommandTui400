@@ -1,0 +1,77 @@
+name: Level-2 Setup Validation
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Setup (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-22.04, macos-14, windows-2022]
+    steps:
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          fetch-depth: 0
+      - name: Check guidance and integration surfaces
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $canonical = (Get-FileHash AGENTS.md -Algorithm SHA256).Hash
+          foreach ($path in @('CLAUDE.md','GEMINI.md','.github/copilot-instructions.md','.github/agents/copilot-instructions.md')) {
+            if ((Get-FileHash $path -Algorithm SHA256).Hash -ne $canonical) { throw "Guidance differs: ${path}" }
+          }
+          if ((Get-FileHash constitution.md).Hash -ne (Get-FileHash .specify/memory/constitution.md).Hash) { throw 'Constitution copies differ' }
+          foreach ($integration in @('agy','opencode','claude','copilot','codex')) {
+            $manifest = Get-Content ".specify/integrations/${integration}.manifest.json" -Raw | ConvertFrom-Json
+            foreach ($file in $manifest.files.PSObject.Properties.Name) {
+              # Spec Kit also records optional, machine-local editor settings.
+              if ($file -eq '.vscode/settings.json') { continue }
+              if (-not (Test-Path -LiteralPath $file -PathType Leaf)) { throw "Missing integration file: ${file}" }
+            }
+          }
+          foreach ($path in @('.agents/skills/speckit-intake-create/SKILL.md','.claude/skills/speckit-intake-create/SKILL.md','.opencode/commands/speckit.intake-create.md','.github/agents/speckit.intake-create.agent.md')) {
+            if (-not (Test-Path -LiteralPath $path)) { throw "Missing intake command: ${path}" }
+          }
+          $matrix = Get-Content scripts/config/spec-kit-project-statistics-governance-presets.json -Raw | ConvertFrom-Json
+          $installed = (Get-Content .specify/presets/.registry -Raw | ConvertFrom-Json -AsHashtable).presets
+          if ($installed.Count -ne $matrix.presets.Count) { throw 'Preset count differs' }
+          foreach ($preset in $matrix.presets) {
+            $actual = $installed[$preset.id]
+            if (-not $actual -or -not $actual.enabled -or $actual.version -ne $preset.version.TrimStart('v') -or $actual.priority -ne $preset.priority) {
+              throw "Preset mismatch: $($preset.id)"
+            }
+          }
+          git diff --check
+          if ($LASTEXITCODE -ne 0) { throw 'Whitespace validation failed' }
+      - name: Verify statistics (Bash)
+        if: runner.os != 'Windows'
+        shell: bash
+        run: bash scripts/render-project-statistics.sh --repo . --check-only
+      - name: Verify statistics (PowerShell)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: ./scripts/render-project-statistics.ps1 -Repo . -CheckOnly
+      - name: Install ripgrep (Linux)
+        if: runner.os == 'Linux'
+        run: sudo apt-get update && sudo apt-get install -y ripgrep
+      - name: Install ripgrep (macOS)
+        if: runner.os == 'macOS'
+        run: command -v rg || brew install ripgrep
+      - name: Secret scan (Bash)
+        if: runner.os != 'Windows'
+        shell: bash
+        run: bash scripts/scan-agent-secrets.sh --fail-on-high .
+      - name: Secret scan (PowerShell)
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: ./scripts/scan-agent-secrets.ps1 -FailOnHigh
