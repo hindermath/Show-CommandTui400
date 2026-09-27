@@ -1,0 +1,125 @@
+{
+  "checkedAt": "2026-09-27T20:33:14.2929220Z",
+  "repository": "hindermath/Show-CommandTui400",
+  "settings": {
+    "owner": "hindermath",
+    "allow_squash_merge": true,
+    "default_branch": "main",
+    "license": "MIT",
+    "description": "OS/400-inspired, keyboard-driven command and parameter prompting for PowerShell 7 terminals.",
+    "has_discussions": false,
+    "allow_merge_commit": true,
+    "delete_branch_on_merge": false,
+    "has_issues": true,
+    "has_pages": false,
+    "has_downloads": false,
+    "has_projects": true,
+    "allow_auto_merge": false,
+    "allow_update_branch": false,
+    "web_commit_signoff_required": false,
+    "name": "Show-CommandTui400",
+    "allow_rebase_merge": true,
+    "visibility": "public",
+    "has_wiki": true
+  },
+  "rulesets": [
+    {
+      "id": 24084583,
+      "name": "Automatic Copilot code review",
+      "target": "branch",
+      "source_type": "Repository",
+      "source": "hindermath/Show-CommandTui400",
+      "enforcement": "active",
+      "conditions": {
+        "ref_name": {
+          "exclude": [],
+          "include": [
+            "refs/heads/main"
+          ]
+        }
+      },
+      "rules": [
+        {
+          "type": "copilot_code_review",
+          "parameters": {
+            "review_on_push": false,
+            "review_draft_pull_requests": false
+          }
+        }
+      ],
+      "node_id": "RRS_lACqUmVwb3NpdG9yec5S7ZyczgFvgGc",
+      "created_at": "2026-09-27T22:32:03.216+02:00",
+      "updated_at": "2026-09-27T22:32:03.241+02:00",
+      "bypass_actors": [],
+      "current_user_can_bypass": "never",
+      "_links": {
+        "self": {
+          "href": "https://api.github.com/repos/hindermath/Show-CommandTui400/rulesets/24084583"
+        },
+        "html": {
+          "href": "https://github.com/hindermath/Show-CommandTui400/rules/24084583"
+        }
+      }
+    },
+    {
+      "id": 24084581,
+      "name": "main",
+      "target": "branch",
+      "source_type": "Repository",
+      "source": "hindermath/Show-CommandTui400",
+      "enforcement": "active",
+      "conditions": {
+        "ref_name": {
+          "exclude": [],
+          "include": [
+            "refs/heads/main"
+          ]
+        }
+      },
+      "rules": [
+        {
+          "type": "deletion"
+        },
+        {
+          "type": "non_fast_forward"
+        },
+        {
+          "type": "pull_request",
+          "parameters": {
+            "required_approving_review_count": 1,
+            "dismiss_stale_reviews_on_push": false,
+            "required_reviewers": [],
+            "require_code_owner_review": true,
+            "require_last_push_approval": false,
+            "required_review_thread_resolution": false,
+            "require_extra_approval_for_unattributed_changes": true,
+            "allowed_merge_methods": [
+              "merge",
+              "squash",
+              "rebase"
+            ]
+          }
+        }
+      ],
+      "node_id": "RRS_lACqUmVwb3NpdG9yec5S7ZyczgFvgGU",
+      "created_at": "2026-09-27T22:32:02.56+02:00",
+      "updated_at": "2026-09-27T22:32:02.603+02:00",
+      "bypass_actors": [
+        {
+          "actor_id": 5,
+          "actor_type": "RepositoryRole",
+          "bypass_mode": "always"
+        }
+      ],
+      "current_user_can_bypass": "always",
+      "_links": {
+        "self": {
+          "href": "https://api.github.com/repos/hindermath/Show-CommandTui400/rulesets/24084581"
+        },
+        "html": {
+          "href": "https://github.com/hindermath/Show-CommandTui400/rules/24084581"
+        }
+      }
+    }
+  ]
+}
