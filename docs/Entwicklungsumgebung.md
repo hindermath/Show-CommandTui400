@@ -43,6 +43,11 @@ Die operative GSDB-Registry führt dieses Projekt explizit mit 14 Presets,
 `gsdbRequired: true`, offener Primärsprache und `mslStatus: unknown`.
 Der globale Default bleibt unverändert. Lokale Registry und Agentenzustände
 werden nicht veröffentlicht.
+Die kanonische Wartungsflotte führt `show-commandtui400` mit CI-Profil
+`public-product`. Der Pre-Push-Hook erhält die zugehörigen versionierten
+CI-Profil-/Pfadregister und den Workflowvertrag aus Level 0. Für dieses
+öffentliche Repository verlangt er keine private CI-Gate-Evidence; seine
+Secret-Prüfung bleibt aktiv.
 
 ## Verfügbare Intake-Kommandos
 
