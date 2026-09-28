@@ -32,6 +32,9 @@ im Rahmen von LH-00 konkretisiert.
 - GitHub Spec Kit CLI und Integrations-Templates: **0.12.8**.
 - Integrationen: `agy`, `opencode`, `claude`, `copilot`, `codex`.
 - Projektprofil: `project-statistics-fourteen-governance-presets`.
+- Intake Authoring Governance: **v0.3.5**, aktiviert mit Priorität 64.
+  Der [Update-Nachweis](maintenance/intake-authoring-v035.md) dokumentiert
+  Paketbindung und Prüfgrenzen; die übrigen 13 Presets bleiben unverändert.
 - Alle 14 Versionen und Prioritäten stehen in der
   [gepinnten Projektmatrix](../scripts/config/spec-kit-project-statistics-governance-presets.json).
 - Installationsnachweis: `.specify/integrations/*.manifest.json` und
