@@ -20,6 +20,7 @@ No implementation phase values are available.*
 | 2026-09-28 | Authoring-Patch v0.3.5 / Authoring patch v0.3.5 | Veröffentlichtes Paket, unveränderte übrige Presets, Quellenbindung und Agentenparität; keine Lastenheft- oder Produktarbeit. / Published package, preserved other presets, source binding and agent parity; no intake or product work. [Nachweis / Evidence](maintenance/intake-authoring-v035.md). |
 | 2026-09-28 | Lokales LH-00-Authoring / Local LH-00 authoring | DE/EN-Governance, acht unveröffentlichte Issue-Entwürfe, minimales Profil und ein validierter Intake; kein Commit oder Feature-Lauf. / Bilingual governance, eight unpublished issue drafts, a minimal profile and one validated intake; no commit or feature run. [Prüfungen und Grenzen / Checks and limits](lh00-validation.md). |
 | 2026-09-28 | Veröffentlichung und Lieferung / Publication and delivery | Acht genehmigte Issues aktualisiert; Authoring-Artefakte für MergeAndSync geliefert. Review folgt getrennt. / Updated eight approved issues and delivered authoring artefacts through MergeAndSync; review follows separately. [Nachweis / Evidence](issue-publication.md). |
+| 2026-09-28 | Gesondertes LH-00-Review / Separate LH-00 review | Ein Ziel, NeedsRemediation mit zwei Medium-Befunden; Ziel unverändert, keine Reparatur oder Umsetzung. / One target, NeedsRemediation with two Medium findings; target unchanged, no repair or implementation. [Review](../specs/intake-review-report.md). |
 
 ## Gesamtstatistik / Overall Statistics
 

@@ -17,6 +17,19 @@ Level-2 environment is configured. LH-00 has authoring status ReadyForReview;
 there is no installable cmdlet. The eight revised issues are published and verified (see the publication evidence above). The
 linked governance mapping records sources and boundaries.
 
+## Reviewstand LH-00 / LH-00 review status
+
+Das [gesonderte Intake-Review](specs/intake-review-report.md) ergibt
+**NeedsRemediation**: zwei mittlere Befunde zu Begriffserklärungen und normativer
+DE/EN-Parität. Das Authoring-Receipt bleibt gültig; fachliche Freigabe und
+Prozessabnahme sind damit nicht erteilt. Nächster Schritt ist die ausdrücklich
+beauftragte Reparatur der benannten Befunde mit vollständigem erneutem Review.
+
+The separate intake review returns **NeedsRemediation** with two Medium findings
+on terminology and normative DE/EN parity. The authoring receipt remains valid;
+this grants no domain readiness or process acceptance. Next is explicitly
+authorized repair of the named findings and a complete new review.
+
 ## Das geplante Bedienkonzept / Planned interaction concept
 
 `Show-CommandTui400` soll als Cmdlet in der aktuellen `pwsh`-Sitzung starten.
