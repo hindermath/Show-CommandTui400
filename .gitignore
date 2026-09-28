@@ -116,3 +116,8 @@ STATS.md
 # Spec Kit 0.12.8 OpenCode uses plural commands / Pluraler Command-Pfad
 !.opencode/commands/
 !.opencode/commands/**
+
+# Fachliche Intakes gezielt erlauben / Allow only named intake Markdown files
+!intakes/
+intakes/*
+!intakes/LH-[0-9][0-9].md

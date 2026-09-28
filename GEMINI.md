@@ -82,9 +82,12 @@ commands and next steps are documented in the development environment guide.*
 
 `Programmierung #include<everyone>` ist verbindlich. WCAG 2.2 AA gilt soweit
 anwendbar; Tastatur, Screenreader, Braille und Textbrowser berücksichtigen.
-Fachliche Dokumentation bleibt gemäß Projektauftrag deutsch (de-DE).
-Gemeinsame Guidance ist DE zuerst/EN danach, ungefähr CEFR B2.
-Diese bewusste Sprachausnahme gilt nicht für generierte Upstream-Templates.
+Fachliche Dokumentation, Lastenhefte und gemeinsame Guidance werden DE zuerst/
+EN danach gepflegt, ungefähr CEFR B2. Die frühere Deutsch-Ausnahme ist durch den
+Owner-Auftrag zur LH-00-Erstellung aufgehoben. Begriffe bei erster Verwendung
+erklären; keine Spec-Kit-Kenntnisse voraussetzen. Historische Nachweise behalten
+ihren damaligen Kontext. Offene Bestandsübersetzungen stehen mit Owner und
+Fälligkeit in `docs/intake-governance.md`; Upstream-Templates bleiben unverändert.
 Dokumentationsauswirkung und Leserpfade im selben PR erfassen; zentrale
 Grundlage ist die Level-0-Dokumentations-Governance.
 
@@ -97,8 +100,12 @@ ASCII-Diagramme maximal 100 Zeichen breit, mit exakten Zahlen und bilingualer
 Textalternative. Das zusätzliche Statistik-Preset startet keine Messung.
 
 *Design for keyboard, screen readers, Braille and text browsers, with WCAG 2.2
-AA where applicable. Product documents remain German by explicit project
-choice; shared guidance is German-first/English-second at about CEFR B2.
+AA where applicable. Product documentation, intakes and shared guidance use
+German first and English second at about CEFR B2. The owner-approved LH-00 work
+replaces the earlier German-only exception. Explain terms on first use and do
+not assume Spec Kit knowledge. Preserve historical evidence in its original
+context. Outstanding translations have an owner and deadline in
+`docs/intake-governance.md`; upstream templates remain unchanged.
 Record documentation impact and reader paths in the same PR. Maintain the
 Profile 2 ledger through its renderer, oldest entries first and overall
 statistics last. References are 80 and provisionally 100 lines/day for concept
@@ -112,3 +119,26 @@ Diese Guidance ist identisch in `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`,
 Alle fünf Flächen bei Änderungen gemeinsam pflegen.
 
 *Keep all five agent-guidance files identical when changing shared rules.*
+
+## Lastenheft-Erstellung / Intake authoring
+
+Verbindlich sind `.specify/memory/intake-authoring-policy.json`,
+`.specify/memory/intake-authoring-profile.md` und die Zuordnung in
+`docs/intake-governance.md`. Ein Intake ist ein fachliches Lastenheft;
+ein Receipt ist der maschinenlesbare Herkunfts- und Hashnachweis.
+`ReadyForReview` bedeutet nur bereit für ein gesondertes Review.
+`docs/issue-drafts/` enthält unveröffentlichte Issue-Entwürfe, keine weiteren
+aktiven Lastenhefte. Aktuell ist genau `intakes/LH-00.md` beauftragt.
+Der laufende Auftrag erlaubt lokale Authoring-Änderungen, keine Commits,
+Remote-Änderungen, Reviews oder nachfolgenden Feature-Läufe. Folgeprompts sind
+Vorlagen für einen späteren ausdrücklichen Auftrag. Serienverwaltung und
+Plattformabnahme sind Anforderungen von LH-00, nicht durch Erstellung erfüllt.
+
+The policy, profile and governance mapping linked above are binding. An intake
+is a requirements document; a receipt records its sources and content hashes.
+`ReadyForReview` only means ready for a separate review. The issue-draft directory
+contains unpublished issue proposals, not additional active intakes. Only
+`intakes/LH-00.md` is currently commissioned. The current task permits local
+authoring changes, but no commits, remote changes, review or later feature run.
+Follow-up prompts are templates for a later explicit request. Series management
+and platform acceptance are LH-00 requirements, not completed by authoring.

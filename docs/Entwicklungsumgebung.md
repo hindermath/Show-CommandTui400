@@ -1,8 +1,8 @@
-# Entwicklungsumgebung
+# Entwicklungsumgebung / Development environment
 
-Stand: 28.09.2026. Owner: Thorsten Hindermann.
+Stand / Date: 28.09.2026. Owner: Thorsten Hindermann.
 
-## Einstieg und Grenzen
+## Einstieg und Grenzen / Entry and boundaries
 
 Dieses Repository ist ein eigenständiges Level-2-Projekt im Workspace
 `RiderProjects`. Die Quelle ist [Show-CommandTui400 auf GitHub](https://github.com/hindermath/Show-CommandTui400),
@@ -16,12 +16,29 @@ PowerShell 7 und Sitzungsintegration bleiben offen. Die mitgelieferte
 .NET-basierte Wartungs-TUI gehört zu Home Baseline und entscheidet nicht über
 die Produktsprache.
 
-Nächste fachliche Aktion ist die ausdrücklich beauftragte Bearbeitung von
-LH-00. Die Einrichtung erzeugt keine Lastenhefte, schließt keine Issues und
-startet keine autonomen Läufe. Die projektspezifische Intake-Policy wird erst
-im Rahmen von LH-00 konkretisiert.
+Der aktuelle Auftrag erstellt [LH-00](../intakes/LH-00.md) lokal mit
+[Policy](../.specify/memory/intake-authoring-policy.json) und
+[Profil](../.specify/memory/intake-authoring-profile.md). Ein Intake ist ein
+fachliches Lastenheft; ein Receipt bindet seine Quellen und seinen Inhalt durch
+Prüfsummen. Authoring ist die Erstellung, Review eine gesonderte fachliche Prüfung.
+`ReadyForReview` bestätigt keine Umsetzung oder Produktabnahme. Nächste fachliche
+Aktion ist das getrennte Intake-Review nach ausdrücklichem Auftrag.
+Lokale [Issue-Entwürfe](issue-drafts/README.md) sind noch nicht veröffentlicht.
+Die vollständige Prozesskonfiguration und -abnahme bleiben Anforderungen von LH-00.
 
-## Installierter Stand
+This is an independent Level-2 project in RiderProjects, sourced from
+hindermath/Show-CommandTui400 on main. The interaction concept and intake order
+are binding. No product implementation exists; language, framework, minimum
+PowerShell version and session integration remain undecided. The bundled .NET
+maintenance TUI belongs to Home Baseline. The current task creates LH-00 locally
+with the linked policy and profile. An intake is a requirements document; a
+receipt binds sources and content with hashes. Authoring creates the document;
+review is a separate assessment. ReadyForReview is not implementation or product
+acceptance. The next domain action is a separately requested intake review.
+Issue drafts are not published. Full process setup and acceptance remain LH-00
+requirements.
+
+## Installierter Stand / Installed state
 
 - Auf beiden macOS-Systemen von Thorsten ist **PowerShell 7.6.6.0** installiert
   (Versionsangabe und Installationsstand laut Owner vom 28.09.2026).
@@ -63,7 +80,25 @@ CI-Profil-/Pfadregister und den Workflowvertrag aus Level 0. Für dieses
 öffentliche Repository verlangt er keine private CI-Gate-Evidence; seine
 Secret-Prüfung bleibt aktiv.
 
-## Entwicklungs- und Testumgebungen
+The owner reported PowerShell 7.6.6.0 on both Macs on 28 September 2026. This
+records the development environment, not the latest global release or product
+minimum. Spec Kit CLI and integration templates are 0.12.8. Integrations are agy,
+opencode, claude, copilot and codex. The project uses the explicit fourteen-preset
+profile and pinned matrix. Authoring 0.3.5 is enabled at priority 64; its linked
+update record captures package binding and proof limits. Integration manifests
+and the preset registry record installation. Initialization used specify init
+with --script sh. Reinitialization can overwrite templates, so preserve local
+governance and inspect differences before updates. PowerShell maintenance
+scripts support Windows; Bash initialization does not imply missing PowerShell
+on macOS. End-to-end PowerShell base-script operation remains to be proven on
+the Macs and separately on Windows. Existing Windows setup CI does not prove it.
+The operational GSDB registry requires this project, leaves language/MSL open,
+and selects fourteen presets without changing the fleet default. Local registries
+and agent state stay private. The maintenance fleet uses public-product CI.
+The pre-push hook uses versioned CI registries and workflow contracts; private
+CI-gate evidence is not required here, while secret scanning remains active.
+
+## Entwicklungs- und Testumgebungen / Development and test environments
 
 | Umgebung | Rolle |
 |---|---|
@@ -76,10 +111,19 @@ Die Zuordnung folgt der Owner-Angabe vom 28.09.2026. WSL2-Ergebnisse werden
 als solche ausgewiesen; sie sind kein Nachweis eines Tests auf einem
 separaten nativen Linux-System.
 
-## Verfügbare Intake-Kommandos
+The table defines two Macs for development, Windows 11 for native
+PowerShell-first operation and Ubuntu 24.04 under WSL2 for Linux compatibility.
+These are owner-reported roles from 28 September 2026. Windows and WSL2 need
+their PowerShell versions and actual test outcomes recorded separately. WSL2
+results are not proof of a separate native Linux installation.
 
-Die folgenden Kommandos wurden als installierte Agentenoberflächen geprüft;
-sie wurden bei der Einrichtung nicht ausgeführt.
+<a id="intake-commands"></a>
+
+## Verfügbare Intake-Kommandos / Available intake commands
+
+Die folgenden Kommandos sind installierte Agentenoberflächen. Bei der
+Einrichtung wurden sie nicht ausgeführt; im aktuellen Auftrag wird nur das
+Authoring-Verfahren für LH-00 verwendet. Die genaue Schreibweise folgt dem Agenten.
 
 | Zweck | Codex / Antigravity | OpenCode / Copilot |
 |---|---|---|
@@ -110,7 +154,18 @@ specify preset resolve intake-authoring-policy-template
 bash scripts/install-spec-kit-governance-presets.sh --repo . --preset-config scripts/config/spec-kit-project-statistics-governance-presets.json --check-only
 ```
 
-## Lokale Prüfungen und Wartung
+The table lists installed interfaces for create, read, authoring status, review,
+review status and series status. They were not run during setup; the current
+task uses only LH-00 authoring. Command spelling depends on the agent. Codex and
+Antigravity use .agents/skills, Claude uses .claude/skills and hyphenated names,
+OpenCode uses .opencode/commands with a matching .opencode/command compatibility
+copy, and Copilot uses agents plus prompts. Optional editor settings remain
+machine-local and are not project permissions. Generated whitespace was
+normalized; upstream manifests retain original installation metadata. Keep both
+OpenCode directories identical during updates and run the surface-parity check.
+The shared command block inspects presets and validates the project matrix.
+
+## Lokale Prüfungen und Wartung / Local checks and maintenance
 
 Nach einem neuen Klon den versionierten Pre-Push-Hook installieren:
 
@@ -136,10 +191,19 @@ Wartungsskripte stammen aus dem kanonischen Level-0-Paket; Vorschau vor jedem
 schreibenden Lauf. CI prüft Einrichtung und verteilte Wartungswerkzeuge,
 keine noch nicht existierende Produktfunktion.
 
-## Dokumentation und Statistik
+After a new clone, install the versioned pre-push hook using the platform's
+command block. The listed checks cover secrets, homogeneity and statistics.
+Static PowerShell analysis uses the pinned PSScriptAnalyzer 1.25.0. Maintenance
+scripts come from Level 0; preview every maintenance write first. CI checks setup
+and distributed tooling, not future product behavior. This authoring task does
+not reinstall hooks or run writing maintenance commands.
 
-Fachliche Dokumente bleiben deutsch; gemeinsame Governance-Guidance wird
-Deutsch zuerst und Englisch danach gepflegt. Die fünf Agenten-Dateien sind
+## Dokumentation und Statistik / Documentation and statistics
+
+Fachliche Dokumente, Lastenhefte und gemeinsame Governance-Guidance werden
+Deutsch zuerst und Englisch danach gepflegt, ungefähr CEFR B2. Die alte
+Deutsch-Ausnahme ist aufgehoben. Offene Bestandsübersetzungen und die zentrale
+Registeränderung stehen in der [Governance-Zuordnung](intake-governance.md). Die fünf Agenten-Dateien sind
 inhaltlich identisch. Tastatur, Screenreader, Braille und textorientierte
 Darstellung bilden die A11Y-Basis; WCAG 2.2 AA gilt soweit anwendbar.
 
@@ -149,8 +213,22 @@ kein Maß für selbst geschriebenen Produktcode. Referenzen: `80` konservativ,
 vorläufig `100` Zeilen/Arbeitstag für Konzept/Scripting; bei C#/.NET auf `125`
 reevaluieren. Das zusätzliche Statistik-Preset ist nur installiert; ein
 Pilotmesslauf oder eine Aussage über KI-Zeitersparnis folgt daraus nicht.
+Lokales Authoring ergänzt das Fortschreibungsprotokoll ohne Commit; die
+commitbasierte Generierung folgt erst bei gesondert beauftragter Lieferung.
 
-## Dokumentationsauswirkung
+Domain documents, intakes and shared guidance use German first and English
+second at about CEFR B2. The former German-only exception is removed. Outstanding
+translations and the central registry proposal are recorded in the governance
+mapping. Five guidance files remain identical. Keyboard, screen-reader, Braille
+and text access form the accessibility baseline, with WCAG 2.2 AA where relevant.
+Statistics Profile 2 counts tracked text and Git activity, including imported
+governance and tools; it is not a measure of authored product code. References
+are 80 and provisionally 100 lines/workday for concept/scripting, with 125 to be
+reevaluated if C#/.NET is selected. Installing the statistics preset starts no
+pilot and proves no AI time saving. Local authoring adds a ledger entry without
+committing; commit-based rendering follows only during later authorized delivery.
+
+## Dokumentationsauswirkung / Documentation impact
 
 Entscheidung: **UpdateRequired**. Owner: Thorsten Hindermann.
 Zielgruppen: Maintainer und Agenten; Leserpfad: README → diese Anleitung →
@@ -158,10 +236,19 @@ Prüfungen → LH-00. Quellen: fachliches Bedienkonzept, zentrale Constitution,
 gepinntes Presetprofil, live ausgelesene GitHub-Einstellungen und die
 Owner-Angaben vom 28.09.2026 zur PowerShell-Installation auf beiden Macs
 sowie zu Windows 11 und Ubuntu 24.04 unter WSL2.
-Dokumentklasse: Einrichtung/Betrieb; Sprachpartner: deutsch für Fachtexte,
-bilingual in gemeinsamer Guidance. Plattformnachweis: lokale macOS-Prüfungen
+Dokumentklasse: Einrichtung/Betrieb; Sprachpartner: DE/EN in dieser Datei. Plattformnachweis: lokale macOS-Prüfungen
 und PR-CI; daraus folgt keine Produktabnahme auf Linux oder Windows.
 Distribution: versionierte Level-2-Quelle; lokale Registry und Caches privat.
 Kein Home-Sync aus diesem Produktrepository. Zentrale Constitution-Änderungen
 werden über den Level-0-Vertrag synchronisiert. Re-Evaluation bei Runtime-,
 Preset-, Integrations- oder Repository-Regeländerungen.
+
+Decision: UpdateRequired. Owner: Thorsten Hindermann. Audiences: maintainers and
+agents. Reader path: README → this guide → checks/profile/mapping → LH-00 →
+separate review. Sources are the interaction concept, shared constitution, pinned
+profile, recorded repository settings and owner environment reports. Document
+class: setup/operation, with DE/EN content in this file. Local macOS checks and
+existing PR CI do not prove Linux/Windows product acceptance. Distribution is
+versioned Level-2 source; local registries and caches remain private. No Home
+Runtime sync is performed. Central constitution alignment follows the Level-0
+contract. Reevaluate runtime, preset, integration and repository-rule changes.

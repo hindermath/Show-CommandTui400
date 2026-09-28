@@ -6,10 +6,18 @@ aktuellen Sitzung verwenden.
 
 **Projektstand: Konzept- und Anforderungsphase.** Die Level-2-Projektumgebung
 auf Basis von [home-baseline](https://github.com/hindermath/home-baseline) ist
-eingerichtet. Als Nächstes entstehen die Lastenhefte. Ein installierbares
-Cmdlet gibt es noch nicht.
+eingerichtet. Das erste Lastenheft [LH-00](intakes/LH-00.md) liegt mit dem Authoring-Status `ReadyForReview` vor. Ein installierbares Cmdlet gibt es noch nicht. Die acht überarbeiteten Issues sind
+[veröffentlicht und geprüft](docs/issue-publication.md); Quellen und Grenzen stehen in der
+[Governance-Zuordnung](docs/intake-governance.md).
 
-## Das geplante Bedienkonzept
+An OS/400-inspired, text-only interface for PowerShell 7: find commands,
+enter parameters with guidance and use the prepared invocation in the current
+session. The project is in the concept and requirements phase. Its independent
+Level-2 environment is configured. LH-00 has authoring status ReadyForReview;
+there is no installable cmdlet. The eight revised issues are published and verified (see the publication evidence above). The
+linked governance mapping records sources and boundaries.
+
+## Das geplante Bedienkonzept / Planned interaction concept
 
 `Show-CommandTui400` soll als Cmdlet in der aktuellen `pwsh`-Sitzung starten.
 Die Bedienung erfolgt vollständig im Terminal auf macOS, Linux und Windows,
@@ -31,7 +39,18 @@ alle Kernfunktionen bleiben über die Tastatur erreichbar.
 
 Die fachlichen Einzelheiten stehen im [Bedienkonzept v0.2](docs/Bedienkonzept.md).
 
-## Spec-Kit und eingerichtete Projektumgebung
+Show-CommandTui400 is intended to start as a cmdlet in the current pwsh session,
+entirely in a terminal on macOS, Linux and Windows, including Windows Terminal.
+Type a verb prefix and then a noun prefix to filter commands. Arrows and Enter
+select a command; F4 opens its form. The initial view shows important and
+required fields; F10 shows more matching fields and F9 all parameters. Finally,
+transfer the invocation to the editable command line or explicitly execute it
+in the current session. Types, parameter sets, value assistance and validation
+support input. View changes preserve entered values. Stream Deck XL and the
+standalone MX Keypad are optional; every core action remains available from
+the keyboard. The linked interaction concept contains the domain details.
+
+## Spec-Kit und eingerichtete Projektumgebung / Configured environment
 
 - Eigenständiges **Level-2-Repository** mit gemeinsamer Agenten-Guidance,
   Wartungswerkzeugen, Hooks und Secret-Scanning.
@@ -56,7 +75,19 @@ technische Sitzungsintegration werden im weiteren Verfahren entschieden.
 Die .NET-basierte Wartungs-TUI gehört zu home-baseline und legt die
 Produktarchitektur nicht fest.
 
-## Entwicklungs- und Testumgebungen
+The repository has shared agent guidance, maintenance tools, hooks and secret
+scanning. Spec Kit 0.12.8 provides five integrations (Codex, Claude, Copilot,
+OpenCode and Antigravity) and fourteen pinned governance presets. Authoring
+0.3.5 fixes validation of receipts from its own generator. Authoring, review and
+dependency tools are installed. CI checks setup, PowerShell scripts and the
+bundled Home Baseline maintenance TUI. Main is protected and automatic Copilot
+reviews are configured. Eight existing issues provide requirements, acceptance
+criteria and linked dependencies. The development guide describes versions and
+checks; GitHub Actions shows current run status. Setup evidence proves no
+product function. Language, TUI framework, minimum PowerShell version and session
+integration remain open. The .NET maintenance TUI does not choose product architecture.
+
+## Entwicklungs- und Testumgebungen / Development and test environments
 
 | Umgebung | Rolle |
 |---|---|
@@ -73,14 +104,26 @@ Ablauf mit PowerShell-Basisskripten bleibt Bestandteil der Prozessprüfung in
 LH-00. Die lokal installierte PowerShell-Version ist keine Festlegung der
 späteren Produkt-Mindestversion.
 
-## Nächster Schritt: Lastenhefte
+Development uses two Macs; the owner reports PowerShell 7.6.6.0 installed on
+both. Windows 11 is the PowerShell-first native Windows environment. Ubuntu
+24.04 under WSL2 is the Linux compatibility environment. These roles were
+reported on 28 September 2026. Windows and WSL2 results are recorded separately;
+their PowerShell versions remain to be captured. Spec Kit currently uses Bash
+base scripts. End-to-end use of PowerShell base scripts remains an LH-00 process
+requirement. Installed development versions do not define the product minimum.
+
+## Nächster Schritt: Lastenhefte / Next step: intakes
 
 Ein Lastenheft beschreibt die fachlichen Anforderungen und ihre Abnahme.
 Die vorbereiteten Issues dienen dafür als Eingabe.
 
-Begonnen wird mit **[LH-00: Spec-Kit-Projektprofil und Lastenheft-Prozess](https://github.com/hindermath/Show-CommandTui400/issues/1)**.
-Dabei werden die projektspezifische Intake-Policy, Ablage, Statusmodell und
-das Reviewverfahren konkretisiert.
+Begonnen wurde lokal mit **[LH-00: Spec-Kit-Projektprofil und Lastenheft-Prozess](https://github.com/hindermath/Show-CommandTui400/issues/1)**.
+Das minimale [Authoring-Profil](.specify/memory/intake-authoring-profile.md)
+und die [Issue-Entwürfe](docs/issue-drafts/README.md) liegen lokal vor.
+Ein Intake ist ein fachliches Lastenheft; sein Receipt belegt Quellen und Inhalt
+mit Prüfsummen. `ReadyForReview` bedeutet bereit für eine gesonderte fachliche
+Prüfung, keine Prozess- oder Produktabnahme. Nächster fachlicher Schritt ist
+das getrennte Review von [LH-00](intakes/LH-00.md), erst auf ausdrücklichen Auftrag.
 
 Danach folgen TUI-Grundlage und Sitzung, Cmdlet-Suche, Parameterformular,
 Wertehilfe und Aufrufabschluss. Geräteprofile und dynamische Geräteadapter
@@ -88,11 +131,22 @@ sind nachgelagerte optionale Ausbaustufen. Die verbindliche Reihenfolge mit
 allen acht Issues steht im [Lastenheft-Plan](docs/Lastenheft-Plan.md).
 
 Installierte Agenten-Kommandos für Erstellung, Review und Reihenfolge sind
-in der [Entwicklungsumgebung](docs/Entwicklungsumgebung.md#verfügbare-intake-kommandos)
+in der [Entwicklungsumgebung](docs/Entwicklungsumgebung.md#intake-commands)
 aufgeführt. Die Issues und die Werkzeuginstallation starten keine
 Produktimplementierung oder autonomen Läufe.
 
-## Dokumentation
+An intake describes domain requirements and acceptance. Existing issues provide
+its input. Work starts with LH-00, the project profile and intake process.
+The minimal authoring profile and local issue proposals now exist. A receipt
+records source and content hashes. ReadyForReview means ready for separate
+review, not process or product acceptance. The next domain action is a separately
+requested review of LH-00. Later intakes address the session/TUI foundation,
+search, form, value assistance and final invocation. Device profiles and dynamic
+adapters are optional later stages. The linked order document remains binding.
+Installed commands are listed in the development guide. Neither issues nor tool
+installation authorize implementation or autonomous runs.
+
+## Dokumentation / Documentation
 
 | Einstieg | Inhalt |
 |---|---|
@@ -103,22 +157,54 @@ Produktimplementierung oder autonomen Läufe.
 | [Agenten-Guidance](AGENTS.md) | Gemeinsame Arbeitsregeln für KI-Agenten |
 | [Projektstatistik](docs/project-statistics.md) | Versionierter Text und Git-Aktivität, einschließlich übernommener Werkzeuge |
 
-## Barrierefreiheit (A11Y)
+Für das aktuelle Authoring außerdem die [Governance-Zuordnung](docs/intake-governance.md),
+den [Index der Issue-Entwürfe](docs/issue-drafts/README.md) und den
+[lokalen Validierungsbericht](docs/lh00-validation.md) lesen. Neue und geänderte
+Projekt-Guidance verwendet DE zuerst/EN danach, ungefähr CEFR B2. Offene
+Übersetzungen bestehender Fachtexte sind in der Zuordnung aufgeführt.
+
+The table links the domain concept, binding issue/intake order, environment,
+repository settings, shared agent guidance and statistics. For current authoring,
+also read the [governance mapping](docs/intake-governance.md),
+[issue-draft index](docs/issue-drafts/README.md) and
+[local validation report](docs/lh00-validation.md). New or changed project guidance
+uses German first and English second at about CEFR B2. Remaining translations
+of existing domain documents are explicitly listed in the governance mapping.
+
+## Barrierefreiheit (A11Y) / Accessibility
 
 `Programmierung #include<everyone>` gilt als Leitspruch. Das Bedienkonzept
 fordert Tastaturbedienung und textorientierte Nutzung mit Screenreadern und
 Braille-Zeilen; WCAG 2.2 AA wird angewendet, soweit die Kriterien passen.
 Die Laufzeitabnahme steht aus, da noch keine Implementierung existiert.
+Dokumentation erklärt Status, Abhängigkeiten und nächste Aktionen vollständig
+in Text, auch wenn Diagramme vorhanden sind.
 
-## Für Azubis
+Programmierung #include<everyone> is binding. The interaction concept requires
+keyboard and text-oriented use with screen readers and Braille displays.
+WCAG 2.2 AA applies where relevant. No implementation exists, so runtime
+accessibility acceptance remains open. Documentation must explain status,
+dependencies and the next action in text, including when diagrams are present.
+
+## Für Azubis / For apprentices
 
 Zum Einstieg zuerst das [Bedienkonzept](docs/Bedienkonzept.md), anschließend
 den [Lastenheft-Plan](docs/Lastenheft-Plan.md) lesen. Das Lesen der Konzepte
 setzt weder ein GitHub-Konto noch einen KI-Agenten voraus; konkrete
 Lernaufträge bleiben gesondert festzulegen.
+Ein installierbares Cmdlet gibt es noch nicht. Workflowbegriffe werden bei
+erster Verwendung erklärt.
 
-## Lizenz
+Start with the interaction concept and then the intake order. Reading these
+documents requires neither a GitHub account nor an AI agent. No installable
+cmdlet exists yet. Explain workflow terms on first use; separate learning tasks
+still need an explicit definition.
+
+## Lizenz / License
 
 [MIT](LICENSE), entsprechend TinyCalc und TinyPl0. TuiVision dient als Vorbild
 für Repository-Regeln und Intake-Struktur; eine technische Abhängigkeit ist
 damit nicht beschlossen.
+
+MIT, as with TinyCalc and TinyPl0. TuiVision is a reference for repository
+rules and intake structure; no technical dependency has been selected.

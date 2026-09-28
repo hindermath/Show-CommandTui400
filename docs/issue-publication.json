@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "1.0",
+  "repository": "hindermath/Show-CommandTui400",
+  "scope": "Approved issue drafts 1-8; no state or dependency changes",
+  "authority": "Owner request: update the GitHub issues; DeliveryMode MergeAndSync with Admin-Bypass; then review intakes/LH-00.md",
+  "transformations": [
+    "Remove redundant Markdown title; use bilingual issue title",
+    "Replace local unpublished status with published issue-input status",
+    "Resolve repository-relative links against blob/main",
+    "Replace obsolete publication checklist wording; preserve every FR/AC/OD/QG ID and requirement"
+  ],
+  "issues": [
+    {
+      "number": 1,
+      "url": "https://github.com/hindermath/Show-CommandTui400/issues/1",
+      "draftPath": "docs/issue-drafts/issue-01.md",
+      "draftSha256": "887e066b335a73d9296c9b1373397c404c80c58a6e3803f150da654ef80b7a33",
+      "previousBodySha256": "07cea12d4b043979af5bbed888f934a91396b436698528f6ecb156f10453e015",
+      "previousUpdatedAt": "2026-09-28T05:44:33Z",
+      "title": "LH-00 — Spec-Kit-Projektprofil und Lastenheft-Prozess / Spec Kit project profile and intake process",
+      "publishedBodySha256": "deca25b3fdc5a48235dc2627d3a12c9bcd2b1addaa0d2e87de565c7febf29276",
+      "publishedAt": "2026-09-28T20:45:22Z",
+      "verifiedAt": "2026-09-28T20:45:23+00:00"
+    },
+    {
+      "number": 2,
+      "url": "https://github.com/hindermath/Show-CommandTui400/issues/2",
+      "draftPath": "docs/issue-drafts/issue-02.md",
+      "draftSha256": "b4597a26f255af5119aea98e71acd2a84e4908c2624048bde233034aba17aa2c",
+      "previousBodySha256": "257f02376b1dd560f4398bc9855c9d38f317ae7bdad8a489c57eb81efd491236",
+      "previousUpdatedAt": "2026-09-27T19:00:27Z",
+      "title": "LH-01 — TUI-Grundlage, Sitzungsmodell und Tastaturbedienung / TUI foundation, session model and keyboard operation",
+      "publishedBodySha256": "d859764adfbb91cceaedbdf73684f75a4e8d6ffb3dc0f33900840acb7df313f9",
+      "publishedAt": "2026-09-28T20:45:25Z",
+      "verifiedAt": "2026-09-28T20:45:26+00:00"
+    },
+    {
+      "number": 3,
+      "url": "https://github.com/hindermath/Show-CommandTui400/issues/3",
+      "draftPath": "docs/issue-drafts/issue-03.md",
+      "draftSha256": "30755a1e8275b63cda77df04e77422adf408fd12be8a06f72d8518d8722746e3",
+      "previousBodySha256": "08470b8ea1e452b826da12dc845712b6f2bd58469284b5c56d6896ff3d95900e",
+      "previousUpdatedAt": "2026-09-27T19:00:28Z",
+      "title": "LH-02 — Cmdlet-Suche, Auswahl und Modulauflösung / Cmdlet search, selection and module resolution",
+      "publishedBodySha256": "45ff16678316945e59b7c0eaa25d0d55f7201e8f99f69a87d2ddb298441a547d",
+      "publishedAt": "2026-09-28T20:45:28Z",
+      "verifiedAt": "2026-09-28T20:45:30+00:00"
+    },
+    {
+      "number": 4,
+      "url": "https://github.com/hindermath/Show-CommandTui400/issues/4",
+      "draftPath": "docs/issue-drafts/issue-04.md",
+      "draftSha256": "dbced7160d7f3856a9382a8f54fec5576b1ccbbb384629f35975847cb173b952",
+      "previousBodySha256": "50ef697369a9857e67b8f515c7378c1e06d58087a99bd265ac8798b0fbd28ded",
+      "previousUpdatedAt": "2026-09-27T19:00:29Z",
+      "title": "LH-03 — Parameterformular, Parametersätze und Eingabezustand / Parameter form, parameter sets and input state",
+      "publishedBodySha256": "b40b4e8b8d7b7fc100402ba5dcf8d7f65be4a0fba614ff817f3ab640f3193d1a",
+      "publishedAt": "2026-09-28T20:45:31Z",
+      "verifiedAt": "2026-09-28T20:45:32+00:00"
+    },
+    {
+      "number": 5,
+      "url": "https://github.com/hindermath/Show-CommandTui400/issues/5",
+      "draftPath": "docs/issue-drafts/issue-05.md",
+      "draftSha256": "c125d66497d1ec5929a255ec8c8ebde8726ad03b2a5fd77552b76a28a797423f",
+      "previousBodySha256": "e9ae4e3c259e4c9187d7fb616c07527740eb16219edce121b5526494b843021d",
+      "previousUpdatedAt": "2026-09-27T19:00:29Z",
+      "title": "LH-04 — Wertehilfe, Variablen, Completion und Validierung / Value assistance, variables, completion and validation",
+      "publishedBodySha256": "9a95d6788436150ea9af6806bb323f5ba4da9ff7dd8bf690bbb25e39d1ba0d1a",
+      "publishedAt": "2026-09-28T20:45:34Z",
+      "verifiedAt": "2026-09-28T20:45:36+00:00"
+    },
+    {
+      "number": 6,
+      "url": "https://github.com/hindermath/Show-CommandTui400/issues/6",
+      "draftPath": "docs/issue-drafts/issue-06.md",
+      "draftSha256": "6b8565f2c1931f1428f11ca9169e6e36ead3871e7146cc373a292621fbcd9190",
+      "previousBodySha256": "b8228d9907d18069eae01ea4801cda3dd117091b55a06c79d6ba196c979ddfee",
+      "previousUpdatedAt": "2026-09-27T19:00:30Z",
+      "title": "LH-05 — Aufrufvorschau, Befehlszeilenübernahme und Ausführung / Invocation preview, command-line transfer and execution",
+      "publishedBodySha256": "23dd7a84e66bdef034feafda452a5fe0e1c670200a95d024fd3cb3de87913e5b",
+      "publishedAt": "2026-09-28T20:45:37Z",
+      "verifiedAt": "2026-09-28T20:45:39+00:00"
+    },
+    {
+      "number": 7,
+      "url": "https://github.com/hindermath/Show-CommandTui400/issues/7",
+      "draftPath": "docs/issue-drafts/issue-07.md",
+      "draftSha256": "a0682bdb804e9206dc451cfa0edde951dd13fc5fa86d25ced2c1dd76c45e369a",
+      "previousBodySha256": "c36cccd195df134badda06e235c1198d3ad6e456e7f5fd19c14cde69724d30b7",
+      "previousUpdatedAt": "2026-09-27T19:00:31Z",
+      "title": "LH-06 — Stream Deck XL und Logitech MX Keypad: Tastenprofile / Stream Deck XL and Logitech MX Keypad key profiles",
+      "publishedBodySha256": "d679bc205566f98c426424a96171af5566f82eee9c9abbb7182e833c94c8abc6",
+      "publishedAt": "2026-09-28T20:45:41Z",
+      "verifiedAt": "2026-09-28T20:45:42+00:00"
+    },
+    {
+      "number": 8,
+      "url": "https://github.com/hindermath/Show-CommandTui400/issues/8",
+      "draftPath": "docs/issue-drafts/issue-08.md",
+      "draftSha256": "2d4829f27de6796f08a9cbaad2a97708ddeb43a8285b0830d8209a2afc64efa7",
+      "previousBodySha256": "2ceadd4f392da29d8bbd139c39e177ff9f8deffec56717341c4dea28b7651fa8",
+      "previousUpdatedAt": "2026-09-27T19:00:32Z",
+      "title": "LH-07 — Optionale Geräteadapter mit Kontext und Sitzungsbindung / Optional device adapters with context and session binding",
+      "publishedBodySha256": "ca7ea7ff11d739aaa6ed59a8760b98bbd6003e6ae578aff99486a9e725e42d81",
+      "publishedAt": "2026-09-28T20:45:44Z",
+      "verifiedAt": "2026-09-28T20:45:45+00:00"
+    }
+  ]
+}
