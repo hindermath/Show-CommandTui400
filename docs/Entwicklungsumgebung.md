@@ -60,6 +60,19 @@ CI-Profil-/Pfadregister und den Workflowvertrag aus Level 0. Für dieses
 öffentliche Repository verlangt er keine private CI-Gate-Evidence; seine
 Secret-Prüfung bleibt aktiv.
 
+## Entwicklungs- und Testumgebungen
+
+| Umgebung | Rolle |
+|---|---|
+| Zwei macOS-Systeme | Entwicklung; PowerShell 7.6.6.0 laut Owner installiert |
+| Windows 11 | PowerShell-First-Umgebung für native Windows-Abläufe |
+| Ubuntu 24.04 unter WSL2 auf Windows 11 | Linux-Kompatibilitätstestumgebung |
+
+Windows 11 ist Thorstens PowerShell-First-Umgebung. Ubuntu 24.04 unter WSL2 dient als Linux-Kompatibilitätstestumgebung. Native Windows-/PowerShell-Tests und Ubuntu-/WSL2-Tests werden getrennt dokumentiert; konkrete PowerShell-Versionen unter Windows und WSL2 sowie Testergebnisse sind noch zu erfassen.
+Die Zuordnung folgt der Owner-Angabe vom 28.09.2026. WSL2-Ergebnisse werden
+als solche ausgewiesen; sie sind kein Nachweis eines Tests auf einem
+separaten nativen Linux-System.
+
 ## Verfügbare Intake-Kommandos
 
 Die folgenden Kommandos wurden als installierte Agentenoberflächen geprüft;
@@ -140,7 +153,8 @@ Entscheidung: **UpdateRequired**. Owner: Thorsten Hindermann.
 Zielgruppen: Maintainer und Agenten; Leserpfad: README → diese Anleitung →
 Prüfungen → LH-00. Quellen: fachliches Bedienkonzept, zentrale Constitution,
 gepinntes Presetprofil, live ausgelesene GitHub-Einstellungen und die
-Owner-Angabe vom 28.09.2026 zur PowerShell-Installation auf beiden Macs.
+Owner-Angaben vom 28.09.2026 zur PowerShell-Installation auf beiden Macs
+sowie zu Windows 11 und Ubuntu 24.04 unter WSL2.
 Dokumentklasse: Einrichtung/Betrieb; Sprachpartner: deutsch für Fachtexte,
 bilingual in gemeinsamer Guidance. Plattformnachweis: lokale macOS-Prüfungen
 und PR-CI; daraus folgt keine Produktabnahme auf Linux oder Windows.
