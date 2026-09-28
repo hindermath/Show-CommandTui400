@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.1",
+  "reviewId": "f0741205-05b7-42c5-8680-451c1483627d",
+  "mode": "Single",
+  "policy": "generic-markdown",
+  "targets": [
+    {
+      "path": "intakes/LH-00.md",
+      "role": "Primary"
+    }
+  ],
+  "series": {
+    "orderedTargetPaths": [],
+    "roots": [],
+    "dependencies": []
+  },
+  "campaign": {
+    "manifestPath": "N/A",
+    "workers": [],
+    "operatorExceptions": []
+  },
+  "authority": {
+    "request": "Owner: after issue publication and MergeAndSync, run $speckit-intake-review intakes/LH-00.md",
+    "targetMutationAllowed": false,
+    "implementationAllowed": false
+  },
+  "projectProfile": "show-commandtui400-de-en",
+  "evidenceDelivery": "MergeAndSync with owner-authorized admin bypass; no bypass of intake findings"
+}

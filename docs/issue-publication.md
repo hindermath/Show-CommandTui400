@@ -93,3 +93,20 @@ The ignored machine-local STATS.md remains unchanged. Its existing homogeneity
 warning is not a product defect. Central registry alignment remains a patch
 proposal. Existing-document translations, platform evidence and assistive process
 checks remain outstanding LH-00 requirements.
+
+## Merge und nachfolgendes Review / Merge and subsequent review
+
+[PR #13](https://github.com/hindermath/Show-CommandTui400/pull/13) wurde am
+28.09.2026 nach fünf erfolgreichen Checks am exakten Head
+`3f2fba5208289a760c5f473775065d34d71b0844` mit Admin-Bypass gemergt.
+Mergecommit: `2078f29ecfcb4ae3bf6487aee0ca6eaa8d0d7a2f`. Der einzige formale
+Blocker war REVIEW_REQUIRED; es gab keine Reviewthreads. Danach war main sauber
+und zu origin/main synchron (0/0), beide Lieferbranches wurden entfernt.
+Das [anschließende Review](../specs/intake-review-report.md) dokumentiert die
+fachliche Bewertung getrennt. Der Admin-Bypass akzeptiert keine Intake-Risiken.
+
+PR #13 merged on 28 September 2026 after five successful checks on the exact
+head above. REVIEW_REQUIRED was the only formal blocker, with no review threads.
+Main was then clean and synchronized (0/0); local and remote delivery branches
+were removed. The linked subsequent review records domain assessment separately.
+Admin bypass accepts no intake risks.
