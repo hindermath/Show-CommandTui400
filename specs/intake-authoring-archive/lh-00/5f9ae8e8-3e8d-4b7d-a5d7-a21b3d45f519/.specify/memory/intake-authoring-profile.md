@@ -2,7 +2,6 @@
 
 ## Identität und Zielgruppe / Identity and audience
 
-Ein Projektprofil definiert Schreib- und Ablageregeln für Lastenhefte.
 Profil-ID: `show-commandtui400-de-en`. Gilt für ausdrücklich beauftragte
 Lastenhefte dieses Projekts. Fachlicher Owner: Thorsten Hindermann. Autoren
 und spätere Implementierende brauchen keine vorherigen Spec-Kit-Kenntnisse.
@@ -10,7 +9,6 @@ Grundkenntnisse von Dateien, Terminal und PowerShell werden vorausgesetzt;
 ein bestimmter Ausbildungsberuf oder ein Ausbildungsjahr wird nicht vorausgesetzt.
 Ein Intake ist ein fachliches Lastenheft, ein Receipt dessen Herkunftsnachweis.
 
-A project profile defines writing and storage rules for intakes.
 Profile ID: `show-commandtui400-de-en`. Applies to explicitly commissioned
 project intakes. Thorsten Hindermann is the subject owner. Authors and later
 implementers need no prior Spec Kit knowledge. Basic knowledge of files,
@@ -35,21 +33,6 @@ state, scope, non-goals, atomic requirements, quality, governance, dependencies,
 risks, artefacts, evidence, measurable acceptance, assumptions, decisions and
 both copy-ready follow-up prompts are mandatory.
 
-## Begriffe / Terms
-
-Spec Kit unterstützt Anforderungen, technische Planung und Prüfungen. Ein
-Preset ist ein versioniertes Paket aus Regeln, Vorlagen, Kommandos und
-Prüfwerkzeugen. Eine Integration stellt Kommandos für eine Agentenumgebung
-bereit. FR bezeichnet Anforderungen, AC Abnahmekriterien, OD Entscheidungen.
-Ein Tombstone ist ein dauerhaftes Kennzeichen, dass ein früherer Intake
-archiviert oder gelöscht wurde. Die Herkunft bleibt damit nachvollziehbar.
-
-Spec Kit supports requirements, technical planning and checks. A preset is a
-versioned package of rules, templates, commands and validators. An integration
-exposes commands for an agent environment. FR identifies requirements, AC
-acceptance criteria and OD decisions. A tombstone permanently records that an
-intake was archived or deleted, preserving its provenance.
-
 ## Benennung und Reihenfolge / Naming and order
 
 Ziel: `intakes/LH-NN.md`; Receipt: `specs/intake-authoring-receipts/lh-nn.json`.
@@ -69,32 +52,12 @@ deletion requires separate authority, archival and a tombstone.
 
 ## Sammlung und Nachweise / Collection and evidence
 
-Eine Collection ist eine verwaltete Sammlung von Anforderungsdokumenten.
-Ein Serienmanifest listet die Mitglieder einer Serie mit Reihenfolge,
-Abhängigkeiten und Status maschinenlesbar auf. Die vier portablen Rollen
-benennen Index, Reihenfolge, aktive Intakes und Baseline; sie sind keine
-Personenrollen. Der kanonische Index ist die maßgebliche Bestandsübersicht.
-`DirectoryStrict` gleicht die aktiven Dateien vollständig mit der Serie ab;
-`SeriesManifest` erlaubt zusätzlich eigenständige Intakes außerhalb der Serie.
-`Eligible` kennzeichnet ein nach seinen Abhängigkeiten auswählbares Ziel,
-erteilt aber keine Ausführungsfreigabe. Lifecycle bezeichnet die geregelten
-Übergänge zwischen Bearbeitungszuständen und Ablagen.
-
 Das Profil unterstützt zunächst eigenständige Intakes ohne Serienbindung.
 Keine Requirements-Collection-Konfiguration und kein Serienmanifest werden
 vorgetäuscht. Die vier portablen Rollen, sechs Collection-Pfade, kanonischer
 Index, `DirectoryStrict`/`SeriesManifest`, Archiv und Lifecycle-Übergänge werden
 im späteren LH-00-Prozessnachweis konkretisiert. Vorher sind Serienstatus und
 Eligible-Auswahl nicht nachgewiesen. Vorhandene Namen werden nicht umbenannt.
-
-A collection is a managed set of requirement documents. A series manifest
-provides a machine-readable list of members, order, dependencies and status.
-The four portable roles name the index, order, active intakes and baseline;
-they do not identify people. The canonical index is the authoritative inventory.
-DirectoryStrict matches all active files to the series; SeriesManifest also
-allows standalone intakes outside it. Eligible marks a target selectable by
-its dependencies but grants no execution authority. Lifecycle means the
-controlled transitions between work states and storage locations.
 
 The initial profile supports standalone intakes without series binding.
 It does not claim an installed requirements collection or series manifest.
@@ -130,9 +93,7 @@ Authoring-Entscheidungen; sonst `NeedsClarification` / `Blocked`.
 Erst separates Intake-Review kann `Ready` oder `ReadyWithAcceptedRisks` liefern;
 akzeptierte Risiken brauchen menschliche Zustimmung. `LocalImplementation` ist
 nur die Vorgabe des späteren Autonomous-Prompts, kein aktueller Laufauftrag.
-Dieses Profil allein erlaubt keine Commits, Remote-Schreibzugriffe, Reviews oder
-Folgeläufe. Maßgeblich ist der ausdrückliche Auftrag; aktuelle Reparatur- und
-Lieferbefugnisse stehen in `docs/planning/lh00-repair-decisions.md`.
+Aktuell: lokale Erstellung, keine Commits, Remote-Schreibzugriffe oder Folgeläufe.
 
 Fetch only individually named public HTTPS sources without authentication,
 JavaScript or crawling; check targets and redirects first. Preserve the preset's
@@ -140,7 +101,5 @@ UTF-8, containment, size, hash and overwrite protections. Use ReadyForReview /
 Enabled only after authoring decisions are resolved; otherwise use
 NeedsClarification / Blocked. Only a separate intake review can grant Ready or
 ReadyWithAcceptedRisks, with human acceptance of risks. LocalImplementation is
-the later Autonomous prompt default, not a current execution request. This profile
-alone grants no commits, remote writes, reviews or downstream runs. Explicit
-requests govern authority; current repair and delivery decisions are recorded
-in docs/planning/lh00-repair-decisions.md.
+the later Autonomous prompt default, not a current execution request. Current
+scope is local creation without commits, remote writes or downstream runs.

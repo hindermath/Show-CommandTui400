@@ -127,22 +127,18 @@ Verbindlich sind `.specify/memory/intake-authoring-policy.json`,
 `docs/intake-governance.md`. Ein Intake ist ein fachliches Lastenheft;
 ein Receipt ist der maschinenlesbare Herkunfts- und Hashnachweis.
 `ReadyForReview` bedeutet nur bereit für ein gesondertes Review.
-`docs/issue-drafts/` enthält historische Quellen der veröffentlichten Issues,
-keine weiteren aktiven Lastenhefte. Aktuell ist genau `intakes/LH-00.md` beauftragt.
-Der ursprüngliche Authoring-Auftrag war lokal begrenzt. Die danach ausdrücklich
-beauftragten Reparatur-, Review- und Lieferaktionen stehen in
-`docs/planning/lh00-repair-decisions.md`; aktueller Stand in Receipt und Reviewbericht.
-Jede weitere Erstellung, Prüfung oder Lieferung benötigt passende ausdrückliche
-Autorität. Folgeprompts sind Vorlagen für einen späteren Auftrag. Serienverwaltung
-und Plattformabnahme sind Anforderungen von LH-00, nicht durch Erstellung erfüllt.
+`docs/issue-drafts/` enthält unveröffentlichte Issue-Entwürfe, keine weiteren
+aktiven Lastenhefte. Aktuell ist genau `intakes/LH-00.md` beauftragt.
+Der laufende Auftrag erlaubt lokale Authoring-Änderungen, keine Commits,
+Remote-Änderungen, Reviews oder nachfolgenden Feature-Läufe. Folgeprompts sind
+Vorlagen für einen späteren ausdrücklichen Auftrag. Serienverwaltung und
+Plattformabnahme sind Anforderungen von LH-00, nicht durch Erstellung erfüllt.
 
 The policy, profile and governance mapping linked above are binding. An intake
 is a requirements document; a receipt records its sources and content hashes.
 `ReadyForReview` only means ready for a separate review. The issue-draft directory
-contains historical sources for published issues, not additional active intakes.
-Only `intakes/LH-00.md` is currently commissioned. Original authoring was limited
-to local changes. Later explicitly authorized repair, review and delivery actions
-are recorded in docs/planning/lh00-repair-decisions.md; the current receipt and
-review report show the state. Further creation, review or delivery needs matching
-explicit authority. Follow-up prompts are templates for a later request. Series
-management and platform acceptance remain LH-00 requirements, not authoring results.
+contains unpublished issue proposals, not additional active intakes. Only
+`intakes/LH-00.md` is currently commissioned. The current task permits local
+authoring changes, but no commits, remote changes, review or later feature run.
+Follow-up prompts are templates for a later explicit request. Series management
+and platform acceptance are LH-00 requirements, not completed by authoring.

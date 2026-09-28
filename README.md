@@ -19,16 +19,18 @@ linked governance mapping records sources and boundaries.
 
 ## Reviewstand LH-00 / LH-00 review status
 
-Das [gesonderte Intake-Review](specs/intake-review-report.md) ergibt
-**NeedsRemediation**: zwei mittlere Befunde zu Begriffserklärungen und normativer
-DE/EN-Parität. Das Authoring-Receipt bleibt gültig; fachliche Freigabe und
-Prozessabnahme sind damit nicht erteilt. Nächster Schritt ist die ausdrücklich
-beauftragte Reparatur der benannten Befunde mit vollständigem erneutem Review.
+Das [unabhängige erneute Intake-Review](specs/intake-review-report.md) ergibt
+**Ready**: keine offenen Befunde, Fragen oder akzeptierten Risiken. Begriffe und
+normative DE/EN-Aussagen sind korrigiert; ein anderer Agent als der Autor hat
+vollständig geprüft. [Reparatur und Nachweise](docs/lh00-repair-validation.md)
+sind dokumentiert. Prozess- und Produktabnahme bleiben offen. Nächster fachlicher
+Schritt ist der Specify-Folgeprompt in LH-00 nach eigenem ausdrücklichem Auftrag.
 
-The separate intake review returns **NeedsRemediation** with two Medium findings
-on terminology and normative DE/EN parity. The authoring receipt remains valid;
-this grants no domain readiness or process acceptance. Next is explicitly
-authorized repair of the named findings and a complete new review.
+The independent complete re-review returns **Ready**, with no open findings,
+questions or accepted risks. Terms and normative DE/EN wording are corrected;
+an agent other than the author performed the review. Repair evidence is linked
+above. Process and product acceptance remain open. Next is the Specify follow-up
+prompt in LH-00 after a separate explicit request.
 
 ## Das geplante Bedienkonzept / Planned interaction concept
 
@@ -130,13 +132,13 @@ requirement. Installed development versions do not define the product minimum.
 Ein Lastenheft beschreibt die fachlichen Anforderungen und ihre Abnahme.
 Die vorbereiteten Issues dienen dafür als Eingabe.
 
-Begonnen wurde lokal mit **[LH-00: Spec-Kit-Projektprofil und Lastenheft-Prozess](https://github.com/hindermath/Show-CommandTui400/issues/1)**.
+Begonnen wurde mit **[LH-00: Spec-Kit-Projektprofil und Lastenheft-Prozess](https://github.com/hindermath/Show-CommandTui400/issues/1)**.
 Das minimale [Authoring-Profil](.specify/memory/intake-authoring-profile.md)
-und die [Issue-Entwürfe](docs/issue-drafts/README.md) liegen lokal vor.
+und die [veröffentlichten Issue-Grundlagen](docs/issue-publication.md) liegen vor.
 Ein Intake ist ein fachliches Lastenheft; sein Receipt belegt Quellen und Inhalt
 mit Prüfsummen. `ReadyForReview` bedeutet bereit für eine gesonderte fachliche
-Prüfung, keine Prozess- oder Produktabnahme. Nächster fachlicher Schritt ist
-das getrennte Review von [LH-00](intakes/LH-00.md), erst auf ausdrücklichen Auftrag.
+Prüfung. Das [aktuelle Review](specs/intake-review-report.md) nennt Ergebnis
+und nächsten Schritt; eine Prozess- oder Produktabnahme ist davon getrennt.
 
 Danach folgen TUI-Grundlage und Sitzung, Cmdlet-Suche, Parameterformular,
 Wertehilfe und Aufrufabschluss. Geräteprofile und dynamische Geräteadapter
@@ -150,10 +152,10 @@ Produktimplementierung oder autonomen Läufe.
 
 An intake describes domain requirements and acceptance. Existing issues provide
 its input. Work starts with LH-00, the project profile and intake process.
-The minimal authoring profile and local issue proposals now exist. A receipt
+The minimal authoring profile and published issue input now exist. A receipt
 records source and content hashes. ReadyForReview means ready for separate
-review, not process or product acceptance. The next domain action is a separately
-requested review of LH-00. Later intakes address the session/TUI foundation,
+review. The current review report names the outcome and next step; process and
+product acceptance remain separate. Later intakes address the session/TUI foundation,
 search, form, value assistance and final invocation. Device profiles and dynamic
 adapters are optional later stages. The linked order document remains binding.
 Installed commands are listed in the development guide. Neither issues nor tool

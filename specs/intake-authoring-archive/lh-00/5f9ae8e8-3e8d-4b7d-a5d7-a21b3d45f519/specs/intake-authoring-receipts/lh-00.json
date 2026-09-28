@@ -1,0 +1,276 @@
+{
+  "schemaVersion": "2.0",
+  "documentType": "IntakeReceipt",
+  "receiptId": "5f9ae8e8-3e8d-4b7d-a5d7-a21b3d45f519",
+  "intakeId": "2296d99d-f099-4c4d-88f7-789581693eb0",
+  "generator": {
+    "preset": "intake-authoring-governance",
+    "version": "0.3.5"
+  },
+  "createdAt": "2026-09-28T19:05:42Z",
+  "operation": {
+    "operationId": "149d863a-dbc8-4d80-970f-30dfdf08185d",
+    "type": "Create",
+    "authorityEvidence": "Owner approved the final local plan in this chat: Ja, Plan bitte ausführen. Recorded in docs/planning/lh00-authoring-decisions.md."
+  },
+  "status": "ReadyForReview",
+  "target": {
+    "path": "intakes/LH-00.md",
+    "normalizedSha256": "b79cc8445dff76053eac428e1d572551a0723619bd8a92ecbd9cf48538d8fd3c"
+  },
+  "sources": [
+    {
+      "sourceId": "SRC001",
+      "order": 1,
+      "kind": "Url",
+      "label": "Public issue #1 HTML snapshot; embedded issue body verified against the drafting snapshot",
+      "location": "RemoteSnapshot",
+      "path": "N/A",
+      "requestedUrl": "https://github.com/hindermath/Show-CommandTui400/issues/1",
+      "finalUrl": "https://github.com/hindermath/Show-CommandTui400/issues/1",
+      "retrievedAt": "2026-09-28T18:51:20Z",
+      "httpStatus": 200,
+      "contentType": "text/html; charset=utf-8",
+      "contentLength": 253844,
+      "etag": "N/A",
+      "lastModified": "N/A",
+      "redirectChain": [],
+      "rawSha256": "49d1330e401472388fd70f8ff80979b45370aa2fcb5372ec8351785fc2fb8901",
+      "normalizedSha256": "49d1330e401472388fd70f8ff80979b45370aa2fcb5372ec8351785fc2fb8901",
+      "gitBlob": "N/A",
+      "proofBoundary": "RemoteSnapshot",
+      "bodyNormalizedSha256": "07cea12d4b043979af5bbed888f934a91396b436698528f6ecb156f10453e015",
+      "normalization": "Strict UTF-8 HTML payload, optional initial BOM removed, CRLF/CR normalized to LF. No DOM rewriting. Embedded issue body was compared exactly with the draft input; its separate hash is bodyNormalizedSha256."
+    },
+    {
+      "sourceId": "SRC002",
+      "order": 2,
+      "kind": "File",
+      "label": "docs/issue-drafts/issue-01.md",
+      "location": "Repository",
+      "path": "docs/issue-drafts/issue-01.md",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "etag": "N/A",
+      "lastModified": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "normalizedSha256": "887e066b335a73d9296c9b1373397c404c80c58a6e3803f150da654ef80b7a33",
+      "gitBlob": "N/A",
+      "proofBoundary": "Current local file; normalized hash checked by both validators; uncommitted content has no published Git proof"
+    },
+    {
+      "sourceId": "SRC003",
+      "order": 3,
+      "kind": "File",
+      "label": "docs/Bedienkonzept.md",
+      "location": "Repository",
+      "path": "docs/Bedienkonzept.md",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "etag": "N/A",
+      "lastModified": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "normalizedSha256": "e41d0d035ad089f64e752d0a01558f744736a9514b394410123084010c12c30c",
+      "gitBlob": "N/A",
+      "proofBoundary": "Current local file; normalized hash checked by both validators; uncommitted content has no published Git proof"
+    },
+    {
+      "sourceId": "SRC004",
+      "order": 4,
+      "kind": "File",
+      "label": "docs/Lastenheft-Plan.md",
+      "location": "Repository",
+      "path": "docs/Lastenheft-Plan.md",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "etag": "N/A",
+      "lastModified": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "normalizedSha256": "4f177f4447d4b6d92fccfd2f3a69651a840ac6b200b2b691f5a8f0161bb7b027",
+      "gitBlob": "N/A",
+      "proofBoundary": "Current local file; normalized hash checked by both validators; uncommitted content has no published Git proof"
+    },
+    {
+      "sourceId": "SRC005",
+      "order": 5,
+      "kind": "File",
+      "label": "docs/Entwicklungsumgebung.md",
+      "location": "Repository",
+      "path": "docs/Entwicklungsumgebung.md",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "etag": "N/A",
+      "lastModified": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "normalizedSha256": "120f7944cfda271d1ae211d88f0b80e8cf2783d0bd3b3f766a4acb8a3dafe803",
+      "gitBlob": "N/A",
+      "proofBoundary": "Current local file; normalized hash checked by both validators; uncommitted content has no published Git proof"
+    },
+    {
+      "sourceId": "SRC006",
+      "order": 6,
+      "kind": "File",
+      "label": "docs/intake-governance.md",
+      "location": "Repository",
+      "path": "docs/intake-governance.md",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "etag": "N/A",
+      "lastModified": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "normalizedSha256": "712be6a8d92287ca679c73a23bcd953aac25cba9dba8e22e966fc82bb6ed90b8",
+      "gitBlob": "N/A",
+      "proofBoundary": "Current local file; normalized hash checked by both validators; uncommitted content has no published Git proof"
+    },
+    {
+      "sourceId": "SRC007",
+      "order": 7,
+      "kind": "File",
+      "label": "docs/planning/lh00-authoring-decisions.md",
+      "location": "Repository",
+      "path": "docs/planning/lh00-authoring-decisions.md",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "etag": "N/A",
+      "lastModified": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "normalizedSha256": "b61566852a65362b9b53bdef8d4f820569213f18b9f9f5d1083ad8fdcfbe6606",
+      "gitBlob": "N/A",
+      "proofBoundary": "Current local file; normalized hash checked by both validators; uncommitted content has no published Git proof"
+    }
+  ],
+  "profile": "show-commandtui400-de-en",
+  "languagePolicy": "de-DE first; en second; approximately CEFR B2; equivalent content in one intake",
+  "decisions": [
+    {
+      "id": "IAD001",
+      "status": "Answered",
+      "question": "What does the accepted plan require for IAD001?",
+      "answer": "Genau LH-00 samt minimalem Profil erzeugen; LH-01 bis LH-07 nur als Issue-Entwürfe. / Create only LH-00 and a minimal profile; prepare LH-01 through LH-07 only as issue drafts.",
+      "evidence": "Owner-approved plan and docs/planning/lh00-authoring-decisions.md; SRC007."
+    },
+    {
+      "id": "IAD002",
+      "status": "Answered",
+      "question": "What does the accepted plan require for IAD002?",
+      "answer": "Lokal ohne Commit, Push, PR, Merge oder Issue-Änderung arbeiten. / Work locally without commits, pushes, PRs, merges or issue mutations.",
+      "evidence": "Owner-approved plan and docs/planning/lh00-authoring-decisions.md; SRC007."
+    },
+    {
+      "id": "IAD003",
+      "status": "Answered",
+      "question": "What does the accepted plan require for IAD003?",
+      "answer": "Deutsch-Ausnahme aufheben: DE zuerst/EN danach, ungefähr CEFR B2; lokale Governance angleichen, zentrale Änderung nur vorschlagen. / Remove the German-only exception: DE first/EN second, about CEFR B2; align local governance and only propose the central change.",
+      "evidence": "Owner-approved plan and docs/planning/lh00-authoring-decisions.md; SRC007."
+    },
+    {
+      "id": "IAD004",
+      "status": "Answered",
+      "question": "What does the accepted plan require for IAD004?",
+      "answer": "Reguläres installiertes Authoring 0.3.5 verwenden. Der frühere 0.3.4-Backportplan ist durch das stabile Release überholt. / Use installed Authoring 0.3.5; the stable release supersedes the earlier 0.3.4 backport plan.",
+      "evidence": "Owner-approved plan and docs/planning/lh00-authoring-decisions.md; SRC007."
+    },
+    {
+      "id": "IAD005",
+      "status": "Answered",
+      "question": "What does the accepted plan require for IAD005?",
+      "answer": "Alle acht Issue-Entwürfe zweisprachig mit Quellen, erhaltenen IDs/Abhängigkeiten und Governance-Kriterien vorbereiten; Remote-Stand ehrlich kennzeichnen. / Prepare eight bilingual drafts with sources, preserved IDs/dependencies and governance criteria; label remote status honestly.",
+      "evidence": "Owner-approved plan and docs/planning/lh00-authoring-decisions.md; SRC007."
+    },
+    {
+      "id": "IAD006",
+      "status": "Answered",
+      "question": "What does the accepted plan require for IAD006?",
+      "answer": "Ein zweisprachiges Dokument intakes/LH-00.md und ein Receipt; Abschluss ReadyForReview nach beiden Validatoren, separates Review folgt. / One bilingual LH-00 file and one receipt; finish ReadyForReview after both validators, with review separate.",
+      "evidence": "Owner-approved plan and docs/planning/lh00-authoring-decisions.md; SRC007."
+    },
+    {
+      "id": "IAD007",
+      "status": "Answered",
+      "question": "What does the accepted plan require for IAD007?",
+      "answer": "Vollständige Serienverwaltung, Fachtextübersetzung und PowerShell-Prozessabnahme als spätere LH-00-Anforderungen behandeln; keine Produktentscheidung vorwegnehmen. / Treat full series management, domain translation and PowerShell process acceptance as later LH-00 requirements; preselect no product technology.",
+      "evidence": "Owner-approved plan and docs/planning/lh00-authoring-decisions.md; SRC007."
+    }
+  ],
+  "openDecisionIds": [],
+  "questionCount": 0,
+  "agentSurface": {
+    "specifyCanonicalId": "speckit.specify",
+    "specifyInvocation": "$speckit-specify",
+    "autonomousCanonicalId": "speckit.autonomous",
+    "autonomousInvocation": "$speckit-autonomous"
+  },
+  "deliveryAuthority": "LocalImplementation",
+  "authorityEvidence": "Current authority is local authoring only: no commits, remote writes, review or downstream execution. LocalImplementation is only the preset default for a later explicitly requested Autonomous run.",
+  "promptState": "Enabled",
+  "provenanceMode": "New",
+  "supersedes": {
+    "receiptPath": "N/A",
+    "targetNormalizedSha256": "N/A",
+    "archiveTargetPath": "N/A",
+    "archiveReceiptPath": "N/A"
+  },
+  "legacyAdoption": {
+    "evidenceType": "N/A",
+    "priorTargetNormalizedSha256": "N/A",
+    "priorGitBlob": "N/A"
+  },
+  "updateAuthorized": false,
+  "updateAuthorityEvidence": "N/A",
+  "series": {
+    "seriesId": "N/A",
+    "manifestPath": "N/A",
+    "order": "N/A",
+    "role": "N/A",
+    "supersedesIntakeIds": []
+  },
+  "nextAction": "$speckit-intake-review intakes/LH-00.md",
+  "governanceContext": [
+    {
+      "path": "constitution.md",
+      "normalizedSha256": "189b93acf1b159fa265b12b2db73373bcbfec7d75ee95d53236b4b9445df45fc"
+    },
+    {
+      "path": "AGENTS.md",
+      "normalizedSha256": "0fe048a58c73778c12e14c6c3ef96cbff8d3562445ba860dffa4ab86369d3644"
+    },
+    {
+      "path": ".specify/memory/intake-authoring-policy.json",
+      "normalizedSha256": "8d42717c2cc7efc128a62e7967a1f877beee85fb2d53fedee1aa828aba9941d9"
+    },
+    {
+      "path": ".specify/memory/intake-authoring-profile.md",
+      "normalizedSha256": "7c26aa55eca12709959fa54ddf6980b7207a7ee3b706d70ae7c1235f7dd37966"
+    }
+  ]
+}

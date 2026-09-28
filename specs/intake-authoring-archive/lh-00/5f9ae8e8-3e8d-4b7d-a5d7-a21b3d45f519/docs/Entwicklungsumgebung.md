@@ -16,32 +16,27 @@ PowerShell 7 und Sitzungsintegration bleiben offen. Die mitgelieferte
 .NET-basierte Wartungs-TUI gehört zu Home Baseline und entscheidet nicht über
 die Produktsprache.
 
-[LH-00](../intakes/LH-00.md) wurde mit
+Der aktuelle Auftrag erstellt [LH-00](../intakes/LH-00.md) lokal mit
 [Policy](../.specify/memory/intake-authoring-policy.json) und
-[Profil](../.specify/memory/intake-authoring-profile.md) erstellt. Ein Intake ist
-ein fachliches Lastenheft; ein Receipt bindet Quellen und Inhalt durch Prüfsummen.
-Authoring ist die Erstellung, Review eine gesonderte fachliche Prüfung.
-Das [aktuelle Receipt](../specs/intake-authoring-receipts/lh-00.json) und der
-[aktuelle Reviewbericht](../specs/intake-review-report.md) dokumentieren den Stand.
-`ReadyForReview` bestätigt keine Umsetzung oder Produktabnahme. Die beauftragte
-Reparatur und das unabhängige Review folgen den
-[Owner-Entscheidungen](planning/lh00-repair-decisions.md). Issues 1–8 wurden
-[veröffentlicht](issue-publication.md); die ursprünglichen Entwürfe bleiben
-historische Quellen. Vollständige Prozesskonfiguration und -abnahme bleiben
-Anforderungen von LH-00.
+[Profil](../.specify/memory/intake-authoring-profile.md). Ein Intake ist ein
+fachliches Lastenheft; ein Receipt bindet seine Quellen und seinen Inhalt durch
+Prüfsummen. Authoring ist die Erstellung, Review eine gesonderte fachliche Prüfung.
+`ReadyForReview` bestätigt keine Umsetzung oder Produktabnahme. Nächste fachliche
+Aktion ist das getrennte Intake-Review nach ausdrücklichem Auftrag.
+Lokale [Issue-Entwürfe](issue-drafts/README.md) sind noch nicht veröffentlicht.
+Die vollständige Prozesskonfiguration und -abnahme bleiben Anforderungen von LH-00.
 
 This is an independent Level-2 project in RiderProjects, sourced from
 hindermath/Show-CommandTui400 on main. The interaction concept and intake order
 are binding. No product implementation exists; language, framework, minimum
 PowerShell version and session integration remain undecided. The bundled .NET
-maintenance TUI belongs to Home Baseline. LH-00 was created using the linked
-policy and profile. An intake is a requirements document; a receipt binds sources
-and content with hashes. Authoring creates the document; review is a separate
-assessment. The current receipt and review report show its state. ReadyForReview
-is not implementation or product acceptance. The authorized repair and independent
-review follow the linked owner decisions. Issues 1–8 were published; original
-drafts remain historical sources. Full process setup and acceptance remain
-LH-00 requirements.
+maintenance TUI belongs to Home Baseline. The current task creates LH-00 locally
+with the linked policy and profile. An intake is a requirements document; a
+receipt binds sources and content with hashes. Authoring creates the document;
+review is a separate assessment. ReadyForReview is not implementation or product
+acceptance. The next domain action is a separately requested intake review.
+Issue drafts are not published. Full process setup and acceptance remain LH-00
+requirements.
 
 ## Installierter Stand / Installed state
 
@@ -127,8 +122,8 @@ results are not proof of a separate native Linux installation.
 ## Verfügbare Intake-Kommandos / Available intake commands
 
 Die folgenden Kommandos sind installierte Agentenoberflächen. Bei der
-Einrichtung wurden sie nicht ausgeführt; die ursprüngliche Authoring-Phase
-verwendete nur das Erstellungsverfahren für LH-00. Die genaue Schreibweise folgt dem Agenten.
+Einrichtung wurden sie nicht ausgeführt; im aktuellen Auftrag wird nur das
+Authoring-Verfahren für LH-00 verwendet. Die genaue Schreibweise folgt dem Agenten.
 
 | Zweck | Codex / Antigravity | OpenCode / Copilot |
 |---|---|---|
@@ -160,8 +155,8 @@ bash scripts/install-spec-kit-governance-presets.sh --repo . --preset-config scr
 ```
 
 The table lists installed interfaces for create, read, authoring status, review,
-review status and series status. They were not run during setup; the original
-authoring phase used only LH-00 creation. Command spelling depends on the agent. Codex and
+review status and series status. They were not run during setup; the current
+task uses only LH-00 authoring. Command spelling depends on the agent. Codex and
 Antigravity use .agents/skills, Claude uses .claude/skills and hyphenated names,
 OpenCode uses .opencode/commands with a matching .opencode/command compatibility
 copy, and Copilot uses agents plus prompts. Optional editor settings remain
@@ -200,7 +195,7 @@ After a new clone, install the versioned pre-push hook using the platform's
 command block. The listed checks cover secrets, homogeneity and statistics.
 Static PowerShell analysis uses the pinned PSScriptAnalyzer 1.25.0. Maintenance
 scripts come from Level 0; preview every maintenance write first. CI checks setup
-and distributed tooling, not future product behavior. The original authoring task did
+and distributed tooling, not future product behavior. This authoring task does
 not reinstall hooks or run writing maintenance commands.
 
 ## Dokumentation und Statistik / Documentation and statistics
@@ -218,9 +213,8 @@ kein Maß für selbst geschriebenen Produktcode. Referenzen: `80` konservativ,
 vorläufig `100` Zeilen/Arbeitstag für Konzept/Scripting; bei C#/.NET auf `125`
 reevaluieren. Das zusätzliche Statistik-Preset ist nur installiert; ein
 Pilotmesslauf oder eine Aussage über KI-Zeitersparnis folgt daraus nicht.
-In der ursprünglichen lokalen Authoring-Phase wurde das Protokoll ohne Commit
-ergänzt. Bei beauftragter Lieferung folgen Inhaltscommit, Statistikgenerierung
-und ein gesonderter Statistikcommit.
+Lokales Authoring ergänzt das Fortschreibungsprotokoll ohne Commit; die
+commitbasierte Generierung folgt erst bei gesondert beauftragter Lieferung.
 
 Domain documents, intakes and shared guidance use German first and English
 second at about CEFR B2. The former German-only exception is removed. Outstanding
@@ -231,9 +225,8 @@ Statistics Profile 2 counts tracked text and Git activity, including imported
 governance and tools; it is not a measure of authored product code. References
 are 80 and provisionally 100 lines/workday for concept/scripting, with 125 to be
 reevaluated if C#/.NET is selected. Installing the statistics preset starts no
-pilot and proves no AI time saving. Original local authoring added a ledger entry
-without committing. Authorized delivery uses a content commit, statistics rendering
-and a separate statistics commit.
+pilot and proves no AI time saving. Local authoring adds a ledger entry without
+committing; commit-based rendering follows only during later authorized delivery.
 
 ## Dokumentationsauswirkung / Documentation impact
 

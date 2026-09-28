@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0",
+  "kind": "IssueRepairPublication",
+  "issue": "https://github.com/hindermath/Show-CommandTui400/issues/1",
+  "sourcePath": "docs/issue-updates/issue-01-repair.md",
+  "ownerAuthority": "docs/planning/lh00-repair-decisions.md; IAD008/IAD009; continuing approved issue-update and MergeAndSync authority",
+  "verifiedAt": "2026-09-28T21:28:53Z",
+  "beforeUpdatedAt": "2026-09-28T20:45:22Z",
+  "afterUpdatedAt": "2026-09-28T21:28:52Z",
+  "beforeBodySha256": "deca25b3fdc5a48235dc2627d3a12c9bcd2b1addaa0d2e87de565c7febf29276",
+  "afterBodySha256": "4549f88a0ef8e4949bcc4bd58393771f5cea2c79a4d18c6899c233cd72915f98",
+  "readBackExactMatch": true,
+  "preserved": [
+    "number",
+    "title",
+    "state",
+    "url",
+    "labels",
+    "assignees",
+    "requirement IDs",
+    "acceptance IDs",
+    "dependencies"
+  ],
+  "changedClauses": [
+    "FR-00-004 DE/EN",
+    "AC-00-007 DE/EN"
+  ],
+  "otherChanges": [
+    "Publication-status wording",
+    "Bilingual confirmed-correction record"
+  ],
+  "scopeBoundary": "Issue 1 only; no product implementation, additional intake, risk acceptance or feature execution"
+}

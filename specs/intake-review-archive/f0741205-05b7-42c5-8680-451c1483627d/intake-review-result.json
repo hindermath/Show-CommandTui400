@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "1.1",
+  "reviewId": "f0741205-05b7-42c5-8680-451c1483627d",
+  "mode": "Single",
+  "status": "NeedsRemediation",
+  "policy": "generic-markdown",
+  "reviewedAt": "2026-09-28T20:55:20Z",
+  "repository": {
+    "root": ".",
+    "head": "2078f29ecfcb4ae3bf6487aee0ca6eaa8d0d7a2f"
+  },
+  "requestEvidence": {
+    "path": "specs/intake-review-request.json",
+    "normalizedSha256": "7b72c655dc0b1b8cad49b0048a4ccaf295b53d36a05df7dce75f0e30384f4d17"
+  },
+  "targets": [
+    {
+      "path": "intakes/LH-00.md",
+      "role": "Primary",
+      "normalizedSha256": "b79cc8445dff76053eac428e1d572551a0723619bd8a92ecbd9cf48538d8fd3c",
+      "gitBlob": "37b65fb707a81a1b20c0c3494e9fe3d06f4a4f1c"
+    }
+  ],
+  "findings": [
+    {
+      "id": "IR001",
+      "severity": "Medium",
+      "category": "AudienceAndReadability",
+      "target": "intakes/LH-00.md",
+      "disposition": "Open - remediate before Ready",
+      "owner": "Thorsten Hindermann",
+      "title": "Zentrale Begriffe sind bei erster Verwendung nicht erklärt / Key terms lack first-use explanations",
+      "evidence": "intakes/LH-00.md:13-30 promises no Spec Kit experience; :45-46 uses integrations/presets, :127 and :140 collection roles/series manifest, :151 and :159 ASVS/SBOM/VEX/AI-SBOM without definitions. FR-00-005 (:121/:134) and AC-00-004 (:255/:265) require explained terms. The linked authoring profile repeats collection terminology without explaining it.",
+      "impact": "New authors cannot reliably distinguish a preset, project profile, collection or series manifest; readers cannot interpret the security N/A statements. This does not meet the declared beginner-facing language contract.",
+      "remediation": "Add equivalent DE/EN first-use explanations of the relevant workflow terms and security abbreviations. Preserve scope and requirement IDs; repeat a semantic language review.",
+      "reevaluationTrigger": "Authorized glossary/first-use amendment followed by full re-review; any audience or language-contract change"
+    },
+    {
+      "id": "IR002",
+      "severity": "Medium",
+      "category": "BilingualNormativeParity",
+      "target": "intakes/LH-00.md",
+      "disposition": "Open - align normative translations before Ready",
+      "owner": "Thorsten Hindermann",
+      "title": "Normative DE/EN-Fassungen sind nicht vollständig gleichwertig / Normative DE/EN text differs",
+      "evidence": "FR-00-004 at intakes/LH-00.md:120 requires linking issue IDs; its EN counterpart :133 additionally requires linking intakes. AC-00-007 at :258 says unabhängiges Review, while :268 only says separate review. AC-00-004 at :255/:265 requires matching meaning. Both differences also occur in the approved issue-01 source.",
+      "impact": "Required links and reviewer independence can be accepted differently depending on the selected language. Matching IDs alone do not prove equivalent requirements.",
+      "remediation": "Confirm and express the same linking obligation and review-independence requirement in both languages. Align any affected source/issue through explicitly authorized repair/update, preserving receipt lineage; do not silently rehash.",
+      "reevaluationTrigger": "Owner-authorized semantic alignment of the named clauses and any bound source updates, then a full re-review"
+    }
+  ],
+  "questions": [],
+  "acceptedRisks": [],
+  "operatorExceptions": [],
+  "coverage": {
+    "individual": [
+      "intakes/LH-00.md"
+    ],
+    "series": [],
+    "workers": []
+  },
+  "summary": {
+    "critical": 0,
+    "high": 0,
+    "medium": 2,
+    "low": 0
+  },
+  "supersedes": "N/A",
+  "reviewer": {
+    "type": "Automated",
+    "identity": "Codex executing agent",
+    "independentHumanReview": false,
+    "boundary": "Separate review pass by the authoring agent; no independent-person, assistive-device, platform or process acceptance is claimed."
+  },
+  "policyEvidence": [
+    {
+      "path": ".specify/presets/intake-review-governance/templates/intake-review-policy-template.json",
+      "normalizedSha256": "fcf4fc8e732e8d949dffcfc08de97ef6dd6f2b9aa23e00c68dd2ea525d2b96e0"
+    },
+    {
+      "path": ".specify/presets/intake-review-governance/templates/intake-review-checklist-template.md",
+      "normalizedSha256": "36821186987b48d42ec15db6ff347304478d4b204fc6f779fee26a466a866cdc"
+    },
+    {
+      "path": ".specify/memory/intake-authoring-policy.json",
+      "normalizedSha256": "8d42717c2cc7efc128a62e7967a1f877beee85fb2d53fedee1aa828aba9941d9"
+    },
+    {
+      "path": ".specify/memory/intake-authoring-profile.md",
+      "normalizedSha256": "7c26aa55eca12709959fa54ddf6980b7207a7ee3b706d70ae7c1235f7dd37966"
+    },
+    {
+      "path": "constitution.md",
+      "normalizedSha256": "189b93acf1b159fa265b12b2db73373bcbfec7d75ee95d53236b4b9445df45fc"
+    },
+    {
+      "path": "AGENTS.md",
+      "normalizedSha256": "0fe048a58c73778c12e14c6c3ef96cbff8d3562445ba860dffa4ab86369d3644"
+    },
+    {
+      "path": "docs/intake-governance.md",
+      "normalizedSha256": "712be6a8d92287ca679c73a23bcd953aac25cba9dba8e22e966fc82bb6ed90b8"
+    },
+    {
+      "path": "docs/Lastenheft-Plan.md",
+      "normalizedSha256": "4f177f4447d4b6d92fccfd2f3a69651a840ac6b200b2b691f5a8f0161bb7b027"
+    },
+    {
+      "path": "docs/issue-publication.json",
+      "normalizedSha256": "5f79fbfd3fc0c2c4ccae125b3a5592153debc51149707dd264cfc6c45d113ef7"
+    },
+    {
+      "path": "specs/intake-authoring-receipts/lh-00.json",
+      "normalizedSha256": "ad9a4ec6049bdbd5214fe9f701f709d4ce6a5cbfa48d9cda58703cb67f8db1b3"
+    }
+  ],
+  "reportPath": "specs/intake-review-report.md",
+  "nextAction": "$speckit-intake-repair intakes/LH-00.md — IR001 und IR002 auf Basis von specs/intake-review-result.json; normative Bedeutung vorher bestätigen, Quellenbindung mit Historie erhalten und vollständig erneut reviewen.",
+  "executionGate": "Blocked: NeedsRemediation is not Ready or ReadyWithAcceptedRisks"
+}

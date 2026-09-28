@@ -1,54 +1,31 @@
 {
   "schemaVersion": "2.0",
   "documentType": "IntakeReceipt",
-  "receiptId": "5f9ae8e8-3e8d-4b7d-a5d7-a21b3d45f519",
+  "receiptId": "a627d004-b189-43df-b061-27e30a0e6a37",
   "intakeId": "2296d99d-f099-4c4d-88f7-789581693eb0",
   "generator": {
     "preset": "intake-authoring-governance",
     "version": "0.3.5"
   },
-  "createdAt": "2026-09-28T19:05:42Z",
+  "createdAt": "2026-09-28T21:11:19Z",
   "operation": {
-    "operationId": "149d863a-dbc8-4d80-970f-30dfdf08185d",
-    "type": "Create",
-    "authorityEvidence": "Owner approved the final local plan in this chat: Ja, Plan bitte ausführen. Recorded in docs/planning/lh00-authoring-decisions.md."
+    "operationId": "857d702a-5c8f-4fac-b22a-4f1f787d6273",
+    "type": "Update",
+    "authorityEvidence": "Explicit $speckit-intake-repair intakes/LH-00.md and owner answers IAD008/IAD009 in docs/planning/lh00-repair-decisions.md"
   },
   "status": "ReadyForReview",
   "target": {
     "path": "intakes/LH-00.md",
-    "normalizedSha256": "b79cc8445dff76053eac428e1d572551a0723619bd8a92ecbd9cf48538d8fd3c"
+    "normalizedSha256": "680baafd7534db9386f91a43cdbe3dbf260d6c0620c9f506c2be59ec3c826a65"
   },
   "sources": [
     {
       "sourceId": "SRC001",
       "order": 1,
-      "kind": "Url",
-      "label": "Public issue #1 HTML snapshot; embedded issue body verified against the drafting snapshot",
-      "location": "RemoteSnapshot",
-      "path": "N/A",
-      "requestedUrl": "https://github.com/hindermath/Show-CommandTui400/issues/1",
-      "finalUrl": "https://github.com/hindermath/Show-CommandTui400/issues/1",
-      "retrievedAt": "2026-09-28T18:51:20Z",
-      "httpStatus": 200,
-      "contentType": "text/html; charset=utf-8",
-      "contentLength": 253844,
-      "etag": "N/A",
-      "lastModified": "N/A",
-      "redirectChain": [],
-      "rawSha256": "49d1330e401472388fd70f8ff80979b45370aa2fcb5372ec8351785fc2fb8901",
-      "normalizedSha256": "49d1330e401472388fd70f8ff80979b45370aa2fcb5372ec8351785fc2fb8901",
-      "gitBlob": "N/A",
-      "proofBoundary": "RemoteSnapshot",
-      "bodyNormalizedSha256": "07cea12d4b043979af5bbed888f934a91396b436698528f6ecb156f10453e015",
-      "normalization": "Strict UTF-8 HTML payload, optional initial BOM removed, CRLF/CR normalized to LF. No DOM rewriting. Embedded issue body was compared exactly with the draft input; its separate hash is bodyNormalizedSha256."
-    },
-    {
-      "sourceId": "SRC002",
-      "order": 2,
       "kind": "File",
-      "label": "docs/issue-drafts/issue-01.md",
+      "label": "specs/intake-authoring-archive/lh-00/5f9ae8e8-3e8d-4b7d-a5d7-a21b3d45f519/intakes/LH-00.md",
       "location": "Repository",
-      "path": "docs/issue-drafts/issue-01.md",
+      "path": "specs/intake-authoring-archive/lh-00/5f9ae8e8-3e8d-4b7d-a5d7-a21b3d45f519/intakes/LH-00.md",
       "requestedUrl": "N/A",
       "finalUrl": "N/A",
       "retrievedAt": "N/A",
@@ -59,13 +36,139 @@
       "lastModified": "N/A",
       "redirectChain": [],
       "rawSha256": "N/A",
-      "normalizedSha256": "887e066b335a73d9296c9b1373397c404c80c58a6e3803f150da654ef80b7a33",
+      "normalizedSha256": "b79cc8445dff76053eac428e1d572551a0723619bd8a92ecbd9cf48538d8fd3c",
       "gitBlob": "N/A",
-      "proofBoundary": "Current local file; normalized hash checked by both validators; uncommitted content has no published Git proof"
+      "proofBoundary": "Repository file with normalized hash; predecessor archive is byte-identical; uncommitted candidate has no published Git proof"
+    },
+    {
+      "sourceId": "SRC002",
+      "order": 2,
+      "kind": "File",
+      "label": "specs/intake-review-archive/f0741205-05b7-42c5-8680-451c1483627d/intake-review-result.json",
+      "location": "Repository",
+      "path": "specs/intake-review-archive/f0741205-05b7-42c5-8680-451c1483627d/intake-review-result.json",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "etag": "N/A",
+      "lastModified": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "normalizedSha256": "e95873e628b9c990b50451a3ea44dc628542d9229bf0f77a79fa0662b142a101",
+      "gitBlob": "N/A",
+      "proofBoundary": "Repository file with normalized hash; predecessor archive is byte-identical; uncommitted candidate has no published Git proof"
     },
     {
       "sourceId": "SRC003",
       "order": 3,
+      "kind": "File",
+      "label": "docs/planning/lh00-repair-decisions.md",
+      "location": "Repository",
+      "path": "docs/planning/lh00-repair-decisions.md",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "etag": "N/A",
+      "lastModified": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "normalizedSha256": "b831b9316621eeffeda6f39503047e6bea89eaa76226d2cca03d602cc637619f",
+      "gitBlob": "N/A",
+      "proofBoundary": "Repository file with normalized hash; predecessor archive is byte-identical; uncommitted candidate has no published Git proof"
+    },
+    {
+      "sourceId": "SRC004",
+      "order": 4,
+      "kind": "File",
+      "label": "docs/issue-updates/issue-01-repair.md",
+      "location": "Repository",
+      "path": "docs/issue-updates/issue-01-repair.md",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "etag": "N/A",
+      "lastModified": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "normalizedSha256": "4549f88a0ef8e4949bcc4bd58393771f5cea2c79a4d18c6899c233cd72915f98",
+      "gitBlob": "N/A",
+      "proofBoundary": "Repository file with normalized hash; predecessor archive is byte-identical; uncommitted candidate has no published Git proof"
+    },
+    {
+      "sourceId": "SRC005",
+      "order": 5,
+      "kind": "File",
+      "label": ".specify/memory/intake-authoring-profile.md",
+      "location": "Repository",
+      "path": ".specify/memory/intake-authoring-profile.md",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "etag": "N/A",
+      "lastModified": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "normalizedSha256": "63fdde712c216d70c9358becd1bde5fe2b62acebc04ffd0b8e2e12dbed4cdbb2",
+      "gitBlob": "N/A",
+      "proofBoundary": "Repository file with normalized hash; predecessor archive is byte-identical; uncommitted candidate has no published Git proof"
+    },
+    {
+      "sourceId": "SRC006",
+      "order": 6,
+      "kind": "File",
+      "label": "docs/Lastenheft-Plan.md",
+      "location": "Repository",
+      "path": "docs/Lastenheft-Plan.md",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "etag": "N/A",
+      "lastModified": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "normalizedSha256": "8fb0facbce3fbf37aefd57d6b085d43073b5400ec49f16a427e6f5a9ad63f620",
+      "gitBlob": "N/A",
+      "proofBoundary": "Repository file with normalized hash; predecessor archive is byte-identical; uncommitted candidate has no published Git proof"
+    },
+    {
+      "sourceId": "SRC007",
+      "order": 7,
+      "kind": "File",
+      "label": "docs/intake-governance.md",
+      "location": "Repository",
+      "path": "docs/intake-governance.md",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "etag": "N/A",
+      "lastModified": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "normalizedSha256": "a63764d2154f36b7245ce9a4caf6a35a9ac66596143b218e30a6f8bc21196307",
+      "gitBlob": "N/A",
+      "proofBoundary": "Repository file with normalized hash; predecessor archive is byte-identical; uncommitted candidate has no published Git proof"
+    },
+    {
+      "sourceId": "SRC008",
+      "order": 8,
       "kind": "File",
       "label": "docs/Bedienkonzept.md",
       "location": "Repository",
@@ -82,32 +185,11 @@
       "rawSha256": "N/A",
       "normalizedSha256": "e41d0d035ad089f64e752d0a01558f744736a9514b394410123084010c12c30c",
       "gitBlob": "N/A",
-      "proofBoundary": "Current local file; normalized hash checked by both validators; uncommitted content has no published Git proof"
+      "proofBoundary": "Repository file with normalized hash; predecessor archive is byte-identical; uncommitted candidate has no published Git proof"
     },
     {
-      "sourceId": "SRC004",
-      "order": 4,
-      "kind": "File",
-      "label": "docs/Lastenheft-Plan.md",
-      "location": "Repository",
-      "path": "docs/Lastenheft-Plan.md",
-      "requestedUrl": "N/A",
-      "finalUrl": "N/A",
-      "retrievedAt": "N/A",
-      "httpStatus": "N/A",
-      "contentType": "N/A",
-      "contentLength": "N/A",
-      "etag": "N/A",
-      "lastModified": "N/A",
-      "redirectChain": [],
-      "rawSha256": "N/A",
-      "normalizedSha256": "4f177f4447d4b6d92fccfd2f3a69651a840ac6b200b2b691f5a8f0161bb7b027",
-      "gitBlob": "N/A",
-      "proofBoundary": "Current local file; normalized hash checked by both validators; uncommitted content has no published Git proof"
-    },
-    {
-      "sourceId": "SRC005",
-      "order": 5,
+      "sourceId": "SRC009",
+      "order": 9,
       "kind": "File",
       "label": "docs/Entwicklungsumgebung.md",
       "location": "Repository",
@@ -122,51 +204,9 @@
       "lastModified": "N/A",
       "redirectChain": [],
       "rawSha256": "N/A",
-      "normalizedSha256": "120f7944cfda271d1ae211d88f0b80e8cf2783d0bd3b3f766a4acb8a3dafe803",
+      "normalizedSha256": "eca20d639c69a438ca0cff617a345820406a62239b3827853636969c935dead8",
       "gitBlob": "N/A",
-      "proofBoundary": "Current local file; normalized hash checked by both validators; uncommitted content has no published Git proof"
-    },
-    {
-      "sourceId": "SRC006",
-      "order": 6,
-      "kind": "File",
-      "label": "docs/intake-governance.md",
-      "location": "Repository",
-      "path": "docs/intake-governance.md",
-      "requestedUrl": "N/A",
-      "finalUrl": "N/A",
-      "retrievedAt": "N/A",
-      "httpStatus": "N/A",
-      "contentType": "N/A",
-      "contentLength": "N/A",
-      "etag": "N/A",
-      "lastModified": "N/A",
-      "redirectChain": [],
-      "rawSha256": "N/A",
-      "normalizedSha256": "712be6a8d92287ca679c73a23bcd953aac25cba9dba8e22e966fc82bb6ed90b8",
-      "gitBlob": "N/A",
-      "proofBoundary": "Current local file; normalized hash checked by both validators; uncommitted content has no published Git proof"
-    },
-    {
-      "sourceId": "SRC007",
-      "order": 7,
-      "kind": "File",
-      "label": "docs/planning/lh00-authoring-decisions.md",
-      "location": "Repository",
-      "path": "docs/planning/lh00-authoring-decisions.md",
-      "requestedUrl": "N/A",
-      "finalUrl": "N/A",
-      "retrievedAt": "N/A",
-      "httpStatus": "N/A",
-      "contentType": "N/A",
-      "contentLength": "N/A",
-      "etag": "N/A",
-      "lastModified": "N/A",
-      "redirectChain": [],
-      "rawSha256": "N/A",
-      "normalizedSha256": "b61566852a65362b9b53bdef8d4f820569213f18b9f9f5d1083ad8fdcfbe6606",
-      "gitBlob": "N/A",
-      "proofBoundary": "Current local file; normalized hash checked by both validators; uncommitted content has no published Git proof"
+      "proofBoundary": "Repository file with normalized hash; predecessor archive is byte-identical; uncommitted candidate has no published Git proof"
     }
   ],
   "profile": "show-commandtui400-de-en",
@@ -177,53 +217,67 @@
       "status": "Answered",
       "question": "What does the accepted plan require for IAD001?",
       "answer": "Genau LH-00 samt minimalem Profil erzeugen; LH-01 bis LH-07 nur als Issue-Entwürfe. / Create only LH-00 and a minimal profile; prepare LH-01 through LH-07 only as issue drafts.",
-      "evidence": "Owner-approved plan and docs/planning/lh00-authoring-decisions.md; SRC007."
+      "evidence": "Historical owner-approved authoring decision: specs/intake-authoring-archive/lh-00/5f9ae8e8-3e8d-4b7d-a5d7-a21b3d45f519/docs/planning/lh00-authoring-decisions.md; original receipt preserved in the same archive. SRC007 belonged to that predecessor receipt, not this successor."
     },
     {
       "id": "IAD002",
       "status": "Answered",
       "question": "What does the accepted plan require for IAD002?",
       "answer": "Lokal ohne Commit, Push, PR, Merge oder Issue-Änderung arbeiten. / Work locally without commits, pushes, PRs, merges or issue mutations.",
-      "evidence": "Owner-approved plan and docs/planning/lh00-authoring-decisions.md; SRC007."
+      "evidence": "Historical owner-approved authoring decision: specs/intake-authoring-archive/lh-00/5f9ae8e8-3e8d-4b7d-a5d7-a21b3d45f519/docs/planning/lh00-authoring-decisions.md; original receipt preserved in the same archive. SRC007 belonged to that predecessor receipt, not this successor."
     },
     {
       "id": "IAD003",
       "status": "Answered",
       "question": "What does the accepted plan require for IAD003?",
       "answer": "Deutsch-Ausnahme aufheben: DE zuerst/EN danach, ungefähr CEFR B2; lokale Governance angleichen, zentrale Änderung nur vorschlagen. / Remove the German-only exception: DE first/EN second, about CEFR B2; align local governance and only propose the central change.",
-      "evidence": "Owner-approved plan and docs/planning/lh00-authoring-decisions.md; SRC007."
+      "evidence": "Historical owner-approved authoring decision: specs/intake-authoring-archive/lh-00/5f9ae8e8-3e8d-4b7d-a5d7-a21b3d45f519/docs/planning/lh00-authoring-decisions.md; original receipt preserved in the same archive. SRC007 belonged to that predecessor receipt, not this successor."
     },
     {
       "id": "IAD004",
       "status": "Answered",
       "question": "What does the accepted plan require for IAD004?",
       "answer": "Reguläres installiertes Authoring 0.3.5 verwenden. Der frühere 0.3.4-Backportplan ist durch das stabile Release überholt. / Use installed Authoring 0.3.5; the stable release supersedes the earlier 0.3.4 backport plan.",
-      "evidence": "Owner-approved plan and docs/planning/lh00-authoring-decisions.md; SRC007."
+      "evidence": "Historical owner-approved authoring decision: specs/intake-authoring-archive/lh-00/5f9ae8e8-3e8d-4b7d-a5d7-a21b3d45f519/docs/planning/lh00-authoring-decisions.md; original receipt preserved in the same archive. SRC007 belonged to that predecessor receipt, not this successor."
     },
     {
       "id": "IAD005",
       "status": "Answered",
       "question": "What does the accepted plan require for IAD005?",
       "answer": "Alle acht Issue-Entwürfe zweisprachig mit Quellen, erhaltenen IDs/Abhängigkeiten und Governance-Kriterien vorbereiten; Remote-Stand ehrlich kennzeichnen. / Prepare eight bilingual drafts with sources, preserved IDs/dependencies and governance criteria; label remote status honestly.",
-      "evidence": "Owner-approved plan and docs/planning/lh00-authoring-decisions.md; SRC007."
+      "evidence": "Historical owner-approved authoring decision: specs/intake-authoring-archive/lh-00/5f9ae8e8-3e8d-4b7d-a5d7-a21b3d45f519/docs/planning/lh00-authoring-decisions.md; original receipt preserved in the same archive. SRC007 belonged to that predecessor receipt, not this successor."
     },
     {
       "id": "IAD006",
       "status": "Answered",
       "question": "What does the accepted plan require for IAD006?",
       "answer": "Ein zweisprachiges Dokument intakes/LH-00.md und ein Receipt; Abschluss ReadyForReview nach beiden Validatoren, separates Review folgt. / One bilingual LH-00 file and one receipt; finish ReadyForReview after both validators, with review separate.",
-      "evidence": "Owner-approved plan and docs/planning/lh00-authoring-decisions.md; SRC007."
+      "evidence": "Historical owner-approved authoring decision: specs/intake-authoring-archive/lh-00/5f9ae8e8-3e8d-4b7d-a5d7-a21b3d45f519/docs/planning/lh00-authoring-decisions.md; original receipt preserved in the same archive. SRC007 belonged to that predecessor receipt, not this successor."
     },
     {
       "id": "IAD007",
       "status": "Answered",
       "question": "What does the accepted plan require for IAD007?",
       "answer": "Vollständige Serienverwaltung, Fachtextübersetzung und PowerShell-Prozessabnahme als spätere LH-00-Anforderungen behandeln; keine Produktentscheidung vorwegnehmen. / Treat full series management, domain translation and PowerShell process acceptance as later LH-00 requirements; preselect no product technology.",
-      "evidence": "Owner-approved plan and docs/planning/lh00-authoring-decisions.md; SRC007."
+      "evidence": "Historical owner-approved authoring decision: specs/intake-authoring-archive/lh-00/5f9ae8e8-3e8d-4b7d-a5d7-a21b3d45f519/docs/planning/lh00-authoring-decisions.md; original receipt preserved in the same archive. SRC007 belonged to that predecessor receipt, not this successor."
+    },
+    {
+      "id": "IAD008",
+      "status": "Answered",
+      "question": "Which links must FR-00-004 require?",
+      "answer": "Issues und Lastenhefte verlinken (empfohlen)",
+      "evidence": "docs/planning/lh00-repair-decisions.md"
+    },
+    {
+      "id": "IAD009",
+      "status": "Answered",
+      "question": "Which reviewer must AC-00-007 require?",
+      "answer": "Anderer Prüfer; erneutes Review durch separaten Agenten (empfohlen)",
+      "evidence": "docs/planning/lh00-repair-decisions.md"
     }
   ],
   "openDecisionIds": [],
-  "questionCount": 0,
+  "questionCount": 2,
   "agentSurface": {
     "specifyCanonicalId": "speckit.specify",
     "specifyInvocation": "$speckit-specify",
@@ -231,22 +285,22 @@
     "autonomousInvocation": "$speckit-autonomous"
   },
   "deliveryAuthority": "LocalImplementation",
-  "authorityEvidence": "Current authority is local authoring only: no commits, remote writes, review or downstream execution. LocalImplementation is only the preset default for a later explicitly requested Autonomous run.",
+  "authorityEvidence": "Current explicit repair/re-review authority plus continuing MergeAndSync delivery with admin bypass. LocalImplementation remains the default ONLY for a separately authorized future Autonomous feature run; no feature run is authorized.",
   "promptState": "Enabled",
-  "provenanceMode": "New",
+  "provenanceMode": "Supersession",
   "supersedes": {
-    "receiptPath": "N/A",
-    "targetNormalizedSha256": "N/A",
-    "archiveTargetPath": "N/A",
-    "archiveReceiptPath": "N/A"
+    "receiptPath": "specs/intake-authoring-archive/lh-00/5f9ae8e8-3e8d-4b7d-a5d7-a21b3d45f519/specs/intake-authoring-receipts/lh-00.json",
+    "targetNormalizedSha256": "b79cc8445dff76053eac428e1d572551a0723619bd8a92ecbd9cf48538d8fd3c",
+    "archiveTargetPath": "specs/intake-authoring-archive/lh-00/5f9ae8e8-3e8d-4b7d-a5d7-a21b3d45f519/intakes/LH-00.md",
+    "archiveReceiptPath": "specs/intake-authoring-archive/lh-00/5f9ae8e8-3e8d-4b7d-a5d7-a21b3d45f519/specs/intake-authoring-receipts/lh-00.json"
   },
   "legacyAdoption": {
     "evidenceType": "N/A",
     "priorTargetNormalizedSha256": "N/A",
     "priorGitBlob": "N/A"
   },
-  "updateAuthorized": false,
-  "updateAuthorityEvidence": "N/A",
+  "updateAuthorized": true,
+  "updateAuthorityEvidence": "Explicit $speckit-intake-repair intakes/LH-00.md and owner answers IAD008/IAD009 in docs/planning/lh00-repair-decisions.md",
   "series": {
     "seriesId": "N/A",
     "manifestPath": "N/A",
@@ -262,7 +316,7 @@
     },
     {
       "path": "AGENTS.md",
-      "normalizedSha256": "0fe048a58c73778c12e14c6c3ef96cbff8d3562445ba860dffa4ab86369d3644"
+      "normalizedSha256": "290a41ac597937433fbfb0ef689a40027f078c394efeb5e7f82d5356150b7083"
     },
     {
       "path": ".specify/memory/intake-authoring-policy.json",
@@ -270,7 +324,17 @@
     },
     {
       "path": ".specify/memory/intake-authoring-profile.md",
-      "normalizedSha256": "7c26aa55eca12709959fa54ddf6980b7207a7ee3b706d70ae7c1235f7dd37966"
+      "normalizedSha256": "63fdde712c216d70c9358becd1bde5fe2b62acebc04ffd0b8e2e12dbed4cdbb2"
     }
-  ]
+  ],
+  "repairEvidence": {
+    "findings": [
+      "IR001",
+      "IR002"
+    ],
+    "decisionsPath": "docs/planning/lh00-repair-decisions.md",
+    "operationPath": "specs/intake-authoring-operations/857d702a-5c8f-4fac-b22a-4f1f787d6273/operation.json",
+    "previousReviewId": "f0741205-05b7-42c5-8680-451c1483627d",
+    "previousReviewArchive": "specs/intake-review-archive/f0741205-05b7-42c5-8680-451c1483627d"
+  }
 }

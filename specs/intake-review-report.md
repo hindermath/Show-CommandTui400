@@ -1,170 +1,128 @@
-# LH-00 Intake-Review / LH-00 intake review
+# LH-00-Review / LH-00 review
 
-## Ergebnis und Identität / Outcome and identity
+## Ergebnis und Umfang / Outcome and scope
 
-**Ergebnis / Outcome: NeedsRemediation.** Ein Ziel, null Worker; 0 Critical,
-0 High, 2 Medium, 0 Low. Keine akzeptierten Risiken, keine offenen Fragen.
-Die bekannten Qualitätsanforderungen sind nachzubessern; es fehlt keine neue
-Produktentscheidung für die Erstellung dieses Reviewberichts.
+**Ready**. Vollständiges erneutes Review im Modus **Single**: ein Ziel, null
+Worker. Offene Befunde: Critical 0, High 0, Medium 0, Low 0. Keine akzeptierten
+Risiken oder offenen Reviewfragen. IR001 und IR002 sind behoben; der während
+dieses Durchgangs erkannte Quellenstatusbefund IR003 ist ebenfalls behoben.
+Alle drei bleiben im [Ergebnis](intake-review-result.json) nachvollziehbar.
 
-One target, zero workers; two Medium findings, no Critical/High/Low findings.
-No accepted risks or open questions. Known quality requirements need correction;
-no new product decision is needed to produce this review report.
+**Ready**. Complete re-review in **Single** mode: one target, zero workers.
+Open findings: Critical 0, High 0, Medium 0, Low 0. No accepted risks or open
+review questions. IR001 and IR002 are resolved. Source-status finding IR003,
+identified during this pass, is also resolved. All three remain in the result.
 
-- Review-ID: `f0741205-05b7-42c5-8680-451c1483627d`.
-- Zeitpunkt / Reviewed at: `2026-09-28T20:55:20Z`.
-- Modus / Mode: `Single`, Policy: `generic-markdown` plus Projektprofil / project profile `show-commandtui400-de-en`.
-- Geprüfter Stand / Reviewed commit: `2078f29ecfcb4ae3bf6487aee0ca6eaa8d0d7a2f`.
-- Ziel / Target: [intakes/LH-00.md](../intakes/LH-00.md).
-- Normalisierter SHA-256 / Normalized SHA-256: `b79cc8445dff76053eac428e1d572551a0723619bd8a92ecbd9cf48538d8fd3c`.
-- [Anfrage / Request](intake-review-request.json) und [maschinelles Ergebnis / machine result](intake-review-result.json).
-- Vorgänger / Supersedes: `N/A` — erstes Review / first review.
+Prüfer: **separater automatisierter Codex-Agent**, verschieden vom Autor der
+Reparatur, ausdrücklich beauftragt durch IAD009. Keine menschliche Abnahme.
+Ziel und Quellen wurden ausschließlich gelesen. Der Prüfer schrieb nur
+Bericht und Ergebnis im isolierten Kandidaten.
 
-Das Review erfolgte nach [PR #13](https://github.com/hindermath/Show-CommandTui400/pull/13)
-und sauberer Synchronisation von main. Der Owner hat genau LH-00 benannt.
-Verwandte Issues und Dokumente sind Kontext, keine weiteren Reviewziele.
-Die installierte allgemeine Review-Policyvorlage und Checkliste wurden zusammen
-mit den verbindlichen Projektregeln verwendet. Es gibt keine aktivierte
-projektspezifische Review-Policydatei und keine Requirements-Collection-Konfiguration;
-beides wird hier nicht als installiert behauptet. Das explizite Review ist
-unabhängig davon beauftragt.
+Reviewer: **a separate automated Codex agent**, distinct from the repair author,
+explicitly appointed by IAD009. No human acceptance is claimed. Target and
+sources were read-only; reviewer wrote only the report and machine result.
 
-Review followed PR #13 and a clean main sync. The owner named only LH-00.
-Related issues and documents are context, not extra review targets. The installed
-generic policy template and checklist were applied with project rules. No active
-project review-policy file or requirements-collection configuration exists;
-this report claims neither. The owner explicitly requested this review.
+## Identität und Bindung / Identity and binding
 
-Prüfer ist der ausführende Codex-Agent in einem gesonderten Reviewdurchgang.
-Er war zuvor auch am Authoring beteiligt. Dies ist keine unabhängige menschliche
-Abnahme und kein Nachweis für die spätere Prozessanforderung AC-00-007.
-
-The executing Codex agent performed a separate review pass after authoring.
-This is not independent human acceptance or proof of later process criterion
-AC-00-007.
-
-## Befunde / Findings
-
-| ID | Schwere / Severity | Kategorie / Category | Status / Disposition | Owner |
-|---|---|---|---|---|
-| IR001 | Medium | Zielgruppe und Verständlichkeit / Audience and readability | Offen, nachbessern / Open, remediate | Thorsten Hindermann |
-| IR002 | Medium | Normative Sprachparität / Normative language parity | Offen, abgleichen / Open, align | Thorsten Hindermann |
-
-### IR001 — Begriffe erklären / Explain terms
-
-LH-00 setzt in Zeilen 13–30 keine Spec-Kit-Kenntnisse voraus und verlangt in
-FR-00-005 sowie AC-00-004 Erklärungen bei erster Verwendung. Dennoch bleiben
-„Integrationen“ und „Presets“ (45–46), „Collection-Rollen“ und „Serienmanifest“
-(127/140) sowie ASVS, SBOM, VEX und AI-SBOM (151/159) unerklärt. Auch das verlinkte
-Profil erklärt die zentralen Collection-Begriffe nicht. Einsteiger können damit
-Werkzeugpaket, Projektprofil und Anforderungssammlung nicht zuverlässig
-unterscheiden oder die Sicherheitsanwendbarkeit nachvollziehen.
-
-The intake requires no prior Spec Kit experience and promises first-use
-explanations, but integrations/presets, collection roles/series manifest and
-ASVS/SBOM/VEX/AI-SBOM remain unexplained at the cited lines. The linked profile
-does not explain the central collection terms either. Beginners cannot reliably
-distinguish tooling packages, project profiles and requirement collections or
-interpret security applicability.
-
-Korrektur: passende Erklärungen bei der ersten Verwendung in beiden Sprachen
-ergänzen, ohne Anforderungen auszuweiten. Anschließend vollständiger Sprach- und
-Reviewdurchgang. Re-Evaluation bei dieser Korrektur oder geändertem Zielgruppen-
-beziehungsweise Sprachvertrag.
-
-Remediation: explain relevant terms in both languages at first use without
-expanding requirements, then repeat the language check and full review.
-Reevaluate after this correction or a changed audience/language contract.
-
-### IR002 — Normative Bedeutung angleichen / Align normative meaning
-
-FR-00-004 nennt deutsch nur das Verlinken von Issue-IDs (Zeile 120), englisch
-zusätzlich Lastenhefte (133). AC-00-007 verlangt deutsch ein „unabhängiges Review“
-(258), englisch nur ein „separate review“ (268). Eine zeitlich getrennte Prüfung
-belegt keine Unabhängigkeit der prüfenden Rolle. Beide Abweichungen betreffen
-prüfbare Pflichten und widersprechen der geforderten Bedeutungsparität. Die
-Abweichungen stehen auch in der genehmigten Issue-01-Quelle; identische IDs
-reichen als Übersetzungsnachweis nicht aus.
-
-FR-00-004 requires issue-ID links in German but additionally intake links in
-English. AC-00-007 requires an independent review in German and only a separate
-review in English. A separate review pass does not establish reviewer independence.
-These differences change verifiable obligations and violate meaning parity.
-Both also occur in the approved issue-01 source; matching IDs are insufficient.
-
-Korrektur: die gewünschte Verlinkung und Review-Unabhängigkeit ausdrücklich
-bestätigen und in beiden Sprachen gleich formulieren. Betroffene Quellen oder
-Issues nur mit passender Änderungsautorität nachführen; Receipt-Historie erhalten.
-Re-Evaluation nach autorisiertem Abgleich und vollständigem erneutem Review.
-
-Remediation: explicitly confirm the intended linking and reviewer-independence
-obligations and express the same meaning in both languages. Update affected
-sources/issues only with appropriate authority and preserve receipt lineage.
-Reevaluate after authorized alignment and a complete new review.
-
-## Prüfabdeckung / Coverage
-
-| Bereich / Dimension | Bewertung und Nachweis / Assessment and evidence |
+| Merkmal / Item | Wert / Value |
 |---|---|
-| Identität, Zielgruppe, Ziel / Identity, audience, goal | LH-00, Issue #1, Owner, Datum und Zweck klar; Begriffe siehe IR001. / Identity, owner, date and purpose clear; terminology covered by IR001. |
-| Vorwissen und Lesbarkeit / Prior knowledge and readability | Vorwissen ausdrücklich begrenzt; Erklärungen unvollständig, IR001. / Prior knowledge bounded explicitly; explanations incomplete, IR001. |
-| Umfang und Nicht-Ziele / Scope and non-goals | Prozessanforderungen und lokale Authoring-Leistung getrennt; keine Produkttechnologie festgelegt. / Process requirements separated from authoring delivery; no product stack selected. |
-| Anforderungen und Abnahme / Requirements and acceptance | 12 FR und 9 AC mit identischen IDs in DE/EN, E01–E07 decken sie ab; spätere Prozessprüfungen offen. Bedeutungsunterschiede: IR002. / Matching IDs and evidence mapping; later process checks remain open, meaning differences in IR002. |
-| Reihenfolge und Abhängigkeiten / Order and dependencies | LH-00 ohne Vorgänger, Lastenheft-Plan ist maßgeblich; kein Serien-/Workerreview. / No predecessor; intake order is authoritative; no series or worker review. |
-| Text und Barrierefreiheit / Text and accessibility | Status und Ablauf als Text plus Mermaid-Alternative; keine alleinige Farbcodierung. Keine assistiven Gerätetests ausgeführt. / Text status and flow plus Mermaid alternative; no color-only meaning; no assistive-device tests performed. |
-| Sicherheit, Datenschutz, Lieferkette / Security, privacy, supply chain | SSDF/CWE anwendbar, weitere Standards mit N/A/Open; keine Secrets oder unnötigen personenbezogenen Daten gefunden. Keine Produktsicherheitsabnahme. / Applicability recorded, no detected secrets or unnecessary personal data; no product security acceptance. |
-| Plattformen und Nachweise / Platforms and evidence | Beide Macs, Windows 11 und WSL2 getrennt gefordert; fehlende Laufzeitnachweise ehrlich offen. / Four environments distinguished, missing runtime evidence remains open. |
-| Quellen und Prompts / Sources and prompts | Lokale Links vorhanden, Receipt gebunden, Specify/Autonomous zeigen dasselbe Ziel; verlangen gesonderten Auftrag und gültiges Review. IR002 betrifft Sprachpflichten. / Local links and hashes valid; prompts bind the same target and require separate authority plus valid review; IR002 affects normative parity. |
-| Autorität, Risiken und Folgearbeit / Authority, risks, follow-ups | Aktueller Auftrag erweitert frühere lokale Grenze nur um Lieferung und Review; keine Risikoannahme. Übersetzung, zentrale Übernahme und Prozessnachweise bleiben spätere Arbeit. / Current authority adds delivery/review, not risk acceptance; translations, central adoption and process proof remain later work. |
+| Review-ID | `c22c0fcd-610a-4a77-8f8d-59e504efc113` |
+| Zeitpunkt / Time | `2026-09-28T21:30:05Z` |
+| Ziel / Target | [intakes/LH-00.md](../intakes/LH-00.md) |
+| Ziel-SHA-256 / Target SHA-256 | `680baafd7534db9386f91a43cdbe3dbf260d6c0620c9f506c2be59ec3c826a65` |
+| Intake-ID | `2296d99d-f099-4c4d-88f7-789581693eb0` |
+| Receipt-ID | `a627d004-b189-43df-b061-27e30a0e6a37` |
+| Request | [intake-review-request.json](intake-review-request.json) |
+| Request-SHA-256 | `9bf89c0b2d26ef71a81bbe371bea47ae83e4faadc57f5c2797bf7efed318cac8` |
+| Basiscommit / Base commit | `d3d2f206bb561e2badb8e806eab213bb143510db` |
+| Git-Blob des Ziels / Target Git blob | `N/A`: isolierter Kandidat ohne Git-Metadaten / isolated candidate without Git metadata |
 
-## Quellenfrische und technische Validierung / Freshness and technical validation
+Normalisierung: eine anfängliche UTF-8-BOM entfernen, strikt UTF-8 lesen,
+CRLF und CR in LF umwandeln; sonst keine Inhaltsänderung. Dieses Ergebnis
+ersetzt `f0741205-05b7-42c5-8680-451c1483627d` ausdrücklich. Dessen Request,
+Ergebnis und Bericht bleiben [bytegenau archiviert](intake-review-archive/f0741205-05b7-42c5-8680-451c1483627d/intake-review-result.json).
+Aktuelle Hashes binden Vorgänger, Policy, Profil, Receipt und Quellen.
+Der veränderliche Operation-Status ist kein abgeschlossener Liefernachweis.
 
-Das Authoring-Receipt bleibt an seinen früheren öffentlichen Snapshot und
-unveränderte Dateiquellen gebunden. Die nun veröffentlichten Issue-Texte sind
-über den [Publikationsnachweis](../docs/issue-publication.json) separat vergleichbar;
-das alte URL-Hashfeld behauptet keine heutige Remote-Frische. Ziel und gebundene
-Quellen bleiben unverändert. Hashbildung: ein optionales UTF-8-BOM entfernen,
-CRLF/CR nach LF umwandeln; keine weiteren Zeichen oder Leerzeichen ändern.
+Normalization removes one initial UTF-8 BOM, decodes strict UTF-8 and converts
+CRLF/CR to LF without other changes. This review explicitly supersedes the
+prior review above. Its request, result and report remain byte-identical in
+the archive. Current hashes bind predecessor evidence, policy, profile,
+receipt and sources. Mutable operation status is not completed delivery proof.
 
-The authoring receipt retains its earlier public snapshot and unchanged file
-sources. Published issue text has separate comparable publication evidence; the
-old URL hash does not claim current remote freshness. Target and bound sources
-remain unchanged. Hashing removes one optional UTF-8 BOM and converts CRLF/CR to
-LF, changing no other characters or whitespace.
+## Vollständige Prüfabdeckung / Complete review coverage
 
-Beide installierten Review-Validatoren und beide Authoring-Validatoren
-bestehen mit Exit 0. Ein Validator-PASS bestätigt die
-Struktur und Hashbindung des Befundes `NeedsRemediation`, keine fachliche
-Freigabe. Der unveränderte Intake enthält historisch noch „Review nicht
-durchgeführt“; dieses getrennte Ergebnis ist der aktuelle Reviewnachweis.
+| Dimension | Ergebnis und Grenze / Result and boundary |
+|---|---|
+| Identität, Zielgruppe, Ziel, Umfang / Identity, audience, goal, scope | Klar; Grundwissen in Dateien, Terminal und PowerShell; keine Spec-Kit-Vorkenntnisse. Produktimplementierung ausgeschlossen. / Explicit basic knowledge; no prior Spec Kit experience; product implementation excluded. |
+| Sprache und Begriffe / Language and terms | DE zuerst/EN danach, gleiche normative Bedeutung und erklärte Begriffe. B2 qualitativ geprüft, keine Sprachzertifizierung. / Matching normative meaning and explained terms; qualitative B2 assessment only. |
+| Anforderungen und Abnahme / Requirements and acceptance | 12 FR, 9 AC je in DE/EN; E01–E07 decken alle IDs ab. / All IDs mapped to evidence cases. |
+| Quellen und Archiv / Sources and archive | Neun Quellen, vier Kontext-Hashes geprüft; 15 Vorgängerdateien bytegleich zur Basis. / Nine sources, four context hashes and 15 byte-identical predecessors checked. |
+| Abhängigkeiten / Dependencies | LH-00 ohne Vorgänger; verbindlicher Plan erhalten, spätere Intakes außerhalb dieses Reviews. / No predecessor; binding order preserved, later intakes outside this review. |
+| Security, Datenschutz, Lieferkette / Security, privacy, supply chain | SSDF/CWE anwendbar; begründetes N/A und offene Produktnachweise getrennt. Keine Secrets oder unnötigen Personendaten im Ziel gefunden. / Applicability, justified exclusions and open evidence separated; no target secrets or unnecessary personal data found. |
+| A11Y und Leserpfad / Accessibility and reader path | Status und Entscheidungen in Text, Mermaid mit gleichwertiger Textalternative; assistive Feldtests offen. / Text-first states and decisions; equivalent diagram alternative; assistive field tests open. |
+| Plattform und Technik / Platform and technology | Vier spätere Prozessumgebungen getrennt; fehlende Ergebnisse offen; keine Produkttechnologie vorweggenommen. / Four distinct future environments, missing results open, product technology undecided. |
+| Freigaben, Risiken, Restarbeiten / Authority, risks, follow-ups | Authoring, unabhängiges Review und Umsetzung getrennt; Owner und Fristen dokumentiert. / Separate authoring, independent review and execution; follow-up owners and deadlines recorded. |
+| Referenzen und Prompts / References and prompts | Lokale Pfade gültig; je ein Specify-/Autonomous-Prompt mit gleichem Intake, Receipt und Profil sowie neuer Autorität. / Valid local links; one prompt per command bound to identical inputs and requiring new authority. |
+| Collection, Serie, Campaign / Collection, series, campaign | N/A für diesen Single-Auftrag; Konfiguration und Seriennachweis sind spätere Anforderungen. / Outside Single scope; configuration and series proof remain future requirements. |
 
-Both installed review validators and both authoring validators pass with exit 0.
-A validator pass confirms structure and hashes of NeedsRemediation, not domain
-readiness. The unchanged intake still records the historical pre-review state;
-this separate result is current review evidence.
+## Behobene Befunde und Entscheidungen / Resolved findings and decisions
 
-## Entscheidungen und nächster Schritt / Decisions and next step
+| ID | Ursprünglicher Schweregrad / Original severity | Behebung / Resolution |
+|---|---|---|
+| IR001 | Medium | LH-00 und Profil erklären relevante Workflow- und Sicherheitsbegriffe in DE/EN. / Target and profile explain workflow and security terms in both languages. |
+| IR002 | Medium | FR-00-004 verlinkt Issues **und** Lastenhefte; AC-00-007 verlangt einen anderen Prüfer als den Autor. Beide Sprachfassungen und Issue-1-Grundlage stimmen überein. / Both languages and Issue 1 input require both link types and a reviewer distinct from the author. |
+| IR003 | Medium | Autor trennte historische Authoring-Aussagen von aktueller Reparatur/Veröffentlichung; Quellen und Kontext neu gebunden, alte Source-IDs eindeutig archiviert. Erneut geprüft. / Author separated historical authoring from current repair/publication, rebound sources/context and clarified archived source IDs; reviewer rechecked all changes. |
 
-Keine Risiken wurden akzeptiert. Kein Specify-, Autonomous- oder Produktlauf
-wurde gestartet. `NeedsRemediation` ist kein zulässiger Ready-Status. Der nächste
-fachliche Schritt ist eine ausdrücklich autorisierte Reparatur von IR001/IR002
-mit bestätigter Bedeutung der beiden normativen Stellen, Nachführung betroffener
-Quellen und vollständigem erneutem Review. Dieser Reviewauftrag nimmt sie nicht vor.
+[IAD008/IAD009](../docs/planning/lh00-repair-decisions.md) enthalten die beiden
+Owner-Antworten. Keine neue fachliche Entscheidung wurde erraten und kein
+Risiko vom Agenten akzeptiert. IR003 wurde vor Abschluss dieses Durchgangs
+behoben; ursprünglicher Kontext und Behebung bleiben im JSON erhalten.
 
-No risks were accepted and no Specify, Autonomous or product run was started.
-NeedsRemediation is not an accepted ready status. The next domain action is
-explicitly authorized repair of IR001/IR002, confirming the two normative clauses,
-updating affected sources and performing a complete new review. This review
-does not perform that repair.
+IAD008/IAD009 record the owner's two answers. No new domain decision was guessed
+and no agent accepted risk. IR003 was fixed before this pass completed; its
+original context and resolution remain in JSON.
 
-```text
-$speckit-intake-repair intakes/LH-00.md — IR001 und IR002 auf Basis von specs/intake-review-result.json; normative Bedeutung vorher bestätigen, Quellenbindung mit Historie erhalten und vollständig erneut reviewen.
+## Technische Prüfungen / Technical checks
+
+Beide Authoring-Receipt-Validatoren bestehen für neun Quellen. Unabhängige
+Hash-/Pfadprüfung, fünf gleiche Guidance-Dateien, zwei gleiche Constitutions,
+FR-/AC-Sprachpaare und Archivvergleich bestehen. `gitleaks dir` für `intakes/`
+meldete Exit 0. Jeder Nachweis gilt nur für seinen genannten Umfang.
+
+Both authoring-receipt validators pass for nine sources. Independent hash/path,
+five-file guidance parity, two-copy constitution parity, FR/AC language-pair
+and archive checks pass. `gitleaks dir` for `intakes/` returned exit 0. Each
+check proves only its stated scope.
+
+Review-Validatoren / Review validators: **PASS**, Bash und PowerShell jeweils Exit 0 / Bash and PowerShell both exit 0.
+
+```bash
+bash .specify/presets/intake-review-governance/scripts/validate-intake-review-result.sh --result specs/intake-review-result.json --repo .
+pwsh -NoProfile -File .specify/presets/intake-review-governance/scripts/validate-intake-review-result.ps1 -Result specs/intake-review-result.json -Repo .
 ```
 
-Dokumentationsentscheidung: UpdateRequired; Owner Thorsten; Leserpfad README →
-Reviewbericht → Befunde → autorisierte Reparatur. DE/EN in einer Datei,
-Distribution sourceOnly. Kein abgeschlossener Spec-Kit-Feature-Lauf.
+## Grenzen und nächste Aktion / Boundaries and next action
 
-Documentation decision: UpdateRequired; owner Thorsten; reader path README →
-review report → findings → authorized repair. Both languages share one file;
-distribution is sourceOnly. No completed Spec Kit feature run is claimed.
+`Ready` bewertet die Reife dieses Lastenhefts. Vollständige Prozessabnahme,
+Plattform-/Gerätenachweise, Bestandsübersetzungen, Collection/Serie und zentrale
+Registerübernahme bleiben offen gemäß LH-00. Der Autor führt Remote-Veröffentlichung
+und Merge-/Sync-Nachweise separat; dieses Review enthält keine Remote-Aktion.
+Ein Admin-Bypass ersetzt keine fachliche Prüfung.
+
+Ready assesses this intake's readiness. Full process acceptance, platform/device
+evidence, existing-document translations, collection/series setup and central
+registry adoption remain open under LH-00. The author records publication and
+merge/sync separately; this review performs no remote action. Admin bypass does
+not replace domain review.
+
+Neu bewerten bei Änderung von Ziel, Quellen, Request, Policy/Profil,
+Owner-Entscheidungen, normativer Sprache, Plattform, Sicherheitsanwendbarkeit
+oder Scope. **Einzige nächste fachliche Aktion nach eigenem ausdrücklichem
+Auftrag:** den Specify-Folgeprompt in [LH-00](../intakes/LH-00.md) ausführen.
+Dieser Prüflauf führt weder Specify noch Autonomous aus.
+
+Re-review after target, source, request, policy/profile, owner-decision,
+normative-language, platform, security-applicability or scope changes.
+**Sole next domain action after a separate explicit request:** run the Specify
+follow-up prompt in LH-00. This review runs neither Specify nor Autonomous.
