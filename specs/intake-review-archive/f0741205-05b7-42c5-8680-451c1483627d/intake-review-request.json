@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "reviewId": "c22c0fcd-610a-4a77-8f8d-59e504efc113",
+  "reviewId": "f0741205-05b7-42c5-8680-451c1483627d",
   "mode": "Single",
   "policy": "generic-markdown",
   "targets": [
@@ -20,13 +20,10 @@
     "operatorExceptions": []
   },
   "authority": {
-    "request": "Owner explicitly requested intake repair, then a complete re-review by a separate agent",
+    "request": "Owner: after issue publication and MergeAndSync, run $speckit-intake-review intakes/LH-00.md",
     "targetMutationAllowed": false,
     "implementationAllowed": false
   },
   "projectProfile": "show-commandtui400-de-en",
-  "evidenceDelivery": "MergeAndSync with owner-authorized admin bypass; no bypass of intake findings",
-  "priorReviewId": "f0741205-05b7-42c5-8680-451c1483627d",
-  "priorReviewArchive": "specs/intake-review-archive/f0741205-05b7-42c5-8680-451c1483627d",
-  "targetHash": "680baafd7534db9386f91a43cdbe3dbf260d6c0620c9f506c2be59ec3c826a65"
+  "evidenceDelivery": "MergeAndSync with owner-authorized admin bypass; no bypass of intake findings"
 }

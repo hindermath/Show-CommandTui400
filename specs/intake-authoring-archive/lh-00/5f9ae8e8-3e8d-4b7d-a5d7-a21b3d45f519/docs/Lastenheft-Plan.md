@@ -26,18 +26,17 @@ and a drafting request. The issues exist; the minimal local authoring profile
 is configured, but full process acceptance belongs to LH-00. Issue drafts are
 not active intakes. The table above remains the sole binding dependency order.
 
-## Aktueller Lastenheft-Stand / Current intake state
+## Lokaler Authoring-Stand / Local authoring state
 
-Genau ein aktives Lastenheft: [LH-00](../intakes/LH-00.md), mit
-[Receipt](../specs/intake-authoring-receipts/lh-00.json). Authoring und Review
-haben getrennte Nachweise. Den aktuellen Reviewstatus und nächste Schritte
-nennt der [Reviewbericht](../specs/intake-review-report.md). LH-01 bis LH-07
-sind veröffentlichte Issues; ihre ursprünglichen [Entwürfe](issue-drafts/README.md)
-bleiben historische Quellen. Eine Serien- oder Implementierungsfreigabe
-entsteht durch Erstellung, Reparatur oder Review allein nicht.
+Genau ein lokales Lastenheft: [LH-00](../intakes/LH-00.md), mit
+[Receipt](../specs/intake-authoring-receipts/lh-00.json). Authoring-Status:
+`ReadyForReview`; gesondertes Review noch nicht ausgeführt. Keine Serienfreigabe,
+kein `Eligible`-Nachweis und keine Implementierungsfreigabe. LH-01 bis LH-07
+liegen nur als [Issue-Entwürfe](issue-drafts/README.md) vor. Nächster fachlicher
+Schritt: getrenntes Intake-Review von LH-00 nach ausdrücklichem Auftrag.
 
-Exactly one active intake exists: LH-00 with its linked receipt. Authoring and
-review have separate evidence. The linked review report states current outcome
-and next actions. LH-01 through LH-07 are published issues, with original drafts
-retained as historical sources. Creation, repair or review alone grants no
-series or implementation authority.
+Exactly one local intake exists: LH-00, with the linked receipt. Authoring
+status is ReadyForReview; separate review has not run. This is not series
+approval, an Eligible result or implementation permission. LH-01 through LH-07
+exist only as issue drafts. Next domain action: a separately requested intake
+review of LH-00.
