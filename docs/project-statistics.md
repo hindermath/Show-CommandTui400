@@ -17,6 +17,7 @@ No implementation phase values are available.*
 | Datum / Date | Arbeitspaket / Work package | Nachweis / Evidence |
 |---|---|---|
 | 2026-09-27 | Level-2-Einrichtung / Level-2 setup | Fünf Integrationen, 14 Presets, Registry, Hooks, CI und GitHub-Regeln; keine Produktimplementierung. / Five integrations, fourteen presets, registry, hooks, CI and repository rules; no product implementation. |
+| 2026-09-28 | Authoring-Patch v0.3.5 / Authoring patch v0.3.5 | Veröffentlichtes Paket, unveränderte übrige Presets, Quellenbindung und Agentenparität; keine Lastenheft- oder Produktarbeit. / Published package, preserved other presets, source binding and agent parity; no intake or product work. [Nachweis / Evidence](maintenance/intake-authoring-v035.md). |
 
 ## Gesamtstatistik / Overall Statistics
 

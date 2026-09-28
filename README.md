@@ -31,13 +31,15 @@ alle Kernfunktionen bleiben über die Tastatur erreichbar.
 
 Die fachlichen Einzelheiten stehen im [Bedienkonzept v0.2](docs/Bedienkonzept.md).
 
-## Was bereits eingerichtet ist
+## Spec-Kit und eingerichtete Projektumgebung
 
 - Eigenständiges **Level-2-Repository** mit gemeinsamer Agenten-Guidance,
   Wartungswerkzeugen, Hooks und Secret-Scanning.
 - **Spec Kit 0.12.8**, fünf Integrationen für Codex, Claude, Copilot,
   OpenCode und Antigravity sowie **14 versionsgebundene Governance-Presets**.
 - Werkzeuge für Lastenheft-Erstellung, Review und Abhängigkeitsverwaltung.
+- Intake Authoring Governance **v0.3.5** korrigiert die Prüfung von Receipts
+  der eigenen Generatorvorlage; [Update-Nachweis](docs/maintenance/intake-authoring-v035.md).
 - CI-Workflows für Setup-Validierung, PowerShell-Analyse und die
   mitgelieferte Home-Baseline-Wartungs-TUI.
 - Aktive Schutzregeln für `main` und automatische Copilot-Reviews.
