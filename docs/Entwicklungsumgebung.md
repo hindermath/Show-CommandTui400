@@ -1,6 +1,6 @@
 # Entwicklungsumgebung
 
-Stand: 27.09.2026. Owner: Thorsten Hindermann.
+Stand: 28.09.2026. Owner: Thorsten Hindermann.
 
 ## Einstieg und Grenzen
 
@@ -23,6 +23,12 @@ im Rahmen von LH-00 konkretisiert.
 
 ## Installierter Stand
 
+- Auf beiden macOS-Systemen von Thorsten ist **PowerShell 7.6.6.0** installiert
+  (Versionsangabe und Installationsstand laut Owner vom 28.09.2026).
+  Dies dokumentiert die vorhandene lokale Entwicklungsumgebung; eine globale
+  Aussage zur jeweils neuesten Veröffentlichung oder eine Mindestversion für
+  das spätere Produkt wird daraus nicht abgeleitet.
+
 - GitHub Spec Kit CLI und Integrations-Templates: **0.12.8**.
 - Integrationen: `agy`, `opencode`, `claude`, `copilot`, `codex`.
 - Projektprofil: `project-statistics-fourteen-governance-presets`.
@@ -34,10 +40,15 @@ im Rahmen von LH-00 konkretisiert.
 Die Integrationen wurden mit `specify init --here --force --integration <name>
 --script sh` initialisiert. Wiederholungen können Templates überschreiben;
 vor Updates lokale Governance sichern und den Diff prüfen. Die vorhandenen
-PowerShell-Wartungsskripte unterstützen Windows. Die initialisierten
-Spec-Kit-Basisskripte verwenden Bash; ein nativer PowerShell-Spec-Kit-Lauf ist
-damit noch nicht nachgewiesen und wird bei der Windows-Prozessabnahme in LH-00
-gesondert eingerichtet und geprüft.
+PowerShell-Wartungsskripte unterstützen Windows. PowerShell ist auch auf beiden
+macOS-Systemen bereits installiert; die Wahl der Bash-Basisskripte bedeutet
+nicht, dass PowerShell dort fehlt.
+
+Offen bleibt der durchgängige Spec-Kit-Ablauf mit PowerShell-Basisskripten.
+LH-00 klärt und prüft diesen Ablauf auf den vorhandenen macOS-Systemen sowie
+separat unter Windows. Die Installation von PowerShell und die erfolgreiche
+Windows-Setup-CI belegen diesen Ablauf noch nicht. Die vorhandene
+Bash-Initialisierung wird durch diese Dokumentationskorrektur nicht umgestellt.
 
 Die operative GSDB-Registry führt dieses Projekt explizit mit 14 Presets,
 `gsdbRequired: true`, offener Primärsprache und `mslStatus: unknown`.
@@ -48,6 +59,19 @@ Die kanonische Wartungsflotte führt `show-commandtui400` mit CI-Profil
 CI-Profil-/Pfadregister und den Workflowvertrag aus Level 0. Für dieses
 öffentliche Repository verlangt er keine private CI-Gate-Evidence; seine
 Secret-Prüfung bleibt aktiv.
+
+## Entwicklungs- und Testumgebungen
+
+| Umgebung | Rolle |
+|---|---|
+| Zwei macOS-Systeme | Entwicklung; PowerShell 7.6.6.0 laut Owner installiert |
+| Windows 11 | PowerShell-First-Umgebung für native Windows-Abläufe |
+| Ubuntu 24.04 unter WSL2 auf Windows 11 | Linux-Kompatibilitätstestumgebung |
+
+Windows 11 ist Thorstens PowerShell-First-Umgebung. Ubuntu 24.04 unter WSL2 dient als Linux-Kompatibilitätstestumgebung. Native Windows-/PowerShell-Tests und Ubuntu-/WSL2-Tests werden getrennt dokumentiert; konkrete PowerShell-Versionen unter Windows und WSL2 sowie Testergebnisse sind noch zu erfassen.
+Die Zuordnung folgt der Owner-Angabe vom 28.09.2026. WSL2-Ergebnisse werden
+als solche ausgewiesen; sie sind kein Nachweis eines Tests auf einem
+separaten nativen Linux-System.
 
 ## Verfügbare Intake-Kommandos
 
@@ -128,7 +152,9 @@ Pilotmesslauf oder eine Aussage über KI-Zeitersparnis folgt daraus nicht.
 Entscheidung: **UpdateRequired**. Owner: Thorsten Hindermann.
 Zielgruppen: Maintainer und Agenten; Leserpfad: README → diese Anleitung →
 Prüfungen → LH-00. Quellen: fachliches Bedienkonzept, zentrale Constitution,
-gepinntes Presetprofil und live ausgelesene GitHub-Einstellungen.
+gepinntes Presetprofil, live ausgelesene GitHub-Einstellungen und die
+Owner-Angaben vom 28.09.2026 zur PowerShell-Installation auf beiden Macs
+sowie zu Windows 11 und Ubuntu 24.04 unter WSL2.
 Dokumentklasse: Einrichtung/Betrieb; Sprachpartner: deutsch für Fachtexte,
 bilingual in gemeinsamer Guidance. Plattformnachweis: lokale macOS-Prüfungen
 und PR-CI; daraus folgt keine Produktabnahme auf Linux oder Windows.
