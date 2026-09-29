@@ -6,11 +6,15 @@ Profil 2 zählt Git-getrackte Texte einschließlich importierter Governance und
 Wartung. Es misst Lieferdichte, keine Produktqualität oder persönliche Arbeitszeit.
 Referenzen: 80 konservativ, vorläufig 100 Zeilen/Arbeitstag für Konzept/Scripting;
 bei C#/.NET auf 125 reevaluieren. Noch keine belastbaren Implementierungsphasen.
+Die neue LH-00-Prozessspezifikation wird über die Projektkonfiguration ausdrücklich
+als Dokumentation gezählt; die Dateinamen-Heuristik würde `spec.md` sonst als Test zählen.
 
 *Profile 2 includes tracked text, imported governance and maintenance tooling.
 It measures delivery density, not quality or personal time. Reference values
 are 80 and provisionally 100 lines/day; reevaluate to 125 if C#/.NET is chosen.
-No implementation phase values are available.*
+No implementation phase values are available. The project configuration explicitly
+classifies the new LH-00 process specification as documentation; the filename
+heuristic would otherwise count spec.md as a test.*
 
 ## Fortschreibungsprotokoll / Update Log
 
@@ -21,8 +25,8 @@ No implementation phase values are available.*
 | 2026-09-28 | Lokales LH-00-Authoring / Local LH-00 authoring | DE/EN-Governance, acht unveröffentlichte Issue-Entwürfe, minimales Profil und ein validierter Intake; kein Commit oder Feature-Lauf. / Bilingual governance, eight unpublished issue drafts, a minimal profile and one validated intake; no commit or feature run. [Prüfungen und Grenzen / Checks and limits](lh00-validation.md). |
 | 2026-09-28 | Veröffentlichung und Lieferung / Publication and delivery | Acht genehmigte Issues aktualisiert; Authoring-Artefakte für MergeAndSync geliefert. Review folgt getrennt. / Updated eight approved issues and delivered authoring artefacts through MergeAndSync; review follows separately. [Nachweis / Evidence](issue-publication.md). |
 | 2026-09-28 | Gesondertes LH-00-Review / Separate LH-00 review | Ein Ziel, NeedsRemediation mit zwei Medium-Befunden; Ziel unverändert, keine Reparatur oder Umsetzung. / One target, NeedsRemediation with two Medium findings; target unchanged, no repair or implementation. [Historisches Review / Historical review](../specs/intake-review-archive/f0741205-05b7-42c5-8680-451c1483627d/intake-review-report.md). |
-
 | 2026-09-28 | LH-00-Reparatur und unabhängiges erneutes Review / LH-00 repair and independent re-review | IR001–IR003 behoben, Ready ohne offene Befunde; neues Receipt mit Vorgängerarchiv, Issue 1 abgeglichen. Keine Prozess- oder Produktabnahme. / Resolved IR001–IR003, Ready with no open findings; successor receipt with predecessor archive, Issue 1 aligned. No process or product acceptance. [Nachweis / Evidence](lh00-repair-validation.md). |
+| 2026-09-29 | LH-00-Prozessspezifikation / LH-00 process specification | Zwölf Quellanforderungen und neun Abnahmekriterien in einer DE/EN-Spezifikation mit 16 bestandenen lokalen Qualitätschecks; gültiger Input unverändert, keine Implementierung. / Twelve source requirements and nine acceptance criteria mapped in a bilingual specification with sixteen passed local quality checks; valid input unchanged, no implementation. [Spezifikation / Specification](../specs/001-lh00-intake-process/spec.md), [Nachweise / Evidence](../specs/001-lh00-intake-process/checklists/governance.md). |
 
 ## Gesamtstatistik / Overall Statistics
 

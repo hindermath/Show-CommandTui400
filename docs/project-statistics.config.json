@@ -11,5 +11,10 @@
   },
   "phases": [],
   "excludedPaths": [],
-  "categoryOverrides": []
+  "categoryOverrides": [
+    {
+      "pattern": "specs/001-lh00-intake-process/spec.md",
+      "category": "Documentation"
+    }
+  ]
 }
