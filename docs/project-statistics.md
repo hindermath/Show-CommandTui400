@@ -6,11 +6,15 @@ Profil 2 zählt Git-getrackte Texte einschließlich importierter Governance und
 Wartung. Es misst Lieferdichte, keine Produktqualität oder persönliche Arbeitszeit.
 Referenzen: 80 konservativ, vorläufig 100 Zeilen/Arbeitstag für Konzept/Scripting;
 bei C#/.NET auf 125 reevaluieren. Noch keine belastbaren Implementierungsphasen.
+Die neue LH-00-Prozessspezifikation wird über die Projektkonfiguration ausdrücklich
+als Dokumentation gezählt; die Dateinamen-Heuristik würde `spec.md` sonst als Test zählen.
 
 *Profile 2 includes tracked text, imported governance and maintenance tooling.
 It measures delivery density, not quality or personal time. Reference values
 are 80 and provisionally 100 lines/day; reevaluate to 125 if C#/.NET is chosen.
-No implementation phase values are available.*
+No implementation phase values are available. The project configuration explicitly
+classifies the new LH-00 process specification as documentation; the filename
+heuristic would otherwise count spec.md as a test.*
 
 ## Fortschreibungsprotokoll / Update Log
 
@@ -21,8 +25,8 @@ No implementation phase values are available.*
 | 2026-09-28 | Lokales LH-00-Authoring / Local LH-00 authoring | DE/EN-Governance, acht unveröffentlichte Issue-Entwürfe, minimales Profil und ein validierter Intake; kein Commit oder Feature-Lauf. / Bilingual governance, eight unpublished issue drafts, a minimal profile and one validated intake; no commit or feature run. [Prüfungen und Grenzen / Checks and limits](lh00-validation.md). |
 | 2026-09-28 | Veröffentlichung und Lieferung / Publication and delivery | Acht genehmigte Issues aktualisiert; Authoring-Artefakte für MergeAndSync geliefert. Review folgt getrennt. / Updated eight approved issues and delivered authoring artefacts through MergeAndSync; review follows separately. [Nachweis / Evidence](issue-publication.md). |
 | 2026-09-28 | Gesondertes LH-00-Review / Separate LH-00 review | Ein Ziel, NeedsRemediation mit zwei Medium-Befunden; Ziel unverändert, keine Reparatur oder Umsetzung. / One target, NeedsRemediation with two Medium findings; target unchanged, no repair or implementation. [Historisches Review / Historical review](../specs/intake-review-archive/f0741205-05b7-42c5-8680-451c1483627d/intake-review-report.md). |
-
 | 2026-09-28 | LH-00-Reparatur und unabhängiges erneutes Review / LH-00 repair and independent re-review | IR001–IR003 behoben, Ready ohne offene Befunde; neues Receipt mit Vorgängerarchiv, Issue 1 abgeglichen. Keine Prozess- oder Produktabnahme. / Resolved IR001–IR003, Ready with no open findings; successor receipt with predecessor archive, Issue 1 aligned. No process or product acceptance. [Nachweis / Evidence](lh00-repair-validation.md). |
+| 2026-09-29 | LH-00-Prozessspezifikation / LH-00 process specification | Zwölf Quellanforderungen und neun Abnahmekriterien in einer DE/EN-Spezifikation mit 16 bestandenen lokalen Qualitätschecks; gültiger Input unverändert, keine Implementierung. / Twelve source requirements and nine acceptance criteria mapped in a bilingual specification with sixteen passed local quality checks; valid input unchanged, no implementation. [Spezifikation / Specification](../specs/001-lh00-intake-process/spec.md), [Nachweise / Evidence](../specs/001-lh00-intake-process/checklists/governance.md). |
 
 ## Gesamtstatistik / Overall Statistics
 
@@ -34,26 +38,26 @@ Profil 2 verwendet Git-getrackte Textdateien und sichtbare Git-Aktivitaet. Die W
 
 | Kennzahl / Metric | Wert / Value |
 |---|---:|
-| Textbasis / Text base | 105625 lines |
-| Textdateien / Text files | 872 |
-| Beobachtbarer Zeitraum / Observable period | 2025-10-05..2026-09-28 |
-| Aktivtage / Active days | 2 |
-| Relevante Commits / Relevant commits | 12 |
-| Zeilen je Aktivtag / Lines per active day | 52812.5 |
+| Textbasis / Text base | 106751 lines |
+| Textdateien / Text files | 876 |
+| Beobachtbarer Zeitraum / Observable period | 2025-10-05..2026-09-29 |
+| Aktivtage / Active days | 3 |
+| Relevante Commits / Relevant commits | 13 |
+| Zeilen je Aktivtag / Lines per active day | 35583.7 |
 | Peak-Tag im Fenster / Peak day in window | 2026-09-27 / 97728 |
-| Peak-Woche im Fenster / Peak week in window | 2026-09-27 / 106945 |
-| Laengste Serie / Longest streak | 2 days |
-| Speedup vs. 80 lines/day | 660.2x |
-| Speedup vs. 100 lines/day | 528.1x |
-| Methodik / Methodology | v2; source `f9c0415ccbd5` |
+| Peak-Woche im Fenster / Peak week in window | 2026-09-27 / 108081 |
+| Laengste Serie / Longest streak | 3 days |
+| Speedup vs. 80 lines/day | 444.8x |
+| Speedup vs. 100 lines/day | 355.8x |
+| Methodik / Methodology | v2; source `4f9bbef85867` |
 
 ### Artefaktmix / Artifact Mix
 
 ```text
 Produktiv / Production          [....................]   0.0% | 0
 Tests                           [#...................]   4.0% | 4232
-Dokumentation / Documentation   [##############......]  69.0% | 72919
-Skripte / Scripts               [#####...............]  25.4% | 26800
+Dokumentation / Documentation   [##############......]  69.4% | 74045
+Skripte / Scripts               [#####...............]  25.1% | 26800
 Konfiguration / Configuration   [#...................]   1.4% | 1526
 Daten und Medien / Data and media [....................]   0.0% | 0
 Sonstiger Text / Other text     [#...................]   0.1% | 148
@@ -80,7 +84,7 @@ Sa/Sa  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 Wochen / Weeks 27..52 | 2026-04-05..2026-10-03
 So/Su  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4
 Mo/Mo  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4
-Di/Tu  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -
+Di/Tu  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3
 Mi/We  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -
 Do/Th  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -
 Fr/Fr  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -
@@ -156,8 +160,8 @@ Es liegen keine belastbaren Phasendaten vor. Deshalb zeigt dieses Diagramm Monat
 
 ```text
 Scale: 0..500x
-80 lines/day       [####################] >500x
-100 lines/day      [####################] >500x
+80 lines/day       [##################..] 444.8x
+100 lines/day      [##############......] 355.8x
 ```
 
 Die Faktoren vergleichen sichtbare Lieferdichte mit den dokumentierten manuellen Referenzen. Sie messen keine Arbeitszeit.
@@ -167,10 +171,10 @@ Die Faktoren vergleichen sichtbare Lieferdichte mit den dokumentierten manuellen
 ### Durchsatzvergleich / Throughput Comparison
 
 ```text
-Scale: 0..100000 lines/day
+Scale: 0..50000 lines/day
 Experienced manual [#...................] 80
 Thorsten solo      [#...................] 100
-Visible repository [###########.........] 52812.5
+Visible repository [##############......] 35583.7
 ```
 
 Die gemeinsame Skala vergleicht Referenzen und sichtbare Lieferdichte. Sie schreibt die Git-Aktivitaet keiner Person oder KI pauschal zu.
@@ -179,9 +183,9 @@ Die gemeinsame Skala vergleicht Referenzen und sichtbare Lieferdichte. Sie schre
 
 ### Textalternative / Text Alternative
 
-DE: Das Fenster beginnt am 2025-10-05 und endet am 2026-09-28. Es enthaelt 2 aktive und 357 inaktive vergangene Tage. Peak-Tag: 2026-09-27 / 97728. Peak-Woche: 2026-09-27 / 106945. Laengste Serie: 2 Tage (2026-09-27..2026-09-28).
+DE: Das Fenster beginnt am 2025-10-05 und endet am 2026-09-29. Es enthaelt 3 aktive und 357 inaktive vergangene Tage. Peak-Tag: 2026-09-27 / 97728. Peak-Woche: 2026-09-27 / 108081. Laengste Serie: 3 Tage (2026-09-27..2026-09-29).
 
-*EN: The window starts on 2025-10-05 and ends on 2026-09-28. It contains 2 active and 357 inactive elapsed days. Peak day: 2026-09-27 / 97728. Peak week: 2026-09-27 / 106945. Longest streak: 2 days (2026-09-27..2026-09-28).*
+*EN: The window starts on 2025-10-05 and ends on 2026-09-29. It contains 3 active and 357 inactive elapsed days. Peak day: 2026-09-27 / 97728. Peak week: 2026-09-27 / 108081. Longest streak: 3 days (2026-09-27..2026-09-29).*
 
 | Monat / Month | Geaenderte Textzeilen / Changed text lines |
 |---|---:|
@@ -196,6 +200,6 @@ DE: Das Fenster beginnt am 2025-10-05 und endet am 2026-09-28. Es enthaelt 2 akt
 | 2026-06 | 0 |
 | 2026-07 | 0 |
 | 2026-08 | 0 |
-| 2026-09 | 106945 |
+| 2026-09 | 108081 |
 
 <!-- project-statistics-v2:end -->

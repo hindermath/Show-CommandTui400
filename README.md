@@ -23,14 +23,33 @@ Das [unabhängige erneute Intake-Review](specs/intake-review-report.md) ergibt
 **Ready**: keine offenen Befunde, Fragen oder akzeptierten Risiken. Begriffe und
 normative DE/EN-Aussagen sind korrigiert; ein anderer Agent als der Autor hat
 vollständig geprüft. [Reparatur und Nachweise](docs/lh00-repair-validation.md)
-sind dokumentiert. Prozess- und Produktabnahme bleiben offen. Nächster fachlicher
-Schritt ist der Specify-Folgeprompt in LH-00 nach eigenem ausdrücklichem Auftrag.
+sind dokumentiert. Prozess- und Produktabnahme bleiben offen. Die daraus erstellte
+Spezifikation und der nächste mögliche Schritt sind unten verlinkt.
 
 The independent complete re-review returns **Ready**, with no open findings,
 questions or accepted risks. Terms and normative DE/EN wording are corrected;
 an agent other than the author performed the review. Repair evidence is linked
-above. Process and product acceptance remain open. Next is the Specify follow-up
-prompt in LH-00 after a separate explicit request.
+above. Process and product acceptance remain open. The resulting specification
+and next possible step are linked below.
+
+## Spezifikation des LH-00-Prozesses / LH-00 process specification
+
+Die [DE/EN-Spezifikation](specs/001-lh00-intake-process/spec.md) beschreibt
+ausschließlich den Prozess aus LH-00: Erstellung und Änderung von Lastenheften,
+unabhängiges Review, Berechtigungen, Serienverwaltung und erforderliche Nachweise.
+Die [Qualitätscheckliste](specs/001-lh00-intake-process/checklists/requirements.md)
+enthält 16 bestandene Punkte der lokalen Selbstprüfung. Der
+[Governance-Nachweis](specs/001-lh00-intake-process/checklists/governance.md)
+trennt geprüfte Dokumente von offenen Plattform-, A11Y- und Prozessnachweisen.
+Nächste mögliche Phase ist `speckit-plan` nach gesondertem Auftrag. Die
+Spezifikation enthält keine Produktfunktionen aus LH-01–LH-07.
+
+The linked DE/EN specification covers only the LH-00 process: intake creation
+and updates, independent review, authority, series management and required
+evidence. Its quality checklist records sixteen passed local self-checks.
+Governance evidence separates checked documents from outstanding platform,
+accessibility and process evidence. The next possible phase is speckit-plan
+after a separate request. The specification adds no LH-01–LH-07 product functions.
 
 ## Das geplante Bedienkonzept / Planned interaction concept
 
@@ -167,6 +186,7 @@ installation authorize implementation or autonomous runs.
 |---|---|
 | [Bedienkonzept](docs/Bedienkonzept.md) | Fachliche Baseline und geplante Bedienabläufe |
 | [Lastenheft-Plan](docs/Lastenheft-Plan.md) | Reihenfolge, Abhängigkeiten und Issue-Links |
+| [LH-00-Prozessspezifikation / LH-00 process specification](specs/001-lh00-intake-process/spec.md) | Anforderungen, Abnahme und nächste Planungsphase / Requirements, acceptance and next planning phase |
 | [Entwicklungsumgebung](docs/Entwicklungsumgebung.md) | Einrichtung, Plattformen, Kommandos und Prüfungen |
 | [Repository-Einstellungen](docs/Repository-Einstellungen.md) | GitHub-Einstellungen und aktive Schutzregeln |
 | [Agenten-Guidance](AGENTS.md) | Gemeinsame Arbeitsregeln für KI-Agenten |
