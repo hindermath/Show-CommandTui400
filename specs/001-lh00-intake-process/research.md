@@ -95,6 +95,23 @@ in both shells before activation and acceptance; reassess by 2026-10-12. Do not
 invent a second member, mislabel Active as Eligible or patch the installed cache.
 The transition remains Blocked until resolved.
 
+**Aufhebungskriterium:** Ein versionierter, autorisiert übernommener Stand muss
+in allen drei Collection-Kopien und beiden Shells den tatsächlichen Zustand
+einer Ein-Mitglied-Serie als Active/Active ohne erfundenes Eligible-Ziel zulassen.
+Ready/Eligible und der tatsächliche Completed-/Archivfall müssen weiterhin gültig
+sein; ungültige Mitglieder, Hashes und Zyklen weiterhin abgewiesen werden.
+Prüfstand, Ergebnisse und anderes Review dokumentieren, bevor der Owner B-01
+schließt. Idle/leer bleibt ausgeschlossen, solange sein Vertrag nicht gesondert
+vereinheitlicht ist. Das definiert die Nachweisbedingung, keine hier erfolgte Reparatur.
+
+**Resolution criterion:** An authorized versioned update must let all three
+collection copies in both shells accept the genuine single-member Active/Active
+state without an invented Eligible target. Ready/Eligible and actual completed
+archival must remain valid; invalid members, hashes and cycles must still be
+rejected. Record versions, outcomes and another review before the owner closes
+B-01. Empty Idle remains excluded until its contract is separately aligned.
+These are evidence conditions, not a repair performed here.
+
 **Alternativen:** Idle nicht als gemeinsam validierten Bootstrap verwenden.
 Completed ist erst nach tatsächlichem Abschluss und Archivierung zulässig; alle
 Mitglieder bleiben mit Herkunft im Manifest. Eine echte, autorisierte Aufnahme
@@ -192,12 +209,12 @@ green CI or local PowerShell startup cannot establish acceptance.
 ## D-08: Dokumentation und Grenzen / Documentation and boundaries
 
 **Entscheidung:** DE zuerst/EN danach in jeder neuen Datei; kein neues Produkt-
- oder Schulungsziel. Fachliche Quelle bleibt LH-00; Lastenheft-Plan bleibt
+oder Schulungsziel. Fachliche Quelle bleibt LH-00; Lastenheft-Plan bleibt
 verbindlich. README verlinkt Plan und Prüfanleitung. Statistik wird mit dem nächsten
 autorisierten Lieferpaket seriell über den vorhandenen Renderer gepflegt.
 
 **Begründung:** Aktuelle gebundene Nachweise bleiben gültig; historische Dokumente
-werden nicht durch technische Planung umgeschrieben. FU-01–FU-07 und zentrale
+werden nicht durch technische Planung umgeschrieben. FU01–FU07 und zentrale
 Registerausrichtung sind beauftragbare spätere Umsetzungs-/Abnahmearbeit.
 **Alternative:** Jetzt alle gebundenen Dokumente übersetzen oder Hashes aktualisieren
 würde den Plan-Auftrag überschreiten und das gültige Review veralten lassen.

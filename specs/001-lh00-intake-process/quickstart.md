@@ -1,13 +1,15 @@
 # Prüfablauf LH-00 / LH-00 validation guide
 
 Diese Anleitung trennt heute mögliche lesende Prüfungen von später beauftragten
-Prozessläufen. Befehle aus der Repositorywurzel ausführen. `python3`, `bash`,
-`pwsh` und `specify` müssen echte ausführbare Programme sein. Unter Windows gilt
+Prozessläufen. Befehle aus der Repositorywurzel ausführen. `python3`, `pwsh` und
+`specify` müssen ausführbar sein; Bash ist für die Gegenprüfungen auf macOS/Linux
+erforderlich, nicht für den nativen Windows-PowerShell-Nachweis. Unter Windows gilt
 PowerShell zuerst; Bash-Gegenprüfungen erfolgen auf macOS/Linux. Eine fehlende
 Voraussetzung als Blocker erfassen, nicht als übersprungenen Erfolg.
 
 This guide separates current read-only checks from later authorized process runs.
-Run commands from the repository root. python3, bash, pwsh and specify must work.
+Run commands from the repository root. python3, pwsh and specify must work.
+Bash is required for comparison on macOS/Linux, not for native Windows PowerShell evidence.
 Use PowerShell first on Windows and compare Bash on macOS/Linux. Missing
 prerequisites are blockers, not skipped successes.
 
@@ -68,7 +70,7 @@ section 1 commands using fixture paths; do not redirect production evidence.
 |---|---|
 | E01 | `speckit-intake-create`: ausdrücklich benanntes Beispiel-Issue, ein Testziel, Profil show-commandtui400-de-en, nur lokal. Genau Intake + Receipt und keine Folgeaktion / Named sample issue, one fixture target, profile, local only; exactly intake/receipt and no downstream action. |
 | E02 | Pflichtabschnitte, identische normative IDs, vollständige DE/EN-Äquivalenz, B2 und beide Folgeprompts prüfen; jede Lücke ist Befund / Check required sections, matching IDs, equivalence, B2 and both prompts; each gap is a finding. |
-| E03 | Dokumente/CLI per Tastatur, Screenreader, Braille und Textansicht prüfen; Status/Abhängigkeiten/Entscheidungen/nächste Aktionen ohne Farbe/Diagramm vollständig / Test documents and CLI with keyboard, screen reader, Braille and text access; all relevant information remains available. |
+| E03 | Dokumente/CLI per Tastatur, Screenreader, Braille und Textzugang prüfen; Textbrowser für den gerenderten Dokumentations-Leserpfad gesondert erfassen. Status/Abhängigkeiten/Entscheidungen/nächste Aktionen ohne Farbe/Diagramm vollständig / Test documents and CLI with keyboard, screen reader, Braille and text access; record text-browser access for rendered documentation separately. All relevant information remains available without color or diagrams. |
 | E04 | Gültiger Receipt in beiden Shells PASS; in separater Fixturekopie ein Inhaltsbyte ändern: Hashfehler. Create auf vorhandenes Testziel: Abweisung und unveränderte Vorher-/Nachher-Bytes. Beauftragtes Update archiviert Vorgänger und erhält Intake-ID / Paired positive validation, tamper rejection, no-overwrite proof, authorized update preserves lineage/identity. |
 | E05 | Ein anderer Agent/Mensch führt `speckit-intake-review` aus. ReadyForReview ohne Review, veraltetes Ready und Eligible ohne Auftrag starten nichts. Risikoannahme nur menschlich belegt / Another reviewer; authoring state, stale Ready and unauthorised eligibility never start work; risk acceptance requires human evidence. |
 | E07 | Gültige Collection/Serie/Receipt in allen Kopien prüfen; fehlender Pfad, Zyklus, falscher Hash und mehrere Eligible isoliert abweisen. Active-Fall erst nach B-01-Korrektur. Links, unveränderte Plan-IDs/Abhängigkeiten, Archive und FU-Abschluss belegen / Validate collection/series, reject invalid fixtures, test Active only after B-01, evidence links, preserved IDs/dependencies, archives and follow-ups. |
@@ -119,6 +121,24 @@ versions, commands/prompts, exits, payload/decision hashes and actual write boun
 Claim zeroWrite for safe-mode smokes only after before/after comparison; clearly
 record authorized fixture mutations. Native CI or an isolated Linux container can
 supplement partial evidence but does not automatically replace a required environment.
+
+Eine Umgebung besteht erst, wenn E01–E05 und E07 vollständig bewertet sind,
+alle positiven Sollfälle erfolgreich sind und jeder negative Sollfall die
+beschriebene Abweisung ohne unzulässige Änderung belegt. Erwartete Abweisungen
+werden separat ausgewiesen; sie sind keine fehlgeschlagenen Positivfälle.
+Fehlende Voraussetzung, Hilfsmittel- oder Teilstreckennachweise bedeuten
+`Blocked` bzw. Teilnachweis; unerwartetes Verhalten bedeutet `Failed`.
+Beides verhindert volle Prozessabnahme. Nur vier vollständige erfolgreiche
+Umgebungsprotokolle erfüllen SC-006. Diese Ergebnisbezeichnungen gehören zum
+Protokoll und erweitern keine Statuswerte der Receipt-/Serienschemas.
+
+An environment passes only when E01–E05 and E07 are fully assessed, every positive
+case succeeds and every negative case evidences the required rejection without
+unauthorized changes. Report expected rejections separately from failed positive
+cases. Missing prerequisites, assistive evidence or flow segments mean Blocked
+or partial evidence; unexpected behavior means Failed. Both prevent full process
+acceptance. Only four complete successful environment records meet SC-006.
+These report outcomes do not extend receipt or series schema status values.
 
 ## 5. Repositoryprüfungen / Repository checks
 

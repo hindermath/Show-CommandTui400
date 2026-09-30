@@ -18,17 +18,53 @@ executable permissions.
 | Series-Next | Aktuelle Konfiguration, Manifest und Gates / Current configuration, manifest and gates. | Alle zulässigen Ziele oder genaue Blocker anzeigen; keinen Lauf starten / List eligible targets or exact blockers; never execute. |
 | Intake-/Series-Delete | Expliziter Löschumfang, aktueller Vorgänger / Explicit deletion scope, current predecessor. | Archiv und Tombstone erhalten; Series-Delete löscht keine Intake-Dateien / Preserve archive/tombstone; deleting a series does not delete its intakes. |
 
-Jede neue Datei enthält DE zuerst/EN danach, Zweck, Scope/Nicht-Ziele,
-Anforderungen, Qualitäts-/Governance-Zuordnung, Risiken/Abhängigkeiten, Nachweise,
-AC, Entscheidungen und beide Folgeprompts. Begriffe bei Erstnennung erklären.
+Jedes neue Intake enthält DE zuerst/EN danach Zweck, Ist-/Zielzustand,
+Scope/Nicht-Ziele, atomare Anforderungen, Qualität, Governance-Zuordnung,
+Abhängigkeiten, Risiken, Artefakte, Nachweise, Abnahmekriterien, Annahmen,
+Entscheidungen und beide Folgeprompts gemäß FR-006. Begriffe bei Erstnennung erklären.
 Status, Links, Fehler und nächste Aktion müssen ohne Farbe oder Diagramm lesbar
 sein. Sprachäquivalenz, B2-Verständlichkeit und Hilfsmittelzugang separat prüfen.
 
-Each new intake contains both language tracks, purpose, scope/non-goals,
-requirements, quality/governance mapping, risks/dependencies, evidence, AC,
-decisions and both follow-up prompts. Define terms at first use. States, links,
+Each new intake contains German first and English second, purpose, current/target
+state, scope/non-goals, atomic requirements, quality, governance mapping,
+dependencies, risks, artifacts, evidence, acceptance criteria, assumptions,
+decisions and both follow-up prompts under FR-006. Define terms at first use. States, links,
 errors and next actions must remain understandable without color or diagrams.
 Check language equivalence, B2 readability and assistive access separately.
+
+## Rollen und Benennungszeitpunkte / Roles and appointment points
+
+Thorsten Hindermann ist Owner: Er bestimmt den beauftragten Umfang, entscheidet
+über offene fachliche Fragen und verantwortet die Prozessabnahme. Der Autor wird
+vor Beginn des jeweiligen Schreibvorgangs benannt und dokumentiert Quellen,
+Änderungen und offene Punkte. Vor jedem unabhängigen Review wird ein anderer
+Mensch oder Agent benannt; der Nachweis enthält beide Identitäten und den geprüften
+Stand. Der Prüfer bewertet Vollständigkeit und Befunde, erteilt aber keine
+Ausführungsautorität. Risikoannahmen benötigen eine benannte menschliche
+Entscheidungsinstanz und Begründung. Jeder offene Punkt erhält bei Erfassung Owner,
+nächste Aktion und Fälligkeit bzw. Wiedervorlage. Fehlende Benennung sperrt den
+betroffenen Schritt; sie wird nicht durch einen positiven Status ersetzt.
+
+Thorsten Hindermann owns scope, unresolved domain decisions and process acceptance.
+Name the author before each write operation; the author records sources, changes
+and open items. Before independent review, name another human or agent and record
+both identities and the reviewed state. The reviewer assesses completeness and
+findings without granting execution authority. Risk acceptance requires a named
+human decision maker and rationale. Assign each open item an owner, next action
+and due or reassessment point when recorded. Missing appointments block the
+affected step; a positive status does not replace them.
+
+Archivierung nach tatsächlichem Abschluss ist von logischer Löschung getrennt:
+Sie erhält Abschlussbeleg und Serienmitglied im fachlichen Archiv. Logische
+Löschung erhält Vorgänger und Tombstone, einen dauerhaften Verweis auf den früheren
+Eintrag; sie behauptet keinen fachlichen Abschluss. Beide benötigen einen passenden
+Auftrag. Series-Delete entfernt die Serienverwaltung, nicht die Intake-Dokumente.
+
+Archival after actual completion differs from logical deletion: it retains
+completion evidence and series membership in the domain archive. Logical deletion
+retains predecessors and a tombstone, a permanent record of the former entry,
+without claiming domain completion. Both require matching authority. Series-Delete
+removes series management, not the intake documents.
 
 ## Validatorverträge / Validator contracts
 
@@ -64,13 +100,13 @@ external-source limits; this plan adds no crawling or network service.
 
 ## Abnahmeprotokoll / Acceptance record
 
-Pro Fall dokumentieren: ID E01–E07, Anforderung/AC, benannten Autor und anderen
-Reviewer, Auftrag, Plattform/Hostrolle, Toolversionen, Repositorycommit und
+Pro Fall dokumentieren: ID E01–E07, Anforderung/AC, Quellverweis, Owner, benannten
+Autor und anderen Reviewer, Auftrag, Plattform/Hostrolle, Toolversionen, Repositorycommit und
 Kandidatenhashes, exakten Befehl bzw. Agentenauftrag, Exitcode oder klar `N/A`
 für menschliche Beurteilung, Ergebnis, Grenzen, Belegpfade und nächste Aktion.
 Technische Befunde, menschliche Risikoannahme und Projektabnahme getrennt halten.
 
-For each case record E01–E07, requirement/AC, named author and different reviewer,
+For each case record E01–E07, requirement/AC, source reference, owner, named author and different reviewer,
 authority, platform/host role, tool versions, commit and candidate hashes, exact
 command/agent request, exit or explicit N/A for human judgment, outcome, limits,
 evidence paths and next action. Separate technical results, human risk acceptance

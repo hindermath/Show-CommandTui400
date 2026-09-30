@@ -42,6 +42,21 @@ symlink escapes/aliases. A bilingual baseline reference points to the canonical
 concept without copying or renaming it. Link existing issues/intakes and mark
 LH-01–LH-07 as not created. Issue drafts remain historical sources.
 
+`active` enthält aktive fachliche Intakes, `archive` tatsächlich abgeschlossene
+und fachlich archivierte Intakes. `backlog` ist die vorgesehene Ablage für später
+ausdrücklich zugeordnete, noch nicht aktive Dokumente; die vorhandenen Issues
+werden dadurch nicht zu Intake-Dateien. `history` dient historischen
+Collection-Verweisen. Die bestehenden Authoring-Versionsarchive bleiben die
+Quelle für frühere Intake-/Receipt-Generationen; weder history noch archive
+ersetzt oder kopiert sie automatisch.
+
+The active collection holds active domain intakes; archive holds genuinely
+completed and archived intakes. Backlog is reserved for later explicitly assigned
+documents not yet active; existing issues do not thereby become intake files.
+History holds historical collection references. Existing authoring version archives
+remain authoritative for earlier intake/receipt generations; neither history nor
+archive automatically replaces or copies them.
+
 ## Serienvertrag / Series contract
 
 Bei später autorisierter Erstellung eine echte dauerhafte `seriesId` erzeugen;
@@ -95,6 +110,17 @@ Completed braucht tatsächlichen Abschluss, Archivpfade und erhaltene Mitglieder
 do not activate until a versioned correction passes every collection check.
 Empty Idle is inconsistent across presets. Completed requires actual completion,
 archive paths and preserved membership.
+
+Fehlende Mitglieder, Zyklen, unpassende Reihenfolge oder mehr als ein Eligible-Ziel
+sperren die betroffene Serie mit konkretem Grund. Idle/leer wird für diese
+Collection nicht aktiviert. Das Schließen von B-01 richtet sich nach den
+[Aufhebungskriterien in D-03](../research.md#d-03-bootstrap-und-kompatibilität--bootstrap-and-compatibility),
+nicht nach einem allein erfolgreichen Ready/Eligible-Bootstrap.
+
+Missing members, cycles, inconsistent order or multiple Eligible targets block
+the affected series with a specific reason. Empty Idle is not activated for this
+collection. Closing B-01 follows D-03's resolution criteria, not a successful
+Ready/Eligible bootstrap alone.
 
 ## Migration und Nachweis / Migration and evidence
 

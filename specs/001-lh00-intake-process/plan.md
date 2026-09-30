@@ -46,12 +46,15 @@ registry alignment remain conditions of process acceptance.
 | Constraints | Kein Create-Overwrite, nur beauftragtes Update/Delete, Pfade im Repo, keine Geheimnisse, DE/EN, Textzugang, keine automatische Folgeaktion / No Create overwrite; authorized update/delete, contained paths, no secrets, bilingual text access, no automatic next action. |
 | Scale/Scope | Ein vorhandenes Intake; acht Planeinträge, sieben davon noch keine Intakes oder Serienmitglieder / One existing intake; eight order entries, seven not yet intakes or series members. |
 
-Lokal erfasst: macOS 27.0.0, PowerShell 7.6.6 Core, Python 3.14.7, Bash 3.2.57.
+Im Planungslauf am 2026-09-30 lokal erfasst: macOS 27.0.0, PowerShell 7.6.6 Core,
+Python 3.14.7, Bash 3.2.57.
 Das ist kein Produktminimum und keine Zuordnung zu Mac A/B. `python3` muss auch
 unter Windows tatsächlich funktionieren; die vorhandenen PowerShell-Validatoren
 rufen genau diesen Namen auf. `py -3` allein genügt nicht.
 
-The observed local versions neither define product minimums nor identify Mac A/B.
+The planning run on 2026-09-30 observed macOS 27.0.0, PowerShell 7.6.6 Core,
+Python 3.14.7 and Bash 3.2.57. These versions neither define product minimums
+nor identify Mac A/B.
 Windows must expose a working python3 executable because installed PowerShell
 validators call that name. Having only py -3 is insufficient.
 
@@ -101,6 +104,7 @@ presets. Generic template wording about a training year adds no audience require
 | [quickstart.md](quickstart.md) | Lesende Prüfungen und später autorisierte Prozessfälle / Read-only checks and later authorized process cases. |
 | [checklists/plan-governance.md](checklists/plan-governance.md) | Anwendbarkeit, Owner, Reviewer, Nachweise / Applicability, owner, reviewer, evidence. |
 | [checklists/plan-validation.md](checklists/plan-validation.md) | Tatsächlich ausgeführte Prüfungen / Checks actually executed. |
+| [checklists/process-quality.md](checklists/process-quality.md) | Dokumentprüfung mit Durchführungshinweisen, Korrekturen und Fundstellen / Requirements review with instructions, corrections and references. |
 
 Spätere Umsetzungsorte: `requirements/`, `specs/intake-series/lh00-process/`,
 vorhandene Policy und Profilzuordnung, Prozessdokumentation und fünf gezielt
@@ -188,7 +192,7 @@ Keep secrets out of tracked files.
 Konkrete spätere Belege: `docs/architecture/lh00-process.md` für Kontext, Bausteine,
 Laufzeit, Deployment, Qualität und Risiken; `docs/architecture/decisions/001-lh00-file-process.md`
 als Entscheidungsprotokoll (ADR); `docs/security/s-adr-lh00-authority.md` für Autorität;
-`docs/security/threat-model-lh00.md` für STRIDE/CIA und relevante CAPEC-Angriffsmuster;
+`docs/security/threat-model.md` für STRIDE/CIA und relevante CAPEC-Angriffsmuster;
 `docs/security/arc42-section-8-lh00.md` für Eingabeprüfung, Fehler, Logging,
 Abhängigkeiten und begründete Nichtanwendung eigener Dienstauthentisierung/Kryptografie.
 STRIDE ordnet Bedrohungsarten; CIA bedeutet Vertraulichkeit, Integrität, Verfügbarkeit.
@@ -230,12 +234,12 @@ including native Windows. Never evaluate untrusted content.
 
 Nachweise: `docs/cross-platform/lh00-parity.md`,
 `docs/accessibility/lh00-process.md`, `docs/agent-parity/lh00-parity.md`.
-A11Y umfasst Tastatur, Screenreader, Braille, Textansicht, verständliche
+A11Y umfasst Tastatur, Screenreader, Braille, Textbrowser für Dokumentation, verständliche
 Überschriften/Links, Status ohne Farbe, DE/EN B2 und Begriffserklärung.
 Markdown-Strukturprüfung ersetzt keine praktische Hilfsmittelprüfung.
 
-Evidence covers shell and agent parity, keyboard, screen reader, Braille, text
-access, clear headings/links, non-color-only state, DE/EN B2 and explained terms.
+Evidence covers shell and agent parity, keyboard, screen reader, Braille, text-browser
+access to documentation, clear headings/links, non-color-only state, DE/EN B2 and explained terms.
 Markdown structure checks do not replace assistive-technology testing.
 
 Später geänderte gemeinsame Regeln atomar in `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`,
@@ -268,7 +272,7 @@ Zielgruppe: Owner, Autoren, andere Reviewer und Implementierende ohne Spec-Kit-
 Vorkenntnisse. Leserpfad: README → Spec → Plan → Recherche/Daten/Verträge →
 Quickstart → spätere Tasks. LH-00 bleibt fachliche Quelle; technische Entscheidungen
 stehen hier. DE/EN jeweils in derselben Datei. Links und Struktur lokal prüfen;
-Plattformbeispiele später nachweisen. Historischen Kontext erhalten; FU-01–FU-07
+Plattformbeispiele später nachweisen. Historischen Kontext erhalten; FU01–FU07
 aus der Governance-Zuordnung vor Abnahme schließen bzw. ihren Status belegen.
 Reevaluation bei Input-, Tool-, Umfangs-, Liefer- oder Nachweisänderung.
 
@@ -278,7 +282,7 @@ assumed Spec Kit knowledge. Navigation runs from README through specification an
 plan to design, quickstart and later tasks. LH-00 remains the domain source; this
 package owns technical decisions. Each file has both languages. Check links and
 structure locally, prove platform examples later, preserve history and resolve or
-evidence the existing FU-01–FU-07 items before acceptance. Reassess for changed inputs,
+evidence the existing FU01–FU07 items before acceptance. Reassess for changed inputs,
 tools, scope, delivery or evidence.
 
 Statistikprofil 2: 80 konservativ, vorläufig 100 Thorsten-Solo für Konzept/Scripting;
