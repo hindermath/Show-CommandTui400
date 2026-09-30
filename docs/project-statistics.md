@@ -28,6 +28,8 @@ heuristic would otherwise count spec.md as a test.*
 | 2026-09-28 | LH-00-Reparatur und unabhängiges erneutes Review / LH-00 repair and independent re-review | IR001–IR003 behoben, Ready ohne offene Befunde; neues Receipt mit Vorgängerarchiv, Issue 1 abgeglichen. Keine Prozess- oder Produktabnahme. / Resolved IR001–IR003, Ready with no open findings; successor receipt with predecessor archive, Issue 1 aligned. No process or product acceptance. [Nachweis / Evidence](lh00-repair-validation.md). |
 | 2026-09-29 | LH-00-Prozessspezifikation / LH-00 process specification | Zwölf Quellanforderungen und neun Abnahmekriterien in einer DE/EN-Spezifikation mit 16 bestandenen lokalen Qualitätschecks; gültiger Input unverändert, keine Implementierung. / Twelve source requirements and nine acceptance criteria mapped in a bilingual specification with sixteen passed local quality checks; valid input unchanged, no implementation. [Spezifikation / Specification](../specs/001-lh00-intake-process/spec.md), [Nachweise / Evidence](../specs/001-lh00-intake-process/checklists/governance.md). |
 
+| 2026-09-30 | LH-00-Planung und Anforderungsprüfung / LH-00 planning and requirements review | DE/EN-Plan mit Datenmodell, Verträgen und Prüfanleitung; 24 Anforderungsprüfpunkte nach direkter Dokumentkorrektur ausreichend beschrieben (Selbstprüfung). Überflüssige Kontextdatei entfernt. B-01 und praktische Prozessabnahme offen; keine Produktimplementierung. / Bilingual plan, data model, contracts and validation guide; 24 requirements checks adequately specified after document corrections (self-review). Redundant context file removed. B-01 and practical process acceptance remain open; no product implementation. [Plan](../specs/001-lh00-intake-process/plan.md), [Prüfung / Review](../specs/001-lh00-intake-process/checklists/process-quality.md). |
+
 ## Gesamtstatistik / Overall Statistics
 
 <!-- project-statistics-v2:begin -->
@@ -38,26 +40,26 @@ Profil 2 verwendet Git-getrackte Textdateien und sichtbare Git-Aktivitaet. Die W
 
 | Kennzahl / Metric | Wert / Value |
 |---|---:|
-| Textbasis / Text base | 106751 lines |
-| Textdateien / Text files | 876 |
-| Beobachtbarer Zeitraum / Observable period | 2025-10-05..2026-09-29 |
-| Aktivtage / Active days | 3 |
-| Relevante Commits / Relevant commits | 13 |
-| Zeilen je Aktivtag / Lines per active day | 35583.7 |
+| Textbasis / Text base | 108182 lines |
+| Textdateien / Text files | 885 |
+| Beobachtbarer Zeitraum / Observable period | 2025-10-05..2026-09-30 |
+| Aktivtage / Active days | 4 |
+| Relevante Commits / Relevant commits | 15 |
+| Zeilen je Aktivtag / Lines per active day | 27045.5 |
 | Peak-Tag im Fenster / Peak day in window | 2026-09-27 / 97728 |
-| Peak-Woche im Fenster / Peak week in window | 2026-09-27 / 108081 |
-| Laengste Serie / Longest streak | 3 days |
-| Speedup vs. 80 lines/day | 444.8x |
-| Speedup vs. 100 lines/day | 355.8x |
-| Methodik / Methodology | v2; source `4f9bbef85867` |
+| Peak-Woche im Fenster / Peak week in window | 2026-09-27 / 109576 |
+| Laengste Serie / Longest streak | 4 days |
+| Speedup vs. 80 lines/day | 338.1x |
+| Speedup vs. 100 lines/day | 270.5x |
+| Methodik / Methodology | v2; source `5d1f44da4e94` |
 
 ### Artefaktmix / Artifact Mix
 
 ```text
 Produktiv / Production          [....................]   0.0% | 0
-Tests                           [#...................]   4.0% | 4232
-Dokumentation / Documentation   [##############......]  69.4% | 74045
-Skripte / Scripts               [#####...............]  25.1% | 26800
+Tests                           [#...................]   3.9% | 4232
+Dokumentation / Documentation   [##############......]  69.8% | 75476
+Skripte / Scripts               [#####...............]  24.8% | 26800
 Konfiguration / Configuration   [#...................]   1.4% | 1526
 Daten und Medien / Data and media [....................]   0.0% | 0
 Sonstiger Text / Other text     [#...................]   0.1% | 148
@@ -85,7 +87,7 @@ Wochen / Weeks 27..52 | 2026-04-05..2026-10-03
 So/Su  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4
 Mo/Mo  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4
 Di/Tu  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3
-Mi/We  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -
+Mi/We  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3
 Do/Th  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -
 Fr/Fr  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -
 Sa/Sa  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -
@@ -160,8 +162,8 @@ Es liegen keine belastbaren Phasendaten vor. Deshalb zeigt dieses Diagramm Monat
 
 ```text
 Scale: 0..500x
-80 lines/day       [##################..] 444.8x
-100 lines/day      [##############......] 355.8x
+80 lines/day       [##############......] 338.1x
+100 lines/day      [###########.........] 270.5x
 ```
 
 Die Faktoren vergleichen sichtbare Lieferdichte mit den dokumentierten manuellen Referenzen. Sie messen keine Arbeitszeit.
@@ -174,7 +176,7 @@ Die Faktoren vergleichen sichtbare Lieferdichte mit den dokumentierten manuellen
 Scale: 0..50000 lines/day
 Experienced manual [#...................] 80
 Thorsten solo      [#...................] 100
-Visible repository [##############......] 35583.7
+Visible repository [###########.........] 27045.5
 ```
 
 Die gemeinsame Skala vergleicht Referenzen und sichtbare Lieferdichte. Sie schreibt die Git-Aktivitaet keiner Person oder KI pauschal zu.
@@ -183,9 +185,9 @@ Die gemeinsame Skala vergleicht Referenzen und sichtbare Lieferdichte. Sie schre
 
 ### Textalternative / Text Alternative
 
-DE: Das Fenster beginnt am 2025-10-05 und endet am 2026-09-29. Es enthaelt 3 aktive und 357 inaktive vergangene Tage. Peak-Tag: 2026-09-27 / 97728. Peak-Woche: 2026-09-27 / 108081. Laengste Serie: 3 Tage (2026-09-27..2026-09-29).
+DE: Das Fenster beginnt am 2025-10-05 und endet am 2026-09-30. Es enthaelt 4 aktive und 357 inaktive vergangene Tage. Peak-Tag: 2026-09-27 / 97728. Peak-Woche: 2026-09-27 / 109576. Laengste Serie: 4 Tage (2026-09-27..2026-09-30).
 
-*EN: The window starts on 2025-10-05 and ends on 2026-09-29. It contains 3 active and 357 inactive elapsed days. Peak day: 2026-09-27 / 97728. Peak week: 2026-09-27 / 108081. Longest streak: 3 days (2026-09-27..2026-09-29).*
+*EN: The window starts on 2025-10-05 and ends on 2026-09-30. It contains 4 active and 357 inactive elapsed days. Peak day: 2026-09-27 / 97728. Peak week: 2026-09-27 / 109576. Longest streak: 4 days (2026-09-27..2026-09-30).*
 
 | Monat / Month | Geaenderte Textzeilen / Changed text lines |
 |---|---:|
@@ -200,6 +202,6 @@ DE: Das Fenster beginnt am 2025-10-05 und endet am 2026-09-29. Es enthaelt 3 akt
 | 2026-06 | 0 |
 | 2026-07 | 0 |
 | 2026-08 | 0 |
-| 2026-09 | 108081 |
+| 2026-09 | 109576 |
 
 <!-- project-statistics-v2:end -->
