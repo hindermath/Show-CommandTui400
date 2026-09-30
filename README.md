@@ -41,15 +41,20 @@ Die [Qualitätscheckliste](specs/001-lh00-intake-process/checklists/requirements
 enthält 16 bestandene Punkte der lokalen Selbstprüfung. Der
 [Governance-Nachweis](specs/001-lh00-intake-process/checklists/governance.md)
 trennt geprüfte Dokumente von offenen Plattform-, A11Y- und Prozessnachweisen.
-Nächste mögliche Phase ist `speckit-plan` nach gesondertem Auftrag. Die
-Spezifikation enthält keine Produktfunktionen aus LH-01–LH-07.
+Der [Implementierungsplan](specs/001-lh00-intake-process/plan.md) ergänzt Datenmodell,
+Schnittstellenverträge und [Prüfanleitung](specs/001-lh00-intake-process/quickstart.md).
+Vor Serienaktivierung ist ein belegter Widerspruch der Collection-Validatoren zu
+beheben. Nächste mögliche Phase ist `speckit-tasks` nach gesondertem Auftrag.
+Die Planung enthält keine Produktfunktionen aus LH-01–LH-07.
 
 The linked DE/EN specification covers only the LH-00 process: intake creation
 and updates, independent review, authority, series management and required
 evidence. Its quality checklist records sixteen passed local self-checks.
 Governance evidence separates checked documents from outstanding platform,
-accessibility and process evidence. The next possible phase is speckit-plan
-after a separate request. The specification adds no LH-01–LH-07 product functions.
+accessibility and process evidence. The implementation plan adds a data model,
+interface contracts and a validation guide. A demonstrated collection-validator
+conflict must be resolved before series activation. The next possible phase is
+speckit-tasks after a separate request. Planning adds no LH-01–LH-07 product functions.
 
 ## Das geplante Bedienkonzept / Planned interaction concept
 
