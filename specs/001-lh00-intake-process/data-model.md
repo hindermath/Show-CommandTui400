@@ -61,7 +61,7 @@ and status values retain their English spelling.
 | Achse / Axis | Regel und Übergang / Rule and transition |
 |---|---|
 | Authoring | Entwurf/Überarbeitung führt erst nach geklärten Entscheidungen und gültigem Receipt zu `ReadyForReview`. Dies ist kein Review-Ergebnis. / Drafting or repair reaches ReadyForReview only after decisions and valid provenance; it is not a review outcome. |
-| Review | Der andere Prüfer dokumentiert `Ready`, `ReadyWithAcceptedRisks`, `NeedsRemediation` oder `Rejected` gemäß FR-018. Ready bedeutet gültig geprüft; akzeptierte Risiken brauchen dokumentierte menschliche Risikoannahme. NeedsRemediation verlangt Nachbesserung, Rejected verwirft den geprüften Stand. Drift sperrt die weitere Verwendung auch eines früheren Ready. / The other reviewer records the four FR-018 outcomes. Ready means validly reviewed; accepted risks require human acceptance. NeedsRemediation requires repair; Rejected rejects the reviewed state. Drift blocks downstream use even of an earlier Ready. |
+| Review | Der andere Prüfer dokumentiert `Ready`, `ReadyWithAcceptedRisks`, `NeedsClarification`, `NeedsRemediation` oder `Rejected` gemäß FR-018. Ready bedeutet gültig geprüft; akzeptierte Risiken brauchen dokumentierte menschliche Risikoannahme. NeedsClarification verlangt Klärung offener Fragen; NeedsRemediation verlangt Nachbesserung, Rejected verwirft den geprüften Stand. Drift sperrt die weitere Verwendung auch eines früheren Ready. / The other reviewer records the five FR-018 outcomes. Ready means validly reviewed; accepted risks require human acceptance. NeedsClarification requires answers to open questions; NeedsRemediation requires repair; Rejected rejects the reviewed state. Drift blocks downstream use even of an earlier Ready. |
 | Serienauswahl / Series selection | Ready/Eligible ist der validierte Bootstrap. Pending/Blocked ist nicht ausführbar. Ein tatsächlich gestartetes Mitglied müsste Active werden; **B-01 sperrt diesen Übergang** bis Toolkorrektur. / Ready/Eligible bootstraps; Pending/Blocked does not run; genuine execution would require Active, currently blocked by B-01. |
 | Abschluss / Completion | Completed nur nach belegtem tatsächlichem Abschluss, passendem Auftrag und fachlicher Archivierung. Manifest erhält Mitglieder und Herkunft; kein Eligible-Ziel. / Completed requires evidenced completion, matching authority and domain archival; retain members/provenance and no eligible target. |
 | Ausführungsautorität / Execution authority | Pro Aktion prüfen; weder ReadyForReview, Ready noch Eligible ersetzt Autorität für Review, Umsetzung, Lieferung oder Folge-LH. / Check per action; no quality/selection state grants review, implementation, delivery or next-intake authority. |
@@ -92,3 +92,28 @@ Archive the previous files and receipt before publishing the next valid generati
 Intermediate state is not eligible for Series-Next or implementation. After
 interruption, reconcile journals and actual files; never restart automatically
 from Applying or an old Ready result.
+
+## IAD010: Abnahmezeitpunkt / Acceptance timing
+
+Die aktualisierte fachliche Quelle [LH-00](../../intakes/LH-00.md) legt fest:
+Kernprozess mit isoliertem Beispiel auf dem benannten primären Mac nachweisen,
+dann begrenzte Owner-Pilotfreigabe. LH-01 und danach LH-02 benötigen jeweils
+separate Aufträge, gültige Intakes und unabhängige Reviews; sie laufen außerhalb
+der automatischen Serienauswahl. LH-02 benötigt den fachlichen Abschluss von
+LH-01. LH-00 bleibt offen. Prozessprobleme und Korrekturen im bestehenden
+LH-00-Nachweis führen; Feature-Abnahmen getrennt halten.
+Nach LH-02 und vor LH-03 müssen alle vier Plattformen, A11Y, Übersetzungen und
+angewendete zentrale Registerausrichtung vollständig nachgewiesen sein.
+AC-00-001–009 bleiben unverändert. Erst dann Owner-Abnahme und gegebenenfalls
+Completed/Archiv mit eigener Autorität. Kein Feature-Lauf durch dieses Update.
+
+The updated LH-00 source sets this timing: prove the core process with an isolated
+example on the named primary Mac, then obtain limited owner pilot permission.
+LH-01 and then LH-02 each need separate requests, valid intakes and independent
+reviews; they run outside automatic series selection. LH-02 requires domain
+completion of LH-01. LH-00 remains open. Keep process problems and fixes in existing
+LH-00 evidence and feature acceptance separate. After LH-02 and before LH-03,
+complete evidence for all four platforms, accessibility, translations and applied
+central registry alignment. AC-00-001–009 remain unchanged. Only then may owner
+acceptance and, with separate authority, Completed/archival follow. This update
+starts no feature run.

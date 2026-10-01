@@ -1,6 +1,6 @@
 # Lastenheft-Governance / Intake governance
 
-Stand / Date: 2026-10-01. Owner: Thorsten Hindermann.
+Stand / Date: 2026-09-28. Owner: Thorsten Hindermann.
 Dokumentationsentscheidung / Documentation decision: **UpdateRequired**.
 
 ## Zweck und Geltung / Purpose and applicability
@@ -179,30 +179,3 @@ shared Level-0 principles and Level-2 domain truth. Distribution: sourceOnly,
 no Home Runtime deployment. Languages: DE/EN in the same file. Platform boundary:
 local structural validation, no assistive field acceptance. Reevaluate when
 policy, sources, platforms, architecture or release scope changes.
-
-## Abnahmestufen und Pilotfreigabe / Acceptance stages and pilot permission
-
-[IAD010](planning/lh00-staged-acceptance-decisions.md) ergänzt den Zeitpunkt der
-bestehenden Nachweise. Erst Kernprozess auf dem benannten primären Mac;
-danach getrennt beauftragte Einzelpiloten LH-01 und LH-02 mit gültigen Intakes
-und unabhängigen Reviews außerhalb der automatischen Serienauswahl. LH-02
-setzt den fachlichen Abschluss von LH-01 voraus. Prozessfehler und Korrekturen
-stehen im LH-00-Nachweis, Feature-Abnahmen getrennt. LH-00 bleibt offen.
-Alle vier Plattformnachweise, A11Y, FU01–FU07 einschließlich Übersetzungen und
-angewendeter zentraler Registerausrichtung sind zur vollständigen Abnahme nach
-LH-02 und vor LH-03 zu erledigen; bisherige frühere Fälligkeiten und Wiedervorlagen
-bleiben erhalten. Weder lokale Werkzeugtests noch Pilotfreigabe erfüllen diese
-Gesamtabnahme. Owner Thorsten bewertet die Stufen; der Reviewer ist ein anderer
-Agent oder Mensch als der Autor. Eine Statusänderung benötigt eigene Autorität.
-
-IAD010 adds timing to existing evidence requirements. First prove the core process
-on the named primary Mac; then separately commission LH-01 and LH-02 standalone
-pilots with valid intakes and independent reviews, outside automatic series
-selection. LH-02 requires domain completion of LH-01. Record process failures and
-fixes in LH-00 evidence, separate from feature acceptance. LH-00 remains open.
-All four platform records, accessibility and FU01–FU07 including translations and
-applied central registry alignment must be completed for full acceptance after
-LH-02 and before LH-03; existing earlier deadlines and reassessment dates remain.
-Local tool tests and pilot permission do not satisfy full acceptance. Owner
-Thorsten assesses the stages; the reviewer is an agent or person other than the
-author. A status change requires separate authority.

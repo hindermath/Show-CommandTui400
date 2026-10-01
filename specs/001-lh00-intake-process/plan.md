@@ -121,7 +121,7 @@ replacement validator. A separate Tasks request creates tasks.md.
 
 Die [Recherche](research.md) entscheidet D-01–D-08. Die Umsetzung wird so zerlegt:
 
-1. **Kompatibilität:** Ready/Eligible, Active/Active, Idle/leer und Completed/Archiv
+1. **Kompatibilität:** Ready/Eligible, Active/Active und Completed/Archiv
    in allen drei Collection-Validatoren und beiden Shells prüfen. B-01 vor
    Aktivierung schließen; versionierte Korrekturen gehören in die Preset-Quellen.
 2. **Werkzeugparität:** PowerShell-Basis derselben Version isoliert vergleichen
@@ -133,8 +133,10 @@ Die [Recherche](research.md) entscheidet D-01–D-08. Die Umsetzung wird so zerl
 4. **Migration:** Index, Konfiguration, Baseline-Verweis, Manifest, Receipt und
    Journal gemeinsam vorbereiten und validieren. Gebundene Policy-/Profil-/Guidance-
    Änderungen benötigen autorisierte Aktualisierung und frisches Intake-Review.
-5. **Abnahme:** Übersetzungen und zentrale Ausrichtung belegen; gesamte Strecke
-   separat auf vier Umgebungen ausführen. Danach bewertet der Owner alle neun AC.
+5. **Gestufte Abnahme:** Kernprozess auf dem primären Mac; danach separat
+   beauftragte Einzelpiloten LH-01 und LH-02. Nach LH-02, vor LH-03 Übersetzungen
+   und zentrale Ausrichtung belegen sowie die gesamte Strecke auf vier Umgebungen
+   ausführen. Danach bewertet der Owner alle neun AC. Details: IAD010 unten.
 
 Research resolves D-01–D-08. Implementation proceeds through compatibility testing
 and a versioned B-01 fix; narrow same-version PowerShell integration with provenance
@@ -191,7 +193,7 @@ Keep secrets out of tracked files.
 
 Konkrete spätere Belege: `docs/architecture/lh00-process.md` für Kontext, Bausteine,
 Laufzeit, Deployment, Qualität und Risiken; `docs/architecture/decisions/001-lh00-file-process.md`
-als Entscheidungsprotokoll (ADR); `docs/security/s-adr-lh00-authority.md` für Autorität;
+als Entscheidungsprotokoll (ADR); `docs/security/adr/s-adr-lh00-authority.md` für Autorität;
 `docs/security/threat-model.md` für STRIDE/CIA und relevante CAPEC-Angriffsmuster;
 `docs/security/arc42-section-8-lh00.md` für Eingabeprüfung, Fehler, Logging,
 Abhängigkeiten und begründete Nichtanwendung eigener Dienstauthentisierung/Kryptografie.
@@ -331,3 +333,28 @@ No extra application layer or justified constitution violation is needed. B-01
 remains open. The specification's diagram with text alternative suffices; tables
 explain the file contract. An individual Plan command creates no feature
 completion-report.md.
+
+## IAD010: Abnahmezeitpunkt / Acceptance timing
+
+Die aktualisierte fachliche Quelle [LH-00](../../intakes/LH-00.md) legt fest:
+Kernprozess mit isoliertem Beispiel auf dem benannten primären Mac nachweisen,
+dann begrenzte Owner-Pilotfreigabe. LH-01 und danach LH-02 benötigen jeweils
+separate Aufträge, gültige Intakes und unabhängige Reviews; sie laufen außerhalb
+der automatischen Serienauswahl. LH-02 benötigt den fachlichen Abschluss von
+LH-01. LH-00 bleibt offen. Prozessprobleme und Korrekturen im bestehenden
+LH-00-Nachweis führen; Feature-Abnahmen getrennt halten.
+Nach LH-02 und vor LH-03 müssen alle vier Plattformen, A11Y, Übersetzungen und
+angewendete zentrale Registerausrichtung vollständig nachgewiesen sein.
+AC-00-001–009 bleiben unverändert. Erst dann Owner-Abnahme und gegebenenfalls
+Completed/Archiv mit eigener Autorität. Kein Feature-Lauf durch dieses Update.
+
+The updated LH-00 source sets this timing: prove the core process with an isolated
+example on the named primary Mac, then obtain limited owner pilot permission.
+LH-01 and then LH-02 each need separate requests, valid intakes and independent
+reviews; they run outside automatic series selection. LH-02 requires domain
+completion of LH-01. LH-00 remains open. Keep process problems and fixes in existing
+LH-00 evidence and feature acceptance separate. After LH-02 and before LH-03,
+complete evidence for all four platforms, accessibility, translations and applied
+central registry alignment. AC-00-001–009 remain unchanged. Only then may owner
+acceptance and, with separate authority, Completed/archival follow. This update
+starts no feature run.

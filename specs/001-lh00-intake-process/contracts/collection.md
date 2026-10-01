@@ -88,14 +88,14 @@ templates. The policy uses the installed manifest/archive roots, explicit write
 authority, no physical purge and no execution from Next. Authoring-series artifacts
 are a separate contract and must not be overwritten with sequencing files.
 
-Die bestehende Reihenfolge bleibt allein im Lastenheft-Plan maßgeblich. Nach
+Die bestehende Reihenfolge bleibt allein im Lastenheft-Plan maßgeblich. Nach vollständiger LH-00-Abnahme und
 später beauftragter Erstellung weiterer Intakes deren tatsächlich existierende
 Mitglieder und Kanten per Series-Update aufnehmen: LH-00→LH-01 als bindendes
 `RequirementsGovernanceGate`, fachliche Abschlussabhängigkeiten als
 `HardCompletionGate`. Keine Kanten zu nicht vorhandenen Dateien; keine Reduktion
 oder Änderung bestehender Abhängigkeiten. Advisory-Kanten sind nicht bindend.
 
-The existing intake plan remains the order authority. Only after separately
+The existing intake plan remains the order authority. Only after full LH-00 acceptance and separately
 authorized intake creation may Series-Update add existing targets and dependencies:
 LH-00→LH-01 as a binding RequirementsGovernanceGate, domain completion dependencies
 as HardCompletionGate. Add no edges to missing files and preserve all dependencies.
@@ -138,3 +138,33 @@ shells/all three collection copies, publish consistent references/policy/profile
 then obtain fresh independent review for bound changes. Rehashing alone never
 creates Ready. Rollback restores original bytes; incomplete recovery produces
 NeedsRepair and blocks downstream actions.
+
+## Pilot-Ausnahme und B-01-Zielregel / Pilot exception and B-01 target rule
+
+Vor voller LH-00-Abnahme bleiben LH-01 und LH-02 nach IAD010 außerhalb dieser
+Serie. SeriesManifest zählt sie als eigenständige aktive Intakes, nicht als
+Serienmitglieder. Vor jedem Pilot manuell Auftrag, gültigen Intake, unabhängiges
+Review und begrenzte Owner-Pilotfreigabe prüfen; LH-02 zusätzlich gegen den
+belegten LH-01-Abschluss. Kein falsches Completed für LH-00 und keine gelockerten
+bindenden Kanten. Vor LH-03 volle LH-00-Abnahme nach LH-02 nachweisen.
+
+Für den B-01-Patch gilt: Ready genau ein Eligible; Active null oder ein Eligible,
+aber null nur bei mindestens einem Active-Mitglied; mehrere Eligible bleiben
+ungültig. Completed und alle Sicherheitsprüfungen bleiben unverändert. Bei null
+Kandidaten eligibleCandidate N/A. Leeres Idle bleibt ausgeschlossen. Die lokale
+Quellenkorrektur wird erst nach getrennt autorisierten Releases, zentralen Pins,
+gezielter Installation und erneuter Prüfung für diese Collection wirksam.
+
+Before full LH-00 acceptance, IAD010 keeps LH-01 and LH-02 outside this series.
+SeriesManifest counts them as standalone active intakes rather than series
+members. Before each pilot, manually verify its request, valid intake, independent
+review and limited owner pilot permission; LH-02 also requires evidenced LH-01
+completion. No false LH-00 Completed and no relaxed binding edges. Prove full
+LH-00 acceptance after LH-02 and before LH-03.
+
+The B-01 patch requires exactly one Eligible in Ready. Active permits zero or one,
+but zero requires at least one Active member; multiple remain invalid. Completed
+and all safety checks remain unchanged. Zero candidates yield eligibleCandidate
+N/A. Empty Idle remains excluded. The local source fix takes effect in this
+collection only after separately authorized releases, central pins, targeted
+installation and retesting.

@@ -243,3 +243,72 @@ Die offenen B-01-/Plattform-/Abnahmenachweise sind keine ungelösten Entwurfsfra
 Installed Spec Kit package paths are machine-specific. The plan validation report
 records version, script hash and the historical context-updater execution. B-01, platform
 and acceptance evidence remain open implementation work, not unresolved design questions.
+
+## D-09: B-01-Quellenkorrektur und Abnahmestufen / Source fix and acceptance stages
+
+**Historischer Ausgangsstand am 2026-10-01 vor Quellenlieferung und nativer CI.**
+Die damalige Aussage zur ausstehenden CI bleibt unten erhalten; der anschließende
+Lieferstand aktualisiert sie.
+
+**Historical starting point on 2026-10-01 before source delivery and native CI.**
+The pending-CI statement below is preserved as history; the delivery update that
+follows supersedes it.
+
+IAD010 vom 2026-10-01 präzisiert D-03: Die lokale Quellenkorrektur in Authoring,
+Review und Sequencing erlaubt Active mit null Eligible nur bei mindestens einem
+Active-Mitglied. Ready, Completed und alle Schutzprüfungen bleiben erhalten;
+Idle/leer ist ausdrücklich nicht Teil der Korrektur. Die D-03-Matrix bleibt ein
+historischer Nachweis der installierten Versionen. Diese Installation bleibt
+unverändert; B-01 sperrt die tatsächliche Serienaktivierung bis Release,
+gezielter Installation und erneuter Prüfung. Native Linux-/Windows-CI ist noch
+für den neuen Patch zu erbringen. Werkzeugtests sind keine Projektabnahme.
+
+Kernprozess zuerst auf dem benannten primären Mac; LH-01/LH-02 danach als getrennt
+beauftragte Einzelpiloten außerhalb der Serienauswahl. LH-02 setzt LH-01-Abschluss
+voraus. Volle LH-00-Abnahme nach LH-02, vor LH-03; alle vier Umgebungen, A11Y,
+Übersetzungen und angewendete Registerausrichtung bleiben zwingend. Bis dahin
+kein Completed für LH-00. Siehe [IAD010](../../docs/planning/lh00-staged-acceptance-decisions.md).
+
+IAD010 dated 2026-10-01 refines D-03: the local Authoring, Review and Sequencing
+source fix permits Active with zero Eligible only when a member is Active.
+Ready, Completed and safety checks remain unchanged; empty Idle is excluded.
+D-03's matrix remains historical evidence of installed versions. Installation
+stays unchanged; B-01 blocks actual series activation until release, targeted
+installation and retesting. Native Linux/Windows CI for the new patch is still
+pending. Tool tests do not accept the project process.
+
+Prove the core process on the named primary Mac first; then commission LH-01/LH-02
+separately as standalone pilots outside series selection. LH-02 requires LH-01
+completion. Full LH-00 acceptance follows after LH-02 and before LH-03: all four
+environments, accessibility, translations and applied registry alignment remain
+mandatory. LH-00 must not be Completed before then. See IAD010 above.
+
+### Lieferstand nach Quellenlieferung / Update after source delivery
+
+**Am 2026-10-01 erneut lesend verifiziert:** Alle drei B-01-PRs sind gemergt.
+Je Preset bestanden die nativen macOS-, Ubuntu- und Windows-Jobs auf dem
+angegebenen PR-Head, insgesamt neun erfolgreiche Jobs. Der historische offene
+CI-Punkt oben ist damit erledigt. Die Quellenkorrektur wird nicht erneut umgesetzt.
+
+**Reverified read-only on 2026-10-01:** All three B-01 PRs are merged. Each preset's
+native macOS, Ubuntu and Windows jobs passed on the stated PR head, nine successful
+jobs in total. This resolves the historical pending-CI item above. Do not repeat
+the source fix.
+
+| Quelle / Source | Geprüfter PR-Head / Verified PR head | Merge-Commit | CI-Nachweis / CI evidence |
+|---|---|---|---|
+| [Authoring PR 11](https://github.com/hindermath/spec-kit-preset-intake-authoring-governance/pull/11) | `dc0ea7843cd2b61e342ef987bf633a06dc7ab026` | `23f795c02ec147cd63a82b65bbb8dc4622774af4` | [Run 36844931172](https://github.com/hindermath/spec-kit-preset-intake-authoring-governance/actions/runs/36844931172): 3/3 SUCCESS |
+| [Review PR 8](https://github.com/hindermath/spec-kit-preset-intake-review-governance/pull/8) | `930e68b42c5b2a6fc7c960ac50a993934fd6b47e` | `49a7609ffd055106449643d1c27996c78e137dc5` | [Run 36844938354](https://github.com/hindermath/spec-kit-preset-intake-review-governance/actions/runs/36844938354): 3/3 SUCCESS |
+| [Sequencing PR 10](https://github.com/hindermath/spec-kit-preset-intake-sequencing-governance/pull/10) | `a4c56131825dfa11028e137b1f98db1fb8f37928` | `5bf6caa9dda6eae635a16a4352e50453c0cf42b2` | [Run 36844945700](https://github.com/hindermath/spec-kit-preset-intake-sequencing-governance/actions/runs/36844945700): 3/3 SUCCESS |
+
+Die Integrationsgrenze bleibt bestehen: Patch-Releases übernehmen, zentrale
+Versionsreferenzen ausrichten, gezielt dieses Projekt installieren und die
+installierten Kopien prüfen. Diese Schritte stehen in
+[T034–T036](tasks.md#phase-7-us5--bestand-und-serie--inventory-and-series-p2)
+vor tatsächlicher Serienaktivierung. Die Werkzeug-CI erfüllt keine praktische
+Projektabnahme; deren gestufter Zeitpunkt bleibt unverändert.
+
+The integration boundary remains: adopt patch releases, align central version
+references, install this project's targeted update and verify installed copies.
+T034–T036 place these steps before actual series activation. Tool CI does not
+complete practical project acceptance; its staged timing remains unchanged.

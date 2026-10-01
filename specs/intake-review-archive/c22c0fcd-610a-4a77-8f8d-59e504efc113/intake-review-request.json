@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "reviewId": "5eaad379-04dc-49e1-8060-86ad662611f0",
+  "reviewId": "c22c0fcd-610a-4a77-8f8d-59e504efc113",
   "mode": "Single",
   "policy": "generic-markdown",
   "targets": [
@@ -20,13 +20,13 @@
     "operatorExceptions": []
   },
   "authority": {
-    "request": "IAD010 explicitly requires a fresh independent intake review after governed update",
+    "request": "Owner explicitly requested intake repair, then a complete re-review by a separate agent",
     "targetMutationAllowed": false,
     "implementationAllowed": false
   },
   "projectProfile": "show-commandtui400-de-en",
-  "evidenceDelivery": "Local only; no commit, push, release or rollout",
-  "priorReviewId": "c22c0fcd-610a-4a77-8f8d-59e504efc113",
-  "priorReviewArchive": "specs/intake-review-archive/c22c0fcd-610a-4a77-8f8d-59e504efc113",
-  "targetHash": "ab17634eda4fbb8e739b7b2807e3ebfa5cc10b700249072b395ef863e7ca0e6e"
+  "evidenceDelivery": "MergeAndSync with owner-authorized admin bypass; no bypass of intake findings",
+  "priorReviewId": "f0741205-05b7-42c5-8680-451c1483627d",
+  "priorReviewArchive": "specs/intake-review-archive/f0741205-05b7-42c5-8680-451c1483627d",
+  "targetHash": "680baafd7534db9386f91a43cdbe3dbf260d6c0620c9f506c2be59ec3c826a65"
 }
