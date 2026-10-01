@@ -193,7 +193,7 @@ Keep secrets out of tracked files.
 
 Konkrete spätere Belege: `docs/architecture/lh00-process.md` für Kontext, Bausteine,
 Laufzeit, Deployment, Qualität und Risiken; `docs/architecture/decisions/001-lh00-file-process.md`
-als Entscheidungsprotokoll (ADR); `docs/security/s-adr-lh00-authority.md` für Autorität;
+als Entscheidungsprotokoll (ADR); `docs/security/adr/s-adr-lh00-authority.md` für Autorität;
 `docs/security/threat-model.md` für STRIDE/CIA und relevante CAPEC-Angriffsmuster;
 `docs/security/arc42-section-8-lh00.md` für Eingabeprüfung, Fehler, Logging,
 Abhängigkeiten und begründete Nichtanwendung eigener Dienstauthentisierung/Kryptografie.

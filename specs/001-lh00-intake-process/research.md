@@ -246,6 +246,14 @@ and acceptance evidence remain open implementation work, not unresolved design q
 
 ## D-09: B-01-Quellenkorrektur und Abnahmestufen / Source fix and acceptance stages
 
+**Historischer Ausgangsstand am 2026-10-01 vor Quellenlieferung und nativer CI.**
+Die damalige Aussage zur ausstehenden CI bleibt unten erhalten; der anschließende
+Lieferstand aktualisiert sie.
+
+**Historical starting point on 2026-10-01 before source delivery and native CI.**
+The pending-CI statement below is preserved as history; the delivery update that
+follows supersedes it.
+
 IAD010 vom 2026-10-01 präzisiert D-03: Die lokale Quellenkorrektur in Authoring,
 Review und Sequencing erlaubt Active mit null Eligible nur bei mindestens einem
 Active-Mitglied. Ready, Completed und alle Schutzprüfungen bleiben erhalten;
@@ -274,3 +282,33 @@ separately as standalone pilots outside series selection. LH-02 requires LH-01
 completion. Full LH-00 acceptance follows after LH-02 and before LH-03: all four
 environments, accessibility, translations and applied registry alignment remain
 mandatory. LH-00 must not be Completed before then. See IAD010 above.
+
+### Lieferstand nach Quellenlieferung / Update after source delivery
+
+**Am 2026-10-01 erneut lesend verifiziert:** Alle drei B-01-PRs sind gemergt.
+Je Preset bestanden die nativen macOS-, Ubuntu- und Windows-Jobs auf dem
+angegebenen PR-Head, insgesamt neun erfolgreiche Jobs. Der historische offene
+CI-Punkt oben ist damit erledigt. Die Quellenkorrektur wird nicht erneut umgesetzt.
+
+**Reverified read-only on 2026-10-01:** All three B-01 PRs are merged. Each preset's
+native macOS, Ubuntu and Windows jobs passed on the stated PR head, nine successful
+jobs in total. This resolves the historical pending-CI item above. Do not repeat
+the source fix.
+
+| Quelle / Source | Geprüfter PR-Head / Verified PR head | Merge-Commit | CI-Nachweis / CI evidence |
+|---|---|---|---|
+| [Authoring PR 11](https://github.com/hindermath/spec-kit-preset-intake-authoring-governance/pull/11) | `dc0ea7843cd2b61e342ef987bf633a06dc7ab026` | `23f795c02ec147cd63a82b65bbb8dc4622774af4` | [Run 36844931172](https://github.com/hindermath/spec-kit-preset-intake-authoring-governance/actions/runs/36844931172): 3/3 SUCCESS |
+| [Review PR 8](https://github.com/hindermath/spec-kit-preset-intake-review-governance/pull/8) | `930e68b42c5b2a6fc7c960ac50a993934fd6b47e` | `49a7609ffd055106449643d1c27996c78e137dc5` | [Run 36844938354](https://github.com/hindermath/spec-kit-preset-intake-review-governance/actions/runs/36844938354): 3/3 SUCCESS |
+| [Sequencing PR 10](https://github.com/hindermath/spec-kit-preset-intake-sequencing-governance/pull/10) | `a4c56131825dfa11028e137b1f98db1fb8f37928` | `5bf6caa9dda6eae635a16a4352e50453c0cf42b2` | [Run 36844945700](https://github.com/hindermath/spec-kit-preset-intake-sequencing-governance/actions/runs/36844945700): 3/3 SUCCESS |
+
+Die Integrationsgrenze bleibt bestehen: Patch-Releases übernehmen, zentrale
+Versionsreferenzen ausrichten, gezielt dieses Projekt installieren und die
+installierten Kopien prüfen. Diese Schritte stehen in
+[T034–T036](tasks.md#phase-7-us5--bestand-und-serie--inventory-and-series-p2)
+vor tatsächlicher Serienaktivierung. Die Werkzeug-CI erfüllt keine praktische
+Projektabnahme; deren gestufter Zeitpunkt bleibt unverändert.
+
+The integration boundary remains: adopt patch releases, align central version
+references, install this project's targeted update and verify installed copies.
+T034–T036 place these steps before actual series activation. Tool CI does not
+complete practical project acceptance; its staged timing remains unchanged.
