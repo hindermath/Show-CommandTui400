@@ -1,5 +1,15 @@
 # Specify-Nachweis und Anwendbarkeit / Specify evidence and applicability
 
+Historischer Nachweis des unten datierten Laufs. Die damaligen Input-Hashes
+bleiben erhalten; das Update vom 2026-10-01 und sein unabhängiges Review stehen
+im aktuellen [Receipt](../../intake-authoring-receipts/lh-00.json) und
+[Reviewbericht](../../intake-review-report.md).
+
+Historical evidence of the dated run below. Its input hashes are preserved;
+the 2026-10-01 update and independent review are recorded in the current receipt
+and review report linked above.
+
+
 **Datum / Date:** 2026-09-29. **Feature:** [LH-00-Prozess / LH-00 process](../spec.md).
 **Umfang / Scope:** lokale Spezifikation und Checklisten / local specification and checklists.
 

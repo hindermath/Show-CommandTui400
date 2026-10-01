@@ -111,3 +111,28 @@ authority, platform/host role, tool versions, commit and candidate hashes, exact
 command/agent request, exit or explicit N/A for human judgment, outcome, limits,
 evidence paths and next action. Separate technical results, human risk acceptance
 and project acceptance.
+
+## IAD010: Abnahmezeitpunkt / Acceptance timing
+
+Die aktualisierte fachliche Quelle [LH-00](../../../intakes/LH-00.md) legt fest:
+Kernprozess mit isoliertem Beispiel auf dem benannten primären Mac nachweisen,
+dann begrenzte Owner-Pilotfreigabe. LH-01 und danach LH-02 benötigen jeweils
+separate Aufträge, gültige Intakes und unabhängige Reviews; sie laufen außerhalb
+der automatischen Serienauswahl. LH-02 benötigt den fachlichen Abschluss von
+LH-01. LH-00 bleibt offen. Prozessprobleme und Korrekturen im bestehenden
+LH-00-Nachweis führen; Feature-Abnahmen getrennt halten.
+Nach LH-02 und vor LH-03 müssen alle vier Plattformen, A11Y, Übersetzungen und
+angewendete zentrale Registerausrichtung vollständig nachgewiesen sein.
+AC-00-001–009 bleiben unverändert. Erst dann Owner-Abnahme und gegebenenfalls
+Completed/Archiv mit eigener Autorität. Kein Feature-Lauf durch dieses Update.
+
+The updated LH-00 source sets this timing: prove the core process with an isolated
+example on the named primary Mac, then obtain limited owner pilot permission.
+LH-01 and then LH-02 each need separate requests, valid intakes and independent
+reviews; they run outside automatic series selection. LH-02 requires domain
+completion of LH-01. LH-00 remains open. Keep process problems and fixes in existing
+LH-00 evidence and feature acceptance separate. After LH-02 and before LH-03,
+complete evidence for all four platforms, accessibility, translations and applied
+central registry alignment. AC-00-001–009 remain unchanged. Only then may owner
+acceptance and, with separate authority, Completed/archival follow. This update
+starts no feature run.

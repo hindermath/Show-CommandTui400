@@ -7,7 +7,7 @@ Stand / Date: 28.09.2026. Plan-IDs sind keine GitHub-Issue-Nummern. / Plan IDs a
 | [LH-00](https://github.com/hindermath/Show-CommandTui400/issues/1) | Spec-Kit-Projektprofil und Lastenheft-Prozess / Spec Kit project profile and intake process | keine / none |
 | [LH-01](https://github.com/hindermath/Show-CommandTui400/issues/2) | TUI-Grundlage, Sitzungsmodell und Tastaturbedienung / TUI foundation, session model and keyboard operation | [LH-00](https://github.com/hindermath/Show-CommandTui400/issues/1) |
 | [LH-02](https://github.com/hindermath/Show-CommandTui400/issues/3) | Cmdlet-Suche, Auswahl und Modulauflösung / Cmdlet search, selection and module resolution | [LH-01](https://github.com/hindermath/Show-CommandTui400/issues/2) |
-| [LH-03](https://github.com/hindermath/Show-CommandTui400/issues/4) | Parameterformular, Parametersätze und Eingabezustand / Parameter form, parameter sets and input state | [LH-02](https://github.com/hindermath/Show-CommandTui400/issues/3) ; volle LH-00-Abnahme nach LH-02 / full LH-00 acceptance after LH-02 |
+| [LH-03](https://github.com/hindermath/Show-CommandTui400/issues/4) | Parameterformular, Parametersätze und Eingabezustand / Parameter form, parameter sets and input state | [LH-02](https://github.com/hindermath/Show-CommandTui400/issues/3) |
 | [LH-04](https://github.com/hindermath/Show-CommandTui400/issues/5) | Wertehilfe, Variablen, Completion und Validierung / Value assistance, variables, completion and validation | [LH-03](https://github.com/hindermath/Show-CommandTui400/issues/4) |
 | [LH-05](https://github.com/hindermath/Show-CommandTui400/issues/6) | Aufrufvorschau, Befehlszeilenübernahme und Ausführung / Invocation preview, command-line transfer and execution | [LH-03](https://github.com/hindermath/Show-CommandTui400/issues/4), [LH-04](https://github.com/hindermath/Show-CommandTui400/issues/5) |
 | [LH-06](https://github.com/hindermath/Show-CommandTui400/issues/7) | Stream Deck XL und Logitech MX Keypad: Tastenprofile / Stream Deck XL and Logitech MX Keypad key profiles | [LH-01](https://github.com/hindermath/Show-CommandTui400/issues/2), [LH-05](https://github.com/hindermath/Show-CommandTui400/issues/6) |
@@ -24,7 +24,7 @@ LH-06 device profiles and LH-07 dynamic adapters are optional later stages.
 Each issue provides purpose, requirements, non-goals, acceptance, open decisions
 and a drafting request. The issues exist; the minimal local authoring profile
 is configured, but full process acceptance belongs to LH-00. Issue drafts are
-not active intakes. The table and pilot rule below form the binding dependency order.
+not active intakes. The table above remains the sole binding dependency order.
 
 ## Aktueller Lastenheft-Stand / Current intake state
 
@@ -41,26 +41,3 @@ review have separate evidence. The linked review report states current outcome
 and next actions. LH-01 through LH-07 are published issues, with original drafts
 retained as historical sources. Creation, repair or review alone grants no
 series or implementation authority.
-
-## Begrenzter Pilotweg / Limited pilot route
-
-Nach Umsetzung und erfolgreichem isoliertem Kernprozessnachweis auf dem eindeutig
-benannten primären Mac kann der Owner LH-01, danach LH-02 als Einzelpiloten
-freigeben. Jeder braucht einen eigenen Auftrag, gültigen Intake und unabhängiges
-Review. Beide bleiben vorläufig außerhalb der automatischen Serienauswahl.
-LH-01 braucht in diesem begrenzten Weg noch kein Completed von LH-00; LH-02
-braucht weiterhin den belegten fachlichen Abschluss von LH-01. LH-00 bleibt offen.
-Nach LH-02 und vor LH-03: vollständige LH-00-Abnahme auf allen vier Umgebungen
-sowie A11Y, Übersetzungen und angewendete Registerausrichtung. Die übrigen Kanten
-bleiben unverändert. Kein Feature-Lauf wird durch diese Dokumentation gestartet.
-
-After implementation and successful isolated core-process evidence on the named
-primary Mac, the owner may permit LH-01 and then LH-02 as standalone pilots.
-Each needs a separate request, valid intake and independent review. Both stay
-outside automatic series selection for now. In this limited route LH-01 does
-not yet require LH-00 Completed; LH-02 still requires evidenced domain completion
-of LH-01. LH-00 remains open. After LH-02 and before LH-03: full LH-00 acceptance
-on all four environments plus accessibility, translations and applied registry
-alignment. All other edges remain unchanged. This document starts no feature run.
-
-[Entscheidung IAD010 / Decision IAD010](planning/lh00-staged-acceptance-decisions.md).

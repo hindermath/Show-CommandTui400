@@ -243,3 +243,34 @@ Die offenen B-01-/Plattform-/Abnahmenachweise sind keine ungelösten Entwurfsfra
 Installed Spec Kit package paths are machine-specific. The plan validation report
 records version, script hash and the historical context-updater execution. B-01, platform
 and acceptance evidence remain open implementation work, not unresolved design questions.
+
+## D-09: B-01-Quellenkorrektur und Abnahmestufen / Source fix and acceptance stages
+
+IAD010 vom 2026-10-01 präzisiert D-03: Die lokale Quellenkorrektur in Authoring,
+Review und Sequencing erlaubt Active mit null Eligible nur bei mindestens einem
+Active-Mitglied. Ready, Completed und alle Schutzprüfungen bleiben erhalten;
+Idle/leer ist ausdrücklich nicht Teil der Korrektur. Die D-03-Matrix bleibt ein
+historischer Nachweis der installierten Versionen. Diese Installation bleibt
+unverändert; B-01 sperrt die tatsächliche Serienaktivierung bis Release,
+gezielter Installation und erneuter Prüfung. Native Linux-/Windows-CI ist noch
+für den neuen Patch zu erbringen. Werkzeugtests sind keine Projektabnahme.
+
+Kernprozess zuerst auf dem benannten primären Mac; LH-01/LH-02 danach als getrennt
+beauftragte Einzelpiloten außerhalb der Serienauswahl. LH-02 setzt LH-01-Abschluss
+voraus. Volle LH-00-Abnahme nach LH-02, vor LH-03; alle vier Umgebungen, A11Y,
+Übersetzungen und angewendete Registerausrichtung bleiben zwingend. Bis dahin
+kein Completed für LH-00. Siehe [IAD010](../../docs/planning/lh00-staged-acceptance-decisions.md).
+
+IAD010 dated 2026-10-01 refines D-03: the local Authoring, Review and Sequencing
+source fix permits Active with zero Eligible only when a member is Active.
+Ready, Completed and safety checks remain unchanged; empty Idle is excluded.
+D-03's matrix remains historical evidence of installed versions. Installation
+stays unchanged; B-01 blocks actual series activation until release, targeted
+installation and retesting. Native Linux/Windows CI for the new patch is still
+pending. Tool tests do not accept the project process.
+
+Prove the core process on the named primary Mac first; then commission LH-01/LH-02
+separately as standalone pilots outside series selection. LH-02 requires LH-01
+completion. Full LH-00 acceptance follows after LH-02 and before LH-03: all four
+environments, accessibility, translations and applied registry alignment remain
+mandatory. LH-00 must not be Completed before then. See IAD010 above.

@@ -270,7 +270,7 @@ not a choice of new product architecture.
 | FR-015 | Create vor Überschreiben schützen; Änderungen nur als beauftragtes Update mit nachvollziehbarer Vorgängerbindung durchführen. | Protect Create against overwriting; perform changes only as an authorized Update with traceable predecessor binding. |
 | FR-016 | Autorisiertes Archivieren oder Löschen mit Herkunftsnachweis und dauerhaftem Verweis auf den früheren Eintrag erhalten; keine Identität still wiederverwenden. | Preserve provenance and a permanent record of the former entry when archiving or deleting with authority; never silently reuse identity. |
 | FR-017 | Authoring-, Review- und Umsetzungsstatus getrennt führen; `ReadyForReview` nur bei geklärten Authoring-Entscheidungen und gültigen Nachweisen ausweisen. | Track authoring, review and implementation states separately; report ReadyForReview only with resolved authoring decisions and valid evidence. |
-| FR-018 | Review-Ergebnisse getrennt ausweisen: `Ready`, `ReadyWithAcceptedRisks`, `NeedsRemediation` oder `Rejected`; ein anderer Mensch oder Agent als der Autor muss prüfen, Risiken muss ein Mensch akzeptieren. Kein Ergebnis, `Eligible` oder Folgeprompt verleiht Ausführungs- oder Remote-Autorität. | Report separate review outcomes: Ready, ReadyWithAcceptedRisks, NeedsRemediation or Rejected; a human or agent other than the author must review, and a human must accept risks. No result, Eligible status or follow-up prompt grants execution or remote authority. |
+| FR-018 | Review-Ergebnisse getrennt ausweisen: `Ready`, `ReadyWithAcceptedRisks`, `NeedsClarification`, `NeedsRemediation` oder `Rejected`; ein anderer Mensch oder Agent als der Autor muss prüfen, Risiken muss ein Mensch akzeptieren. Kein Ergebnis, `Eligible` oder Folgeprompt verleiht Ausführungs- oder Remote-Autorität. | Report separate review outcomes: Ready, ReadyWithAcceptedRisks, NeedsClarification, NeedsRemediation or Rejected; a human or agent other than the author must review, and a human must accept risks. No result, Eligible status or follow-up prompt grants execution or remote authority. |
 | FR-019 | Den vollständigen projektspezifischen PowerShell-Prozess auf Mac A, Mac B, Windows 11 nativ und Ubuntu 24.04 unter WSL2 getrennt prüfen. | Test the complete project-specific PowerShell process separately on Mac A, Mac B, native Windows 11 and Ubuntu 24.04 under WSL2. |
 | FR-020 | Je Umgebung Versionen, Kommando, Exitcode, Ergebnis und Grenzen oder einen sichtbaren Blocker erfassen; volle Prozessabnahme verlangt vier erfolgreiche Nachweise. | Record versions, command, exit code, outcome and boundaries or a visible blocker per environment; full process acceptance requires four successful records. |
 | FR-021 | Die vier portablen Dokumentrollen und sechs Collection-Pfade konkret zuordnen; Bestandsmodus, kanonischen Index, Archiv und Zustandsübergänge festlegen und validieren. | Map the four portable document roles and six collection paths; define and validate inventory mode, canonical index, archive and state transitions. |
@@ -765,3 +765,28 @@ rationale, evidence, owner, reviewer, residual risk, reassessment and follow-up
 for each relevant checkpoint. N/A never counts as a passed test. The quality
 checklist assesses specification readiness; it replaces neither intake review
 nor process acceptance.
+
+## IAD010: Abnahmezeitpunkt / Acceptance timing
+
+Die aktualisierte fachliche Quelle [LH-00](../../intakes/LH-00.md) legt fest:
+Kernprozess mit isoliertem Beispiel auf dem benannten primären Mac nachweisen,
+dann begrenzte Owner-Pilotfreigabe. LH-01 und danach LH-02 benötigen jeweils
+separate Aufträge, gültige Intakes und unabhängige Reviews; sie laufen außerhalb
+der automatischen Serienauswahl. LH-02 benötigt den fachlichen Abschluss von
+LH-01. LH-00 bleibt offen. Prozessprobleme und Korrekturen im bestehenden
+LH-00-Nachweis führen; Feature-Abnahmen getrennt halten.
+Nach LH-02 und vor LH-03 müssen alle vier Plattformen, A11Y, Übersetzungen und
+angewendete zentrale Registerausrichtung vollständig nachgewiesen sein.
+AC-00-001–009 bleiben unverändert. Erst dann Owner-Abnahme und gegebenenfalls
+Completed/Archiv mit eigener Autorität. Kein Feature-Lauf durch dieses Update.
+
+The updated LH-00 source sets this timing: prove the core process with an isolated
+example on the named primary Mac, then obtain limited owner pilot permission.
+LH-01 and then LH-02 each need separate requests, valid intakes and independent
+reviews; they run outside automatic series selection. LH-02 requires domain
+completion of LH-01. LH-00 remains open. Keep process problems and fixes in existing
+LH-00 evidence and feature acceptance separate. After LH-02 and before LH-03,
+complete evidence for all four platforms, accessibility, translations and applied
+central registry alignment. AC-00-001–009 remain unchanged. Only then may owner
+acceptance and, with separate authority, Completed/archival follow. This update
+starts no feature run.

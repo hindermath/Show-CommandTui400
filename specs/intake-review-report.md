@@ -1,128 +1,134 @@
-# LH-00-Review / LH-00 review
+# Unabhängiges LH-00-Review / Independent LH-00 review
 
-## Ergebnis und Umfang / Outcome and scope
+Stand / Date: 2026-10-01. Ergebnis / Outcome: **Ready**.
+Review-ID: `5eaad379-04dc-49e1-8060-86ad662611f0`.
+Modus / Mode: Single. Ziele / Targets: 1. Workers: 0.
 
-**Ready**. Vollständiges erneutes Review im Modus **Single**: ein Ziel, null
-Worker. Offene Befunde: Critical 0, High 0, Medium 0, Low 0. Keine akzeptierten
-Risiken oder offenen Reviewfragen. IR001 und IR002 sind behoben; der während
-dieses Durchgangs erkannte Quellenstatusbefund IR003 ist ebenfalls behoben.
-Alle drei bleiben im [Ergebnis](intake-review-result.json) nachvollziehbar.
+## Gegenstand und Unabhängigkeit / Target and independence
 
-**Ready**. Complete re-review in **Single** mode: one target, zero workers.
-Open findings: Critical 0, High 0, Medium 0, Low 0. No accepted risks or open
-review questions. IR001 and IR002 are resolved. Source-status finding IR003,
-identified during this pass, is also resolved. All three remain in the result.
+Geprüft wurde [LH-00](../intakes/LH-00.md) mit Profil
+`show-commandtui400-de-en`, installiertem Review-Skill, dessen Policy und
+Checkliste sowie den gebundenen Projektquellen. Prüfer war der separate Agent
+`/root/staged_intake_review`, nicht der Autor des Updates. Der Prüfer änderte
+weder Intake noch Quellen. IAD009 und
+[IAD010](../docs/planning/lh00-staged-acceptance-decisions.md) autorisieren diese
+unabhängige Prüfung. Der isolierte Kandidat basiert auf
+`e5f9cf68618896a04a885df24879bdea47ce1394`; er besitzt keine Git-Metadaten.
 
-Prüfer: **separater automatisierter Codex-Agent**, verschieden vom Autor der
-Reparatur, ausdrücklich beauftragt durch IAD009. Keine menschliche Abnahme.
-Ziel und Quellen wurden ausschließlich gelesen. Der Prüfer schrieb nur
-Bericht und Ergebnis im isolierten Kandidaten.
+The separate agent `/root/staged_intake_review` reviewed LH-00 using profile
+show-commandtui400-de-en, the installed review skill, its policy/checklist and
+bound project sources. The reviewer differs from the update author and changed
+no intake or source. IAD009 and IAD010 authorize this review. The isolated
+candidate uses the Git base above and has no Git metadata.
 
-Reviewer: **a separate automated Codex agent**, distinct from the repair author,
-explicitly appointed by IAD009. No human acceptance is claimed. Target and
-sources were read-only; reviewer wrote only the report and machine result.
+Intake SHA-256: `ab17634eda4fbb8e739b7b2807e3ebfa5cc10b700249072b395ef863e7ca0e6e`.
+Receipt-ID: `db6043c8-2ddc-477c-a045-1c3621762660`.
+Die Intake-ID bleibt `2296d99d-f099-4c4d-88f7-789581693eb0`.
 
-## Identität und Bindung / Identity and binding
+## Ergebnis und Befunde / Outcome and findings
 
-| Merkmal / Item | Wert / Value |
-|---|---|
-| Review-ID | `c22c0fcd-610a-4a77-8f8d-59e504efc113` |
-| Zeitpunkt / Time | `2026-09-28T21:30:05Z` |
-| Ziel / Target | [intakes/LH-00.md](../intakes/LH-00.md) |
-| Ziel-SHA-256 / Target SHA-256 | `680baafd7534db9386f91a43cdbe3dbf260d6c0620c9f506c2be59ec3c826a65` |
-| Intake-ID | `2296d99d-f099-4c4d-88f7-789581693eb0` |
-| Receipt-ID | `a627d004-b189-43df-b061-27e30a0e6a37` |
-| Request | [intake-review-request.json](intake-review-request.json) |
-| Request-SHA-256 | `9bf89c0b2d26ef71a81bbe371bea47ae83e4faadc57f5c2797bf7efed318cac8` |
-| Basiscommit / Base commit | `d3d2f206bb561e2badb8e806eab213bb143510db` |
-| Git-Blob des Ziels / Target Git blob | `N/A`: isolierter Kandidat ohne Git-Metadaten / isolated candidate without Git metadata |
+Keine offenen Befunde: Critical 0, High 0, Medium 0, Low 0.
+Keine offenen Fragen und keine akzeptierten Risiken. Die früheren IR001–IR003
+bleiben als historisch behoben nachvollziehbar. In diesem Review wurde IR004
+(Medium) gefunden und vom Autor korrigiert: `NeedsClarification` fehlte als
+Review-Ausgang. Diagramm und beide Textalternativen nennen jetzt alle fünf
+Ausgänge. Das Profil unterscheidet außerdem historische Lieferbefugnis und den
+aktuellen lokalen Auftrag IAD010. Der korrigierte Stand wurde erneut geprüft.
 
-Normalisierung: eine anfängliche UTF-8-BOM entfernen, strikt UTF-8 lesen,
-CRLF und CR in LF umwandeln; sonst keine Inhaltsänderung. Dieses Ergebnis
-ersetzt `f0741205-05b7-42c5-8680-451c1483627d` ausdrücklich. Dessen Request,
-Ergebnis und Bericht bleiben [bytegenau archiviert](intake-review-archive/f0741205-05b7-42c5-8680-451c1483627d/intake-review-result.json).
-Aktuelle Hashes binden Vorgänger, Policy, Profil, Receipt und Quellen.
-Der veränderliche Operation-Status ist kein abgeschlossener Liefernachweis.
+No open findings: Critical 0, High 0, Medium 0, Low 0. There are no open questions
+or accepted risks. IR001–IR003 retain their historical resolved status. This
+review found IR004 (Medium), which the author corrected: NeedsClarification was
+missing as a review outcome. The diagram and both text alternatives now list
+all five outcomes. The profile also separates historical delivery authority
+from current local request IAD010. The corrected content was reviewed again.
 
-Normalization removes one initial UTF-8 BOM, decodes strict UTF-8 and converts
-CRLF/CR to LF without other changes. This review explicitly supersedes the
-prior review above. Its request, result and report remain byte-identical in
-the archive. Current hashes bind predecessor evidence, policy, profile,
-receipt and sources. Mutable operation status is not completed delivery proof.
+## Fachliche Prüfung / Semantic review
 
-## Vollständige Prüfabdeckung / Complete review coverage
+- Identität, Zielgruppe, Vorkenntnisse, Zweck, Umfang und Nicht-Ziele sind klar.
+  Fach- und Workflowbegriffe werden erklärt; DE/EN-Anforderungen sind gleichwertig.
+- Alle 12 FR und 9 AC bleiben erhalten, jeweils in beiden Sprachen. E01–E07
+  ordnen prüfbare Nachweise zu. CEFR B2 ist eine qualitative Einschätzung,
+  kein zertifizierter Sprachtest.
+- Der Kernprozess wird nach Umsetzung auf dem eindeutig benannten primären
+  Mac geprüft. Erst erfolgreiche Nachweise erlauben eine begrenzte Owner-Freigabe.
+- LH-01 und danach LH-02 bleiben ausdrücklich beauftragte Einzelpiloten mit
+  eigenen gültigen Intakes und unabhängigem Review außerhalb automatischer
+  Serienauswahl. LH-02 verlangt den fachlichen Abschluss von LH-01.
+- Vollständige LH-00-Abnahme folgt nach LH-02, vor LH-03: beide Macs, Windows 11,
+  Ubuntu 24.04 unter WSL2, A11Y, Übersetzungen und angewendete Registerausrichtung.
+  LH-00 bleibt bis dahin offen. LH-03 benötigt außerdem den Abschluss von LH-02.
+- Security-/Datenschutz- und A11Y-Anwendbarkeit sowie Produkt- und Werkzeugnachweise
+  bleiben getrennt. Textalternative, Zustände und nächste Aktionen sind lesbar;
+  eine Dokumentprüfung behauptet keine assistive Feldabnahme.
+- Keine neue Feature-, Liefer- oder Statusautorität entsteht. Die Folgeprompts
+  benötigen einen neuen Auftrag; eine automatische Serie wird nicht vorgetäuscht.
 
-| Dimension | Ergebnis und Grenze / Result and boundary |
-|---|---|
-| Identität, Zielgruppe, Ziel, Umfang / Identity, audience, goal, scope | Klar; Grundwissen in Dateien, Terminal und PowerShell; keine Spec-Kit-Vorkenntnisse. Produktimplementierung ausgeschlossen. / Explicit basic knowledge; no prior Spec Kit experience; product implementation excluded. |
-| Sprache und Begriffe / Language and terms | DE zuerst/EN danach, gleiche normative Bedeutung und erklärte Begriffe. B2 qualitativ geprüft, keine Sprachzertifizierung. / Matching normative meaning and explained terms; qualitative B2 assessment only. |
-| Anforderungen und Abnahme / Requirements and acceptance | 12 FR, 9 AC je in DE/EN; E01–E07 decken alle IDs ab. / All IDs mapped to evidence cases. |
-| Quellen und Archiv / Sources and archive | Neun Quellen, vier Kontext-Hashes geprüft; 15 Vorgängerdateien bytegleich zur Basis. / Nine sources, four context hashes and 15 byte-identical predecessors checked. |
-| Abhängigkeiten / Dependencies | LH-00 ohne Vorgänger; verbindlicher Plan erhalten, spätere Intakes außerhalb dieses Reviews. / No predecessor; binding order preserved, later intakes outside this review. |
-| Security, Datenschutz, Lieferkette / Security, privacy, supply chain | SSDF/CWE anwendbar; begründetes N/A und offene Produktnachweise getrennt. Keine Secrets oder unnötigen Personendaten im Ziel gefunden. / Applicability, justified exclusions and open evidence separated; no target secrets or unnecessary personal data found. |
-| A11Y und Leserpfad / Accessibility and reader path | Status und Entscheidungen in Text, Mermaid mit gleichwertiger Textalternative; assistive Feldtests offen. / Text-first states and decisions; equivalent diagram alternative; assistive field tests open. |
-| Plattform und Technik / Platform and technology | Vier spätere Prozessumgebungen getrennt; fehlende Ergebnisse offen; keine Produkttechnologie vorweggenommen. / Four distinct future environments, missing results open, product technology undecided. |
-| Freigaben, Risiken, Restarbeiten / Authority, risks, follow-ups | Authoring, unabhängiges Review und Umsetzung getrennt; Owner und Fristen dokumentiert. / Separate authoring, independent review and execution; follow-up owners and deadlines recorded. |
-| Referenzen und Prompts / References and prompts | Lokale Pfade gültig; je ein Specify-/Autonomous-Prompt mit gleichem Intake, Receipt und Profil sowie neuer Autorität. / Valid local links; one prompt per command bound to identical inputs and requiring new authority. |
-| Collection, Serie, Campaign / Collection, series, campaign | N/A für diesen Single-Auftrag; Konfiguration und Seriennachweis sind spätere Anforderungen. / Outside Single scope; configuration and series proof remain future requirements. |
+- Identity, audience, prior knowledge, purpose, scope and non-goals are clear.
+  Technical/workflow terms are explained; normative DE/EN wording is equivalent.
+- All 12 FR and 9 AC remain in both languages, with measurable evidence mapped
+  through E01–E07. CEFR B2 is a qualitative assessment, not language certification.
+- After implementation, core-process evidence identifies the primary Mac.
+  Successful proof lets the owner grant limited pilot permission.
+- LH-01, then LH-02 remain separately commissioned standalone pilots with valid
+  individual intakes and independent review, outside automatic series selection.
+  LH-02 requires domain completion of LH-01.
+- Full LH-00 acceptance follows after LH-02, before LH-03: both Macs, Windows 11,
+  Ubuntu 24.04 under WSL2, accessibility, translations and applied registry
+  alignment. LH-00 remains open; LH-03 also requires LH-02 completion.
+- Security/privacy/accessibility applicability and product/tool proof remain
+  distinct. Text alternatives, states and next actions are readable; document
+  checks claim no assistive field acceptance.
+- No feature, delivery or status authority is created. Future prompts require
+  new requests; no operational automatic series is claimed.
 
-## Behobene Befunde und Entscheidungen / Resolved findings and decisions
+## Herkunft, Prüfungen und Ablösung / Provenance, checks and supersession
 
-| ID | Ursprünglicher Schweregrad / Original severity | Behebung / Resolution |
-|---|---|---|
-| IR001 | Medium | LH-00 und Profil erklären relevante Workflow- und Sicherheitsbegriffe in DE/EN. / Target and profile explain workflow and security terms in both languages. |
-| IR002 | Medium | FR-00-004 verlinkt Issues **und** Lastenhefte; AC-00-007 verlangt einen anderen Prüfer als den Autor. Beide Sprachfassungen und Issue-1-Grundlage stimmen überein. / Both languages and Issue 1 input require both link types and a reviewer distinct from the author. |
-| IR003 | Medium | Autor trennte historische Authoring-Aussagen von aktueller Reparatur/Veröffentlichung; Quellen und Kontext neu gebunden, alte Source-IDs eindeutig archiviert. Erneut geprüft. / Author separated historical authoring from current repair/publication, rebound sources/context and clarified archived source IDs; reviewer rechecked all changes. |
+Alle 15 Ziel-/Quell-/Kontextbindungen des Receipts und die Zielbindung des
+Reviewauftrags wurden erneut berechnet. Acht archivierte Vorgängerdateien
+stimmen bytegenau mit dem unveränderten Hauptrepository überein. Relative
+Leserpfade von Intake, Reihenfolge, Governance und IAD010 lösen sich auf.
+Receipt und Review-Ergebnis werden durch beide installierten Validatoren
+(Bash und PowerShell auf macOS) geprüft; konkrete Ergebnisse stehen im
+maschinenlesbaren Review. Die veränderliche Update-Operation wird nach
+Kandidatenprüfung vom Autor finalisiert und nicht als fertige Lieferung ausgegeben.
 
-[IAD008/IAD009](../docs/planning/lh00-repair-decisions.md) enthalten die beiden
-Owner-Antworten. Keine neue fachliche Entscheidung wurde erraten und kein
-Risiko vom Agenten akzeptiert. IR003 wurde vor Abschluss dieses Durchgangs
-behoben; ursprünglicher Kontext und Behebung bleiben im JSON erhalten.
+All 15 receipt target/source/context bindings and the request target binding
+were recomputed. Eight archived predecessor files match the unchanged primary
+repository byte for byte. Relative reader links from the intake, order,
+governance and IAD010 resolve. Both installed Bash and PowerShell validators
+on macOS check the receipt and review result; the machine-readable review
+records actual outcomes. The author finalizes the mutable update operation
+after candidate validation; this review does not present it as completed delivery.
 
-IAD008/IAD009 record the owner's two answers. No new domain decision was guessed
-and no agent accepted risk. IR003 was fixed before this pass completed; its
-original context and resolution remain in JSON.
+Das vorherige Review `c22c0fcd-610a-4a77-8f8d-59e504efc113` wird ausdrücklich
+abgelöst. [Sein archiviertes Ergebnis](intake-review-archive/c22c0fcd-610a-4a77-8f8d-59e504efc113/intake-review-result.json)
+gilt nur für den damaligen Inhalt. Aktuelle Bindungen und Einzelbewertungen:
+[Review-Ergebnis](intake-review-result.json).
 
-## Technische Prüfungen / Technical checks
+This review explicitly supersedes c22c0fcd-610a-4a77-8f8d-59e504efc113. Its linked
+archived result applies only to the previous content. The current result records
+all bindings and individual review dimensions.
 
-Beide Authoring-Receipt-Validatoren bestehen für neun Quellen. Unabhängige
-Hash-/Pfadprüfung, fünf gleiche Guidance-Dateien, zwei gleiche Constitutions,
-FR-/AC-Sprachpaare und Archivvergleich bestehen. `gitleaks dir` für `intakes/`
-meldete Exit 0. Jeder Nachweis gilt nur für seinen genannten Umfang.
+## Grenze und nächster Schritt / Boundary and next action
 
-Both authoring-receipt validators pass for nine sources. Independent hash/path,
-five-file guidance parity, two-copy constitution parity, FR/AC language-pair
-and archive checks pass. `gitleaks dir` for `intakes/` returned exit 0. Each
-check proves only its stated scope.
+Ready bestätigt die fachliche Reife dieses Intakes. Es bestätigt weder volle
+Prozessabnahme noch Pilotfreigabe, native Plattform-/A11Y-Nachweise oder einen
+Feature-Abschluss. B-01 bleibt in der Projektinstallation bis zu gesondert
+beauftragten Releases und gezielter Integration offen. Kein Remotezugriff und
+kein Feature-Lauf wurden durch dieses Review ausgeführt.
 
-Review-Validatoren / Review validators: **PASS**, Bash und PowerShell jeweils Exit 0 / Bash and PowerShell both exit 0.
+Nächster Schritt: mit eigenem ausdrücklichem Auftrag die technische LH-00-Planung
+auf Basis dieses aktuellen Intakes fortsetzen. Umsetzung des Kernprozesses und
+die beiden Piloten benötigen jeweils passende Autorität. Bei Änderung gebundener
+Inhalte, Quellen, Policy, Profil oder Auftrag wird das Review erneut bewertet.
 
-```bash
-bash .specify/presets/intake-review-governance/scripts/validate-intake-review-result.sh --result specs/intake-review-result.json --repo .
-pwsh -NoProfile -File .specify/presets/intake-review-governance/scripts/validate-intake-review-result.ps1 -Result specs/intake-review-result.json -Repo .
-```
+Ready confirms the intake's semantic readiness. It proves neither full process
+acceptance nor pilot permission, native platform/accessibility evidence or a
+completed feature. Installed B-01 remains open until separately commissioned
+releases and targeted integration. This review made no remote access and ran no
+feature.
 
-## Grenzen und nächste Aktion / Boundaries and next action
-
-`Ready` bewertet die Reife dieses Lastenhefts. Vollständige Prozessabnahme,
-Plattform-/Gerätenachweise, Bestandsübersetzungen, Collection/Serie und zentrale
-Registerübernahme bleiben offen gemäß LH-00. Der Autor führt Remote-Veröffentlichung
-und Merge-/Sync-Nachweise separat; dieses Review enthält keine Remote-Aktion.
-Ein Admin-Bypass ersetzt keine fachliche Prüfung.
-
-Ready assesses this intake's readiness. Full process acceptance, platform/device
-evidence, existing-document translations, collection/series setup and central
-registry adoption remain open under LH-00. The author records publication and
-merge/sync separately; this review performs no remote action. Admin bypass does
-not replace domain review.
-
-Neu bewerten bei Änderung von Ziel, Quellen, Request, Policy/Profil,
-Owner-Entscheidungen, normativer Sprache, Plattform, Sicherheitsanwendbarkeit
-oder Scope. **Einzige nächste fachliche Aktion nach eigenem ausdrücklichem
-Auftrag:** den Specify-Folgeprompt in [LH-00](../intakes/LH-00.md) ausführen.
-Dieser Prüflauf führt weder Specify noch Autonomous aus.
-
-Re-review after target, source, request, policy/profile, owner-decision,
-normative-language, platform, security-applicability or scope changes.
-**Sole next domain action after a separate explicit request:** run the Specify
-follow-up prompt in LH-00. This review runs neither Specify nor Autonomous.
+Next action: under a separate explicit request, continue technical LH-00 planning
+from this current intake. Core-process implementation and both pilots each need
+matching authority. Reassess review freshness after changes to bound content,
+sources, policy, profile or authority.
