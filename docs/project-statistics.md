@@ -32,6 +32,8 @@ heuristic would otherwise count spec.md as a test.*
 
 | 2026-10-01 | Gestufte LH-00-Abnahme und Aufgabenplanung / Staged LH-00 acceptance and task planning | Aktualisierter Intake mit Receipt, Vorgängerarchiven und unabhängigem Ready-Review; 65 DE/EN-Aufgaben. Analyze-Befunde C1/I1/I2 korrigiert, erneute Analyse ohne offene Befunde. Neun native CI-Jobs der B-01-Preset-Quellen bestanden; Release-Übernahme und Projektinstallation vor Serienaktivierung offen. Keine Prozessabnahme oder Produktimplementierung. / Updated intake with receipt, predecessor archives and independent Ready review; 65 bilingual tasks. Resolved C1/I1/I2; reanalysis found no open issues. Nine native CI jobs for B-01 preset sources passed; release adoption and project installation remain prerequisites for series activation. No process acceptance or product implementation. [Aufgaben / Tasks](../specs/001-lh00-intake-process/tasks.md), [Nachweis / Evidence](../specs/001-lh00-intake-process/checklists/tasks-validation.md), [CI-Lieferstand / CI delivery](../specs/001-lh00-intake-process/research.md#lieferstand-nach-quellenlieferung--update-after-source-delivery). |
 
+| 2026-10-03 | Koordinierter Governance-Pilot / Coordinated governance pilot | Fünf gebundene Preset-Updates, Wartungsdateien, Guidance-/Constitution-Abgleich und technische Regression; keine Produktimplementierung oder neue menschliche Freigabe. / Five bound preset updates, maintenance files, shared guidance and technical regression; no product implementation or new human approval. [Nachweis / Evidence](maintenance/coordinated-governance-oct03.md). |
+
 ## Gesamtstatistik / Overall Statistics
 
 <!-- project-statistics-v2:begin -->

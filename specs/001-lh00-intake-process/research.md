@@ -312,3 +312,17 @@ The integration boundary remains: adopt patch releases, align central version
 references, install this project's targeted update and verify installed copies.
 T034–T036 place these steps before actual series activation. Tool CI does not
 complete practical project acceptance; its staged timing remains unchanged.
+
+### Pilotintegration 2026-10-03 / Pilot integration 2026-10-03
+
+DE: Die B-01-Korrekturen sind jetzt in den veröffentlichten Paketen Authoring
+0.3.6, Review 0.2.4 und Sequencing 0.2.7 enthalten. Der koordinierte Pilot
+hat sie installiert; alle drei Konfigurations-Fixture-Suiten bestehen inklusive
+Bash/PowerShell- und Zero-write-Parität. Der [Integrationsnachweis](../../docs/maintenance/coordinated-governance-oct03.md)
+bindet Quellen, zentrale Lieferung und ergänzende Governance. PR-/Merge-Lieferung
+dieses Projekts steht noch aus. Historische Probes oben bleiben unverändert;
+T034–T036 sind nicht als Feature-Implementierung erledigt markiert. Keine
+Serienaktivierung, Produktimplementierung oder praktische Prozessabnahme.
+EN: Released packages now contain B-01; installed configuration suites pass.
+Project PR/merge delivery remains pending. Preserve historical probes, do not
+mark feature tasks implemented, activate a series or infer practical acceptance.

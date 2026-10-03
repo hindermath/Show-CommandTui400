@@ -146,3 +146,30 @@ are recorded in docs/planning/lh00-repair-decisions.md; the current receipt and
 review report show the state. Further creation, review or delivery needs matching
 explicit authority. Follow-up prompts are templates for a later request. Series
 management and platform acceptance remain LH-00 requirements, not authoring results.
+
+## Governance-Pilot und Liefergrenzen / Governance pilot and delivery boundaries
+
+DE: Das 14er-Profil bindet Security 0.7.0, Architecture 0.6.1 und Intake
+Authoring 0.3.6 / Review 0.2.4 / Sequencing 0.2.7. Produkt, Werkzeuge und
+Organisation werden regulatorisch getrennt bewertet; Ausbildungszweck und
+AI-SBOM N/A ersetzen keine DS-GVO-/KI-VO-Anwendbarkeitspruefung.
+Unbekannte Rollen, Jurisdiktionen oder direkte/vertragliche Pflichten bleiben Open.
+Die urspruenglichen sechs Presets plus Secure Development Assurance werden
+jaehrlich am 3. Oktober geprueft, naechster Termin 2027-10-03 um 10:00
+Europe/Berlin. Anlassreviews verschieben den Termin nicht; Automation liest nur.
+Stufe A ist Home Baseline/betroffene Home Runtime; B umfasst zwei benannte
+public Level-2-Piloten. C (restliche public Level-2-Verbraucher) und D
+(restliche Flotte) brauchen jeweils einen separaten Auftrag. Admin-Bypass
+ersetzt keine technische Pruefung. Installation startet keine Implementierung.
+
+EN: The fourteen-preset profile binds the five released versions above.
+Assess product, tooling and organisation separately; unknown regulatory
+scope remains Open. Education and AI-SBOM N/A are not blanket exemptions.
+Review the original six presets plus Assurance every 3 October, next
+2027-10-03 at 10:00 Europe/Berlin; event reviews do not reset this date.
+Automation only reads. Deliver central/runtime first, then two named public
+Level-2 pilots. Further public Level-2 consumers and the remaining fleet each
+need a separate request. Installation grants no product execution authority.
+
+Evidence: [pilot integration](docs/maintenance/coordinated-governance-oct03.md).
+Policy: `docs/maintenance/governance-review-and-rollout.md` in the Level-0 source.
