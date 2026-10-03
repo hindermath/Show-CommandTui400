@@ -33,6 +33,15 @@ Keep five project guidance files identical and both constitutions aligned.
 OpenCode uses the declared plural path; remove obsolete duplicate surfaces.
 Exclude preset caches.
 
+DE: PR #21 zeigte in Ubuntu-CI einen roten Paritaetstest: Der gemeinsame Test
+war noch an den singularen OpenCode-Pfad gebunden. Er liest jetzt ausschliesslich
+den versionierten Integrationsmanifest-Pfad. Fixtures erlauben genau einen
+singularen oder pluralen Namespace und blockieren gemischte oder unsichere Pfade;
+Dateiexistenz und kanonische Command-Inhalte bleiben vollstaendig geprueft.
+EN: The Ubuntu red observation in PR #21 exposed a stale singular test path.
+Parity now follows only the tracked integration manifest. Fixtures reject mixed
+or unsafe namespaces; all existence and canonical-body checks remain intact.
+
 ## Technische Pruefung / Technical verification
 
 | Pruefung / Check | Beobachteter Stand / Observed state |
@@ -42,6 +51,7 @@ Exclude preset caches.
 | Architecture contract | Five tests passed |
 | Three Intake configuration suites | Bash/PowerShell JSON and zero-write parity passed |
 | Maintenance hardening fixtures | 20 tests passed; two platform-specific skips on macOS |
+| Complete maintenance regression | 89 tests passed locally; twelve environment/platform skips; native Ubuntu CI required |
 | PowerShell analysis | 72 repository-owned files; no Error/Warning findings |
 | Homogeneity and delivery | Final source-bound evidence follows in PR and hand-off |
 | Existing Profile 2 statistics | Regenerate after source commit; no new optional measurement context |
