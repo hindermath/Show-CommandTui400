@@ -36,6 +36,8 @@ heuristic would otherwise count spec.md as a test.*
 
 | 2026-10-03 | Koordinierter Governance-Pilot / Coordinated governance pilot | Fünf gebundene Preset-Updates, Wartungsdateien, Guidance-/Constitution-Abgleich und technische Regression; keine Produktimplementierung oder neue menschliche Freigabe. / Five bound preset updates, maintenance files, shared guidance and technical regression; no product implementation or new human approval. [Nachweis / Evidence](maintenance/coordinated-governance-oct03.md). |
 
+| 2026-10-03 | Portabler Paritaetstest / Portable parity test | PurePosixPath korrigiert den Windows-Separatorvergleich im manifestgebundenen OpenCode-Test; ungueltige Pfade blockieren weiterhin. UpdateRequired fuer Nachweis, GeneratedUpdate fuer bestehende Statistik; kein Produkt-/Evidence-Delta. / Host-independent manifest parsing, unchanged safety gates and existing statistics methodology. |
+
 ## Gesamtstatistik / Overall Statistics
 
 <!-- project-statistics-v2:begin -->
