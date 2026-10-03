@@ -112,7 +112,7 @@ invented.
 
 Der [Level-0-Patchvorschlag](proposals/level0-show-commandtui400-language.patch)
 ändert nur die Dokumentationszelle der Show-CommandTui400-Zeile in beiden zentralen
-Constitution-Kopien. Er ist nicht angewendet. Vor einer späteren Lieferung die
+Constitution-Kopien. Der Vorschlag ist seit 03.10.2026 im Level-0-Lieferbranch angewendet; Remote-Main-Übernahme bleibt bis zum PR-Merge offen. Siehe [Registrierungsnachweis](maintenance/registration-closeout-20261003.md). Vor einer späteren Lieferung die
 Basis erneut vergleichen und `git apply --check` in der kanonischen Quelle
 ausführen; keinen anderen Stand blind überschreiben. Der vorgeschlagene Inhalt
 ist derselbe wie in der lokalen Registerzeile. Flottenprofile bleiben unverändert.
@@ -120,7 +120,7 @@ Geprüfte zentrale Basis / Checked central base:
 `a580fec0d9c7f70bc4b5fae4d8ed8df97b036843`.
 
 The linked Level-0 patch proposal changes only this project's documentation cell
-in both central constitution copies. It is not applied. Before later delivery,
+in both central constitution copies. As of 2026-10-03 it is applied in the Level-0 delivery branch; remote main adoption awaits PR merge. See the [registration record](maintenance/registration-closeout-20261003.md). Before later delivery,
 compare the base again and run git apply --check in the canonical source; never
 overwrite a different state blindly. Proposed wording matches the local project
 row. Fleet profiles are unchanged.
@@ -147,7 +147,7 @@ security exception.
 | FU02 | [Repository-Einstellungen](Repository-Einstellungen.md) | FollowUp: aktuelle deutsche Anleitung; englischer Leserpfad offen. Live-Einstellungen bei Übersetzung erneut prüfen. / Current German guide; English reader path pending. Recheck live settings during translation. |
 | FU03 | [Sicherheitsübersicht](security/README.md) | FollowUp: deutsche Anwendbarkeitsübersicht bleibt als Quelle; englische Zusammenfassung oben mindert, beseitigt aber nicht die Sprachlücke. Vollständigen Sprachpartner prüfen. / German applicability source retained; summary above reduces but does not remove the gap. Check a full language partner. |
 | FU04 | [Einrichtungsnachweis v0.3.5](maintenance/intake-authoring-v035.md) | Historische Evidence erhalten; keine rückwirkende Umdeutung. Bei Bedarf erläuterte Übersetzung als Partner ergänzen. / Preserve historical evidence without rewriting decisions; add an explained translation partner if needed. |
-| FU05 | Zentrales Register / Central registry | FollowUp: lokaler Patch vorhanden, zentrale Übernahme offen; bis dahin Governance-Drift sichtbar halten. / Local patch prepared, central adoption pending; keep drift visible until then. |
+| FU05 | Zentrales Register / Central registry | Lokale zentrale Ausrichtung am 03.10.2026 umgesetzt; PR-Merge offen. [Nachweis](maintenance/registration-closeout-20261003.md). / Local central alignment completed on 2026-10-03; PR merge pending, see evidence. |
 | FU06 | Issues 1–8 | Ursprüngliche Grundlage veröffentlicht und [nachgewiesen](issue-publication.md). Weitere Änderungen, einschließlich Issue-1-Reparatur, vor Veröffentlichung erneut vergleichen und separat nachweisen. / Original input published and evidenced. Compare later changes, including the Issue 1 repair, again before publication and record separate evidence. |
 | FU07 | PowerShell-Prozess / PowerShell process | FollowUp: Versionen, Basisskripte und Ende-zu-Ende-Nachweise auf vier Umgebungen offen. / Versions, base scripts and end-to-end evidence remain open on four environments. |
 

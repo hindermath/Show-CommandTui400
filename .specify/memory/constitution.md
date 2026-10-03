@@ -388,7 +388,7 @@ the `cc65` C89 toolchain, Zig (pre-1.0, only partial runtime checks), Nim
 (manual-memory mode), D without the default GC.
 
 **Current registry status**:
-- All `RiderProjects/*` entries (C# / .NET 9–10) — MSL ✓
+- RiderProjects entries declaring C# / .NET use an MSL. `RiderProjects/Show-CommandTui400` remains concept-stage with primary language and MSL status `unknown`; the workspace name does not select a runtime.
 - `C64Projects/cc65` (C / 6502 assembler targeting Commodore 64) —
   **not MSL**; justification: the target platform is 8-bit retro hardware
   with no MSL toolchain available, and the repository's purpose is parity
