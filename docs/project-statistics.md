@@ -34,6 +34,8 @@ heuristic would otherwise count spec.md as a test.*
 
 | 2026-10-03 | Registrierung und Governance-Ausrichtung / Registration and governance alignment | Lokaler Klon und private Registry eingerichtet; zentrale DE/EN-Zeile und offene MSL-Klassifikation abgestimmt. Wartungs-Drift separat dokumentiert, keine Produktimplementierung. / Clone and private registry configured; align central bilingual row and undecided MSL; record maintenance drift separately, no product implementation. [Nachweis / Evidence](maintenance/registration-closeout-20261003.md). |
 
+| 2026-10-03 | Koordinierter Governance-Pilot / Coordinated governance pilot | Fünf gebundene Preset-Updates, Wartungsdateien, Guidance-/Constitution-Abgleich und technische Regression; keine Produktimplementierung oder neue menschliche Freigabe. / Five bound preset updates, maintenance files, shared guidance and technical regression; no product implementation or new human approval. [Nachweis / Evidence](maintenance/coordinated-governance-oct03.md). |
+
 ## Gesamtstatistik / Overall Statistics
 
 <!-- project-statistics-v2:begin -->
@@ -44,27 +46,27 @@ Profil 2 verwendet Git-getrackte Textdateien und sichtbare Git-Aktivitaet. Die W
 
 | Kennzahl / Metric | Wert / Value |
 |---|---:|
-| Textbasis / Text base | 111277 lines |
-| Textdateien / Text files | 898 |
+| Textbasis / Text base | 113554 lines |
+| Textdateien / Text files | 885 |
 | Beobachtbarer Zeitraum / Observable period | 2025-10-05..2026-10-03 |
 | Aktivtage / Active days | 6 |
-| Relevante Commits / Relevant commits | 19 |
-| Zeilen je Aktivtag / Lines per active day | 18546.2 |
+| Relevante Commits / Relevant commits | 21 |
+| Zeilen je Aktivtag / Lines per active day | 18925.7 |
 | Peak-Tag im Fenster / Peak day in window | 2026-09-27 / 97728 |
-| Peak-Woche im Fenster / Peak week in window | 2026-09-27 / 113283 |
+| Peak-Woche im Fenster / Peak week in window | 2026-09-27 / 120950 |
 | Laengste Serie / Longest streak | 5 days |
-| Speedup vs. 80 lines/day | 231.8x |
-| Speedup vs. 100 lines/day | 185.5x |
-| Methodik / Methodology | v2; source `e2e3a79b536b` |
+| Speedup vs. 80 lines/day | 236.6x |
+| Speedup vs. 100 lines/day | 189.3x |
+| Methodik / Methodology | v2; source `194c70b49433` |
 
 ### Artefaktmix / Artifact Mix
 
 ```text
 Produktiv / Production          [....................]   0.0% | 0
-Tests                           [#...................]   3.8% | 4232
-Dokumentation / Documentation   [##############......]  69.8% | 77664
-Skripte / Scripts               [#####...............]  24.1% | 26800
-Konfiguration / Configuration   [#...................]   2.2% | 2433
+Tests                           [#...................]   3.8% | 4354
+Dokumentation / Documentation   [##############......]  70.0% | 79518
+Skripte / Scripts               [#####...............]  23.9% | 27101
+Konfiguration / Configuration   [#...................]   2.1% | 2433
 Daten und Medien / Data and media [....................]   0.0% | 0
 Sonstiger Text / Other text     [#...................]   0.1% | 148
 ```
@@ -94,7 +96,7 @@ Di/Tu  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3
 Mi/We  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3
 Do/Th  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4
 Fr/Fr  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
-Sa/Sa  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2
+Sa/Sa  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4
 ```
 
 DE: 0 = keine Aenderung; 1 = 1..79; 2 = 80..399; 3 = 400..1599; 4 = 1600+ geaenderte Textzeilen; - = noch nicht abgelaufen.
@@ -166,8 +168,8 @@ Es liegen keine belastbaren Phasendaten vor. Deshalb zeigt dieses Diagramm Monat
 
 ```text
 Scale: 0..500x
-80 lines/day       [#########...........] 231.8x
-100 lines/day      [#######.............] 185.5x
+80 lines/day       [#########...........] 236.6x
+100 lines/day      [########............] 189.3x
 ```
 
 Die Faktoren vergleichen sichtbare Lieferdichte mit den dokumentierten manuellen Referenzen. Sie messen keine Arbeitszeit.
@@ -180,7 +182,7 @@ Die Faktoren vergleichen sichtbare Lieferdichte mit den dokumentierten manuellen
 Scale: 0..20000 lines/day
 Experienced manual [#...................] 80
 Thorsten solo      [#...................] 100
-Visible repository [###################.] 18546.2
+Visible repository [###################.] 18925.7
 ```
 
 Die gemeinsame Skala vergleicht Referenzen und sichtbare Lieferdichte. Sie schreibt die Git-Aktivitaet keiner Person oder KI pauschal zu.
@@ -189,9 +191,9 @@ Die gemeinsame Skala vergleicht Referenzen und sichtbare Lieferdichte. Sie schre
 
 ### Textalternative / Text Alternative
 
-DE: Das Fenster beginnt am 2025-10-05 und endet am 2026-10-03. Es enthaelt 6 aktive und 358 inaktive vergangene Tage. Peak-Tag: 2026-09-27 / 97728. Peak-Woche: 2026-09-27 / 113283. Laengste Serie: 5 Tage (2026-09-27..2026-10-01).
+DE: Das Fenster beginnt am 2025-10-05 und endet am 2026-10-03. Es enthaelt 6 aktive und 358 inaktive vergangene Tage. Peak-Tag: 2026-09-27 / 97728. Peak-Woche: 2026-09-27 / 120950. Laengste Serie: 5 Tage (2026-09-27..2026-10-01).
 
-*EN: The window starts on 2025-10-05 and ends on 2026-10-03. It contains 6 active and 358 inactive elapsed days. Peak day: 2026-09-27 / 97728. Peak week: 2026-09-27 / 113283. Longest streak: 5 days (2026-09-27..2026-10-01).*
+*EN: The window starts on 2025-10-05 and ends on 2026-10-03. It contains 6 active and 358 inactive elapsed days. Peak day: 2026-09-27 / 97728. Peak week: 2026-09-27 / 120950. Longest streak: 5 days (2026-09-27..2026-10-01).*
 
 | Monat / Month | Geaenderte Textzeilen / Changed text lines |
 |---|---:|
@@ -206,6 +208,6 @@ DE: Das Fenster beginnt am 2025-10-05 und endet am 2026-10-03. Es enthaelt 6 akt
 | 2026-07 | 0 |
 | 2026-08 | 0 |
 | 2026-09 | 109576 |
-| 2026-10 | 3707 |
+| 2026-10 | 11374 |
 
 <!-- project-statistics-v2:end -->

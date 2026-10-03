@@ -17,6 +17,17 @@ Level-2 environment is configured. LH-00 has authoring status ReadyForReview;
 there is no installable cmdlet. The eight revised issues are published and verified (see the publication evidence above). The
 linked governance mapping records sources and boundaries.
 
+## Koordinierter Governance-Pilot / Coordinated governance pilot
+
+Die [gebundenen Quellen und Prüfgrenzen](docs/maintenance/coordinated-governance-oct03.md)
+beschreiben das aktualisierte 14er-Profil und das Wartungspaket aus Home Baseline
+#317. Installation startet keine Produktimplementierung; die technische Lieferung
+und die spätere praktische Prozessabnahme sind getrennt.
+
+The integration record binds the updated fourteen-preset profile and approved
+maintenance files. Installation starts no implementation; technical delivery
+and later practical process acceptance remain separate.
+
 ## Reviewstand LH-00 / LH-00 review status
 
 Das [unabhängige erneute Intake-Review](specs/intake-review-report.md) ergibt

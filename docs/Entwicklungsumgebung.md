@@ -54,9 +54,10 @@ LH-00 requirements.
 - GitHub Spec Kit CLI und Integrations-Templates: **0.12.8**.
 - Integrationen: `agy`, `opencode`, `claude`, `copilot`, `codex`.
 - Projektprofil: `project-statistics-fourteen-governance-presets`.
-- Intake Authoring Governance: **v0.3.5**, aktiviert mit Priorität 64.
-  Der [Update-Nachweis](maintenance/intake-authoring-v035.md) dokumentiert
-  Paketbindung und Prüfgrenzen; die übrigen 13 Presets bleiben unverändert.
+- Intake Authoring Governance: **v0.3.6**, aktiviert mit Priorität 64.
+  Der [koordinierte Update-Nachweis](maintenance/coordinated-governance-oct03.md)
+  bindet auch Review v0.2.4, Sequencing v0.2.7, Security v0.7.0 und Architecture
+  v0.6.1. Die übrigen neun Presets und alle Prioritäten bleiben unverändert.
 - Alle 14 Versionen und Prioritäten stehen in der
   [gepinnten Projektmatrix](../scripts/config/spec-kit-project-statistics-governance-presets.json).
 - Installationsnachweis: `.specify/integrations/*.manifest.json` und
@@ -89,8 +90,9 @@ The owner reported PowerShell 7.6.6.0 on both Macs on 28 September 2026. This
 records the development environment, not the latest global release or product
 minimum. Spec Kit CLI and integration templates are 0.12.8. Integrations are agy,
 opencode, claude, copilot and codex. The project uses the explicit fourteen-preset
-profile and pinned matrix. Authoring 0.3.5 is enabled at priority 64; its linked
-update record captures package binding and proof limits. Integration manifests
+profile and pinned matrix. Authoring 0.3.6 is enabled at priority 64; the coordinated
+update record also binds Review 0.2.4, Sequencing 0.2.7, Security 0.7.0 and
+Architecture 0.6.1. The other nine presets and all priorities are unchanged. Integration manifests
 and the preset registry record installation. Initialization used specify init
 with --script sh. Reinitialization can overwrite templates, so preserve local
 governance and inspect differences before updates. PowerShell maintenance
