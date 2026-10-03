@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "1.1",
+  "feature": "spec-kit-preflight-documentation",
+  "entries": [
+    {
+      "changeId": "CHG001",
+      "scope": "Document existing post-fetch/pull checks and command-specific start gates / Vorhandene Prüfungen und Start-Gates dokumentieren",
+      "decision": "UpdateRequired",
+      "rationale": "Issue #19 keeps fresh start gates required after technical closeout / Issue #19 verlangt weiterhin frische Startprüfungen",
+      "documents": [
+        "docs/Entwicklungsumgebung.md",
+        "docs/planning/spec-kit-preflight-validation.md"
+      ],
+      "owner": "Thorsten Hindermann",
+      "audiences": [
+        "Maintainers / Maintainer",
+        "Agents / Agenten"
+      ],
+      "readerPaths": [
+        "README -> Entwicklungsumgebung -> preflight -> command-specific gates -> LH-00"
+      ],
+      "canonicalSource": "docs/Entwicklungsumgebung.md",
+      "navigationImpact": "Adds a preflight subsection and candidate-command row to the existing guide / Ergänzt Preflight und Kandidatenkommando",
+      "documentClass": "ActiveSemantic",
+      "languageStrategy": "German first and English second in the same files / DE zuerst, EN danach",
+      "languagePartners": [],
+      "platformAndExampleProof": "Existing script interfaces inspected; local macOS documentation validation recorded in evidence; native Windows/Linux acceptance remains open / Schnittstellen geprüft, native Plattformabnahme offen",
+      "distributionClass": "sourceOnly",
+      "homeSyncRequired": false,
+      "evidence": "docs/planning/spec-kit-preflight-validation.md",
+      "risk": "Documented gates are not execution or approval; no native PowerShell base-script variant installed / Dokumentation erteilt keine Freigabe",
+      "criticality": "Normal",
+      "reevaluationTrigger": "Script interface, governance, tool contract, feature prerequisites or delivery authority changes / Änderung dieser Verträge"
+    },
+    {
+      "changeId": "CHG002",
+      "scope": "Existing Profile 2 ledger and generated statistics / Bestehendes Profil-2-Protokoll und generierte Statistik",
+      "decision": "GeneratedUpdate",
+      "rationale": "Owner authorized MergeAndSync; generate statistics after the content commit / Owner hat MergeAndSync beauftragt; Statistik nach Inhaltscommit generieren",
+      "documents": [
+        "docs/project-statistics.md"
+      ],
+      "owner": "Thorsten Hindermann",
+      "audiences": [
+        "Maintainers / Maintainer",
+        "Agents / Agenten"
+      ],
+      "readerPaths": [
+        "README -> Entwicklungsumgebung -> preflight -> command-specific gates -> LH-00"
+      ],
+      "canonicalSource": "docs/project-statistics.config.json",
+      "navigationImpact": "Adds a preflight subsection and candidate-command row to the existing guide / Ergänzt Preflight und Kandidatenkommando",
+      "documentClass": "Generated",
+      "languageStrategy": "German first and English second in the same files / DE zuerst, EN danach",
+      "languagePartners": [],
+      "platformAndExampleProof": "Existing script interfaces inspected; local macOS documentation validation recorded in evidence; native Windows/Linux acceptance remains open / Schnittstellen geprüft, native Plattformabnahme offen",
+      "distributionClass": "sourceOnly",
+      "homeSyncRequired": false,
+      "evidence": "docs/planning/spec-kit-preflight-validation.md",
+      "risk": "Documented gates are not execution or approval; no native PowerShell base-script variant installed / Dokumentation erteilt keine Freigabe",
+      "criticality": "Normal",
+      "reevaluationTrigger": "Script interface, governance, tool contract, feature prerequisites or delivery authority changes / Änderung dieser Verträge",
+      "generatedSource": {
+        "path": "docs/project-statistics.config.json",
+        "renderer": "scripts/render-project-statistics.sh and .ps1"
+      }
+    }
+  ]
+}
