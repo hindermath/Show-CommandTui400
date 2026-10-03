@@ -38,6 +38,8 @@ heuristic would otherwise count spec.md as a test.*
 
 | 2026-10-03 | Portabler Paritaetstest / Portable parity test | PurePosixPath korrigiert den Windows-Separatorvergleich im manifestgebundenen OpenCode-Test; ungueltige Pfade blockieren weiterhin. UpdateRequired fuer Nachweis, GeneratedUpdate fuer bestehende Statistik; kein Produkt-/Evidence-Delta. / Host-independent manifest parsing, unchanged safety gates and existing statistics methodology. |
 
+| 2026-10-04 | Spec-Kit-Preflight dokumentiert / Documented Spec Kit preflight | Prüfreihenfolge nach fetch/pull, frische Start-Gates aus Issue #19 und offene Plattformnachweise; keine Automatisierung oder Produktimplementierung. / Post-fetch/pull checks, fresh start gates from issue #19 and open platform evidence; no automation or product implementation. [Nachweis / Evidence](planning/spec-kit-preflight-validation.md). |
+
 ## Gesamtstatistik / Overall Statistics
 
 <!-- project-statistics-v2:begin -->

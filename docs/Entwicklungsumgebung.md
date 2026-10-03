@@ -1,6 +1,6 @@
 # Entwicklungsumgebung / Development environment
 
-Stand / Date: 28.09.2026. Owner: Thorsten Hindermann.
+Stand / Date: 04.10.2026. Owner: Thorsten Hindermann.
 
 ## Einstieg und Grenzen / Entry and boundaries
 
@@ -140,6 +140,7 @@ verwendete nur das Erstellungsverfahren für LH-00. Die genaue Schreibweise folg
 | Review | `speckit-intake-review` | `speckit.intake-review` |
 | Reviewstatus | `speckit-intake-review-status` | `speckit.intake-review-status` |
 | Reihenfolge prüfen | `speckit-intake-series-status` | `speckit.intake-series-status` |
+| Zulässige Kandidaten auflisten | `speckit-intake-series-next` | `speckit.intake-series-next` |
 
 Codex/Antigravity verwenden `.agents/skills/`, Claude `.claude/skills/`,
 OpenCode `.opencode/commands/` mit identischer, versionierter
@@ -205,6 +206,205 @@ scripts come from Level 0; preview every maintenance write first. CI checks setu
 and distributed tooling, not future product behavior. The original authoring task did
 not reinstall hooks or run writing maintenance commands.
 
+### Vor einem Spec-Kit-Lauf nach fetch/pull / Before a Spec Kit run after fetch/pull
+
+Ein Preflight ist die Prüfung der Startvoraussetzungen. Die folgende Reihenfolge
+verwendet vorhandene Werkzeuge, ohne Installation, Reparatur oder einen Produktlauf
+zu starten. Alle Befehle aus der Repository-Wurzel ausführen. Jeder fehlgeschlagene
+Pflichtcheck blockiert den Start; auch Warnungen mit Exitcode 0 auf ihre Auswirkung
+prüfen. Ursache und erforderliche Klärung festhalten, keine Evidence automatisch
+reparieren. Evidence bezeichnet hier einen nachvollziehbaren Nachweis.
+
+A preflight checks whether a run may start. Use the existing tools in the order
+below from the repository root. This does not install or repair anything or start
+product work. Every failed required check blocks the start. Assess warnings even
+when the exit code is zero. Record the cause and required resolution; do not repair
+evidence automatically. Evidence means a traceable record supporting a claim.
+
+**1. Git-Zustand / Git state**
+
+```text
+git status --short --branch
+git branch --show-current
+git rev-parse --abbrev-ref --symbolic-full-name "@{upstream}"
+git rev-list --left-right --count "HEAD...@{upstream}"
+git diff --check
+```
+
+Branch, Upstream-Abweichung, lokale Änderungen und Konflikte prüfen. Fehlenden
+Upstream klären. Beim Start vom synchronisierten `main` muss der Zähler `0 0`
+zeigen. Fortsetzungen verwenden den zugehörigen Featurebranch; `0 0` ersetzt keine
+inhaltliche Prüfung. Lokale Änderungen einem Auftrag zuordnen, Konflikte vor dem
+Start klären, nichts automatisch verwerfen. Nach `fetch` allein können Änderungen
+noch nicht integriert sein; die Aussage bezieht sich auf den zuletzt abgerufenen
+Remote-Stand. Bei gestagten Änderungen zusätzlich `git diff --cached --check` nutzen.
+
+Check the branch, upstream difference, local changes and conflicts. Resolve a
+missing upstream. A start from synchronized `main` requires counts of `0 0`.
+Continue existing work on its feature branch; matching counts do not prove content
+readiness. Assign local changes to an authorized scope and resolve conflicts before
+starting. Do not discard changes automatically. Fetch alone may leave changes
+unintegrated; the comparison uses the last fetched remote state. Also run
+`git diff --cached --check` when changes are staged.
+
+**2. Unterlagen und Governance / Documents and governance**
+
+[Guidance](../AGENTS.md), [Constitution](../constitution.md), deren
+[Spec-Kit-Kopie](../.specify/memory/constitution.md), [Bedienkonzept](Bedienkonzept.md),
+[LH-00](../intakes/LH-00.md), [Reihenfolge](Lastenheft-Plan.md) und vorhandene
+[Plan-/Tasks-/Checklist-Artefakte](../specs/001-lh00-intake-process/plan.md) lesen.
+Die fünf Guidance-Dateien und beide Constitution-Kopien müssen jeweils identisch
+sein. Der folgende read-only Hashvergleich läuft auf allen Zielplattformen:
+
+Read the linked guidance, both constitution copies, interaction concept, LH-00,
+intake order and existing plan/tasks/checklists. The five guidance files must match,
+as must the two constitution copies. This read-only hash check works on all target
+platforms:
+
+```powershell
+pwsh -NoProfile -Command '
+$ErrorActionPreference = "Stop"
+$expected = (Get-FileHash AGENTS.md -Algorithm SHA256).Hash
+foreach ($path in @("CLAUDE.md", "GEMINI.md", ".github/copilot-instructions.md", ".github/agents/copilot-instructions.md")) {
+    if ((Get-FileHash $path -Algorithm SHA256).Hash -ne $expected) { throw "Guidance differs: $path" }
+}
+if ((Get-FileHash constitution.md -Algorithm SHA256).Hash -ne (Get-FileHash .specify/memory/constitution.md -Algorithm SHA256).Hash) {
+    throw "Constitution copies differ"
+}
+'
+```
+
+Neue zwingende Governance-Regeln minimal mit dem akzeptierten Plan und seinen
+Folgeartefakten abgleichen. Bei inhaltlicher Auswirkung gezielt nachprüfen;
+historische Reviews und Receipts erhalten, ihre aktuelle Gültigkeit getrennt
+bewerten. Der [geschlossene Hand-off #19](https://github.com/hindermath/Show-CommandTui400/issues/19)
+und seine [Abschlussnachweise](https://github.com/hindermath/Show-CommandTui400/issues/19#issuecomment-5972933761)
+belegen die damalige technische Lieferung, keine aktuelle Produktstartfreigabe.
+
+Reconcile new mandatory rules with the accepted plan and related artifacts using
+the smallest necessary change. Recheck affected content when a rule changes its
+meaning. Preserve historical reviews and receipts and assess their current validity
+separately. Closed hand-off #19 and its linked closeout evidence prove historical
+technical delivery, not current permission to start product work.
+
+**3. Basisprüfungen / Base checks**
+
+```bash
+# macOS / Linux
+bash scripts/install-spec-kit-governance-presets.sh --repo . --preset-config scripts/config/spec-kit-project-statistics-governance-presets.json --check-only
+bash scripts/scan-agent-secrets.sh --fail-on-high .
+bash scripts/check-homogeneity.sh --dry-run --no-patch .
+bash scripts/render-project-statistics.sh --repo . --check-only
+pwsh -NoProfile -File scripts/invoke-psscriptanalyzer.ps1
+```
+
+```powershell
+# Windows / PowerShell 7
+pwsh -NoProfile -File scripts/install-spec-kit-governance-presets.ps1 -Repo . -PresetConfig scripts/config/spec-kit-project-statistics-governance-presets.json -CheckOnly
+pwsh -NoProfile -File scripts/scan-agent-secrets.ps1 -FailOnHigh
+pwsh -NoProfile -File scripts/check-homogeneity.ps1 -TargetDir . -DryRun -NoPatch
+pwsh -NoProfile -File scripts/render-project-statistics.ps1 -Repo . -CheckOnly
+pwsh -NoProfile -File scripts/invoke-psscriptanalyzer.ps1
+```
+
+Die exakte 14er-Matrix verwenden. Den Exitcode jedes Befehls prüfen: ein späterer
+erfolgreicher Befehl hebt einen früheren Fehler nicht auf. Bei geänderten Werkzeugen
+oder Governance zusätzlich betroffene Validatoren, Vertrags-/Negativtests und
+Agentenflächen-Parität prüfen. Die vollständige Pilotabnahme wird nicht bei jedem
+Pull wiederholt. Fehlende native Plattformnachweise bleiben offen.
+
+Use the exact fourteen-preset matrix and check each command's exit code; a later
+success does not cancel an earlier failure. When tools or governance change, also
+run affected validators, contract/negative tests and agent-surface parity checks.
+Do not repeat the entire pilot acceptance after every pull. Missing native platform
+proof remains open.
+
+**4. Kommandoabhängige Start-Gates / Command-specific start gates**
+
+| Geplanter Schritt / Planned step | Erforderliche Prüfung / Required check |
+|---|---|
+| Tasks | Featurebranch und Plan prüfen; Bash: `bash .specify/scripts/bash/check-prerequisites.sh --json`. / Check feature branch and plan using the Bash command. |
+| Implementierung / Implementation | Featurebranch, Plan, Tasks und Checklists prüfen; Bash: `bash .specify/scripts/bash/check-prerequisites.sh --json --require-tasks --include-tasks`. / Check feature branch, plan, tasks and checklists using the Bash command. |
+| Produktstart / Product start | Aktuelles Intake-Review samt Quellhashes, Serienstatus, zulässigen Kandidaten, Modell-Routing und konkrete Implementierungs-/Delivery-Autorität prüfen. / Validate current review and source hashes, series state, eligible candidate, model routing and explicit implementation/delivery authority. |
+| Autonomer Lauf / Autonomous run | Zusätzlich vorhandenen Laufzustand prüfen; pausierte oder unterbrochene Läufe nach dem vorgesehenen Resume-Verfahren behandeln. / Also inspect existing run state; handle paused or interrupted runs through the required resume process. |
+
+Die Feature-Prerequisite-Befehle sind keine allgemeinen Startchecks auf `main`.
+Die installierten Basisskripte liegen unter `.specify/scripts/bash/`; eine native
+PowerShell-Variante ist hier noch nicht installiert. Unter Windows keinen
+entsprechenden Pfad erfinden oder WSL-Ergebnisse als native PowerShell-Abnahme
+ausgeben. Ein benötigter, nicht verfügbarer Ablauf blockiert den betreffenden Schritt.
+
+Feature prerequisite commands are not general start checks on `main`. Installed
+base scripts are Bash scripts; no native PowerShell variant is installed here.
+Do not invent a Windows script path or present WSL results as native PowerShell
+acceptance. An unavailable required workflow blocks the affected step.
+
+Die read-only Agentenkommandos aus der [Kommandotabelle](#intake-commands) verwenden:
+`speckit-intake-review-status` für den gebundenen Intake,
+`speckit-intake-series-status` für die benannte Serie und
+`speckit-intake-series-next` für zulässige Kandidaten. Ergebnisse, Quellhashes,
+Reihenfolge und Blocker auswerten; fehlt eine erforderliche Serie oder Evidence,
+stoppen, ohne sie anzulegen. Ein valider Serienstatus allein belegt keinen
+zulässigen Kandidaten. `Ready` oder ausdrücklich akzeptiertes
+`ReadyWithAcceptedRisks` muss frisch und auf den konkreten Intake gebunden sein.
+Unklare oder veraltete Nachweise blockieren; Statusprüfungen erteilen keine Freigabe.
+
+Use read-only agent commands with the spelling shown in the linked command table:
+review-status for the binding intake, series-status for the named series and
+series-next for eligible candidates. Inspect results, source hashes, order and
+blockers. Stop if required series or evidence is missing; do not create it.
+A valid series state alone does not prove an eligible candidate. Ready or explicitly
+accepted ReadyWithAcceptedRisks must be current and bound to the specific intake.
+Unclear or stale evidence blocks the start; status checks grant no permission.
+
+Für das ausgewählte Harness, hier beispielhaft Codex, Modell-Routing read-only
+prüfen; für andere Harnesses deren tatsächlichen Namen verwenden:
+
+Check model routing read-only for the selected harness (Codex shown here); use the
+actual harness name for other integrations:
+
+```bash
+# macOS / Linux
+bash scripts/resolve-model-routing.sh -Action Status -Harness Codex -RoutingRoot .specify/presets
+```
+
+```powershell
+# Windows / PowerShell 7
+pwsh -NoProfile -File scripts/resolve-model-routing.ps1 -Action Status -Harness Codex -RoutingRoot .specify/presets
+```
+
+**5. Werkzeuge und Startentscheidung / Tools and start decision**
+
+Benötigte Werkzeuge anhand des gewählten Kommandos und des Wartungsvertrags auf
+Installation und erforderliche Version prüfen: beispielsweise Git, Spec-Kit-CLI,
+Bash, Python 3, PowerShell 7 und das gepinnte PSScriptAnalyzer-Modul. Pandoc, Typst
+und VS-Code-Erweiterung `myriad-dreamin.tinymist` gehören zum Wartungsvertrag;
+standalone Tinymist ist optional. Dateipropagation ist kein Installationsnachweis.
+Für Produkt-Builds ausschließlich definierte Projekt-Testbefehle nutzen; Sprache,
+Framework und offene Plattformabnahmen sichtbar lassen, keinen Build erfinden.
+
+Verify actual installation and required versions against the chosen command and
+maintenance contract, for example Git, Spec Kit CLI, Bash, Python 3, PowerShell 7
+and pinned PSScriptAnalyzer. Pandoc, Typst and the VS Code extension
+myriad-dreamin.tinymist belong to the maintenance contract; standalone Tinymist is
+optional. Propagated files do not prove installed tools. Use only defined product
+test commands; keep language/framework decisions and platform acceptance gaps
+visible and do not invent a build.
+
+Vor dem Start konkrete Scope-Freigabe und aktuelle Liefergrenze nachweisen:
+lokale Implementierung, PR-Veröffentlichung oder Merge/Synchronisierung sind
+unterschiedliche Befugnisse. Installation und geschlossene Issues ersetzen sie
+nicht. Ein erfolgreicher Preflight bestätigt technische Voraussetzungen, keine
+Produkt-, Risiko- oder Rechtsfreigabe. Bei Blockaden Ursache und nächste Klärung
+melden. Reparatur, neue Reviews und Produktarbeit benötigen passende Beauftragung.
+
+Before starting, verify explicit scope permission and current delivery boundaries:
+local implementation, PR publication and merge/synchronization are separate rights.
+Installation and closed issues do not grant them. A successful preflight proves
+technical prerequisites, not product, risk or legal approval. Report blockers with
+their cause and next resolution. Repairs, new reviews and product work require
+matching authorization.
+
 ## Dokumentation und Statistik / Documentation and statistics
 
 Fachliche Dokumente, Lastenhefte und gemeinsame Governance-Guidance werden
@@ -241,10 +441,13 @@ and a separate statistics commit.
 
 Entscheidung: **UpdateRequired**. Owner: Thorsten Hindermann.
 Zielgruppen: Maintainer und Agenten; Leserpfad: README → diese Anleitung →
-Prüfungen → LH-00. Quellen: fachliches Bedienkonzept, zentrale Constitution,
+Preflight → kommandoabhängige Start-Gates → LH-00. Quellen: fachliches
+Bedienkonzept, zentrale Constitution,
 gepinntes Presetprofil, live ausgelesene GitHub-Einstellungen und die
 Owner-Angaben vom 28.09.2026 zur PowerShell-Installation auf beiden Macs
-sowie zu Windows 11 und Ubuntu 24.04 unter WSL2.
+sowie zu Windows 11 und Ubuntu 24.04 unter WSL2; für den Preflight zusätzlich
+Issue #19 samt Abschlusskommentaren und vorhandene Skripthilfe.
+Prüfnachweis: [Preflight-Dokumentationsprüfung](planning/spec-kit-preflight-validation.md).
 Dokumentklasse: Einrichtung/Betrieb; Sprachpartner: DE/EN in dieser Datei. Plattformnachweis: lokale macOS-Prüfungen
 und PR-CI; daraus folgt keine Produktabnahme auf Linux oder Windows.
 Distribution: versionierte Level-2-Quelle; lokale Registry und Caches privat.
@@ -253,9 +456,11 @@ werden über den Level-0-Vertrag synchronisiert. Re-Evaluation bei Runtime-,
 Preset-, Integrations- oder Repository-Regeländerungen.
 
 Decision: UpdateRequired. Owner: Thorsten Hindermann. Audiences: maintainers and
-agents. Reader path: README → this guide → checks/profile/mapping → LH-00 →
-separate review. Sources are the interaction concept, shared constitution, pinned
-profile, recorded repository settings and owner environment reports. Document
+agents. Reader path: README → this guide → preflight → command-specific gates →
+LH-00 → separate review. Sources are the interaction concept, shared constitution, pinned
+profile, recorded repository settings and owner environment reports, plus issue #19
+with closeout comments and existing script help for the preflight. See the linked
+preflight documentation validation record. Document
 class: setup/operation, with DE/EN content in this file. Local macOS checks and
 existing PR CI do not prove Linux/Windows product acceptance. Distribution is
 versioned Level-2 source; local registries and caches remain private. No Home
