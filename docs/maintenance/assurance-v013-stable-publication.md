@@ -31,7 +31,9 @@ this record adds the subsequent central approval.
 
 ## Prüfungen und Grenzen / Verification and boundaries
 
-DE: Die exakte 14-Preset-Matrix und Wartungsparität werden erneut geprüft.
+DE: Die exakte 14-Preset-Matrix wurde in Bash und PowerShell im CheckOnly-Modus
+erfolgreich geprüft; die Wartungsparität wurde ebenfalls im CheckOnly-Modus
+ohne Drift bestätigt.
 Der technische Nachlauf verändert weder Paketbytes noch Evidence-Matrizen,
 Gate-Reviews, Intake-Receipts oder menschliche Projektentscheidungen. NIST SSDF
 und CWE Top 25 bleiben die Prüfbasis; diese reine Dokumentationsübernahme
@@ -39,12 +41,13 @@ erzeugt keinen neuen Web/API-, Produkt-KI- oder Zertifizierungsscope.
 TDD und Changed-Code-Coverage sind mangels geänderten Produktcodes N/A;
 vor einer Codeänderung neu bewerten.
 
-EN: Recheck the exact fourteen-preset matrix and maintenance parity. This
-documentation follow-up changes no package bytes, evidence matrices, gate
-reviews, intake receipts or human project decisions. NIST SSDF and CWE Top 25
-remain the review baseline; no new web/API, product-AI or certification scope
-is created. TDD and changed-code coverage are N/A without product-code changes;
-reevaluate before changing code.
+EN: The exact fourteen-preset matrix passed CheckOnly in Bash and PowerShell;
+maintenance parity also passed CheckOnly with zero drift. This documentation
+follow-up changes no package bytes, evidence matrices, gate reviews, intake
+receipts or human project decisions. NIST SSDF and CWE Top 25 remain the review
+baseline; no new web/API, product-AI or certification scope is created. TDD and
+changed-code coverage are N/A without product-code changes; reevaluate before
+changing code.
 
 DE: Vor einem getrennt beauftragten Implementierungsstart erneut Intake-Review-
 Frische, Serienstatus, Modell-Routing, Werkzeuge und Delivery-Autorität prüfen.
