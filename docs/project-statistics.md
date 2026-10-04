@@ -40,6 +40,8 @@ heuristic would otherwise count spec.md as a test.*
 
 | 2026-10-04 | Spec-Kit-Preflight dokumentiert / Documented Spec Kit preflight | Prüfreihenfolge nach fetch/pull, frische Start-Gates aus Issue #19 und offene Plattformnachweise; keine Automatisierung oder Produktimplementierung. / Post-fetch/pull checks, fresh start gates from issue #19 and open platform evidence; no automation or product implementation. [Nachweis / Evidence](planning/spec-kit-preflight-validation.md). |
 
+| 2026-10-04 | Stabile Assurance-Veröffentlichung / Stable Assurance publication | codex/assurance-v013-stable-adoption; Dokumentationsübernahme der zentralen v0.1.3-Abnahme, unveränderte Paketbytes und 14er-Matrix. 0 Produkt-/0 Testzeilen, keine neue Produktfreigabe oder Implementierung; bestehende Statistik und Referenzen bleiben erhalten. / Documentation-only adoption, unchanged statistics methodology, no measured productivity claim. [Nachweis / Evidence](maintenance/assurance-v013-stable-publication.md). |
+
 ## Gesamtstatistik / Overall Statistics
 
 <!-- project-statistics-v2:begin -->
