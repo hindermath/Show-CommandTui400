@@ -1,0 +1,339 @@
+{
+  "schemaVersion": "1.1",
+  "reviewId": "5eaad379-04dc-49e1-8060-86ad662611f0",
+  "mode": "Single",
+  "status": "Ready",
+  "policy": "generic-markdown",
+  "reviewedAt": "2026-10-01T08:44:32Z",
+  "repository": {
+    "root": ".",
+    "head": "e5f9cf68618896a04a885df24879bdea47ce1394",
+    "boundary": "Immutable primary-repository base; isolated updated candidate has no Git metadata. Target gitBlob is N/A."
+  },
+  "requestEvidence": {
+    "path": "specs/intake-review-request.json",
+    "normalizedSha256": "d89d121070bc5fa2a25cb9846dd3c04aea8b7fd5c6294ebc412131dc551e46dd"
+  },
+  "targets": [
+    {
+      "path": "intakes/LH-00.md",
+      "normalizedSha256": "ab17634eda4fbb8e739b7b2807e3ebfa5cc10b700249072b395ef863e7ca0e6e",
+      "role": "Primary",
+      "gitBlob": "N/A"
+    }
+  ],
+  "findings": [],
+  "questions": [],
+  "acceptedRisks": [],
+  "operatorExceptions": [],
+  "coverage": {
+    "individual": [
+      "intakes/LH-00.md"
+    ],
+    "series": [],
+    "workers": []
+  },
+  "summary": {
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 0
+  },
+  "supersedes": "c22c0fcd-610a-4a77-8f8d-59e504efc113",
+  "resolvedFindings": [
+    {
+      "id": "IR001",
+      "severity": "Medium",
+      "category": "AudienceAndReadability",
+      "target": "intakes/LH-00.md",
+      "disposition": "Resolved",
+      "owner": "Thorsten Hindermann",
+      "title": "Zentrale Begriffe sind bei erster Verwendung nicht erklärt / Key terms lack first-use explanations",
+      "evidence": "intakes/LH-00.md:13-30 promises no Spec Kit experience; :45-46 uses integrations/presets, :127 and :140 collection roles/series manifest, :151 and :159 ASVS/SBOM/VEX/AI-SBOM without definitions. FR-00-005 (:121/:134) and AC-00-004 (:255/:265) require explained terms. The linked authoring profile repeats collection terminology without explaining it.",
+      "impact": "New authors cannot reliably distinguish a preset, project profile, collection or series manifest; readers cannot interpret the security N/A statements. This does not meet the declared beginner-facing language contract.",
+      "remediation": "Add equivalent DE/EN first-use explanations of the relevant workflow terms and security abbreviations. Preserve scope and requirement IDs; repeat a semantic language review.",
+      "reevaluationTrigger": "Any change to target, bound sources, profile, policy, audience, normative language or reviewer independence.",
+      "previousReviewId": "f0741205-05b7-42c5-8680-451c1483627d",
+      "resolutionEvidence": "intakes/LH-00.md: Audience and terms, Further terms, Quality and governance, Autonomous; .specify/memory/intake-authoring-profile.md: Terms and Collection and evidence. Equivalent DE/EN explanations introduce presets, integrations, profile, collection, portable roles, manifest, ASVS, SBOM, VEX and AI-SBOM before substantive use."
+    },
+    {
+      "id": "IR002",
+      "severity": "Medium",
+      "category": "BilingualNormativeParity",
+      "target": "intakes/LH-00.md",
+      "disposition": "Resolved",
+      "owner": "Thorsten Hindermann",
+      "title": "Normative DE/EN-Fassungen sind nicht vollständig gleichwertig / Normative DE/EN text differs",
+      "evidence": "FR-00-004 at intakes/LH-00.md:120 requires linking issue IDs; its EN counterpart :133 additionally requires linking intakes. AC-00-007 at :258 says unabhängiges Review, while :268 only says separate review. AC-00-004 at :255/:265 requires matching meaning. Both differences also occur in the approved issue-01 source.",
+      "impact": "Required links and reviewer independence can be accepted differently depending on the selected language. Matching IDs alone do not prove equivalent requirements.",
+      "remediation": "Confirm and express the same linking obligation and review-independence requirement in both languages. Align any affected source/issue through explicitly authorized repair/update, preserving receipt lineage; do not silently rehash.",
+      "reevaluationTrigger": "Any change to target, bound sources, profile, policy, audience, normative language or reviewer independence.",
+      "previousReviewId": "f0741205-05b7-42c5-8680-451c1483627d",
+      "resolutionEvidence": "intakes/LH-00.md and docs/issue-updates/issue-01-repair.md: FR-00-004 requires links to both issues and intakes after creation; AC-00-007 requires a reviewer other than the author in both languages. Confirmed IAD008/IAD009 are in docs/planning/lh00-repair-decisions.md; this re-review is performed by a separate automated agent."
+    },
+    {
+      "id": "IR003",
+      "severity": "Medium",
+      "category": "SourceEvidenceConsistency",
+      "target": "intakes/LH-00.md",
+      "owner": "Thorsten Hindermann",
+      "title": "Aktuelle und historische Statusangaben getrennt / Current and historical status separated",
+      "disposition": "Resolved during this complete re-review",
+      "previousReviewId": "N/A",
+      "evidence": "The initial candidate labeled the corrected Issue 1 input published before publication; bound governance, environment, profile and guidance still described original local-only/unpublished authoring as current. IAD001-IAD007 reused predecessor source ID SRC007 without explicit historical qualification.",
+      "impact": "Readers could confuse historical authoring, actual publication, current repair/review authority and future process acceptance.",
+      "remediation": "Author corrected factual status and reader paths, preserved predecessor snapshots and rebound successor receipt sources/context; reviewer changed no target/source.",
+      "resolutionEvidence": "Issue input now requires separate publication evidence. Current source documents distinguish historical authoring from authorized repair/review/delivery. Historical IAD source IDs are explicitly scoped to the archived predecessor. Target points to current review for the next action and marks original validation as historical. DE/EN wording, all source/context hashes and final target hash were rechecked.",
+      "reevaluationTrigger": "Publication, authority, target or source-context changes; stale status wording or changed source hashes."
+    },
+    {
+      "id": "IR004",
+      "severity": "Medium",
+      "category": "StatusModelCompleteness",
+      "target": "intakes/LH-00.md",
+      "owner": "Thorsten Hindermann",
+      "disposition": "Resolved during this independent review",
+      "title": "Review-Ausgang NeedsClarification fehlte / Missing NeedsClarification review outcome",
+      "evidence": "The initial candidate Flow and status diagram and both text alternatives listed only four review outcomes; installed review skill and validator permit five.",
+      "impact": "The declared complete status explanation could hide a blocking review question.",
+      "remediation": "Author added NeedsClarification to Mermaid and both language alternatives, aligned technical FR-018/data model and clarified current IAD010 authority in the profile. Reviewer changed no target or source.",
+      "resolutionEvidence": "Final target Flow and status; final profile Quality and authority boundaries. Fresh receipt and request bind the corrected content.",
+      "reevaluationTrigger": "Any target, source, profile, policy, authority or normative language change."
+    }
+  ],
+  "reviewer": {
+    "type": "Automated",
+    "identity": "Codex independent agent /root/staged_intake_review",
+    "role": "Separate intake reviewer commissioned under IAD010 and IAD009",
+    "distinctFromRepairAuthor": true,
+    "independentHumanReview": false,
+    "delegationEvidence": {
+      "path": "docs/planning/lh00-staged-acceptance-decisions.md",
+      "normalizedSha256": "5323e99580084048a9824725273b83efc6c75e8c8d64b935707ca9106b7ed529"
+    },
+    "boundary": "Independent semantic intake review; not human acceptance, tool-source review, assistive-device proof or complete platform/process acceptance."
+  },
+  "policyEvidence": [
+    {
+      "path": ".specify/presets/intake-review-governance/templates/intake-review-policy-template.json",
+      "normalizedSha256": "fcf4fc8e732e8d949dffcfc08de97ef6dd6f2b9aa23e00c68dd2ea525d2b96e0"
+    },
+    {
+      "path": ".specify/presets/intake-review-governance/templates/intake-review-checklist-template.md",
+      "normalizedSha256": "36821186987b48d42ec15db6ff347304478d4b204fc6f779fee26a466a866cdc"
+    },
+    {
+      "path": ".specify/memory/intake-authoring-policy.json",
+      "normalizedSha256": "8d42717c2cc7efc128a62e7967a1f877beee85fb2d53fedee1aa828aba9941d9"
+    },
+    {
+      "path": ".specify/memory/intake-authoring-profile.md",
+      "normalizedSha256": "c97747a2a8dd538006b8409dd401075540ecc00ad620975e869c0b3a32b94c3b"
+    },
+    {
+      "path": "constitution.md",
+      "normalizedSha256": "189b93acf1b159fa265b12b2db73373bcbfec7d75ee95d53236b4b9445df45fc"
+    },
+    {
+      "path": "AGENTS.md",
+      "normalizedSha256": "290a41ac597937433fbfb0ef689a40027f078c394efeb5e7f82d5356150b7083"
+    },
+    {
+      "path": "docs/intake-governance.md",
+      "normalizedSha256": "385518d68c0a221ba3495487ebc916f5c9b598f02c008e5a230d9b112b315570"
+    },
+    {
+      "path": "docs/Lastenheft-Plan.md",
+      "normalizedSha256": "bf907254ab745246bfe9c4961c1af8e5f6ec21c850aa5812c3ed210547879b8b"
+    },
+    {
+      "path": "specs/intake-authoring-receipts/lh-00.json",
+      "normalizedSha256": "1dea27b9d576e665d95105bf813bb0ce205596d3f426dda3d746088c89b24976"
+    }
+  ],
+  "sourceEvidence": [
+    {
+      "path": "specs/intake-authoring-archive/lh-00/a627d004-b189-43df-b061-27e30a0e6a37/intakes/LH-00.md",
+      "normalizedSha256": "680baafd7534db9386f91a43cdbe3dbf260d6c0620c9f506c2be59ec3c826a65",
+      "sourceId": "SRC001"
+    },
+    {
+      "path": "docs/planning/lh00-staged-acceptance-decisions.md",
+      "normalizedSha256": "5323e99580084048a9824725273b83efc6c75e8c8d64b935707ca9106b7ed529",
+      "sourceId": "SRC002"
+    },
+    {
+      "path": "specs/intake-review-archive/c22c0fcd-610a-4a77-8f8d-59e504efc113/intake-review-result.json",
+      "normalizedSha256": "d092921734b535572165716a83b392144a8275f34f878d302cdc96a46ad8a5d3",
+      "sourceId": "SRC003"
+    },
+    {
+      "path": "docs/planning/lh00-repair-decisions.md",
+      "normalizedSha256": "b831b9316621eeffeda6f39503047e6bea89eaa76226d2cca03d602cc637619f",
+      "sourceId": "SRC004"
+    },
+    {
+      "path": "docs/issue-updates/issue-01-repair.md",
+      "normalizedSha256": "4549f88a0ef8e4949bcc4bd58393771f5cea2c79a4d18c6899c233cd72915f98",
+      "sourceId": "SRC005"
+    },
+    {
+      "path": ".specify/memory/intake-authoring-profile.md",
+      "normalizedSha256": "c97747a2a8dd538006b8409dd401075540ecc00ad620975e869c0b3a32b94c3b",
+      "sourceId": "SRC006"
+    },
+    {
+      "path": "docs/Lastenheft-Plan.md",
+      "normalizedSha256": "bf907254ab745246bfe9c4961c1af8e5f6ec21c850aa5812c3ed210547879b8b",
+      "sourceId": "SRC007"
+    },
+    {
+      "path": "docs/intake-governance.md",
+      "normalizedSha256": "385518d68c0a221ba3495487ebc916f5c9b598f02c008e5a230d9b112b315570",
+      "sourceId": "SRC008"
+    },
+    {
+      "path": "docs/Bedienkonzept.md",
+      "normalizedSha256": "e41d0d035ad089f64e752d0a01558f744736a9514b394410123084010c12c30c",
+      "sourceId": "SRC009"
+    },
+    {
+      "path": "docs/Entwicklungsumgebung.md",
+      "normalizedSha256": "eca20d639c69a438ca0cff617a345820406a62239b3827853636969c935dead8",
+      "sourceId": "SRC010"
+    }
+  ],
+  "supersessionEvidence": [
+    {
+      "path": "specs/intake-review-archive/c22c0fcd-610a-4a77-8f8d-59e504efc113/intake-review-request.json",
+      "normalizedSha256": "9bf89c0b2d26ef71a81bbe371bea47ae83e4faadc57f5c2797bf7efed318cac8"
+    },
+    {
+      "path": "specs/intake-review-archive/c22c0fcd-610a-4a77-8f8d-59e504efc113/intake-review-result.json",
+      "normalizedSha256": "d092921734b535572165716a83b392144a8275f34f878d302cdc96a46ad8a5d3"
+    },
+    {
+      "path": "specs/intake-review-archive/c22c0fcd-610a-4a77-8f8d-59e504efc113/intake-review-report.md",
+      "normalizedSha256": "fa5237dbbb894a64cde0c167aa93a4eb44fbd745edf50fa6f967ea6a307e8717"
+    },
+    {
+      "path": "specs/intake-authoring-archive/lh-00/a627d004-b189-43df-b061-27e30a0e6a37/intakes/LH-00.md",
+      "normalizedSha256": "680baafd7534db9386f91a43cdbe3dbf260d6c0620c9f506c2be59ec3c826a65"
+    },
+    {
+      "path": "specs/intake-authoring-archive/lh-00/a627d004-b189-43df-b061-27e30a0e6a37/specs/intake-authoring-receipts/lh-00.json",
+      "normalizedSha256": "d1fd29c39875ce40c32e9d386d592a3dc852989bd5e0db6311eb096182d2d4dd"
+    }
+  ],
+  "authoringEvidence": {
+    "receiptId": "db6043c8-2ddc-477c-a045-1c3621762660",
+    "intakeId": "2296d99d-f099-4c4d-88f7-789581693eb0",
+    "operationId": "ee9d8ced-8f4f-4412-9c1c-b0b9a9574b1a",
+    "receipt": {
+      "path": "specs/intake-authoring-receipts/lh-00.json",
+      "normalizedSha256": "1dea27b9d576e665d95105bf813bb0ce205596d3f426dda3d746088c89b24976"
+    },
+    "operationBoundary": "The author finalizes the update operation for atomic local publication. Its mutable status is not hash-bound by this semantic review; this review alone is no delivery proof."
+  },
+  "dimensionCoverage": [
+    {
+      "dimension": "IdentityAudienceScope",
+      "status": "Pass",
+      "evidence": "LH-00 identity, file/terminal/PowerShell prior knowledge, purpose, scope and non-goals remain explicit; only this intake is reviewed."
+    },
+    {
+      "dimension": "LearnerLanguageContract",
+      "status": "Pass",
+      "evidence": "DE-first/EN-second and equivalent normative wording, explained terms, readable text alternatives. CEFR B2 is a qualitative review, not certification."
+    },
+    {
+      "dimension": "RequirementsAcceptance",
+      "status": "Pass",
+      "evidence": "12 FR and 9 AC retained in both languages. E01-E07 map measurable evidence. IAD010 changes acceptance timing, not the nine criteria."
+    },
+    {
+      "dimension": "DependenciesOrder",
+      "status": "Pass",
+      "evidence": "Standalone LH-01 then LH-02 pilots require core-process evidence and explicit owner permission. LH-02 requires LH-01 domain completion. LH-03 requires LH-02 and full LH-00 acceptance. Automatic series dependency rules are not weakened."
+    },
+    {
+      "dimension": "StatusAndAuthority",
+      "status": "Pass",
+      "evidence": "Five review outcomes are now complete after IR004 correction. Authoring, review, pilot permission, full acceptance and status mutation are distinct. IAD010 permits no feature run or remote delivery."
+    },
+    {
+      "dimension": "SecurityPrivacySupplyChain",
+      "status": "Pass",
+      "evidence": "SSDF/CWE applicability and justified document-scope exclusions remain explicit; product threat model/runtime/supply-chain proofs await applicable implementation. No credential or unnecessary personal-data exposure found in the intake."
+    },
+    {
+      "dimension": "AccessibilityTextFirst",
+      "status": "Pass",
+      "evidence": "States, dependencies, decisions and next steps are expressed as text; Mermaid has matching text. Keyboard, screen reader, Braille and text browser evidence remains required, without claiming field acceptance."
+    },
+    {
+      "dimension": "PlatformTechnology",
+      "status": "Pass",
+      "evidence": "Core proof identifies primary Mac A or B; after LH-02 and before LH-03 all four environments, accessibility, translations and applied registry alignment are mandatory. No product technology/minimum version is selected."
+    },
+    {
+      "dimension": "SourcesProvenance",
+      "status": "Pass",
+      "evidence": "All 15 receipt target/source/context hashes and request target checked; eight predecessor files byte-identical to unchanged primary repository files. Intake ID preserved, new receipt/operation/review IDs, explicit archived supersession."
+    },
+    {
+      "dimension": "PromptsReferences",
+      "status": "Pass",
+      "evidence": "Relative target/order/governance/decision links resolve. Both future prompt templates bind this intake/receipt/profile and require separate current authority. No downstream command executed."
+    },
+    {
+      "dimension": "CollectionBoundary",
+      "status": "Pass",
+      "evidence": "No live collection or executable series is claimed. Installed B-01 remains open until separately authorized release/integration. Single mode has one target and zero workers; no campaign exception is created."
+    }
+  ],
+  "proofBoundaries": [
+    "One semantic intake review, zero workers; no remote access or feature execution.",
+    "Ready is intake readiness, not pilot permission, full LH-00 acceptance or delivery authority.",
+    "Tool source tests and native CI are separate from this intake review. Installed B-01 remains open until release and targeted integration.",
+    "Full process proof is due after LH-02 and before LH-03, with all four environments, accessibility, translations and applied registry alignment."
+  ],
+  "reevaluationTrigger": "Re-review after any change to the target, bound source, request, policy/profile, owner decision, normative language, platform or scope.",
+  "reportPath": "specs/intake-review-report.md",
+  "nextAction": "Use the current reviewed intake to continue LH-00 technical planning only under a separate explicit request; core-process implementation and pilot execution remain separately authorized.",
+  "executionGate": "Ready grants no automatic Specify, Autonomous, pilot, release, rollout or delivery authority.",
+  "validationEvidence": [
+    {
+      "artifact": "Receipt",
+      "shell": "Bash",
+      "status": "Pass",
+      "exitCode": 0,
+      "platform": "macOS",
+      "boundary": "Installed validator; no native Windows/Linux or complete process proof."
+    },
+    {
+      "artifact": "Receipt",
+      "shell": "PowerShell",
+      "status": "Pass",
+      "exitCode": 0,
+      "platform": "macOS",
+      "boundary": "Installed validator; no native Windows/Linux or complete process proof."
+    },
+    {
+      "artifact": "ReviewResult",
+      "shell": "Bash",
+      "status": "Pass",
+      "exitCode": 0,
+      "platform": "macOS",
+      "boundary": "Installed validator; no native Windows/Linux or complete process proof."
+    },
+    {
+      "artifact": "ReviewResult",
+      "shell": "PowerShell",
+      "status": "Pass",
+      "exitCode": 0,
+      "platform": "macOS",
+      "boundary": "Installed validator; no native Windows/Linux or complete process proof."
+    }
+  ]
+}

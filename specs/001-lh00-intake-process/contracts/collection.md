@@ -101,12 +101,12 @@ LH-00→LH-01 as a binding RequirementsGovernanceGate, domain completion depende
 as HardCompletionGate. Add no edges to missing files and preserve all dependencies.
 Advisory edges are non-binding.
 
-**B-01:** Ready/Eligible ist validierbar. Active/Active mit nur einem Mitglied
+**Historischer B-01-Ausgangsstand vor dem Patch:** Ready/Eligible ist validierbar. Active/Active mit nur einem Mitglied
 scheitert an RIG017. Nicht aktivieren, bis eine versionierte Korrektur alle
 Collection-Prüfungen bestehen lässt. Idle/leer ist zwischen Presets inkonsistent.
 Completed braucht tatsächlichen Abschluss, Archivpfade und erhaltene Mitglieder.
 
-**B-01:** Ready/Eligible validates. A single Active/Active member fails RIG017;
+**Historical B-01 state before the patch:** Ready/Eligible validates. A single Active/Active member fails RIG017;
 do not activate until a versioned correction passes every collection check.
 Empty Idle is inconsistent across presets. Completed requires actual completion,
 archive paths and preserved membership.
@@ -151,9 +151,10 @@ bindenden Kanten. Vor LH-03 volle LH-00-Abnahme nach LH-02 nachweisen.
 Für den B-01-Patch gilt: Ready genau ein Eligible; Active null oder ein Eligible,
 aber null nur bei mindestens einem Active-Mitglied; mehrere Eligible bleiben
 ungültig. Completed und alle Sicherheitsprüfungen bleiben unverändert. Bei null
-Kandidaten eligibleCandidate N/A. Leeres Idle bleibt ausgeschlossen. Die lokale
-Quellenkorrektur wird erst nach getrennt autorisierten Releases, zentralen Pins,
-gezielter Installation und erneuter Prüfung für diese Collection wirksam.
+Kandidaten eligibleCandidate N/A. Leeres Idle bleibt ausgeschlossen. Releases, zentrale Pins und gezielte Installation sind seit dem Pilot geliefert.
+Vor realer Aktivierung verbleibende installierte Lifecycle-/Negativnachweise und
+anderes Review/Owner-Entscheid gemäß T034–T036 belegen; keine Neuinstallation
+ohne echte Abweichung und passenden Auftrag.
 
 Before full LH-00 acceptance, IAD010 keeps LH-01 and LH-02 outside this series.
 SeriesManifest counts them as standalone active intakes rather than series
@@ -165,6 +166,7 @@ LH-00 acceptance after LH-02 and before LH-03.
 The B-01 patch requires exactly one Eligible in Ready. Active permits zero or one,
 but zero requires at least one Active member; multiple remain invalid. Completed
 and all safety checks remain unchanged. Zero candidates yield eligibleCandidate
-N/A. Empty Idle remains excluded. The local source fix takes effect in this
-collection only after separately authorized releases, central pins, targeted
-installation and retesting.
+N/A. Empty Idle remains excluded. Releases, central pins and targeted
+installation are delivered. Before real activation complete remaining installed
+lifecycle/negative evidence and separate review/owner decision under T034–T036;
+reinstallation requires actual drift and matching authority.

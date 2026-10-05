@@ -42,6 +42,8 @@ heuristic would otherwise count spec.md as a test.*
 
 | 2026-10-04 | Stabile Assurance-Veröffentlichung / Stable Assurance publication | codex/assurance-v013-stable-adoption; Dokumentationsübernahme der zentralen v0.1.3-Abnahme, unveränderte Paketbytes und 14er-Matrix. 0 Produkt-/0 Testzeilen, keine neue Produktfreigabe oder Implementierung; bestehende Statistik und Referenzen bleiben erhalten. / Documentation-only adoption, unchanged statistics methodology, no measured productivity claim. [Nachweis / Evidence](maintenance/assurance-v013-stable-publication.md). |
 
+| 2026-10-05 | LH-00-Nachweise und Startprüfung / LH-00 evidence and preflight | Intake-Update mit bytegleichen Vorgängern, frisches unabhängiges Ready-Review, gezielter Plan-/Tasks-Abgleich und Analyze ohne offene Befunde. B-01-Releases und Integration wiederverwendet; lokales Codex-Routing aktualisiert, bestehende Git-Statistik mit Renderer fortgeschrieben. Keine Implementierung oder Prozessabnahme. / Governed intake refresh, independent Ready review, targeted planning reconciliation and clean analysis; reuse delivered B-01 tooling, refresh local routing and render existing statistics. No implementation or process acceptance. [Nachweis / Evidence](../specs/001-lh00-intake-process/checklists/preflight-20261005.md). |
+
 ## Gesamtstatistik / Overall Statistics
 
 <!-- project-statistics-v2:begin -->

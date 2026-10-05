@@ -133,11 +133,9 @@ nur die Vorgabe des späteren Autonomous-Prompts, kein aktueller Laufauftrag.
 Dieses Profil allein erlaubt keine Commits, Remote-Schreibzugriffe, Reviews oder
 Folgeläufe. Maßgeblich ist der ausdrückliche Auftrag; historische Reparatur- und
 Lieferbefugnisse stehen in `docs/planning/lh00-repair-decisions.md`.
-Der historische lokale Update-/Review-Auftrag IAD010 steht in
-`docs/planning/lh00-staged-acceptance-decisions.md`. Der aktuelle Auftrag IAD011
-steht in `docs/planning/lh00-preflight-refresh-decisions.md`: Nachweise aktualisieren,
-unabhängig prüfen, Plan/Tasks abgleichen und Preflight lesen; kein Feature-Lauf,
-Release, Remote-Rollout, Commit oder Tool-/Routing-Refresh.
+Der aktuelle lokale Update-/Review-Auftrag IAD010 steht in
+`docs/planning/lh00-staged-acceptance-decisions.md`; er startet keine Feature-Läufe,
+Releases oder Remote-Rollouts.
 
 Fetch only individually named public HTTPS sources without authentication,
 JavaScript or crawling; check targets and redirects first. Preserve the preset's
@@ -148,7 +146,6 @@ ReadyWithAcceptedRisks, with human acceptance of risks. LocalImplementation is
 the later Autonomous prompt default, not a current execution request. This profile
 alone grants no commits, remote writes, reviews or downstream runs. Explicit
 requests govern authority; historical repair and delivery decisions are recorded
-in docs/planning/lh00-repair-decisions.md. Historical IAD010 is recorded in docs/planning/lh00-staged-acceptance-decisions.md.
-Current IAD011 in docs/planning/lh00-preflight-refresh-decisions.md authorizes
-evidence refresh, independent review, plan/task reconciliation and read-only
-preflight, with no feature run, release, remote rollout, commit or tool/routing refresh.
+in docs/planning/lh00-repair-decisions.md. The current local update/review request
+IAD010 is recorded in docs/planning/lh00-staged-acceptance-decisions.md; it starts
+no feature runs, releases or remote rollouts.

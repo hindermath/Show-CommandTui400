@@ -65,20 +65,21 @@ files, receipts, manifests and statistics each have one writer.
 
 ## Vorhandener B-01-Nachweis / Existing B-01 evidence
 
-Die Quellenkorrektur ist bereits geliefert: [Authoring PR 11](https://github.com/hindermath/spec-kit-preset-intake-authoring-governance/pull/11),
-[Review PR 8](https://github.com/hindermath/spec-kit-preset-intake-review-governance/pull/8),
-[Sequencing PR 10](https://github.com/hindermath/spec-kit-preset-intake-sequencing-governance/pull/10).
-Merge-Commits: `23f795c`, `49a7609`, `5bf6caa`. Alle neun nativen CI-Jobs
-(macOS/Linux/Windows je Preset) bestanden auf den jeweiligen PR-Heads.
-Die lokalen Quellen sind synchronisiert. Es gibt noch keinen hier übernommenen
-Patch-Release und keine aktualisierte Projektinstallation. T034–T036 schließen
-diese Integrationslücke; sie verlangen keinen erneuten Quellenfix und keinen Flottenrollout.
+Die Quellenkorrektur und neun native CI-Jobs wurden am 2026-10-01 geliefert.
+Seit dem Pilot am 2026-10-03 sind Authoring 0.3.6, Review 0.2.4 und Sequencing
+0.2.7 veröffentlicht, zentral gebunden und gezielt im Projekt installiert.
+Projektlieferung: PR #21/#22; Quellen und Tags im Quellen-Lock. Die installierten
+Konfigurations-Fixture-Suiten bestanden in Bash/PowerShell mit Zero-write-Parität.
+[Zuordnung und Restumfang](../../docs/maintenance/lh00-b01-release-adoption.md)
+verhindern doppelte Releases/Installation. T034–T036 bleiben bis zum vollständigen
+Feature-Nachweis offen; die reale Serienaktivierung und Prozessabnahme sind nicht erfolgt.
 
-The source fix has been delivered through the three linked PRs and merge commits.
-All nine native CI jobs passed on their respective PR heads; local sources are
-synchronized. No patch release has been adopted here and project installation
-has not changed. T034–T036 close that integration gap without repeating the source
-fix or rolling out the fleet.
+Source fixes and nine native CI jobs were delivered on 2026-10-01. The 2026-10-03
+pilot released, centrally pinned and installed Authoring 0.3.6, Review 0.2.4 and
+Sequencing 0.2.7. PR #21/#22 and the source lock record delivery; installed
+configuration fixtures passed in both shells with zero-write parity. Reuse
+these facts rather than repeating release/installation. T034–T036 remain open
+pending complete feature evidence; real series activation/acceptance has not occurred.
 
 ## Phase 1: Vorbereitung / Setup
 
@@ -99,20 +100,22 @@ T001–T004 precede foundation work; missing host or release evidence does not b
 **Ziel / Goal:** Sicherheits- und Architekturgrenzen vor Skriptübernahme und aktiver Migration belegen.
 Prove security and architecture boundaries before script integration or active migration.
 
-- [ ] T005 [P] `docs/architecture/lh00-process.md` mit Kontext-, Baustein-, Laufzeit- und Deployment-Sicht des Dateiprozesses, Qualitätsszenarien US-02/03/04/06, Risiken und technischen Schulden ausarbeiten; keine Produktlaufzeit entwerfen. / Document file-process views, quality scenarios, risks and technical debt without designing the product runtime.
+- [ ] T005 [P] `docs/architecture/lh00-process.md` mit Kontext-, Baustein-, Laufzeit- und Deployment-Sicht des Dateiprozesses, Qualitätsszenarien US-02/03/04/06, Risiken und technischen Schulden ausarbeiten; keine Produktlaufzeit entwerfen. / Document file-process views, quality scenarios, risks and technical debt without designing the product runtime. Bei anwendbarem C5 Type 1/Type 2/Unknown und Zeitraum trennen; bei C3A die 30 Gruppen, exakten gewählten C/AC-IDs und SI-Auslegung bewahren. / For applicable C5 distinguish assurance type/period; preserve the C3A index, selected IDs and SI interpretation.
 - [ ] T006 Nach T005 die Entscheidung für vorhandene Dateiverträge, `SeriesManifest`, kontrollierte Migration und verworfene Alternativen in `docs/architecture/decisions/001-lh00-file-process.md` als ADR begründen. / After T005 record the file contracts, inventory mode, migration and rejected alternatives in an architecture decision record.
 - [ ] T007 [P] `docs/security/threat-model.md` und `docs/security/security-checklist.md` für Quellen, Pfade, aktive Dateien, Hashes, Reviewer und Ausführungsbefugnis pflegen: STRIDE/CIA, relevante CAPEC-Muster, SSDF und CWE-22/78/94/862, Schutzschichten und konkrete negative Fälle. / Document trust boundaries, relevant attack patterns, SSDF/CWE controls and negative cases in the threat model and security checklist.
 - [ ] T008 Nach T007 `docs/security/adr/s-adr-lh00-authority.md` und `docs/security/arc42-section-8-lh00.md` zu minimaler Befugnis, Eingabeprüfung, sicheren Fehlern, Logging und Abhängigkeiten erstellen; eigene Dienstauthentisierung/Kryptografie begründet N/A führen. / After T007 record authority and security concepts, including justified non-applicability of custom service authentication or cryptography.
-- [ ] T009 [P] `docs/security/msl-applicability.md` und `docs/security/secure-coding-language-rules.md` erstellen: Produkttechnik/MSL bleiben Open; Bash-/PowerShell-Regeln mit Quoting, StrictMode, `-NoProfile`, Bash-3.2-Kompatibilität, leerem Windows-HOME, enthaltenen Pfaden und keiner Auswertung fremder Inhalte festlegen. / Keep product technology/MSL open and define secure shell rules without inventing a product-language exception.
-- [ ] T010 [P] In `docs/security/dependency-audit.md` und `docs/security/supply-chain-evidence.md` vorhandene Pins, Herkunft/Hashes, Update-Automation und OpenSSF-Praktiken prüfen; SBOM/VEX/SLSA und AI-SBOM im Lieferkettennachweis zuordnen; ASVS in `docs/security/asvs-verification.md`, Zero Trust in `docs/security/zero-trust-applicability.md`, BSI C3A in `docs/security/cloud-autonomy-applicability.md`, C5 in `docs/security/cloud-compliance-assurance.md` und Regulatorik in `docs/security/regulatory-applicability.md` mit Gründen/Triggern bewerten und in `docs/security/README.md` verlinken. N/A nicht als Pass und Open nicht als rechtliche Ausnahme behandeln. / Audit tooling provenance and update practices; record each standard's applicability, rationale and reassessment trigger without claiming a score, legal exemption or product certification.
+- [ ] T009 [P] `docs/security/msl-applicability.md` und `docs/security/secure-coding-language-rules.md` erstellen: Produkttechnik/MSL bleiben Open; Bash-/PowerShell-Regeln mit Quoting, StrictMode, `-NoProfile`, Bash 5+ als Ausführungsumgebung gemäß Wartungsvertrag, leerem Windows-HOME, enthaltenen Pfaden und keiner Auswertung fremder Inhalte festlegen. / Keep product technology/MSL open and define secure shell rules without inventing a product-language exception.
+- [ ] T010 [P] In `docs/security/dependency-audit.md` und `docs/security/supply-chain-evidence.md` vorhandene Pins, Herkunft/Hashes, Update-Automation und OpenSSF-Praktiken prüfen; SBOM/VEX/SLSA und AI-SBOM im Lieferkettennachweis zuordnen; ASVS in `docs/security/asvs-verification.md`, Zero Trust in `docs/security/zero-trust-applicability.md`, BSI C3A in `docs/security/cloud-autonomy-applicability.md`, C5 in `docs/security/cloud-compliance-assurance.md` und Regulatorik in `docs/security/regulatory-applicability.md` mit Gründen/Triggern bewerten und in `docs/security/README.md` verlinken. N/A nicht als Pass und Open nicht als rechtliche Ausnahme behandeln. / Audit tooling provenance and update practices; record each standard's applicability, rationale and reassessment trigger without claiming a score, legal exemption or product certification. DS-GVO/KI-VO/CRA/NIS2/DORA je Beispielprodukt, Entwicklungswerkzeuge und Organisation mit Jurisdiktion, Rolle, direkten/vertraglichen Pflichten, Quelle, Owner, anderem Reviewer, Evidence und Follow-up getrennt erfassen; unbekannt bleibt Open, Ausbildung/AI-SBOM N/A sind keine Ausnahme. / Assess regulatory scope separately for product, tooling and organisation, recording duties and evidence; unknown remains Open, with no education/AI-SBOM exemption.
 - [ ] T011 Den Secure-Development-Kontext nach `.specify/presets/secure-development-assurance-governance/templates/secure-development-evidence-contract.md` für `docs/security/secure-development/<YYYY-MM-DD>-lh00-process/` festlegen; vor Umsetzung reale Baseline-Bindung und `evidence-matrix.md` herstellen, Deltas mit Änderungen führen, Closure/Image-Impact erst am passenden Gate erzeugen. / Establish a real dated assurance context, baseline binding and evidence matrix; create deltas with changes and defer closure/image-impact to their proper gates.
 - [ ] T012 Ergebnisse T005–T011 in `specs/001-lh00-intake-process/checklists/plan-governance.md` durch einen anderen Prüfer bewerten lassen; relevante offene Schutzmaßnahmen vor ihrer Mutation schließen, akzeptierte Restrisiken ausschließlich menschlich belegen. / Have another reviewer assess foundation evidence; resolve relevant safeguards before mutation and require human acceptance for residual risks.
 
-**Abschluss / Checkpoint:** Foundation gilt für alle Stories. B-01-Release/Installation
-ist ein zusätzlicher Vorgänger nur der Serienaktivierung in US5; US1–US4 können
-mit den bereits verfügbaren Einzelintake-Werkzeugen voranschreiten.
-Foundation precedes every story. B-01 release adoption blocks series activation
-in US5 specifically; available single-intake tools allow US1–US4 to progress.
+**Abschluss / Checkpoint:** Foundation gilt für alle Stories. Gelieferte B-01-Releases
+und Installation werden wiederverwendet; verbleibende Lifecycle-/Review-/Owner-Nachweise
+sind ein Vorgänger nur der Serienaktivierung in US5. US1–US4 können nach ihren
+eigenen Startchecks mit Einzelintake-Werkzeugen voranschreiten.
+Foundation precedes every story. Reuse delivered releases/installation; remaining
+lifecycle/review/owner evidence gates US5 series activation. US1–US4 can progress
+with standalone tools after their own start checks.
 
 ## Phase 3: US1 – Nachvollziehbar erstellen / Traceable creation (P1, MVP)
 
@@ -187,9 +190,9 @@ Validate configuration, index and one-member series including the running state.
 isolierten gültigen Bestand und fehlende Dateien/Hashes/Zyklen/mehrere Eligible prüfen.
 Validate an isolated collection and reject missing files, invalid hashes, cycles and multiple candidates.
 
-- [ ] T034 [US5] In `docs/maintenance/lh00-b01-release-adoption.md` die drei bereits gemergten Quellen und ihre tatsächlichen CI-Heads belegen; separat autorisierte Patch-Releases als externe Voraussetzung verfolgen und erst vorhandene Tags/Versionen/Release-Hashes übernehmen. Keine Versionsnummer erfinden, keinen erneuten Quellenfix und keinen automatischen Flottenrollout starten. / Record delivered sources and CI heads; track separately authorized patch releases as an external prerequisite and adopt only real release identities.
-- [ ] T035 [US5] Nach verfügbaren Releases und passendem Auftrag die kanonischen Level-0-Versionsreferenzen über die bestehende Quellenauflösung aktualisieren lassen und `scripts/config/spec-kit-project-statistics-governance-presets.json` gezielt abgleichen; Evidence und betroffene lokale Referenzen in `docs/maintenance/lh00-b01-release-adoption.md` festhalten. / After release availability and matching authority align canonical central pins and this project's explicit fourteen-preset matrix, recording applied evidence.
-- [ ] T036 [US5] Nach T035 mit Hilfe/Check-Vorschau die drei Presets über `scripts/install-spec-kit-governance-presets.sh` bzw. `.ps1` gezielt installieren; exakte 14-Preset-Matrix und fünf Integrationen prüfen, alle drei installierten Collection-Kopien in beiden Shells auf Ready/Eligible→Active/Active mit N/A→Completed/Archiv sowie negative Fälle testen und ein anderes Review/Owner-Entscheid zu B-01 in `docs/maintenance/lh00-b01-release-adoption.md` belegen. / Install only the approved project update and prove installed lifecycle/parity behavior before closing B-01.
+- [ ] T034 [US5] Bereits gelieferte Source-PRs, neun native CI-Jobs und veröffentlichte Patch-Releases Authoring 0.3.6 / Review 0.2.4 / Sequencing 0.2.7 aus Quellen-Lock, Pilotnachweis und D-09 in `docs/maintenance/lh00-b01-release-adoption.md` zusammenführen; echte IDs/Tag-Commits/Hashes prüfen, keine erneuten Releases oder Flottenrollouts. / Consolidate and verify delivered source/CI/release identities without publishing again or rolling out the fleet.
+- [ ] T035 [US5] Nach T034 bereits gelieferte kanonische Level-0-Pins und `scripts/config/spec-kit-project-statistics-governance-presets.json` gegen den Quellen-Lock prüfen und angewendete zentrale/Projektlieferung in `docs/maintenance/lh00-b01-release-adoption.md` belegen; Änderungen nur bei echter neuer Abweichung und passendem gesondertem Auftrag. / Verify delivered central/project pins against the source lock; reuse applied evidence and require separate authority for any new change.
+- [ ] T036 [US5] Nach T035 die bereits gezielte Installation und exakte 14-Preset-Matrix/fünf Integrationen mit Check-only bestätigen; vorhandene Fixture-Ergebnisse übernehmen, fehlende vollständige Lifecycle-/Negativnachweise gegen alle drei installierten Collection-Kopien in Bash/PowerShell ergänzen: Ready/Eligible→Active/Active mit N/A→Completed/Archiv. Ein anderes Review und Owner-Entscheid zu B-01 in `docs/maintenance/lh00-b01-release-adoption.md` belegen. Nur bei echter Installationsabweichung und gesondertem Auftrag Hilfe/Vorschau sowie gezielte Reparatur verwenden. / Verify the delivered installation, reuse fixtures, complete missing paired lifecycle/negative evidence and obtain separate review/owner closure; no unconditional reinstall.
 - [ ] T037 [US5] Nach T036 einen vollständigen Kandidaten gemäß `contracts/collection.md` vorbereiten: `requirements/intake-governance-config.json`, `requirements/RequirementsIndex.md`, `requirements/baseline/README.md`, Collection-Verzeichnisse und `.specify/memory/intake-series-policy.json`; SeriesManifest, vier Rollen, sechs eindeutige Pfade, bestehende Namen und fehlende LH-01–LH-07 im Index erhalten. / Prepare the exact collection candidate with explicit roles, paths, inventory mode and missing-intake markers.
 - [ ] T038 [US5] `specs/intake-series/lh00-process/manifest.json`, `receipt.json`, `operation.json` und ein reales Journal unter `requirements/intake-governance-operations/` vorbereiten: echte Serien-ID, nur vorhandenes LH-00 als Primary/Eligible, Ready, ein Root, keine Kanten, tatsächliche Hashes und Vorher-/Nachher-/Rollbackbindungen. / Prepare real single-member series evidence and a migration journal without invented identities or future members.
 - [ ] T039 [US5] Alle drei Collection-Validatoren sowie Sequencing-Manifest/-Receipt-Validatoren gegen den isolierten Kandidaten in Bash und PowerShell ausführen; fehlende Datei, Hashdrift, Pfadausbruch/Alias, falsche Reihenfolge, Zyklus und mehrere Eligible abweisen; Ergebnisse in `docs/validation/lh00/collection.md` dokumentieren. / Prove paired candidate validation and rejection of invalid inventory/dependency cases before live publication.
@@ -197,11 +200,12 @@ Validate an isolated collection and reject missing files, invalid hashes, cycles
 - [ ] T041 [US5] Gebundene Policy-/Profil-/Quellenänderungen der Migration über `specs/intake-authoring-receipts/lh-00.json` mit autorisiertem Update nachvollziehen und frisches unabhängiges Review in `specs/intake-review-result.json` herstellen; erst danach wieder gültige Auswahl-/Ausführungsgates behaupten. / Preserve intake lineage and obtain fresh review after bound migration changes before using downstream gates.
 - [ ] T042 [US5] `speckit-intake-series-next` lesend prüfen und `requirements/RequirementsIndex.md` mit `docs/Lastenheft-Plan.md` abgleichen: genaue Blocker, keine gestartete Arbeit, korrekte Gesamt-/Serienanzahl, erhaltene Archivherkunft; LH-01/LH-02-Piloten außerhalb der Serie und LH-03 hinter voller LH-00-Abnahme führen. / Check read-only selection, inventory and pilot exclusion without weakening binding edges or starting work.
 
-**Abschluss / Checkpoint:** Fehlt ein Release oder ein Auftrag für T035/T036,
-bleibt die Serienaktivierung Open/Blocked. Fertige US1–US4 und vorbereitbare
-Dokumentationsarbeit bleiben nutzbar. Empty Idle wird nicht als Ausweichweg verwendet.
-Missing release/adoption authority blocks series activation specifically, while
-single-intake and preparable documentation work remain usable; empty Idle is no workaround.
+**Abschluss / Checkpoint:** Releases, Pins und Installation sind geliefert.
+Fehlende aktuelle Lifecycle-/Review-/Owner-Nachweise blockieren nur die reale
+Serienaktivierung; sie erfordern keine pauschale Neuinstallation. US1–US4 und
+vorbereitbare Dokumentationsarbeit bleiben nach ihren eigenen Gates nutzbar.
+Empty Idle bleibt ausgeschlossen. / Reuse delivered integration; remaining
+lifecycle/review/owner proof gates real series activation, not all standalone work.
 
 ## Phase 8: US6 – Kernprozess und vier Umgebungen / Core process and four environments (P2)
 
@@ -252,7 +256,7 @@ Missing translations, invalid series or a merely prepared patch prevent full acc
 Close navigation, parity and evidence consistently with any separately authorized delivery.
 
 - [ ] T061 `README.md`, `docs/Entwicklungsumgebung.md` und `specs/001-lh00-intake-process/quickstart.md` auf die tatsächlich vorhandenen Prozessartefakte, Aufgaben und Abnahmegrenzen ausrichten; genau UpdateRequired mit Zielgruppe, Owner, Quelle, Sprache, sourceOnly-Verteilung und Reevaluation in `specs/001-lh00-intake-process/checklists/tasks-validation.md` fortschreiben. / Align actual reader paths and record one complete documentation-impact decision.
-- [ ] T062 `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md` und `.github/agents/copilot-instructions.md` bytegleich prüfen; bei gemeinsamen Regeländerungen alle fünf, beide Constitutions und betroffene `.specify/templates/` gemeinsam aktualisieren. Das installierte Agent-Parity-Checklist in `docs/agent-parity/lh00-parity.md` mit fünf Integrationen führen; unverändertes Model-Routing begründet N/A dokumentieren. / Verify all five guidance files and integrations, synchronizing affected rules/templates atomically and recording routing non-applicability.
+- [ ] T062 `AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `.github/copilot-instructions.md` und `.github/agents/copilot-instructions.md` bytegleich prüfen; bei gemeinsamen Regeländerungen alle fünf, beide Constitutions und betroffene `.specify/templates/` gemeinsam aktualisieren. Das installierte Agent-Parity-Checklist in `docs/agent-parity/lh00-parity.md` mit fünf Integrationen führen; Routingänderung begründet N/A dokumentieren, Status vor Implementierung dennoch lesend prüfen; RefreshRequired nicht als Aligned ausgeben. / Verify all five guidance files and integrations, synchronizing affected rules/templates atomically and recording mutation non-applicability while checking current routing status before implementation; RefreshRequired is not Aligned.
 - [ ] T063 Für die seit dem letzten Nachweis geänderten Flächen die passenden Prüfungen aus `quickstart.md` durchführen: exakte 14-Preset-Matrix, Secret-Scan, Homogenität, `scripts/tests/test_spec_kit_agent_surface_parity.py`, PowerShell-Analyse, Links und Diff; Ergebnisse mit Grenzen in `specs/001-lh00-intake-process/checklists/tasks-validation.md` festhalten und passende unveränderte Evidence wiederverwenden. / Run applicable checks for newly changed surfaces, reuse valid unchanged evidence and record precise outcomes and limits.
 - [ ] T064 Beim passenden separat autorisierten Lieferpaket den chronologischen Ledger in `docs/project-statistics.md` mit dem vorhandenen Renderer pflegen: 80/100 für Konzept/Scripting, Gesamtstatistik zuletzt, Zahlen Git-gebunden, keine aktive Arbeitszeit erfinden; 125 erst bei tatsächlicher C#/.NET-Entscheidung bewerten. / Maintain the ledger through its renderer with authorized delivery, preserving Git-bound metrics and current reference rates.
 - [ ] T065 `specs/001-lh00-intake-process/tasks.md` samt Spec/Plan/Verträgen auf Abdeckung, Reihenfolge, fremden Umfang, offene Gates und tatsächlich erledigte Checkboxen prüfen; Abschluss im bestehenden `docs/validation/lh00/acceptance.md` bündeln. `specs/001-lh00-intake-process/completion-report.md` und vollständigen Chatbericht erst nach vollständig abgeschlossenem Feature-Lauf erstellen; Tasks-Generierung allein löst das nicht aus. / Check final consistency and real completion; create the feature completion report only for a fully completed feature run.
@@ -297,7 +301,7 @@ flowchart TD
     F --> U2["US2: Sprache/Text / Language/text"]
     F --> U3["US3: Herkunft / Provenance"]
     F --> U4["US4: Review/Authority"]
-    R["B-01 Releases/Pins/Installation"] --> U5["US5: Collection/Serie"]
+    R["B-01: gelieferte Integration + Restnachweise / delivered integration + remaining evidence"] --> U5["US5: Collection/Serie"]
     F --> U5
     U4 --> U5
     U1 --> K["Kernprozess auf primärem Mac / Core process"]
@@ -354,7 +358,7 @@ Read frozen independent inputs and have one writer integrate and publish binding
    benanntes Beispiel erzeugt einen vollständigen Intake samt Receipt; das ist
    ein MVP (kleinster nutzbarer Umfang), noch keine Pilotfreigabe.
 2. **Kontrollierter Kern:** US2–US4 ergänzen Sprachen, Herkunft und unabhängiges
-   Review. B-01-Adoption parallel als externe Voraussetzung verfolgen. US5 nach
+   Review. Gelieferte B-01-Adoption wiederverwenden und nur fehlende Nachweise ergänzen. US5 nach
    bestätigter Installation umsetzen; T043–T045 liefern die begrenzte Mac-Pilotentscheidung.
 3. **Begrenzte Pilotstrecke:** LH-01 und LH-02 separat beauftragen, jeweils eigenes
    Intake/Review und fachlichen Abschluss belegen. LH-00 bleibt offen; Prozessprobleme
@@ -367,7 +371,7 @@ Read frozen independent inputs and have one writer integrate and publish binding
 1. Smallest demonstrable increment: Setup + Foundation + US1, producing one traceable
    intake/receipt; this MVP does not grant pilot permission.
 2. Controlled core: add language, provenance and independent review through US2–US4;
-   track B-01 adoption separately, then implement US5 and obtain limited Mac permission.
+   reuse B-01 adoption and complete remaining evidence, then implement US5 and obtain limited Mac permission.
 3. Pilot route: separately commission LH-01/LH-02 with individual intake/review and
    domain completion. Keep LH-00 open, record process problems here and add no pilot product tasks.
 4. Full acceptance: after LH-02 complete US6/US7 and obtain owner acceptance before
