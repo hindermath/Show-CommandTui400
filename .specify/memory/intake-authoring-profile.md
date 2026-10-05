@@ -158,8 +158,9 @@ preflight, with no feature run, release, remote rollout, commit or tool/routing 
 Der aktuelle Auftrag [IAD012](../../docs/planning/lh00-v037-refresh-decisions.md)
 erlaubt LH-00-Update, anderes Review, gezielten Spec-/Plan-/Tasks-Abgleich,
 Startchecks und Lieferung dieses Nachweispakets mit MergeAndSync/Admin-Bypass.
-Er erlaubt keine Implementierung, neuen Lastenhefte, Serienaktivierung oder
-Pilotläufe. Der LocalImplementation-Folgeprompt bleibt eine lokale Vorlage
+Er erlaubt keine Implementierung, keine neuen Lastenhefte, keine
+Serienaktivierung und keine Pilotläufe. Der LocalImplementation-Folgeprompt
+bleibt eine lokale Vorlage
 für einen späteren eigenen Auftrag. Historische IAD011-Grenzen bleiben erhalten.
 
 Current IAD012 permits LH-00 update, independent review, targeted design/task
