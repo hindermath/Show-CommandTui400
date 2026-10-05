@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "1.1",
+  "reviewId": "5eaad379-04dc-49e1-8060-86ad662611f0",
+  "mode": "Single",
+  "policy": "generic-markdown",
+  "targets": [
+    {
+      "path": "intakes/LH-00.md",
+      "role": "Primary"
+    }
+  ],
+  "series": {
+    "orderedTargetPaths": [],
+    "roots": [],
+    "dependencies": []
+  },
+  "campaign": {
+    "manifestPath": "N/A",
+    "workers": [],
+    "operatorExceptions": []
+  },
+  "authority": {
+    "request": "IAD010 explicitly requires a fresh independent intake review after governed update",
+    "targetMutationAllowed": false,
+    "implementationAllowed": false
+  },
+  "projectProfile": "show-commandtui400-de-en",
+  "evidenceDelivery": "Local only; no commit, push, release or rollout",
+  "priorReviewId": "c22c0fcd-610a-4a77-8f8d-59e504efc113",
+  "priorReviewArchive": "specs/intake-review-archive/c22c0fcd-610a-4a77-8f8d-59e504efc113",
+  "targetHash": "ab17634eda4fbb8e739b7b2807e3ebfa5cc10b700249072b395ef863e7ca0e6e"
+}

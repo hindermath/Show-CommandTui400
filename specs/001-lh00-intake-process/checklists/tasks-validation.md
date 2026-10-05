@@ -129,3 +129,34 @@ Abnahme sind zukünftige Arbeit. Ein Feature-Abschlussbericht wird jetzt nicht e
 Validation confirms task-plan consistency and structure only. Practical tests,
 independent reviews, releases, installation, pilots and full acceptance remain
 future work. No feature completion report is produced now.
+
+## Vorbereitung IAD011 am 2026-10-05 / IAD011 preparation
+
+Der Erzeugungs-/Korrekturstand vom 2026-10-01 oben bleibt historische Evidence.
+Aktuelle Quellen, Receipt/Review, Werkzeugversionen, Git-Zustand und Startgrenzen
+stehen im [Preflight-Nachweis](preflight-20261005.md). Spec, Plan, Tasks und
+betroffene Governance-/Collection-Verträge wurden gezielt an die gelieferten
+fünf Preset-Versionen und Security-/Architecture-Regeln angepasst. Vorhandene
+B-01-Releases/Pins/Installation werden wiederverwendet; fehlende Lifecycle-/Review-/
+Owner-Nachweise bleiben ausdrücklich offen. Die ursprünglichen 65 offenen
+Task-IDs, 17 Parallelmarker und gestufte Abnahme sind erhalten. Keine neue
+Tasks-Generierung, Implementierung, Commit oder Remote-Schreibaktion.
+
+The 2026-10-01 records above remain historical. Current receipt/review, versions,
+Git state and start boundaries are in the linked preflight. Reconcile existing
+spec/plan/tasks and affected contracts with delivered versions and governance;
+reuse B-01 adoption while retaining missing lifecycle/review/owner evidence.
+All 65 open task IDs, 17 parallel markers and staged acceptance remain intact.
+No task regeneration, implementation, commit or remote write occurred.
+
+Aktuelle Analyze-Eigenprüfung: 24 FR + neun SC mit 100 % geplanter Task-Abdeckung;
+keine offenen Befunde, kein nicht zugeordneter Task. Prerequisites, Verweise und
+Diff bestanden. Aktueller unabhängiger Intake-Prüfer steht im separaten Ergebnis;
+Analyze bleibt Eigenprüfung der technischen Artefakte, keine Owner-Abnahme.
+Preflight bleibt wegen Routing-/Statistikbefund Blocked für Implementierung.
+
+Current Analyze self-check: full planning coverage for 24 FR and nine SC,
+no findings or unmapped task. Prerequisites, links and diff pass. The separate
+result names the independent intake reviewer; Analyze remains a technical
+self-check rather than owner acceptance. Routing/statistics keep implementation
+preflight Blocked.

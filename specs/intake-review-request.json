@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "reviewId": "5eaad379-04dc-49e1-8060-86ad662611f0",
+  "reviewId": "482709fb-f89a-4f48-b925-3e16b1dd3daa",
   "mode": "Single",
   "policy": "generic-markdown",
   "targets": [
@@ -20,13 +20,19 @@
     "operatorExceptions": []
   },
   "authority": {
-    "request": "IAD010 explicitly requires a fresh independent intake review after governed update",
+    "request": "IAD011 owner-authorized evidence refresh and independent review; IAD009 requires a reviewer other than the author",
+    "evidence": {
+      "path": "docs/planning/lh00-preflight-refresh-decisions.md",
+      "normalizedSha256": "a12473b865f7283f2f5c699d6f528e9ba24136c7deb7d3c734324e13c274fa31"
+    },
     "targetMutationAllowed": false,
-    "implementationAllowed": false
+    "implementationAllowed": false,
+    "remoteAccessAllowed": false,
+    "routingAccessAllowed": false
   },
   "projectProfile": "show-commandtui400-de-en",
-  "evidenceDelivery": "Local only; no commit, push, release or rollout",
-  "priorReviewId": "c22c0fcd-610a-4a77-8f8d-59e504efc113",
-  "priorReviewArchive": "specs/intake-review-archive/c22c0fcd-610a-4a77-8f8d-59e504efc113",
-  "targetHash": "ab17634eda4fbb8e739b7b2807e3ebfa5cc10b700249072b395ef863e7ca0e6e"
+  "evidenceDelivery": "Isolated local candidate; no commits, remote access, installation or execution authority",
+  "priorReviewId": "5eaad379-04dc-49e1-8060-86ad662611f0",
+  "priorReviewArchive": "specs/intake-review-archive/5eaad379-04dc-49e1-8060-86ad662611f0",
+  "targetHash": "7bf415b47b81b0c13a165107b7c2021712a314bd7cf4533e6cc58950147e681a"
 }

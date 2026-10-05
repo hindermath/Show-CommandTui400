@@ -34,19 +34,23 @@ reviewable change proposal against main. It does not expand domain scope.
 The delivery evidence records this separate authority and the related README
 and statistics updates.
 
-Das aktuelle [Receipt](../intake-authoring-receipts/lh-00.json) ist der
+Das vor Specify geprüfte [Receipt](../intake-authoring-receipts/lh-00.json) ist der
 maschinenlesbare Herkunftsnachweis mit Prüfsummen. Das gesonderte
 [Review-Ergebnis](../intake-review-result.json) steht auf `Ready` ohne offene
 Befunde. Beide Validatoren wurden vor der Spezifikation erfolgreich ausgeführt;
 Ziel- und Quellenbindungen stimmen. Identitäten und Prüfgrenzen stehen im
 [Governance-Nachweis](checklists/governance.md). Diese Freigabe des Inputs ist
-keine Abnahme des noch nicht umgesetzten Prozesses.
+keine Abnahme des noch nicht umgesetzten Prozesses. Dieser Absatz dokumentiert
+den Specify-Stand; aktuelle IDs, Bindungen und Ergebnis stehen im separaten Review
+und [Preflight-Nachweis](checklists/preflight-20261005.md).
 
-The current receipt is the machine-readable provenance record with checksums.
+The receipt checked before Specify is the machine-readable provenance record with checksums.
 The separate review result is Ready with no open findings. Both validators
 passed before specification; target and source bindings match. Identities and
 check boundaries are recorded in the governance evidence. Input readiness does
-not accept the process, which has not yet been implemented.
+not accept the process, which has not yet been implemented. This paragraph
+records the Specify checkpoint; current bindings/outcome are in the separate
+review and preflight record.
 
 **Zielgruppe und Begriffe / Audience and terms:** Projektverantwortliche, Autoren
 und spätere Implementierende mit Grundkenntnissen von Dateien, Terminal und
@@ -790,3 +794,24 @@ complete evidence for all four platforms, accessibility, translations and applie
 central registry alignment. AC-00-001–009 remain unchanged. Only then may owner
 acceptance and, with separate authority, Completed/archival follow. This update
 starts no feature run.
+
+## Governance-Abgleich IAD011 / Governance reconciliation IAD011
+
+Unter FR-013 und CR-006 gelten die aktuelle Projektmatrix sowie Security 0.7.0
+und Architecture 0.6.1. DS-GVO/KI-VO/CRA/NIS2/DORA getrennt für Beispielprodukt,
+Entwicklungswerkzeuge und Organisation bewerten: Jurisdiktion, Rolle,
+direkte/vertragliche Pflichten, Quelle, Owner, anderer Reviewer, Nachweis und
+Follow-up festhalten; Unbekanntes bleibt Open. Ausbildung und Produkt-AI-SBOM
+N/A sind keine Ausnahme. C5-Prüfung unterscheidet bei Anwendbarkeit Type 1,
+Type 2 und Unknown; C3A bewahrt exakte Kontroll-IDs und SI-Auslegung. Das ergänzt
+die bestehende Governance-Zuordnung ohne neue fachliche FR/SC oder Produktfunktion.
+IAD010 bleibt verbindlich; Jahresreview und weitere Rollouts folgen der Constitution.
+
+FR-013/CR-006 use the current project matrix and Security 0.7.0/Architecture 0.6.1.
+Assess GDPR, EU AI Act, CRA, NIS2 and DORA separately for sample product, development
+tooling and organisation. Record jurisdiction, role, direct/contractual duties,
+source, owner, another reviewer, evidence and follow-up; unknown remains Open.
+Education and product AI-SBOM N/A are no exemption. Distinguish C5 Type 1, Type 2
+and Unknown when applicable and retain exact C3A control IDs/SI interpretation.
+This refines existing governance without new domain FR/SC or product functions.
+IAD010 remains binding; annual review and later rollouts follow the constitution.

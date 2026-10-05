@@ -326,3 +326,18 @@ Serienaktivierung, Produktimplementierung oder praktische Prozessabnahme.
 EN: Released packages now contain B-01; installed configuration suites pass.
 Project PR/merge delivery remains pending. Preserve historical probes, do not
 mark feature tasks implemented, activate a series or infer practical acceptance.
+
+### Aktueller Lieferabgleich 2026-10-05 / Current delivery reconciliation
+
+Die Pilotnotiz vom 2026-10-03 oben ist historisch: PR #21 und #22 sind inzwischen
+in main geliefert; PR #23 ergänzt den Preflight. Releases, zentrale Pins und
+gezielte Projektinstallation sind keine offenen externen Voraussetzungen mehr.
+[Zuordnung T034–T036](../../docs/maintenance/lh00-b01-release-adoption.md) trennt
+wiederverwendete Werkzeuglieferung von verbleibenden Lifecycle-/Reviewer-/Owner-
+und praktischen Abnahmenachweisen. Keine reale Serie ist damit aktiviert.
+
+The 2026-10-03 note above records history: PR #21/#22 are now delivered on main;
+PR #23 adds preflight documentation. Releases, central pins and targeted installation
+are no longer pending external prerequisites. The linked mapping distinguishes
+reused tool delivery from remaining lifecycle, reviewer, owner and practical
+acceptance evidence. No real series is activated.

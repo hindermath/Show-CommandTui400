@@ -22,22 +22,26 @@ mode is SeriesManifest, initially containing only the existing LH-00.
 
 Dieser Auftrag erstellt Entwurfsdokumente. Umsetzung, aktive Collection-/Seriendateien
 und weitere Lastenhefte werden nicht gestartet. Vor Serienaktivierung muss **B-01**,
-der belegte Validatorwiderspruch beim einzigen aktiven Mitglied, behoben und erneut
-geprüft sein. Vier Plattformnachweise, Hilfsmittelprüfungen, Übersetzungen und
+der belegte Validatorwiderspruch beim einzigen aktiven Mitglied, durch
+installierte Lifecycle-Nachweise und anderes Review/Owner-Entscheid geschlossen sein.
+Quellenkorrektur, Releases, zentrale Pins und gezielte Projektinstallation sind geliefert;
+[Restumfang T034–T036](../../docs/maintenance/lh00-b01-release-adoption.md). Vier Plattformnachweise, Hilfsmittelprüfungen, Übersetzungen und
 angewendete zentrale Registerausrichtung bleiben Voraussetzungen der Prozessabnahme.
 
 This request creates design documents. It does not start implementation, create
 active collection/series files or author further intakes. Before series activation,
-resolve and retest **B-01**, the demonstrated validator conflict for a single active
-member. Four-platform evidence, assistive checks, translations and applied central
+close **B-01**, the demonstrated single-active-member conflict, with installed
+lifecycle evidence and separate review/owner decision. Source fixes, releases,
+central pins and targeted installation are delivered; the linked adoption note
+distinguishes remaining T034–T036 evidence. Four-platform evidence, assistive checks, translations and applied central
 registry alignment remain conditions of process acceptance.
 
 ## Technischer Kontext / Technical Context
 
 | Aspekt / Aspect | Entscheidung / Decision |
 |---|---|
-| Language/Version | Markdown, JSON, vorhandenes Bash 3.2 und PowerShell 7, Python 3 für Validatoren. Produktsprache, Framework, MSL und Mindest-PowerShell bleiben außerhalb dieses Plans offen. / Existing Bash 3.2 and PowerShell 7, Python 3 for validators; product language, framework, MSL and minimum PowerShell remain undecided outside this plan. |
-| Primary Dependencies | Spec Kit 0.12.8, Authoring 0.3.5, Review 0.2.3, Sequencing 0.2.6; explizite 14-Preset-Matrix / explicit fourteen-preset matrix. |
+| Language/Version | Markdown, JSON, Bash 5+ gemäß aktuellem Wartungsvertrag und PowerShell 7, Python 3 für Validatoren. Produktsprache, Framework, MSL und Mindest-PowerShell bleiben außerhalb dieses Plans offen. / Bash 5+ under the current maintenance contract and PowerShell 7, Python 3 for validators; product language, framework, MSL and minimum PowerShell remain undecided outside this plan. |
+| Primary Dependencies | Spec Kit 0.12.8, Authoring 0.3.6, Review 0.2.4, Sequencing 0.2.7; explizite 14-Preset-Matrix / explicit fourteen-preset matrix. |
 | Storage | UTF-8-Dateien, normalisierte SHA-256-Bindungen, Versionsarchive und getrenntes fachliches Archiv; keine Datenbank / UTF-8 files, normalized hashes, version archives and separate domain archive; no database. |
 | Testing | Beide Shell-Validatoren, isolierte positive/negative Prozessfälle, anderes Review, vier Umgebungsprotokolle / Paired validators, isolated positive/negative process cases, another reviewer, four environment reports. |
 | Target Platform | Mac A, Mac B, Windows 11 nativ, Ubuntu 24.04 unter WSL2; jeweils konkrete Versionen erfassen / Capture actual versions per environment. |
@@ -82,6 +86,10 @@ OS families, undecided product technology/MSL, setup checks instead of product
 builds, DE/EN B2, accessibility, statistics 80/100, five guidance files and fourteen
 presets. Generic template wording about a training year adds no audience requirement.
 
+Historische Planprüfung vom 2026-09-30; aktuelle Bindungen separat im
+[Preflight-Nachweis](checklists/preflight-20261005.md). / Historical planning checks;
+see the separate preflight record for current bindings.
+
 | Gate | Vorher / Before | Nachher / After | Nachweis / Evidence |
 |---|---|---|---|
 | Quelle und Autorität / Source and authority | PASS | PASS | LH-00/Spec unverändert; keine Folgeautorität / unchanged intake/spec; no downstream authority. |
@@ -123,7 +131,8 @@ Die [Recherche](research.md) entscheidet D-01–D-08. Die Umsetzung wird so zerl
 
 1. **Kompatibilität:** Ready/Eligible, Active/Active und Completed/Archiv
    in allen drei Collection-Validatoren und beiden Shells prüfen. B-01 vor
-   Aktivierung schließen; versionierte Korrekturen gehören in die Preset-Quellen.
+   Aktivierung schließen; die versionierte Quellenkorrektur ist bereits geliefert.
+   Installierte Nachweise wiederverwenden und nur fehlende Lifecycle-Fälle ergänzen.
 2. **Werkzeugparität:** PowerShell-Basis derselben Version isoliert vergleichen
    und kontrolliert übernehmen; Herkunft, Hilfe und man-Seite gemeinsam liefern.
 3. **Repräsentativer Ablauf:** zunächst vollständige vorhandene Skriptfläche
@@ -139,7 +148,7 @@ Die [Recherche](research.md) entscheidet D-01–D-08. Die Umsetzung wird so zerl
    ausführen. Danach bewertet der Owner alle neun AC. Details: IAD010 unten.
 
 Research resolves D-01–D-08. Implementation proceeds through compatibility testing
-and a versioned B-01 fix; narrow same-version PowerShell integration with provenance
+and reuse the delivered versioned B-01 fix, adding only missing lifecycle evidence; narrow same-version PowerShell integration with provenance
 and help; a representative isolated issue-to-selection flow after checking the full
 existing script surface; explicit negative cases before the valid path; staged
 collection migration with fresh review after bound-input changes; and translations,
@@ -221,7 +230,7 @@ Upstream-Herkunft und Hashes erhalten; beide Aufrufarten in
 Validatoren benötigen keinen Mutationsmodus. Falls eine belegte Lücke einen
 Projektwrapper erfordert, ist `Test-Lh00Process` vorgesehen: `Get-Verb Test`
 prüfen; `.sh`/`.ps1`, `--dry-run`/`-WhatIf`, man-Seite und bilinguale PowerShell-
-Kommentarhilfe gemeinsam planen. Bash: Quoting, `set -euo pipefail`, Bash 3.2;
+Kommentarhilfe gemeinsam planen. Bash: Quoting, `set -euo pipefail`, Ausführung mit Bash 5+;
 PowerShell: StrictMode, `-NoProfile`, leeres HOME unter Windows behandeln.
 Kein `eval`/`Invoke-Expression` auf unvertraute Inhalte. Beide Varianten manuell
 prüfen, Bash auf macOS/Linux und PowerShell auch nativ auf Windows.
@@ -258,10 +267,10 @@ source of information.
 ## Presets, Dokumentation und Statistik / Presets, documentation and statistics
 
 Die [Versionsmatrix](../../scripts/config/spec-kit-project-statistics-governance-presets.json)
-bleibt maßgeblich: security 0.6.2; secure-development-assurance 0.1.3;
-architecture 0.5.2; isaqb-architecture 0.2.2; a11y 0.4.3; cross-platform 0.2.2;
-agent-parity 0.4.2; model-routing 0.1.4; intake-authoring 0.3.5; intake-review 0.2.3;
-intake-sequencing 0.2.6; autonomous-run 0.4.4; parallel-autonomous-run 0.2.6;
+bleibt maßgeblich: security 0.7.0; secure-development-assurance 0.1.3;
+architecture 0.6.1; isaqb-architecture 0.2.2; a11y 0.4.3; cross-platform 0.2.2;
+agent-parity 0.4.2; model-routing 0.1.4; intake-authoring 0.3.6; intake-review 0.2.4;
+intake-sequencing 0.2.7; autonomous-run 0.4.4; parallel-autonomous-run 0.2.6;
 project-statistics 0.1.0. Alle Kurznamen tragen den Zusatz `-governance`.
 
 The linked fourteen-preset matrix governs; all short names above end in -governance.
@@ -325,12 +334,12 @@ changes require matching authority.
 ## Komplexität und Abschluss / Complexity and completion
 
 Keine zusätzliche Anwendungsschicht und keine gerechtfertigte Verfassungsverletzung.
-B-01 bleibt offen. Das Spec-Diagramm mit Textalternative reicht aus; Tabellen
+B-01-Werkzeuglieferung ist erfolgt; reale Lifecycle-/Owner-Abnahme bleibt offen. Das Spec-Diagramm mit Textalternative reicht aus; Tabellen
 erklären den Dateivertrag. Ein einzelner Plan-Befehl erzeugt keinen
 Feature-`completion-report.md`.
 
 No extra application layer or justified constitution violation is needed. B-01
-remains open. The specification's diagram with text alternative suffices; tables
+tool delivery is complete; real lifecycle/owner acceptance remains open. The specification's diagram with text alternative suffices; tables
 explain the file contract. An individual Plan command creates no feature
 completion-report.md.
 
@@ -358,3 +367,30 @@ complete evidence for all four platforms, accessibility, translations and applie
 central registry alignment. AC-00-001–009 remain unchanged. Only then may owner
 acceptance and, with separate authority, Completed/archival follow. This update
 starts no feature run.
+
+## Governance-Abgleich IAD011 / Governance reconciliation IAD011
+
+Stand 2026-10-05: Security 0.7.0 und Architecture 0.6.1 ändern die Bewertung,
+nicht den fachlichen Umfang. FR-013/CR-006 sowie T005/T010/T012/T058 decken den
+gezielten Abgleich ab. Regulatorik trennt Produkt, Werkzeuge und Organisation;
+DS-GVO/KI-VO/CRA/NIS2/DORA mit Jurisdiktion, Rolle, direkten/vertraglichen Pflichten,
+Quelle, Owner, Reviewer, Nachweisen und Follow-up erfassen. Unbekannt bleibt Open;
+AI-SBOM N/A und Ausbildungszweck schließen keine Anwendbarkeit. Bei anwendbarem
+C5 Type 1/Type 2/Unknown und Zeitraum unterscheiden; C3A umfasst den unveränderten
+30-Gruppen-Index mit exakten gewählten C/AC-IDs und SI-Auslegung. Kein Audit/Testat.
+Bestehende N/A-Entscheidungen sind auf den dokumentierten LH-00-Scope begrenzt.
+Routingänderung bleibt N/A; der Statuscheck vor Umsetzung ist dennoch Pflicht.
+Jahresreview am 2027-10-03 um 10:00 Europe/Berlin bleibt lesend; weitere Rollouts
+sind nicht Teil dieser Arbeit. Die fünf Guidance-Dateien und Constitution bleiben
+unverändert. Keine erneute Planerzeugung und keine Umsetzung.
+
+As of 2026-10-05, new Security/Architecture rules refine assessment within the
+existing FR-013/CR-006 and T005/T010/T012/T058 scope. Separate product, tooling
+and organisation; record regulatory jurisdiction, role, direct/contractual duties,
+source, owner, reviewer, evidence and follow-up. Unknown remains Open; education
+and product AI-SBOM N/A grant no exemption. For applicable C5 distinguish Type 1,
+Type 2, Unknown and the covered period; retain C3A's thirty-group index, exact
+selected C/AC IDs and SI interpretation. Claim no audit/testat. N/A decisions are
+bounded to LH-00. Routing mutation is N/A, but status checks remain mandatory.
+Annual read-only review and separate rollout boundaries remain unchanged.
+Guidance/constitution are unchanged; no regeneration or implementation.
