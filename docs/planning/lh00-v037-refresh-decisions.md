@@ -12,8 +12,9 @@ und beauftragte dafür „DeliveryMode MergeAndSync mit Admin-Bypass.“
 Dieser Auftrag umfasst genau dieses Vorbereitungspaket einschließlich Commit,
 Push, PR, technischer CI-Prüfung, an den geprüften Head gebundenem Merge und lokalem
 main-Sync. Ein separater Agent prüft den Intake nach IAD009; der Hauptagent ist Autor.
-Keine Implementierung, weiteren Lastenhefte, reale Serienaktivierung, Feature-Piloten,
-Releases, zentrale Änderungen, Installation, Routing-Refresh oder Flottenrollouts.
+Keine Implementierung, keine weiteren Lastenhefte, keine reale Serienaktivierung,
+keine Feature-Piloten, keine Releases, keine zentralen Änderungen, keine Installation,
+kein Routing-Refresh und keine Flottenrollouts.
 Admin-Bypass ersetzt keine technischen Prüfungen. Produkttechnik bleibt offen.
 
 The owner explicitly required a separate LH-00 update and independent review
