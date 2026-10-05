@@ -1,136 +1,125 @@
 # LH-00: unabhängiges Intake-Review / Independent intake review
 
-Datum / Date: 2026-10-05. Review-ID: `482709fb-f89a-4f48-b925-3e16b1dd3daa`. Modus / Mode: Single.
-
 ## Ergebnis / Outcome
 
-**Ready** für die fachliche Input-Reife von `intakes/LH-00.md`.
-Ein Ziel, null Serienziele und null Worker. Offene Befunde: 0 Critical, 0 High,
-0 Medium, 0 Low; keine offenen Fragen und keine akzeptierten Risiken.
-**Das bestätigt kein Preflight-Ready und startet keine Implementierung.**
-Routing-, Statistik- und Werkzeugprüfungen gehören in den gesonderten Preflight;
-gemeldete Routing-/Statistikblockaden werden durch dieses Review nicht aufgehoben.
+**Ready**. Single-Review: ein Ziel, null Serien und null Worker. Keine Befunde
+(Critical/High/Medium/Low: jeweils 0), keine offenen Fragen oder akzeptierten Risiken.
+Review-ID: `45881080-479a-47f9-9a62-e728b3d70244`. Anderer Prüfer als der Autor:
+Codex-Agent `/root/pr27_evidence_independent_review`, ausdrücklich gemäß IAD009/IAD012.
+Das Ergebnis ist eine fachliche Reifeprüfung, keine menschliche Prozessabnahme.
 
-**Ready** for the domain-input quality of `intakes/LH-00.md`.
-One target, zero series targets and zero workers. Open findings: zero at every
-severity; no open questions or accepted risks. **This does not establish
-Preflight-Ready or start implementation.** Routing, statistics and runtime-tool
-checks belong to the separate preflight; reported routing/statistics blockers
-are not removed by this review.
+**Ready**. Single review of one target, with no series or workers. Zero findings
+at every severity, no questions and no accepted risks. A separate Codex agent
+reviewed under IAD009/IAD012; semantic readiness is not human process acceptance.
 
-## Auftrag, Bindungen und Unabhängigkeit / Authority, bindings and independence
+## Ziel und Herkunft / Target and provenance
 
-IAD011 beauftragt Nachweisaktualisierung, unabhängiges Review, Plan-/Tasks-Abgleich,
-Analyze und lesenden Preflight. Prüfer ist der vom Hauptautor getrennte Agent
-`/root/lh00_refresh_independent_review` gemäß IAD009, kein menschlicher Abnehmer.
-Der Prüfer hat nur Request, Ergebnis und Bericht im isolierten Kandidaten geschrieben.
-Basis-Commit: `063659b60cded40b7407220bf820d214c1ed5904`; Git-Blob ist dort
-mangels Git-Metadaten `N/A` (nicht verfügbar). Zielhash:
-`7bf415b47b81b0c13a165107b7c2021712a314bd7cf4533e6cc58950147e681a`.
-Receipt `98203fd2-0684-4fd6-ab69-a1353e250a12` bindet 14 geordnete Quellen; alle 19 Ziel-,
-Quell- und Governance-Bindungen wurden unabhängig nachgerechnet. Quellen,
-Profil, Policy, beide Constitution-Kopien und Review-Request sind im Ergebnis gebunden.
+Ziel: [LH-00](../intakes/LH-00.md), Profil `show-commandtui400-de-en`.
+Zielhash: `10f705885557b01201f6a8c1771d65cbe28056219d591e28f6082a33200858d7`.
+Receipt: `c515439e-cd09-4e44-8fe2-ac6135e21e3f`; Update-Vorgang:
+`83bb5e0e-457b-4919-b7a8-ecead0758bed`. Intake-ID bleibt unverändert.
+Alle 20 Receipt-Bindungen sind aktuell: Ziel, 15 geordnete Quellen und vier
+Governance-Dateien. Result bindet zusätzlich Request, Review-Policy/Checkliste,
+aktuelle Quellen und die archivierten unmittelbaren Vorgänger.
 
-IAD011 commissions evidence refresh, independent review, targeted planning,
-Analyze and read-only preflight. Reviewer `/root/lh00_refresh_independent_review`
-is separate from the main author under IAD009 and is not a human acceptor.
-Only the request, result and report were written in the isolated candidate.
-The base commit and target checksum above identify the candidate; Git blob is
-N/A because it has no Git metadata. The receipt binds fourteen ordered sources;
-all nineteen target/source/governance bindings were independently recalculated.
-The result also binds profile, policy, both constitution copies and request.
+The linked target and named profile retain their intake identity. All twenty
+receipt bindings are current. The result also binds the request, review policy,
+checklist, sources and immediate predecessor archives. The isolated candidate
+has no Git metadata; repository head `15011a816d4ae46eb21d72402b2780fd5c8adbc6`
+is parent-verified context, with target Git blob marked N/A.
 
-## Fachliche Prüfung / Semantic checks
+## Vollständige fachliche Prüfung / Complete semantic assessment
 
-Die zwölf Anforderungen FR-00-001–012 und neun Abnahmekriterien AC-00-001–009
-sind gegenüber dem archivierten Vorgänger in beiden Sprachen unverändert.
-Zielgruppe, notwendiges Vorwissen, Umfang und Nicht-Ziele sind ausdrücklich
-benannt. Fach-/Workflowbegriffe sind erklärt, DE steht vor EN, die normative
-Bedeutung stimmt überein. B2 ist eine qualitative Lesbarkeitsprüfung, kein Zertifikat.
-Status, Abhängigkeiten und nächste Aktionen stehen vollständig in Text;
-Mermaid hat eine gleichwertige Textalternative. Die fünf Review-Ausgänge sind vollständig.
+Identität, Zielgruppe, Vorwissen, Zweck, Scope und Nicht-Ziele sind klar.
+DE zuerst/EN danach beschreibt denselben Umfang; Begriffe und Status werden
+verständlich erklärt. CEFR B2 ist eine qualitative Lesbarkeitsprüfung, keine
+Zertifizierung. Alle zwölf FR und neun AC je Sprache sind bytegleich zum
+unmittelbaren Vorgänger; das komplette Lastenheft ist ebenfalls bytegleich.
+Anforderungen und messbare Abnahme bleiben E01–E07 zugeordnet.
 
-All twelve requirements and nine acceptance criteria retain their exact lines
-in both languages compared with the archived predecessor. Audience, prior
-knowledge, scope and non-goals are explicit. Technical/workflow terms are
-explained; German comes before English with matching normative meaning.
-B2 is a qualitative readability check, not certification. States, dependencies
-and next actions are fully in text, with an equivalent Mermaid alternative and
-all five review outcomes present.
+Identity, audience, prior knowledge, purpose, scope and non-goals are explicit.
+German-first/English-second content is equivalent; terms and states are explained.
+B2 is a qualitative readability assessment, not certification. Twelve FR and
+nine AC per language, and the entire intake, are byte-identical to the immediate
+predecessor. Requirements and measurable acceptance retain E01–E07 mappings.
 
-Security 0.7.0, Architecture 0.6.1 und die drei ausgelieferten Intake-Presets
-sind durch aktuelle Matrix, Quellen-Lock und Pilotnachweis beschrieben.
-Assurance 0.1.3 ist regulär veröffentlicht, ohne Paketänderung/Neuinstallation.
-Produkt, Entwicklungswerkzeuge und Organisation bleiben bei der regulatorischen
-Bewertung getrennt; Unbekanntes bleibt Open. Ausbildungszweck und AI-SBOM N/A
-sind keine Ausnahme. C5 Type 1/Type 2/Unknown und C3A C/AC/SI werden unterschieden.
-SSDF/CWE bleiben anwendbar; dokumentbezogene N/A-Begründungen sind keine
-Rechts-, Risiko-, Produkt- oder Zertifizierungsfreigabe. Keine Credentials oder
-unnötigen persönlichen Angaben im Intake gefunden.
+IAD012 erklärt die zwei geänderten gebundenen Quellen nach den vom Owner gesichteten
+Copilot-Sprachkorrekturen. Ein neues Receipt, ein neuer Vorgang und bytegleiche
+Archive erhalten die Herkunft; frühere Hashes werden nicht umgedeutet.
+Authoring 0.3.7 passt zu Matrix und Quellen-Lock. Historische 0.3.5-/0.3.6-Prüfungen
+behalten ihren Kontext. Das alte Review `676172a5-0c13-4b06-95c2-3e65b5c9e7cc`
+wird ausdrücklich abgelöst und bleibt als vollständiges Triplet archiviert.
 
-Current matrix, source lock and pilot records describe the released security,
-architecture and intake versions. Assurance 0.1.3 is a regular release with no
-package change or reinstall. Regulatory assessment separates product, tooling
-and organisation; unknown remains Open. Education and AI-SBOM N/A create no
-exemption. C5 evidence types and C3A C/AC/SI remain distinct. SSDF/CWE apply;
-document-scope N/A reasons grant no legal, risk, product or certification approval.
-No credentials or unnecessary personal data were found in the intake.
+IAD012 explains two changed bound sources following owner-reviewed Copilot wording
+corrections. A fresh receipt/operation and exact archives preserve lineage rather
+than rewriting old evidence. Authoring 0.3.7 agrees with the matrix/source lock;
+older 0.3.5/0.3.6 checks retain their historical context. The named previous review
+is explicitly superseded and preserved as a complete archived triplet.
 
-## Behobener Befund und Historie / Resolved finding and history
+NIST SSDF/CWE gelten. Security-/Architecture-/Regulatorikbewertungen unterscheiden
+Produkt, Werkzeuge und Organisation; unbekannte Pflichten bleiben Open. Ausbildung
+und AI-SBOM N/A sind keine pauschale Befreiung. C5 Type 1/Type 2/Unknown und
+C3A C/AC gegenüber SI bleiben getrennt. Keine Rechts-, Audit- oder Zertifizierungsfreigabe.
+Dokumentarbeit begründet ASVS-/Produkt-Supply-Chain-N/A; vor Architektur/Release
+neu bewerten. Keine Secrets oder unnötigen personenbezogenen Angaben gefunden.
 
-IR005 (Medium, Release-/Historienkonsistenz) wurde in diesem Review gefunden:
-OD-00-001 verlangte noch Authoring 0.3.5, obwohl IAD011 0.3.6 bindet; der
-Artefakteabschnitt vermischte aktuellen Review-Auftrag und spätere Nachweise.
-Der Autor korrigierte beide Sprachfassungen, kennzeichnete 0.3.5 historisch und
-trennte historische, aktuelle und spätere Artefakte. Das Receipt wurde danach
-neu gebunden. Der Prüfer änderte weder Intake noch Quellen; IR005 ist behoben.
-Die früheren IR001–IR004 wurden in den jeweiligen Dimensionen erneut geprüft.
+NIST SSDF/CWE apply. Security, architecture and regulatory assessment separate
+product, tooling and organisation; unknown duties remain Open. Education and
+AI-SBOM N/A are no blanket exemption. C5 evidence types and C3A control/interpretation
+boundaries remain distinct. No legal, audit or certification approval is asserted.
+Document-scope N/A rationales require reassessment at architecture/release changes.
+No secrets or unnecessary personal data were found.
 
-IR005 (Medium, release/history consistency) was found during this review:
-OD-00-001 still required Authoring 0.3.5 while IAD011 bound 0.3.6, and artefact
-wording mixed current review work with future proof. The author corrected both
-languages, marked 0.3.5 as historical, separated artefact stages and rebound the
-receipt. The reviewer changed no intake or source; IR005 is resolved. Earlier
-IR001–IR004 concerns were independently rechecked in the relevant dimensions.
+Status, Reihenfolge, Entscheidungen und nächste Aktionen sind textuell verständlich;
+Mermaid hat eine gleichwertige DE/EN-Textalternative. Tastatur, Screenreader,
+Braille/Textbrowser und anwendbare WCAG-2.2-AA-Prüfungen bleiben verbindlich.
+Mac A oder B liefert später den benannten Kernprozessnachweis. LH-01, danach LH-02,
+bleiben getrennt beauftragte Einzelpiloten mit eigenen Intakes/Reviews; LH-02 verlangt
+LH-01-Abschluss. Nach LH-02, vor LH-03: volle Abnahme auf vier Umgebungen,
+A11Y, Übersetzungen und angewendete Registerausrichtung. LH-00 bleibt bis dahin offen.
 
-Dieses Ergebnis ersetzt Review `5eaad379-04dc-49e1-8060-86ad662611f0` ausdrücklich.
-Dessen Request, Ergebnis und Bericht bleiben bytegleich unter
-`specs/intake-review-archive/5eaad379-04dc-49e1-8060-86ad662611f0/` erhalten; die neue Quellenbindung
-ersetzt keine historischen Aussagen rückwirkend. Die Hashes dieser Ablösung (Supersession) stehen
-im maschinenlesbaren [Ergebnis](intake-review-result.json).
+Text explains states, order, decisions and next actions; Mermaid has equivalent
+bilingual text. Assistive access and applicable WCAG 2.2 AA checks remain required.
+The named primary Mac proves the core process later. LH-01 then LH-02 remain
+separately commissioned standalone pilots, each with its own intake/review;
+LH-02 requires LH-01 completion. Full acceptance after LH-02 and before LH-03
+requires four environments, accessibility, translations and applied registry
+alignment. LH-00 stays open until then.
 
-This result explicitly supersedes the review ID above. Its three artefacts remain
-unchanged in the named archive. Current bindings do not rewrite historical
-claims; supersession hashes are recorded in the linked machine-readable result.
+## Prüfungen und Grenzen / Validation and boundaries
 
-## Prüfung und Grenzen / Verification and boundaries
+Receipt-Validatoren in Bash und PowerShell auf diesem Mac: PASS, Exitcode 0.
+Review-Validatoren in Bash und PowerShell: PASS, Exitcode 0. Quellenhashes und
+FR-/AC-Parität wurden unabhängig geprüft. Beide Constitutions und fünf gemeinsame
+Guidance-Dateien sind untereinander identisch. Kein Target-/Quellwrite,
+Git-/Remote-/Routingzugriff, Installations-, Implementierungs- oder Feature-Lauf.
+Keine native Windows-/Linux-, assistive Feld- oder volle Prozessabnahme.
 
-Die installierten Receipt- und Review-Ergebnisvalidatoren bestanden jeweils in
-Bash und PowerShell auf diesem Mac: vier PASS, jeweils Exitcode 0. Die exakten
-Befehle und Validator-Hashes stehen in `validationEvidence` des Ergebnisses.
-Zusätzliche lesende Prüfung: 19 Receipt-Bindungen, unveränderte FR-/AC-Zeilen,
-Constitution-Parität und relative Links ohne Fehler. Keine native Windows-/Linux-
-oder praktische Prozessabnahme wird dadurch behauptet.
-
-Both installed receipt and review-result validators passed in Bash and PowerShell
-on this Mac: four PASS results, each exit code zero. Exact commands and validator
-hashes are recorded in result validationEvidence. Additional read-only checks
-found current nineteen receipt bindings, unchanged requirement/acceptance lines,
-aligned constitution copies and valid relative links. These checks prove no
-native Windows/Linux or practical process acceptance.
+Both receipt validators passed on this Mac with exit code 0. Both review validators
+also passed with exit code 0. Source hashes and FR/AC parity were independently checked.
+Constitutions and shared guidance copies agree. The reviewer performed no target
+or source edits, Git/remote/routing access, installation or implementation.
+No native Windows/Linux, assistive field or full process acceptance is claimed.
 
 ## Nächste Aktion / Next action
 
-Den bereits beauftragten Plan-/Tasks-Abgleich, Analyze und lesenden Preflight
-abschließen. Gemeldete Blockaden dort konkret behandeln. Erst ein eigener
-Implementierungsauftrag nach gültigem Startnachweis kann LH-00 umsetzen.
-Kernprozess zuerst auf dem benannten Mac; LH-01 und LH-02 nur als eigens
-freigegebene Einzelpiloten. Volle Abnahme nach LH-02, vor LH-03: vier Umgebungen,
-A11Y, Bestandsübersetzungen und angewendete Registerausrichtung. LH-00 bleibt offen.
+Der Hauptagent vervollständigt die bereits beauftragte Nachweiskorrektur und
+betroffenen Lieferchecks samt Renderer-Statistik. Danach technische CI am aktuellen
+PR-Head prüfen und den ausdrücklich beauftragten Admin-Merge mit main-Sync ausführen.
+Ready und die kopierbaren LocalImplementation-Folgeprompts starten keine Umsetzung.
+Bei Ziel-, Quellen-, Policy-, Profil-, Autoritäts- oder Scopeänderung erneut prüfen.
 
-Complete the already commissioned planning reconciliation, Analyze and read-only
-preflight; handle concrete blockers there. Implementation requires a separate
-request and valid start evidence. Prove the core process on the named Mac,
-then separately authorize LH-01 and LH-02 standalone pilots. Full acceptance
-follows after LH-02 and before LH-03 with all four environments, accessibility,
-translations and applied registry alignment. LH-00 remains open.
+The parent finishes the commissioned evidence correction and affected delivery
+checks with renderer statistics, then verifies technical CI at the current PR head
+before exact-head admin merge and local main sync. Ready and future copied prompts
+start no implementation. Re-review changed target, sources, policy, profile,
+authority or scope.
+
+Dokumentationsauswirkung / Documentation impact: UpdateRequired, sourceOnly,
+Owner Thorsten; DE zuerst/EN danach. Leserpfad / Reader path: LH-00 → Receipt →
+separates Review → technischer Abgleich/Preflight → PR-Lieferung.
+
+Hashnachweis / Hash evidence: 38 aktuelle rekursive Result-Bindungen
+(30 unterschiedliche Pfade), 20 Receipt-Bindungen und eine
+Request-Bindung, insgesamt 59; null Hash-Abweichungen. / Current recursive
+result, receipt and request bindings verified independently with zero mismatch.

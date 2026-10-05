@@ -41,7 +41,7 @@ registry alignment remain conditions of process acceptance.
 | Aspekt / Aspect | Entscheidung / Decision |
 |---|---|
 | Language/Version | Markdown, JSON, Bash 5+ gemäß aktuellem Wartungsvertrag und PowerShell 7, Python 3 für Validatoren. Produktsprache, Framework, MSL und Mindest-PowerShell bleiben außerhalb dieses Plans offen. / Bash 5+ under the current maintenance contract and PowerShell 7, Python 3 for validators; product language, framework, MSL and minimum PowerShell remain undecided outside this plan. |
-| Primary Dependencies | Spec Kit 0.12.8, Authoring 0.3.6, Review 0.2.4, Sequencing 0.2.7; explizite 14-Preset-Matrix / explicit fourteen-preset matrix. |
+| Primary Dependencies | Spec Kit 0.12.8, Authoring 0.3.7, Review 0.2.4, Sequencing 0.2.7; explizite 14-Preset-Matrix / explicit fourteen-preset matrix. |
 | Storage | UTF-8-Dateien, normalisierte SHA-256-Bindungen, Versionsarchive und getrenntes fachliches Archiv; keine Datenbank / UTF-8 files, normalized hashes, version archives and separate domain archive; no database. |
 | Testing | Beide Shell-Validatoren, isolierte positive/negative Prozessfälle, anderes Review, vier Umgebungsprotokolle / Paired validators, isolated positive/negative process cases, another reviewer, four environment reports. |
 | Target Platform | Mac A, Mac B, Windows 11 nativ, Ubuntu 24.04 unter WSL2; jeweils konkrete Versionen erfassen / Capture actual versions per environment. |
@@ -269,7 +269,7 @@ source of information.
 Die [Versionsmatrix](../../scripts/config/spec-kit-project-statistics-governance-presets.json)
 bleibt maßgeblich: security 0.7.0; secure-development-assurance 0.1.3;
 architecture 0.6.1; isaqb-architecture 0.2.2; a11y 0.4.3; cross-platform 0.2.2;
-agent-parity 0.4.2; model-routing 0.1.4; intake-authoring 0.3.6; intake-review 0.2.4;
+agent-parity 0.4.2; model-routing 0.1.4; intake-authoring 0.3.7; intake-review 0.2.4;
 intake-sequencing 0.2.7; autonomous-run 0.4.4; parallel-autonomous-run 0.2.6;
 project-statistics 0.1.0. Alle Kurznamen tragen den Zusatz `-governance`.
 
@@ -394,3 +394,21 @@ selected C/AC IDs and SI interpretation. Claim no audit/testat. N/A decisions ar
 bounded to LH-00. Routing mutation is N/A, but status checks remain mandatory.
 Annual read-only review and separate rollout boundaries remain unchanged.
 Guidance/constitution are unchanged; no regeneration or implementation.
+
+## Quellenabgleich IAD012 nach PR #26 / Source reconciliation IAD012 after PR #26
+
+Der aktuelle technische Kontext bindet Authoring 0.3.7; die übrigen dreizehn
+Pins und alle Prioritäten bleiben unverändert. Der Patch korrigiert Authoring-
+Dokumentation und historische Receipt-Kompatibilität, ohne die LH-00-Anforderungen,
+Verträge oder Abnahme zu ändern. Das neue [LH-00-Update](../../docs/planning/lh00-v037-refresh-decisions.md)
+erhält Identität, archiviert Vorgänger und verlangt ein anderes vollständiges
+Review. [Aktuelle Startchecks](checklists/preflight-20261005-v037.md) stehen
+getrennt von der historischen IAD011-Prüfung. Aktuelle Lieferung gilt nur für
+dieses Vorbereitungspaket; kein Implementierungs- oder Serienauftrag.
+
+The current context pins Authoring 0.3.7, preserving the other thirteen pins
+and priorities. The patch changes authoring documentation and historical receipt
+compatibility, without new LH-00 requirements, contracts or acceptance rules.
+The linked governed update preserves identity, exact archives and a complete
+independent review. Fresh start checks are separate from IAD011 history. Current
+delivery covers this preparation package only, without implementation or series authority.

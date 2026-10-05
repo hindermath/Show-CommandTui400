@@ -341,3 +341,23 @@ PR #23 adds preflight documentation. Releases, central pins and targeted install
 are no longer pending external prerequisites. The linked mapping distinguishes
 reused tool delivery from remaining lifecycle, reviewer, owner and practical
 acceptance evidence. No real series is activated.
+
+### Authoring-Patch und Quellenfrische IAD012 / Authoring patch and source freshness IAD012
+
+Der bisherige Lieferabgleich vom 2026-10-05 dokumentiert IAD011. Danach lieferte
+[PR #26](https://github.com/hindermath/Show-CommandTui400/pull/26) Authoring 0.3.7.
+[Patchnachweis](../../docs/maintenance/intake-authoring-v037.md) und aktueller
+Quellen-Lock halten Tag/Commit/ZIP und zentrale Lieferung fest. Der Patch
+korrigiert den einzeiligen README-Befehl und bewahrt 0.3.6-Receipt-Kompatibilität.
+Das legitimiert keine veralteten Quellenbindungen; IAD012 beauftragt dafür ein
+gesondertes Update und anderes Review. B-01-Regeln und Schutzprüfungen ändern
+sich nicht. Historische 0.3.6-CI bleibt historische Evidence, keine neue 0.3.7-
+Prozessprüfung. Keine neue Rechercheentscheidung oder Produktarchitektur nötig.
+
+The earlier 2026-10-05 reconciliation records IAD011. Subsequent PR #26 adopted
+Authoring 0.3.7, with tag/commit/archive and central delivery in patch evidence
+and the current lock. The patch fixes a one-line README command and preserves
+historical receipt compatibility without restoring stale source bindings.
+IAD012 therefore commissions a separate update and independent review. B-01
+rules and safety checks are unchanged; retain old CI as historical proof,
+not a new process test. No new design decision or product architecture is needed.

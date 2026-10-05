@@ -46,6 +46,10 @@ heuristic would otherwise count spec.md as a test.*
 
 | 2026-10-05 | Authoring v0.3.7: begrenzter Pilot / Bounded pilot | UpdateRequired: unveraenderliches Tag-ZIP, fuenf zentrale Matrizen/Vorlagen, installierte 14er-Matrix und aktuelle Quellen-/Guidance-Bindung; andere Presets und historische Receipts erhalten. Kein Produktlauf oder neue fachliche Abnahme. Geaenderte LH-00-Quellen erfordern gesondertes Update/Review vor dem Implementierungsstart; keine stille Hash-Promotion. Bestehende Statistikmethodik unveraendert. / Stable patch adoption and bounded technical validation, historical evidence preserved, fresh intake gates required before implementation. [Nachweis / Evidence](maintenance/intake-authoring-v037.md). |
 
+| 2026-10-05 | LH-00: Quellenfrische nach Authoring v0.3.7 / Source freshness after Authoring v0.3.7 | Gesondertes Intake-Update mit erhaltener Identität und bytegleichen Archiven; vollständiges anderes Review, gezielter Spec-/Plan-/Tasks-Abgleich und Startchecks. Unveränderte Anforderungen und gestufte Abnahme, keine Implementierung oder Pilotfreigabe. Statistikmethodik 80/100 unverändert; vorhandener Renderer beim Lieferpaket. / Governed source refresh, exact lineage, independent review, targeted reconciliation and preflight; no implementation or acceptance, unchanged statistics method. [Nachweis / Evidence](../specs/001-lh00-intake-process/checklists/preflight-20261005-v037.md). |
+
+| 2026-10-05 | PR #27: Nachweise nach Sprachreview / Evidence after language review | Zwei rein sprachlich geänderte gebundene Quellen mit neuem Update, bytegleichen Archiven und anderem vollständigem Review nachgeführt; Intake und Anforderungen unverändert. Statistik durch vorhandenen Renderer aktualisiert. / Governed provenance correction after two grammar-only source changes, exact archives and fresh separate review; unchanged intake and requirements, existing renderer. [Nachweis / Evidence](../specs/001-lh00-intake-process/checklists/preflight-20261005-v037.md#lieferkorrektur-nach-sprachreview--delivery-correction-after-language-review). |
+
 ## Gesamtstatistik / Overall Statistics
 
 <!-- project-statistics-v2:begin -->
@@ -56,27 +60,27 @@ Profil 2 verwendet Git-getrackte Textdateien und sichtbare Git-Aktivitaet. Die W
 
 | Kennzahl / Metric | Wert / Value |
 |---|---:|
-| Textbasis / Text base | 116489 lines |
-| Textdateien / Text files | 900 |
+| Textbasis / Text base | 120851 lines |
+| Textdateien / Text files | 917 |
 | Beobachtbarer Zeitraum / Observable period | 2025-10-12..2026-10-05 |
 | Aktivtage / Active days | 8 |
-| Relevante Commits / Relevant commits | 28 |
-| Zeilen je Aktivtag / Lines per active day | 14561.1 |
+| Relevante Commits / Relevant commits | 32 |
+| Zeilen je Aktivtag / Lines per active day | 15106.4 |
 | Peak-Tag im Fenster / Peak day in window | 2026-09-27 / 97728 |
 | Peak-Woche im Fenster / Peak week in window | 2026-09-27 / 120977 |
 | Laengste Serie / Longest streak | 5 days |
-| Speedup vs. 80 lines/day | 182.0x |
-| Speedup vs. 100 lines/day | 145.6x |
-| Methodik / Methodology | v2; source `4d4984688d1d` |
+| Speedup vs. 80 lines/day | 188.8x |
+| Speedup vs. 100 lines/day | 151.1x |
+| Methodik / Methodology | v2; source `cb0167ea3286` |
 
 ### Artefaktmix / Artifact Mix
 
 ```text
 Produktiv / Production          [....................]   0.0% | 0
-Tests                           [#...................]   3.7% | 4362
-Dokumentation / Documentation   [##############......]  69.9% | 81461
-Skripte / Scripts               [#####...............]  23.3% | 27101
-Konfiguration / Configuration   [#...................]   2.9% | 3417
+Tests                           [#...................]   3.6% | 4362
+Dokumentation / Documentation   [##############......]  69.3% | 83804
+Skripte / Scripts               [####................]  22.4% | 27101
+Konfiguration / Configuration   [#...................]   4.5% | 5436
 Daten und Medien / Data and media [....................]   0.0% | 0
 Sonstiger Text / Other text     [#...................]   0.1% | 148
 ```
@@ -178,8 +182,8 @@ Es liegen keine belastbaren Phasendaten vor. Deshalb zeigt dieses Diagramm Monat
 
 ```text
 Scale: 0..200x
-80 lines/day       [##################..] 182.0x
-100 lines/day      [###############.....] 145.6x
+80 lines/day       [###################.] 188.8x
+100 lines/day      [###############.....] 151.1x
 ```
 
 Die Faktoren vergleichen sichtbare Lieferdichte mit den dokumentierten manuellen Referenzen. Sie messen keine Arbeitszeit.
@@ -192,7 +196,7 @@ Die Faktoren vergleichen sichtbare Lieferdichte mit den dokumentierten manuellen
 Scale: 0..20000 lines/day
 Experienced manual [#...................] 80
 Thorsten solo      [#...................] 100
-Visible repository [###############.....] 14561.1
+Visible repository [###############.....] 15106.4
 ```
 
 Die gemeinsame Skala vergleicht Referenzen und sichtbare Lieferdichte. Sie schreibt die Git-Aktivitaet keiner Person oder KI pauschal zu.
@@ -218,6 +222,6 @@ DE: Das Fenster beginnt am 2025-10-12 und endet am 2026-10-05. Es enthaelt 8 akt
 | 2026-07 | 0 |
 | 2026-08 | 0 |
 | 2026-09 | 109576 |
-| 2026-10 | 15467 |
+| 2026-10 | 20837 |
 
 <!-- project-statistics-v2:end -->

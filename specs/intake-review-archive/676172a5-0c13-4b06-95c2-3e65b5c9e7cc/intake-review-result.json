@@ -1,18 +1,18 @@
 {
   "schemaVersion": "1.1",
-  "reviewId": "45881080-479a-47f9-9a62-e728b3d70244",
+  "reviewId": "676172a5-0c13-4b06-95c2-3e65b5c9e7cc",
   "mode": "Single",
   "status": "Ready",
   "policy": "generic-markdown",
-  "reviewedAt": "2026-10-05T20:16:56Z",
+  "reviewedAt": "2026-10-05T19:21:09Z",
   "repository": {
     "root": ".",
-    "head": "15011a816d4ae46eb21d72402b2780fd5c8adbc6",
-    "boundary": "Parent-verified owner-approved PR head; isolated candidate has no Git metadata. Fresh review binds delivered evidence correction, not implementation authority."
+    "head": "e5a3b4c335394bda036abd3186aa5070da2b0257",
+    "boundary": "Parent-verified base; isolated candidate has no Git metadata and target gitBlob is N/A."
   },
   "requestEvidence": {
     "path": "specs/intake-review-request.json",
-    "normalizedSha256": "24fbe7a09afdfdcc7a264904a85f92e518ecedb3970069b3ac757530c558bc57"
+    "normalizedSha256": "215ebaada6067b1e6efc2df7ed493fa75f63db1ac2324c4be596b0aa547f27be"
   },
   "targets": [
     {
@@ -39,16 +39,16 @@
     "medium": 0,
     "low": 0
   },
-  "supersedes": "676172a5-0c13-4b06-95c2-3e65b5c9e7cc",
+  "supersedes": "482709fb-f89a-4f48-b925-3e16b1dd3daa",
   "reviewer": {
     "type": "Automated",
-    "identity": "Codex independent agent /root/pr27_evidence_independent_review",
-    "role": "Separate complete semantic reviewer for IAD012 PR-review delivery correction under IAD009",
+    "identity": "Codex independent agent /root/lh00_v037_independent_review",
+    "role": "Separate complete semantic reviewer under IAD012/IAD009",
     "distinctFromRepairAuthor": true,
     "independentHumanReview": false,
     "delegationEvidence": {
       "path": "docs/planning/lh00-v037-refresh-decisions.md",
-      "normalizedSha256": "e8d5fd7307bf5510be3433b48cff43fa9c3c48a52a4c6459e16b465f387bc671"
+      "normalizedSha256": "beede865eca256995db8e4420b236e001df1e58bc9e800d110663ed490817309"
     },
     "boundary": "Reviewer wrote only result/report in isolated candidate; immutable request authored by parent. No target/source writes, Git, remote, routing or implementation."
   },
@@ -71,7 +71,7 @@
     },
     {
       "path": ".specify/memory/intake-authoring-profile.md",
-      "normalizedSha256": "a1c5b76292d51888e1f0e6613bff0c8e508bf8ddb8dbacfa0cf44bfe70d1310f"
+      "normalizedSha256": "81f3d5e7118150caaa0fc3d86254d8dc1c7e682f56593c372663b061ec509370"
     },
     {
       "path": "constitution.md",
@@ -95,7 +95,7 @@
     },
     {
       "path": "specs/intake-authoring-receipts/lh-00.json",
-      "normalizedSha256": "7e98c4b99958759f58003b9294fd509fa79f79562309373cedd1722a6c81d23e"
+      "normalizedSha256": "d9b9fbd2297f4744f352b93d3f003a1311712d230c560b454a615b026570b6c5"
     },
     {
       "path": "docs/planning/lh00-repair-decisions.md",
@@ -108,13 +108,13 @@
   ],
   "sourceEvidence": [
     {
-      "path": "specs/intake-authoring-archive/lh-00/236e06ed-88b7-4dec-a91c-22dd2ac46b30/intakes/LH-00.md",
-      "normalizedSha256": "10f705885557b01201f6a8c1771d65cbe28056219d591e28f6082a33200858d7",
+      "path": "specs/intake-authoring-archive/lh-00/98203fd2-0684-4fd6-ab69-a1353e250a12/intakes/LH-00.md",
+      "normalizedSha256": "7bf415b47b81b0c13a165107b7c2021712a314bd7cf4533e6cc58950147e681a",
       "sourceId": "SRC001"
     },
     {
       "path": "docs/planning/lh00-v037-refresh-decisions.md",
-      "normalizedSha256": "e8d5fd7307bf5510be3433b48cff43fa9c3c48a52a4c6459e16b465f387bc671",
+      "normalizedSha256": "beede865eca256995db8e4420b236e001df1e58bc9e800d110663ed490817309",
       "sourceId": "SRC002"
     },
     {
@@ -129,7 +129,7 @@
     },
     {
       "path": ".specify/memory/intake-authoring-profile.md",
-      "normalizedSha256": "a1c5b76292d51888e1f0e6613bff0c8e508bf8ddb8dbacfa0cf44bfe70d1310f",
+      "normalizedSha256": "81f3d5e7118150caaa0fc3d86254d8dc1c7e682f56593c372663b061ec509370",
       "sourceId": "SRC005"
     },
     {
@@ -185,37 +185,33 @@
   ],
   "supersessionEvidence": [
     {
-      "path": "specs/intake-review-archive/676172a5-0c13-4b06-95c2-3e65b5c9e7cc/intake-review-request.json",
-      "normalizedSha256": "215ebaada6067b1e6efc2df7ed493fa75f63db1ac2324c4be596b0aa547f27be"
+      "path": "specs/intake-review-archive/482709fb-f89a-4f48-b925-3e16b1dd3daa/intake-review-request.json",
+      "normalizedSha256": "a525547ef2cb8bc717fb953c7c06cd7d5108036fd92ce1e6a2a8c4d22481c416"
     },
     {
-      "path": "specs/intake-review-archive/676172a5-0c13-4b06-95c2-3e65b5c9e7cc/intake-review-result.json",
-      "normalizedSha256": "557e0cee095be0aab1c34967e66520b0c775ba7fc8bc8ac57629089c0589c852"
+      "path": "specs/intake-review-archive/482709fb-f89a-4f48-b925-3e16b1dd3daa/intake-review-result.json",
+      "normalizedSha256": "894ff72cc20b3d070afe9870d0beaaca5ae7a6b114b0537469d698e049df1ac3"
     },
     {
-      "path": "specs/intake-review-archive/676172a5-0c13-4b06-95c2-3e65b5c9e7cc/intake-review-report.md",
-      "normalizedSha256": "1e1ca2e7a4b800a8460cb6c93296f0ab5fe653c1ad86304b18e7d1832a0725d2"
+      "path": "specs/intake-review-archive/482709fb-f89a-4f48-b925-3e16b1dd3daa/intake-review-report.md",
+      "normalizedSha256": "6e36a7018fc2ee19a037318f371b29e188afe2dcfd4bf1990cc7978cfb365815"
     },
     {
-      "path": "specs/intake-authoring-archive/lh-00/236e06ed-88b7-4dec-a91c-22dd2ac46b30/intakes/LH-00.md",
-      "normalizedSha256": "10f705885557b01201f6a8c1771d65cbe28056219d591e28f6082a33200858d7"
+      "path": "specs/intake-authoring-archive/lh-00/98203fd2-0684-4fd6-ab69-a1353e250a12/intakes/LH-00.md",
+      "normalizedSha256": "7bf415b47b81b0c13a165107b7c2021712a314bd7cf4533e6cc58950147e681a"
     },
     {
-      "path": "specs/intake-authoring-archive/lh-00/236e06ed-88b7-4dec-a91c-22dd2ac46b30/specs/intake-authoring-receipts/lh-00.json",
-      "normalizedSha256": "d9b9fbd2297f4744f352b93d3f003a1311712d230c560b454a615b026570b6c5"
-    },
-    {
-      "path": "specs/intake-authoring-archive/lh-00/236e06ed-88b7-4dec-a91c-22dd2ac46b30/.specify/memory/intake-authoring-profile.md",
-      "normalizedSha256": "81f3d5e7118150caaa0fc3d86254d8dc1c7e682f56593c372663b061ec509370"
+      "path": "specs/intake-authoring-archive/lh-00/98203fd2-0684-4fd6-ab69-a1353e250a12/specs/intake-authoring-receipts/lh-00.json",
+      "normalizedSha256": "22a0de3ccd970e2a41116eddfa4938e5feeaba8be1c1aec579af25fa4e041415"
     }
   ],
   "authoringEvidence": {
-    "receiptId": "c515439e-cd09-4e44-8fe2-ac6135e21e3f",
+    "receiptId": "236e06ed-88b7-4dec-a91c-22dd2ac46b30",
     "intakeId": "2296d99d-f099-4c4d-88f7-789581693eb0",
-    "operationId": "83bb5e0e-457b-4919-b7a8-ecead0758bed",
+    "operationId": "f514b645-fabe-414e-aae6-d582ff45e4b7",
     "receipt": {
       "path": "specs/intake-authoring-receipts/lh-00.json",
-      "normalizedSha256": "7e98c4b99958759f58003b9294fd509fa79f79562309373cedd1722a6c81d23e"
+      "normalizedSha256": "d9b9fbd2297f4744f352b93d3f003a1311712d230c560b454a615b026570b6c5"
     },
     "operationBoundary": "Parent finalizes publication operation state; mutable operation journal is not bound by semantic review."
   },
@@ -233,7 +229,7 @@
     {
       "dimension": "RequirementsAcceptance",
       "status": "Pass",
-      "evidence": "All twenty-four FR lines and eighteen AC lines independently compared byte-for-byte with the immediate archived predecessor; complete target also byte-identical. Twelve unique FR and nine AC map to future E01-E07 evidence."
+      "evidence": "Independently compared all twenty-four FR lines and eighteen AC lines with the archived immediate predecessor: byte-identical. Twelve unique FR and nine AC map to future E01–E07 process evidence."
     },
     {
       "dimension": "DependenciesOrder",
@@ -243,7 +239,7 @@
     {
       "dimension": "StatusAndAuthority",
       "status": "Pass",
-      "evidence": "IAD012 and current owner-reviewed PR authority permit this preparation/evidence correction and parent MergeAndSync only. Repeated German negations clarify unchanged scope. Independent reviewer has no target/source/Git/remote/routing write authority. Future LocalImplementation prompts grant no current implementation authority."
+      "evidence": "All five review outcomes and human-only risk acceptance explained. IAD012 grants this preparation and parent MergeAndSync delivery only; no implementation, series activation, pilot, release, central changes, install or routing writes. LocalImplementation template remains separately authorized future scope."
     },
     {
       "dimension": "SecurityPrivacyRegulatory",
@@ -268,7 +264,7 @@
     {
       "dimension": "SourcesProvenance",
       "status": "Pass",
-      "evidence": "Twenty current receipt bindings independently verified; fifteen ordered UTF-8 sources, stable intake identity, fresh receipt/operation, exact archived predecessor intake/receipt/profile and review triplet. Owner-approved grammar changes to two bound sources are explained in IAD012, preserved historically, and bound afresh rather than silently rehashed."
+      "evidence": "Twenty receipt target/source/governance bindings independently current; fifteen ordered UTF-8 sources, preserved intake identity, new receipt/operation, immutable predecessor archives, separately bound request and explicit supersession."
     },
     {
       "dimension": "ReleaseAndHistoricalTruth",
@@ -282,7 +278,7 @@
     }
   ],
   "historicalFindings": {
-    "previousReviewId": "676172a5-0c13-4b06-95c2-3e65b5c9e7cc",
+    "previousReviewId": "482709fb-f89a-4f48-b925-3e16b1dd3daa",
     "resolvedIdsRechecked": [
       "IR001",
       "IR002",
@@ -290,7 +286,7 @@
       "IR004",
       "IR005"
     ],
-    "boundary": "Archived prior Ready is preserved as historical evidence. Current readiness follows an independent complete review, not inherited status; historical IR001-IR005 resolutions rechecked."
+    "boundary": "Historical findings retained in archived results; current reviewer independently assessed terminology, normative parity, status truth, outcomes and release/history separation without inheriting readiness."
   },
   "proofBoundaries": [
     "Ready proves current semantic intake readiness only, not Preflight-Ready or implementation/pilot/full process acceptance.",
@@ -300,7 +296,7 @@
   ],
   "reevaluationTrigger": "Re-review after target, bound source/governance, request, profile/policy, authority, language, platform or scope changes.",
   "reportPath": "specs/intake-review-report.md",
-  "nextAction": "Parent finishes already commissioned evidence correction, affected read-only delivery checks and renderer statistics, then verifies current technical PR-head CI before exact-head admin merge and local main sync. No implementation is authorized.",
+  "nextAction": "Finish the already commissioned targeted spec/plan/task reconciliation, Analyze, affected read-only preflight and evidence-package MergeAndSync delivery under IAD012; no implementation is authorized.",
   "executionGate": "Ready starts no Specify, Autonomous, implementation, pilot, series activation, release, central rollout, installation or routing write.",
   "validationEvidence": [
     {
@@ -343,14 +339,5 @@
       "validatorNormalizedSha256": "c94f3db6f5c8fe2f2237abafe6411484881bd404ee99311404c5558d17fff22e",
       "boundary": "Observed installed read-only validation on this Mac; no native Windows/Linux, semantic certification or complete process acceptance."
     }
-  ],
-  "bindingVerification": {
-    "reviewBindings": 38,
-    "reviewUniquePaths": 30,
-    "receiptBindings": 20,
-    "requestBindings": 1,
-    "combinedRecursiveBindings": 59,
-    "mismatches": 0,
-    "normalization": "Strict UTF-8, remove one BOM, CRLF/CR to LF; preserve all other content."
-  }
+  ]
 }

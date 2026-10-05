@@ -58,3 +58,20 @@ pre-releases. Central PR #318 and project PR #21/#22 are merged at the recorded
 commits. The five coordinated packages match the source lock; current fourteen-preset
 check-only exits zero. Reuse the nine historical native source jobs from D-09,
 without calling them a current process acceptance. Remaining T036 scope is unchanged.
+
+## Aktuelle Authoring-Bindung nach PR #26 / Current Authoring binding after PR #26
+
+Die vorstehenden Abschnitte dokumentieren den B-01-Stand unter IAD011 mit
+Authoring 0.3.6. PR #26 hat danach 0.3.7 übernommen; aktueller Lock und Matrix
+binden dessen Commit/ZIP. [Patchnachweis](intake-authoring-v037.md) hält die
+begrenzte Korrektur und Quellenänderung fest. T034–T036 verwenden die aktuelle
+Bindung und bewahren historische B-01-Releases/CI. IAD012 aktualisiert dafür
+LH-00/Receipt und unabhängiges Review. Die offenen Lifecycle-, Reviewer-, Owner-
+und Prozessnachweise bleiben unverändert; keine Neuinstallation erforderlich.
+
+The sections above record historical IAD011/B-01 adoption at Authoring 0.3.6.
+PR #26 subsequently adopted 0.3.7; the current lock/matrix bind its commit/archive.
+The patch record explains the bounded fix and changed sources. T034–T036 use
+current bindings while preserving historical release/CI evidence. IAD012 refreshes
+LH-00, receipt and independent review. Remaining lifecycle, reviewer, owner and
+process proof is unchanged; no reinstallation is needed.

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "reviewId": "45881080-479a-47f9-9a62-e728b3d70244",
+  "reviewId": "676172a5-0c13-4b06-95c2-3e65b5c9e7cc",
   "mode": "Single",
   "policy": "generic-markdown",
   "targets": [
@@ -20,10 +20,10 @@
     "operatorExceptions": []
   },
   "authority": {
-    "request": "Complete independent Single review of the IAD012 delivery correction under the existing explicit update/review authority and current owner-approved PR #27 merge/sync request; IAD009 requires a different reviewer.",
+    "request": "IAD012 owner-authorized complete Single review; IAD009 requires a different reviewer",
     "evidence": {
       "path": "docs/planning/lh00-v037-refresh-decisions.md",
-      "normalizedSha256": "e8d5fd7307bf5510be3433b48cff43fa9c3c48a52a4c6459e16b465f387bc671"
+      "normalizedSha256": "beede865eca256995db8e4420b236e001df1e58bc9e800d110663ed490817309"
     },
     "targetMutationAllowed": false,
     "implementationAllowed": false,
@@ -32,7 +32,7 @@
   },
   "projectProfile": "show-commandtui400-de-en",
   "evidenceDelivery": "Isolated local review writes only; parent separately commissioned for evidence-package MergeAndSync/admin delivery",
-  "priorReviewId": "676172a5-0c13-4b06-95c2-3e65b5c9e7cc",
-  "priorReviewArchive": "specs/intake-review-archive/676172a5-0c13-4b06-95c2-3e65b5c9e7cc",
+  "priorReviewId": "482709fb-f89a-4f48-b925-3e16b1dd3daa",
+  "priorReviewArchive": "specs/intake-review-archive/482709fb-f89a-4f48-b925-3e16b1dd3daa",
   "targetHash": "10f705885557b01201f6a8c1771d65cbe28056219d591e28f6082a33200858d7"
 }

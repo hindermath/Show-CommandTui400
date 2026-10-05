@@ -1,0 +1,130 @@
+{
+  "schemaVersion": "1.0",
+  "documentType": "IntakeOperation",
+  "operationId": "83bb5e0e-457b-4919-b7a8-ecead0758bed",
+  "type": "Update",
+  "status": "Completed",
+  "createdAt": "2026-10-05T20:13:41Z",
+  "authorityEvidence": "docs/planning/lh00-v037-refresh-decisions.md",
+  "proposalPath": "docs/planning/lh00-v037-refresh-decisions.md",
+  "proposalNormalizedSha256": "e8d5fd7307bf5510be3433b48cff43fa9c3c48a52a4c6459e16b465f387bc671",
+  "approval": {
+    "approved": true,
+    "approvedBy": "Thorsten Hindermann",
+    "approvedAt": "2026-10-05T20:13:41Z",
+    "evidence": "Existing IAD012 update/review/delivery commission continued by the explicit merge/sync request after review 5419913173 at head 15011a8; no scope or implementation authority change."
+  },
+  "stagingDirectory": "N/A",
+  "intakeId": "2296d99d-f099-4c4d-88f7-789581693eb0",
+  "receiptId": "c515439e-cd09-4e44-8fe2-ac6135e21e3f",
+  "priorReceiptId": "236e06ed-88b7-4dec-a91c-22dd2ac46b30",
+  "priorReviewId": "676172a5-0c13-4b06-95c2-3e65b5c9e7cc",
+  "beforeTargetNormalizedSha256": "10f705885557b01201f6a8c1771d65cbe28056219d591e28f6082a33200858d7",
+  "afterTargetNormalizedSha256": "10f705885557b01201f6a8c1771d65cbe28056219d591e28f6082a33200858d7",
+  "archiveEvidence": [
+    {
+      "originalPath": "intakes/LH-00.md",
+      "archivePath": "specs/intake-authoring-archive/lh-00/236e06ed-88b7-4dec-a91c-22dd2ac46b30/intakes/LH-00.md",
+      "rawSha256": "10f705885557b01201f6a8c1771d65cbe28056219d591e28f6082a33200858d7",
+      "normalizedSha256": "10f705885557b01201f6a8c1771d65cbe28056219d591e28f6082a33200858d7"
+    },
+    {
+      "originalPath": "specs/intake-authoring-receipts/lh-00.json",
+      "archivePath": "specs/intake-authoring-archive/lh-00/236e06ed-88b7-4dec-a91c-22dd2ac46b30/specs/intake-authoring-receipts/lh-00.json",
+      "rawSha256": "d9b9fbd2297f4744f352b93d3f003a1311712d230c560b454a615b026570b6c5",
+      "normalizedSha256": "d9b9fbd2297f4744f352b93d3f003a1311712d230c560b454a615b026570b6c5"
+    },
+    {
+      "originalPath": ".specify/memory/intake-authoring-profile.md",
+      "archivePath": "specs/intake-authoring-archive/lh-00/236e06ed-88b7-4dec-a91c-22dd2ac46b30/.specify/memory/intake-authoring-profile.md",
+      "rawSha256": "81f3d5e7118150caaa0fc3d86254d8dc1c7e682f56593c372663b061ec509370",
+      "normalizedSha256": "81f3d5e7118150caaa0fc3d86254d8dc1c7e682f56593c372663b061ec509370",
+      "boundary": "Exact source bytes bound by predecessor receipt before Copilot grammar corrections."
+    },
+    {
+      "originalPath": "docs/planning/lh00-v037-refresh-decisions.md",
+      "archivePath": "specs/intake-authoring-archive/lh-00/236e06ed-88b7-4dec-a91c-22dd2ac46b30/docs/planning/lh00-v037-refresh-decisions.md",
+      "rawSha256": "beede865eca256995db8e4420b236e001df1e58bc9e800d110663ed490817309",
+      "normalizedSha256": "beede865eca256995db8e4420b236e001df1e58bc9e800d110663ed490817309",
+      "boundary": "Exact source bytes bound by predecessor receipt before Copilot grammar corrections."
+    },
+    {
+      "originalPath": "specs/intake-review-request.json",
+      "archivePath": "specs/intake-review-archive/676172a5-0c13-4b06-95c2-3e65b5c9e7cc/intake-review-request.json",
+      "rawSha256": "215ebaada6067b1e6efc2df7ed493fa75f63db1ac2324c4be596b0aa547f27be",
+      "normalizedSha256": "215ebaada6067b1e6efc2df7ed493fa75f63db1ac2324c4be596b0aa547f27be"
+    },
+    {
+      "originalPath": "specs/intake-review-result.json",
+      "archivePath": "specs/intake-review-archive/676172a5-0c13-4b06-95c2-3e65b5c9e7cc/intake-review-result.json",
+      "rawSha256": "557e0cee095be0aab1c34967e66520b0c775ba7fc8bc8ac57629089c0589c852",
+      "normalizedSha256": "557e0cee095be0aab1c34967e66520b0c775ba7fc8bc8ac57629089c0589c852"
+    },
+    {
+      "originalPath": "specs/intake-review-report.md",
+      "archivePath": "specs/intake-review-archive/676172a5-0c13-4b06-95c2-3e65b5c9e7cc/intake-review-report.md",
+      "rawSha256": "1e1ca2e7a4b800a8460cb6c93296f0ab5fe653c1ad86304b18e7d1832a0725d2",
+      "normalizedSha256": "1e1ca2e7a4b800a8460cb6c93296f0ab5fe653c1ad86304b18e7d1832a0725d2"
+    }
+  ],
+  "reviewSupersession": "Previous review archived byte-for-byte; two source hashes changed after grammar fixes. Fresh complete independent review required.",
+  "intendedTargets": [
+    "docs/planning/lh00-v037-refresh-decisions.md",
+    "docs/project-statistics.md",
+    "specs/001-lh00-intake-process/checklists/preflight-20261005-v037.md",
+    "specs/intake-authoring-archive/lh-00/236e06ed-88b7-4dec-a91c-22dd2ac46b30/.specify/memory/intake-authoring-profile.md",
+    "specs/intake-authoring-archive/lh-00/236e06ed-88b7-4dec-a91c-22dd2ac46b30/docs/planning/lh00-v037-refresh-decisions.md",
+    "specs/intake-authoring-archive/lh-00/236e06ed-88b7-4dec-a91c-22dd2ac46b30/intakes/LH-00.md",
+    "specs/intake-authoring-archive/lh-00/236e06ed-88b7-4dec-a91c-22dd2ac46b30/specs/intake-authoring-receipts/lh-00.json",
+    "specs/intake-authoring-operations/83bb5e0e-457b-4919-b7a8-ecead0758bed/operation.json",
+    "specs/intake-authoring-receipts/lh-00.json",
+    "specs/intake-review-archive/676172a5-0c13-4b06-95c2-3e65b5c9e7cc/intake-review-report.md",
+    "specs/intake-review-archive/676172a5-0c13-4b06-95c2-3e65b5c9e7cc/intake-review-request.json",
+    "specs/intake-review-archive/676172a5-0c13-4b06-95c2-3e65b5c9e7cc/intake-review-result.json",
+    "specs/intake-review-report.md",
+    "specs/intake-review-request.json",
+    "specs/intake-review-result.json"
+  ],
+  "validatedTargets": [
+    "docs/planning/lh00-v037-refresh-decisions.md",
+    "docs/project-statistics.md",
+    "specs/001-lh00-intake-process/checklists/preflight-20261005-v037.md",
+    "specs/intake-authoring-archive/lh-00/236e06ed-88b7-4dec-a91c-22dd2ac46b30/.specify/memory/intake-authoring-profile.md",
+    "specs/intake-authoring-archive/lh-00/236e06ed-88b7-4dec-a91c-22dd2ac46b30/docs/planning/lh00-v037-refresh-decisions.md",
+    "specs/intake-authoring-archive/lh-00/236e06ed-88b7-4dec-a91c-22dd2ac46b30/intakes/LH-00.md",
+    "specs/intake-authoring-archive/lh-00/236e06ed-88b7-4dec-a91c-22dd2ac46b30/specs/intake-authoring-receipts/lh-00.json",
+    "specs/intake-authoring-operations/83bb5e0e-457b-4919-b7a8-ecead0758bed/operation.json",
+    "specs/intake-authoring-receipts/lh-00.json",
+    "specs/intake-review-archive/676172a5-0c13-4b06-95c2-3e65b5c9e7cc/intake-review-report.md",
+    "specs/intake-review-archive/676172a5-0c13-4b06-95c2-3e65b5c9e7cc/intake-review-request.json",
+    "specs/intake-review-archive/676172a5-0c13-4b06-95c2-3e65b5c9e7cc/intake-review-result.json",
+    "specs/intake-review-report.md",
+    "specs/intake-review-request.json",
+    "specs/intake-review-result.json"
+  ],
+  "publishedTargets": [
+    "docs/planning/lh00-v037-refresh-decisions.md",
+    "docs/project-statistics.md",
+    "specs/001-lh00-intake-process/checklists/preflight-20261005-v037.md",
+    "specs/intake-authoring-archive/lh-00/236e06ed-88b7-4dec-a91c-22dd2ac46b30/.specify/memory/intake-authoring-profile.md",
+    "specs/intake-authoring-archive/lh-00/236e06ed-88b7-4dec-a91c-22dd2ac46b30/docs/planning/lh00-v037-refresh-decisions.md",
+    "specs/intake-authoring-archive/lh-00/236e06ed-88b7-4dec-a91c-22dd2ac46b30/intakes/LH-00.md",
+    "specs/intake-authoring-archive/lh-00/236e06ed-88b7-4dec-a91c-22dd2ac46b30/specs/intake-authoring-receipts/lh-00.json",
+    "specs/intake-authoring-operations/83bb5e0e-457b-4919-b7a8-ecead0758bed/operation.json",
+    "specs/intake-authoring-receipts/lh-00.json",
+    "specs/intake-review-archive/676172a5-0c13-4b06-95c2-3e65b5c9e7cc/intake-review-report.md",
+    "specs/intake-review-archive/676172a5-0c13-4b06-95c2-3e65b5c9e7cc/intake-review-request.json",
+    "specs/intake-review-archive/676172a5-0c13-4b06-95c2-3e65b5c9e7cc/intake-review-result.json",
+    "specs/intake-review-report.md",
+    "specs/intake-review-request.json",
+    "specs/intake-review-result.json"
+  ],
+  "rollbackBoundary": "Validate the isolated candidate before publishing; restore original bytes on publication failure.",
+  "failure": {
+    "class": "N/A",
+    "message": "N/A"
+  },
+  "nextAction": "Complete independent review and current checks before exact-head evidence-only PR #27 merge/sync.",
+  "completedAt": "2026-10-05T20:17:53Z",
+  "reviewId": "45881080-479a-47f9-9a62-e728b3d70244"
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.1",
+  "reviewId": "482709fb-f89a-4f48-b925-3e16b1dd3daa",
+  "mode": "Single",
+  "policy": "generic-markdown",
+  "targets": [
+    {
+      "path": "intakes/LH-00.md",
+      "role": "Primary"
+    }
+  ],
+  "series": {
+    "orderedTargetPaths": [],
+    "roots": [],
+    "dependencies": []
+  },
+  "campaign": {
+    "manifestPath": "N/A",
+    "workers": [],
+    "operatorExceptions": []
+  },
+  "authority": {
+    "request": "IAD011 owner-authorized evidence refresh and independent review; IAD009 requires a reviewer other than the author",
+    "evidence": {
+      "path": "docs/planning/lh00-preflight-refresh-decisions.md",
+      "normalizedSha256": "a12473b865f7283f2f5c699d6f528e9ba24136c7deb7d3c734324e13c274fa31"
+    },
+    "targetMutationAllowed": false,
+    "implementationAllowed": false,
+    "remoteAccessAllowed": false,
+    "routingAccessAllowed": false
+  },
+  "projectProfile": "show-commandtui400-de-en",
+  "evidenceDelivery": "Isolated local candidate; no commits, remote access, installation or execution authority",
+  "priorReviewId": "5eaad379-04dc-49e1-8060-86ad662611f0",
+  "priorReviewArchive": "specs/intake-review-archive/5eaad379-04dc-49e1-8060-86ad662611f0",
+  "targetHash": "7bf415b47b81b0c13a165107b7c2021712a314bd7cf4533e6cc58950147e681a"
+}
