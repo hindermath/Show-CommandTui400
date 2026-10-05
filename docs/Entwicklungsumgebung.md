@@ -54,7 +54,8 @@ LH-00 requirements.
 - GitHub Spec Kit CLI und Integrations-Templates: **0.12.8**.
 - Integrationen: `agy`, `opencode`, `claude`, `copilot`, `codex`.
 - Projektprofil: `project-statistics-fourteen-governance-presets`.
-- Intake Authoring Governance: **v0.3.6**, aktiviert mit Priorität 64.
+- Intake Authoring Governance: **v0.3.7**, aktiviert mit Priorität 64.
+  Patch-Nachweis: [v0.3.7 und neue Start-Grenze](maintenance/intake-authoring-v037.md).
   Der [koordinierte Update-Nachweis](maintenance/coordinated-governance-oct03.md)
   bindet auch Review v0.2.4, Sequencing v0.2.7, Security v0.7.0 und Architecture
   v0.6.1. Die übrigen neun Presets und alle Prioritäten bleiben unverändert.
@@ -90,7 +91,7 @@ The owner reported PowerShell 7.6.6.0 on both Macs on 28 September 2026. This
 records the development environment, not the latest global release or product
 minimum. Spec Kit CLI and integration templates are 0.12.8. Integrations are agy,
 opencode, claude, copilot and codex. The project uses the explicit fourteen-preset
-profile and pinned matrix. Authoring 0.3.6 is enabled at priority 64; the coordinated
+profile and pinned matrix. Authoring 0.3.7 is enabled at priority 64; the coordinated
 update record also binds Review 0.2.4, Sequencing 0.2.7, Security 0.7.0 and
 Architecture 0.6.1. The other nine presets and all priorities are unchanged. Integration manifests
 and the preset registry record installation. Initialization used specify init

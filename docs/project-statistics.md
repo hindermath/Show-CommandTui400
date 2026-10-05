@@ -44,6 +44,8 @@ heuristic would otherwise count spec.md as a test.*
 
 | 2026-10-05 | LH-00-Nachweise und Startprüfung / LH-00 evidence and preflight | Intake-Update mit bytegleichen Vorgängern, frisches unabhängiges Ready-Review, gezielter Plan-/Tasks-Abgleich und Analyze ohne offene Befunde. B-01-Releases und Integration wiederverwendet; lokales Codex-Routing aktualisiert, bestehende Git-Statistik mit Renderer fortgeschrieben. Keine Implementierung oder Prozessabnahme. / Governed intake refresh, independent Ready review, targeted planning reconciliation and clean analysis; reuse delivered B-01 tooling, refresh local routing and render existing statistics. No implementation or process acceptance. [Nachweis / Evidence](../specs/001-lh00-intake-process/checklists/preflight-20261005.md). |
 
+| 2026-10-05 | Authoring v0.3.7: begrenzter Pilot / Bounded pilot | UpdateRequired: unveraenderliches Tag-ZIP, fuenf zentrale Matrizen/Vorlagen, installierte 14er-Matrix und aktuelle Quellen-/Guidance-Bindung; andere Presets und historische Receipts erhalten. Kein Produktlauf oder neue fachliche Abnahme. Geaenderte LH-00-Quellen erfordern gesondertes Update/Review vor dem Implementierungsstart; keine stille Hash-Promotion. Bestehende Statistikmethodik unveraendert. / Stable patch adoption and bounded technical validation, historical evidence preserved, fresh intake gates required before implementation. [Nachweis / Evidence](maintenance/intake-authoring-v037.md). |
+
 ## Gesamtstatistik / Overall Statistics
 
 <!-- project-statistics-v2:begin -->
