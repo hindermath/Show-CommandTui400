@@ -134,7 +134,7 @@ Dieses Profil allein erlaubt keine Commits, Remote-Schreibzugriffe, Reviews oder
 Folgeläufe. Maßgeblich ist der ausdrückliche Auftrag; historische Reparatur- und
 Lieferbefugnisse stehen in `docs/planning/lh00-repair-decisions.md`.
 Der historische lokale Update-/Review-Auftrag IAD010 steht in
-`docs/planning/lh00-staged-acceptance-decisions.md`. Der historische Auftrag IAD011
+`docs/planning/lh00-staged-acceptance-decisions.md`. Der aktuelle Auftrag IAD011
 steht in `docs/planning/lh00-preflight-refresh-decisions.md`: Nachweise aktualisieren,
 unabhängig prüfen, Plan/Tasks abgleichen und Preflight lesen; kein Feature-Lauf,
 Release, Remote-Rollout, Commit oder Tool-/Routing-Refresh.
@@ -149,21 +149,6 @@ the later Autonomous prompt default, not a current execution request. This profi
 alone grants no commits, remote writes, reviews or downstream runs. Explicit
 requests govern authority; historical repair and delivery decisions are recorded
 in docs/planning/lh00-repair-decisions.md. Historical IAD010 is recorded in docs/planning/lh00-staged-acceptance-decisions.md.
-Historical IAD011 in docs/planning/lh00-preflight-refresh-decisions.md authorizes
+Current IAD011 in docs/planning/lh00-preflight-refresh-decisions.md authorizes
 evidence refresh, independent review, plan/task reconciliation and read-only
 preflight, with no feature run, release, remote rollout, commit or tool/routing refresh.
-
-## Quellenaktualisierung IAD012 / Source refresh IAD012
-
-Der aktuelle Auftrag [IAD012](../../docs/planning/lh00-v037-refresh-decisions.md)
-erlaubt LH-00-Update, anderes Review, gezielten Spec-/Plan-/Tasks-Abgleich,
-Startchecks und Lieferung dieses Nachweispakets mit MergeAndSync/Admin-Bypass.
-Er erlaubt keine Implementierung, neuen Lastenhefte, Serienaktivierung oder
-Pilotläufe. Der LocalImplementation-Folgeprompt bleibt eine lokale Vorlage
-für einen späteren eigenen Auftrag. Historische IAD011-Grenzen bleiben erhalten.
-
-Current IAD012 permits LH-00 update, independent review, targeted design/task
-reconciliation, start checks and MergeAndSync/admin delivery of this evidence
-package. It permits no implementation, other intakes, live series activation
-or pilot run. The future LocalImplementation prompt remains a local template
-requiring its own request. Preserve historical IAD011 boundaries.

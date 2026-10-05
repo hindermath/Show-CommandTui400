@@ -46,6 +46,8 @@ heuristic would otherwise count spec.md as a test.*
 
 | 2026-10-05 | Authoring v0.3.7: begrenzter Pilot / Bounded pilot | UpdateRequired: unveraenderliches Tag-ZIP, fuenf zentrale Matrizen/Vorlagen, installierte 14er-Matrix und aktuelle Quellen-/Guidance-Bindung; andere Presets und historische Receipts erhalten. Kein Produktlauf oder neue fachliche Abnahme. Geaenderte LH-00-Quellen erfordern gesondertes Update/Review vor dem Implementierungsstart; keine stille Hash-Promotion. Bestehende Statistikmethodik unveraendert. / Stable patch adoption and bounded technical validation, historical evidence preserved, fresh intake gates required before implementation. [Nachweis / Evidence](maintenance/intake-authoring-v037.md). |
 
+| 2026-10-05 | LH-00: Quellenfrische nach Authoring v0.3.7 / Source freshness after Authoring v0.3.7 | Gesondertes Intake-Update mit erhaltener Identität und bytegleichen Archiven; vollständiges anderes Review, gezielter Spec-/Plan-/Tasks-Abgleich und Startchecks. Unveränderte Anforderungen und gestufte Abnahme, keine Implementierung oder Pilotfreigabe. Statistikmethodik 80/100 unverändert; vorhandener Renderer beim Lieferpaket. / Governed source refresh, exact lineage, independent review, targeted reconciliation and preflight; no implementation or acceptance, unchanged statistics method. [Nachweis / Evidence](../specs/001-lh00-intake-process/checklists/preflight-20261005-v037.md). |
+
 ## Gesamtstatistik / Overall Statistics
 
 <!-- project-statistics-v2:begin -->

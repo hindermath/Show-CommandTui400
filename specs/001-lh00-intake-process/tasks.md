@@ -190,7 +190,7 @@ Validate configuration, index and one-member series including the running state.
 isolierten gültigen Bestand und fehlende Dateien/Hashes/Zyklen/mehrere Eligible prüfen.
 Validate an isolated collection and reject missing files, invalid hashes, cycles and multiple candidates.
 
-- [ ] T034 [US5] Bereits gelieferte Source-PRs, neun native CI-Jobs und veröffentlichte Patch-Releases Authoring 0.3.6 / Review 0.2.4 / Sequencing 0.2.7 aus Quellen-Lock, Pilotnachweis und D-09 in `docs/maintenance/lh00-b01-release-adoption.md` zusammenführen; echte IDs/Tag-Commits/Hashes prüfen, keine erneuten Releases oder Flottenrollouts. / Consolidate and verify delivered source/CI/release identities without publishing again or rolling out the fleet.
+- [ ] T034 [US5] Bereits gelieferte Source-PRs, neun native CI-Jobs und veröffentlichte Patch-Releases (B-01: Authoring 0.3.6; aktuell 0.3.7) / Review 0.2.4 / Sequencing 0.2.7 aus Quellen-Lock, Pilotnachweis und D-09 in `docs/maintenance/lh00-b01-release-adoption.md` zusammenführen; echte IDs/Tag-Commits/Hashes prüfen, keine erneuten Releases oder Flottenrollouts. / Consolidate and verify delivered source/CI/release identities, preserving historical Authoring 0.3.6 and current 0.3.7 adoption, without publishing again or rolling out the fleet.
 - [ ] T035 [US5] Nach T034 bereits gelieferte kanonische Level-0-Pins und `scripts/config/spec-kit-project-statistics-governance-presets.json` gegen den Quellen-Lock prüfen und angewendete zentrale/Projektlieferung in `docs/maintenance/lh00-b01-release-adoption.md` belegen; Änderungen nur bei echter neuer Abweichung und passendem gesondertem Auftrag. / Verify delivered central/project pins against the source lock; reuse applied evidence and require separate authority for any new change.
 - [ ] T036 [US5] Nach T035 die bereits gezielte Installation und exakte 14-Preset-Matrix/fünf Integrationen mit Check-only bestätigen; vorhandene Fixture-Ergebnisse übernehmen, fehlende vollständige Lifecycle-/Negativnachweise gegen alle drei installierten Collection-Kopien in Bash/PowerShell ergänzen: Ready/Eligible→Active/Active mit N/A→Completed/Archiv. Ein anderes Review und Owner-Entscheid zu B-01 in `docs/maintenance/lh00-b01-release-adoption.md` belegen. Nur bei echter Installationsabweichung und gesondertem Auftrag Hilfe/Vorschau sowie gezielte Reparatur verwenden. / Verify the delivered installation, reuse fixtures, complete missing paired lifecycle/negative evidence and obtain separate review/owner closure; no unconditional reinstall.
 - [ ] T037 [US5] Nach T036 einen vollständigen Kandidaten gemäß `contracts/collection.md` vorbereiten: `requirements/intake-governance-config.json`, `requirements/RequirementsIndex.md`, `requirements/baseline/README.md`, Collection-Verzeichnisse und `.specify/memory/intake-series-policy.json`; SeriesManifest, vier Rollen, sechs eindeutige Pfade, bestehende Namen und fehlende LH-01–LH-07 im Index erhalten. / Prepare the exact collection candidate with explicit roles, paths, inventory mode and missing-intake markers.
@@ -436,3 +436,23 @@ German/English in one source-only file, no Home sync. Reader path: spec/plan →
 or acceptance boundaries. The linked checklist records local structure/coverage
 validation. This single command neither implements tasks nor completes the feature;
 no extension hooks are configured in the current repository.
+
+## Aktuelle Vorbereitung IAD012 / Current preparation IAD012
+
+PR #26 hat Authoring auf 0.3.7 gehoben. Der historische B-01-Pilot 0.3.6 und seine
+neun Source-CI-Jobs behalten ihren damaligen Kontext. T034 prüft die aktuelle
+Authoring-Bindung 0.3.7 zusätzlich zur historischen Korrektur; T035/T036 verwenden
+den aktuellen Lock und die unverändert vollständige 14er-Matrix. Keine erneuten
+Releases oder Installationen. [IAD012](../../docs/planning/lh00-v037-refresh-decisions.md)
+umfasst Update, anderes Review, gezielten Abgleich und Lieferung dieser Vorbereitung.
+[Neuer Preflight](checklists/preflight-20261005-v037.md) ergänzt historische
+Berichte. Alle 65 Tasks bleiben offen; T018→T017, T025→T024, Foundation und
+IAD010s gestufte Abnahme bleiben erhalten. Kein Feature-Lauf oder Serienstart.
+
+PR #26 adopted Authoring 0.3.7. Preserve the historical 0.3.6 B-01 pilot and its
+nine source-CI jobs. T034 verifies current adoption alongside that history;
+T035/T036 use the current lock and complete fourteen-preset matrix without new
+release or installation. IAD012 commissions update, another reviewer, targeted
+reconciliation and delivery of preparation only. The fresh preflight supplements
+historical reports. All sixty-five tasks, negative-before-positive prerequisites,
+Foundation and staged acceptance remain intact. No feature or series is started.

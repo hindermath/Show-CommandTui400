@@ -160,3 +160,16 @@ no findings or unmapped task. Prerequisites, links and diff pass. The separate
 result names the independent intake reviewer; Analyze remains a technical
 self-check rather than owner acceptance. Routing/statistics keep implementation
 preflight Blocked.
+
+## Quellenabgleich IAD012 / Source reconciliation IAD012
+
+Die obigen datierten Prüfungen und Anwendbarkeitszeilen behalten ihren Kontext.
+Authoring 0.3.7 ist nach PR #26 aktuell; [neuer Preflight](preflight-20261005-v037.md)
+führt heutiges Receipt, anderes Review, gezielte Analyse und Startchecks. Dieser
+Abgleich ändert keine Anforderungen, geplante Abdeckung, Tasks oder Abnahmegates.
+Alle Umsetzungstasks bleiben offen; die Lieferung gilt nur für Vorbereitung.
+
+Preserve the context of earlier dated checks and applicability rows. Authoring
+0.3.7 is current after PR #26. The fresh preflight records receipt, independent
+review, targeted analysis and start checks. Reconciliation changes no requirements,
+planned coverage, tasks or acceptance gates. Delivery covers preparation only.

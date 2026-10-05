@@ -815,3 +815,21 @@ Education and product AI-SBOM N/A are no exemption. Distinguish C5 Type 1, Type 
 and Unknown when applicable and retain exact C3A control IDs/SI interpretation.
 This refines existing governance without new domain FR/SC or product functions.
 IAD010 remains binding; annual review and later rollouts follow the constitution.
+
+## Quellenaktualisierung IAD012 / Source refresh IAD012
+
+Die fachliche Quelle bleibt ausschließlich das aktualisierte LH-00. PR #26
+bindet Authoring 0.3.7; [IAD012](../../docs/planning/lh00-v037-refresh-decisions.md)
+aktualisiert den Intake nachvollziehbar und verlangt ein frisches Review durch
+einen anderen Prüfer. FR-001–024, SC-001–009, CR und IAD010s Abnahmezeitpunkt
+bleiben unverändert. Der Abgleich erfordert keine neue Spezifikation oder
+Produktentscheidung. [Aktueller Preflight](checklists/preflight-20261005-v037.md)
+führt Nachweise und Auftragsgrenzen getrennt. MergeAndSync gilt für dieses
+Nachweispaket, nicht für eine Implementierung oder einen Folgeprompt.
+
+The updated LH-00 remains the sole domain input. PR #26 pins Authoring 0.3.7;
+IAD012 governs intake lineage and a fresh independent review. Preserve all
+requirements, success/constitution criteria and staged acceptance. No new
+specification or product decision is needed. The current preflight separates
+evidence from authority. MergeAndSync delivers this preparation package only,
+without implementation or follow-up execution.
