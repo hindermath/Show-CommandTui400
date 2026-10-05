@@ -12,9 +12,8 @@ und beauftragte dafür „DeliveryMode MergeAndSync mit Admin-Bypass.“
 Dieser Auftrag umfasst genau dieses Vorbereitungspaket einschließlich Commit,
 Push, PR, technischer CI-Prüfung, an den geprüften Head gebundenem Merge und lokalem
 main-Sync. Ein separater Agent prüft den Intake nach IAD009; der Hauptagent ist Autor.
-Keine Implementierung, keine weiteren Lastenhefte, keine reale Serienaktivierung,
-keine Feature-Piloten, keine Releases, keine zentralen Änderungen, keine Installation,
-kein Routing-Refresh und keine Flottenrollouts.
+Keine Implementierung, weiteren Lastenhefte, reale Serienaktivierung, Feature-Piloten,
+Releases, zentrale Änderungen, Installation, Routing-Refresh oder Flottenrollouts.
 Admin-Bypass ersetzt keine technischen Prüfungen. Produkttechnik bleibt offen.
 
 The owner explicitly required a separate LH-00 update and independent review
@@ -92,25 +91,3 @@ UpdateRequired; sourceOnly; owner Thorsten; German first, English second, about 
 Reader path: intake → receipt/review → spec/plan/tasks → fresh v0.3.7 preflight.
 Reassess changed sources, tools, scope or authority and before implementation.
 Preserve the earlier preflight; record new results separately.
-
-## Lieferkorrektur nach PR-Review / Delivery correction after PR review
-
-Der Owner sichtete PR #27 am Head `15011a816d4ae46eb21d72402b2780fd5c8adbc6`
-und beauftragte Merge und Sync mit Admin-Bypass. Die zwei Copilot-Commits korrigieren
-ausschließlich die deutsche Verneinung in Profil, diesem Auftrag und Preflight.
-Die fachliche Bedeutung und alle FR/AC bleiben unverändert. Profil und Auftrag
-sind gebundene Quellen; der Receipt-Validator meldete deshalb zwei Hash-Abweichungen.
-Die laufende IAD012-Vorbereitung wird vor ihrer Lieferung vervollständigt: neuer
-Receipt und Update-Vorgang, bytegleiche Vorgängerarchive, anderes vollständiges
-Review und neu gerenderte Statistik. Kein bloßes Überschreiben historischer Hashes.
-Das Review am genannten Head bleibt der menschliche Lieferauftrag; der Abschluss
-bindet den anschließend technisch geprüften Head dieser Nachweiskorrektur.
-
-The owner reviewed PR #27 at the head above and commissioned admin merge and sync.
-Two Copilot commits correct German negation only in the profile, this authority
-record and preflight. Meaning and every FR/AC remain unchanged. Two bound sources
-therefore failed receipt freshness validation. Complete the ongoing IAD012 package
-before delivery with a new receipt/update operation, exact predecessor archives,
-a complete separate review and rendered statistics. Do not overwrite historical
-hashes. The human review remains delivery authority; closeout binds the subsequently
-validated head containing this evidence correction. No implementation is authorized.

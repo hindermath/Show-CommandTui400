@@ -48,6 +48,8 @@ heuristic would otherwise count spec.md as a test.*
 
 | 2026-10-05 | LH-00: Quellenfrische nach Authoring v0.3.7 / Source freshness after Authoring v0.3.7 | Gesondertes Intake-Update mit erhaltener Identität und bytegleichen Archiven; vollständiges anderes Review, gezielter Spec-/Plan-/Tasks-Abgleich und Startchecks. Unveränderte Anforderungen und gestufte Abnahme, keine Implementierung oder Pilotfreigabe. Statistikmethodik 80/100 unverändert; vorhandener Renderer beim Lieferpaket. / Governed source refresh, exact lineage, independent review, targeted reconciliation and preflight; no implementation or acceptance, unchanged statistics method. [Nachweis / Evidence](../specs/001-lh00-intake-process/checklists/preflight-20261005-v037.md). |
 
+| 2026-10-05 | PR #27: Nachweise nach Sprachreview / Evidence after language review | Zwei rein sprachlich geänderte gebundene Quellen mit neuem Update, bytegleichen Archiven und anderem vollständigem Review nachgeführt; Intake und Anforderungen unverändert. Statistik durch vorhandenen Renderer aktualisiert. / Governed provenance correction after two grammar-only source changes, exact archives and fresh separate review; unchanged intake and requirements, existing renderer. [Nachweis / Evidence](../specs/001-lh00-intake-process/checklists/preflight-20261005-v037.md#lieferkorrektur-nach-sprachreview--delivery-correction-after-language-review). |
+
 ## Gesamtstatistik / Overall Statistics
 
 <!-- project-statistics-v2:begin -->

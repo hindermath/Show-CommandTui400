@@ -1,15 +1,15 @@
 {
   "schemaVersion": "2.0",
   "documentType": "IntakeReceipt",
-  "receiptId": "c515439e-cd09-4e44-8fe2-ac6135e21e3f",
+  "receiptId": "236e06ed-88b7-4dec-a91c-22dd2ac46b30",
   "intakeId": "2296d99d-f099-4c4d-88f7-789581693eb0",
   "generator": {
     "preset": "intake-authoring-governance",
     "version": "0.3.7"
   },
-  "createdAt": "2026-10-05T20:13:41Z",
+  "createdAt": "2026-10-05T19:16:03Z",
   "operation": {
-    "operationId": "83bb5e0e-457b-4919-b7a8-ecead0758bed",
+    "operationId": "f514b645-fabe-414e-aae6-d582ff45e4b7",
     "type": "Update",
     "authorityEvidence": "docs/planning/lh00-v037-refresh-decisions.md; owner-approved IAD012"
   },
@@ -23,9 +23,9 @@
       "sourceId": "SRC001",
       "order": 1,
       "kind": "File",
-      "label": "specs/intake-authoring-archive/lh-00/236e06ed-88b7-4dec-a91c-22dd2ac46b30/intakes/LH-00.md",
+      "label": "specs/intake-authoring-archive/lh-00/98203fd2-0684-4fd6-ab69-a1353e250a12/intakes/LH-00.md",
       "location": "Repository",
-      "path": "specs/intake-authoring-archive/lh-00/236e06ed-88b7-4dec-a91c-22dd2ac46b30/intakes/LH-00.md",
+      "path": "specs/intake-authoring-archive/lh-00/98203fd2-0684-4fd6-ab69-a1353e250a12/intakes/LH-00.md",
       "requestedUrl": "N/A",
       "finalUrl": "N/A",
       "retrievedAt": "N/A",
@@ -36,9 +36,9 @@
       "lastModified": "N/A",
       "redirectChain": [],
       "rawSha256": "N/A",
-      "normalizedSha256": "10f705885557b01201f6a8c1771d65cbe28056219d591e28f6082a33200858d7",
+      "normalizedSha256": "7bf415b47b81b0c13a165107b7c2021712a314bd7cf4533e6cc58950147e681a",
       "gitBlob": "N/A",
-      "proofBoundary": "Ordered local source for the IAD012 delivery correction; exact immediate predecessor first. Copilot grammar changes preserve scope; provenance is not process acceptance."
+      "proofBoundary": "Ordered local source for IAD012; exact predecessor first. PR #26 explains changed sources. Tool provenance is not process acceptance."
     },
     {
       "sourceId": "SRC002",
@@ -57,9 +57,9 @@
       "lastModified": "N/A",
       "redirectChain": [],
       "rawSha256": "N/A",
-      "normalizedSha256": "e8d5fd7307bf5510be3433b48cff43fa9c3c48a52a4c6459e16b465f387bc671",
+      "normalizedSha256": "beede865eca256995db8e4420b236e001df1e58bc9e800d110663ed490817309",
       "gitBlob": "N/A",
-      "proofBoundary": "Ordered local source for the IAD012 delivery correction; exact immediate predecessor first. Copilot grammar changes preserve scope; provenance is not process acceptance."
+      "proofBoundary": "Ordered local source for IAD012; exact predecessor first. PR #26 explains changed sources. Tool provenance is not process acceptance."
     },
     {
       "sourceId": "SRC003",
@@ -80,7 +80,7 @@
       "rawSha256": "N/A",
       "normalizedSha256": "651b63618da5e75b553e3e88e5408f6c91ef5d680d6f8a4d8ec984c0c89f2e96",
       "gitBlob": "N/A",
-      "proofBoundary": "Ordered local source for the IAD012 delivery correction; exact immediate predecessor first. Copilot grammar changes preserve scope; provenance is not process acceptance."
+      "proofBoundary": "Ordered local source for IAD012; exact predecessor first. PR #26 explains changed sources. Tool provenance is not process acceptance."
     },
     {
       "sourceId": "SRC004",
@@ -101,7 +101,7 @@
       "rawSha256": "N/A",
       "normalizedSha256": "04eed95e5afd6eecf126a0c61a3efe051b858826bbf9ef8d1681b6be72637492",
       "gitBlob": "N/A",
-      "proofBoundary": "Ordered local source for the IAD012 delivery correction; exact immediate predecessor first. Copilot grammar changes preserve scope; provenance is not process acceptance."
+      "proofBoundary": "Ordered local source for IAD012; exact predecessor first. PR #26 explains changed sources. Tool provenance is not process acceptance."
     },
     {
       "sourceId": "SRC005",
@@ -120,9 +120,9 @@
       "lastModified": "N/A",
       "redirectChain": [],
       "rawSha256": "N/A",
-      "normalizedSha256": "a1c5b76292d51888e1f0e6613bff0c8e508bf8ddb8dbacfa0cf44bfe70d1310f",
+      "normalizedSha256": "81f3d5e7118150caaa0fc3d86254d8dc1c7e682f56593c372663b061ec509370",
       "gitBlob": "N/A",
-      "proofBoundary": "Ordered local source for the IAD012 delivery correction; exact immediate predecessor first. Copilot grammar changes preserve scope; provenance is not process acceptance."
+      "proofBoundary": "Ordered local source for IAD012; exact predecessor first. PR #26 explains changed sources. Tool provenance is not process acceptance."
     },
     {
       "sourceId": "SRC006",
@@ -143,7 +143,7 @@
       "rawSha256": "N/A",
       "normalizedSha256": "bf907254ab745246bfe9c4961c1af8e5f6ec21c850aa5812c3ed210547879b8b",
       "gitBlob": "N/A",
-      "proofBoundary": "Ordered local source for the IAD012 delivery correction; exact immediate predecessor first. Copilot grammar changes preserve scope; provenance is not process acceptance."
+      "proofBoundary": "Ordered local source for IAD012; exact predecessor first. PR #26 explains changed sources. Tool provenance is not process acceptance."
     },
     {
       "sourceId": "SRC007",
@@ -164,7 +164,7 @@
       "rawSha256": "N/A",
       "normalizedSha256": "e41d0d035ad089f64e752d0a01558f744736a9514b394410123084010c12c30c",
       "gitBlob": "N/A",
-      "proofBoundary": "Ordered local source for the IAD012 delivery correction; exact immediate predecessor first. Copilot grammar changes preserve scope; provenance is not process acceptance."
+      "proofBoundary": "Ordered local source for IAD012; exact predecessor first. PR #26 explains changed sources. Tool provenance is not process acceptance."
     },
     {
       "sourceId": "SRC008",
@@ -185,7 +185,7 @@
       "rawSha256": "N/A",
       "normalizedSha256": "8031f1fb425336dda6dc1e2e582e7cf2d90a680e4f4383253f6a294ae0bd1d6e",
       "gitBlob": "N/A",
-      "proofBoundary": "Ordered local source for the IAD012 delivery correction; exact immediate predecessor first. Copilot grammar changes preserve scope; provenance is not process acceptance."
+      "proofBoundary": "Ordered local source for IAD012; exact predecessor first. PR #26 explains changed sources. Tool provenance is not process acceptance."
     },
     {
       "sourceId": "SRC009",
@@ -206,7 +206,7 @@
       "rawSha256": "N/A",
       "normalizedSha256": "77f7a39a931b6ab04419a890194db278b837e04259f9b30ddf214d6a3142a932",
       "gitBlob": "N/A",
-      "proofBoundary": "Ordered local source for the IAD012 delivery correction; exact immediate predecessor first. Copilot grammar changes preserve scope; provenance is not process acceptance."
+      "proofBoundary": "Ordered local source for IAD012; exact predecessor first. PR #26 explains changed sources. Tool provenance is not process acceptance."
     },
     {
       "sourceId": "SRC010",
@@ -227,7 +227,7 @@
       "rawSha256": "N/A",
       "normalizedSha256": "3b41eede1bf49a3b7cc035c73aeecf06acf29447a65039288328f517708a8d64",
       "gitBlob": "N/A",
-      "proofBoundary": "Ordered local source for the IAD012 delivery correction; exact immediate predecessor first. Copilot grammar changes preserve scope; provenance is not process acceptance."
+      "proofBoundary": "Ordered local source for IAD012; exact predecessor first. PR #26 explains changed sources. Tool provenance is not process acceptance."
     },
     {
       "sourceId": "SRC011",
@@ -248,7 +248,7 @@
       "rawSha256": "N/A",
       "normalizedSha256": "c6c0088bf5fe03376d425dd417fb1a6a3048275ae887d94ae8ffbf92d5cdccf4",
       "gitBlob": "N/A",
-      "proofBoundary": "Ordered local source for the IAD012 delivery correction; exact immediate predecessor first. Copilot grammar changes preserve scope; provenance is not process acceptance."
+      "proofBoundary": "Ordered local source for IAD012; exact predecessor first. PR #26 explains changed sources. Tool provenance is not process acceptance."
     },
     {
       "sourceId": "SRC012",
@@ -269,7 +269,7 @@
       "rawSha256": "N/A",
       "normalizedSha256": "5eeefe62493b9785acf79505ffc47c1910e1cbbdaa1e641ec637b67a7410f977",
       "gitBlob": "N/A",
-      "proofBoundary": "Ordered local source for the IAD012 delivery correction; exact immediate predecessor first. Copilot grammar changes preserve scope; provenance is not process acceptance."
+      "proofBoundary": "Ordered local source for IAD012; exact predecessor first. PR #26 explains changed sources. Tool provenance is not process acceptance."
     },
     {
       "sourceId": "SRC013",
@@ -290,7 +290,7 @@
       "rawSha256": "N/A",
       "normalizedSha256": "a44547e65f6d77827991c7381c357211f4ba5040feb9b801ef737ac0d2b26f1a",
       "gitBlob": "N/A",
-      "proofBoundary": "Ordered local source for the IAD012 delivery correction; exact immediate predecessor first. Copilot grammar changes preserve scope; provenance is not process acceptance."
+      "proofBoundary": "Ordered local source for IAD012; exact predecessor first. PR #26 explains changed sources. Tool provenance is not process acceptance."
     },
     {
       "sourceId": "SRC014",
@@ -311,7 +311,7 @@
       "rawSha256": "N/A",
       "normalizedSha256": "b826b0d5a72365a744c8a3c53c10af3d2095a956b9a9e00a99c8ddf0c59c9c40",
       "gitBlob": "N/A",
-      "proofBoundary": "Ordered local source for the IAD012 delivery correction; exact immediate predecessor first. Copilot grammar changes preserve scope; provenance is not process acceptance."
+      "proofBoundary": "Ordered local source for IAD012; exact predecessor first. PR #26 explains changed sources. Tool provenance is not process acceptance."
     },
     {
       "sourceId": "SRC015",
@@ -332,7 +332,7 @@
       "rawSha256": "N/A",
       "normalizedSha256": "f7569316f34df6a68a21123a47de08e3966715e88cc56d455775788d1de9814b",
       "gitBlob": "N/A",
-      "proofBoundary": "Ordered local source for the IAD012 delivery correction; exact immediate predecessor first. Copilot grammar changes preserve scope; provenance is not process acceptance."
+      "proofBoundary": "Ordered local source for IAD012; exact predecessor first. PR #26 explains changed sources. Tool provenance is not process acceptance."
     }
   ],
   "profile": "show-commandtui400-de-en",
@@ -436,10 +436,10 @@
   "promptState": "Enabled",
   "provenanceMode": "Supersession",
   "supersedes": {
-    "receiptPath": "specs/intake-authoring-archive/lh-00/236e06ed-88b7-4dec-a91c-22dd2ac46b30/specs/intake-authoring-receipts/lh-00.json",
-    "targetNormalizedSha256": "10f705885557b01201f6a8c1771d65cbe28056219d591e28f6082a33200858d7",
-    "archiveTargetPath": "specs/intake-authoring-archive/lh-00/236e06ed-88b7-4dec-a91c-22dd2ac46b30/intakes/LH-00.md",
-    "archiveReceiptPath": "specs/intake-authoring-archive/lh-00/236e06ed-88b7-4dec-a91c-22dd2ac46b30/specs/intake-authoring-receipts/lh-00.json"
+    "receiptPath": "specs/intake-authoring-archive/lh-00/98203fd2-0684-4fd6-ab69-a1353e250a12/specs/intake-authoring-receipts/lh-00.json",
+    "targetNormalizedSha256": "7bf415b47b81b0c13a165107b7c2021712a314bd7cf4533e6cc58950147e681a",
+    "archiveTargetPath": "specs/intake-authoring-archive/lh-00/98203fd2-0684-4fd6-ab69-a1353e250a12/intakes/LH-00.md",
+    "archiveReceiptPath": "specs/intake-authoring-archive/lh-00/98203fd2-0684-4fd6-ab69-a1353e250a12/specs/intake-authoring-receipts/lh-00.json"
   },
   "legacyAdoption": {
     "evidenceType": "N/A",
@@ -471,14 +471,14 @@
     },
     {
       "path": ".specify/memory/intake-authoring-profile.md",
-      "normalizedSha256": "a1c5b76292d51888e1f0e6613bff0c8e508bf8ddb8dbacfa0cf44bfe70d1310f"
+      "normalizedSha256": "81f3d5e7118150caaa0fc3d86254d8dc1c7e682f56593c372663b061ec509370"
     }
   ],
   "updateEvidence": {
     "decisionsPath": "docs/planning/lh00-v037-refresh-decisions.md",
-    "operationPath": "specs/intake-authoring-operations/83bb5e0e-457b-4919-b7a8-ecead0758bed/operation.json",
-    "previousReviewId": "676172a5-0c13-4b06-95c2-3e65b5c9e7cc",
-    "previousReviewArchive": "specs/intake-review-archive/676172a5-0c13-4b06-95c2-3e65b5c9e7cc",
-    "previousReceiptNormalizedSha256": "d9b9fbd2297f4744f352b93d3f003a1311712d230c560b454a615b026570b6c5"
+    "operationPath": "specs/intake-authoring-operations/f514b645-fabe-414e-aae6-d582ff45e4b7/operation.json",
+    "previousReviewId": "482709fb-f89a-4f48-b925-3e16b1dd3daa",
+    "previousReviewArchive": "specs/intake-review-archive/482709fb-f89a-4f48-b925-3e16b1dd3daa",
+    "previousReceiptNormalizedSha256": "22a0de3ccd970e2a41116eddfa4938e5feeaba8be1c1aec579af25fa4e041415"
   }
 }
