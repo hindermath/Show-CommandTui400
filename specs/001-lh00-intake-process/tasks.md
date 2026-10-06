@@ -215,7 +215,7 @@ First obtain limited Mac pilot permission, later complete evidence on all four e
 fehlender vierter Nachweis verhindert volle Abnahme, aber ersetzt nicht die Pilotregel.
 A missing fourth record prevents full acceptance; the separate pilot rule still applies.
 
-- [ ] T043 [US6] `docs/cross-platform/lh00-parity.md` mit dem installierten `script-parity-checklist-template.md` vervollständigen: fünf Basisskriptpaare, Hilfe/Cmdlet, sichere Eingaben, tatsächliche Exit-/JSON-Parität, Preview-Nullschreibnachweis; passende Secret-/Homogenitäts-/Preset-/PowerShell-Checks aus `quickstart.md` für die vorgenommenen Änderungen vor Pilotbewertung ausführen. / Complete script parity and applicable repository checks for changed surfaces before pilot assessment.
+- [x] T043 [US6] `docs/cross-platform/lh00-parity.md` mit dem installierten `script-parity-checklist-template.md` vervollständigen: fünf Basisskriptpaare, Hilfe/Cmdlet, sichere Eingaben, tatsächliche Exit-/JSON-Parität, Preview-Nullschreibnachweis; passende Secret-/Homogenitäts-/Preset-/PowerShell-Checks aus `quickstart.md` für die vorgenommenen Änderungen vor Pilotbewertung ausführen. / Complete script parity and applicable repository checks for changed surfaces before pilot assessment.
 - [x] T044 [US6] Nach US1–US5 den Kernprozess E01/E02/E04/E05/E07 auf dem eindeutig benannten primären Mac mit isoliertem Beispiel vollständig ausführen; tatsächliches Ergebnis in `docs/validation/lh00/mac-a.md` oder `docs/validation/lh00/mac-b.md` mit Versionen, Prompts, Commit-/Payload-/Entscheidungshashes, Änderungen und Grenzen belegen. / Prove the core flow on the named primary Mac and record exact tool/action evidence and limits.
 - [ ] T045 [US6] Einen anderen Prüfer T044 bewerten und Thorsten die begrenzte Pilotfreigabe in `docs/validation/lh00/acceptance.md` entscheiden lassen; fehlende Vollabnahme offen halten, LH-01/LH-02 nur als separat zu beauftragende Einzelpiloten mit gültigen Intakes und unabhängigem Review nennen. / Obtain independent assessment and an owner decision on limited pilot permission, keeping full acceptance and pilot commissioning distinct.
 - [ ] T046 [US6] Erst nach nachgewiesenem Abschluss der separat beauftragten LH-01-/LH-02-Piloten die stabilisierte vollständige Strecke E01–E05/E07 auf Mac A ausführen und `docs/validation/lh00/mac-a.md` ergänzen; vorherige Kernprüfung als Teilnachweis erhalten. / After the two commissioned pilots complete, run the stabilized full flow on Mac A, preserving prior partial evidence.
@@ -530,3 +530,12 @@ After the dated local state, Thorsten explicitly accepts B-01 as fixed. The new
 MergeAndSync request authorizes delivery and statistics correction. T043 requires
 passing checks; T045 remains separate human pilot permission.
 [Aktueller Liefernachweis / Current delivery evidence](../../docs/validation/lh00/delivery.md).
+
+T043 ist nach Renderer/Check-only, Homogenität und den übrigen Lieferprüfungen
+jetzt abgeschlossen. Homogenität Exit 0, nur historische STATS-Warnung; Statistik
+CURRENT. Nach diesem Nachweiscommit wird die generierte Statistik aus dem dann
+sauberen Stand abschließend gerendert und vor PR-Merge erneut geprüft.
+T001–T044 sind abgeschlossen (44/65); T045 bleibt ausdrücklich offen.
+T043 now passes statistics, homogeneity and scoped delivery checks. Render once
+more from the clean evidence commit and verify final PR gates. T001–T044 are
+complete; T045 remains separate human pilot permission.

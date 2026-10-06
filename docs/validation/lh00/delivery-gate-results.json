@@ -1,0 +1,49 @@
+{
+  "checkedAt": "2026-10-06T19:49:38.222316+00:00",
+  "sourceCommit": "97bb83263f0d",
+  "checks": [
+    {
+      "check": "statistics-check",
+      "exitCode": 0,
+      "output": "{\"status\":\"CURRENT\",\"repository\":\"/Users/thorstenhindermann/RiderProjects/Show-CommandTui400\",\"ledger\":\"/Users/thorstenhindermann/RiderProjects/Show-CommandTui400/docs/project-statistics.md\",\"sourceRevision\":\"97bb83263f0d\",\"changed\":false,\"methodologyVersion\":2,\"totalTextLines\":196747,\"activeDays\":9}\n",
+      "boundary": "Observed after source commit 97bb832; original pre-commit failure evidence remains unchanged."
+    },
+    {
+      "check": "homogeneity",
+      "exitCode": 0,
+      "output": "Workspace Homogeneity Guardian — check-homogeneity v1.0\nScan-Startpunkt: .\n======================================================\n\n[Level 0] ./\n  WARN STATS.md                                 WARN: bilingual-section-missing\n\n======================================================\nCOMPLIANCE SUMMARY\n\n.                              [#########.]  96 %  (28/29 checks)\n\nOverall: 96 %  |  Workspaces: 0  |  Projects: 0\n\nExit code: 0 (0 FAIL, 1 WARN)\n",
+      "boundary": "Observed after source commit 97bb832; original pre-commit failure evidence remains unchanged."
+    },
+    {
+      "check": "PowerShell",
+      "exitCode": 0,
+      "output": "PSScriptAnalyzer 1.25.0: 73 Dateien / files\nAusgenommen / excluded generated upstream files: 5\nOK: keine Error-/Warning-Befunde / no Error or Warning findings\n",
+      "boundary": "Observed after source commit 97bb832; original pre-commit failure evidence remains unchanged."
+    },
+    {
+      "check": "secrets",
+      "exitCode": 0,
+      "output": "OK     | gitleaks | no secrets in current git diff\nlow    | .agents | empty agent directory\nlow    | .claude | prompt, command, or template files only\nlow    | .github/agents | prompt, command, or template files only\nlow    | .github/prompts | prompt, command, or template files only\nlow    | .opencode | prompt, command, or template files only\n\nSummary: high=0 medium=0 low=5 total_agent_dirs=5 gitleaks_high=0\n",
+      "boundary": "Observed after source commit 97bb832; original pre-commit failure evidence remains unchanged."
+    },
+    {
+      "check": "staged-gitleaks",
+      "exitCode": 0,
+      "findingCount": 0,
+      "boundary": "Rule-specific exact public matches only; no broad scan exception."
+    },
+    {
+      "check": "staged-diff",
+      "exitCode": 0,
+      "output": "",
+      "boundary": "Exact frozen payload attributes apply; semantic/parser checks retained."
+    }
+  ],
+  "homogeneityRemainingWarnings": [
+    "Historical ignored STATS.md lacks bilingual sections; non-failing."
+  ],
+  "B01OwnerAccepted": true,
+  "T043": "Passed",
+  "T045": "Pending human limited-pilot decision",
+  "finalDeliveryBoundary": "After this evidence commit, rerender from its clean Git state and verify final statistics plus exact-head hosted CI before merge."
+}

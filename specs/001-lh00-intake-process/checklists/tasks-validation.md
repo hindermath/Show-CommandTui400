@@ -648,3 +648,17 @@ keine Pilotfreigabe, solange diese nicht gesondert menschlich entschieden ist.
 Thorsten explicitly accepts B-01 and authorizes the delivery/statistics package.
 Historical failures and pending assessments remain dated evidence; the linked
 record provides the current delivery state. T045 remains separate human permission.
+
+**Aktueller technischer Gateentscheid:** Renderer/Check-only CURRENT, Homogenität
+Exit 0 (keine FAILs, bekannte historische STATS-Warnung), Agent-Secrets high=0,
+gestagter kompletter Gitleaks-Scan ohne Befund, PSScriptAnalyzer ohne Befunde und
+Staged-Diff-Prüfung erfolgreich. T043 abgeschlossen. T036 bereits menschlich
+abgenommen. Damit 26/27 Tasks im zweiten Inkrement, insgesamt 44/65 erledigt.
+T045 bleibt als einzige Aufgabe dieses Inkrements wegen der fehlenden begrenzten
+menschlichen Pilotentscheidung offen; T046+ unverändert. Nach dem Nachweiscommit
+Statistik nochmals sauber rendern und am endgültigen PR-Stand überprüfen.
+Current local gates pass; preserve the original historical failures. T036/T043
+are complete, giving 26/27 scoped and 44/65 overall. Only human pilot permission
+T045 remains in this increment; later tasks stay unchanged. Final statistics and
+exact-head hosted CI remain mandatory delivery checks.
+[Beobachtete Gates / Observed gates](../../../docs/validation/lh00/delivery-gate-results.json).

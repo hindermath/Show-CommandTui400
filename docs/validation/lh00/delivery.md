@@ -56,3 +56,20 @@ direkte Analyse und Rohhashbelege bleiben unverändert. Staged Diff-Check besteh
 Before the source commit, secret scans and staged Gitleaks pass. Repository
 analysis checks 73 files and retains its existing five-import exclusion; unchanged
 direct-import evidence remains available. Staged whitespace checks pass.
+
+## Aktuelle bestandene Gates / Current passing gates
+
+Nach Quellencommit 97bb832: Statistik CURRENT, Homogenität Exit 0 mit einer
+historischen STATS-Warnung; Secret-Scan, gestagter Gitleaks-Scan, PowerShell-Analyse
+und Staged-Diff erfolgreich. Damit T043 abgeschlossen. T001–T044 sind nun erledigt;
+T045 bleibt ausschließlich die menschliche begrenzte Pilotentscheidung.
+Das frühere Mac-Assessment und seine Rohhashes bleiben unverändert als historischer
+Teilnachweis. Nach diesem Nachweiscommit Statistik aus dem neuen sauberen Stand
+abschließend rendern, Check-only prüfen und endgültige PR-CI abwarten.
+
+Statistics and homogeneity now pass after the source commit, with the documented
+historical warning retained. Secret, staged scan, PowerShell and diff checks pass.
+T001–T044 are complete; T045 remains human pilot permission. Preserve the exact
+earlier Mac assessment. Rerender from the clean evidence commit and verify
+statistics plus final-head hosted CI before merge.
+[Beobachtete Prüfausgaben / Observed outputs](delivery-gate-results.json).
