@@ -1,0 +1,42 @@
+[
+  {
+    "path": ".specify/scripts/powershell/setup-tasks.ps1",
+    "package": "specify-cli 0.12.8 core_pack",
+    "sourceRelativePath": "core_pack/scripts/powershell/setup-tasks.ps1",
+    "sourceRawSha256": "08e7338bd24f5654d1bd140991cda232974733c4368ac400ed127b4ddcc4f6c4",
+    "integratedRawSha256": "f4a6fdebbf385235985fe57056fe59c5da53450d1f02cc8ddbce0d902ab7234b",
+    "changes": "Bilingual comment help; common.ps1 adds typed advanced-function invocation routes only."
+  },
+  {
+    "path": ".specify/scripts/powershell/check-prerequisites.ps1",
+    "package": "specify-cli 0.12.8 core_pack",
+    "sourceRelativePath": "core_pack/scripts/powershell/check-prerequisites.ps1",
+    "sourceRawSha256": "d26498b86c98f692598ef9151a3a4888308faec51bb2ed9e07efa8dcd3dab06d",
+    "integratedRawSha256": "630c0159e87f2f55a734f4a86f24827fd3f852369a11fe549f3badb252caabb5",
+    "changes": "Bilingual comment help; common.ps1 adds typed advanced-function invocation routes only."
+  },
+  {
+    "path": ".specify/scripts/powershell/common.ps1",
+    "package": "specify-cli 0.12.8 core_pack",
+    "sourceRelativePath": "core_pack/scripts/powershell/common.ps1",
+    "sourceRawSha256": "b7df725ea0ffe1cbb4fcd23debbd49ad94857a5cd026000e84ce09f95b18530c",
+    "integratedRawSha256": "e339fd276073e7bfe2e4a32cb519063744bfe7995429cbf0cdf0c36bea99ee8a",
+    "changes": "Bilingual comment help; common.ps1 adds typed advanced-function invocation routes only. Two localized analyzer fixes: avoid read-only automatic PID name; add safe verbose diagnostic to existing feature-state recovery catch."
+  },
+  {
+    "path": ".specify/scripts/powershell/setup-plan.ps1",
+    "package": "specify-cli 0.12.8 core_pack",
+    "sourceRelativePath": "core_pack/scripts/powershell/setup-plan.ps1",
+    "sourceRawSha256": "e82c86c961ea76f23d59f9e10a9c80ebc8c247ff87a5dbd9cf2b10190f3112a5",
+    "integratedRawSha256": "7dff237924a202ed653d7dee2c2a74e05e3b2cab2a372c6959ca442edb777773",
+    "changes": "Bilingual comment help; common.ps1 adds typed advanced-function invocation routes only."
+  },
+  {
+    "path": ".specify/scripts/powershell/create-new-feature.ps1",
+    "package": "specify-cli 0.12.8 core_pack",
+    "sourceRelativePath": "core_pack/scripts/powershell/create-new-feature.ps1",
+    "sourceRawSha256": "6eb5f2680da6fb8931cc7e4b4564befc35128a91edf5eff490500ca67aa1afed",
+    "integratedRawSha256": "29204310ef8a794071eb85505adff2bb741685db52fe78134b906195ed4b828e",
+    "changes": "Bilingual comment help; common.ps1 adds typed advanced-function invocation routes only."
+  }
+]

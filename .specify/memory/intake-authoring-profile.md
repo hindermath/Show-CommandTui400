@@ -80,12 +80,13 @@ Personenrollen. Der kanonische Index ist die maßgebliche Bestandsübersicht.
 erteilt aber keine Ausführungsfreigabe. Lifecycle bezeichnet die geregelten
 Übergänge zwischen Bearbeitungszuständen und Ablagen.
 
-Das Profil unterstützt zunächst eigenständige Intakes ohne Serienbindung.
-Keine Requirements-Collection-Konfiguration und kein Serienmanifest werden
+Historischer Authoring-Ausgangsstand: Das Profil unterstützte zunächst
+eigenständige Intakes ohne Serienbindung.
+Damals wurden keine Requirements-Collection-Konfiguration oder Serienmanifest
 vorgetäuscht. Die vier portablen Rollen, sechs Collection-Pfade, kanonischer
 Index, `DirectoryStrict`/`SeriesManifest`, Archiv und Lifecycle-Übergänge werden
-im späteren LH-00-Prozessnachweis konkretisiert. Vorher sind Serienstatus und
-Eligible-Auswahl nicht nachgewiesen. Vorhandene Namen werden nicht umbenannt.
+im LH-00-Prozessnachweis T040/T041 konkretisiert. Vor diesem Nachweis waren
+Serienstatus und Eligible-Auswahl nicht nachgewiesen. Vorhandene Namen werden nicht umbenannt.
 
 A collection is a managed set of requirement documents. A series manifest
 provides a machine-readable list of members, order, dependencies and status.
@@ -96,12 +97,13 @@ allows standalone intakes outside it. Eligible marks a target selectable by
 its dependencies but grants no execution authority. Lifecycle means the
 controlled transitions between work states and storage locations.
 
-The initial profile supports standalone intakes without series binding.
-It does not claim an installed requirements collection or series manifest.
+Historically the initial profile supported standalone intakes without series binding.
+That historical authoring stage did not claim an installed collection or manifest;
+T040/T041 now evidence the local single-member bootstrap.
 The four portable roles, six collection paths, canonical index, inventory mode
-(`DirectoryStrict` or `SeriesManifest`), archive and lifecycle transitions will
-be established during later LH-00 process work. Series status and eligible
-selection are not proven yet. Existing names are preserved.
+(`DirectoryStrict` or `SeriesManifest`), archive and lifecycle transitions are
+now evidenced in T040/T041. Before those checks series state and selection were
+unproven. Existing names are preserved.
 
 ## Qualitäts- und Berechtigungsgrenzen / Quality and authority boundaries
 
@@ -155,7 +157,7 @@ preflight, with no feature run, release, remote rollout, commit or tool/routing 
 
 ## Quellenaktualisierung IAD012 / Source refresh IAD012
 
-Der aktuelle Auftrag [IAD012](../../docs/planning/lh00-v037-refresh-decisions.md)
+Der historische Auftrag [IAD012](../../docs/planning/lh00-v037-refresh-decisions.md)
 erlaubt LH-00-Update, anderes Review, gezielten Spec-/Plan-/Tasks-Abgleich,
 Startchecks und Lieferung dieses Nachweispakets mit MergeAndSync/Admin-Bypass.
 Er erlaubt keine Implementierung, keine neuen Lastenhefte, keine
@@ -163,8 +165,126 @@ Serienaktivierung und keine Pilotläufe. Der LocalImplementation-Folgeprompt
 bleibt eine lokale Vorlage
 für einen späteren eigenen Auftrag. Historische IAD011-Grenzen bleiben erhalten.
 
-Current IAD012 permits LH-00 update, independent review, targeted design/task
+Historical IAD012 authorized LH-00 update, independent review, targeted design/task
 reconciliation, start checks and MergeAndSync/admin delivery of this evidence
 package. It permits no implementation, other intakes, live series activation
 or pilot run. The future LocalImplementation prompt remains a local template
 requiring its own request. Preserve historical IAD011 boundaries.
+
+## Lokaler Create-Weg T001–T018 / Local creation route
+
+**Stand / Date:** 2026-10-06. Diese Prozessquelle ist durch T032 lokal publiziert; ursprüngliche Stagingkopien
+bleiben historisch. / This process source is published locally through T032;
+original staging copies remain historical.
+Thorsten ist fachlicher Owner, Codex Autor, ein anderer Agent oder Mensch prüft
+später den Intake. Ein Issue ist eine Quelle, kein Auftrag. Der explizite Auftrag
+nennt genau ein freies Ziel, Profil `show-commandtui400-de-en` und geordnete
+Quellen. Vorhandene Ziele brauchen intake-update, niemals Create-Overwrite.
+Thorsten owns requirements, Codex authors, and a different reviewer performs a
+separate intake review. An issue supplies input; the explicit request names one
+free target, the profile and ordered sources. Existing targets require intake-update.
+
+Create liest ausschließlich benannte Quellen plus Governance, klärt Konflikte,
+schreibt `intakes/LH-NN.md` und Schema-2.0-Receipt unter
+`specs/intake-authoring-receipts/lh-nn.json`, bindet Quellen/Ziel und prüft beide
+Shell-Validatoren. Ergebnis ReadyForReview ist nur Authoring-Bereitschaft.
+Create reads named sources and governance, resolves conflicts, creates an intake
+and schema-2.0 receipt, binds hashes and runs both validators. ReadyForReview
+means authoring readiness only.
+
+Pflichtinhalt (FR-006): Identität/Zielgruppe, Zweck, Ist-/Zielzustand, Scope,
+Nicht-Ziele, atomare Anforderungen, Qualität, Governance, Abhängigkeiten, Risiken,
+Artefakte, Nachweise, messbare Abnahme, Annahmen, Entscheidungen/offene Fragen
+und zwei kopierfertige Folgeprompts. Deutsch zuerst, äquivalentes Englisch danach,
+ungefähr B2; FR/AC/OD-IDs bleiben gleich. Baseline Bedienkonzept und verbindliche
+Lastenheft-Reihenfolge gelten; NIST SSDF/CWE/WCAG2.2AA soweit passend.
+Required content: identity/audience, purpose, current/target state, scope/non-goals,
+atomic requirements, quality, governance, dependencies, risks, artifacts, evidence,
+measurable acceptance, assumptions, decisions/questions and both follow-up prompts.
+Use equivalent German-first/English-second B2 text and shared IDs. Preserve the
+interaction baseline, intake order and applicable security/accessibility rules.
+
+Die zwei Promptabschnitte binden exakt das neue Intake. Specify erlaubt nur
+technische Spezifikation, keine Implementierung/Remote-Writes. Autonomous nennt
+LocalImplementation und benötigt einen neuen ausdrücklichen Auftrag; kein Prompt
+wird automatisch ausgeführt. Für das erste Inkrement liegt nur ein isoliertes
+Test-Intake vor, keine zusätzliche aktive LH-Datei und keine reale Serienverwaltung.
+Specify binds the exact intake and forbids implementation/remote writes. Autonomous
+uses LocalImplementation and needs its own explicit request. Neither prompt runs
+automatically; this increment creates only inactive isolated test data.
+
+## Zwei Folgeprompt-Vorlagen / Two follow-up templates
+
+Ein neues Ziel ersetzt im generierten Prompt exakt `intakes/LH-NN.md`; NN bleibt
+hier eine Benennungsvorlage. Beide Vorlagen sind heute inaktiv. Fehlende oder
+ungültige Review-Nachweise sperren den jeweiligen Folgeauftrag.
+Generated prompts substitute the exact new intake path; NN is a naming template
+here. Both remain inactive today; invalid review evidence blocks a later run.
+
+```text
+$speckit-specify intakes/LH-NN.md
+Nutze ausschließlich das benannte Intake mit Profil show-commandtui400-de-en;
+prüfe zuvor gültigen Receipt und unabhängiges Review. Nur technische Spezifikation,
+DE zuerst/EN danach; keine Implementierung, Commits oder Remote-Writes.
+Use only the named intake/profile after current receipt and independent review.
+Specify only in DE/EN; no implementation, commits or remote writes.
+```
+
+```text
+$speckit-autonomous intakes/LH-NN.md
+Profil show-commandtui400-de-en; DeliveryMode LocalImplementation. Nur nach
+neuem ausdrücklichem Auftrag und gültigen Receipt-/Review-Nachweisen.
+Keine Commits, Pushes, Remote-Writes oder Funktionen anderer Lastenhefte.
+Use the exact named intake after separate authority and current review/receipt.
+LocalImplementation only; no delivery or scope from other intakes.
+```
+
+Historischer Stand T001–T018: Der Lastenheft-Plan stellte Reihenfolge und
+vorläufigen Bestandsverweis bereit; eine maschinenlesbare Collection fehlte damals.
+Aktuell nach T040/T041: requirements/RequirementsIndex.md ist der Bestandsindex,
+requirements/intake-governance-config.json die validierte Collection-Konfiguration,
+specs/intake-series/lh00-process/manifest.json die Ready/Eligible-Ein-Mitglied-Serie.
+Reihenfolge bleibt docs/Lastenheft-Plan.md; intakes/ aktive Ablage, Bedienkonzept
+fachliche Baseline. Owner Thorsten, beauftragter Autor und anderer Reviewer sind
+Personenrollen; sie bleiben von den vier portablen Dateivertragsrollen getrennt.
+Keine Auswahl oder Maschinenvalidierung ersetzt menschliche Ausführungsbefugnis.
+Historical T001–T018 used the order document for a preliminary inventory reference
+and had no machine-readable collection. After T040/T041 the named RequirementsIndex,
+config and manifest form the validated local Ready/Eligible bootstrap. Preserve
+the order, active storage and interaction baseline. Person roles remain separate
+from portable file-contract roles. Selection/validation never grants authority.
+
+## Ausführungsbegriffe und Textzugang / Execution terms and text access
+
+CEFR B2 bedeutet ungefähr selbstständiges Lesen einfacher technischer Sprache.
+Hash (Prüfsumme) bindet Inhalt, beweist keine fachliche Richtigkeit. Ein Validator
+prüft maschinell einen Vertrag. Ein Gate ist eine Bedingung vor einem Folgeschritt.
+Receipt bezeichnet Herkunftsnachweis, Authoring die Erstellung. Fachliche IDs
+FR (Anforderung), AC (Abnahme), OD (Entscheidung) bezeichnen in DE/EN dieselbe Sache.
+Ein Manifest ist eine maschinenlesbare Mitgliederliste. Diagramme sind hier N/A:
+der lineare Weg und seine Abhängigkeiten werden vollständig als Text beschrieben.
+Das ist keine praktische Screenreader-/Braille-/Tastaturabnahme.
+CEFR B2 means independent reading of plain technical language. A hash binds
+content, not correctness. A validator checks a machine-readable contract; a gate
+is a prerequisite. A receipt records provenance; authoring creates the intake.
+FR/AC/OD identify the same requirements, acceptance and decisions in both languages.
+A manifest lists members. No diagram is needed for this linear procedure; complete
+text does not establish assistive field acceptance.
+
+## Lokale Collection-Zuordnung T041 / Local collection mapping
+
+Die lokal publizierte Konfiguration requirements/intake-governance-config.json
+löst vier Rollen und sechs Pfade auf; requirements/RequirementsIndex.md ist der
+lesbare Bestandsindex. Sequencing-Policy: .specify/memory/intake-series-policy.json,
+Manifest: specs/intake-series/lh00-process/manifest.json. Die Serie enthält nur
+LH-00; Ready/Eligible ist Bootstrap, keine neue Ausführungsbefugnis. Bei Intake-
+Update Manifest/Receipt seriell samt exakten Vorgängerarchiven nachführen; altes
+Review ablegen und vollständig anderes Review beauftragen. Keine manuelle
+Hashersetzung ohne dokumentierten Vorgang. LH-01/02 bleiben eigene spätere
+Einzelpiloten, LH-03 verlangt volle LH-00-Abnahme.
+
+The local config resolves four roles/six paths; the index records inventory.
+The named policy/manifest contain only LH-00. Ready/Eligible is bootstrap, not
+authority. Updates preserve exact intake and series lineage in one coherent
+publication, archive old review and obtain a complete distinct review. No bare
+rehash. Future standalone pilots and full-acceptance boundaries remain binding.

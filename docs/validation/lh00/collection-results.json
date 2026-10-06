@@ -1,0 +1,603 @@
+{
+  "tasks": [
+    "T037",
+    "T038",
+    "T039"
+  ],
+  "seriesId": "3c0e3e97-1268-4828-aeba-c3f3d17637de",
+  "operationId": "20345501-30be-4092-9318-397aa7588980",
+  "receiptId": "30efcd8f-72a8-4c89-9d18-fae42713cafd",
+  "actualTargetHash": "0481d515cfe4bfac75365890d06147e48965c7062b65953179eb41cc8c82a24e",
+  "candidateRootTemporary": "/var/folders/g_/7dmrmw6j77d1b5q60yl_nr8m0000gn/T/lh00-collection-57juc40u",
+  "proposalPath": "specs/001-lh00-intake-process/candidates/collection/proposal.json",
+  "positiveRuns": [
+    {
+      "preset": "intake-authoring-governance",
+      "kind": "config",
+      "shell": "bash",
+      "exitCode": 0,
+      "output": "{\"collections\": {\"active\": \"intakes\", \"archive\": \"requirements/intakes/archive\", \"backlog\": \"requirements/intakes/backlog\", \"baseline\": \"requirements/baseline\", \"history\": \"requirements/intakes/history\", \"seriesManifest\": \"specs/intake-series/lh00-process/manifest.json\"}, \"documentationLanguage\": \"de-DE\", \"inventory\": {\"activeIntakeCount\": 1, \"activeSeriesTargetCount\": 1, \"archiveIntakeCount\": 1, \"backlogIntakeCount\": 1, \"baselineCount\": 1, \"dependencyCount\": 0, \"eligibleCandidate\": \"intakes/LH-00.md\", \"historyIntakeCount\": 1, \"seriesTargetCount\": 1}, \"inventoryMode\": \"SeriesManifest\", \"legacyArtifactNames\": [], \"missingPaths\": [], \"nextAction\": \"N/A\", \"outcome\": \"Aligned\", \"profile\": \"explicit\", \"resolvedNaming\": {\"canonicalIndex\": \"requirements/RequirementsIndex.md\", \"intakePattern\": \"LH-<slug>.md\", \"orderView\": \"docs/Lastenheft-Plan.md\"}, \"roles\": {\"intake-order\": \"docs/Lastenheft-Plan.md\", \"requirements-baseline\": \"requirements/baseline\", \"requirements-index\": \"requirements/RequirementsIndex.md\", \"requirements-intake\": \"intakes\"}, \"schemaVersion\": \"2.0\"}"
+    },
+    {
+      "preset": "intake-authoring-governance",
+      "kind": "config",
+      "shell": "PowerShell",
+      "exitCode": 0,
+      "output": "{\"collections\": {\"active\": \"intakes\", \"archive\": \"requirements/intakes/archive\", \"backlog\": \"requirements/intakes/backlog\", \"baseline\": \"requirements/baseline\", \"history\": \"requirements/intakes/history\", \"seriesManifest\": \"specs/intake-series/lh00-process/manifest.json\"}, \"documentationLanguage\": \"de-DE\", \"inventory\": {\"activeIntakeCount\": 1, \"activeSeriesTargetCount\": 1, \"archiveIntakeCount\": 1, \"backlogIntakeCount\": 1, \"baselineCount\": 1, \"dependencyCount\": 0, \"eligibleCandidate\": \"intakes/LH-00.md\", \"historyIntakeCount\": 1, \"seriesTargetCount\": 1}, \"inventoryMode\": \"SeriesManifest\", \"legacyArtifactNames\": [], \"missingPaths\": [], \"nextAction\": \"N/A\", \"outcome\": \"Aligned\", \"profile\": \"explicit\", \"resolvedNaming\": {\"canonicalIndex\": \"requirements/RequirementsIndex.md\", \"intakePattern\": \"LH-<slug>.md\", \"orderView\": \"docs/Lastenheft-Plan.md\"}, \"roles\": {\"intake-order\": \"docs/Lastenheft-Plan.md\", \"requirements-baseline\": \"requirements/baseline\", \"requirements-index\": \"requirements/RequirementsIndex.md\", \"requirements-intake\": \"intakes\"}, \"schemaVersion\": \"2.0\"}"
+    },
+    {
+      "preset": "intake-review-governance",
+      "kind": "config",
+      "shell": "bash",
+      "exitCode": 0,
+      "output": "{\"collections\": {\"active\": \"intakes\", \"archive\": \"requirements/intakes/archive\", \"backlog\": \"requirements/intakes/backlog\", \"baseline\": \"requirements/baseline\", \"history\": \"requirements/intakes/history\", \"seriesManifest\": \"specs/intake-series/lh00-process/manifest.json\"}, \"documentationLanguage\": \"de-DE\", \"inventory\": {\"activeIntakeCount\": 1, \"activeSeriesTargetCount\": 1, \"archiveIntakeCount\": 1, \"backlogIntakeCount\": 1, \"baselineCount\": 1, \"dependencyCount\": 0, \"eligibleCandidate\": \"intakes/LH-00.md\", \"historyIntakeCount\": 1, \"seriesTargetCount\": 1}, \"inventoryMode\": \"SeriesManifest\", \"legacyArtifactNames\": [], \"missingPaths\": [], \"nextAction\": \"N/A\", \"outcome\": \"Aligned\", \"profile\": \"explicit\", \"resolvedNaming\": {\"canonicalIndex\": \"requirements/RequirementsIndex.md\", \"intakePattern\": \"LH-<slug>.md\", \"orderView\": \"docs/Lastenheft-Plan.md\"}, \"roles\": {\"intake-order\": \"docs/Lastenheft-Plan.md\", \"requirements-baseline\": \"requirements/baseline\", \"requirements-index\": \"requirements/RequirementsIndex.md\", \"requirements-intake\": \"intakes\"}, \"schemaVersion\": \"2.0\"}"
+    },
+    {
+      "preset": "intake-review-governance",
+      "kind": "config",
+      "shell": "PowerShell",
+      "exitCode": 0,
+      "output": "{\"collections\": {\"active\": \"intakes\", \"archive\": \"requirements/intakes/archive\", \"backlog\": \"requirements/intakes/backlog\", \"baseline\": \"requirements/baseline\", \"history\": \"requirements/intakes/history\", \"seriesManifest\": \"specs/intake-series/lh00-process/manifest.json\"}, \"documentationLanguage\": \"de-DE\", \"inventory\": {\"activeIntakeCount\": 1, \"activeSeriesTargetCount\": 1, \"archiveIntakeCount\": 1, \"backlogIntakeCount\": 1, \"baselineCount\": 1, \"dependencyCount\": 0, \"eligibleCandidate\": \"intakes/LH-00.md\", \"historyIntakeCount\": 1, \"seriesTargetCount\": 1}, \"inventoryMode\": \"SeriesManifest\", \"legacyArtifactNames\": [], \"missingPaths\": [], \"nextAction\": \"N/A\", \"outcome\": \"Aligned\", \"profile\": \"explicit\", \"resolvedNaming\": {\"canonicalIndex\": \"requirements/RequirementsIndex.md\", \"intakePattern\": \"LH-<slug>.md\", \"orderView\": \"docs/Lastenheft-Plan.md\"}, \"roles\": {\"intake-order\": \"docs/Lastenheft-Plan.md\", \"requirements-baseline\": \"requirements/baseline\", \"requirements-index\": \"requirements/RequirementsIndex.md\", \"requirements-intake\": \"intakes\"}, \"schemaVersion\": \"2.0\"}"
+    },
+    {
+      "preset": "intake-sequencing-governance",
+      "kind": "config",
+      "shell": "bash",
+      "exitCode": 0,
+      "output": "{\"collections\": {\"active\": \"intakes\", \"archive\": \"requirements/intakes/archive\", \"backlog\": \"requirements/intakes/backlog\", \"baseline\": \"requirements/baseline\", \"history\": \"requirements/intakes/history\", \"seriesManifest\": \"specs/intake-series/lh00-process/manifest.json\"}, \"documentationLanguage\": \"de-DE\", \"inventory\": {\"activeIntakeCount\": 1, \"activeSeriesTargetCount\": 1, \"archiveIntakeCount\": 1, \"backlogIntakeCount\": 1, \"baselineCount\": 1, \"dependencyCount\": 0, \"eligibleCandidate\": \"intakes/LH-00.md\", \"historyIntakeCount\": 1, \"seriesTargetCount\": 1}, \"inventoryMode\": \"SeriesManifest\", \"legacyArtifactNames\": [], \"missingPaths\": [], \"nextAction\": \"N/A\", \"outcome\": \"Aligned\", \"profile\": \"explicit\", \"resolvedNaming\": {\"canonicalIndex\": \"requirements/RequirementsIndex.md\", \"intakePattern\": \"LH-<slug>.md\", \"orderView\": \"docs/Lastenheft-Plan.md\"}, \"roles\": {\"intake-order\": \"docs/Lastenheft-Plan.md\", \"requirements-baseline\": \"requirements/baseline\", \"requirements-index\": \"requirements/RequirementsIndex.md\", \"requirements-intake\": \"intakes\"}, \"schemaVersion\": \"2.0\"}"
+    },
+    {
+      "preset": "intake-sequencing-governance",
+      "kind": "config",
+      "shell": "PowerShell",
+      "exitCode": 0,
+      "output": "{\"collections\": {\"active\": \"intakes\", \"archive\": \"requirements/intakes/archive\", \"backlog\": \"requirements/intakes/backlog\", \"baseline\": \"requirements/baseline\", \"history\": \"requirements/intakes/history\", \"seriesManifest\": \"specs/intake-series/lh00-process/manifest.json\"}, \"documentationLanguage\": \"de-DE\", \"inventory\": {\"activeIntakeCount\": 1, \"activeSeriesTargetCount\": 1, \"archiveIntakeCount\": 1, \"backlogIntakeCount\": 1, \"baselineCount\": 1, \"dependencyCount\": 0, \"eligibleCandidate\": \"intakes/LH-00.md\", \"historyIntakeCount\": 1, \"seriesTargetCount\": 1}, \"inventoryMode\": \"SeriesManifest\", \"legacyArtifactNames\": [], \"missingPaths\": [], \"nextAction\": \"N/A\", \"outcome\": \"Aligned\", \"profile\": \"explicit\", \"resolvedNaming\": {\"canonicalIndex\": \"requirements/RequirementsIndex.md\", \"intakePattern\": \"LH-<slug>.md\", \"orderView\": \"docs/Lastenheft-Plan.md\"}, \"roles\": {\"intake-order\": \"docs/Lastenheft-Plan.md\", \"requirements-baseline\": \"requirements/baseline\", \"requirements-index\": \"requirements/RequirementsIndex.md\", \"requirements-intake\": \"intakes\"}, \"schemaVersion\": \"2.0\"}"
+    },
+    {
+      "preset": "intake-sequencing-governance",
+      "kind": "manifest",
+      "shell": "bash",
+      "exitCode": 0,
+      "output": "{\"blockers\": {}, \"declaredEligible\": [\"intakes/LH-00.md\"], \"dependencies\": 0, \"eligible\": [\"intakes/LH-00.md\"], \"roots\": 1, \"seriesId\": \"3c0e3e97-1268-4828-aeba-c3f3d17637de\", \"status\": \"Ready\", \"targets\": 1}"
+    },
+    {
+      "preset": "intake-sequencing-governance",
+      "kind": "manifest",
+      "shell": "PowerShell",
+      "exitCode": 0,
+      "output": "{\"blockers\": {}, \"declaredEligible\": [\"intakes/LH-00.md\"], \"dependencies\": 0, \"eligible\": [\"intakes/LH-00.md\"], \"roots\": 1, \"seriesId\": \"3c0e3e97-1268-4828-aeba-c3f3d17637de\", \"status\": \"Ready\", \"targets\": 1}"
+    },
+    {
+      "preset": "intake-sequencing-governance",
+      "kind": "receipt",
+      "shell": "bash",
+      "exitCode": 0,
+      "output": "{\"blockers\": {}, \"declaredEligible\": [\"intakes/LH-00.md\"], \"dependencies\": 0, \"eligible\": [\"intakes/LH-00.md\"], \"receiptId\": \"30efcd8f-72a8-4c89-9d18-fae42713cafd\", \"roots\": 1, \"seriesId\": \"3c0e3e97-1268-4828-aeba-c3f3d17637de\", \"status\": \"Ready\", \"targets\": 1}"
+    },
+    {
+      "preset": "intake-sequencing-governance",
+      "kind": "receipt",
+      "shell": "PowerShell",
+      "exitCode": 0,
+      "output": "{\"blockers\": {}, \"declaredEligible\": [\"intakes/LH-00.md\"], \"dependencies\": 0, \"eligible\": [\"intakes/LH-00.md\"], \"receiptId\": \"30efcd8f-72a8-4c89-9d18-fae42713cafd\", \"roots\": 1, \"seriesId\": \"3c0e3e97-1268-4828-aeba-c3f3d17637de\", \"status\": \"Ready\", \"targets\": 1}"
+    }
+  ],
+  "negativeRuns": [
+    {
+      "case": "missing-target",
+      "expectedExit": 2,
+      "runs": [
+        {
+          "preset": "intake-authoring-governance",
+          "kind": "config",
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG014\", \"message\": \"missing active target intakes/LH-00.md\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-authoring-governance",
+          "kind": "config",
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG014\", \"message\": \"missing active target intakes/LH-00.md\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-review-governance",
+          "kind": "config",
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG014\", \"message\": \"missing active target intakes/LH-00.md\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-review-governance",
+          "kind": "config",
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG014\", \"message\": \"missing active target intakes/LH-00.md\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-sequencing-governance",
+          "kind": "config",
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG014\", \"message\": \"missing active target intakes/LH-00.md\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-sequencing-governance",
+          "kind": "config",
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG014\", \"message\": \"missing active target intakes/LH-00.md\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-sequencing-governance",
+          "kind": "manifest",
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "ERROR ISG004: target missing or hash drift: intakes/LH-00.md"
+        },
+        {
+          "preset": "intake-sequencing-governance",
+          "kind": "manifest",
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "ERROR ISG004: target missing or hash drift: intakes/LH-00.md"
+        },
+        {
+          "preset": "intake-sequencing-governance",
+          "kind": "receipt",
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "ERROR ISG004: target missing or hash drift: intakes/LH-00.md"
+        },
+        {
+          "preset": "intake-sequencing-governance",
+          "kind": "receipt",
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "ERROR ISG004: target missing or hash drift: intakes/LH-00.md"
+        }
+      ],
+      "validatorWrites": 0
+    },
+    {
+      "case": "hash-drift",
+      "expectedExit": 2,
+      "runs": [
+        {
+          "preset": "intake-authoring-governance",
+          "kind": "config",
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG015\", \"message\": \"hash drift for intakes/LH-00.md\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-authoring-governance",
+          "kind": "config",
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG015\", \"message\": \"hash drift for intakes/LH-00.md\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-review-governance",
+          "kind": "config",
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG015\", \"message\": \"hash drift for intakes/LH-00.md\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-review-governance",
+          "kind": "config",
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG015\", \"message\": \"hash drift for intakes/LH-00.md\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-sequencing-governance",
+          "kind": "config",
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG015\", \"message\": \"hash drift for intakes/LH-00.md\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-sequencing-governance",
+          "kind": "config",
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG015\", \"message\": \"hash drift for intakes/LH-00.md\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-sequencing-governance",
+          "kind": "manifest",
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "ERROR ISG004: target missing or hash drift: intakes/LH-00.md"
+        },
+        {
+          "preset": "intake-sequencing-governance",
+          "kind": "manifest",
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "ERROR ISG004: target missing or hash drift: intakes/LH-00.md"
+        },
+        {
+          "preset": "intake-sequencing-governance",
+          "kind": "receipt",
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "ERROR ISR004: manifest missing or hash drift"
+        },
+        {
+          "preset": "intake-sequencing-governance",
+          "kind": "receipt",
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "ERROR ISR004: manifest missing or hash drift"
+        }
+      ],
+      "validatorWrites": 0
+    },
+    {
+      "case": "path-escape",
+      "expectedExit": 2,
+      "runs": [
+        {
+          "preset": "intake-authoring-governance",
+          "kind": "config",
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG004\", \"message\": \"orderedTargets[0].path must be repository-relative\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-authoring-governance",
+          "kind": "config",
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG004\", \"message\": \"orderedTargets[0].path must be repository-relative\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-review-governance",
+          "kind": "config",
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG004\", \"message\": \"orderedTargets[0].path must be repository-relative\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-review-governance",
+          "kind": "config",
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG004\", \"message\": \"orderedTargets[0].path must be repository-relative\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-sequencing-governance",
+          "kind": "config",
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG004\", \"message\": \"orderedTargets[0].path must be repository-relative\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-sequencing-governance",
+          "kind": "config",
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG004\", \"message\": \"orderedTargets[0].path must be repository-relative\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-sequencing-governance",
+          "kind": "manifest",
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "ERROR ISG003: target path must be unique and repository-relative: ../outside.md"
+        },
+        {
+          "preset": "intake-sequencing-governance",
+          "kind": "manifest",
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "ERROR ISG003: target path must be unique and repository-relative: ../outside.md"
+        },
+        {
+          "preset": "intake-sequencing-governance",
+          "kind": "receipt",
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "ERROR ISR004: manifest missing or hash drift"
+        },
+        {
+          "preset": "intake-sequencing-governance",
+          "kind": "receipt",
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "ERROR ISR004: manifest missing or hash drift"
+        }
+      ],
+      "validatorWrites": 0
+    },
+    {
+      "case": "collection-alias",
+      "expectedExit": 2,
+      "runs": [
+        {
+          "preset": "intake-authoring-governance",
+          "kind": "config",
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG007\", \"message\": \"collection paths must be unique\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-authoring-governance",
+          "kind": "config",
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG007\", \"message\": \"collection paths must be unique\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-review-governance",
+          "kind": "config",
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG007\", \"message\": \"collection paths must be unique\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-review-governance",
+          "kind": "config",
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG007\", \"message\": \"collection paths must be unique\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-sequencing-governance",
+          "kind": "config",
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG007\", \"message\": \"collection paths must be unique\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-sequencing-governance",
+          "kind": "config",
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG007\", \"message\": \"collection paths must be unique\", \"outcome\": \"Blocked\"}"
+        }
+      ],
+      "validatorWrites": 0
+    },
+    {
+      "case": "order",
+      "expectedExit": 2,
+      "runs": [
+        {
+          "preset": "intake-authoring-governance",
+          "kind": "config",
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG016\", \"message\": \"dependency intakes/LH-OTHER.md -> intakes/LH-00.md contradicts order\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-authoring-governance",
+          "kind": "config",
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG016\", \"message\": \"dependency intakes/LH-OTHER.md -> intakes/LH-00.md contradicts order\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-review-governance",
+          "kind": "config",
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG016\", \"message\": \"dependency intakes/LH-OTHER.md -> intakes/LH-00.md contradicts order\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-review-governance",
+          "kind": "config",
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG016\", \"message\": \"dependency intakes/LH-OTHER.md -> intakes/LH-00.md contradicts order\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-sequencing-governance",
+          "kind": "config",
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG016\", \"message\": \"dependency intakes/LH-OTHER.md -> intakes/LH-00.md contradicts order\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-sequencing-governance",
+          "kind": "config",
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG016\", \"message\": \"dependency intakes/LH-OTHER.md -> intakes/LH-00.md contradicts order\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-sequencing-governance",
+          "kind": "manifest",
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "ERROR ISG007: dependency contradicts declared order: intakes/LH-OTHER.md -> intakes/LH-00.md"
+        },
+        {
+          "preset": "intake-sequencing-governance",
+          "kind": "manifest",
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "ERROR ISG007: dependency contradicts declared order: intakes/LH-OTHER.md -> intakes/LH-00.md"
+        },
+        {
+          "preset": "intake-sequencing-governance",
+          "kind": "receipt",
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "ERROR ISR004: manifest missing or hash drift"
+        },
+        {
+          "preset": "intake-sequencing-governance",
+          "kind": "receipt",
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "ERROR ISR004: manifest missing or hash drift"
+        }
+      ],
+      "validatorWrites": 0
+    },
+    {
+      "case": "cycle",
+      "expectedExit": 2,
+      "runs": [
+        {
+          "preset": "intake-authoring-governance",
+          "kind": "config",
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG016\", \"message\": \"dependency intakes/LH-OTHER.md -> intakes/LH-00.md contradicts order\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-authoring-governance",
+          "kind": "config",
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG016\", \"message\": \"dependency intakes/LH-OTHER.md -> intakes/LH-00.md contradicts order\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-review-governance",
+          "kind": "config",
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG016\", \"message\": \"dependency intakes/LH-OTHER.md -> intakes/LH-00.md contradicts order\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-review-governance",
+          "kind": "config",
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG016\", \"message\": \"dependency intakes/LH-OTHER.md -> intakes/LH-00.md contradicts order\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-sequencing-governance",
+          "kind": "config",
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG016\", \"message\": \"dependency intakes/LH-OTHER.md -> intakes/LH-00.md contradicts order\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-sequencing-governance",
+          "kind": "config",
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG016\", \"message\": \"dependency intakes/LH-OTHER.md -> intakes/LH-00.md contradicts order\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-sequencing-governance",
+          "kind": "manifest",
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "ERROR ISG007: dependency contradicts declared order: intakes/LH-OTHER.md -> intakes/LH-00.md"
+        },
+        {
+          "preset": "intake-sequencing-governance",
+          "kind": "manifest",
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "ERROR ISG007: dependency contradicts declared order: intakes/LH-OTHER.md -> intakes/LH-00.md"
+        },
+        {
+          "preset": "intake-sequencing-governance",
+          "kind": "receipt",
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "ERROR ISR004: manifest missing or hash drift"
+        },
+        {
+          "preset": "intake-sequencing-governance",
+          "kind": "receipt",
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "ERROR ISR004: manifest missing or hash drift"
+        }
+      ],
+      "validatorWrites": 0
+    },
+    {
+      "case": "multiple-eligible",
+      "expectedExit": 2,
+      "runs": [
+        {
+          "preset": "intake-authoring-governance",
+          "kind": "config",
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG017\", \"message\": \"exactly one Eligible target is required, found 2\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-authoring-governance",
+          "kind": "config",
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG017\", \"message\": \"exactly one Eligible target is required, found 2\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-review-governance",
+          "kind": "config",
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG017\", \"message\": \"exactly one Eligible target is required, found 2\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-review-governance",
+          "kind": "config",
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG017\", \"message\": \"exactly one Eligible target is required, found 2\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-sequencing-governance",
+          "kind": "config",
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG017\", \"message\": \"exactly one Eligible target is required, found 2\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-sequencing-governance",
+          "kind": "config",
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "{\"errorClass\": \"RIG017\", \"message\": \"exactly one Eligible target is required, found 2\", \"outcome\": \"Blocked\"}"
+        },
+        {
+          "preset": "intake-sequencing-governance",
+          "kind": "manifest",
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "ERROR ISG009: at most one target may declare Eligible"
+        },
+        {
+          "preset": "intake-sequencing-governance",
+          "kind": "manifest",
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "ERROR ISG009: at most one target may declare Eligible"
+        },
+        {
+          "preset": "intake-sequencing-governance",
+          "kind": "receipt",
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "ERROR ISR004: manifest missing or hash drift"
+        },
+        {
+          "preset": "intake-sequencing-governance",
+          "kind": "receipt",
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "ERROR ISR004: manifest missing or hash drift"
+        }
+      ],
+      "validatorWrites": 0
+    }
+  ],
+  "activePublished": false,
+  "realActivation": false,
+  "noFutureIntakes": true,
+  "retainedPayloadSuffix": ".candidate",
+  "boundary": "Temporary candidate removed after evidence capture; payloads retained inactive with declared canonical publication paths."
+}

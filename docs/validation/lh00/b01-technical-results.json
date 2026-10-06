@@ -1,0 +1,105 @@
+{
+  "checkedAt": "2026-10-06T18:57:44.156916+00:00",
+  "tasks": [
+    "T034",
+    "T035",
+    "T036 technical scope"
+  ],
+  "archiveVerification": [
+    {
+      "preset": "intake-authoring-governance",
+      "version": "v0.3.7",
+      "tagCommit": "dbf135e89ba583fb27294f84e487cf1a5826604f",
+      "actualArchiveSha256": "fc20a010c2124977249f926677d1bb2b03b81e7cd2a549bc4c7489de837e1427",
+      "lockedArchiveSha256": "fc20a010c2124977249f926677d1bb2b03b81e7cd2a549bc4c7489de837e1427",
+      "bytes": 106551,
+      "retrieval": "Read-only exact source tag archive URL; bytes kept only in process memory.",
+      "sourceArchiveUrl": "https://github.com/hindermath/spec-kit-preset-intake-authoring-governance/archive/refs/tags/v0.3.7.zip",
+      "archiveKind": "GitHub source tag archive, not separately packaged release asset"
+    },
+    {
+      "preset": "intake-review-governance",
+      "version": "v0.2.4",
+      "tagCommit": "f0f9b3536a58f8c90a79119565af8190809a4bdb",
+      "actualArchiveSha256": "c4a21c4a99ba6eed0df3028bc1ee19158f1274d9e440f433c504877c997ed816",
+      "lockedArchiveSha256": "c4a21c4a99ba6eed0df3028bc1ee19158f1274d9e440f433c504877c997ed816",
+      "bytes": 61302,
+      "retrieval": "Read-only exact source tag archive URL; bytes kept only in process memory.",
+      "sourceArchiveUrl": "https://github.com/hindermath/spec-kit-preset-intake-review-governance/archive/refs/tags/v0.2.4.zip",
+      "archiveKind": "GitHub source tag archive, not separately packaged release asset"
+    },
+    {
+      "preset": "intake-sequencing-governance",
+      "version": "v0.2.7",
+      "tagCommit": "74f6b343b79c93f6fcbfe9db1c111e9eb3aeeee8",
+      "actualArchiveSha256": "5ccaa7fff94fea433fcc4ec960991c945fe8c62ad4b8dbffc1e60a09fee644a4",
+      "lockedArchiveSha256": "5ccaa7fff94fea433fcc4ec960991c945fe8c62ad4b8dbffc1e60a09fee644a4",
+      "bytes": 60272,
+      "retrieval": "Read-only exact source tag archive URL; bytes kept only in process memory.",
+      "sourceArchiveUrl": "https://github.com/hindermath/spec-kit-preset-intake-sequencing-governance/archive/refs/tags/v0.2.7.zip",
+      "archiveKind": "GitHub source tag archive, not separately packaged release asset"
+    }
+  ],
+  "centralProjectMatrixEqual": true,
+  "presets": 14,
+  "integrations": [
+    "agy",
+    "opencode",
+    "claude",
+    "copilot",
+    "codex"
+  ],
+  "centralMatrixRawSha256": "3b41eede1bf49a3b7cc035c73aeecf06acf29447a65039288328f517708a8d64",
+  "projectMatrixRawSha256": "3b41eede1bf49a3b7cc035c73aeecf06acf29447a65039288328f517708a8d64",
+  "installCheck": {
+    "exitCode": 0,
+    "output": "## .\n  OK: 14 Presets entsprechen exakt der Matrix / presets exactly match the matrix\n"
+  },
+  "collectionSuites": [
+    {
+      "preset": "intake-authoring-governance",
+      "script": ".specify/presets/intake-authoring-governance/tests/test-intake-governance-config.ps1",
+      "scriptRawSha256": "3cfd727f7c199418b393c20cbc33081762a268128ea4c8416d676f7917269486",
+      "shells": [
+        "Bash",
+        "PowerShell"
+      ],
+      "exitCode": 0,
+      "output": "PASS: requirements intake governance fixtures (Bash/PowerShell JSON and zero-write parity)",
+      "coverage": "Ready/Eligible \u2192 Active/Active with N/A \u2192 Completed/archive; negative hash/missing/path/alias/dependency/Eligible; unchanged valid multi-member and archive cases; zero-write JSON parity.",
+      "fixtureInvocationSites": 49,
+      "runtimeCaseCount": "Not instrumented; loops expand static call sites."
+    },
+    {
+      "preset": "intake-review-governance",
+      "script": ".specify/presets/intake-review-governance/tests/test-intake-governance-config.ps1",
+      "scriptRawSha256": "3cfd727f7c199418b393c20cbc33081762a268128ea4c8416d676f7917269486",
+      "shells": [
+        "Bash",
+        "PowerShell"
+      ],
+      "exitCode": 0,
+      "output": "PASS: requirements intake governance fixtures (Bash/PowerShell JSON and zero-write parity)",
+      "coverage": "Ready/Eligible \u2192 Active/Active with N/A \u2192 Completed/archive; negative hash/missing/path/alias/dependency/Eligible; unchanged valid multi-member and archive cases; zero-write JSON parity.",
+      "fixtureInvocationSites": 49,
+      "runtimeCaseCount": "Not instrumented; loops expand static call sites."
+    },
+    {
+      "preset": "intake-sequencing-governance",
+      "script": ".specify/presets/intake-sequencing-governance/tests/test-intake-governance-config.ps1",
+      "scriptRawSha256": "3cfd727f7c199418b393c20cbc33081762a268128ea4c8416d676f7917269486",
+      "shells": [
+        "Bash",
+        "PowerShell"
+      ],
+      "exitCode": 0,
+      "output": "PASS: requirements intake governance fixtures (Bash/PowerShell JSON and zero-write parity)",
+      "coverage": "Ready/Eligible \u2192 Active/Active with N/A \u2192 Completed/archive; negative hash/missing/path/alias/dependency/Eligible; unchanged valid multi-member and archive cases; zero-write JSON parity.",
+      "fixtureInvocationSites": 49,
+      "runtimeCaseCount": "Not instrumented; loops expand static call sites."
+    }
+  ],
+  "ownerB01Decision": "Pending; no human acceptance inferred",
+  "noRemoteWrites": true,
+  "noReinstallOrRelease": true
+}

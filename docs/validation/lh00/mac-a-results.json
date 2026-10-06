@@ -1,0 +1,177 @@
+{
+  "task": "T044 core process",
+  "date": "2026-10-06T19:31:33.007935+00:00",
+  "host": "Mac A, MacBook Air M2 (2023), explicitly owner-confirmed",
+  "versions": {
+    "macOS": "27.0.1",
+    "macOSBuild": "26A434",
+    "architecture": "arm64",
+    "bash": "GNU bash, version 5.3.20(1)-release (aarch64-apple-darwin25.6.0)",
+    "PowerShell": "7.6.6",
+    "python": "Python 3.14.8"
+  },
+  "gitCommit": "e621d195f83f36ab2b99cd35d1b7ae3cbdb8fcdd",
+  "gitState": "Local uncommitted T001–T045 implementation files; no delivery",
+  "authorityPrompt": "Als nächster eigener Auftrag folgt T019–T045. Bitte ausführen.",
+  "authorityPromptNormalizedSha256": "085f2685d8df4677088e60d5ed03dcc35756774bb9fa1fb2978806b5945b841d",
+  "evidencePayloads": [
+    {
+      "path": "docs/validation/lh00/create-results.json",
+      "rawSha256": "9fc0a236466959d423887eb5c6b78ac091b4f35d24c11023dde545a04092e40c"
+    },
+    {
+      "path": "docs/validation/lh00/provenance-negative-results.json",
+      "rawSha256": "9c8a339a72a1ed241587b43927df2aa86cd4f44e65d4a5a109a870144e6c6b9a"
+    },
+    {
+      "path": "docs/validation/lh00/hash-positive-results.json",
+      "rawSha256": "552f4d95ea951f150106b3a10976ea5d25e7a7a7a68c84814f894795c0da50d5"
+    },
+    {
+      "path": "docs/validation/lh00/update-results.json",
+      "rawSha256": "d7590584eb318824ca32164068e85fea5df1705b027f8427766a9ebc72a39581"
+    },
+    {
+      "path": "docs/validation/lh00/delete-results.json",
+      "rawSha256": "f064c5d60829c6761514d3a70a003decec8dc425eb1cdb6c4d57626d96bef643"
+    },
+    {
+      "path": "docs/validation/lh00/recovery-results.json",
+      "rawSha256": "7fab9e6d3eb1357104eb2166c359f2689cc30a6608b9f70aceb73a6aca7adfe7"
+    },
+    {
+      "path": "docs/validation/lh00/authority-negative-results.json",
+      "rawSha256": "a5818481ea88cfb7d08d9a9cc0af2edbf7a2c7317601f54b61021387e0fa8392"
+    },
+    {
+      "path": "docs/validation/lh00/b01-technical-results.json",
+      "rawSha256": "04ab62cfd0d5326af01cc930418811a8d6e2fad94ad8b8defbe98e23ada54e99"
+    },
+    {
+      "path": "docs/validation/lh00/collection-results.json",
+      "rawSha256": "0d06ec9632fd83ff310a8e14fd0d9bc726ea362c41738ad7a4e7a2eb256296dc"
+    },
+    {
+      "path": "docs/validation/lh00/collection-publication-results.json",
+      "rawSha256": "9a42e2901851fd1e9504a698f56124c9da4a9a3d0574089e25aca411c2edb450"
+    },
+    {
+      "path": "docs/validation/lh00/parity-results.json",
+      "rawSha256": "2036eae3655561422aed214d0a17f600f0cc9c057daca6376cad0f52e76374cd"
+    },
+    {
+      "path": "docs/validation/lh00/relative-path-results.json",
+      "rawSha256": "e960515eaa37c8347b6ce0d3e7bed3591f269d9881213c18ccede56d17502afd"
+    },
+    {
+      "path": "docs/validation/lh00/help-results.json",
+      "rawSha256": "3d8a50d7d7debb518758b94f5608d9f1c0a6e87e0d3d10a7b8a5bb07eb151fe0"
+    },
+    {
+      "path": "docs/validation/lh00/routing-status.json",
+      "rawSha256": "b370461182998ac397214a3f8ca02eef397b68aa00e67043ef722c1a351c120c"
+    },
+    {
+      "path": "docs/validation/lh00/t032-update-results.json",
+      "rawSha256": "a9ff6b0477878e5e62cb34a903e8dc7ff96b79a4f96d7b02e50b21296e5bcbab"
+    },
+    {
+      "path": "docs/validation/lh00/t032-correction-update-results.json",
+      "rawSha256": "7cd49e260c6b7a385daa72557a6a3da1deb31d44bda55e2f6f5606fd7c33ac16"
+    },
+    {
+      "path": "docs/validation/lh00/t041-update-results.json",
+      "rawSha256": "5104a44e977ddb38baedc4d0cbd1ee05d31e878bdc0f14b58efe8ba91a869e19"
+    },
+    {
+      "path": "docs/validation/lh00/t041-series-update-results.json",
+      "rawSha256": "449048c5edf94b3cceab3d6eae3c55c813073e491bbe874d26bad58986441c33"
+    },
+    {
+      "path": "docs/validation/lh00/t041-correction-update-results.json",
+      "rawSha256": "f6bf029f3f93c65bc6e06b167c285653c97f4847438759645d1fdc39a3b5b4b3"
+    },
+    {
+      "path": "docs/validation/lh00/t041-finalization-update-results.json",
+      "rawSha256": "3db7846f23b345d2c5b3fc4e7c692da364b3ac0d6d447e91a85c84fba3569dd3"
+    },
+    {
+      "path": "docs/validation/lh00/t041-correction-series-results.json",
+      "rawSha256": "1d2dc6500146677312039be3f9f5a9fbe2981e66b614abf5213f1f10931e802e"
+    },
+    {
+      "path": "docs/validation/lh00/b01-independent-review.md",
+      "rawSha256": "f089baa6ca915845f1d7653e67e03b666783a9ff01d169e5b3f44ab2069371e3"
+    },
+    {
+      "path": "docs/validation/lh00/series-next-results.json",
+      "rawSha256": "8f1239aea2cf8ada5e193c589a8a8fca7ccde95ea35fc41833f8d103a864ed06"
+    },
+    {
+      "path": "docs/validation/lh00/increment2-check-results.json",
+      "rawSha256": "3165b13edec2aecb8989f5f6f63c85b103e31e91e6404deaf469e40d1303206e"
+    },
+    {
+      "path": "specs/intake-review-request.json",
+      "rawSha256": "4c2df67bd9c676a1e9ac34199ce3bf4cc89693bb9b5515e79eb682ddb18eb3b1"
+    },
+    {
+      "path": "specs/intake-review-result.json",
+      "rawSha256": "266ee185d717d5c5d208065eac91169228de9e89ea9d75d3bd8f64a1483308cc"
+    },
+    {
+      "path": "specs/intake-review-report.md",
+      "rawSha256": "098b388068e4fbaf6793ed3831333e331679250026ae55209341b72116777131"
+    },
+    {
+      "path": "specs/intake-authoring-receipts/lh-00.json",
+      "rawSha256": "e9f9aaea14e87412915dc29d7d55e90ffd95da1fd28dafea3ac59b0d2217bf99"
+    },
+    {
+      "path": "specs/intake-series/lh00-process/manifest.json",
+      "rawSha256": "8ef809bcb6e9fb932586ebced74c0171f96884709520e1dc74ac91a9ee273f0f"
+    },
+    {
+      "path": "specs/intake-series/lh00-process/receipt.json",
+      "rawSha256": "029bda40920839ce2a604a8567aa3b9ac0be49ef011a210d109a8d6fae122977"
+    }
+  ],
+  "coreDecision": {
+    "E01": "Actual isolated Create and both receipt validators passed",
+    "E02": "Independent full bilingual fixture reader/review Ready; structural text proof only",
+    "E04": "Negatives precede positives; ordinary Update, logical Delete and actual partial-write rollback evidenced",
+    "E05": "Distinct complete fixture and real T032/T041 independent reviews Ready; all final 101 recursive bindings current, no open findings or accepted risks.",
+    "E07": "Exact Ready/Eligible bootstrap, all-three paired collection lifecycle/negatives and actual read-only status/next passed, zero writes; no real activation; human B01 Active closure pending."
+  },
+  "coreDecisionSha256": "08695dce3767a82fe3f7e1c0e60f5f2e57bc69cd0c6d710d3467181935f40ed4",
+  "boundaries": [
+    "No actual feature pilot or real series Active/Completed",
+    "Native Mac B/Windows11/Ubuntu-WSL2 not tested",
+    "No screenreader/Braille/textbrowser field acceptance",
+    "No human B01 or limited-pilot acceptance",
+    "Statistics/homogeneity remain failing due generated statistics drift; no commit authority"
+  ],
+  "currentIntakeReceiptId": "4ecf3164-881a-413e-9ab0-d717de91757f",
+  "currentTargetNormalizedSha256": "ea4919bfcff0bfcfbef8bb557bd37ad2483ad6b5ec28b4e1668db4a6948a35bd",
+  "currentSeriesId": "3c0e3e97-1268-4828-aeba-c3f3d17637de",
+  "currentSourceReview": {
+    "reviewId": "1bcdfd12-6424-4097-a2fd-c3e522095794",
+    "state": "Ready",
+    "currentRecursiveBindings": 101,
+    "receiptAndReviewBashPowerShell": "Passed"
+  },
+  "promptBoundary": "Authority prompt joins the exact selected task-scope text and execution request; hash identifies this scope record, not raw app transport.",
+  "currentSeriesReceiptId": "aef15e3c-762c-4d5a-addc-c859f7e7425a",
+  "repositoryGateResults": {
+    "secretScan": "Passed",
+    "gitleaksExactBaseline": "Passed, zero additional findings",
+    "presetMatrix": "Passed",
+    "PowerShellAnalysis": "Passed",
+    "routing": "Aligned",
+    "diffAndOwnedLinks": "Passed",
+    "statistics": "Failed: generated statistics drift, clean-tree render requires separately authorized commit package",
+    "homogeneity": "Failed: generated statistics drift",
+    "B01OwnerDecision": "Pending",
+    "T045LimitedPilotDecision": "Pending; failed checks prevent ReadyForPilot"
+  }
+}

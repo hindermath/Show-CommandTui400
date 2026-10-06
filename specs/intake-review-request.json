@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "reviewId": "a65e169c-aacd-4dac-b80b-bad165da3679",
+  "reviewId": "1bcdfd12-6424-4097-a2fd-c3e522095794",
   "mode": "Single",
   "policy": "generic-markdown",
   "targets": [
@@ -20,10 +20,10 @@
     "operatorExceptions": []
   },
   "authority": {
-    "request": "Owner-approved IAD013: complete independent Single review after PR #29/#30 runner/governance changes; IAD009 requires a reviewer distinct from the author.",
+    "request": "Explicit local T019–T045 includes full distinct-agent T041 review after ordinary intake/coherent series corrections IAD017/IAD018 under IAD014/IAD015. No Active/Completed, remote delivery, feature pilot or human gate/risk acceptance.",
     "evidence": {
-      "path": "docs/planning/lh00-macos15-refresh-decisions.md",
-      "normalizedSha256": "e358e9e8640e886207838dc89baf199d4a2ba104785d20742e485308439dfb67"
+      "path": "docs/planning/lh00-collection-language-finalization.md",
+      "normalizedSha256": "adc9f0d7614012eb7ed55422593e5218fbd6d43bfd388630ba4da3fb79719c2f"
     },
     "targetMutationAllowed": false,
     "implementationAllowed": false,
@@ -31,8 +31,8 @@
     "routingAccessAllowed": false
   },
   "projectProfile": "show-commandtui400-de-en",
-  "evidenceDelivery": "Isolated local review result/report only; parent explicitly commissioned for evidence-only MergeAndSync/admin delivery.",
-  "priorReviewId": "45881080-479a-47f9-9a62-e728b3d70244",
-  "priorReviewArchive": "specs/intake-review-archive/45881080-479a-47f9-9a62-e728b3d70244",
-  "targetHash": "fff66ab341600428fffdbd5f8e27cfa47ff780558b69166784f7a72aa2477370"
+  "evidenceDelivery": "Only new current independent local review triplet.",
+  "priorReviewId": "7012677e-6a5f-42f3-9715-091f33484e2e",
+  "priorReviewArchive": "specs/intake-review-archive/7012677e-6a5f-42f3-9715-091f33484e2e",
+  "targetHash": "ea4919bfcff0bfcfbef8bb557bd37ad2483ad6b5ec28b4e1668db4a6948a35bd"
 }

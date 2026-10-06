@@ -121,3 +121,9 @@ STATS.md
 !intakes/
 intakes/*
 !intakes/LH-[0-9][0-9].md
+
+# LH-00 portable collection and exact public-guidance scan policy
+# Portabler Collection-Vertrag und eng begrenzte Scan-Ausnahmen
+!requirements/
+!requirements/**
+!.gitleaks.toml

@@ -1,0 +1,313 @@
+{
+  "host": "Mac A; MacBook Air M2 (2023); macOS arm64",
+  "source": "integrated scripts derived from specify-cli 0.12.8",
+  "fixtureRootLabel": "temporary isolated parity root",
+  "results": [
+    {
+      "case": "valid-prerequisites",
+      "language": "bash",
+      "arguments": [
+        "check-prerequisites.sh",
+        "--json",
+        "--require-tasks",
+        "--include-tasks"
+      ],
+      "exit": 0,
+      "stdout": "{\"FEATURE_DIR\":\"<FIXTURE_ROOT>/specs/001-fixture\",\"AVAILABLE_DOCS\":[\"research.md\",\"data-model.md\",\"contracts/\",\"quickstart.md\",\"tasks.md\"]}",
+      "stderr": "",
+      "writes": 0,
+      "payloadRawSha256": "fb82a2586889f384457e8b6965a26d91e81cbe188b661c4b795a0ad929479cc5",
+      "decision": "accept",
+      "decisionSha256": "c125d0397b605657bc89340953f5f2897a7e00a9b7d3474fa53720c8ccbbb3e3"
+    },
+    {
+      "case": "invalid-root",
+      "language": "bash",
+      "arguments": [
+        "check-prerequisites.sh",
+        "--json",
+        "--require-tasks",
+        "--include-tasks"
+      ],
+      "exit": 1,
+      "stdout": "",
+      "stderr": "ERROR: SPECIFY_INIT_DIR does not point to an existing directory: <FIXTURE_ROOT>/absent\nERROR: Failed to resolve feature paths",
+      "writes": 0,
+      "payloadRawSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "decision": "reject",
+      "decisionSha256": "084e990a49ba65e622926853785e0ed05c63fc7fbf798a26e8242b5ee3d7ce9f"
+    },
+    {
+      "case": "feature-preview",
+      "language": "bash",
+      "arguments": [
+        "create-new-feature.sh",
+        "--json",
+        "--dry-run",
+        "--short-name",
+        "fixture",
+        "--number",
+        "2",
+        "Local fixture"
+      ],
+      "exit": 0,
+      "stdout": "{\"BRANCH_NAME\":\"002-fixture\",\"SPEC_FILE\":\"<FIXTURE_ROOT>/specs/002-fixture/spec.md\",\"FEATURE_NUM\":\"002\",\"DRY_RUN\":true}",
+      "stderr": "",
+      "writes": 0,
+      "payloadRawSha256": "f5f1c66b1896fbc3267c58b7b8d06e2eecdbe37f98dc1889699fb6adc7d30d26",
+      "decision": "accept",
+      "decisionSha256": "c125d0397b605657bc89340953f5f2897a7e00a9b7d3474fa53720c8ccbbb3e3"
+    },
+    {
+      "case": "setup-existing-plan",
+      "language": "bash",
+      "arguments": [
+        "setup-plan.sh",
+        "--json"
+      ],
+      "exit": 0,
+      "stdout": "{\"FEATURE_SPEC\":\"<FIXTURE_ROOT>/specs/001-fixture/spec.md\",\"IMPL_PLAN\":\"<FIXTURE_ROOT>/specs/001-fixture/plan.md\",\"SPECS_DIR\":\"<FIXTURE_ROOT>/specs/001-fixture\",\"BRANCH\":\"001-fixture\"}",
+      "stderr": "Plan already exists at <FIXTURE_ROOT>/specs/001-fixture/plan.md, skipping template copy",
+      "writes": 0,
+      "payloadRawSha256": "73d338a41a3bd71a4bc3e804202bde37b1295400e8a4e89a60579316b58842bc",
+      "decision": "accept",
+      "decisionSha256": "c125d0397b605657bc89340953f5f2897a7e00a9b7d3474fa53720c8ccbbb3e3"
+    },
+    {
+      "case": "setup-existing-tasks",
+      "language": "bash",
+      "arguments": [
+        "setup-tasks.sh",
+        "--json"
+      ],
+      "exit": 0,
+      "stdout": "{\"FEATURE_DIR\":\"<FIXTURE_ROOT>/specs/001-fixture\",\"AVAILABLE_DOCS\":[\"research.md\",\"data-model.md\",\"contracts/\",\"quickstart.md\"],\"TASKS_TEMPLATE\":\"<FIXTURE_ROOT>/.specify/templates/tasks-template.md\"}",
+      "stderr": "",
+      "writes": 0,
+      "payloadRawSha256": "5de4f5c2f452ef5f9b6435a586dd645909299102c34bb2deb17c562a50ac979e",
+      "decision": "accept",
+      "decisionSha256": "c125d0397b605657bc89340953f5f2897a7e00a9b7d3474fa53720c8ccbbb3e3"
+    },
+    {
+      "case": "setup-new-plan",
+      "language": "bash",
+      "arguments": [
+        "setup-plan.sh",
+        "--json"
+      ],
+      "exit": 0,
+      "stdout": "{\"FEATURE_SPEC\":\"<FIXTURE_ROOT>/specs/001-fixture/spec.md\",\"IMPL_PLAN\":\"<FIXTURE_ROOT>/specs/001-fixture/plan.md\",\"SPECS_DIR\":\"<FIXTURE_ROOT>/specs/001-fixture\",\"BRANCH\":\"001-fixture\"}",
+      "stderr": "Copied plan template to <FIXTURE_ROOT>/specs/001-fixture/plan.md",
+      "writes": 1,
+      "payloadRawSha256": "73d338a41a3bd71a4bc3e804202bde37b1295400e8a4e89a60579316b58842bc",
+      "decision": "accept",
+      "decisionSha256": "c125d0397b605657bc89340953f5f2897a7e00a9b7d3474fa53720c8ccbbb3e3"
+    },
+    {
+      "case": "setup-new-tasks",
+      "language": "bash",
+      "arguments": [
+        "setup-tasks.sh",
+        "--json"
+      ],
+      "exit": 0,
+      "stdout": "{\"FEATURE_DIR\":\"<FIXTURE_ROOT>/specs/001-fixture\",\"AVAILABLE_DOCS\":[\"research.md\",\"data-model.md\",\"contracts/\",\"quickstart.md\"],\"TASKS_TEMPLATE\":\"<FIXTURE_ROOT>/.specify/templates/tasks-template.md\"}",
+      "stderr": "",
+      "writes": 0,
+      "payloadRawSha256": "5de4f5c2f452ef5f9b6435a586dd645909299102c34bb2deb17c562a50ac979e",
+      "decision": "accept",
+      "decisionSha256": "c125d0397b605657bc89340953f5f2897a7e00a9b7d3474fa53720c8ccbbb3e3"
+    },
+    {
+      "case": "valid-prerequisites",
+      "language": "powershell",
+      "arguments": [
+        "check-prerequisites.ps1",
+        "-Json",
+        "-RequireTasks",
+        "-IncludeTasks"
+      ],
+      "exit": 0,
+      "stdout": "{\"FEATURE_DIR\":\"<FIXTURE_ROOT>/specs/001-fixture\",\"AVAILABLE_DOCS\":[\"research.md\",\"data-model.md\",\"contracts/\",\"quickstart.md\",\"tasks.md\"]}",
+      "stderr": "",
+      "writes": 0,
+      "payloadRawSha256": "fb82a2586889f384457e8b6965a26d91e81cbe188b661c4b795a0ad929479cc5",
+      "decision": "accept",
+      "decisionSha256": "c125d0397b605657bc89340953f5f2897a7e00a9b7d3474fa53720c8ccbbb3e3"
+    },
+    {
+      "case": "invalid-root",
+      "language": "powershell",
+      "arguments": [
+        "check-prerequisites.ps1",
+        "-Json",
+        "-RequireTasks",
+        "-IncludeTasks"
+      ],
+      "exit": 1,
+      "stdout": "",
+      "stderr": "ERROR: SPECIFY_INIT_DIR does not point to an existing directory: <FIXTURE_ROOT>/absent",
+      "writes": 0,
+      "payloadRawSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "decision": "reject",
+      "decisionSha256": "084e990a49ba65e622926853785e0ed05c63fc7fbf798a26e8242b5ee3d7ce9f"
+    },
+    {
+      "case": "feature-preview",
+      "language": "powershell",
+      "arguments": [
+        "create-new-feature.ps1",
+        "-Json",
+        "-DryRun",
+        "-ShortName",
+        "fixture",
+        "-Number",
+        "2",
+        "Local fixture"
+      ],
+      "exit": 0,
+      "stdout": "{\"BRANCH_NAME\":\"002-fixture\",\"SPEC_FILE\":\"<FIXTURE_ROOT>/specs/002-fixture/spec.md\",\"FEATURE_NUM\":\"002\",\"DRY_RUN\":true}",
+      "stderr": "",
+      "writes": 0,
+      "payloadRawSha256": "f5f1c66b1896fbc3267c58b7b8d06e2eecdbe37f98dc1889699fb6adc7d30d26",
+      "decision": "accept",
+      "decisionSha256": "c125d0397b605657bc89340953f5f2897a7e00a9b7d3474fa53720c8ccbbb3e3"
+    },
+    {
+      "case": "setup-existing-plan",
+      "language": "powershell",
+      "arguments": [
+        "setup-plan.ps1",
+        "-Json"
+      ],
+      "exit": 0,
+      "stdout": "{\"FEATURE_SPEC\":\"<FIXTURE_ROOT>/specs/001-fixture/spec.md\",\"IMPL_PLAN\":\"<FIXTURE_ROOT>/specs/001-fixture/plan.md\",\"SPECS_DIR\":\"<FIXTURE_ROOT>/specs/001-fixture\",\"BRANCH\":\"001-fixture\"}",
+      "stderr": "Plan already exists at <FIXTURE_ROOT>/specs/001-fixture/plan.md, skipping template copy",
+      "writes": 0,
+      "payloadRawSha256": "73d338a41a3bd71a4bc3e804202bde37b1295400e8a4e89a60579316b58842bc",
+      "decision": "accept",
+      "decisionSha256": "c125d0397b605657bc89340953f5f2897a7e00a9b7d3474fa53720c8ccbbb3e3"
+    },
+    {
+      "case": "setup-existing-tasks",
+      "language": "powershell",
+      "arguments": [
+        "setup-tasks.ps1",
+        "-Json"
+      ],
+      "exit": 0,
+      "stdout": "{\"FEATURE_DIR\":\"<FIXTURE_ROOT>/specs/001-fixture\",\"AVAILABLE_DOCS\":[\"research.md\",\"data-model.md\",\"contracts/\",\"quickstart.md\"],\"TASKS_TEMPLATE\":\"<FIXTURE_ROOT>/.specify/templates/tasks-template.md\"}",
+      "stderr": "",
+      "writes": 0,
+      "payloadRawSha256": "5de4f5c2f452ef5f9b6435a586dd645909299102c34bb2deb17c562a50ac979e",
+      "decision": "accept",
+      "decisionSha256": "c125d0397b605657bc89340953f5f2897a7e00a9b7d3474fa53720c8ccbbb3e3"
+    },
+    {
+      "case": "setup-new-plan",
+      "language": "powershell",
+      "arguments": [
+        "setup-plan.ps1",
+        "-Json"
+      ],
+      "exit": 0,
+      "stdout": "{\"FEATURE_SPEC\":\"<FIXTURE_ROOT>/specs/001-fixture/spec.md\",\"IMPL_PLAN\":\"<FIXTURE_ROOT>/specs/001-fixture/plan.md\",\"SPECS_DIR\":\"<FIXTURE_ROOT>/specs/001-fixture\",\"BRANCH\":\"001-fixture\"}",
+      "stderr": "Copied plan template to <FIXTURE_ROOT>/specs/001-fixture/plan.md",
+      "writes": 1,
+      "payloadRawSha256": "73d338a41a3bd71a4bc3e804202bde37b1295400e8a4e89a60579316b58842bc",
+      "decision": "accept",
+      "decisionSha256": "c125d0397b605657bc89340953f5f2897a7e00a9b7d3474fa53720c8ccbbb3e3"
+    },
+    {
+      "case": "setup-new-tasks",
+      "language": "powershell",
+      "arguments": [
+        "setup-tasks.ps1",
+        "-Json"
+      ],
+      "exit": 0,
+      "stdout": "{\"FEATURE_DIR\":\"<FIXTURE_ROOT>/specs/001-fixture\",\"AVAILABLE_DOCS\":[\"research.md\",\"data-model.md\",\"contracts/\",\"quickstart.md\"],\"TASKS_TEMPLATE\":\"<FIXTURE_ROOT>/.specify/templates/tasks-template.md\"}",
+      "stderr": "",
+      "writes": 0,
+      "payloadRawSha256": "5de4f5c2f452ef5f9b6435a586dd645909299102c34bb2deb17c562a50ac979e",
+      "decision": "accept",
+      "decisionSha256": "c125d0397b605657bc89340953f5f2897a7e00a9b7d3474fa53720c8ccbbb3e3"
+    },
+    {
+      "case": "advanced-function-empty-home",
+      "language": "powershell",
+      "arguments": [
+        "Test-SpecKitPrerequisites",
+        "-Json",
+        "-PathsOnly"
+      ],
+      "exit": 0,
+      "stdout": "{\"REPO_ROOT\":\"<FIXTURE_ROOT>\",\"BRANCH\":\"001-fixture\",\"FEATURE_DIR\":\"<FIXTURE_ROOT>/specs/001-fixture\",\"FEATURE_SPEC\":\"<FIXTURE_ROOT>/specs/001-fixture/spec.md\",\"IMPL_PLAN\":\"<FIXTURE_ROOT>/specs/001-fixture/plan.md\",\"TASKS\":\"<FIXTURE_ROOT>/specs/001-fixture/tasks.md\"}",
+      "stderr": "",
+      "writes": 0,
+      "payloadRawSha256": "c49b3fa465d8bf766c038aaed65a8bbc2d1727776f39ae3955d9c71f114f367d",
+      "decision": "accept",
+      "decisionSha256": "c125d0397b605657bc89340953f5f2897a7e00a9b7d3474fa53720c8ccbbb3e3"
+    },
+    {
+      "case": "advanced-function-help",
+      "language": "powershell",
+      "arguments": [
+        "Test-SpecKitPrerequisites",
+        "-Help"
+      ],
+      "exit": 0,
+      "stdout": "Usage: check-prerequisites.ps1 [OPTIONS]\n\nConsolidated prerequisite checking for Spec-Driven Development workflow.\n\nOPTIONS:\n  -Json               Output in JSON format\n  -RequireTasks       Require tasks.md to exist (for implementation phase)\n  -IncludeTasks       Include tasks.md in AVAILABLE_DOCS list\n  -PathsOnly          Only output path variables (no prerequisite validation)\n  -Help, -h           Show this help message\n\nEXAMPLES:\n  # Check task prerequisites (plan.md required)\n  .\\check-prerequisites.ps1 -Json\n  \n  # Check implementation prerequisites (plan.md + tasks.md required)\n  .\\check-prerequisites.ps1 -Json -RequireTasks -IncludeTasks\n  \n  # Get feature paths only (no validation)\n  .\\check-prerequisites.ps1 -PathsOnly",
+      "stderr": "",
+      "writes": 0,
+      "payloadRawSha256": "ed7545069bdac3e6285b8db98dbf59fed922a93bfc5bf55d4ccad49b83ae99ce",
+      "decision": "accept",
+      "decisionSha256": "c125d0397b605657bc89340953f5f2897a7e00a9b7d3474fa53720c8ccbbb3e3"
+    },
+    {
+      "case": "advanced-function-help",
+      "language": "powershell",
+      "arguments": [
+        "New-SpecKitFeature",
+        "-Help"
+      ],
+      "exit": 0,
+      "stdout": "Usage: ./create-new-feature.ps1 [-Json] [-DryRun] [-AllowExistingBranch] [-ShortName <name>] [-Number N] [-Timestamp] <feature description>\n\nOptions:\n  -Json               Output in JSON format\n  -DryRun             Compute feature name and paths without creating directories or files\n  -AllowExistingBranch  Reuse an existing feature directory if it already exists\n  -ShortName <name>   Provide a custom short name (2-4 words) for the feature\n  -Number N           Specify branch number manually (overrides auto-detection)\n  -Timestamp          Use timestamp prefix (YYYYMMDD-HHMMSS) instead of sequential numbering\n  -Help               Show this help message\n\nExamples:\n  ./create-new-feature.ps1 'Add user authentication system' -ShortName 'user-auth'\n  ./create-new-feature.ps1 'Implement OAuth2 integration for API'\n  ./create-new-feature.ps1 -Timestamp -ShortName 'user-auth' 'Add user authentication'",
+      "stderr": "",
+      "writes": 0,
+      "payloadRawSha256": "36ee48510ceef9cc832f722710a20bdf42366b0b30ff5e2c6e169cc2b8beb035",
+      "decision": "accept",
+      "decisionSha256": "c125d0397b605657bc89340953f5f2897a7e00a9b7d3474fa53720c8ccbbb3e3"
+    },
+    {
+      "case": "advanced-function-help",
+      "language": "powershell",
+      "arguments": [
+        "Initialize-SpecKitPlan",
+        "-Help"
+      ],
+      "exit": 0,
+      "stdout": "Usage: ./setup-plan.ps1 [-Json] [-Help]\n  -Json     Output results in JSON format\n  -Help     Show this help message",
+      "stderr": "",
+      "writes": 0,
+      "payloadRawSha256": "4bc28573c923fda4b53aa63f6aab5c5816129a80e61615066ffb86f2e0a5779e",
+      "decision": "accept",
+      "decisionSha256": "c125d0397b605657bc89340953f5f2897a7e00a9b7d3474fa53720c8ccbbb3e3"
+    },
+    {
+      "case": "advanced-function-help",
+      "language": "powershell",
+      "arguments": [
+        "Initialize-SpecKitTasks",
+        "-Help"
+      ],
+      "exit": 0,
+      "stdout": "Usage: setup-tasks.ps1 [-Json] [-Help]",
+      "stderr": "",
+      "writes": 0,
+      "payloadRawSha256": "b632cce3b3b1d7b9a0fc8f08f2013578d038ff186de58c8d2fcf802f70045f04",
+      "decision": "accept",
+      "decisionSha256": "c125d0397b605657bc89340953f5f2897a7e00a9b7d3474fa53720c8ccbbb3e3"
+    }
+  ]
+}

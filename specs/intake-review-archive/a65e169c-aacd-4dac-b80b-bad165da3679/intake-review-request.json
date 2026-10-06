@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.1",
+  "reviewId": "a65e169c-aacd-4dac-b80b-bad165da3679",
+  "mode": "Single",
+  "policy": "generic-markdown",
+  "targets": [
+    {
+      "path": "intakes/LH-00.md",
+      "role": "Primary"
+    }
+  ],
+  "series": {
+    "orderedTargetPaths": [],
+    "roots": [],
+    "dependencies": []
+  },
+  "campaign": {
+    "manifestPath": "N/A",
+    "workers": [],
+    "operatorExceptions": []
+  },
+  "authority": {
+    "request": "Owner-approved IAD013: complete independent Single review after PR #29/#30 runner/governance changes; IAD009 requires a reviewer distinct from the author.",
+    "evidence": {
+      "path": "docs/planning/lh00-macos15-refresh-decisions.md",
+      "normalizedSha256": "e358e9e8640e886207838dc89baf199d4a2ba104785d20742e485308439dfb67"
+    },
+    "targetMutationAllowed": false,
+    "implementationAllowed": false,
+    "remoteAccessAllowed": false,
+    "routingAccessAllowed": false
+  },
+  "projectProfile": "show-commandtui400-de-en",
+  "evidenceDelivery": "Isolated local review result/report only; parent explicitly commissioned for evidence-only MergeAndSync/admin delivery.",
+  "priorReviewId": "45881080-479a-47f9-9a62-e728b3d70244",
+  "priorReviewArchive": "specs/intake-review-archive/45881080-479a-47f9-9a62-e728b3d70244",
+  "targetHash": "fff66ab341600428fffdbd5f8e27cfa47ff780558b69166784f7a72aa2477370"
+}

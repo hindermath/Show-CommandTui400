@@ -1,0 +1,37 @@
+{
+  "operationId": "20345501-30be-4092-9318-397aa7588980",
+  "seriesId": "3c0e3e97-1268-4828-aeba-c3f3d17637de",
+  "targetOrder": [
+    {
+      "path": "intakes/LH-00.md",
+      "role": "Primary",
+      "normalizedSha256": "0481d515cfe4bfac75365890d06147e48965c7062b65953179eb41cc8c82a24e",
+      "status": "Eligible"
+    }
+  ],
+  "roots": [
+    "intakes/LH-00.md"
+  ],
+  "typedEdges": [],
+  "status": "Ready",
+  "roles": {
+    "requirements-index": "requirements/RequirementsIndex.md",
+    "requirements-intake": "intakes",
+    "intake-order": "docs/Lastenheft-Plan.md",
+    "requirements-baseline": "requirements/baseline"
+  },
+  "collections": {
+    "baseline": "requirements/baseline",
+    "active": "intakes",
+    "archive": "requirements/intakes/archive",
+    "backlog": "requirements/intakes/backlog",
+    "history": "requirements/intakes/history",
+    "seriesManifest": "specs/intake-series/lh00-process/manifest.json"
+  },
+  "evidencePaths": [
+    "docs/planning/lh00-increment2-update-decisions.md",
+    "docs/Lastenheft-Plan.md"
+  ],
+  "publicationBoundary": "Only after paired T039 validation and required current owner B01 decision; no real Active/Completed or feature pilot.",
+  "explicitAuthority": "User requests named T019–T045 execution; exact contract preserves all paths/IDs and no missing intakes."
+}

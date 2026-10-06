@@ -1,0 +1,57 @@
+{
+  "task": "T026",
+  "intakeId": "b719969f-f174-423f-baf7-212102bbbafd",
+  "oldReceiptId": "0e4bfa02-7b60-434b-9036-b76ed7589bd3",
+  "newReceiptId": "cd33f5b6-2852-4ab1-b761-d79b05bc5c92",
+  "operationId": "d94e6b6c-52fc-4968-9f7c-69c64d23d531",
+  "archive": "specs/intake-authoring-archive/b719969f-f174-423f-baf7-212102bbbafd/d94e6b6c-52fc-4968-9f7c-69c64d23d531",
+  "oldTargetSha256": "388473bd27949e9d23831663c3e5d4462c3cc16d393893fbe5e81176bf3cc0cb",
+  "newTargetSha256": "6829cc03c49fa573d40c36f61375dd0bc6b00f20f5f4b612f7a6faba289132fc",
+  "archiveRawExact": true,
+  "receiptRuns": [
+    {
+      "shell": "bash",
+      "exitCode": 0,
+      "output": "PASS: intake authoring cd33f5b6-2852-4ab1-b761-d79b05bc5c92 is current (ReadyForReview, 2 sources, intakes/LH-TEST.md)"
+    },
+    {
+      "shell": "PowerShell",
+      "exitCode": 0,
+      "output": "PASS: intake authoring cd33f5b6-2852-4ab1-b761-d79b05bc5c92 is current (ReadyForReview, 2 sources, intakes/LH-TEST.md)"
+    }
+  ],
+  "operationRuns": [
+    {
+      "shell": "bash",
+      "exitCode": 0,
+      "output": "PASS: IntakeOperation artifact is valid (<fixture-root>/specs/intake-authoring-operations/d94e6b6c-52fc-4968-9f7c-69c64d23d531/operation.json)"
+    },
+    {
+      "shell": "PowerShell",
+      "exitCode": 0,
+      "output": "PASS: IntakeOperation artifact is valid (<fixture-root>/specs/intake-authoring-operations/d94e6b6c-52fc-4968-9f7c-69c64d23d531/operation.json)"
+    }
+  ],
+  "staleReviewRuns": [
+    {
+      "shell": "bash",
+      "exitCode": 2,
+      "output": "ERROR: target hash drift: intakes/LH-TEST.md"
+    },
+    {
+      "shell": "PowerShell",
+      "exitCode": 2,
+      "output": "ERROR: target hash drift: intakes/LH-TEST.md"
+    }
+  ],
+  "activeReviewRemoved": true,
+  "downstreamRuns": 0,
+  "initialHarnessCandidateFailure": {
+    "provenanceMode": "Update was invalid; correct contract is Supersession",
+    "pairedExitCodes": [
+      2,
+      2
+    ],
+    "boundary": "Inactive retained harness candidate only, no project active writes. Copy reconstructed from frozen original before corrected run."
+  }
+}

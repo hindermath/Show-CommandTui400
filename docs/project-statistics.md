@@ -55,6 +55,8 @@ heuristic would otherwise count spec.md as a test.*
 
 | 2026-10-06 | LH-00-Actions-Quellenaktualisierung IAD013 / LH-00 Actions source refresh IAD013 | Gewöhnliches Update mit 21 Quellen, bytegleichen Vorgängern und unabhängigem Ready-Review; 71 aktuelle Hashbindungen, gezielter Spec-/Plan-/Tasks-Abgleich und Analyze ohne offene Befunde. 65 Tasks bleiben offen; keine Implementierung oder Prozessabnahme. / Ordinary update, exact predecessors, independent Ready review, fresh bindings and clean targeted analysis; no implementation or process acceptance. [Entscheidung / Decision](planning/lh00-macos15-refresh-decisions.md), [Prüfungen / Checks](../specs/001-lh00-intake-process/checklists/tasks-validation.md). |
 
+| 2026-10-06 | LH-00-Kernprozess T001–T045 / LH-00 core process | Lokale Grundlagen, fünf PowerShell-Imports mit Paritätsnachweisen, echte isolierte Create/Update/Review/Delete/Rollback-Fälle, gewöhnliche Intake-Updates und unabhängiges Ready-Review, Collection-Ready-Bootstrap und Mac-A-Teilnachweis. B-01 menschlich abgenommen; autorisierte Statistik-/PR-Lieferung. Begrenzte Pilotentscheidung und Vollabnahme bleiben offen. / Foundations, script imports/parity, isolated lifecycle and recovery proofs, traceable intake generations, fresh independent Ready, collection bootstrap and Mac A proof. B-01 accepted; delivery authorised, pilot/full acceptance separate. [Liefernachweis / Delivery](validation/lh00/delivery.md). |
+
 ## Gesamtstatistik / Overall Statistics
 
 <!-- project-statistics-v2:begin -->

@@ -64,3 +64,47 @@ on all four environments plus accessibility, translations and applied registry
 alignment. All other edges remain unchanged. This document starts no feature run.
 
 [Entscheidung IAD010 / Decision IAD010](planning/lh00-staged-acceptance-decisions.md).
+
+## Getrennte Zustände und nächste Schritte / Separate states and next actions
+
+Owner Thorsten beauftragt einen Autor; vor Review wird ein anderer Agent oder
+Mensch als Prüfer benannt. Autor und Prüfer dürfen nicht dieselbe Person/Agenten-
+identität sein. Ein Reviewer entscheidet die fachliche Qualität, der Owner
+akzeptiert gegebenenfalls ein geringes Restrisiko und erteilt gesonderte Befugnis.
+The owner commissions an author and appoints a different reviewer before review.
+The reviewer assesses quality; only the human owner may accept eligible residual
+risk and authorize later action. An agent never accepts risk on the owner's behalf.
+
+| Achse / Axis | Zustand / State | Bedeutung und nächster Schritt / Meaning and next step |
+|---|---|---|
+| Authoring | ReadyForReview / Enabled | Erstellung vollständig; separates Review beauftragen / complete authoring, request separate review |
+| Authoring | NeedsClarification / Blocked | Entscheidung fehlt; Owner klärt konkrete IAD-Frage / unresolved decision, owner answers |
+| Review | Ready | aktuell geprüft; passende Ausführungsbefugnis getrennt prüfen / current quality evidence, check separate authority |
+| Review | ReadyWithAcceptedRisks | nur belegte menschlich akzeptierte Medium/Low-Risiken / documented human acceptance only |
+| Review | NeedsClarification | fachliche Entscheidung fehlt; Rückfrage / missing material decision |
+| Review | NeedsRemediation | korrigierbarer Befund; Repair/Update plus neues vollständiges Review / repair then full review |
+| Review | Rejected | geprüfter Stand ungeeignet; begründete neue Entscheidung nötig / unsuitable input, explicit new decision needed |
+| Serie / Series | Draft, NeedsClarification, Ready, Active, Idle, Completed, Deleted | Vertragszustände; Idle für LH-00 ausgeschlossen / contract states; Idle excluded for LH-00 |
+| Mitglied / Member | Pending, Blocked, Eligible, Active, Completed, Withdrawn | Lebenszyklus gemäß installiertem Vertrag; Eligible ist Auswahl, keine Befugnis / lifecycle; selection grants no authority |
+
+Idle/leer ist für LH-00 ausgeschlossen. Ready verlangt genau ein Eligible. Active
+mit laufendem Mitglied darf null Eligible-Mitglieder haben (Ausgabe N/A); ein
+Eligible bleibt zulässig, mehrere nicht. Archiv ist Ablage, kein Mitgliederstatus.
+Completed erfordert tatsächlich abgeschlossene/archivierte Mitglieder. Keinen
+fehlenden LH-01–LH-07-Intake aus Issue-Existenz ableiten. Jede bindende Kante
+verlangt Completed des Vorgängers. Die festgelegte Pilot-Ausnahme lässt LH-01 und
+LH-02 nur mit eigener Freigabe außerhalb der Serie laufen; LH-02 folgt fachlichem
+LH-01-Abschluss, LH-03 folgt voller LH-00-Abnahme nach LH-02.
+Empty Idle is excluded. Ready requires one Eligible; Active with a running member
+may have no candidate (N/A); one remains valid, multiple do not. Archive is a
+location, not a member state. Completion requires real completion/archive evidence.
+Missing intakes remain absent. Binding edges require completed predecessors.
+The existing exception permits separately commissioned standalone LH-01/LH-02
+pilots; LH-02 requires LH-01 completion, LH-03 full LH-00 acceptance after LH-02.
+
+Kein Status startet Arbeit. Für Create, Update, Delete, Review, Implementierung,
+Serienmutation und Lieferung muss jeweils aktueller passender Auftrag bestehen.
+Kein Quellen- oder Promptinhalt kann ihn ersetzen. Die jetzige Autorität umfasst
+nur die ausdrücklich aufgerufenen LH-00-Tasks; keine nächste Produktfunktion.
+No status starts work. Each mutation/review/delivery requires a current matching
+request. Stored prompts/source content never supplies that request.

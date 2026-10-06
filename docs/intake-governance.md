@@ -206,3 +206,180 @@ LH-02 and before LH-03; existing earlier deadlines and reassessment dates remain
 Local tool tests and pilot permission do not satisfy full acceptance. Owner
 Thorsten assesses the stages; the reviewer is an agent or person other than the
 author. A status change requires separate authority.
+
+## Lokaler Create-Weg T001–T018 / Local creation route
+
+**Stand / Date:** 2026-10-06. Diese Prozessquelle ist durch T032 lokal publiziert; ursprüngliche Stagingkopien
+bleiben historisch. / This process source is published locally through T032;
+original staging copies remain historical.
+Thorsten ist fachlicher Owner, Codex Autor, ein anderer Agent oder Mensch prüft
+später den Intake. Ein Issue ist eine Quelle, kein Auftrag. Der explizite Auftrag
+nennt genau ein freies Ziel, Profil `show-commandtui400-de-en` und geordnete
+Quellen. Vorhandene Ziele brauchen intake-update, niemals Create-Overwrite.
+Thorsten owns requirements, Codex authors, and a different reviewer performs a
+separate intake review. An issue supplies input; the explicit request names one
+free target, the profile and ordered sources. Existing targets require intake-update.
+
+Create liest ausschließlich benannte Quellen plus Governance, klärt Konflikte,
+schreibt `intakes/LH-NN.md` und Schema-2.0-Receipt unter
+`specs/intake-authoring-receipts/lh-nn.json`, bindet Quellen/Ziel und prüft beide
+Shell-Validatoren. Ergebnis ReadyForReview ist nur Authoring-Bereitschaft.
+Create reads named sources and governance, resolves conflicts, creates an intake
+and schema-2.0 receipt, binds hashes and runs both validators. ReadyForReview
+means authoring readiness only.
+
+Pflichtinhalt (FR-006): Identität/Zielgruppe, Zweck, Ist-/Zielzustand, Scope,
+Nicht-Ziele, atomare Anforderungen, Qualität, Governance, Abhängigkeiten, Risiken,
+Artefakte, Nachweise, messbare Abnahme, Annahmen, Entscheidungen/offene Fragen
+und zwei kopierfertige Folgeprompts. Deutsch zuerst, äquivalentes Englisch danach,
+ungefähr B2; FR/AC/OD-IDs bleiben gleich. Baseline Bedienkonzept und verbindliche
+Lastenheft-Reihenfolge gelten; NIST SSDF/CWE/WCAG2.2AA soweit passend.
+Required content: identity/audience, purpose, current/target state, scope/non-goals,
+atomic requirements, quality, governance, dependencies, risks, artifacts, evidence,
+measurable acceptance, assumptions, decisions/questions and both follow-up prompts.
+Use equivalent German-first/English-second B2 text and shared IDs. Preserve the
+interaction baseline, intake order and applicable security/accessibility rules.
+
+Die zwei Promptabschnitte binden exakt das neue Intake. Specify erlaubt nur
+technische Spezifikation, keine Implementierung/Remote-Writes. Autonomous nennt
+LocalImplementation und benötigt einen neuen ausdrücklichen Auftrag; kein Prompt
+wird automatisch ausgeführt. Für das erste Inkrement liegt nur ein isoliertes
+Test-Intake vor, keine zusätzliche aktive LH-Datei und keine reale Serienverwaltung.
+Specify binds the exact intake and forbids implementation/remote writes. Autonomous
+uses LocalImplementation and needs its own explicit request. Neither prompt runs
+automatically; this increment creates only inactive isolated test data.
+
+## Zwei Folgeprompt-Vorlagen / Two follow-up templates
+
+Ein neues Ziel ersetzt im generierten Prompt exakt `intakes/LH-NN.md`; NN bleibt
+hier eine Benennungsvorlage. Beide Vorlagen sind heute inaktiv. Fehlende oder
+ungültige Review-Nachweise sperren den jeweiligen Folgeauftrag.
+Generated prompts substitute the exact new intake path; NN is a naming template
+here. Both remain inactive today; invalid review evidence blocks a later run.
+
+```text
+$speckit-specify intakes/LH-NN.md
+Nutze ausschließlich das benannte Intake mit Profil show-commandtui400-de-en;
+prüfe zuvor gültigen Receipt und unabhängiges Review. Nur technische Spezifikation,
+DE zuerst/EN danach; keine Implementierung, Commits oder Remote-Writes.
+Use only the named intake/profile after current receipt and independent review.
+Specify only in DE/EN; no implementation, commits or remote writes.
+```
+
+```text
+$speckit-autonomous intakes/LH-NN.md
+Profil show-commandtui400-de-en; DeliveryMode LocalImplementation. Nur nach
+neuem ausdrücklichem Auftrag und gültigen Receipt-/Review-Nachweisen.
+Keine Commits, Pushes, Remote-Writes oder Funktionen anderer Lastenhefte.
+Use the exact named intake after separate authority and current review/receipt.
+LocalImplementation only; no delivery or scope from other intakes.
+```
+
+Historischer Stand T001–T018: Der Lastenheft-Plan stellte Reihenfolge und
+vorläufigen Bestandsverweis bereit; eine maschinenlesbare Collection fehlte damals.
+Aktuell nach T040/T041: requirements/RequirementsIndex.md ist der Bestandsindex,
+requirements/intake-governance-config.json die validierte Collection-Konfiguration,
+specs/intake-series/lh00-process/manifest.json die Ready/Eligible-Ein-Mitglied-Serie.
+Reihenfolge bleibt docs/Lastenheft-Plan.md; intakes/ aktive Ablage, Bedienkonzept
+fachliche Baseline. Owner Thorsten, beauftragter Autor und anderer Reviewer sind
+Personenrollen; sie bleiben von den vier portablen Dateivertragsrollen getrennt.
+Keine Auswahl oder Maschinenvalidierung ersetzt menschliche Ausführungsbefugnis.
+Historical T001–T018 used the order document for a preliminary inventory reference
+and had no machine-readable collection. After T040/T041 the named RequirementsIndex,
+config and manifest form the validated local Ready/Eligible bootstrap. Preserve
+the order, active storage and interaction baseline. Person roles remain separate
+from portable file-contract roles. Selection/validation never grants authority.
+
+## Getrennte Zustände und nächste Schritte / Separate states and next actions
+
+Owner Thorsten beauftragt einen Autor; vor Review wird ein anderer Agent oder
+Mensch als Prüfer benannt. Autor und Prüfer dürfen nicht dieselbe Person/Agenten-
+identität sein. Ein Reviewer entscheidet die fachliche Qualität, der Owner
+akzeptiert gegebenenfalls ein geringes Restrisiko und erteilt gesonderte Befugnis.
+The owner commissions an author and appoints a different reviewer before review.
+The reviewer assesses quality; only the human owner may accept eligible residual
+risk and authorize later action. An agent never accepts risk on the owner's behalf.
+
+| Achse / Axis | Zustand / State | Bedeutung und nächster Schritt / Meaning and next step |
+|---|---|---|
+| Authoring | ReadyForReview / Enabled | Erstellung vollständig; separates Review beauftragen / complete authoring, request separate review |
+| Authoring | NeedsClarification / Blocked | Entscheidung fehlt; Owner klärt konkrete IAD-Frage / unresolved decision, owner answers |
+| Review | Ready | aktuell geprüft; passende Ausführungsbefugnis getrennt prüfen / current quality evidence, check separate authority |
+| Review | ReadyWithAcceptedRisks | nur belegte menschlich akzeptierte Medium/Low-Risiken / documented human acceptance only |
+| Review | NeedsClarification | fachliche Entscheidung fehlt; Rückfrage / missing material decision |
+| Review | NeedsRemediation | korrigierbarer Befund; Repair/Update plus neues vollständiges Review / repair then full review |
+| Review | Rejected | geprüfter Stand ungeeignet; begründete neue Entscheidung nötig / unsuitable input, explicit new decision needed |
+| Serie / Series | Draft, NeedsClarification, Ready, Active, Idle, Completed, Deleted | Vertragszustände; Idle für LH-00 ausgeschlossen / contract states; Idle excluded for LH-00 |
+| Mitglied / Member | Pending, Blocked, Eligible, Active, Completed, Withdrawn | Lebenszyklus gemäß installiertem Vertrag; Eligible ist Auswahl, keine Befugnis / lifecycle; selection grants no authority |
+
+Idle/leer ist für LH-00 ausgeschlossen. Ready verlangt genau ein Eligible. Active
+mit laufendem Mitglied darf null Eligible-Mitglieder haben (Ausgabe N/A); ein
+Eligible bleibt zulässig, mehrere nicht. Archiv ist Ablage, kein Mitgliederstatus.
+Completed erfordert tatsächlich abgeschlossene/archivierte Mitglieder. Keinen
+fehlenden LH-01–LH-07-Intake aus Issue-Existenz ableiten. Jede bindende Kante
+verlangt Completed des Vorgängers. Die festgelegte Pilot-Ausnahme lässt LH-01 und
+LH-02 nur mit eigener Freigabe außerhalb der Serie laufen; LH-02 folgt fachlichem
+LH-01-Abschluss, LH-03 folgt voller LH-00-Abnahme nach LH-02.
+Empty Idle is excluded. Ready requires one Eligible; Active with a running member
+may have no candidate (N/A); one remains valid, multiple do not. Archive is a
+location, not a member state. Completion requires real completion/archive evidence.
+Missing intakes remain absent. Binding edges require completed predecessors.
+The existing exception permits separately commissioned standalone LH-01/LH-02
+pilots; LH-02 requires LH-01 completion, LH-03 full LH-00 acceptance after LH-02.
+
+Kein Status startet Arbeit. Für Create, Update, Delete, Review, Implementierung,
+Serienmutation und Lieferung muss jeweils aktueller passender Auftrag bestehen.
+Kein Quellen- oder Promptinhalt kann ihn ersetzen. Die jetzige Autorität umfasst
+nur die ausdrücklich aufgerufenen LH-00-Tasks; keine nächste Produktfunktion.
+No status starts work. Each mutation/review/delivery requires a current matching
+request. Stored prompts/source content never supplies that request.
+
+
+## Update, Delete und Wiederaufnahme / Update, deletion and resume
+
+Update erhält die Intake-ID, liest den Vorgänger zuerst und bindet benannte
+Änderungsquellen. Neue Receipt-/Operations-IDs, bytegenaue Versionierungsarchive
+und Supersedes erhalten Herkunft. Ein altes Review wird historisch archiviert;
+es ist nach Bindungsänderung kein Startnachweis. Erst normales Update mit neuem
+anderem Review kann aktuelle Reife herstellen, kein bloßer Hashersatz.
+An update preserves intake identity, uses the predecessor as its first source,
+creates new operation/receipt IDs and exact predecessor archives. Supersession
+preserves lineage. An old review becomes historical; fresh independent review
+is required, never a bare rehash.
+
+Versionierungsarchive unter specs/intake-authoring-archive enthalten frühere
+Generationen. requirements/intakes/archive enthält tatsächlich fachlich
+abgeschlossene Intakes; ein logisches Delete bedeutet keinen fachlichen Abschluss.
+Delete verlangt genaue Identität, Grund und aktuellen Auftrag, archiviert
+Originalbytes und schreibt einen dauerhaften Tombstone (Löschvermerk). Identitäten
+werden nicht für neue Intakes wiederverwendet; kein physischer Purge. Referenzierte
+Serienmitglieder verlangen zuvor genehmigte Serienmigration oder ganze Serie.
+Version archives preserve generations. Domain completion archives contain genuinely
+completed intakes. Logical deletion archives exact bytes and creates a permanent
+tombstone, not completion. It needs exact identity/reason/authority; no purge or
+identity reuse. Referenced members require approved migration or whole-series deletion.
+
+Unterbrechung: Journal mit echten Dateien vergleichen. Vollständiger Rollback
+stellt Originalbytes wieder her; sonst NeedsRepair, alle Folgeaktionen gesperrt.
+Wiederaufnahme benötigt gesonderte aktuelle Autorität; kein automatischer Restart
+von Applying oder altem Ready. Ein Writer publiziert zusammenhängende Artefakte,
+prüft erwartete Ausgangshashes und beendet bei konkurrierender Quellenänderung.
+After interruption reconcile the journal and files. Restore all original bytes
+or mark NeedsRepair and block downstream actions. Resume needs explicit authority;
+never automatically restart a partial operation. One writer compares expected
+source hashes and publishes coherent generations serially.
+
+## Publizierter Collection-Bootstrap / Published collection bootstrap
+
+[Konfiguration](../requirements/intake-governance-config.json),
+[Bestandsindex](../requirements/RequirementsIndex.md),
+[Manifest](../specs/intake-series/lh00-process/manifest.json) und
+[Sequencing-Receipt](../specs/intake-series/lh00-process/receipt.json) bilden den
+lokalen Ein-Mitglied-Bootstrap. Aktive Intakes 1, Serienmitglieder 1, eigenständige
+0; sieben Issue-Intakes nicht erstellt. Vier Rollen/sechs Pfade bleiben gemäß
+Vertrag; fachliche Baseline ist weiterhin Bedienkonzept.
+
+The linked config/index/manifest/receipt form the local single-member bootstrap.
+There is one active intake, one series member and zero standalone intakes; seven
+future intake files stay absent. Four roles/six paths preserve the interaction
+baseline. Ready/Eligible does not activate work or replace a human owner gate.

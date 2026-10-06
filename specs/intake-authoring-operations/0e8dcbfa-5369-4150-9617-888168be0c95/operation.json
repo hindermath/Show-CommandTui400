@@ -1,0 +1,184 @@
+{
+  "schemaVersion": "1.0",
+  "documentType": "IntakeOperation",
+  "operationId": "0e8dcbfa-5369-4150-9617-888168be0c95",
+  "type": "Update",
+  "status": "Completed",
+  "createdAt": "2026-10-06T19:09:52.661659Z",
+  "authorityEvidence": "docs/planning/lh00-collection-migration-decisions.md",
+  "proposalPath": "docs/planning/lh00-collection-migration-decisions.md",
+  "proposalNormalizedSha256": "6629df7621fad505b881c1062ce798516b263d176e9806ff624bf4b54f114186",
+  "approval": {
+    "approved": true,
+    "approvedBy": "Thorsten Hindermann",
+    "approvedAt": "2026-10-06T19:09:52.662167Z",
+    "evidence": "Explicit current request to execute T019–T045, including T041 ordinary Update. Not B01/pilot acceptance."
+  },
+  "stagingDirectory": "N/A",
+  "intakeId": "2296d99d-f099-4c4d-88f7-789581693eb0",
+  "receiptId": "17d14686-427a-44d7-b903-b94389eb6381",
+  "priorReceiptId": "f0e63c2d-8a78-4076-95bb-1b4ff5250688",
+  "priorReviewId": "2a82055c-9b85-4998-ad5c-517029070aee",
+  "archiveEvidence": [
+    {
+      "originalPath": "intakes/LH-00.md",
+      "archivePath": "specs/intake-authoring-archive/lh-00/f0e63c2d-8a78-4076-95bb-1b4ff5250688/intakes/LH-00.md",
+      "rawSha256": "0481d515cfe4bfac75365890d06147e48965c7062b65953179eb41cc8c82a24e",
+      "normalizedSha256": "0481d515cfe4bfac75365890d06147e48965c7062b65953179eb41cc8c82a24e"
+    },
+    {
+      "originalPath": "specs/intake-authoring-receipts/lh-00.json",
+      "archivePath": "specs/intake-authoring-archive/lh-00/f0e63c2d-8a78-4076-95bb-1b4ff5250688/specs/intake-authoring-receipts/lh-00.json",
+      "rawSha256": "3118a4082d18bdbeaecb94750d7ff143568e281014b3a0235c654c8b58fd4fb1",
+      "normalizedSha256": "3118a4082d18bdbeaecb94750d7ff143568e281014b3a0235c654c8b58fd4fb1"
+    },
+    {
+      "originalPath": ".specify/memory/intake-authoring-profile.md",
+      "archivePath": "specs/intake-authoring-archive/lh-00/f0e63c2d-8a78-4076-95bb-1b4ff5250688/.specify/memory/intake-authoring-profile.md",
+      "rawSha256": "7f2f09378bef60152cfe5f128f31b06c5de2418da2c1d1699bbc450d48439d2b",
+      "normalizedSha256": "7f2f09378bef60152cfe5f128f31b06c5de2418da2c1d1699bbc450d48439d2b"
+    },
+    {
+      "originalPath": "docs/Entwicklungsumgebung.md",
+      "archivePath": "specs/intake-authoring-archive/lh-00/f0e63c2d-8a78-4076-95bb-1b4ff5250688/docs/Entwicklungsumgebung.md",
+      "rawSha256": "a339821bae50a1cd240fd38547fed3120f0bcb2f1a8edc439712c93daba881e4",
+      "normalizedSha256": "a339821bae50a1cd240fd38547fed3120f0bcb2f1a8edc439712c93daba881e4"
+    },
+    {
+      "originalPath": "docs/intake-governance.md",
+      "archivePath": "specs/intake-authoring-archive/lh-00/f0e63c2d-8a78-4076-95bb-1b4ff5250688/docs/intake-governance.md",
+      "rawSha256": "e091bc4b4ea1176a4b47f8de3cd99a90567ee80d2bc0d675f8a32110c469ca2c",
+      "normalizedSha256": "e091bc4b4ea1176a4b47f8de3cd99a90567ee80d2bc0d675f8a32110c469ca2c"
+    },
+    {
+      "originalPath": "docs/Lastenheft-Plan.md",
+      "archivePath": "specs/intake-authoring-archive/lh-00/f0e63c2d-8a78-4076-95bb-1b4ff5250688/docs/Lastenheft-Plan.md",
+      "rawSha256": "20e51b228759b6e56404bcb10ed4506b4bff25859acbd41f723181a62ace2e61",
+      "normalizedSha256": "20e51b228759b6e56404bcb10ed4506b4bff25859acbd41f723181a62ace2e61"
+    },
+    {
+      "originalPath": "specs/intake-review-request.json",
+      "archivePath": "specs/intake-review-archive/2a82055c-9b85-4998-ad5c-517029070aee/intake-review-request.json",
+      "rawSha256": "7b262e19d8c5ca5542964c3fda39e2f90619004d10fad02bd6a9d31b051bd3d3",
+      "normalizedSha256": "7b262e19d8c5ca5542964c3fda39e2f90619004d10fad02bd6a9d31b051bd3d3"
+    },
+    {
+      "originalPath": "specs/intake-review-result.json",
+      "archivePath": "specs/intake-review-archive/2a82055c-9b85-4998-ad5c-517029070aee/intake-review-result.json",
+      "rawSha256": "0c9c90e13352da0ad826c9110f9fd2b2efc1d06439684d305169a9f6e19036c8",
+      "normalizedSha256": "0c9c90e13352da0ad826c9110f9fd2b2efc1d06439684d305169a9f6e19036c8"
+    },
+    {
+      "originalPath": "specs/intake-review-report.md",
+      "archivePath": "specs/intake-review-archive/2a82055c-9b85-4998-ad5c-517029070aee/intake-review-report.md",
+      "rawSha256": "39cd03814340d02371fb432e66720ae585cade7aeece01710cfe2e6bec696fc3",
+      "normalizedSha256": "39cd03814340d02371fb432e66720ae585cade7aeece01710cfe2e6bec696fc3"
+    }
+  ],
+  "beforeTargetNormalizedSha256": "0481d515cfe4bfac75365890d06147e48965c7062b65953179eb41cc8c82a24e",
+  "afterTargetNormalizedSha256": "e8e89f997b12e46bac100d41755d26e3cd092a639e7e589ecbfc550fccc98c6f",
+  "intendedTargets": [
+    "specs/intake-authoring-archive/lh-00/f0e63c2d-8a78-4076-95bb-1b4ff5250688/intakes/LH-00.md",
+    "specs/intake-authoring-archive/lh-00/f0e63c2d-8a78-4076-95bb-1b4ff5250688/specs/intake-authoring-receipts/lh-00.json",
+    "specs/intake-authoring-archive/lh-00/f0e63c2d-8a78-4076-95bb-1b4ff5250688/.specify/memory/intake-authoring-profile.md",
+    "specs/intake-authoring-archive/lh-00/f0e63c2d-8a78-4076-95bb-1b4ff5250688/docs/Entwicklungsumgebung.md",
+    "specs/intake-authoring-archive/lh-00/f0e63c2d-8a78-4076-95bb-1b4ff5250688/docs/intake-governance.md",
+    "specs/intake-authoring-archive/lh-00/f0e63c2d-8a78-4076-95bb-1b4ff5250688/docs/Lastenheft-Plan.md",
+    "specs/intake-review-archive/2a82055c-9b85-4998-ad5c-517029070aee/intake-review-request.json",
+    "specs/intake-review-archive/2a82055c-9b85-4998-ad5c-517029070aee/intake-review-result.json",
+    "specs/intake-review-archive/2a82055c-9b85-4998-ad5c-517029070aee/intake-review-report.md",
+    ".specify/memory/intake-authoring-profile.md",
+    "docs/Entwicklungsumgebung.md",
+    "docs/intake-governance.md",
+    "docs/Lastenheft-Plan.md",
+    "docs/security/README.md",
+    ".specify/memory/intake-series-policy.json",
+    "requirements/intake-governance-config.json",
+    "requirements/RequirementsIndex.md",
+    "docs/planning/lh00-collection-migration-decisions.md",
+    "intakes/LH-00.md",
+    "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/dd0ef5b1-eea6-4d89-94f8-40346596d427/manifest.json",
+    "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/dd0ef5b1-eea6-4d89-94f8-40346596d427/receipt.json",
+    "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/dd0ef5b1-eea6-4d89-94f8-40346596d427/operation.json",
+    "specs/intake-series/lh00-process/manifest.json",
+    "specs/intake-series/lh00-process/receipt.json",
+    "specs/intake-series/lh00-process/operation.json",
+    "specs/intake-authoring-receipts/lh-00.json"
+  ],
+  "validatedTargets": [
+    "specs/intake-authoring-archive/lh-00/f0e63c2d-8a78-4076-95bb-1b4ff5250688/intakes/LH-00.md",
+    "specs/intake-authoring-archive/lh-00/f0e63c2d-8a78-4076-95bb-1b4ff5250688/specs/intake-authoring-receipts/lh-00.json",
+    "specs/intake-authoring-archive/lh-00/f0e63c2d-8a78-4076-95bb-1b4ff5250688/.specify/memory/intake-authoring-profile.md",
+    "specs/intake-authoring-archive/lh-00/f0e63c2d-8a78-4076-95bb-1b4ff5250688/docs/Entwicklungsumgebung.md",
+    "specs/intake-authoring-archive/lh-00/f0e63c2d-8a78-4076-95bb-1b4ff5250688/docs/intake-governance.md",
+    "specs/intake-authoring-archive/lh-00/f0e63c2d-8a78-4076-95bb-1b4ff5250688/docs/Lastenheft-Plan.md",
+    "specs/intake-review-archive/2a82055c-9b85-4998-ad5c-517029070aee/intake-review-request.json",
+    "specs/intake-review-archive/2a82055c-9b85-4998-ad5c-517029070aee/intake-review-result.json",
+    "specs/intake-review-archive/2a82055c-9b85-4998-ad5c-517029070aee/intake-review-report.md",
+    ".specify/memory/intake-authoring-profile.md",
+    "docs/Entwicklungsumgebung.md",
+    "docs/intake-governance.md",
+    "docs/Lastenheft-Plan.md",
+    "docs/security/README.md",
+    ".specify/memory/intake-series-policy.json",
+    "requirements/intake-governance-config.json",
+    "requirements/RequirementsIndex.md",
+    "docs/planning/lh00-collection-migration-decisions.md",
+    "intakes/LH-00.md",
+    "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/dd0ef5b1-eea6-4d89-94f8-40346596d427/manifest.json",
+    "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/dd0ef5b1-eea6-4d89-94f8-40346596d427/receipt.json",
+    "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/dd0ef5b1-eea6-4d89-94f8-40346596d427/operation.json",
+    "specs/intake-series/lh00-process/manifest.json",
+    "specs/intake-series/lh00-process/receipt.json",
+    "specs/intake-series/lh00-process/operation.json",
+    "specs/intake-authoring-receipts/lh-00.json"
+  ],
+  "publishedTargets": [
+    "specs/intake-authoring-archive/lh-00/f0e63c2d-8a78-4076-95bb-1b4ff5250688/intakes/LH-00.md",
+    "specs/intake-authoring-archive/lh-00/f0e63c2d-8a78-4076-95bb-1b4ff5250688/specs/intake-authoring-receipts/lh-00.json",
+    "specs/intake-authoring-archive/lh-00/f0e63c2d-8a78-4076-95bb-1b4ff5250688/.specify/memory/intake-authoring-profile.md",
+    "specs/intake-authoring-archive/lh-00/f0e63c2d-8a78-4076-95bb-1b4ff5250688/docs/Entwicklungsumgebung.md",
+    "specs/intake-authoring-archive/lh-00/f0e63c2d-8a78-4076-95bb-1b4ff5250688/docs/intake-governance.md",
+    "specs/intake-authoring-archive/lh-00/f0e63c2d-8a78-4076-95bb-1b4ff5250688/docs/Lastenheft-Plan.md",
+    "specs/intake-review-archive/2a82055c-9b85-4998-ad5c-517029070aee/intake-review-request.json",
+    "specs/intake-review-archive/2a82055c-9b85-4998-ad5c-517029070aee/intake-review-result.json",
+    "specs/intake-review-archive/2a82055c-9b85-4998-ad5c-517029070aee/intake-review-report.md",
+    ".specify/memory/intake-authoring-profile.md",
+    "docs/Entwicklungsumgebung.md",
+    "docs/intake-governance.md",
+    "docs/Lastenheft-Plan.md",
+    "docs/security/README.md",
+    ".specify/memory/intake-series-policy.json",
+    "requirements/intake-governance-config.json",
+    "requirements/RequirementsIndex.md",
+    "docs/planning/lh00-collection-migration-decisions.md",
+    "intakes/LH-00.md",
+    "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/dd0ef5b1-eea6-4d89-94f8-40346596d427/manifest.json",
+    "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/dd0ef5b1-eea6-4d89-94f8-40346596d427/receipt.json",
+    "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/dd0ef5b1-eea6-4d89-94f8-40346596d427/operation.json",
+    "specs/intake-series/lh00-process/manifest.json",
+    "specs/intake-series/lh00-process/receipt.json",
+    "specs/intake-series/lh00-process/operation.json",
+    "specs/intake-authoring-receipts/lh-00.json"
+  ],
+  "rollbackBoundary": "Restore all original bytes and remove newly published paths on caught failure; interrupted Applying requires explicit repair authority.",
+  "failure": {
+    "class": "N/A",
+    "message": "N/A"
+  },
+  "reviewSupersession": "Old exact triplet archived; no old Ready retained as current. Fresh distinct-agent review expressly included in task.",
+  "nextAction": "$speckit-intake-review intakes/LH-00.md",
+  "validation": [
+    {
+      "shell": "bash",
+      "exitCode": 0,
+      "output": "PASS: intake authoring 17d14686-427a-44d7-b903-b94389eb6381 is current (ReadyForReview, 26 sources, intakes/LH-00.md)"
+    },
+    {
+      "shell": "PowerShell",
+      "exitCode": 0,
+      "output": "PASS: intake authoring 17d14686-427a-44d7-b903-b94389eb6381 is current (ReadyForReview, 26 sources, intakes/LH-00.md)"
+    }
+  ],
+  "normativeFRACUnchanged": true
+}

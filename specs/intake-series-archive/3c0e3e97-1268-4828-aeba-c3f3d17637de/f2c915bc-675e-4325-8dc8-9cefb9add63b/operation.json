@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0",
+  "documentType": "IntakeSeriesOperation",
+  "operationId": "dd0ef5b1-eea6-4d89-94f8-40346596d427",
+  "seriesId": "3c0e3e97-1268-4828-aeba-c3f3d17637de",
+  "type": "Update",
+  "status": "Prepared",
+  "authorityEvidence": "docs/planning/lh00-collection-migration-decisions.md",
+  "proposalNormalizedSha256": "6629df7621fad505b881c1062ce798516b263d176e9806ff624bf4b54f114186",
+  "preparedPaths": [
+    "specs/intake-series/lh00-process/manifest.json",
+    "specs/intake-series/lh00-process/receipt.json"
+  ],
+  "validation": {
+    "bash": "Passed",
+    "powerShell": "Passed"
+  },
+  "publication": {
+    "status": "Published",
+    "publishedPaths": [
+      "specs/intake-series/lh00-process/manifest.json",
+      "specs/intake-series/lh00-process/receipt.json"
+    ]
+  }
+}

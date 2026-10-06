@@ -1,0 +1,20 @@
+{
+  "host": "Mac A/macOS",
+  "command": [
+    "pwsh",
+    "-NoProfile",
+    "-File",
+    "<TEMP>/targeted.ps1",
+    "-FixtureRoot",
+    "<ISOLATED_FIXTURE>"
+  ],
+  "scriptRawSha256": "95380b299d90973e9af56df6dcf4549e70f72717433883ddb2df3e245fb8df35",
+  "cases": [
+    "No Python command: warn and safely use template fallback without read-only PID assignment",
+    "Malformed feature-state JSON: preserve existing recovery semantics with safe verbose diagnostic"
+  ],
+  "exit": 0,
+  "stdout": "WARNUNG: No Python 3 found; preset composition strategies will be ignored\nPASS: isolated no-Python fallback and explicit feature-state recovery",
+  "stderr": "",
+  "boundary": "Isolated assigned test copy only; real feature-state and LH-00 artifacts unchanged."
+}

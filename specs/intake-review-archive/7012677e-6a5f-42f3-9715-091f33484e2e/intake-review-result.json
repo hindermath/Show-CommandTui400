@@ -1,0 +1,412 @@
+{
+  "schemaVersion": "1.1",
+  "reviewId": "7012677e-6a5f-42f3-9715-091f33484e2e",
+  "mode": "Single",
+  "status": "NeedsRemediation",
+  "policy": "generic-markdown",
+  "reviewedAt": "2026-10-06T19:15:17Z",
+  "repository": {
+    "root": ".",
+    "head": "e621d195f83f36ab2b99cd35d1b7ae3cbdb8fcdd",
+    "boundary": "Current local T041 working tree, not committed or remotely delivered."
+  },
+  "requestEvidence": {
+    "path": "specs/intake-review-request.json",
+    "normalizedSha256": "c6464bb81658b2e47c042d77ea13881d7f81407377084088744e876389f64508"
+  },
+  "targets": [
+    {
+      "path": "intakes/LH-00.md",
+      "normalizedSha256": "e8e89f997b12e46bac100d41755d26e3cd092a639e7e589ecbfc550fccc98c6f",
+      "role": "Primary",
+      "gitBlob": "N/A"
+    }
+  ],
+  "findings": [
+    {
+      "id": "IR009",
+      "severity": "Low",
+      "category": "CollectionReaderPathConsistency",
+      "target": "intakes/LH-00.md",
+      "disposition": "Open",
+      "owner": "Thorsten Hindermann / authoring agent",
+      "evidence": "Published bound profile, development environment and governance retain a paragraph beginning For the current inventory and claiming no machine-readable collection/config/series, with Lastenheft-Plan as inventory index. New T041 sections/config resolve RequirementsIndex and Ready series. Profile initial collection description also presents future-only setup.",
+      "reevaluationTrigger": "Mark initial/increment-one descriptions historically in DE/EN; distinguish current canonical RequirementsIndex, config and Ready bootstrap. Ordinary intake/coherent series update then full independent review."
+    },
+    {
+      "id": "IR010",
+      "severity": "Low",
+      "category": "ComputedInventoryConsistency",
+      "target": "intakes/LH-00.md",
+      "disposition": "Open",
+      "owner": "Thorsten Hindermann / authoring agent",
+      "evidence": "All three config validators in both shells return archiveIntakeCount/backlogIntakeCount/historyIntakeCount = 1 due to each README.md. RequirementsIndex states zero intakes without presenting computed artifact counts/validator counting boundary. There are zero domain LH files in those directories, but machine/readable inventory semantics are not explicit.",
+      "reevaluationTrigger": "Index must distinguish actual domain intake count zero from computed README artifact count one each (or use non-counted markers); no installed preset mutation. Ordinary update and full review."
+    }
+  ],
+  "questions": [],
+  "acceptedRisks": [],
+  "operatorExceptions": [],
+  "coverage": {
+    "individual": [
+      "intakes/LH-00.md"
+    ],
+    "series": [],
+    "workers": []
+  },
+  "summary": {
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 2
+  },
+  "supersedes": "2a82055c-9b85-4998-ad5c-517029070aee",
+  "reviewer": {
+    "type": "Automated",
+    "identity": "Codex independent agent /root/lh00_inc2_language_fixture_review",
+    "role": "Complete full T041 semantic review of intake and scoped collection context, distinct from author /root",
+    "distinctFromRepairAuthor": true,
+    "independentHumanReview": false,
+    "delegationEvidence": {
+      "path": "docs/planning/lh00-collection-migration-decisions.md",
+      "normalizedSha256": "6629df7621fad505b881c1062ce798516b263d176e9806ff624bf4b54f114186"
+    },
+    "boundary": "Only current review triplet writes; no target/source/receipt changes or human gate/risk acceptance."
+  },
+  "policyEvidence": [
+    {
+      "path": ".agents/skills/speckit-intake-review/SKILL.md",
+      "normalizedSha256": "7ee37c0204511d768948e555c131907c458467d40330edb1cf57fd1b3bcedd8a"
+    },
+    {
+      "path": ".specify/presets/intake-review-governance/templates/intake-review-policy-template.json",
+      "normalizedSha256": "fcf4fc8e732e8d949dffcfc08de97ef6dd6f2b9aa23e00c68dd2ea525d2b96e0"
+    },
+    {
+      "path": ".specify/presets/intake-review-governance/templates/intake-review-checklist-template.md",
+      "normalizedSha256": "36821186987b48d42ec15db6ff347304478d4b204fc6f779fee26a466a866cdc"
+    },
+    {
+      "path": ".specify/memory/intake-authoring-policy.json",
+      "normalizedSha256": "8d42717c2cc7efc128a62e7967a1f877beee85fb2d53fedee1aa828aba9941d9"
+    },
+    {
+      "path": ".specify/memory/intake-authoring-profile.md",
+      "normalizedSha256": "7cb2070aee86d6f9d56dfe3ad945b33c7fe02a5c5f2bf1edb05b3820be634acb"
+    },
+    {
+      "path": "constitution.md",
+      "normalizedSha256": "8031f1fb425336dda6dc1e2e582e7cf2d90a680e4f4383253f6a294ae0bd1d6e"
+    },
+    {
+      "path": ".specify/memory/constitution.md",
+      "normalizedSha256": "8031f1fb425336dda6dc1e2e582e7cf2d90a680e4f4383253f6a294ae0bd1d6e"
+    },
+    {
+      "path": "AGENTS.md",
+      "normalizedSha256": "a70050039a95935c8d1e4f24497985135692734cd2f68f04b0ed61ae05b20ea9"
+    },
+    {
+      "path": "docs/intake-governance.md",
+      "normalizedSha256": "379bb86e95a13c4caecb22cd05af1d376b4da02772934e1aa3d89e9fd8376c47"
+    },
+    {
+      "path": "docs/Lastenheft-Plan.md",
+      "normalizedSha256": "81c8732d70ba4f614cf8799c629bd3698a072266f1abcd22f571dd73226afbb0"
+    },
+    {
+      "path": "docs/planning/lh00-increment2-update-decisions.md",
+      "normalizedSha256": "48cd6a31e102dd8af436a7c3560cbd6b202435f8bb09e5afbff5935093cc2b69"
+    },
+    {
+      "path": ".specify/memory/intake-series-policy.json",
+      "normalizedSha256": "c7362796774ec93414954a406d7a9651ef12d9c4bfa4432b1cf655786e2d0eec"
+    },
+    {
+      "path": "requirements/intake-governance-config.json",
+      "normalizedSha256": "3b885d1895ac2f5c3783a64d3be1a99cf645d61f7622afcc65c8f173ff4f6d4b"
+    },
+    {
+      "path": "requirements/RequirementsIndex.md",
+      "normalizedSha256": "41fe6e93b0d57e729d527da4f6c9bb1ddd63c30126b790b4b46203a3fbe13bad"
+    },
+    {
+      "path": "docs/planning/lh00-collection-migration-decisions.md",
+      "normalizedSha256": "6629df7621fad505b881c1062ce798516b263d176e9806ff624bf4b54f114186"
+    }
+  ],
+  "sourceEvidence": [
+    {
+      "path": "specs/intake-authoring-archive/lh-00/f0e63c2d-8a78-4076-95bb-1b4ff5250688/intakes/LH-00.md",
+      "sourceId": "SRC001",
+      "normalizedSha256": "0481d515cfe4bfac75365890d06147e48965c7062b65953179eb41cc8c82a24e"
+    },
+    {
+      "path": "docs/planning/lh00-collection-migration-decisions.md",
+      "sourceId": "SRC002",
+      "normalizedSha256": "6629df7621fad505b881c1062ce798516b263d176e9806ff624bf4b54f114186"
+    },
+    {
+      "path": "docs/planning/lh00-increment2-update-decisions.md",
+      "sourceId": "SRC003",
+      "normalizedSha256": "48cd6a31e102dd8af436a7c3560cbd6b202435f8bb09e5afbff5935093cc2b69"
+    },
+    {
+      "path": "docs/planning/lh00-macos15-refresh-decisions.md",
+      "sourceId": "SRC004",
+      "normalizedSha256": "e358e9e8640e886207838dc89baf199d4a2ba104785d20742e485308439dfb67"
+    },
+    {
+      "path": "docs/planning/lh00-v037-refresh-decisions.md",
+      "sourceId": "SRC005",
+      "normalizedSha256": "e8d5fd7307bf5510be3433b48cff43fa9c3c48a52a4c6459e16b465f387bc671"
+    },
+    {
+      "path": "docs/intake-governance.md",
+      "sourceId": "SRC006",
+      "normalizedSha256": "379bb86e95a13c4caecb22cd05af1d376b4da02772934e1aa3d89e9fd8376c47"
+    },
+    {
+      "path": "docs/Entwicklungsumgebung.md",
+      "sourceId": "SRC007",
+      "normalizedSha256": "f9a3d2e81392d531d58fe40f12ec5e787fc1019a3039e879aa903e194ae40854"
+    },
+    {
+      "path": ".specify/memory/intake-authoring-profile.md",
+      "sourceId": "SRC008",
+      "normalizedSha256": "7cb2070aee86d6f9d56dfe3ad945b33c7fe02a5c5f2bf1edb05b3820be634acb"
+    },
+    {
+      "path": "docs/Lastenheft-Plan.md",
+      "sourceId": "SRC009",
+      "normalizedSha256": "81c8732d70ba4f614cf8799c629bd3698a072266f1abcd22f571dd73226afbb0"
+    },
+    {
+      "path": "docs/Bedienkonzept.md",
+      "sourceId": "SRC010",
+      "normalizedSha256": "e41d0d035ad089f64e752d0a01558f744736a9514b394410123084010c12c30c"
+    },
+    {
+      "path": "constitution.md",
+      "sourceId": "SRC011",
+      "normalizedSha256": "8031f1fb425336dda6dc1e2e582e7cf2d90a680e4f4383253f6a294ae0bd1d6e"
+    },
+    {
+      "path": "AGENTS.md",
+      "sourceId": "SRC012",
+      "normalizedSha256": "a70050039a95935c8d1e4f24497985135692734cd2f68f04b0ed61ae05b20ea9"
+    },
+    {
+      "path": "scripts/config/spec-kit-project-statistics-governance-presets.json",
+      "sourceId": "SRC013",
+      "normalizedSha256": "3b41eede1bf49a3b7cc035c73aeecf06acf29447a65039288328f517708a8d64"
+    },
+    {
+      "path": "docs/maintenance/coordinated-governance-source-lock.json",
+      "sourceId": "SRC014",
+      "normalizedSha256": "c6c0088bf5fe03376d425dd417fb1a6a3048275ae887d94ae8ffbf92d5cdccf4"
+    },
+    {
+      "path": "docs/maintenance/coordinated-governance-oct03.md",
+      "sourceId": "SRC015",
+      "normalizedSha256": "5eeefe62493b9785acf79505ffc47c1910e1cbbdaa1e641ec637b67a7410f977"
+    },
+    {
+      "path": "docs/security/README.md",
+      "sourceId": "SRC016",
+      "normalizedSha256": "e39d533b8ee55eec14f99452c4033ad0ce8e9bca491a155f3acb6f20adb05fec"
+    },
+    {
+      "path": "docs/maintenance/assurance-v013-stable-publication.md",
+      "sourceId": "SRC017",
+      "normalizedSha256": "b826b0d5a72365a744c8a3c53c10af3d2095a956b9a9e00a99c8ddf0c59c9c40"
+    },
+    {
+      "path": "docs/maintenance/intake-authoring-v037.md",
+      "sourceId": "SRC018",
+      "normalizedSha256": "f7569316f34df6a68a21123a47de08e3966715e88cc56d455775788d1de9814b"
+    },
+    {
+      "path": "docs/maintenance/macos-runner-migration.md",
+      "sourceId": "SRC019",
+      "normalizedSha256": "5c8b26c2d02e2c4fed73b469a674c35afc21c426773ef0354c57704c8463263a"
+    },
+    {
+      "path": "docs/maintenance/macos-runner-documentation-impact.json",
+      "sourceId": "SRC020",
+      "normalizedSha256": "7b578719d2e734dc662133a4dcc8896ae8c55b74529fafd000682b02dcd28a19"
+    },
+    {
+      "path": ".github/workflows/homogeneity-check.yml",
+      "sourceId": "SRC021",
+      "normalizedSha256": "a291288bb739ae3ca4d656e4ad4325b65ed8894a209d52b9759ea631fc03695f"
+    },
+    {
+      "path": ".github/workflows/powershell-analysis.yml",
+      "sourceId": "SRC022",
+      "normalizedSha256": "b1ce382e088cd875f85a5b69176b01ecd14b0696ce5d9cd18c7e4c5e782a6573"
+    },
+    {
+      "path": ".github/workflows/maintenance-tui.yml",
+      "sourceId": "SRC023",
+      "normalizedSha256": "b66ab1f78c8fd9ff9a891bf4cbbb61211985ccd13981039f8e9b926c8b1d863c"
+    },
+    {
+      "path": ".specify/memory/intake-series-policy.json",
+      "sourceId": "SRC024",
+      "normalizedSha256": "c7362796774ec93414954a406d7a9651ef12d9c4bfa4432b1cf655786e2d0eec"
+    },
+    {
+      "path": "requirements/intake-governance-config.json",
+      "sourceId": "SRC025",
+      "normalizedSha256": "3b885d1895ac2f5c3783a64d3be1a99cf645d61f7622afcc65c8f173ff4f6d4b"
+    },
+    {
+      "path": "requirements/RequirementsIndex.md",
+      "sourceId": "SRC026",
+      "normalizedSha256": "41fe6e93b0d57e729d527da4f6c9bb1ddd63c30126b790b4b46203a3fbe13bad"
+    },
+    {
+      "path": "specs/intake-series/lh00-process/manifest.json",
+      "normalizedSha256": "815e38aabdab38eed20ebb6031cd48d9b7284180df3544d967a9579244123200"
+    },
+    {
+      "path": "specs/intake-series/lh00-process/receipt.json",
+      "normalizedSha256": "2cf193db43e290bd4cb58c0e99627de8b04e4c08cbb7365637265c1653f63251"
+    }
+  ],
+  "supersessionEvidence": [
+    {
+      "path": "specs/intake-review-archive/2a82055c-9b85-4998-ad5c-517029070aee/intake-review-request.json",
+      "normalizedSha256": "7b262e19d8c5ca5542964c3fda39e2f90619004d10fad02bd6a9d31b051bd3d3"
+    },
+    {
+      "path": "specs/intake-review-archive/2a82055c-9b85-4998-ad5c-517029070aee/intake-review-result.json",
+      "normalizedSha256": "0c9c90e13352da0ad826c9110f9fd2b2efc1d06439684d305169a9f6e19036c8"
+    },
+    {
+      "path": "specs/intake-review-archive/2a82055c-9b85-4998-ad5c-517029070aee/intake-review-report.md",
+      "normalizedSha256": "39cd03814340d02371fb432e66720ae585cade7aeece01710cfe2e6bec696fc3"
+    },
+    {
+      "path": "specs/intake-authoring-archive/lh-00/f0e63c2d-8a78-4076-95bb-1b4ff5250688/intakes/LH-00.md",
+      "normalizedSha256": "0481d515cfe4bfac75365890d06147e48965c7062b65953179eb41cc8c82a24e"
+    },
+    {
+      "path": "specs/intake-authoring-archive/lh-00/f0e63c2d-8a78-4076-95bb-1b4ff5250688/specs/intake-authoring-receipts/lh-00.json",
+      "normalizedSha256": "3118a4082d18bdbeaecb94750d7ff143568e281014b3a0235c654c8b58fd4fb1"
+    },
+    {
+      "path": "specs/intake-authoring-archive/lh-00/f0e63c2d-8a78-4076-95bb-1b4ff5250688/docs/intake-governance.md",
+      "normalizedSha256": "e091bc4b4ea1176a4b47f8de3cd99a90567ee80d2bc0d675f8a32110c469ca2c"
+    },
+    {
+      "path": "specs/intake-authoring-archive/lh-00/f0e63c2d-8a78-4076-95bb-1b4ff5250688/docs/Entwicklungsumgebung.md",
+      "normalizedSha256": "a339821bae50a1cd240fd38547fed3120f0bcb2f1a8edc439712c93daba881e4"
+    },
+    {
+      "path": "specs/intake-authoring-archive/lh-00/f0e63c2d-8a78-4076-95bb-1b4ff5250688/.specify/memory/intake-authoring-profile.md",
+      "normalizedSha256": "7f2f09378bef60152cfe5f128f31b06c5de2418da2c1d1699bbc450d48439d2b"
+    },
+    {
+      "path": "specs/intake-authoring-archive/lh-00/f0e63c2d-8a78-4076-95bb-1b4ff5250688/docs/Lastenheft-Plan.md",
+      "normalizedSha256": "20e51b228759b6e56404bcb10ed4506b4bff25859acbd41f723181a62ace2e61"
+    },
+    {
+      "path": "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/dd0ef5b1-eea6-4d89-94f8-40346596d427/receipt.json",
+      "normalizedSha256": "5b15589d7c424294566a2d85d3e9a30721e8555b71234095660c0929a5379f01"
+    },
+    {
+      "path": "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/dd0ef5b1-eea6-4d89-94f8-40346596d427/manifest.json",
+      "normalizedSha256": "c45765c320083d4a7cf5aab7794ffcadf926193e3f15db73d9d7d92173ce1dca"
+    }
+  ],
+  "authoringEvidence": {
+    "receiptId": "17d14686-427a-44d7-b903-b94389eb6381",
+    "intakeId": "2296d99d-f099-4c4d-88f7-789581693eb0",
+    "operationId": "0e8dcbfa-5369-4150-9617-888168be0c95",
+    "receipt": {
+      "path": "specs/intake-authoring-receipts/lh-00.json",
+      "normalizedSha256": "c3c8e4b41542bce26434c7c6b90ada446f597800597d9cb839949f12bb03e48b"
+    },
+    "operationBoundary": "Mutable operation journals intentionally not bound; actual receipt and series lineage validated."
+  },
+  "dimensionCoverage": [
+    {
+      "dimension": "IdentityAudienceScope",
+      "status": "Pass",
+      "evidence": "One LH-00 identity, Issue 1 and unchanged domain scope; clear audience with basic file/terminal/PowerShell knowledge, no prior Spec Kit training. IAD014 commissions local process T019–T045, excluding other features and delivery."
+    },
+    {
+      "dimension": "LearnerLanguageContract",
+      "status": "Pass",
+      "evidence": "Full current intake reread: each normative section German first then equivalent English; shared FR/AC/OD identifiers. Technical/workflow/security terms explained, qualitative B2 level, no assumed Spec Kit knowledge."
+    },
+    {
+      "dimension": "RequirementsAcceptance",
+      "status": "Pass",
+      "evidence": "All 24 FR and 18 AC lines byte-identical to immediate predecessor and earlier reviewed generation: twelve FR/nine AC per language. Requirements are atomic and acceptance measurable; E01–E07 preserve proof mapping."
+    },
+    {
+      "dimension": "DependenciesOrder",
+      "status": "Pass",
+      "evidence": "Binding order and IAD010 agree: no LH-00 predecessor; primary Mac core evidence, separately commissioned standalone LH-01 then LH-02 pilots, evidenced LH-01 completion before LH-02; full LH-00 acceptance after LH-02 before LH-03."
+    },
+    {
+      "dimension": "StatusAuthorityFollowups",
+      "status": "Pass",
+      "evidence": "Authoring/review/execution/full acceptance remain distinct. IAD013 scope, non-goals, expected artifacts and dedicated section now explicitly historical; current IAD014 local-only scope and evidence consistent. IAD016 records correction, granting no human decisions."
+    },
+    {
+      "dimension": "SecurityPrivacyRegulatory",
+      "status": "Pass",
+      "evidence": "SSDF/CWE mandatory; strict UTF-8, safe sources, containment, hashes and overwrite protection retained. Applicability and implementation separate. Product/tooling/organisation roles and jurisdiction assessed separately; unknown Open, education/AI-SBOM no blanket exemption. No secrets or unnecessary private data."
+    },
+    {
+      "dimension": "ArchitectureCloudAssurance",
+      "status": "Pass",
+      "evidence": "No product language/framework/minimum runtime/session-model choice inferred. Local process foundations do not prove product architecture/runtime. C5 Type1/Type2/Unknown, C3A exact C/AC versus SI interpretation distinguished; no certification, audit or cloud mandate."
+    },
+    {
+      "dimension": "AccessibilityTextFirst",
+      "status": "Pass",
+      "evidence": "Every state/dependency/decision/next step textual; Mermaid carries equivalent bilingual text alternative. Applicable WCAG2.2AA, keyboard/screen-reader/Braille/text-browser evidence remain required and field proof outstanding."
+    },
+    {
+      "dimension": "PlatformTechnology",
+      "status": "Pass",
+      "evidence": "Mac A owner-confirmed MacBook Air M2 2023; full Mac B/Windows11/Ubuntu24.04 WSL2 process proof remains open. Actual three workflow matrices reread: Setup Ubuntu22.04/macOS15/Windows2022; this repo analysis/Maintenance TUI Linux-only. Tool CI is no product/platform acceptance."
+    },
+    {
+      "dimension": "SourcesProvenance",
+      "status": "Pass",
+      "evidence": "26 ordered sources, immediate predecessor first; stable intake ID, new operation/receipt. All 31 direct receipt bindings current. Exact prior intake/receipt/review and changed source archives retained; coherent same-series update preserves identity/order/role/root/edges/Ready-Eligible and updates target/source references."
+    },
+    {
+      "dimension": "PublicationHistoricalTruth",
+      "status": "NeedsRemediation",
+      "evidence": "IR007/IR008 remain resolved. IR009/IR010 expose new current-vs-increment-one collection reader and counting inconsistencies; no history or validator PASS may mask them."
+    },
+    {
+      "dimension": "PromptsCollectionStartBoundary",
+      "status": "NeedsRemediation",
+      "evidence": "Config schema2.0, de-DE independent of implementation, explicit naming, four roles/six distinct physically contained paths, canonical index, bounded aliases and current Ready/PrimaryEligible single-root/no-edge series validate. IR009/IR010 require consistent current reader paths and computed artifact inventory. B-01/pilot human gates remain pending."
+    }
+  ],
+  "proofBoundaries": [
+    "NeedsRemediation blocks semantic readiness although technical structure/hash validators pass.",
+    "Series remains Ready/Eligible; no real Active/Completed or B-01 owner closure/pilot permission.",
+    "All validators local on Mac A, not native other-platform/assistive field acceptance."
+  ],
+  "reportPath": "specs/intake-review-report.md",
+  "nextAction": "Author corrects IR009/IR010 via ordinary intake update with coherent same-series hash lineage, archives this exact triplet, then requests a complete fresh independent review.",
+  "reevaluationTrigger": "Fresh complete independent review after any target, bound source, request, authority, profile/policy or scope change.",
+  "historicalFindings": {
+    "previousReviewId": "2a82055c-9b85-4998-ad5c-517029070aee",
+    "resolvedIdsRechecked": [
+      "IR007",
+      "IR008"
+    ],
+    "boundary": "Earlier Ready is archived history; this full current review identifies new collection-context findings IR009/IR010."
+  }
+}

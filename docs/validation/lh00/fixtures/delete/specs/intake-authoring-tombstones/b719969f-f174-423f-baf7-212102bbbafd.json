@@ -1,0 +1,28 @@
+{
+  "schemaVersion": "1.0",
+  "documentType": "IntakeTombstone",
+  "tombstoneId": "7d7b19ff-aa2a-4c39-9a9f-04ead3522cad",
+  "intakeId": "b719969f-f174-423f-baf7-212102bbbafd",
+  "operationId": "a4780715-ab17-49f9-8aa7-e11e7bb420d1",
+  "deletedAt": "2026-10-06T18:54:46.894911Z",
+  "reason": "T027 isolated logical-deletion proof; no semantic completion",
+  "deleteAuthorityEvidence": "Explicit user T019–T045 request includes T027 exact inactive fixture identity b719969f-f174-423f-baf7-212102bbbafd.",
+  "original": {
+    "targetPath": "intakes/LH-TEST.md",
+    "targetNormalizedSha256": "388473bd27949e9d23831663c3e5d4462c3cc16d393893fbe5e81176bf3cc0cb",
+    "receiptPath": "specs/intake-authoring-receipts/lh-test.json",
+    "receiptNormalizedSha256": "b9d01ea2260c76ede1862ad89e7789ebe2c6dc132460db1f317ee3f500ec4956"
+  },
+  "archive": {
+    "targetPath": "specs/intake-authoring-archive/b719969f-f174-423f-baf7-212102bbbafd/a4780715-ab17-49f9-8aa7-e11e7bb420d1/intakes/LH-TEST.md",
+    "targetNormalizedSha256": "388473bd27949e9d23831663c3e5d4462c3cc16d393893fbe5e81176bf3cc0cb",
+    "receiptPath": "specs/intake-authoring-archive/b719969f-f174-423f-baf7-212102bbbafd/a4780715-ab17-49f9-8aa7-e11e7bb420d1/specs/intake-authoring-receipts/lh-test.json",
+    "receiptNormalizedSha256": "b9d01ea2260c76ede1862ad89e7789ebe2c6dc132460db1f317ee3f500ec4956"
+  },
+  "seriesImpact": {
+    "seriesId": "N/A",
+    "migrationOperationId": "N/A"
+  },
+  "reactivationBoundary": "Permanent tombstone: no identity reuse and no physical purge.",
+  "nextAction": "No automatic action; a new explicitly commissioned semantic unit needs a fresh identity."
+}

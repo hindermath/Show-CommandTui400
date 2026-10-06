@@ -1,0 +1,16 @@
+{
+  "generation": "T040 actual published bootstrap before T041 ordinary updates",
+  "publishedFileNormalizedHashes": {
+    "requirements/intake-governance-config.json": "3b885d1895ac2f5c3783a64d3be1a99cf645d61f7622afcc65c8f173ff4f6d4b",
+    "specs/intake-series/lh00-process/manifest.json": "c45765c320083d4a7cf5aab7794ffcadf926193e3f15db73d9d7d92173ce1dca",
+    "specs/intake-series/lh00-process/receipt.json": "5b15589d7c424294566a2d85d3e9a30721e8555b71234095660c0929a5379f01",
+    "specs/intake-series/lh00-process/operation.json": "c525947b533a7875acdb6032d6e942f234f42942771040a7fdd1c6c8151c2d45",
+    ".specify/memory/intake-series-policy.json": "c7362796774ec93414954a406d7a9651ef12d9c4bfa4432b1cf655786e2d0eec",
+    "requirements/RequirementsIndex.md": "41fe6e93b0d57e729d527da4f6c9bb1ddd63c30126b790b4b46203a3fbe13bad",
+    "requirements/baseline/README.md": "d343348e55892e76ffafc6cafbf38f63c0f3cb4373821ea88be5fbd4d1f2f88b",
+    "requirements/intakes/archive/README.md": "964de59f93c06c85bb508afcf61195bbdb9cb5866e59b812b7232ce3a6fac175",
+    "requirements/intakes/backlog/README.md": "1e037a3ba7435b3a0292f26b4abf80487c37f3bb1eebdd87754cab8743c5a229",
+    "requirements/intakes/history/README.md": "68083dc29ae48bea791a12b2c1c6e672db78b0a3f2ce66d753a3175dc463f47e"
+  },
+  "boundary": "Historical generation hashes; later T041 successors retain exact lineage. Not current-file hashes."
+}

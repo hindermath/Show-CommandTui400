@@ -1,0 +1,99 @@
+[
+  {
+    "approvedVerb": "Test",
+    "helpSynopsis": "DE: Vorhandenen Spec-Kit-Dateiprozess lokal aufrufen. EN: Invoke the existing local Spec Kit file process.",
+    "name": "Test-SpecKitPrerequisites",
+    "advancedFunction": true,
+    "parameters": [
+      "Json",
+      "RequireTasks",
+      "IncludeTasks",
+      "PathsOnly",
+      "Help",
+      "Verbose",
+      "Debug",
+      "ErrorAction",
+      "WarningAction",
+      "InformationAction",
+      "ProgressAction",
+      "ErrorVariable",
+      "WarningVariable",
+      "InformationVariable",
+      "OutVariable",
+      "OutBuffer",
+      "PipelineVariable"
+    ]
+  },
+  {
+    "approvedVerb": "New",
+    "helpSynopsis": "DE: Vorhandenen Spec-Kit-Dateiprozess lokal aufrufen. EN: Invoke the existing local Spec Kit file process.",
+    "name": "New-SpecKitFeature",
+    "advancedFunction": true,
+    "parameters": [
+      "Json",
+      "AllowExistingBranch",
+      "DryRun",
+      "ShortName",
+      "Number",
+      "Timestamp",
+      "Help",
+      "FeatureDescription",
+      "Verbose",
+      "Debug",
+      "ErrorAction",
+      "WarningAction",
+      "InformationAction",
+      "ProgressAction",
+      "ErrorVariable",
+      "WarningVariable",
+      "InformationVariable",
+      "OutVariable",
+      "OutBuffer",
+      "PipelineVariable"
+    ]
+  },
+  {
+    "approvedVerb": "Initialize",
+    "helpSynopsis": "DE: Vorhandenen Spec-Kit-Dateiprozess lokal aufrufen. EN: Invoke the existing local Spec Kit file process.",
+    "name": "Initialize-SpecKitPlan",
+    "advancedFunction": true,
+    "parameters": [
+      "Json",
+      "Help",
+      "Verbose",
+      "Debug",
+      "ErrorAction",
+      "WarningAction",
+      "InformationAction",
+      "ProgressAction",
+      "ErrorVariable",
+      "WarningVariable",
+      "InformationVariable",
+      "OutVariable",
+      "OutBuffer",
+      "PipelineVariable"
+    ]
+  },
+  {
+    "approvedVerb": "Initialize",
+    "helpSynopsis": "DE: Vorhandenen Spec-Kit-Dateiprozess lokal aufrufen. EN: Invoke the existing local Spec Kit file process.",
+    "name": "Initialize-SpecKitTasks",
+    "advancedFunction": true,
+    "parameters": [
+      "Json",
+      "Help",
+      "Verbose",
+      "Debug",
+      "ErrorAction",
+      "WarningAction",
+      "InformationAction",
+      "ProgressAction",
+      "ErrorVariable",
+      "WarningVariable",
+      "InformationVariable",
+      "OutVariable",
+      "OutBuffer",
+      "PipelineVariable"
+    ]
+  }
+]
