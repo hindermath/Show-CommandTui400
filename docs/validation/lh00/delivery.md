@@ -73,3 +73,24 @@ T001–T044 are complete; T045 remains human pilot permission. Preserve the exac
 earlier Mac assessment. Rerender from the clean evidence commit and verify
 statistics plus final-head hosted CI before merge.
 [Beobachtete Prüfausgaben / Observed outputs](delivery-gate-results.json).
+
+## Lokaler Push-Hook / Local push hook
+
+Der erste Push scheiterte vor Remote-Schreiben am Regex-Fallback: Er stufte die
+Namen von Scan-Berichten und den öffentlichen Detektorbezeichner als Secret ein,
+während Gitleaks die vollständige Commitrange bereits ohne Befund geprüft hatte.
+Der projektbezogene Hook behandelt jetzt exakt vier verifizierte Nicht-Credential-
+Artefakte anhand von Pfad UND SHA-256-Rohhash. Jede Byteänderung, unbekannte
+Datei oder Symlink bleibt abgewiesen; Gitleaks und der übrige Fallback bleiben
+unverändert aktiv. Zehn tatsächliche Funktionsfälle und der vollständige lokale
+Pre-push-Hook bestehen. Nur der projektlokale Hook wird aus dieser geprüften
+Quellkopie aktualisiert; keine zentrale Installation oder Flottenänderung.
+
+The first push was stopped before remote writes by false-positive fallback
+classification, while the full Gitleaks commit-range scan passed. Four exact
+non-credential artifact paths and raw hashes are now recognised in this project's
+hook. Changed bytes, unknown files and symlinks remain rejected; the scanner and
+remaining fallback stay active. Ten actual function cases and the complete hook
+pass. Update this project-local hook only, with no central/fleet installation.
+[Begründung und exakte Hashes / Rationale and exact hashes](delivery-hook-review.json),
+[tatsächliche Prüfungen / Actual checks](delivery-hook-results.json).
