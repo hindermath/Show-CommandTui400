@@ -51,6 +51,7 @@ heuristic would otherwise count spec.md as a test.*
 | 2026-10-05 | PR #27: Nachweise nach Sprachreview / Evidence after language review | Zwei rein sprachlich geänderte gebundene Quellen mit neuem Update, bytegleichen Archiven und anderem vollständigem Review nachgeführt; Intake und Anforderungen unverändert. Statistik durch vorhandenen Renderer aktualisiert. / Governed provenance correction after two grammar-only source changes, exact archives and fresh separate review; unchanged intake and requirements, existing renderer. [Nachweis / Evidence](../specs/001-lh00-intake-process/checklists/preflight-20261005-v037.md#lieferkorrektur-nach-sprachreview--delivery-correction-after-language-review). |
 
 | 2026-10-06 | LH-00: erneute Startvorbereitung / Renewed start preparation | Aktuelle Quellen-/Reviewbindung, lesendes Routing und Werkzeug-/Presetprüfungen belegt; datierten Statistikdrift nachvollziehbar eingeordnet. Autorisierte Lieferung mit bestehendem Renderer, unveränderter Methodik 80/100 und technischen Gates. Kein Implementierungsstart oder Prozessabnahme. / Current bindings, read-only routing and tool/preset checks; authorized renderer-based delivery with unchanged methodology and technical gates, no implementation or acceptance. [Nachweis / Evidence](../specs/001-lh00-intake-process/checklists/tasks-validation.md#erneute-startvorbereitung-am-2026-10-06--renewed-start-preparation). |
+| 2026-10-06 | macOS-15 CI runner migration | CI-Matrizen und gemeinsame Guidance auf macOS 15 umgestellt; Linux-/Windows-Auswahl erhalten, Required-Check-Migration und exakte PR-CI als Liefergates. / Migrated CI labels and guidance; preserved other platforms and required exact-head CI proof. |
 
 ## Gesamtstatistik / Overall Statistics
 
@@ -62,25 +63,25 @@ Profil 2 verwendet Git-getrackte Textdateien und sichtbare Git-Aktivitaet. Die W
 
 | Kennzahl / Metric | Wert / Value |
 |---|---:|
-| Textbasis / Text base | 120976 lines |
-| Textdateien / Text files | 917 |
+| Textbasis / Text base | 121159 lines |
+| Textdateien / Text files | 919 |
 | Beobachtbarer Zeitraum / Observable period | 2025-10-12..2026-10-06 |
 | Aktivtage / Active days | 9 |
-| Relevante Commits / Relevant commits | 33 |
-| Zeilen je Aktivtag / Lines per active day | 13441.8 |
+| Relevante Commits / Relevant commits | 34 |
+| Zeilen je Aktivtag / Lines per active day | 13462.1 |
 | Peak-Tag im Fenster / Peak day in window | 2026-09-27 / 97728 |
 | Peak-Woche im Fenster / Peak week in window | 2026-09-27 / 120977 |
 | Laengste Serie / Longest streak | 5 days |
-| Speedup vs. 80 lines/day | 168.0x |
-| Speedup vs. 100 lines/day | 134.4x |
-| Methodik / Methodology | v2; source `b1bb9ec847b1` |
+| Speedup vs. 80 lines/day | 168.3x |
+| Speedup vs. 100 lines/day | 134.6x |
+| Methodik / Methodology | v2; source `3c6a601f8661` |
 
 ### Artefaktmix / Artifact Mix
 
 ```text
 Produktiv / Production          [....................]   0.0% | 0
 Tests                           [#...................]   3.6% | 4362
-Dokumentation / Documentation   [##############......]  69.4% | 83929
+Dokumentation / Documentation   [##############......]  69.4% | 84112
 Skripte / Scripts               [####................]  22.4% | 27101
 Konfiguration / Configuration   [#...................]   4.5% | 5436
 Daten und Medien / Data and media [....................]   0.0% | 0
@@ -184,8 +185,8 @@ Es liegen keine belastbaren Phasendaten vor. Deshalb zeigt dieses Diagramm Monat
 
 ```text
 Scale: 0..200x
-80 lines/day       [#################...] 168.0x
-100 lines/day      [#############.......] 134.4x
+80 lines/day       [#################...] 168.3x
+100 lines/day      [#############.......] 134.6x
 ```
 
 Die Faktoren vergleichen sichtbare Lieferdichte mit den dokumentierten manuellen Referenzen. Sie messen keine Arbeitszeit.
@@ -198,7 +199,7 @@ Die Faktoren vergleichen sichtbare Lieferdichte mit den dokumentierten manuellen
 Scale: 0..20000 lines/day
 Experienced manual [#...................] 80
 Thorsten solo      [#...................] 100
-Visible repository [#############.......] 13441.8
+Visible repository [#############.......] 13462.1
 ```
 
 Die gemeinsame Skala vergleicht Referenzen und sichtbare Lieferdichte. Sie schreibt die Git-Aktivitaet keiner Person oder KI pauschal zu.
@@ -224,6 +225,6 @@ DE: Das Fenster beginnt am 2025-10-12 und endet am 2026-10-06. Es enthaelt 9 akt
 | 2026-07 | 0 |
 | 2026-08 | 0 |
 | 2026-09 | 109576 |
-| 2026-10 | 20962 |
+| 2026-10 | 21151 |
 
 <!-- project-statistics-v2:end -->
