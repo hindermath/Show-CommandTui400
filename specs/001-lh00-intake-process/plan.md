@@ -412,3 +412,26 @@ compatibility, without new LH-00 requirements, contracts or acceptance rules.
 The linked governed update preserves identity, exact archives and a complete
 independent review. Fresh start checks are separate from IAD011 history. Current
 delivery covers this preparation package only, without implementation or series authority.
+
+## Startabgleich IAD013 nach Runnerwechsel / Start reconciliation IAD013 after runner migration
+
+[IAD013](../../docs/planning/lh00-macos15-refresh-decisions.md) bindet die aktuelle
+Runner-Guidance mit gewöhnlichem Intake-Update und unabhängigem Single-Review.
+T001 muss vor einem eigenen Implementierungsauftrag erneut aktuelle Quellen und
+Review prüfen. Die bestehende Aufgabenvalidierung dokumentiert diese Vorbereitung.
+Setup-Validierung läuft hier auf Ubuntu 22.04, macOS 15 und Windows 2022; die
+PowerShell-Analyse und Maintenance TUI bleiben entsprechend der Workflow-Auswahl
+Linux-only. Die neun historischen B-01-Source-CI-Jobs und IAD012s Nachweise behalten
+ihren Kontext. Kein erneutes Release, Installieren oder Ausweiten der Runner-Matrix.
+Die technischen Prozessverträge und vollständige Abnahme nach LH-02 vor LH-03
+bleiben unverändert; Runner-Versionen sind keine Produkt-Mindestversionen.
+
+IAD013 binds current runner guidance through an ordinary intake update and separate
+Single review. T001 must recheck current sources and review before a separately
+commissioned implementation. The existing task-validation record documents this
+preparation. Setup validation here uses Ubuntu 22.04, macOS 15 and Windows 2022;
+PowerShell analysis and Maintenance TUI remain Linux-only under existing workflow
+selection. Preserve the nine historical B-01 source-CI jobs and IAD012 evidence.
+Do not repeat releases/installations or expand runner matrices. Process contracts
+and full acceptance after LH-02 before LH-03 stay unchanged; runner versions do
+not set product minimums.

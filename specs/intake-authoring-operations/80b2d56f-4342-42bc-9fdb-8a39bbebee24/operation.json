@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "1.0",
+  "documentType": "IntakeOperation",
+  "operationId": "80b2d56f-4342-42bc-9fdb-8a39bbebee24",
+  "type": "Update",
+  "status": "Completed",
+  "createdAt": "2026-10-06T12:35:54Z",
+  "authorityEvidence": "docs/planning/lh00-macos15-refresh-decisions.md",
+  "proposalPath": "docs/planning/lh00-macos15-refresh-decisions.md",
+  "proposalNormalizedSha256": "e358e9e8640e886207838dc89baf199d4a2ba104785d20742e485308439dfb67",
+  "approval": {
+    "approved": true,
+    "approvedBy": "Thorsten Hindermann",
+    "approvedAt": "2026-10-06T12:35:54Z",
+    "evidence": "Explicit PLEASE IMPLEMENT THIS PLAN for LH-00 after GitHub Actions changes, including separate-agent review and evidence-only MergeAndSync/admin delivery."
+  },
+  "stagingDirectory": "N/A",
+  "intakeId": "2296d99d-f099-4c4d-88f7-789581693eb0",
+  "receiptId": "e92fb3b7-cadc-481d-913f-68aba06f2ad3",
+  "priorReceiptId": "c515439e-cd09-4e44-8fe2-ac6135e21e3f",
+  "priorReviewId": "45881080-479a-47f9-9a62-e728b3d70244",
+  "beforeTargetNormalizedSha256": "10f705885557b01201f6a8c1771d65cbe28056219d591e28f6082a33200858d7",
+  "afterTargetNormalizedSha256": "fff66ab341600428fffdbd5f8e27cfa47ff780558b69166784f7a72aa2477370",
+  "archiveEvidence": [
+    {
+      "originalPath": "intakes/LH-00.md",
+      "archivePath": "specs/intake-authoring-archive/lh-00/c515439e-cd09-4e44-8fe2-ac6135e21e3f/intakes/LH-00.md",
+      "rawSha256": "10f705885557b01201f6a8c1771d65cbe28056219d591e28f6082a33200858d7",
+      "normalizedSha256": "10f705885557b01201f6a8c1771d65cbe28056219d591e28f6082a33200858d7"
+    },
+    {
+      "originalPath": "specs/intake-authoring-receipts/lh-00.json",
+      "archivePath": "specs/intake-authoring-archive/lh-00/c515439e-cd09-4e44-8fe2-ac6135e21e3f/specs/intake-authoring-receipts/lh-00.json",
+      "rawSha256": "7e98c4b99958759f58003b9294fd509fa79f79562309373cedd1722a6c81d23e",
+      "normalizedSha256": "7e98c4b99958759f58003b9294fd509fa79f79562309373cedd1722a6c81d23e"
+    },
+    {
+      "originalPath": "specs/intake-review-request.json",
+      "archivePath": "specs/intake-review-archive/45881080-479a-47f9-9a62-e728b3d70244/intake-review-request.json",
+      "rawSha256": "24fbe7a09afdfdcc7a264904a85f92e518ecedb3970069b3ac757530c558bc57",
+      "normalizedSha256": "24fbe7a09afdfdcc7a264904a85f92e518ecedb3970069b3ac757530c558bc57"
+    },
+    {
+      "originalPath": "specs/intake-review-result.json",
+      "archivePath": "specs/intake-review-archive/45881080-479a-47f9-9a62-e728b3d70244/intake-review-result.json",
+      "rawSha256": "8f91ec1d5132430fedcc906859ab39d3e04c8bd7d102cd36dc76e0feac940b5b",
+      "normalizedSha256": "8f91ec1d5132430fedcc906859ab39d3e04c8bd7d102cd36dc76e0feac940b5b"
+    },
+    {
+      "originalPath": "specs/intake-review-report.md",
+      "archivePath": "specs/intake-review-archive/45881080-479a-47f9-9a62-e728b3d70244/intake-review-report.md",
+      "rawSha256": "25d792339141f52a2f229acdb86be519b59064271b7605319c6effc6cb0e30c1",
+      "normalizedSha256": "25d792339141f52a2f229acdb86be519b59064271b7605319c6effc6cb0e30c1"
+    },
+    {
+      "originalPath": "AGENTS.md",
+      "archivePath": "specs/intake-authoring-archive/lh-00/c515439e-cd09-4e44-8fe2-ac6135e21e3f/AGENTS.md",
+      "rawSha256": "77f7a39a931b6ab04419a890194db278b837e04259f9b30ddf214d6a3142a932",
+      "normalizedSha256": "77f7a39a931b6ab04419a890194db278b837e04259f9b30ddf214d6a3142a932",
+      "boundary": "Exact historical bytes bound by the predecessor, recovered from a5185cd; current runner guidance remains unchanged."
+    }
+  ],
+  "reviewSupersession": "Exact old request/result/report archived. Old Ready binds stale AGENTS.md; fresh complete independent review required.",
+  "intendedTargets": [
+    "intakes/LH-00.md",
+    "docs/planning/lh00-macos15-refresh-decisions.md",
+    "specs/intake-authoring-receipts/lh-00.json",
+    "specs/intake-review-request.json",
+    "specs/intake-review-result.json",
+    "specs/intake-review-report.md",
+    "specs/intake-authoring-archive/lh-00/c515439e-cd09-4e44-8fe2-ac6135e21e3f/intakes/LH-00.md",
+    "specs/intake-authoring-archive/lh-00/c515439e-cd09-4e44-8fe2-ac6135e21e3f/specs/intake-authoring-receipts/lh-00.json",
+    "specs/intake-review-archive/45881080-479a-47f9-9a62-e728b3d70244/intake-review-request.json",
+    "specs/intake-review-archive/45881080-479a-47f9-9a62-e728b3d70244/intake-review-result.json",
+    "specs/intake-review-archive/45881080-479a-47f9-9a62-e728b3d70244/intake-review-report.md",
+    "specs/intake-authoring-archive/lh-00/c515439e-cd09-4e44-8fe2-ac6135e21e3f/AGENTS.md",
+    "specs/intake-authoring-operations/80b2d56f-4342-42bc-9fdb-8a39bbebee24/operation.json"
+  ],
+  "validatedTargets": [
+    "intakes/LH-00.md",
+    "docs/planning/lh00-macos15-refresh-decisions.md",
+    "specs/intake-authoring-receipts/lh-00.json",
+    "specs/intake-review-request.json",
+    "specs/intake-review-result.json",
+    "specs/intake-review-report.md",
+    "specs/intake-authoring-archive/lh-00/c515439e-cd09-4e44-8fe2-ac6135e21e3f/intakes/LH-00.md",
+    "specs/intake-authoring-archive/lh-00/c515439e-cd09-4e44-8fe2-ac6135e21e3f/specs/intake-authoring-receipts/lh-00.json",
+    "specs/intake-review-archive/45881080-479a-47f9-9a62-e728b3d70244/intake-review-request.json",
+    "specs/intake-review-archive/45881080-479a-47f9-9a62-e728b3d70244/intake-review-result.json",
+    "specs/intake-review-archive/45881080-479a-47f9-9a62-e728b3d70244/intake-review-report.md",
+    "specs/intake-authoring-archive/lh-00/c515439e-cd09-4e44-8fe2-ac6135e21e3f/AGENTS.md",
+    "specs/intake-authoring-operations/80b2d56f-4342-42bc-9fdb-8a39bbebee24/operation.json"
+  ],
+  "publishedTargets": [
+    "intakes/LH-00.md",
+    "docs/planning/lh00-macos15-refresh-decisions.md",
+    "specs/intake-authoring-receipts/lh-00.json",
+    "specs/intake-review-request.json",
+    "specs/intake-review-result.json",
+    "specs/intake-review-report.md",
+    "specs/intake-authoring-archive/lh-00/c515439e-cd09-4e44-8fe2-ac6135e21e3f/intakes/LH-00.md",
+    "specs/intake-authoring-archive/lh-00/c515439e-cd09-4e44-8fe2-ac6135e21e3f/specs/intake-authoring-receipts/lh-00.json",
+    "specs/intake-review-archive/45881080-479a-47f9-9a62-e728b3d70244/intake-review-request.json",
+    "specs/intake-review-archive/45881080-479a-47f9-9a62-e728b3d70244/intake-review-result.json",
+    "specs/intake-review-archive/45881080-479a-47f9-9a62-e728b3d70244/intake-review-report.md",
+    "specs/intake-authoring-archive/lh-00/c515439e-cd09-4e44-8fe2-ac6135e21e3f/AGENTS.md",
+    "specs/intake-authoring-operations/80b2d56f-4342-42bc-9fdb-8a39bbebee24/operation.json"
+  ],
+  "rollbackBoundary": "Validate isolated candidate before publishing; restore original bytes on publication failure.",
+  "failure": {
+    "class": "N/A",
+    "message": "N/A"
+  },
+  "nextAction": "Parent completes explicitly commissioned start-preparation delivery with rendered statistics, final-head CI, exact-head admin merge and local sync. No implementation.",
+  "completedAt": "2026-10-06T12:44:38Z",
+  "reviewId": "a65e169c-aacd-4dac-b80b-bad165da3679"
+}

@@ -456,3 +456,26 @@ release or installation. IAD012 commissions update, another reviewer, targeted
 reconciliation and delivery of preparation only. The fresh preflight supplements
 historical reports. All sixty-five tasks, negative-before-positive prerequisites,
 Foundation and staged acceptance remain intact. No feature or series is started.
+
+## Vorbereitung IAD013 nach Actions-Änderung / Preparation IAD013 after Actions changes
+
+[IAD013](../../docs/planning/lh00-macos15-refresh-decisions.md) beauftragt ausschließlich
+Intake-Update, anderes vollständiges Review, gezielten Abgleich/Analyze, Startchecks
+und Nachweislieferung. Alle 65 Task-IDs, offenen Checkboxen und 17 Parallelmarker
+bleiben erhalten. [Aufgabenvalidierung](checklists/tasks-validation.md) führt den
+aktuellen Nachweis; datierte Vorgänger bleiben historisch. T001 prüft bei eigenem
+Implementierungsauftrag nochmals die frischen Bindungen und den erlaubten Umfang.
+Aktuelle Setup-CI: Ubuntu 22.04, macOS 15, Windows 2022; PowerShell-Analyse und
+Maintenance TUI sind hier Linux-only. Diese Werkzeugnachweise schließen weder T045
+noch die späteren T046–T050/T059 ab. T034–T036 übernehmen gelieferte B-01-Nachweise
+mit korrektem historischen Kontext; keine erneuten Releases oder Installationen.
+
+IAD013 commissions only an intake update, complete separate review, targeted
+reconciliation/Analyze, start checks and evidence delivery. Preserve all sixty-five
+task IDs, open checkboxes and seventeen parallel markers. The task-validation record
+holds current proof; dated predecessors remain historical. T001 rechecks fresh
+bindings and scope under its own implementation request. Current setup CI uses
+Ubuntu 22.04, macOS 15 and Windows 2022; PowerShell analysis and Maintenance TUI here
+remain Linux-only. These tool checks complete neither T045 nor later T046–T050/T059.
+T034–T036 consume delivered B-01 evidence in its historical context, without new
+releases or installations.

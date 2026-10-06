@@ -833,3 +833,22 @@ requirements, success/constitution criteria and staged acceptance. No new
 specification or product decision is needed. The current preflight separates
 evidence from authority. MergeAndSync delivers this preparation package only,
 without implementation or follow-up execution.
+
+## Quellenaktualisierung IAD013 und CI-Grenzen / Source refresh IAD013 and CI boundaries
+
+[IAD013](../../docs/planning/lh00-macos15-refresh-decisions.md) aktualisiert den
+fachlichen Intake nach PR #29/#30 mit neuem Receipt und anderem vollständigem
+Review. Die bestehenden 24 FR, neun SC und sieben Stories bleiben unverändert.
+Setup-CI verwendet hier Ubuntu 22.04, macOS 15 und Windows 2022; PowerShell-Analyse
+und Maintenance TUI bleiben Linux-only. Gehostete Werkzeugprüfungen ersetzen weder
+die vier projektspezifischen Prozessumgebungen noch A11Y- oder Produktabnahme und
+setzen keine Produkt-Mindestversion. IAD012 und ältere Prüfungen behalten ihren
+historischen Kontext. Ready allein startet keine Implementierung oder Pilotläufe.
+
+IAD013 refreshes the intake after PR #29/#30 through a new receipt and complete
+review by another agent. Preserve all twenty-four FR, nine SC and seven stories.
+Setup CI here uses Ubuntu 22.04, macOS 15 and Windows 2022; PowerShell analysis and
+Maintenance TUI remain Linux-only. Hosted tool checks replace neither the four
+project process environments nor accessibility/product acceptance and select no
+product minimum. Preserve historical IAD012 evidence. Ready alone starts no
+implementation or pilot.
