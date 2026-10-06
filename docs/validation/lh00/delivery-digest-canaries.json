@@ -1,0 +1,19 @@
+{
+  "checkedAt": "2026-10-06T19:58:24.626776+00:00",
+  "cases": [
+    {
+      "path": "scripts/hooks/pre-push",
+      "scannerExit": 1,
+      "findingCount": 1,
+      "changedTokenDetected": true
+    },
+    {
+      "path": "docs/validation/lh00/delivery-hook-review.json",
+      "scannerExit": 1,
+      "findingCount": 1,
+      "changedTokenDetected": true
+    }
+  ],
+  "syntheticInputsOnly": true,
+  "payloadNotStored": true
+}

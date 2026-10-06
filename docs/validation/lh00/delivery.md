@@ -94,3 +94,13 @@ remaining fallback stay active. Ten actual function cases and the complete hook
 pass. Update this project-local hook only, with no central/fleet installation.
 [Begründung und exakte Hashes / Rationale and exact hashes](delivery-hook-review.json),
 [tatsächliche Prüfungen / Actual checks](delivery-hook-results.json).
+
+Eine zweite Commitrange-Prüfung meldete sechs weitere False Positives: dieselben
+drei öffentlichen SHA-256-Integritätswerte, jeweils im Hook und seinem
+Reviewnachweis, wurden wegen der Scan-Dateinamen als zugewiesene Schlüssel
+interpretiert. Die Werte sind unabhängig aus den bekannten Nicht-Credential-
+Artefakten berechnet. Nur diese drei Literale in zwei exakten Pfaden sind beim
+generischen Detektor ausgenommen; geänderte Werte bleiben erkennbar.
+The range scanner additionally misread three public integrity digests repeated
+in two files. Only those known digest literals in the two exact code/metadata
+paths are admitted by that detector; changed values remain detectable.

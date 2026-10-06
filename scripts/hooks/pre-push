@@ -304,7 +304,7 @@ import sys
 
 root = Path(sys.argv[2]).resolve()
 path = Path(sys.argv[1])
-reviewed = {'.gitleaks.toml': 'dc143a6564e986f6f02baf020593fc5cedeaed819a95c96c31f4ca2654454c10', 'docs/validation/lh00/secret-scan-review.json': 'f7a80b0fb5d652eca6e4b15958c8f68c1b21f4c4984a02da68c4774f1abbcffa', 'docs/validation/lh00/delivery-secret-scan-policy.json': '83763df4fb388543646d3f73a16e787e911eff16aa608ce278828babe3002ac2', 'docs/validation/lh00/delivery-secret-scan-results.json': '757636c95bfb677b63d224e9ecff4a33545360856d742c4068c8b1e04c486d9e'}
+reviewed = {'.gitleaks.toml': '4cd6dcb6e237202210239253113190b2824dfa96799b46ce215ff61dc5a661ab', 'docs/validation/lh00/secret-scan-review.json': 'f7a80b0fb5d652eca6e4b15958c8f68c1b21f4c4984a02da68c4774f1abbcffa', 'docs/validation/lh00/delivery-secret-scan-policy.json': '83763df4fb388543646d3f73a16e787e911eff16aa608ce278828babe3002ac2', 'docs/validation/lh00/delivery-secret-scan-results.json': '757636c95bfb677b63d224e9ecff4a33545360856d742c4068c8b1e04c486d9e'}
 try:
     name = str(path.relative_to(root))
     expected = reviewed.get(name)
