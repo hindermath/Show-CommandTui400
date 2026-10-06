@@ -173,3 +173,128 @@ Preserve the context of earlier dated checks and applicability rows. Authoring
 0.3.7 is current after PR #26. The fresh preflight records receipt, independent
 review, targeted analysis and start checks. Reconciliation changes no requirements,
 planned coverage, tasks or acceptance gates. Delivery covers preparation only.
+
+## Erneute Startvorbereitung am 2026-10-06 / Renewed start preparation
+
+**Basis / Base:** `be0d590e7ec9321f1eb0ea52f14a7dacfffa1ccd`, gemergter PR #27.
+**Owner:** Thorsten Hindermann. **Autor / Author:** Codex-Hauptagent / main agent.
+
+Der Owner beauftragte den aktualisierten Vorbereitungsplan: betroffene Startchecks
+erneuern, nur bei neuer Quellenabweichung Intake und anderes Review aktualisieren,
+nur bei fachlicher Auswirkung technische Artefakte abgleichen und diesen Nachweis
+fortschreiben. Schreibumfang ist diese Aufgabenvalidierung. Kein Commit, Push,
+Remote-Schreibzugriff, Routing-Refresh, Installation oder Implementierungsstart.
+Die folgenden Ergebnisse ergänzen die datierten Vorgänger; deren Aussagen bleiben
+historisch. T001–T065 werden durch diese Vorbereitung nicht als erledigt markiert.
+
+The owner commissioned the updated preparation plan: refresh affected start checks,
+update intake and independent review only after new source drift, reconcile technical
+artefacts only after a relevant change, and append this evidence. Writes are limited
+to this task-validation record. No commit, push, remote write, routing refresh,
+installation or implementation starts. Preserve dated predecessor evidence and keep
+all implementation tasks open.
+
+### Tatsächlich geprüfter Stand / Observed state
+
+Die folgenden Basischecks liefen vor dieser Nachweiserweiterung. Danach wurden
+alle 59 Bindungen, drei lokale Verweise, Whitespace und der exakte Schreibumfang
+erneut geprüft: PASS, nur diese Datei verändert. Der neue Dokumentationsumfang
+geht beim nächsten autorisierten Renderlauf zusätzlich in die Statistik ein.
+
+Base checks below ran before this evidence append. Afterwards, all fifty-nine
+bindings, three local links, whitespace and the exact one-file write scope passed
+revalidation. The next authorized render also includes this new documentation.
+
+| Prüfung / Check | Ergebnis / Outcome | Nachweis und Grenze / Evidence and boundary |
+|---|---|---|
+| Git / Git | PASS | Vor Nachweiserweiterung sauberer `main`, Upstream `0/0`; `git ls-remote` bestätigt denselben Remote-Head. Danach nur dieser beauftragte Dokumentationsdiff. / Clean synchronized main before this evidence append; only the commissioned documentation diff afterwards. |
+| Intake / Receipt | PASS, Exit 0 | Bash-Validator: Receipt `c515439e-cd09-4e44-8fe2-ac6135e21e3f`, ReadyForReview, 15 Quellen. / Current receipt, fifteen sources. |
+| Unabhängiges Review / Independent review | PASS, Exit 0 | Bash-Validator: Single, `45881080-479a-47f9-9a62-e728b3d70244`, Ready; keine Befunde, Fragen oder akzeptierten Risiken. / No findings, questions or accepted risks. |
+| Rekursive Bindungen / Recursive bindings | PASS | Alle 59 Ziel-/Quellen-/Governance-/Request-/Reviewbindungen aktuell, keine Abweichung. / All fifty-nine bindings current, no drift. |
+| Guidance und Constitution / Guidance and constitution | PASS | Fünf Guidance-Flächen bytegleich, beide Constitution-Kopien bytegleich. / Exact byte parity across both sets. |
+| Aufgaben und Checklisten / Tasks and checklists | PASS | 65 offene, eindeutige Tasks; 17 Parallelmarker erhalten. Die abgeschlossenen Planungschecklisten bleiben keine praktische Abnahme. / Open task identities and parallel markers preserved; planning checks are not process acceptance. |
+| Codex-Routing / Codex routing | Aligned, Exit 0 | Lesender Status: Codex CLI 0.160.0, Enumerate, sieben verfügbare Modelle, vier Rollen gültig. Kein Refresh; acht Modelle im Bericht vom 5. Oktober bleiben historisch. / Read-only status, seven available models and four valid roles; earlier inventory remains historical. |
+| Preset-Matrix / Preset matrix | PASS, Exit 0 | Check-only: genau 14 installierte Presets entsprechen der Projektmatrix. / Exact installed project matrix. |
+| Agentenflächen / Agent surfaces | PASS, Exit 0 | Bestehender Paritätstest: vier Tests erfolgreich. / Four existing parity tests pass. |
+| Secret-Scan / Secret scan | PASS, Exit 0 | High 0, Medium 0; fünf bekannte Low-Hinweise zu Agentenverzeichnissen. Kein Secret-Befund im Git-Diff. / No high or medium findings; known directory notices only. |
+| Statistik, aktuelles Datum / Statistics, current date | DRIFT, Exit 1 | Unveränderter Quellstand, aber Renderer erwartet den 6. statt 5. Oktober in Europe/Berlin. Dry-run zeigt ausschließlich Tagesfenster, Dienstagzelle und zugehörige Textalternativen verändert. / Date rollover only in the initial clean-tree preview. |
+| Statistik, damaliges Datum / Statistics, historical date | CURRENT, Exit 0 | Separater lesender Check mit SOURCE_DATE_EPOCH des Quellcommits `cb0167ea3286` reproduziert den früheren Stand. Dieser historische PASS ersetzt den heutigen DRIFT nicht. / Reproduces the former date without treating it as current readiness. |
+| Homogenität / Homogeneity | FAIL, Exit 1 | Genau ein Fehler: aktueller Statistikdrift; zusätzlicher bekannter lokaler STATS.md-Sprachhinweis. / One failure from statistics drift plus the existing local language warning. |
+| CI auf main / Main CI | PASS | Alle drei Workflows am Basiscommit bestanden; Links unten. Wiederverwendung der unveränderten technischen Evidence, keine Produktabnahme. / Reuse successful unchanged tooling evidence, without product acceptance. |
+
+CI: [PowerShell-Analyse / analysis](https://github.com/hindermath/Show-CommandTui400/actions/runs/37374096518),
+[Level-2-Einrichtung / setup](https://github.com/hindermath/Show-CommandTui400/actions/runs/37374096521),
+[Maintenance-TUI](https://github.com/hindermath/Show-CommandTui400/actions/runs/37374096663).
+
+Werkzeuge tatsächlich verfügbar: Git 2.54.0, Bash 5.3.20, Python 3.14.8,
+PowerShell 7.6.6, Spec Kit CLI 0.12.8 (eigene Python-Laufzeit 3.11.14),
+PSScriptAnalyzer 1.25.0, Pandoc 3.11, Typst 0.15.1 und VS-Code-Erweiterung
+myriad-dreamin.tinymist 0.15.8. Host: macOS 27.0.1. Dies definiert keine
+Produkt-Mindestversion und keine Mac-A/B-Abnahme.
+
+The listed tools and versions are locally available on macOS 27.0.1. Spec Kit's
+own Python runtime differs from the python3 executable used by validators.
+These observations set no product minimum and prove no Mac A/B acceptance.
+
+### Auswirkungen und nächste Grenze / Impact and next boundary
+
+Keine neue gebundene Quellenabweichung: kein erneutes Intake-Update oder Review
+erforderlich. Fachlicher Umfang, Spec, Plan und Tasks bleiben unverändert; der
+gültige Analyze-Nachweis aus PR #27 wird wiederverwendet. Kein weiterer Analyze-Lauf
+für den reinen Prüfbericht. Die heutige Vorbereitung bleibt wegen des aktuellen
+Statistik-/Homogenitätsfehlers für den Implementierungsstart **Blocked**.
+
+Zum Schließen dieses Befunds braucht es einen passenden lokalen Commit-/Renderer-
+Auftrag: zuerst den Nachweis committen, dann auf sauberem Arbeitsbaum mit dem
+bestehenden Renderer die Statistik erzeugen, Check-only und Homogenität prüfen
+und die generierte Statistik committen. Keine handgemachten Zahlen oder Änderung
+der Methodik. Diese Schritte sind in diesem Vorbereitungsauftrag nicht ausgeführt.
+Anschließend kann ein eigener LH-00-Implementierungsauftrag folgen. Die vier
+vollständigen Plattformnachweise, A11Y, Übersetzungen, Registry-/Seriennachweise,
+LH-01-/LH-02-Piloten und vollständige Abnahme nach LH-02 vor LH-03 bleiben offen.
+
+No newly changed bound source requires another intake update or review. Scope,
+specification, plan and tasks are unchanged; reuse PR #27's valid analysis instead
+of rerunning it for this check report. Implementation preflight remains **Blocked**
+by current statistics and homogeneity failure. Closure needs matching local
+commit/renderer authority: commit this source record, render on a clean tree,
+verify check-only and homogeneity, then commit generated statistics. Do not edit
+numbers or methodology manually. These actions were not performed here. A separate
+LH-00 implementation request may follow; full platform, accessibility, translation,
+registry/series, pilot and final acceptance evidence remains open.
+
+**Dokumentationsauswirkung / Documentation impact:** UpdateRequired; sourceOnly;
+DE zuerst/EN danach, etwa B2; Owner Thorsten. Leserpfad / reader path:
+Tasks → dieser Startnachweis / this start record → aktueller Receipt und Review / current receipt and review.
+Wiedervorlage / reassessment: nach Statistikabschluss und vor eigenem Implementierungsstart / after statistics closure and before separate implementation.
+
+### Nachfolgender Lieferauftrag / Subsequent delivery authority
+
+Der Owner beauftragte nach Sichtung dieses Nachweises ausdrücklich: Prüfbericht
+committen, Statistik rendern und prüfen, generierte Statistik committen sowie
+Push, PR, MergeAndSync mit Admin-Bypass. Der ursprüngliche lesende Auftrag und
+sein Blocked-Befund oben behalten ihren damaligen Kontext. Die Lieferung umfasst
+nur diesen Nachweis, den chronologischen Ledger und dessen generierten Block.
+Admin-Bypass ersetzt keine technische Prüfung. Keine Implementierung, reale
+Serienaktivierung, weiteren Intakes, Installation oder Flottenänderung.
+
+Prüfreihenfolge: exakten Quelländerungssatz validieren und committen; auf sauberem
+Arbeitsbaum Renderer-Vorschau und Schreiblauf ausführen; Check-only und Homogenität
+mit dem aktuellen Datum prüfen; exakt die generierte Statistik committen. Der
+zugehörige PR dokumentiert tatsächliche Ergebnisse und bindet die finale CI an
+seinen Head. Erst erfolgreicher aktueller Check-only und fehlerfreie Homogenität
+schließen den Statistikbefund; der historische Reproduzierbarkeitscheck genügt nicht.
+Ein eigener LH-00-Implementierungsauftrag und dessen T001-Startprüfung bleiben nötig.
+
+After reading this evidence, the owner explicitly commissioned source commit,
+statistics rendering/verification, generated-statistics commit, push, PR and
+MergeAndSync with admin bypass. Preserve the earlier read-only authority and
+Blocked result as historical. Deliver only this record, its chronological ledger
+and generated block. Admin bypass replaces no technical check. No implementation,
+live series activation, other intakes, installation or fleet change is authorized.
+
+Validate and commit the exact source set, preview and render on a clean tree,
+verify current-date check-only and homogeneity, then commit only generated output.
+The associated PR records observed results and binds final CI to its head. Only
+current successful checks close the statistics finding; historical reproducibility
+is insufficient. Separate LH-00 implementation authority and a fresh T001 remain required.

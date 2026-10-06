@@ -50,6 +50,8 @@ heuristic would otherwise count spec.md as a test.*
 
 | 2026-10-05 | PR #27: Nachweise nach Sprachreview / Evidence after language review | Zwei rein sprachlich geänderte gebundene Quellen mit neuem Update, bytegleichen Archiven und anderem vollständigem Review nachgeführt; Intake und Anforderungen unverändert. Statistik durch vorhandenen Renderer aktualisiert. / Governed provenance correction after two grammar-only source changes, exact archives and fresh separate review; unchanged intake and requirements, existing renderer. [Nachweis / Evidence](../specs/001-lh00-intake-process/checklists/preflight-20261005-v037.md#lieferkorrektur-nach-sprachreview--delivery-correction-after-language-review). |
 
+| 2026-10-06 | LH-00: erneute Startvorbereitung / Renewed start preparation | Aktuelle Quellen-/Reviewbindung, lesendes Routing und Werkzeug-/Presetprüfungen belegt; datierten Statistikdrift nachvollziehbar eingeordnet. Autorisierte Lieferung mit bestehendem Renderer, unveränderter Methodik 80/100 und technischen Gates. Kein Implementierungsstart oder Prozessabnahme. / Current bindings, read-only routing and tool/preset checks; authorized renderer-based delivery with unchanged methodology and technical gates, no implementation or acceptance. [Nachweis / Evidence](../specs/001-lh00-intake-process/checklists/tasks-validation.md#erneute-startvorbereitung-am-2026-10-06--renewed-start-preparation). |
+
 ## Gesamtstatistik / Overall Statistics
 
 <!-- project-statistics-v2:begin -->
