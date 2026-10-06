@@ -298,3 +298,165 @@ verify current-date check-only and homogeneity, then commit only generated outpu
 The associated PR records observed results and binds final CI to its head. Only
 current successful checks close the statistics finding; historical reproducibility
 is insufficient. Separate LH-00 implementation authority and a fresh T001 remain required.
+
+## Actions-Quellenaktualisierung IAD013 am 2026-10-06 / Actions source refresh IAD013
+
+**Basis / Base:** `0c944508bf0cc1d91eda5cffb278a34b1c48c704`, gemergte PRs #29/#30.
+**Owner:** Thorsten Hindermann. **Autor / Author:** Codex-Hauptagent / main agent.
+**Auftrag / Authority:** [IAD013](../../../docs/planning/lh00-macos15-refresh-decisions.md).
+
+Der Owner beauftragte das gewöhnliche LH-00-Update nach den Actions-Änderungen,
+ein vollständiges Review durch einen anderen Agenten, gezielten technischen
+Abgleich mit Analyze, Startchecks und Nachweislieferung per MergeAndSync/Admin-Bypass.
+Der alte Receipt meldete AGENTS.md-Quellenabweichung; der alte Review-Validator
+akzeptierte weiterhin die unveränderten Zielbytes. Seine historische Ready-Aussage
+wurde deshalb ausdrücklich abgelöst, nicht als aktuelle Quellenfrische übernommen.
+Vorgängerintake, Receipt, Review-Tripel und damalige AGENTS.md-Bytes sind exakt
+archiviert. Zwölf FR-00 und neun AC-00 je Sprache bleiben bytegleich; Intake-ID,
+65 offene Tasks und 17 Parallelmarker bleiben erhalten. Die obigen datierten
+Prüfungen und Behörden-/Plattformgrenzen behalten ihren historischen Kontext.
+
+The owner commissioned ordinary LH-00 refresh after Actions changes, complete
+review by another agent, targeted technical reconciliation with Analyze, start
+checks and evidence delivery through MergeAndSync/admin bypass. The old receipt
+reported AGENTS.md source drift while the review validator still accepted unchanged
+target bytes. Explicitly supersede its historical Ready instead of treating it as
+current freshness. Preserve exact predecessor intake, receipt, review triplet and
+historical AGENTS.md bytes. Keep twelve FR-00 and nine AC-00 per language unchanged,
+stable intake identity, sixty-five open tasks and seventeen parallel markers.
+Preserve the historical context of earlier dated checks and acceptance boundaries.
+
+### Tatsächliche Startchecks / Observed start checks
+
+| Prüfung / Check | Ergebnis / Outcome | Nachweis und Grenze / Evidence and boundary |
+|---|---|---|
+| Git-Basis / Git base | PASS | Vor Vorbereitung sauberer main, nach fetch Upstream 0/0; eigener begrenzter Lieferbranch. / Clean synchronized main before preparation; bounded delivery branch. |
+| Guidance / Constitution | PASS | Fünf Guidance-Dateien und zwei Constitution-Kopien jeweils bytegleich; keine Änderung daran. / Exact parity of both file sets. |
+| Codex-Routing / Routing | Aligned, Exit 0 | Lesender Status, Enumerate, sieben Modelle; kein Refresh. / Read-only status, seven models, no refresh. |
+| 14-Preset-Matrix / Matrix | PASS, Exit 0 | Installationsskript mit --check-only: exakt 14 passende Presets; keine Neuinstallation. / Fourteen matching installed presets, no reinstall. |
+| Agentenparität / Agent parity | PASS, Exit 0 | Bestehender Python-Test: vier Tests bestanden. / Four existing tests pass. |
+| PowerShell-Analyse / PowerShell analysis | PASS, Exit 0 | PSScriptAnalyzer 1.25.0, 73 Dateien, keine Error-/Warning-Befunde. / No error or warning findings. |
+| Secret-Scan / Secret scan | PASS, Exit 0 | High 0, Medium 0; fünf bekannte Low-Verzeichnishinweise. Finalen Lieferdiff ebenfalls prüfen. / No high or medium findings; recheck final delivery diff. |
+| Statistik / Statistics | Liefergate / Delivery gate | Nach Quellcommit auf sauberem Baum Vorschau/Renderer, aktuelles Check-only und eigener Statistikcommit; beobachtete Endergebnisse in PR und Lieferabschluss. Kein vorweggenommenes PASS. / Render after source commit; record actual final results in PR/closeout, not a predicted pass. |
+| Homogenität / Homogeneity | Liefergate / Delivery gate | Nach aktuellem Render --dry-run --no-patch; technische Fehler blockieren Lieferung. / Check after rendering; technical errors block delivery. |
+
+Werkzeuge lokal festgestellt / tools observed locally: Git 2.54.0, Bash 5.3.20,
+Python 3.14.8, PowerShell 7.6.6, Spec Kit 0.12.8. Diese Werte setzen keine
+Produkt-Mindestversion; die Hostrolle Mac A/B wird damit nicht abgenommen.
+
+### Analyse des technischen Abgleichs / Analysis of technical reconciliation
+
+Speckit-analyze lief mit explizitem Feature 001-lh00-intake-process; Prerequisites
+lieferten Spec, Plan, Tasks und die vorhandenen Zusatzartefakte. Keine Extension-
+Hooks konfiguriert. Der Abgleich ergänzt nur IAD013/Runner-/Nachweiskontext;
+alle vorhandenen technischen normativen Zeilen und Taskbeschreibungen bleiben
+unverändert. Die sechs Prüfdimensionen wurden auf diesem Stand beurteilt.
+
+Speckit-analyze used explicit feature 001-lh00-intake-process; prerequisites
+resolved existing design/task artefacts. No extension hooks are configured.
+Reconciliation adds only IAD013/runner/evidence context; existing technical
+normative lines and task descriptions remain unchanged. Assess all six analysis
+dimensions against this final context.
+
+| Dimension / Dimension | Offene Befunde / Open findings | Bewertung / Assessment |
+|---|---|---|
+| Duplikate / Duplication | 0 | Zusatzkontext führt keine weitere normative Anforderung ein. / Context adds no duplicate requirement. |
+| Mehrdeutigkeit / Ambiguity | 0 | Aktuelle CI-Auswahl und historische Nachweise ausdrücklich getrennt. / Current runner selection and historical proof are explicit. |
+| Unterspezifikation / Underspecification | 0 | Bestehende Prozessverträge unverändert; keine neue Implementierungsentscheidung. / Existing contracts remain unchanged. |
+| Constitution / Constitution | 0 | DE/EN, A11Y, SSDF/CWE, S-ADR-Pfad und Befugnisgrenzen erhalten. / Language, accessibility, security and authority rules preserved. |
+| Abdeckung / Coverage | 0 | 24 FR und neun SC vollständig geplant; 65 Tasks zugeordnet, keine erledigt. / Full planning coverage; no task completed. |
+| Konsistenz / Consistency | 0 | C1/I1/I2 bleiben behoben; T018 vor T017 und T025 vor T024 erhalten. / Prior corrections and negative-before-positive dependencies retained. |
+
+| Quell-FR / Source FR | Spec-FR | Aufgaben / Tasks | SC |
+|---|---|---|---|
+| FR-00-001 | FR-001–002 | T002, T013–T018 | SC-001 |
+| FR-00-002 | FR-003–004 | T004, T016, T029–T033 | SC-001/005 |
+| FR-00-003 | FR-005–006 | T016–T018 | SC-001/009 |
+| FR-00-004 | FR-007–008 | T037–T042 | SC-007 |
+| FR-00-005 | FR-009–010 | T019, T022 | SC-002 |
+| FR-00-006 | FR-011–012 | T020–T022, T046–T050 | SC-003/006 |
+| FR-00-007 | FR-013 | T004–T012, T058–T059 | SC-009 |
+| FR-00-008 | FR-014–016 | T023–T028 | SC-004 |
+| FR-00-009 | FR-017–018 | T029–T033 | SC-005 |
+| FR-00-010 | FR-019–020 | T043–T050 | SC-006 |
+| FR-00-011 | FR-021–022 | T034–T042 | SC-007 |
+| FR-00-012 | FR-023–024 | T051–T060 | SC-008/009 |
+
+Metriken / metrics: 24 Spec-FR, neun SC, 65 Tasks, geplante Abdeckung 100 %,
+Mehrdeutigkeiten 0, normative Duplikate 0, Critical 0; keine nicht zugeordneten
+Tasks. Grundlage ist die vorhandene Anforderungsabdeckung in tasks.md; gemeinsame
+Setup-/Foundation-/Abschlussaufgaben decken die übergreifenden CR ab. Diese
+Eigenprüfung ist keine praktische Erfüllung oder Owner-Abnahme.
+
+### Tatsächliche Actions-Auswahl / Actual Actions selection
+
+Auf dem Basis-Head bestanden drei Workflows mit fünf Jobs:
+[Setup](https://github.com/hindermath/Show-CommandTui400/actions/runs/37442226969)
+auf ubuntu-22.04, macos-15 und windows-2022;
+[PowerShell-Analyse](https://github.com/hindermath/Show-CommandTui400/actions/runs/37442226784)
+und [Maintenance TUI](https://github.com/hindermath/Show-CommandTui400/actions/runs/37442226798)
+jeweils nur auf ubuntu-22.04. Ein Stepname mit „macOS and Ubuntu“ belegt auf einem
+Ubuntu-Runner keinen zusätzlichen Mac-Lauf. Für die neue Lieferung müssen dieselben
+tatsächlich ausgelösten Jobs am endgültigen PR-Head erneut erfolgreich sein.
+
+Three workflows passed on the base head with five jobs: Setup on Ubuntu 22.04,
+macOS 15 and Windows 2022; PowerShell analysis and Maintenance TUI only on Ubuntu
+22.04. A step named “macOS and Ubuntu” on Ubuntu proves no additional Mac run.
+The new delivery requires all actually triggered jobs to pass again on its final
+PR head. Hosted tooling checks are not the four project process acceptance cases.
+
+### Verbleibende Grenzen / Remaining boundaries
+
+Nach aktuellen Herkunfts-/Reviewbindungen und erfolgreichen Liefergates kann ein
+separater LH-00-Implementierungsauftrag folgen. Keine Vorbereitung führt einen
+Task, eine reale Serie oder einen Pilotlauf aus. Vollständige Mac-A-/Mac-B-/Windows-
+11-/Ubuntu-WSL2-Prozessnachweise, praktische A11Y, Bestandsübersetzungen und angewendete
+zentrale Registerausrichtung bleiben Voraussetzung der vollen Abnahme nach LH-02
+vor LH-03. Kein Release, Routing-Refresh, Installieren oder Flotten-Rollout.
+
+After current provenance/review bindings and successful delivery gates, a separate
+LH-00 implementation request may follow. Preparation executes no task, live series
+or pilot. Full Mac A/B, native Windows 11 and Ubuntu/WSL2 process cases, practical
+accessibility, translations and applied central registry alignment remain required
+for full acceptance after LH-02 before LH-03. No release, routing refresh, installation
+or fleet rollout.
+
+**Dokumentationsauswirkung / Documentation impact:** UpdateRequired; sourceOnly;
+Owner Thorsten; DE zuerst/EN danach, etwa B2. Leserpfad / reader path:
+Tasks → Aufgabenvalidierung / task validation → IAD013 → aktueller Receipt/Review.
+Wiedervorlage / reassessment: nach Quellenänderung und vor Implementierung / after
+source change and before implementation.
+
+### Aktuelle Herkunft und unabhängiges Review / Current provenance and independent review
+
+Intake-ID `2296d99d-f099-4c4d-88f7-789581693eb0` bleibt erhalten. Neues Receipt
+`e92fb3b7-cadc-481d-913f-68aba06f2ad3`, Update-Vorgang `80b2d56f-4342-42bc-9fdb-8a39bbebee24`,
+Review `a65e169c-aacd-4dac-b80b-bad165da3679`. Zielhash / target hash:
+`fff66ab341600428fffdbd5f8e27cfa47ff780558b69166784f7a72aa2477370`.
+
+Der separate Agent `/root/lh00_macos15_independent_review` prüfte vollständig:
+Ready; ein Ziel, null Worker, zwölf von zwölf Dimensionen Pass, keine offenen
+Befunde, Fragen oder akzeptierten Risiken. IR006 korrigierte vor Abschluss die
+IAD012/IAD013-Auftragszuordnung in DE/EN. Alle 71 aktuellen Hashbindungen passen:
+Receipt 26, Request 1, Review 44. Receipt und Review bestanden jeweils Bash und
+PowerShell mit Exit 0 auf diesem Mac. Die Vorgängerarchive sind bytegleich;
+der aktuelle Update-Vorgang ist Completed, die LH-00-Prozessabnahme bleibt offen.
+
+The separate agent completed a full review: Ready; one target, no workers, all
+twelve dimensions pass, no open findings/questions/accepted risks. IR006 corrected
+the bilingual IAD012/IAD013 authority references before closure. All seventy-one
+current bindings match: receipt 26, request 1, review 44. Receipt and review pass
+both shells with exit zero on this Mac. Predecessor archives are exact; the update
+operation is Completed while full LH-00 process acceptance remains open.
+
+Aktuelle Artefakte / current artefacts: [Receipt](../../intake-authoring-receipts/lh-00.json),
+[Reviewbericht / review report](../../intake-review-report.md),
+[IAD013](../../../docs/planning/lh00-macos15-refresh-decisions.md).
+Diese Nachweislieferung ist sourceOnly. Keine zusätzlichen Commits allein für
+selbstreferenzielle Merge-/Statistikwerte; endgültige CI-/Merge-/Sync-Ergebnisse
+werden im PR und Lieferabschluss festgehalten. Der ursprüngliche Statistikdrift
+bleibt historisch erkennbar und wird nicht nachträglich in PASS umbenannt.
+
+This evidence delivery is sourceOnly. Avoid extra commits solely for self-referential
+merge/statistics values; record final CI/merge/sync results in the PR and delivery
+closeout. Preserve the earlier statistics drift without relabeling it as a pass.

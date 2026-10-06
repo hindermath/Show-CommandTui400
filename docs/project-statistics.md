@@ -53,6 +53,8 @@ heuristic would otherwise count spec.md as a test.*
 | 2026-10-06 | LH-00: erneute Startvorbereitung / Renewed start preparation | Aktuelle Quellen-/Reviewbindung, lesendes Routing und Werkzeug-/Presetprüfungen belegt; datierten Statistikdrift nachvollziehbar eingeordnet. Autorisierte Lieferung mit bestehendem Renderer, unveränderter Methodik 80/100 und technischen Gates. Kein Implementierungsstart oder Prozessabnahme. / Current bindings, read-only routing and tool/preset checks; authorized renderer-based delivery with unchanged methodology and technical gates, no implementation or acceptance. [Nachweis / Evidence](../specs/001-lh00-intake-process/checklists/tasks-validation.md#erneute-startvorbereitung-am-2026-10-06--renewed-start-preparation). |
 | 2026-10-06 | macOS-15 CI runner migration | CI-Matrizen und gemeinsame Guidance auf macOS 15 umgestellt; Linux-/Windows-Auswahl erhalten, Required-Check-Migration und exakte PR-CI als Liefergates. / Migrated CI labels and guidance; preserved other platforms and required exact-head CI proof. |
 
+| 2026-10-06 | LH-00-Actions-Quellenaktualisierung IAD013 / LH-00 Actions source refresh IAD013 | Gewöhnliches Update mit 21 Quellen, bytegleichen Vorgängern und unabhängigem Ready-Review; 71 aktuelle Hashbindungen, gezielter Spec-/Plan-/Tasks-Abgleich und Analyze ohne offene Befunde. 65 Tasks bleiben offen; keine Implementierung oder Prozessabnahme. / Ordinary update, exact predecessors, independent Ready review, fresh bindings and clean targeted analysis; no implementation or process acceptance. [Entscheidung / Decision](planning/lh00-macos15-refresh-decisions.md), [Prüfungen / Checks](../specs/001-lh00-intake-process/checklists/tasks-validation.md). |
+
 ## Gesamtstatistik / Overall Statistics
 
 <!-- project-statistics-v2:begin -->
@@ -63,27 +65,27 @@ Profil 2 verwendet Git-getrackte Textdateien und sichtbare Git-Aktivitaet. Die W
 
 | Kennzahl / Metric | Wert / Value |
 |---|---:|
-| Textbasis / Text base | 121159 lines |
-| Textdateien / Text files | 919 |
+| Textbasis / Text base | 123621 lines |
+| Textdateien / Text files | 927 |
 | Beobachtbarer Zeitraum / Observable period | 2025-10-12..2026-10-06 |
 | Aktivtage / Active days | 9 |
-| Relevante Commits / Relevant commits | 35 |
-| Zeilen je Aktivtag / Lines per active day | 13462.1 |
+| Relevante Commits / Relevant commits | 36 |
+| Zeilen je Aktivtag / Lines per active day | 13735.7 |
 | Peak-Tag im Fenster / Peak day in window | 2026-09-27 / 97728 |
 | Peak-Woche im Fenster / Peak week in window | 2026-09-27 / 120977 |
 | Laengste Serie / Longest streak | 5 days |
-| Speedup vs. 80 lines/day | 168.3x |
-| Speedup vs. 100 lines/day | 134.6x |
-| Methodik / Methodology | v2; source `0fd2d13885fd` |
+| Speedup vs. 80 lines/day | 171.7x |
+| Speedup vs. 100 lines/day | 137.4x |
+| Methodik / Methodology | v2; source `bcfef3fb1c76` |
 
 ### Artefaktmix / Artifact Mix
 
 ```text
 Produktiv / Production          [....................]   0.0% | 0
-Tests                           [#...................]   3.6% | 4362
-Dokumentation / Documentation   [##############......]  69.4% | 84112
-Skripte / Scripts               [####................]  22.4% | 27101
-Konfiguration / Configuration   [#...................]   4.5% | 5436
+Tests                           [#...................]   3.5% | 4362
+Dokumentation / Documentation   [##############......]  69.1% | 85405
+Skripte / Scripts               [####................]  21.9% | 27101
+Konfiguration / Configuration   [#...................]   5.3% | 6605
 Daten und Medien / Data and media [....................]   0.0% | 0
 Sonstiger Text / Other text     [#...................]   0.1% | 148
 ```
@@ -109,7 +111,7 @@ Sa/Sa  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 Wochen / Weeks 27..52 | 2026-04-12..2026-10-10
 So/Su  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 3
 Mo/Mo  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 4
-Di/Tu  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 2
+Di/Tu  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 4
 Mi/We  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3 -
 Do/Th  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4 -
 Fr/Fr  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -
@@ -153,7 +155,7 @@ Keine Aktivitaet / No activity
 Wochen / Weeks 27..52 | 2026-04-12..2026-10-10
   cap 200000 | . . . . . . . . . . . . . . . . . . . . . . . . . .
       166667 | . . . . . . . . . . . . . . . . . . . . . . . . . .
-      133333 | . . . . . . . . . . . . . . . . . . . . . . . . . .
+      133333 | . . . . . . . . . . . . . . . . . . . . . . . . . #
       100000 | . . . . . . . . . . . . . . . . . . . . . . . . # #
        66667 | . . . . . . . . . . . . . . . . . . . . . . . . # #
        33333 | . . . . . . . . . . . . . . . . . . . . . . . . # #
@@ -185,8 +187,8 @@ Es liegen keine belastbaren Phasendaten vor. Deshalb zeigt dieses Diagramm Monat
 
 ```text
 Scale: 0..200x
-80 lines/day       [#################...] 168.3x
-100 lines/day      [#############.......] 134.6x
+80 lines/day       [#################...] 171.7x
+100 lines/day      [##############......] 137.4x
 ```
 
 Die Faktoren vergleichen sichtbare Lieferdichte mit den dokumentierten manuellen Referenzen. Sie messen keine Arbeitszeit.
@@ -199,7 +201,7 @@ Die Faktoren vergleichen sichtbare Lieferdichte mit den dokumentierten manuellen
 Scale: 0..20000 lines/day
 Experienced manual [#...................] 80
 Thorsten solo      [#...................] 100
-Visible repository [#############.......] 13462.1
+Visible repository [##############......] 13735.7
 ```
 
 Die gemeinsame Skala vergleicht Referenzen und sichtbare Lieferdichte. Sie schreibt die Git-Aktivitaet keiner Person oder KI pauschal zu.
@@ -225,6 +227,6 @@ DE: Das Fenster beginnt am 2025-10-12 und endet am 2026-10-06. Es enthaelt 9 akt
 | 2026-07 | 0 |
 | 2026-08 | 0 |
 | 2026-09 | 109576 |
-| 2026-10 | 21153 |
+| 2026-10 | 24165 |
 
 <!-- project-statistics-v2:end -->
