@@ -1,0 +1,57 @@
+{
+  "task": "T041-finalization",
+  "intakeId": "2296d99d-f099-4c4d-88f7-789581693eb0",
+  "priorReceiptId": "831ae5aa-18f6-4368-8ec3-f394189f1fd1",
+  "receiptId": "4ecf3164-881a-413e-9ab0-d717de91757f",
+  "operationId": "27a2ee98-0194-4323-a70d-f24da6a3cb1a",
+  "oldReviewId": "N/A",
+  "previousTargetSha256": "66056f4827f0c24c62afafd217889b58d1a27361f6e46cabdee48335341eb6b5",
+  "targetSha256": "ea4919bfcff0bfcfbef8bb557bd37ad2483ad6b5ec28b4e1668db4a6948a35bd",
+  "archiveEvidence": [
+    {
+      "originalPath": "intakes/LH-00.md",
+      "archivePath": "specs/intake-authoring-archive/lh-00/831ae5aa-18f6-4368-8ec3-f394189f1fd1/intakes/LH-00.md",
+      "rawSha256": "66056f4827f0c24c62afafd217889b58d1a27361f6e46cabdee48335341eb6b5",
+      "normalizedSha256": "66056f4827f0c24c62afafd217889b58d1a27361f6e46cabdee48335341eb6b5"
+    },
+    {
+      "originalPath": "specs/intake-authoring-receipts/lh-00.json",
+      "archivePath": "specs/intake-authoring-archive/lh-00/831ae5aa-18f6-4368-8ec3-f394189f1fd1/specs/intake-authoring-receipts/lh-00.json",
+      "rawSha256": "fd7fa5dd25c7e8670ec1c06294259d00b866842e3a373f7c18c1dfe9d58f14a4",
+      "normalizedSha256": "fd7fa5dd25c7e8670ec1c06294259d00b866842e3a373f7c18c1dfe9d58f14a4"
+    },
+    {
+      "originalPath": ".specify/memory/intake-authoring-profile.md",
+      "archivePath": "specs/intake-authoring-archive/lh-00/831ae5aa-18f6-4368-8ec3-f394189f1fd1/.specify/memory/intake-authoring-profile.md",
+      "rawSha256": "8fa07b8ff7228d3dad52b526096bd8905ac6b0658daf1df402b2fdd43a3d09c6",
+      "normalizedSha256": "8fa07b8ff7228d3dad52b526096bd8905ac6b0658daf1df402b2fdd43a3d09c6"
+    }
+  ],
+  "receiptValidation": [
+    {
+      "shell": "bash",
+      "exitCode": 0,
+      "output": "PASS: intake authoring 4ecf3164-881a-413e-9ab0-d717de91757f is current (ReadyForReview, 28 sources, intakes/LH-00.md)"
+    },
+    {
+      "shell": "PowerShell",
+      "exitCode": 0,
+      "output": "PASS: intake authoring 4ecf3164-881a-413e-9ab0-d717de91757f is current (ReadyForReview, 28 sources, intakes/LH-00.md)"
+    }
+  ],
+  "operationValidation": [
+    {
+      "shell": "bash",
+      "exitCode": 0,
+      "output": "PASS: IntakeOperation artifact is valid (<candidate-root>/specs/intake-authoring-operations/27a2ee98-0194-4323-a70d-f24da6a3cb1a/operation.json)"
+    },
+    {
+      "shell": "PowerShell",
+      "exitCode": 0,
+      "output": "PASS: IntakeOperation artifact is valid (<candidate-root>/specs/intake-authoring-operations/27a2ee98-0194-4323-a70d-f24da6a3cb1a/operation.json)"
+    }
+  ],
+  "normativeFRACUnchanged": true,
+  "newReviewPending": true,
+  "localOnly": true
+}

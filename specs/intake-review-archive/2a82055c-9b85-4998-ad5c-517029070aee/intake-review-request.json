@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.1",
+  "reviewId": "2a82055c-9b85-4998-ad5c-517029070aee",
+  "mode": "Single",
+  "policy": "generic-markdown",
+  "targets": [
+    {
+      "path": "intakes/LH-00.md",
+      "role": "Primary"
+    }
+  ],
+  "series": {
+    "orderedTargetPaths": [],
+    "roots": [],
+    "dependencies": []
+  },
+  "campaign": {
+    "manifestPath": "N/A",
+    "workers": [],
+    "operatorExceptions": []
+  },
+  "authority": {
+    "request": "Explicit owner T019–T045 local execution request includes T032 ordinary update, remediation and full review by a distinct agent. IAD014 supplies authority; IAD016 records correction generation, not B-01 or pilot approval.",
+    "evidence": {
+      "path": "docs/planning/lh00-increment2-update-decisions.md",
+      "normalizedSha256": "48cd6a31e102dd8af436a7c3560cbd6b202435f8bb09e5afbff5935093cc2b69"
+    },
+    "targetMutationAllowed": false,
+    "implementationAllowed": false,
+    "remoteAccessAllowed": false,
+    "routingAccessAllowed": false
+  },
+  "projectProfile": "show-commandtui400-de-en",
+  "evidenceDelivery": "Current independent local review triplet only; no commit/push/remote writes or feature pilots.",
+  "priorReviewId": "d34a0858-7469-43e4-882c-6144c6e17393",
+  "priorReviewArchive": "specs/intake-review-archive/d34a0858-7469-43e4-882c-6144c6e17393",
+  "targetHash": "0481d515cfe4bfac75365890d06147e48965c7062b65953179eb41cc8c82a24e"
+}

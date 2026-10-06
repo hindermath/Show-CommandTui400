@@ -1,0 +1,111 @@
+{
+  "checkedAt": "2026-10-06T19:30:47.689312+00:00",
+  "checks": [
+    {
+      "check": "secret-agent-surfaces",
+      "argv": [
+        "bash",
+        "scripts/scan-agent-secrets.sh",
+        "--fail-on-high",
+        "."
+      ],
+      "exitCode": 0,
+      "output": "OK     | gitleaks | no secrets in current git diff\nlow    | .agents | empty agent directory\nlow    | .claude | prompt, command, or template files only\nlow    | .github/agents | prompt, command, or template files only\nlow    | .github/prompts | prompt, command, or template files only\nlow    | .opencode | prompt, command, or template files only\n\nSummary: high=0 medium=0 low=5 total_agent_dirs=5 gitleaks_high=0",
+      "result": "Passed",
+      "boundary": "Actual scoped check result."
+    },
+    {
+      "check": "preset-matrix",
+      "argv": [
+        "bash",
+        "scripts/install-spec-kit-governance-presets.sh",
+        "--repo",
+        ".",
+        "--preset-config",
+        "scripts/config/spec-kit-project-statistics-governance-presets.json",
+        "--check-only"
+      ],
+      "exitCode": 0,
+      "output": "## .\n  OK: 14 Presets entsprechen exakt der Matrix / presets exactly match the matrix",
+      "result": "Passed",
+      "boundary": "Actual scoped check result."
+    },
+    {
+      "check": "homogeneity",
+      "argv": [
+        "bash",
+        "scripts/check-homogeneity.sh",
+        "--dry-run",
+        "--no-patch",
+        "."
+      ],
+      "exitCode": 1,
+      "output": "Workspace Homogeneity Guardian — check-homogeneity v1.0\nScan-Startpunkt: .\n======================================================\n\n[Level 0] ./\n  WARN STATS.md                                 WARN: bilingual-section-missing\n  ✗  docs/project-statistics.md               FAIL: ASCII Statistics Profile 2 drift\n\n======================================================\nCOMPLIANCE SUMMARY\n\n.                              [#########.]  93 %  (27/29 checks)\n\nOverall: 93 %  |  Workspaces: 0  |  Projects: 0\n\nExit code: 1 (1 FAIL, 1 WARN)",
+      "result": "Failed",
+      "boundary": "Generated statistics drift requires later authorized commit/render package."
+    },
+    {
+      "check": "statistics",
+      "argv": [
+        "bash",
+        "scripts/render-project-statistics.sh",
+        "--repo",
+        ".",
+        "--check-only"
+      ],
+      "exitCode": 1,
+      "output": "[DRIFT] /Users/thorstenhindermann/RiderProjects/Show-CommandTui400/docs/project-statistics.md\n  Source / Quelle: bcfef3fb1c76\n  Text lines / Textzeilen: 124747\n  Active days / Aktivtage: 9",
+      "result": "Failed",
+      "boundary": "Generated statistics drift requires later authorized commit/render package."
+    },
+    {
+      "check": "diff",
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exitCode": 0,
+      "output": "",
+      "result": "Passed",
+      "boundary": "Actual scoped check result."
+    },
+    {
+      "check": "current-owned-links",
+      "files": [
+        "intakes/LH-00.md",
+        ".specify/memory/intake-authoring-profile.md",
+        "docs/intake-governance.md",
+        "docs/Lastenheft-Plan.md",
+        "docs/Entwicklungsumgebung.md",
+        "docs/security/README.md",
+        "requirements/RequirementsIndex.md",
+        "requirements/baseline/README.md",
+        "docs/accessibility/lh00-process.md",
+        "docs/validation/lh00/collection.md",
+        "docs/validation/lh00/review.md",
+        "docs/validation/lh00/mac-a.md",
+        "docs/man/lh00-process.1.md",
+        "docs/cross-platform/lh00-parity.md",
+        "docs/planning/lh00-increment2-update-decisions.md",
+        "docs/planning/lh00-collection-migration-decisions.md"
+      ],
+      "missing": [],
+      "result": "Passed"
+    },
+    {
+      "check": "whole-working-directory-gitleaks",
+      "exitCode": 0,
+      "result": "Passed",
+      "boundary": "Temporary exact baseline for three independent confirmed public-guidance false positives only; original raw exit2 retained; no scan policy change or path/rule blanket exclusion."
+    },
+    {
+      "check": "tracked-powershell-analysis",
+      "exitCode": 0,
+      "output": "PSScriptAnalyzer 1.25.0: 73 Dateien / files\nOK: keine Error-/Warning-Befunde / no Error or Warning findings\n",
+      "boundary": "1.25.0, repository settings, 73 tracked files; imported scripts separately checked in prior unchanged-hash evidence.",
+      "result": "Passed"
+    }
+  ],
+  "noCommitOrRemoteWrite": true
+}

@@ -1,0 +1,31 @@
+{
+  "task": "T027",
+  "plan": "Separate delete fixture, exact archive then active removal, permanent tombstone, no series impact, old review archived/inactive",
+  "intakeId": "b719969f-f174-423f-baf7-212102bbbafd",
+  "operationId": "a4780715-ab17-49f9-8aa7-e11e7bb420d1",
+  "rawBefore": {
+    "intakes/LH-TEST.md": "388473bd27949e9d23831663c3e5d4462c3cc16d393893fbe5e81176bf3cc0cb",
+    "specs/intake-authoring-receipts/lh-test.json": "b9d01ea2260c76ede1862ad89e7789ebe2c6dc132460db1f317ee3f500ec4956"
+  },
+  "rawArchive": {
+    "intakes/LH-TEST.md": "388473bd27949e9d23831663c3e5d4462c3cc16d393893fbe5e81176bf3cc0cb",
+    "specs/intake-authoring-receipts/lh-test.json": "b9d01ea2260c76ede1862ad89e7789ebe2c6dc132460db1f317ee3f500ec4956"
+  },
+  "activeTargetAbsent": true,
+  "activeReceiptAbsent": true,
+  "tombstone": "specs/intake-authoring-tombstones/b719969f-f174-423f-baf7-212102bbbafd.json",
+  "runs": [
+    {
+      "shell": "bash",
+      "exitCode": 0,
+      "output": "PASS: IntakeTombstone artifact is valid (<fixture-root>/specs/intake-authoring-tombstones/b719969f-f174-423f-baf7-212102bbbafd.json)"
+    },
+    {
+      "shell": "PowerShell",
+      "exitCode": 0,
+      "output": "PASS: IntakeTombstone artifact is valid (<fixture-root>/specs/intake-authoring-tombstones/b719969f-f174-423f-baf7-212102bbbafd.json)"
+    }
+  ],
+  "domainCompleted": false,
+  "identityReused": false
+}

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "1.0",
+  "documentType": "IntakeOperation",
+  "operationId": "d94e6b6c-52fc-4968-9f7c-69c64d23d531",
+  "type": "Update",
+  "status": "Completed",
+  "createdAt": "2026-10-06T18:56:25.816774Z",
+  "authorityEvidence": "Explicit user T019–T045 execution includes T026 fixture Update.",
+  "proposalPath": "specs/intake-authoring-operations/d94e6b6c-52fc-4968-9f7c-69c64d23d531/proposal.json",
+  "proposalNormalizedSha256": "dffc78e8c71d7263a471925d65a04bca2037fff36076ba5ee82066fe687266ba",
+  "approval": {
+    "approved": true,
+    "approvedBy": "Thorsten",
+    "approvedAt": "2026-10-06T18:56:25.816874Z",
+    "evidence": "Explicit user T019–T045 execution includes T026 fixture Update."
+  },
+  "stagingDirectory": "N/A",
+  "intendedTargets": [
+    "intakes/LH-TEST.md",
+    "specs/intake-authoring-receipts/lh-test.json"
+  ],
+  "validatedTargets": [
+    "intakes/LH-TEST.md",
+    "specs/intake-authoring-receipts/lh-test.json"
+  ],
+  "publishedTargets": [
+    "intakes/LH-TEST.md",
+    "specs/intake-authoring-receipts/lh-test.json"
+  ],
+  "rollbackBoundary": "Original bytes preserved in exact predecessor archive",
+  "failure": {
+    "class": "N/A",
+    "message": "N/A"
+  },
+  "nextAction": "$speckit-intake-review intakes/LH-TEST.md"
+}

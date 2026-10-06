@@ -1,0 +1,42 @@
+{
+  "task": "T024",
+  "startedAfter": "T025 completed all expected rejections",
+  "cases": [
+    {
+      "encoding": "utf8-lf",
+      "normalizedTargetSha256": "388473bd27949e9d23831663c3e5d4462c3cc16d393893fbe5e81176bf3cc0cb",
+      "rawTargetSha256": "388473bd27949e9d23831663c3e5d4462c3cc16d393893fbe5e81176bf3cc0cb",
+      "validatorWrites": 0,
+      "runs": [
+        {
+          "shell": "bash",
+          "exitCode": 0,
+          "output": "PASS: intake authoring 0e4bfa02-7b60-434b-9036-b76ed7589bd3 is current (ReadyForReview, 2 sources, intakes/LH-TEST.md)"
+        },
+        {
+          "shell": "PowerShell",
+          "exitCode": 0,
+          "output": "PASS: intake authoring 0e4bfa02-7b60-434b-9036-b76ed7589bd3 is current (ReadyForReview, 2 sources, intakes/LH-TEST.md)"
+        }
+      ]
+    },
+    {
+      "encoding": "bom-crlf",
+      "normalizedTargetSha256": "388473bd27949e9d23831663c3e5d4462c3cc16d393893fbe5e81176bf3cc0cb",
+      "rawTargetSha256": "4e652e260df59bc83faa95345258e91335546d54df9cfd433cfe4651dbfb5234",
+      "validatorWrites": 0,
+      "runs": [
+        {
+          "shell": "bash",
+          "exitCode": 0,
+          "output": "PASS: intake authoring 0e4bfa02-7b60-434b-9036-b76ed7589bd3 is current (ReadyForReview, 2 sources, intakes/LH-TEST.md)"
+        },
+        {
+          "shell": "PowerShell",
+          "exitCode": 0,
+          "output": "PASS: intake authoring 0e4bfa02-7b60-434b-9036-b76ed7589bd3 is current (ReadyForReview, 2 sources, intakes/LH-TEST.md)"
+        }
+      ]
+    }
+  ]
+}

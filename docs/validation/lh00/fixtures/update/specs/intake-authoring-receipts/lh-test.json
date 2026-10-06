@@ -1,0 +1,127 @@
+{
+  "schemaVersion": "2.0",
+  "documentType": "IntakeReceipt",
+  "receiptId": "cd33f5b6-2852-4ab1-b761-d79b05bc5c92",
+  "intakeId": "b719969f-f174-423f-baf7-212102bbbafd",
+  "generator": {
+    "preset": "intake-authoring-governance",
+    "version": "0.3.7"
+  },
+  "createdAt": "2026-10-06T18:56:21.126282Z",
+  "operation": {
+    "operationId": "d94e6b6c-52fc-4968-9f7c-69c64d23d531",
+    "type": "Update",
+    "authorityEvidence": "Explicit user T019–T045 execution includes T026 fixture Update."
+  },
+  "status": "ReadyForReview",
+  "target": {
+    "path": "intakes/LH-TEST.md",
+    "normalizedSha256": "6829cc03c49fa573d40c36f61375dd0bc6b00f20f5f4b612f7a6faba289132fc"
+  },
+  "sources": [
+    {
+      "sourceId": "SRC001",
+      "order": 1,
+      "kind": "File",
+      "label": "Previous intake",
+      "location": "Repository",
+      "path": "specs/intake-authoring-archive/b719969f-f174-423f-baf7-212102bbbafd/d94e6b6c-52fc-4968-9f7c-69c64d23d531/intakes/LH-TEST.md",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "etag": "N/A",
+      "lastModified": "N/A",
+      "rawSha256": "N/A",
+      "gitBlob": "N/A",
+      "redirectChain": [],
+      "normalizedSha256": "388473bd27949e9d23831663c3e5d4462c3cc16d393893fbe5e81176bf3cc0cb",
+      "proofBoundary": "Synthetic explicitly named local source, no external fetch, no product or downstream authorization."
+    },
+    {
+      "sourceId": "SRC002",
+      "order": 2,
+      "kind": "File",
+      "label": "T026 clarification",
+      "location": "Repository",
+      "path": "sources/change.md",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "etag": "N/A",
+      "lastModified": "N/A",
+      "rawSha256": "N/A",
+      "gitBlob": "N/A",
+      "redirectChain": [],
+      "normalizedSha256": "7cce759f2216b8897f541d2013d16dc5a2eda946e52938dad0878c7b90a84bf6",
+      "proofBoundary": "Synthetic explicitly named local source, no external fetch, no product or downstream authorization."
+    }
+  ],
+  "profile": "show-commandtui400-de-en",
+  "languagePolicy": "de-DE first; en second; approximately CEFR B2; equivalent content in one intake",
+  "decisions": [
+    {
+      "id": "IAD001",
+      "status": "Answered",
+      "question": "Which scope is authorized for the test?",
+      "answer": "One isolated synthetic intake and receipt; no downstream run or remote writes.",
+      "evidence": "Owner execution request for T001–T018; fixture-plan.md in the parent project."
+    }
+  ],
+  "openDecisionIds": [],
+  "questionCount": 0,
+  "agentSurface": {
+    "specifyCanonicalId": "speckit.specify",
+    "specifyInvocation": "$speckit-specify",
+    "autonomousCanonicalId": "speckit.autonomous",
+    "autonomousInvocation": "$speckit-autonomous"
+  },
+  "deliveryAuthority": "LocalImplementation",
+  "authorityEvidence": "Local test creation only; LocalImplementation is the future prompt default, not downstream authority.",
+  "promptState": "Enabled",
+  "provenanceMode": "Supersession",
+  "supersedes": {
+    "receiptPath": "specs/intake-authoring-archive/b719969f-f174-423f-baf7-212102bbbafd/d94e6b6c-52fc-4968-9f7c-69c64d23d531/specs/intake-authoring-receipts/lh-test.json",
+    "targetNormalizedSha256": "388473bd27949e9d23831663c3e5d4462c3cc16d393893fbe5e81176bf3cc0cb",
+    "archiveTargetPath": "specs/intake-authoring-archive/b719969f-f174-423f-baf7-212102bbbafd/d94e6b6c-52fc-4968-9f7c-69c64d23d531/intakes/LH-TEST.md",
+    "archiveReceiptPath": "specs/intake-authoring-archive/b719969f-f174-423f-baf7-212102bbbafd/d94e6b6c-52fc-4968-9f7c-69c64d23d531/specs/intake-authoring-receipts/lh-test.json"
+  },
+  "legacyAdoption": {
+    "evidenceType": "N/A",
+    "priorTargetNormalizedSha256": "N/A",
+    "priorGitBlob": "N/A"
+  },
+  "updateAuthorized": true,
+  "updateAuthorityEvidence": "Explicit user T019–T045 execution includes T026 fixture Update.",
+  "series": {
+    "seriesId": "N/A",
+    "manifestPath": "N/A",
+    "order": "N/A",
+    "role": "N/A",
+    "supersedesIntakeIds": []
+  },
+  "nextAction": "$speckit-intake-review intakes/LH-TEST.md",
+  "governanceContext": [
+    {
+      "path": "constitution.md",
+      "normalizedSha256": "8031f1fb425336dda6dc1e2e582e7cf2d90a680e4f4383253f6a294ae0bd1d6e"
+    },
+    {
+      "path": "AGENTS.md",
+      "normalizedSha256": "a70050039a95935c8d1e4f24497985135692734cd2f68f04b0ed61ae05b20ea9"
+    },
+    {
+      "path": ".specify/memory/intake-authoring-policy.json",
+      "normalizedSha256": "8d42717c2cc7efc128a62e7967a1f877beee85fb2d53fedee1aa828aba9941d9"
+    },
+    {
+      "path": ".specify/memory/intake-authoring-profile.md",
+      "normalizedSha256": "a1c5b76292d51888e1f0e6613bff0c8e508bf8ddb8dbacfa0cf44bfe70d1310f"
+    }
+  ]
+}

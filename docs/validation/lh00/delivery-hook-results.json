@@ -1,0 +1,57 @@
+{
+  "checkedAt": "2026-10-06T19:57:30.548086+00:00",
+  "actualHookFunctionCases": [
+    {
+      "case": "reviewed-exact:.gitleaks.toml",
+      "exitCode": 0,
+      "expectedExit": 0
+    },
+    {
+      "case": "modified-rejected:.gitleaks.toml",
+      "exitCode": 1,
+      "expectedExit": 1
+    },
+    {
+      "case": "reviewed-exact:docs/validation/lh00/secret-scan-review.json",
+      "exitCode": 0,
+      "expectedExit": 0
+    },
+    {
+      "case": "modified-rejected:docs/validation/lh00/secret-scan-review.json",
+      "exitCode": 1,
+      "expectedExit": 1
+    },
+    {
+      "case": "reviewed-exact:docs/validation/lh00/delivery-secret-scan-policy.json",
+      "exitCode": 0,
+      "expectedExit": 0
+    },
+    {
+      "case": "modified-rejected:docs/validation/lh00/delivery-secret-scan-policy.json",
+      "exitCode": 1,
+      "expectedExit": 1
+    },
+    {
+      "case": "reviewed-exact:docs/validation/lh00/delivery-secret-scan-results.json",
+      "exitCode": 0,
+      "expectedExit": 0
+    },
+    {
+      "case": "modified-rejected:docs/validation/lh00/delivery-secret-scan-results.json",
+      "exitCode": 1,
+      "expectedExit": 1
+    },
+    {
+      "case": "unlisted-path-rejected",
+      "exitCode": 1,
+      "expectedExit": 1
+    },
+    {
+      "case": "symlink-rejected",
+      "exitCode": 1,
+      "expectedExit": 1
+    }
+  ],
+  "source": "scripts/hooks/pre-push",
+  "noGlobalOrFleetHookChange": true
+}

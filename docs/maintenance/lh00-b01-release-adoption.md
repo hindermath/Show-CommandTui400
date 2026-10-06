@@ -75,3 +75,54 @@ The patch record explains the bounded fix and changed sources. T034–T036 use
 current bindings while preserving historical release/CI evidence. IAD012 refreshes
 LH-00, receipt and independent review. Remaining lifecycle, reviewer, owner and
 process proof is unchanged; no reinstallation is needed.
+
+## Technische Nachprüfung T034–T036 am 2026-10-06 / Technical recheck
+
+Die aktuellen veröffentlichten Tags wurden lesend über gh auf Commitidentität
+verifiziert; neu gelesene Tagarchiv-ZIP-Bytes stimmen mit den drei Lock-Hashes überein.
+Neun historische native Source-CI-Jobs sind erfolgreich (Mac/Linux/Windows); sie
+beziehen sich auf den B-01-Patch, nicht auf heutige Produktabnahme. Zentral- und
+Projektmatrix sind vollständig gleich; 14er-Check-only/fünf Integrationen bestehen.
+Alle drei unveränderten installierten Collection-Fixture-Suiten bestanden mit
+Bash/PowerShell-JSON-/Nullschreibparität, vollständig Ready→Active/N/A→Completed/Archiv
+und erhaltenen Negativprüfungen. Keine Release-/Installations-/Flottenmutation.
+
+Read-only gh checks verify current published tag commits; freshly retrieved source-tag-archive ZIP
+bytes match all three source-lock hashes. Nine historical native source jobs pass,
+with their patch context preserved. Central/project matrices match, fourteen
+presets/five integrations pass check-only. All three installed paired suites pass
+the full single-member lifecycle and negative cases with zero writes. No release,
+reinstallation or rollout occurs.
+
+[Exakte Ausgaben, Hashes und Jobreferenzen / Exact proof](../validation/lh00/b01-technical-results.json),
+[Tag- und CI-Metadaten / tag and CI metadata](../validation/lh00/release-verification.json).
+Das unten verlinkte andere technische Review ist inzwischen Ready; der
+menschliche B-01-Entscheid bleibt offen. Keine tatsächliche Serienaktivierung.
+The distinct technical review linked below is now Ready; human B-01 closure
+remains pending, with no real activation.
+
+Tagarchiv-ZIPs der Matrix unterscheiden sich von gesondert verpackten Release-Assets;
+der Quellen-Lock bindet erstere. / Matrix tag archives differ from packaged release
+assets; the source lock binds the former.
+
+## Unabhängiges technisches Review / Independent technical review
+
+[Anderer Prüfer](../validation/lh00/b01-independent-review.md) bestätigt Ready
+im technischen Scope, keine offenen Befunde. Genaue Tagarchiv-/Release-Asset-
+Unterscheidung und statische Teststellenzahl wurden korrigiert und nachgeprüft.
+Menschlicher B-01-Owner-Entscheid ist ausdrücklich angefragt, noch nicht gegeben.
+No active series transition is authorized by that technical Ready alone.
+The distinct reviewer confirms technical readiness without open findings.
+Human owner closure has been requested and remains pending; technical Ready
+does not itself activate the real series.
+
+## Menschliche B-01-Abnahme / Human B-01 acceptance
+
+Am 2026-10-06 bestätigt Thorsten ausdrücklich: „B-01 als behoben abnehmen
+(empfohlen)“. Damit ist T036 abgeschlossen: vollständige technische Prüfung,
+anderes Ready-Review und Owner-Entscheid sind belegt. Diese Abnahme aktiviert
+keine reale Serie und erteilt keine begrenzte Pilotfreigabe T045.
+Thorsten explicitly accepts B-01 as fixed on 2026-10-06. T036 now has complete
+technical, distinct-review and human evidence. This does not activate the real
+series or grant limited pilot permission.
+[Entscheidungsnachweis / Decision evidence](../validation/lh00/b01-owner-decision.json).

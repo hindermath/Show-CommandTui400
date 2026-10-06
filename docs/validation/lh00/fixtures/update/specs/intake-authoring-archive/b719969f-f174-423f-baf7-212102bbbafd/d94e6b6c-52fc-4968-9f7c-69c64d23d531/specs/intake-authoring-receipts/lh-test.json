@@ -1,0 +1,127 @@
+{
+  "schemaVersion": "2.0",
+  "documentType": "IntakeReceipt",
+  "receiptId": "0e4bfa02-7b60-434b-9036-b76ed7589bd3",
+  "intakeId": "b719969f-f174-423f-baf7-212102bbbafd",
+  "generator": {
+    "preset": "intake-authoring-governance",
+    "version": "0.3.7"
+  },
+  "createdAt": "2026-10-06T17:59:11.377975Z",
+  "operation": {
+    "operationId": "b6127853-84a9-4b7b-9376-3eaa2168a181",
+    "type": "Create",
+    "authorityEvidence": "Explicit user request to execute T001–T018, including isolated T003/T017/T018 sample."
+  },
+  "status": "ReadyForReview",
+  "target": {
+    "path": "intakes/LH-TEST.md",
+    "normalizedSha256": "388473bd27949e9d23831663c3e5d4462c3cc16d393893fbe5e81176bf3cc0cb"
+  },
+  "sources": [
+    {
+      "sourceId": "SRC001",
+      "order": 1,
+      "kind": "File",
+      "label": "sources/issue.md",
+      "location": "Repository",
+      "path": "sources/issue.md",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "etag": "N/A",
+      "lastModified": "N/A",
+      "rawSha256": "N/A",
+      "gitBlob": "N/A",
+      "redirectChain": [],
+      "normalizedSha256": "479ef33df669dda2c7055a11a28701b9ec03ff468f4c34b56fc795f9eadf6727",
+      "proofBoundary": "Synthetic explicitly named local source, no external fetch, no product or downstream authorization."
+    },
+    {
+      "sourceId": "SRC002",
+      "order": 2,
+      "kind": "File",
+      "label": "sources/constraints.md",
+      "location": "Repository",
+      "path": "sources/constraints.md",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "etag": "N/A",
+      "lastModified": "N/A",
+      "rawSha256": "N/A",
+      "gitBlob": "N/A",
+      "redirectChain": [],
+      "normalizedSha256": "f70bae1f605df782ad5cd9ce77a9bc7ed4bd4d4d5d6ef9c016217653662f8ba1",
+      "proofBoundary": "Synthetic explicitly named local source, no external fetch, no product or downstream authorization."
+    }
+  ],
+  "profile": "show-commandtui400-de-en",
+  "languagePolicy": "de-DE first; en second; approximately CEFR B2; equivalent content in one intake",
+  "decisions": [
+    {
+      "id": "IAD001",
+      "status": "Answered",
+      "question": "Which scope is authorized for the test?",
+      "answer": "One isolated synthetic intake and receipt; no downstream run or remote writes.",
+      "evidence": "Owner execution request for T001–T018; fixture-plan.md in the parent project."
+    }
+  ],
+  "openDecisionIds": [],
+  "questionCount": 0,
+  "agentSurface": {
+    "specifyCanonicalId": "speckit.specify",
+    "specifyInvocation": "$speckit-specify",
+    "autonomousCanonicalId": "speckit.autonomous",
+    "autonomousInvocation": "$speckit-autonomous"
+  },
+  "deliveryAuthority": "LocalImplementation",
+  "authorityEvidence": "Local test creation only; LocalImplementation is the future prompt default, not downstream authority.",
+  "promptState": "Enabled",
+  "provenanceMode": "New",
+  "supersedes": {
+    "receiptPath": "N/A",
+    "targetNormalizedSha256": "N/A",
+    "archiveTargetPath": "N/A",
+    "archiveReceiptPath": "N/A"
+  },
+  "legacyAdoption": {
+    "evidenceType": "N/A",
+    "priorTargetNormalizedSha256": "N/A",
+    "priorGitBlob": "N/A"
+  },
+  "updateAuthorized": false,
+  "updateAuthorityEvidence": "N/A",
+  "series": {
+    "seriesId": "N/A",
+    "manifestPath": "N/A",
+    "order": "N/A",
+    "role": "N/A",
+    "supersedesIntakeIds": []
+  },
+  "nextAction": "$speckit-intake-review intakes/LH-TEST.md",
+  "governanceContext": [
+    {
+      "path": "constitution.md",
+      "normalizedSha256": "8031f1fb425336dda6dc1e2e582e7cf2d90a680e4f4383253f6a294ae0bd1d6e"
+    },
+    {
+      "path": "AGENTS.md",
+      "normalizedSha256": "a70050039a95935c8d1e4f24497985135692734cd2f68f04b0ed61ae05b20ea9"
+    },
+    {
+      "path": ".specify/memory/intake-authoring-policy.json",
+      "normalizedSha256": "8d42717c2cc7efc128a62e7967a1f877beee85fb2d53fedee1aa828aba9941d9"
+    },
+    {
+      "path": ".specify/memory/intake-authoring-profile.md",
+      "normalizedSha256": "a1c5b76292d51888e1f0e6613bff0c8e508bf8ddb8dbacfa0cf44bfe70d1310f"
+    }
+  ]
+}

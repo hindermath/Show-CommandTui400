@@ -460,3 +460,205 @@ bleibt historisch erkennbar und wird nicht nachträglich in PASS umbenannt.
 This evidence delivery is sourceOnly. Avoid extra commits solely for self-referential
 merge/statistics values; record final CI/merge/sync results in the PR and delivery
 closeout. Preserve the earlier statistics drift without relabeling it as a pass.
+
+## Umsetzung T001–T018, Start 2026-10-06 / Execution start
+
+Basis `e621d195f83f36ab2b99cd35d1b7ae3cbdb8fcdd`, main zunächst sauber.
+Owner beauftragt ausschließlich das erste Inkrement; lokale Dateien/Fixtures,
+keine Lieferung. Mac A: MacBook Air M2 (2023), ausdrücklich vom Owner bestätigt.
+Receipt e92fb3b7-cadc-481d-913f-68aba06f2ad3 und Review a65e169c-aacd-4dac-b80b-bad165da3679
+sind aktuell; Zielhash fff66ab341600428fffdbd5f8e27cfa47ff780558b69166784f7a72aa2477370.
+Bash-Receipt-/Review-Check PASS; Modellrouting Aligned; 14 Presets passen;
+Statistik war beim sauberen Start CURRENT. Alle vorhandenen Checklisten PASS.
+Scope remains T001–T018 local execution. Initial input validation, model routing,
+preset matrix and clean-tree statistics passed. Neither historical authorization
+nor ready states authorize remote writes or the next increment.
+
+T002/T010/T016 bereiten gebundene Dateien nur unter
+`specs/001-lh00-intake-process/candidates/t001-t018/` vor (T032 publiziert später).
+Die aktuellen Receipt-/Review-Quellen bleiben bytegleich. Die Renderer-Ausgabe
+wird bei diesem lokalen schmutzigen Baum nicht überschrieben; Statistikfortschreibung
+gehört zu einem später autorisierten Commit-/Lieferpaket.
+Bound files are staged as candidates until T032. Active provenance stays unchanged.
+Generated statistics await an authorized clean-tree delivery package.
+
+## Abschluss T001–T018, 2026-10-06 / Local increment completion
+
+**Ergebnis:** 18 Tasks abgeschlossen, 47 offen; kein Task nach T018 ausgeführt.
+**Outcome:** 18 tasks complete, 47 open; no later task executed.
+
+| Tasks | Gelieferter Nachweis / Delivered evidence | Grenze / Limit |
+|---|---|---|
+| T001 | aktive Receipt-/Review-Validatoren Bash + PowerShell jeweils Exit 0; Eingangszustand und Schreibscope oben / live validators and scope above | Ready ist keine allgemeine Freigabe / no general authority |
+| T002 | Versionen, 14-Preset-Check und verfügbare Kommandos im Entwicklungsumgebungs-Kandidaten / inventory candidate | historische Stände erhalten, T032 veröffentlicht / publication later |
+| T003 | docs/validation/lh00/fixture-plan.md; Owner nennt Mac A, MacBook Air M2 (2023) / owner-confirmed host | sichere synthetische Kopien, reale LH-00-Dateien außen / isolation |
+| T004 | plan-governance.md, Rollen/AC/E/Wiedervorlage / execution mapping | menschliche Entscheidungen bleiben offen / human gates separate |
+| T005–T011 | Architektur/ADRs, Threat Model, Standards-/Regulatorikzuordnung, echter Baseline-Snapshot 3.3.0; 157 eindeutige CL-IDs / foundation and real binding | Baseline-Ready nur Integrität; Delta NeedsRemediation wegen späterer Gates / partial assurance |
+| T012 | anderer Agent /root/lh00_t012_foundation_review; drei Befunde korrigiert und unabhängig nachgeprüft / independent foundation review | begrenzt vor Import/Create; keine Risikoakzeptanz / bounded review |
+| T013–T015 | fünf PS-Imports, exakte Quell-/Endhashes, 19 isolierte Aufrufe, vier gleiche JSON-Paare, Nullschreibwerte; zwei zusätzliche Importkorrektur-Fälle PASS / script parity evidence | macOS allein; kein neues Testframework / no native cross-platform acceptance |
+| T016 | vier vollständige Kandidaten und Bindungsinventar, zwei konkrete Folgeprompt-Vorlagen / staged candidates | aktiver Bestand bytegleich, spätere T032-Migration / no publication |
+| T018 → T017 | fünf separat abgewiesene Eingabesätze, dann genau ein Agenten-Create mit Schema-2.0-Receipt, ReadyForReview; beide Validatoren Exit 0 / rejections then creation | inaktive Testdaten, keine Folgeaktion / no downstream run |
+
+**Prüfungen:** PowerShell-Parser für fünf Imports PASS. Standard-PSScriptAnalyzer
+1.25.0: 73 bereits getrackte Dateien ohne Error/Warning; zusätzliche direkte
+Analyse der fünf unversionierten Imports ebenfalls ohne Befunde. Zwei bereits
+im Paket vorhandene Findings (readonly PID-Variable, leerer Catch) wurden gezielt
+korrigiert und in isolierten Fällen geprüft. Help/AdvancedFunction-Aufrufwege
+funktionieren; New/Initialize/Test sind zugelassene Verben. Ein Kindprozess ohne
+HOME bestätigt lokale Root-Auflösung, keinen nativen Windows-Nachweis.
+Parsers and both tracked-file/direct-import analysis passed. Narrow import fixes
+were tested. Help and function routes work; an absent-HOME child test remains
+macOS-only evidence, never native Windows proof.
+
+**Secrets:** Standard-Agent-Scan Exit 0, high=0. Zusätzlicher vollständiger
+Directory-Scan erfasst auch unversionierte Dateien. Er meldete drei öffentliche
+Guidance-Texte als False Positives (Keychain/CryptoKit-Satz und zweimal Beispiele
+verbotener Private-Key-Marker), siehe docs/validation/lh00/secret-scan-review.json.
+Kein echtes Secret wurde festgestellt. Mit temporärer exakter Findings-Baseline
+keine zusätzlichen Befunde; Imports/Kandidaten direkt ohne Befund. Snapshot und
+Repository-Scanregeln wurden nicht für einen pauschalen PASS verändert. Eine
+spätere Lieferung muss genau diese dokumentierten False Positives behandeln.
+Standard scanning passed; an additional untracked-file directory scan reported
+three reviewed public-guidance false positives. No real credential was found.
+Exact temporary baseline comparison found no additional issues. Controlled bytes
+and repository rules remain unchanged; delivery must retain the precise review.
+
+**Statistik/Homogenität:** Zu Beginn CURRENT, nach lokalen Änderungen erwarteter
+Profil-2-Drift. Homogenität Exit 1: genau Statistik-Drift, zusätzlich historisches
+ignoriertes STATS.md mit Sprachwarnung. Das ist kein technischer Skriptbefund.
+Renderer benötigt einen sauberen Baum; keine handgeschriebenen Zahlen, kein
+unbeauftragter Commit. Ein späterer Commit-Auftrag liefert zuerst Quellen,
+anschließend Renderer/Check-only und Statistik. Der aktuelle Befund bleibt FAIL.
+Statistics were current before writes and now have expected drift. Homogeneity
+retains its actual failure and ignored STATS warning. Render only from a clean
+tree under later commit authority; no manual figures or false PASS is recorded.
+
+**Diff/Links/Scope:** git diff --check erfolgreich; neue/betroffene eigene Links
+aufgelöst, Security-Kandidaten relativ zu ihrem künftigen aktiven Ziel geprüft.
+Kopierte kontrollierte Upstream-Texte bleiben bytegenau. Zwei alte Manpage-Links
+außerhalb dieses Umfangs wurden beim breiteren lesenden Scan als fehlend gefunden
+(container-delegation-2026-09-20 und windows-podman-mount-paths-2026-09-26); nicht geändert.
+Init-Optionen, Integrationen, alle fünf Guidance-Dateien, beide Constitutions,
+aktive Intake-/Receipt-/Review-Dateien und gebundene Quellen bleiben bytegleich.
+Changed/new owned links and diff formatting passed. Upstream snapshot bytes and
+active authority/provenance surfaces are preserved. Two unrelated historical
+manpage link gaps remain outside this increment. No remote write occurred.
+
+**Nächster Auftrag:** T019–T045 separat, Kernprozess weiterführen bis zur begrenzten
+Mac-Pilotentscheidung. LH-01/LH-02 brauchen eigene Aufträge; volle LH-00-Abnahme
+nach LH-02/vor LH-03. Noch keine Closure/Image-Impact-Abschlussdateien und kein
+vollständiger Feature-Abschlussbericht.
+The next separately commissioned increment proceeds to T045. Standalone feature
+pilots and full process acceptance retain their separate authority and timing.
+
+### Begrenztes T012-Nachreview / Bounded T012 follow-up
+
+Der separate Prüfer bestätigte drei exakte False Positives, zwei begrenzte
+Importkorrekturen, vier Cmdlet-Aufrufwege und aktuelle Quell-/End-/Kandidatenhashes.
+Direkte Analyse mit Repository-Regeln: Exit 0, keine Findings; ungefilterte
+Upstream-Defaultregeln sind damit nicht als PASS behauptet. Frühere Review-Hashes
+bleiben historisch, aktuelle Ergänzungen besitzen ihre eigenen Bindungen.
+The independent follow-up confirms the exact false positives, narrow import fixes,
+invocation routes and current provenance. Repository-configured analysis passed;
+this does not claim an unfiltered upstream-rule pass. Preserve the earlier review
+hashes as historical evidence. No new mutation-relevant security gap was found.
+
+## Lokales zweites Inkrement T019–T045 / Local second increment
+
+2026-10-06: ausdrücklich beauftragte lokale Umsetzung auf Mac A, MacBook Air M2
+(2023), Gitbasis e621d195f83f36ab2b99cd35d1b7ae3cbdb8fcdd. Vorherige
+T001–T018-Arbeit bleibt erhalten. Kein Commit, Push, PR, Release, Refresh,
+Reinstallations- oder Flottenlauf; keine LH-01–LH-07-Funktion.
+The explicit second local increment preserves the first one, with no delivery,
+installation, routing refresh, fleet rollout or later feature implementation.
+
+| Aufgaben / Tasks | Tatsächlicher Nachweis / Actual evidence | Grenze / Boundary |
+|---|---|---|
+| T019–T023 | veröffentlichte DE/EN-Profil-/Guidancezuordnung; docs/validation/lh00/language-review.md, docs/accessibility/lh00-process.md | struktureller Sprach-/A11Y-Nachweis; Hilfsmittelpraxis offen / structural proof only |
+| T025 vor T024 | acht getrennte Negativfälle, alle gepaarten Receiptprüfungen abgewiesen und ohne Schreibzugriff; danach LF/BOM/CRLF-Hashparität gültig / negative rejections before normalized hash parity | synthetische URL-Metadaten, kein behaupteter Abruf / no claimed remote retrieval |
+| T026–T031 | echte isolierte gewöhnliche Update-, Archiv-Delete- und Teilfehler-Rollback-Vorgänge; vollständiges anderes Ready-Review, stale/missing/authority-Gates / actual isolated lifecycle and separate review | vorhandene Skills/Validatoren, kein erfundener Lifecycle-CLI oder Ausführungsmotor / existing procedures only |
+| T032–T033 | gewöhnliche LH-00-Generationen mit unveränderter Intake-ID und normativen FR24/AC18; bytegenaue Vorgängerarchive; Autor, anderer Reviewer und Owner zugeordnet / traceable generations and roles | Quelleninhalt/Ready verleiht keine Befugnis / source text and Ready grant no authority |
+| T034–T036 | aktuelle drei Source-Tagarchive stimmen mit Lock; historische neun native CI-Jobs; 14er-Matrix/fünf Integrationen; alle drei vollständigen Collection-Suiten Bash/PS; anderes technisches B-01-Review Ready / existing released fix verified | T036 menschlicher Owner-Entscheid angefragt und offen; Werkzeug-CI ist keine Produktabnahme / human closure pending |
+| T037–T040 | exakter vier-Rollen-/sechs-Pfade-Vertrag; isoliert gültiger Kandidat, sieben Negativfälle; publizierter Ready/Eligible-Bootstrap mit Journal / coherent bootstrap | eine vorhandene LH-00-Datei, keine reale Aktivierung; lokale Sequenzabweichung in tasks.md ausdrücklich festgehalten / local sequencing exception recorded |
+| T041 | frisches vollständiges unabhängiges Ready 1bcdfd12-6424-4097-a2fd-c3e522095794; 101 aktuelle Bindungen, IR009/IR010 behoben; Receipt/Review Bash/PS Exit 0 / complete fresh Ready | keine offenen Intakebefunde oder Risikoannahmen / no open findings or accepted risks |
+| T042 | zwölf lesende gepaarte Validierungen; 122 Dateien und Gitstatus vor/nach unverändert; einzig LH-00 Eligible, keine Kanten/Blocker / read-only selection and integrity | Auswahl ist nur Reihenfolgenachweis, keine neue Arbeit / ordering only |
+| T043 | vollständige vorhandene Skriptparität, tatsächliche Hilfen/zulässige Verben/relative Pfade; Secret-, Preset-, PowerShell-, Diff- und eigene Linkprüfungen bestanden, Routing Aligned / checks and parity evidenced | Aufgabe offen: Statistik und Homogenität FAIL / remains open for actual failures |
+| T044 | Mac A, reale Versionen/Aufträge/Git-/Payload-/Entscheidungshashes; E01/E02/E04/E05/E07 ausgeführt / actual isolated core proof | technischer Teilnachweis, keine Pilotentscheidung / technical proof only |
+| T045 | anderer Prüfer bewertet den eingefrorenen Mac-A-Nachweis in docs/validation/lh00/acceptance.md / distinct assessment | menschliche Pilotentscheidung und fehlgeschlagene Gates bleiben offen / human permission and failed gates remain open |
+
+Aktuelle Intake-Receipt: 4ecf3164-881a-413e-9ab0-d717de91757f; Operation
+27a2ee98-0194-4323-a70d-f24da6a3cb1a; normalisierter Zielhash
+ea4919bfcff0bfcfbef8bb557bd37ad2483ad6b5ec28b4e1668db4a6948a35bd.
+Serie 3c0e3e97-1268-4828-aeba-c3f3d17637de, Receipt
+aef15e3c-762c-4d5a-addc-c859f7e7425a, Ready; Mitglied LH-00 Eligible.
+Archiv-/Backlog-/History-Validatorzahlen sind jeweils eine README-Datei,
+fachliche Lastenheftanzahl dort jeweils null; kein Schema geändert.
+These are the current generation identities. Validator file counts explicitly
+include storage README files; domain intake counts remain zero, without schema changes.
+
+**Offene Gates:** T036 B-01-Owner-Entscheid, T043 erzeugte Statistik-/Homogenitätsdrift,
+T045 menschliche begrenzte Pilotentscheidung. Der Renderer braucht einen sauberen
+Arbeitsbaum; hierfür zuerst Quellen committen, rendern, prüfen, Statistik committen
+unter einem gesonderten Lieferauftrag. Keine handgeschriebenen Statistikzahlen
+und kein umgedeuteter PASS. Der komplette Directory-Secret-Scan bestätigt null
+zusätzliche Funde gegenüber exakt drei unabhängig geprüften historischen
+Guidance-False-Positives; Originalbefund und kontrollierte Bytes bleiben erhalten.
+Open human and statistics gates are kept separate from completed technical work.
+The clean-tree renderer requires a separately commissioned commit/render package.
+No manual figures or false PASS. Whole-directory secret checking retains the exact
+three independently reviewed historical false positives and finds no extra issues.
+
+**Abnahmestand:** 24 von 27 Tasks dieses Inkrements abgeschlossen; insgesamt
+42 von 65. T046–T065 bleiben unberührt. Begrenzte Pilotentscheidung ist noch
+nicht ReadyForPilot. LH-01 und LH-02 brauchen eigene Aufträge, gültige Intakes
+und unabhängige Reviews. Vollabnahme folgt nach LH-02/vor LH-03 auf Mac A,
+Mac B, Windows 11 und Ubuntu/WSL2 einschließlich A11Y, Übersetzungen und Register.
+24/27 scoped tasks and 42/65 overall are complete. Later tasks remain untouched.
+No ReadyForPilot or full process acceptance is claimed; separately commissioned
+pilots and complete platform/assistive/translation/register evidence retain their timing.
+
+Leserpfad / Reader path:
+[aktueller Intakebericht / current intake report](../../intake-review-report.md) →
+[Collection und Auswahl / collection and selection](../../../docs/validation/lh00/collection.md) →
+[Mac-A-Nachweis / Mac A proof](../../../docs/validation/lh00/mac-a.md) →
+[unabhängige Pilotbewertung / independent pilot assessment](../../../docs/validation/lh00/acceptance.md).
+
+Keine after_implement-Hooks: .specify/extensions.yml ist nicht vorhanden.
+No extension hooks are registered.
+
+Der unabhängige T045-Teil ist abgeschlossen: Assessment
+3d780c5d-66f5-456f-b78d-4d6a6159346c bestätigt den isolierten technischen
+Kernprozess, 30 aktuelle Payloads, 101 aktuelle Herkunftsbindungen und 122
+unveränderte T042-Dateihashes. Keine neue technische Schutzlücke gefunden.
+T045 selbst bleibt mangels menschlicher Pilotentscheidung und wegen der
+offenen T043-Gates offen; keine ReadyForPilot- oder Vollabnahmebehauptung.
+The distinct assessment confirms the isolated technical proof and current hashes
+without a new safeguard finding. T045 remains open for human permission and
+failed gates; no pilot permission or full acceptance is claimed.
+
+## Autorisierte Lieferung nach lokalem Inkrement / Authorized delivery after local increment
+
+2026-10-06: Thorsten nimmt B-01 ausdrücklich als behoben ab. T036 ist jetzt
+abgeschlossen. Der anschließende DeliveryMode MergeAndSync mit Admin-Bypass
+autorisiert Quellencommit, sauberen Statistik-Renderer, Prüfungen, Statistikcommit,
+PR, technisch gebundenen Merge und lokalen Sync. Die historischen FAIL- und
+Pending-Nachweise oben bleiben unverändert; aktueller Stand im
+[Liefernachweis](../../../docs/validation/lh00/delivery.md). T045 erteilt weiterhin
+keine Pilotfreigabe, solange diese nicht gesondert menschlich entschieden ist.
+Thorsten explicitly accepts B-01 and authorizes the delivery/statistics package.
+Historical failures and pending assessments remain dated evidence; the linked
+record provides the current delivery state. T045 remains separate human permission.
+
+**Aktueller technischer Gateentscheid:** Renderer/Check-only CURRENT, Homogenität
+Exit 0 (keine FAILs, bekannte historische STATS-Warnung), Agent-Secrets high=0,
+gestagter kompletter Gitleaks-Scan ohne Befund, PSScriptAnalyzer ohne Befunde und
+Staged-Diff-Prüfung erfolgreich. T043 abgeschlossen. T036 bereits menschlich
+abgenommen. Damit 26/27 Tasks im zweiten Inkrement, insgesamt 44/65 erledigt.
+T045 bleibt als einzige Aufgabe dieses Inkrements wegen der fehlenden begrenzten
+menschlichen Pilotentscheidung offen; T046+ unverändert. Nach dem Nachweiscommit
+Statistik nochmals sauber rendern und am endgültigen PR-Stand überprüfen.
+Current local gates pass; preserve the original historical failures. T036/T043
+are complete, giving 26/27 scoped and 44/65 overall. Only human pilot permission
+T045 remains in this increment; later tasks stay unchanged. Final statistics and
+exact-head hosted CI remain mandatory delivery checks.
+[Beobachtete Gates / Observed gates](../../../docs/validation/lh00/delivery-gate-results.json).

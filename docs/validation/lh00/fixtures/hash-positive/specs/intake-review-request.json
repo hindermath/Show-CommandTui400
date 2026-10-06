@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "1.1",
+  "reviewId": "ab6ca9cd-62c5-4f00-ba24-4c6d91b0af6d",
+  "mode": "Single",
+  "policy": "generic-markdown",
+  "targets": [
+    {
+      "path": "intakes/LH-TEST.md",
+      "role": "Primary"
+    }
+  ],
+  "series": {
+    "orderedTargetPaths": [],
+    "roots": [],
+    "dependencies": []
+  },
+  "campaign": {
+    "manifestPath": "N/A",
+    "workers": [],
+    "operatorExceptions": []
+  },
+  "authority": {
+    "request": "Explicit user request to execute T019–T045; T030 delegates complete independent fixture review to /root/lh00_inc2_language_fixture_review, distinct from author Codex /root.",
+    "targetMutationAllowed": false,
+    "implementationAllowed": false,
+    "remoteAccessAllowed": false,
+    "routingAccessAllowed": false
+  },
+  "projectProfile": "show-commandtui400-de-en",
+  "evidenceDelivery": "Local inactive fixture review artifacts only; no active LH-00 review, commit, push or remote write."
+}

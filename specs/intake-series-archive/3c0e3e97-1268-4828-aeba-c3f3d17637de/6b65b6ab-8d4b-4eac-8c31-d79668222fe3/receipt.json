@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "1.0",
+  "documentType": "IntakeSeriesReceipt",
+  "receiptId": "045138f9-06a0-4c3d-a01e-b3a007540a8c",
+  "seriesId": "3c0e3e97-1268-4828-aeba-c3f3d17637de",
+  "generator": {
+    "preset": "intake-sequencing-governance",
+    "version": "0.2.7"
+  },
+  "createdAt": "2026-10-06T19:18:44.049747Z",
+  "operation": {
+    "operationId": "f2c915bc-675e-4325-8dc8-9cefb9add63b",
+    "type": "Update",
+    "authorityEvidence": "docs/planning/lh00-collection-correction-decisions.md"
+  },
+  "status": "Ready",
+  "manifest": {
+    "path": "specs/intake-series/lh00-process/manifest.json",
+    "normalizedSha256": "7881e712f45845db77f66b4082dbd2a3caa8972320114d506c51ce3ae23f9e11"
+  },
+  "supersedes": {
+    "receiptPath": "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/f2c915bc-675e-4325-8dc8-9cefb9add63b/receipt.json",
+    "receiptNormalizedSha256": "2cf193db43e290bd4cb58c0e99627de8b04e4c08cbb7365637265c1653f63251",
+    "manifestArchivePath": "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/f2c915bc-675e-4325-8dc8-9cefb9add63b/manifest.json",
+    "manifestArchiveSha256": "815e38aabdab38eed20ebb6031cd48d9b7284180df3544d967a9579244123200"
+  },
+  "tombstone": {
+    "path": "N/A",
+    "normalizedSha256": "N/A"
+  },
+  "nextAction": "$speckit-intake-series-status specs/intake-series/lh00-process/manifest.json"
+}

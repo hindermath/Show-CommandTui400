@@ -1,0 +1,84 @@
+{
+  "task": "T041 coherent lineage",
+  "seriesId": "3c0e3e97-1268-4828-aeba-c3f3d17637de",
+  "operationId": "dd0ef5b1-eea6-4d89-94f8-40346596d427",
+  "receiptId": "5041f16d-e54a-4128-abcb-7e92df990585",
+  "priorReceiptId": "30efcd8f-72a8-4c89-9d18-fae42713cafd",
+  "archive": "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/dd0ef5b1-eea6-4d89-94f8-40346596d427",
+  "beforeTargetHash": "0481d515cfe4bfac75365890d06147e48965c7062b65953179eb41cc8c82a24e",
+  "afterTargetHash": "e8e89f997b12e46bac100d41755d26e3cd092a639e7e589ecbfc550fccc98c6f",
+  "orderRolesRootsEdgesStatesPreserved": true,
+  "validatorRuns": [
+    {
+      "preset": "intake-authoring-governance",
+      "kind": "config",
+      "shell": "bash",
+      "exitCode": 0,
+      "output": "{\"collections\": {\"active\": \"intakes\", \"archive\": \"requirements/intakes/archive\", \"backlog\": \"requirements/intakes/backlog\", \"baseline\": \"requirements/baseline\", \"history\": \"requirements/intakes/history\", \"seriesManifest\": \"specs/intake-series/lh00-process/manifest.json\"}, \"documentationLanguage\": \"de-DE\", \"inventory\": {\"activeIntakeCount\": 1, \"activeSeriesTargetCount\": 1, \"archiveIntakeCount\": 1, \"backlogIntakeCount\": 1, \"baselineCount\": 1, \"dependencyCount\": 0, \"eligibleCandidate\": \"intakes/LH-00.md\", \"historyIntakeCount\": 1, \"seriesTargetCount\": 1}, \"inventoryMode\": \"SeriesManifest\", \"legacyArtifactNames\": [], \"missingPaths\": [], \"nextAction\": \"N/A\", \"outcome\": \"Aligned\", \"profile\": \"explicit\", \"resolvedNaming\": {\"canonicalIndex\": \"requirements/RequirementsIndex.md\", \"intakePattern\": \"LH-<slug>.md\", \"orderView\": \"docs/Lastenheft-Plan.md\"}, \"roles\": {\"intake-order\": \"docs/Lastenheft-Plan.md\", \"requirements-baseline\": \"requirements/baseline\", \"requirements-index\": \"requirements/RequirementsIndex.md\", \"requirements-intake\": \"intakes\"}, \"schemaVersion\": \"2.0\"}"
+    },
+    {
+      "preset": "intake-authoring-governance",
+      "kind": "config",
+      "shell": "PowerShell",
+      "exitCode": 0,
+      "output": "{\"collections\": {\"active\": \"intakes\", \"archive\": \"requirements/intakes/archive\", \"backlog\": \"requirements/intakes/backlog\", \"baseline\": \"requirements/baseline\", \"history\": \"requirements/intakes/history\", \"seriesManifest\": \"specs/intake-series/lh00-process/manifest.json\"}, \"documentationLanguage\": \"de-DE\", \"inventory\": {\"activeIntakeCount\": 1, \"activeSeriesTargetCount\": 1, \"archiveIntakeCount\": 1, \"backlogIntakeCount\": 1, \"baselineCount\": 1, \"dependencyCount\": 0, \"eligibleCandidate\": \"intakes/LH-00.md\", \"historyIntakeCount\": 1, \"seriesTargetCount\": 1}, \"inventoryMode\": \"SeriesManifest\", \"legacyArtifactNames\": [], \"missingPaths\": [], \"nextAction\": \"N/A\", \"outcome\": \"Aligned\", \"profile\": \"explicit\", \"resolvedNaming\": {\"canonicalIndex\": \"requirements/RequirementsIndex.md\", \"intakePattern\": \"LH-<slug>.md\", \"orderView\": \"docs/Lastenheft-Plan.md\"}, \"roles\": {\"intake-order\": \"docs/Lastenheft-Plan.md\", \"requirements-baseline\": \"requirements/baseline\", \"requirements-index\": \"requirements/RequirementsIndex.md\", \"requirements-intake\": \"intakes\"}, \"schemaVersion\": \"2.0\"}"
+    },
+    {
+      "preset": "intake-review-governance",
+      "kind": "config",
+      "shell": "bash",
+      "exitCode": 0,
+      "output": "{\"collections\": {\"active\": \"intakes\", \"archive\": \"requirements/intakes/archive\", \"backlog\": \"requirements/intakes/backlog\", \"baseline\": \"requirements/baseline\", \"history\": \"requirements/intakes/history\", \"seriesManifest\": \"specs/intake-series/lh00-process/manifest.json\"}, \"documentationLanguage\": \"de-DE\", \"inventory\": {\"activeIntakeCount\": 1, \"activeSeriesTargetCount\": 1, \"archiveIntakeCount\": 1, \"backlogIntakeCount\": 1, \"baselineCount\": 1, \"dependencyCount\": 0, \"eligibleCandidate\": \"intakes/LH-00.md\", \"historyIntakeCount\": 1, \"seriesTargetCount\": 1}, \"inventoryMode\": \"SeriesManifest\", \"legacyArtifactNames\": [], \"missingPaths\": [], \"nextAction\": \"N/A\", \"outcome\": \"Aligned\", \"profile\": \"explicit\", \"resolvedNaming\": {\"canonicalIndex\": \"requirements/RequirementsIndex.md\", \"intakePattern\": \"LH-<slug>.md\", \"orderView\": \"docs/Lastenheft-Plan.md\"}, \"roles\": {\"intake-order\": \"docs/Lastenheft-Plan.md\", \"requirements-baseline\": \"requirements/baseline\", \"requirements-index\": \"requirements/RequirementsIndex.md\", \"requirements-intake\": \"intakes\"}, \"schemaVersion\": \"2.0\"}"
+    },
+    {
+      "preset": "intake-review-governance",
+      "kind": "config",
+      "shell": "PowerShell",
+      "exitCode": 0,
+      "output": "{\"collections\": {\"active\": \"intakes\", \"archive\": \"requirements/intakes/archive\", \"backlog\": \"requirements/intakes/backlog\", \"baseline\": \"requirements/baseline\", \"history\": \"requirements/intakes/history\", \"seriesManifest\": \"specs/intake-series/lh00-process/manifest.json\"}, \"documentationLanguage\": \"de-DE\", \"inventory\": {\"activeIntakeCount\": 1, \"activeSeriesTargetCount\": 1, \"archiveIntakeCount\": 1, \"backlogIntakeCount\": 1, \"baselineCount\": 1, \"dependencyCount\": 0, \"eligibleCandidate\": \"intakes/LH-00.md\", \"historyIntakeCount\": 1, \"seriesTargetCount\": 1}, \"inventoryMode\": \"SeriesManifest\", \"legacyArtifactNames\": [], \"missingPaths\": [], \"nextAction\": \"N/A\", \"outcome\": \"Aligned\", \"profile\": \"explicit\", \"resolvedNaming\": {\"canonicalIndex\": \"requirements/RequirementsIndex.md\", \"intakePattern\": \"LH-<slug>.md\", \"orderView\": \"docs/Lastenheft-Plan.md\"}, \"roles\": {\"intake-order\": \"docs/Lastenheft-Plan.md\", \"requirements-baseline\": \"requirements/baseline\", \"requirements-index\": \"requirements/RequirementsIndex.md\", \"requirements-intake\": \"intakes\"}, \"schemaVersion\": \"2.0\"}"
+    },
+    {
+      "preset": "intake-sequencing-governance",
+      "kind": "config",
+      "shell": "bash",
+      "exitCode": 0,
+      "output": "{\"collections\": {\"active\": \"intakes\", \"archive\": \"requirements/intakes/archive\", \"backlog\": \"requirements/intakes/backlog\", \"baseline\": \"requirements/baseline\", \"history\": \"requirements/intakes/history\", \"seriesManifest\": \"specs/intake-series/lh00-process/manifest.json\"}, \"documentationLanguage\": \"de-DE\", \"inventory\": {\"activeIntakeCount\": 1, \"activeSeriesTargetCount\": 1, \"archiveIntakeCount\": 1, \"backlogIntakeCount\": 1, \"baselineCount\": 1, \"dependencyCount\": 0, \"eligibleCandidate\": \"intakes/LH-00.md\", \"historyIntakeCount\": 1, \"seriesTargetCount\": 1}, \"inventoryMode\": \"SeriesManifest\", \"legacyArtifactNames\": [], \"missingPaths\": [], \"nextAction\": \"N/A\", \"outcome\": \"Aligned\", \"profile\": \"explicit\", \"resolvedNaming\": {\"canonicalIndex\": \"requirements/RequirementsIndex.md\", \"intakePattern\": \"LH-<slug>.md\", \"orderView\": \"docs/Lastenheft-Plan.md\"}, \"roles\": {\"intake-order\": \"docs/Lastenheft-Plan.md\", \"requirements-baseline\": \"requirements/baseline\", \"requirements-index\": \"requirements/RequirementsIndex.md\", \"requirements-intake\": \"intakes\"}, \"schemaVersion\": \"2.0\"}"
+    },
+    {
+      "preset": "intake-sequencing-governance",
+      "kind": "config",
+      "shell": "PowerShell",
+      "exitCode": 0,
+      "output": "{\"collections\": {\"active\": \"intakes\", \"archive\": \"requirements/intakes/archive\", \"backlog\": \"requirements/intakes/backlog\", \"baseline\": \"requirements/baseline\", \"history\": \"requirements/intakes/history\", \"seriesManifest\": \"specs/intake-series/lh00-process/manifest.json\"}, \"documentationLanguage\": \"de-DE\", \"inventory\": {\"activeIntakeCount\": 1, \"activeSeriesTargetCount\": 1, \"archiveIntakeCount\": 1, \"backlogIntakeCount\": 1, \"baselineCount\": 1, \"dependencyCount\": 0, \"eligibleCandidate\": \"intakes/LH-00.md\", \"historyIntakeCount\": 1, \"seriesTargetCount\": 1}, \"inventoryMode\": \"SeriesManifest\", \"legacyArtifactNames\": [], \"missingPaths\": [], \"nextAction\": \"N/A\", \"outcome\": \"Aligned\", \"profile\": \"explicit\", \"resolvedNaming\": {\"canonicalIndex\": \"requirements/RequirementsIndex.md\", \"intakePattern\": \"LH-<slug>.md\", \"orderView\": \"docs/Lastenheft-Plan.md\"}, \"roles\": {\"intake-order\": \"docs/Lastenheft-Plan.md\", \"requirements-baseline\": \"requirements/baseline\", \"requirements-index\": \"requirements/RequirementsIndex.md\", \"requirements-intake\": \"intakes\"}, \"schemaVersion\": \"2.0\"}"
+    },
+    {
+      "preset": "intake-sequencing-governance",
+      "kind": "manifest",
+      "shell": "bash",
+      "exitCode": 0,
+      "output": "{\"blockers\": {}, \"declaredEligible\": [\"intakes/LH-00.md\"], \"dependencies\": 0, \"eligible\": [\"intakes/LH-00.md\"], \"roots\": 1, \"seriesId\": \"3c0e3e97-1268-4828-aeba-c3f3d17637de\", \"status\": \"Ready\", \"targets\": 1}"
+    },
+    {
+      "preset": "intake-sequencing-governance",
+      "kind": "manifest",
+      "shell": "PowerShell",
+      "exitCode": 0,
+      "output": "{\"blockers\": {}, \"declaredEligible\": [\"intakes/LH-00.md\"], \"dependencies\": 0, \"eligible\": [\"intakes/LH-00.md\"], \"roots\": 1, \"seriesId\": \"3c0e3e97-1268-4828-aeba-c3f3d17637de\", \"status\": \"Ready\", \"targets\": 1}"
+    },
+    {
+      "preset": "intake-sequencing-governance",
+      "kind": "receipt",
+      "shell": "bash",
+      "exitCode": 0,
+      "output": "{\"blockers\": {}, \"declaredEligible\": [\"intakes/LH-00.md\"], \"dependencies\": 0, \"eligible\": [\"intakes/LH-00.md\"], \"receiptId\": \"5041f16d-e54a-4128-abcb-7e92df990585\", \"roots\": 1, \"seriesId\": \"3c0e3e97-1268-4828-aeba-c3f3d17637de\", \"status\": \"Ready\", \"targets\": 1}"
+    },
+    {
+      "preset": "intake-sequencing-governance",
+      "kind": "receipt",
+      "shell": "PowerShell",
+      "exitCode": 0,
+      "output": "{\"blockers\": {}, \"declaredEligible\": [\"intakes/LH-00.md\"], \"dependencies\": 0, \"eligible\": [\"intakes/LH-00.md\"], \"receiptId\": \"5041f16d-e54a-4128-abcb-7e92df990585\", \"roots\": 1, \"seriesId\": \"3c0e3e97-1268-4828-aeba-c3f3d17637de\", \"status\": \"Ready\", \"targets\": 1}"
+    }
+  ],
+  "archiveRawExact": true
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.1",
+  "reviewId": "7012677e-6a5f-42f3-9715-091f33484e2e",
+  "mode": "Single",
+  "policy": "generic-markdown",
+  "targets": [
+    {
+      "path": "intakes/LH-00.md",
+      "role": "Primary"
+    }
+  ],
+  "series": {
+    "orderedTargetPaths": [],
+    "roots": [],
+    "dependencies": []
+  },
+  "campaign": {
+    "manifestPath": "N/A",
+    "workers": [],
+    "operatorExceptions": []
+  },
+  "authority": {
+    "request": "Explicit local T019–T045 includes T040 Ready bootstrap and T041 coherent intake/series update plus full distinct-agent review. IAD014/IAD015; no Active, Completed, remote writes, owner B-01 closure or feature pilot.",
+    "evidence": {
+      "path": "docs/planning/lh00-collection-migration-decisions.md",
+      "normalizedSha256": "6629df7621fad505b881c1062ce798516b263d176e9806ff624bf4b54f114186"
+    },
+    "targetMutationAllowed": false,
+    "implementationAllowed": false,
+    "remoteAccessAllowed": false,
+    "routingAccessAllowed": false
+  },
+  "projectProfile": "show-commandtui400-de-en",
+  "evidenceDelivery": "Only current local independent review triplet.",
+  "priorReviewId": "2a82055c-9b85-4998-ad5c-517029070aee",
+  "priorReviewArchive": "specs/intake-review-archive/2a82055c-9b85-4998-ad5c-517029070aee",
+  "targetHash": "e8e89f997b12e46bac100d41755d26e3cd092a639e7e589ecbfc550fccc98c6f"
+}

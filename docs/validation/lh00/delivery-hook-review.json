@@ -1,0 +1,29 @@
+{
+  "reason": "Regex fallback misclassified verified scan file names and detector identifiers, despite a successful Gitleaks range scan.",
+  "reviewedNonCredentialArtifacts": {
+    ".gitleaks.toml": "4cd6dcb6e237202210239253113190b2824dfa96799b46ce215ff61dc5a661ab",
+    "docs/validation/lh00/secret-scan-review.json": "f7a80b0fb5d652eca6e4b15958c8f68c1b21f4c4984a02da68c4774f1abbcffa",
+    "docs/validation/lh00/delivery-secret-scan-policy.json": "83763df4fb388543646d3f73a16e787e911eff16aa608ce278828babe3002ac2",
+    "docs/validation/lh00/delivery-secret-scan-results.json": "757636c95bfb677b63d224e9ecff4a33545360856d742c4068c8b1e04c486d9e"
+  },
+  "scope": "Exact four paths and raw hashes only; no general exception for rules, file extensions or scan reports.",
+  "modifiedFilesAccepted": false,
+  "gitleaksRangeScanRetained": true,
+  "fallbackWithoutGitleaksRetained": true,
+  "scopeBoundary": "Project-only correction; no central or fleet hook mutation.",
+  "additionalDetectorReview": {
+    "observedMatches": 6,
+    "rule": "Generic token detector; exact ID is defined in .gitleaks.toml",
+    "classification": "False positive: three actual public SHA256 hashes misread as assigned keys, each repeated in hook code and metadata.",
+    "approvedPublicDigests": [
+      "757636c95bfb677b63d224e9ecff4a33545360856d742c4068c8b1e04c486d9e",
+      "83763df4fb388543646d3f73a16e787e911eff16aa608ce278828babe3002ac2",
+      "f7a80b0fb5d652eca6e4b15958c8f68c1b21f4c4984a02da68c4774f1abbcffa"
+    ],
+    "exactPaths": [
+      "scripts/hooks/pre-push",
+      "docs/validation/lh00/delivery-hook-review.json"
+    ],
+    "boundary": "Only these literal digest values in two exact paths; default rules and changed-value detection remain enabled."
+  }
+}

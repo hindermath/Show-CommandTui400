@@ -1,0 +1,189 @@
+{
+  "checkedAt": "2026-10-06T18:54:56.915115+00:00",
+  "readOnly": true,
+  "records": [
+    {
+      "repository": "hindermath/spec-kit-preset-intake-authoring-governance",
+      "release": {
+        "assets": [
+          {
+            "apiUrl": "https://api.github.com/repos/hindermath/spec-kit-preset-intake-authoring-governance/releases/assets/612776526",
+            "contentType": "application/json",
+            "createdAt": "2026-10-05T14:17:46Z",
+            "digest": "sha256:7fa5c84c2a141fe4e4c42927ef077d9f520a21b583e7a784efa5c3b37ff0810d",
+            "downloadCount": 0,
+            "id": "RA_kwDOTfhNYs4khjpO",
+            "label": "",
+            "name": "intake-authoring-governance-v0.3.7.spdx.json",
+            "size": 4685,
+            "state": "uploaded",
+            "updatedAt": "2026-10-05T14:17:46Z",
+            "url": "https://github.com/hindermath/spec-kit-preset-intake-authoring-governance/releases/download/v0.3.7/intake-authoring-governance-v0.3.7.spdx.json"
+          },
+          {
+            "apiUrl": "https://api.github.com/repos/hindermath/spec-kit-preset-intake-authoring-governance/releases/assets/612776535",
+            "contentType": "application/zip",
+            "createdAt": "2026-10-05T14:17:46Z",
+            "digest": "sha256:ea945bfd5eca6b4a72da06ab21613a631a5776882a4d9ca829706f15e6ddaad0",
+            "downloadCount": 2,
+            "id": "RA_kwDOTfhNYs4khjpX",
+            "label": "",
+            "name": "intake-authoring-governance-v0.3.7.zip",
+            "size": 106551,
+            "state": "uploaded",
+            "updatedAt": "2026-10-05T14:17:46Z",
+            "url": "https://github.com/hindermath/spec-kit-preset-intake-authoring-governance/releases/download/v0.3.7/intake-authoring-governance-v0.3.7.zip"
+          }
+        ],
+        "isDraft": false,
+        "isPrerelease": false,
+        "publishedAt": "2026-10-05T14:17:47Z",
+        "tagName": "v0.3.7",
+        "url": "https://github.com/hindermath/spec-kit-preset-intake-authoring-governance/releases/tag/v0.3.7"
+      },
+      "tagCommit": "dbf135e89ba583fb27294f84e487cf1a5826604f",
+      "historicalB01CI": {
+        "runId": "36844931172",
+        "headSha": "dc0ea7843cd2b61e342ef987bf633a06dc7ab026",
+        "url": "https://github.com/hindermath/spec-kit-preset-intake-authoring-governance/actions/runs/36844931172",
+        "jobs": [
+          {
+            "name": "lifecycle (ubuntu-latest)",
+            "conclusion": "success"
+          },
+          {
+            "name": "lifecycle (macos-latest)",
+            "conclusion": "success"
+          },
+          {
+            "name": "lifecycle (windows-latest)",
+            "conclusion": "success"
+          }
+        ]
+      },
+      "boundary": "CI run belongs to historical B01 patch, not today current 0.3.7 tag or project acceptance."
+    },
+    {
+      "repository": "hindermath/spec-kit-preset-intake-review-governance",
+      "release": {
+        "assets": [
+          {
+            "apiUrl": "https://api.github.com/repos/hindermath/spec-kit-preset-intake-review-governance/releases/assets/607629161",
+            "contentType": "application/json",
+            "createdAt": "2026-10-03T10:37:53Z",
+            "digest": "sha256:ef997b33a82e669776201abd560c98394b0ce43e0bb7202e22ce0380e91d49b6",
+            "downloadCount": 0,
+            "id": "RA_kwDOTfCkXM4kN69p",
+            "label": "",
+            "name": "intake-review-governance-v0.2.4.spdx.json",
+            "size": 4664,
+            "state": "uploaded",
+            "updatedAt": "2026-10-03T10:37:53Z",
+            "url": "https://github.com/hindermath/spec-kit-preset-intake-review-governance/releases/download/v0.2.4/intake-review-governance-v0.2.4.spdx.json"
+          },
+          {
+            "apiUrl": "https://api.github.com/repos/hindermath/spec-kit-preset-intake-review-governance/releases/assets/607629193",
+            "contentType": "application/zip",
+            "createdAt": "2026-10-03T10:37:53Z",
+            "digest": "sha256:697b098a5e852a88ac49a54833289970b50aa8570edf568e48c2f130808e8eb0",
+            "downloadCount": 0,
+            "id": "RA_kwDOTfCkXM4kN6-J",
+            "label": "",
+            "name": "intake-review-governance-v0.2.4.zip",
+            "size": 59542,
+            "state": "uploaded",
+            "updatedAt": "2026-10-03T10:37:53Z",
+            "url": "https://github.com/hindermath/spec-kit-preset-intake-review-governance/releases/download/v0.2.4/intake-review-governance-v0.2.4.zip"
+          }
+        ],
+        "isDraft": false,
+        "isPrerelease": false,
+        "publishedAt": "2026-10-03T10:37:53Z",
+        "tagName": "v0.2.4",
+        "url": "https://github.com/hindermath/spec-kit-preset-intake-review-governance/releases/tag/v0.2.4"
+      },
+      "tagCommit": "f0f9b3536a58f8c90a79119565af8190809a4bdb",
+      "historicalB01CI": {
+        "runId": "36844938354",
+        "headSha": "930e68b42c5b2a6fc7c960ac50a993934fd6b47e",
+        "url": "https://github.com/hindermath/spec-kit-preset-intake-review-governance/actions/runs/36844938354",
+        "jobs": [
+          {
+            "name": "lifecycle (macos-latest)",
+            "conclusion": "success"
+          },
+          {
+            "name": "lifecycle (windows-latest)",
+            "conclusion": "success"
+          },
+          {
+            "name": "lifecycle (ubuntu-latest)",
+            "conclusion": "success"
+          }
+        ]
+      },
+      "boundary": "CI run belongs to historical B01 patch, not today current 0.3.7 tag or project acceptance."
+    },
+    {
+      "repository": "hindermath/spec-kit-preset-intake-sequencing-governance",
+      "release": {
+        "assets": [
+          {
+            "apiUrl": "https://api.github.com/repos/hindermath/spec-kit-preset-intake-sequencing-governance/releases/assets/607629234",
+            "contentType": "application/json",
+            "createdAt": "2026-10-03T10:37:53Z",
+            "digest": "sha256:ec421155e972ac5b6ad07b4609560271f90c5bb0434a2bce944e113ce1171574",
+            "downloadCount": 0,
+            "id": "RA_kwDOTjP9xs4kN6-y",
+            "label": "",
+            "name": "intake-sequencing-governance-v0.2.7.spdx.json",
+            "size": 4692,
+            "state": "uploaded",
+            "updatedAt": "2026-10-03T10:37:53Z",
+            "url": "https://github.com/hindermath/spec-kit-preset-intake-sequencing-governance/releases/download/v0.2.7/intake-sequencing-governance-v0.2.7.spdx.json"
+          },
+          {
+            "apiUrl": "https://api.github.com/repos/hindermath/spec-kit-preset-intake-sequencing-governance/releases/assets/607629233",
+            "contentType": "application/zip",
+            "createdAt": "2026-10-03T10:37:53Z",
+            "digest": "sha256:0fb72dc0fe58d76f4aa97cd7243f389eadc084474f051ee3b309f27a1d061fa5",
+            "downloadCount": 0,
+            "id": "RA_kwDOTjP9xs4kN6-x",
+            "label": "",
+            "name": "intake-sequencing-governance-v0.2.7.zip",
+            "size": 58028,
+            "state": "uploaded",
+            "updatedAt": "2026-10-03T10:37:53Z",
+            "url": "https://github.com/hindermath/spec-kit-preset-intake-sequencing-governance/releases/download/v0.2.7/intake-sequencing-governance-v0.2.7.zip"
+          }
+        ],
+        "isDraft": false,
+        "isPrerelease": false,
+        "publishedAt": "2026-10-03T10:37:54Z",
+        "tagName": "v0.2.7",
+        "url": "https://github.com/hindermath/spec-kit-preset-intake-sequencing-governance/releases/tag/v0.2.7"
+      },
+      "tagCommit": "74f6b343b79c93f6fcbfe9db1c111e9eb3aeeee8",
+      "historicalB01CI": {
+        "runId": "36844945700",
+        "headSha": "a4c56131825dfa11028e137b1f98db1fb8f37928",
+        "url": "https://github.com/hindermath/spec-kit-preset-intake-sequencing-governance/actions/runs/36844945700",
+        "jobs": [
+          {
+            "name": "lifecycle (ubuntu-latest)",
+            "conclusion": "success"
+          },
+          {
+            "name": "lifecycle (macos-latest)",
+            "conclusion": "success"
+          },
+          {
+            "name": "lifecycle (windows-latest)",
+            "conclusion": "success"
+          }
+        ]
+      },
+      "boundary": "CI run belongs to historical B01 patch, not today current 0.3.7 tag or project acceptance."
+    }
+  ]
+}

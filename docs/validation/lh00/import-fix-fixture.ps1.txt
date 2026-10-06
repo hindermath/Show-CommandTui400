@@ -1,0 +1,21 @@
+param([Parameter(Mandatory)][string]$FixtureRoot)
+Set-StrictMode -Version Latest
+$ErrorActionPreference = 'Stop'
+. (Join-Path $FixtureRoot '.specify/scripts/powershell/common.ps1')
+# Narrowly exercise upstream fallback and recovery in an assigned fixture.
+function Get-Python3Command { return $null }
+$templateRoot = Join-Path $FixtureRoot '.specify/presets/fixture'
+New-Item -ItemType Directory -Path (Join-Path $templateRoot 'templates') -Force | Out-Null
+[IO.File]::WriteAllText((Join-Path $FixtureRoot '.specify/presets/.registry'), '{"presets":{"fixture":{"priority":10,"enabled":true}}}')
+[IO.File]::WriteAllText((Join-Path $templateRoot 'preset.yml'), "provides:`n  templates:`n    - name: spec-template`n      strategy: prepend`n")
+[IO.File]::WriteAllText((Join-Path $templateRoot 'templates/spec-template.md'), '# Safe fixture fallback')
+# Upstream functions retain their own compatibility mode; own checks stay strict.
+Set-StrictMode -Off
+$content = Resolve-TemplateContent -TemplateName spec-template -RepoRoot $FixtureRoot -WarningVariable warningResult
+Set-StrictMode -Version Latest
+if ($content -ne '# Safe fixture fallback' -or -not $warningResult) { throw 'No-Python fallback mismatch' }
+[IO.File]::WriteAllText((Join-Path $FixtureRoot '.specify/feature.json'), '{broken')
+Save-FeatureJson -RepoRoot $FixtureRoot -FeatureDirectory 'specs/001-fixture'
+$feature = Get-Content -LiteralPath (Join-Path $FixtureRoot '.specify/feature.json') -Raw | ConvertFrom-Json
+if ($feature.feature_directory -ne 'specs/001-fixture') { throw 'Explicit feature recovery mismatch' }
+'PASS: isolated no-Python fallback and explicit feature-state recovery'

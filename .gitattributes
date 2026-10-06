@@ -1,1 +1,21 @@
 * text=auto eol=lf
+
+# Preserve exact raw bytes in frozen fixtures, snapshots and lineage evidence.
+# Eingefrorene Test-/Quell-/Archivbytes erhalten; keine Normalisierung.
+docs/validation/lh00/fixtures/** -text
+docs/secure-development/** -text
+specs/intake-authoring-archive/** -text whitespace=-blank-at-eof
+specs/001-lh00-intake-process/candidates/** -text whitespace=-blank-at-eof
+
+# Imported upstream script whitespace is part of recorded provenance.
+# Originale Importbytes erhalten; Parser und Analyse bleiben verpflichtend.
+.specify/scripts/powershell/*.ps1 -text whitespace=-blank-at-eol
+
+# These frozen Markdown assessments use intentional two-space hard breaks.
+# Absichtliche Markdown-Zeilenumbrüche der eingefrorenen Bewertungen erhalten.
+docs/validation/lh00/acceptance.md whitespace=-blank-at-eol
+docs/validation/lh00/b01-independent-review.md whitespace=-blank-at-eol
+
+# Deliberate CRLF/BOM normalization test: carriage return belongs to the EOL.
+# Absichtlicher CRLF/BOM-Prüffall, CR ist Bestandteil des Zeilenendes.
+docs/validation/lh00/fixtures/hash-positive/** whitespace=cr-at-eol

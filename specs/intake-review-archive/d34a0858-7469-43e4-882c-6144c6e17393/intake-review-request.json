@@ -1,0 +1,38 @@
+{
+  "schemaVersion": "1.1",
+  "reviewId": "d34a0858-7469-43e4-882c-6144c6e17393",
+  "mode": "Single",
+  "policy": "generic-markdown",
+  "targets": [
+    {
+      "path": "intakes/LH-00.md",
+      "role": "Primary"
+    }
+  ],
+  "series": {
+    "orderedTargetPaths": [],
+    "roots": [],
+    "dependencies": []
+  },
+  "campaign": {
+    "manifestPath": "N/A",
+    "workers": [],
+    "operatorExceptions": []
+  },
+  "authority": {
+    "request": "Explicit user local execution request T019–T045, including T032 ordinary update and complete review by a distinct agent; IAD014.",
+    "evidence": {
+      "path": "docs/planning/lh00-increment2-update-decisions.md",
+      "normalizedSha256": "48cd6a31e102dd8af436a7c3560cbd6b202435f8bb09e5afbff5935093cc2b69"
+    },
+    "targetMutationAllowed": false,
+    "implementationAllowed": false,
+    "remoteAccessAllowed": false,
+    "routingAccessAllowed": false
+  },
+  "projectProfile": "show-commandtui400-de-en",
+  "evidenceDelivery": "Local review evidence only; no commits, push, remote writes or feature pilots.",
+  "priorReviewId": "a65e169c-aacd-4dac-b80b-bad165da3679",
+  "priorReviewArchive": "specs/intake-review-archive/a65e169c-aacd-4dac-b80b-bad165da3679",
+  "targetHash": "ba02800e1ddac1a6005d0be084ba66caa61767f163d7a5dc0b5bf7cb0b4a88e6"
+}

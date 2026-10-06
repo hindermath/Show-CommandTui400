@@ -1,0 +1,8 @@
+{
+  "harnessVersion": "codex-cli 0.160.0",
+  "discoveryMode": "Enumerate",
+  "catalogSha256": "0349465a81d44b1a1f2d54b2def814d45619e7bb95dfa48165d68011adf3aa54",
+  "status": "Aligned",
+  "nextAction": "N/A",
+  "boundary": "Read-only aligned status; concrete local role bindings and config path deliberately not exported."
+}

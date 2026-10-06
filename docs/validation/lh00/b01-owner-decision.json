@@ -1,0 +1,9 @@
+{
+  "task": "T036",
+  "decidedAt": "2026-10-06T19:41:51.809494+00:00",
+  "owner": "Thorsten Hindermann",
+  "decision": "B-01 accepted as fixed",
+  "userAnswer": "B-01 als behoben abnehmen (empfohlen)",
+  "technicalEvidence": "docs/validation/lh00/b01-independent-review.md",
+  "boundary": "Owner accepts defect correction only; no real series Active/Completed, feature pilot or T045 limited-pilot permission."
+}

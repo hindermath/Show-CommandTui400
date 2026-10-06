@@ -1,0 +1,149 @@
+{
+  "schemaVersion": "1.1",
+  "reviewId": "ab6ca9cd-62c5-4f00-ba24-4c6d91b0af6d",
+  "mode": "Single",
+  "status": "Ready",
+  "policy": "generic-markdown",
+  "reviewedAt": "2026-10-06T18:50:16Z",
+  "repository": {
+    "root": ".",
+    "head": "N/A",
+    "boundary": "Inactive retained fixture without standalone Git metadata; copied guidance refers to parent context."
+  },
+  "requestEvidence": {
+    "path": "specs/intake-review-request.json",
+    "normalizedSha256": "0e252f47bd79bd155210850491812f954df6e7bb327b68c371655fc8d3d92d01"
+  },
+  "targets": [
+    {
+      "path": "intakes/LH-TEST.md",
+      "role": "Primary",
+      "normalizedSha256": "388473bd27949e9d23831663c3e5d4462c3cc16d393893fbe5e81176bf3cc0cb",
+      "gitBlob": "N/A"
+    }
+  ],
+  "findings": [],
+  "questions": [],
+  "acceptedRisks": [],
+  "operatorExceptions": [],
+  "coverage": {
+    "individual": [
+      "intakes/LH-TEST.md"
+    ],
+    "series": [],
+    "workers": []
+  },
+  "summary": {
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 0
+  },
+  "supersedes": "N/A",
+  "reviewer": {
+    "type": "Automated",
+    "identity": "Codex independent agent /root/lh00_inc2_language_fixture_review",
+    "role": "Separate complete T030 semantic reviewer and T022 reader",
+    "distinctFromRepairAuthor": true,
+    "independentHumanReview": false,
+    "boundary": "No target, receipt, source or copied guidance mutation. No human risk acceptance or process/pilot acceptance."
+  },
+  "sourceEvidence": [
+    {
+      "path": "sources/issue.md",
+      "normalizedSha256": "479ef33df669dda2c7055a11a28701b9ec03ff468f4c34b56fc795f9eadf6727"
+    },
+    {
+      "path": "sources/constraints.md",
+      "normalizedSha256": "f70bae1f605df782ad5cd9ce77a9bc7ed4bd4d4d5d6ef9c016217653662f8ba1"
+    }
+  ],
+  "policyEvidence": [
+    {
+      "path": "constitution.md",
+      "normalizedSha256": "8031f1fb425336dda6dc1e2e582e7cf2d90a680e4f4383253f6a294ae0bd1d6e"
+    },
+    {
+      "path": "AGENTS.md",
+      "normalizedSha256": "a70050039a95935c8d1e4f24497985135692734cd2f68f04b0ed61ae05b20ea9"
+    },
+    {
+      "path": ".specify/memory/intake-authoring-policy.json",
+      "normalizedSha256": "8d42717c2cc7efc128a62e7967a1f877beee85fb2d53fedee1aa828aba9941d9"
+    },
+    {
+      "path": ".specify/memory/intake-authoring-profile.md",
+      "normalizedSha256": "a1c5b76292d51888e1f0e6613bff0c8e508bf8ddb8dbacfa0cf44bfe70d1310f"
+    }
+  ],
+  "authoringEvidence": {
+    "receiptId": "0e4bfa02-7b60-434b-9036-b76ed7589bd3",
+    "intakeId": "b719969f-f174-423f-baf7-212102bbbafd",
+    "operationId": "b6127853-84a9-4b7b-9376-3eaa2168a181",
+    "receipt": {
+      "path": "specs/intake-authoring-receipts/lh-test.json",
+      "normalizedSha256": "b9d01ea2260c76ede1862ad89e7789ebe2c6dc132460db1f317ee3f500ec4956"
+    }
+  },
+  "dimensionCoverage": [
+    {
+      "dimension": "IdentityAudienceScope",
+      "status": "Pass",
+      "evidence": "One explicitly inactive FIX-LH00-01 test identity, owner and independent-review roles; basic file/terminal knowledge only. Creation scope excludes product functions and downstream execution."
+    },
+    {
+      "dimension": "LearnerLanguageContract",
+      "status": "Pass",
+      "evidence": "Each requirement, acceptance criterion, decision and process section presents German before equivalent English; shared IDs are translations. Intake/receipt/hash/collection terms are explained; the profile supplies FR/AC/OD and Spec Kit terms. B2 assessment is qualitative."
+    },
+    {
+      "dimension": "RequirementsAcceptance",
+      "status": "Pass",
+      "evidence": "Three atomic FR and three measurable AC, ordered two-source binding, exact target/receipt counts and both-shell validation. AC-FIX-003 describes completed creation evidence, not a permanent ban on separately requested T030 review."
+    },
+    {
+      "dimension": "DependenciesOrder",
+      "status": "Pass",
+      "evidence": "Safe named sources and selected valid profile are prerequisites. Source order grants no precedence; no series, campaign or LH-01–LH-07 scope is inferred."
+    },
+    {
+      "dimension": "StatusAuthorityFollowups",
+      "status": "Pass",
+      "evidence": "ReadyForReview is authoring state; review outcomes and separate authority remain distinct. Two copy-ready templates bind exact fixture intake/profile, remain inactive and require separate future authority."
+    },
+    {
+      "dimension": "SecurityPrivacySupplyChain",
+      "status": "Pass",
+      "evidence": "Strict UTF-8, containment, hash binding, overwrite protection and source-conflict rejection preserve installed governance. Synthetic text contains no credentials or unnecessary private data. Standards applicability is scoped without legal exemption."
+    },
+    {
+      "dimension": "AccessibilityTextFirst",
+      "status": "Pass",
+      "evidence": "Status, risk, dependencies, decisions and next action remain textual. Linear presentation justifies no diagram. Structural readability is not field screen-reader/Braille/keyboard or WCAG acceptance."
+    },
+    {
+      "dimension": "PlatformTechnologyRegulatory",
+      "status": "Pass",
+      "evidence": "No runtime, framework or minimum PowerShell selected. Unknown regulatory roles remain Open in the parent project; no synthetic fixture creates a service, personal-data processing or product compliance proof."
+    },
+    {
+      "dimension": "ProvenanceReferences",
+      "status": "Pass",
+      "evidence": "All seven receipt bindings verified current: target, two sources, four directly bound governance files; receipt identity and source order match. Copied guidance retains original parent links, explicitly disclosed by fixture README; not a second installed project."
+    },
+    {
+      "dimension": "SecretsAndBinary",
+      "status": "Pass",
+      "evidence": "Every reviewed local target/source/governance is strict UTF-8 with no NUL. No credential material or unnecessary personal-data exposure found; author/owner identity is relevant attribution."
+    }
+  ],
+  "proofBoundaries": [
+    "Single semantic fixture review only; not active LH-00 readiness or product/process acceptance.",
+    "Previous T017 no-downstream statements remain historical creation evidence; current explicit T030 request supplies review authority.",
+    "Copied profile IAD012 wording is preserved source context, not current delivery/implementation authority.",
+    "No accepted risks, human acceptance, pilot permission, real series activation or downstream execution."
+  ],
+  "reevaluationTrigger": "Any target, bound source, request, profile, policy, scope or authority change requires a fresh complete independent review.",
+  "reportPath": "specs/intake-review-report.md",
+  "nextAction": "Author records scoped T030 proof and may exercise T031 checks only within explicitly commissioned isolated test scope. No Specify/Autonomous/product follow-up is started."
+}

@@ -1,0 +1,419 @@
+{
+  "task": "T025",
+  "finishedAt": "2026-10-06T18:54:09.628128Z",
+  "cases": [
+    {
+      "case": "source-drift",
+      "result": "Rejected",
+      "syntheticUrlMetadataOnly": false,
+      "networkRequests": 0,
+      "before": {
+        "constitution.md": "8031f1fb425336dda6dc1e2e582e7cf2d90a680e4f4383253f6a294ae0bd1d6e",
+        "README.md": "b5a230c5343174f2893c884b7f9d90ef7e668a7eda4936286c7577f3de44378a",
+        "AGENTS.md": "a70050039a95935c8d1e4f24497985135692734cd2f68f04b0ed61ae05b20ea9",
+        "intakes/LH-TEST.md": "388473bd27949e9d23831663c3e5d4462c3cc16d393893fbe5e81176bf3cc0cb",
+        "specs/intake-review-report.md": "0dbf90162a15d1f0a7bd7a61b20278d9c016a44ffc518319cedd8688e36b73de",
+        "specs/intake-review-result.json": "9c7ca93db2ef6e7846d552f5d566753d58873279accc0a2ae04073c46b218b55",
+        "specs/intake-review-request.json": "0e252f47bd79bd155210850491812f954df6e7bb327b68c371655fc8d3d92d01",
+        "sources/constraints.md": "f70bae1f605df782ad5cd9ce77a9bc7ed4bd4d4d5d6ef9c016217653662f8ba1",
+        "sources/issue.md": "82f119e16852279fe2ee5e2a148d5aaeb85e63e6438500fc04679a7195649aea",
+        ".specify/memory/intake-authoring-profile.md": "a1c5b76292d51888e1f0e6613bff0c8e508bf8ddb8dbacfa0cf44bfe70d1310f",
+        ".specify/memory/intake-authoring-policy.json": "8d42717c2cc7efc128a62e7967a1f877beee85fb2d53fedee1aa828aba9941d9",
+        "specs/intake-authoring-receipts/lh-test.json": "b9d01ea2260c76ede1862ad89e7789ebe2c6dc132460db1f317ee3f500ec4956"
+      },
+      "after": {
+        "constitution.md": "8031f1fb425336dda6dc1e2e582e7cf2d90a680e4f4383253f6a294ae0bd1d6e",
+        "README.md": "b5a230c5343174f2893c884b7f9d90ef7e668a7eda4936286c7577f3de44378a",
+        "AGENTS.md": "a70050039a95935c8d1e4f24497985135692734cd2f68f04b0ed61ae05b20ea9",
+        "intakes/LH-TEST.md": "388473bd27949e9d23831663c3e5d4462c3cc16d393893fbe5e81176bf3cc0cb",
+        "specs/intake-review-report.md": "0dbf90162a15d1f0a7bd7a61b20278d9c016a44ffc518319cedd8688e36b73de",
+        "specs/intake-review-result.json": "9c7ca93db2ef6e7846d552f5d566753d58873279accc0a2ae04073c46b218b55",
+        "specs/intake-review-request.json": "0e252f47bd79bd155210850491812f954df6e7bb327b68c371655fc8d3d92d01",
+        "sources/constraints.md": "f70bae1f605df782ad5cd9ce77a9bc7ed4bd4d4d5d6ef9c016217653662f8ba1",
+        "sources/issue.md": "82f119e16852279fe2ee5e2a148d5aaeb85e63e6438500fc04679a7195649aea",
+        ".specify/memory/intake-authoring-profile.md": "a1c5b76292d51888e1f0e6613bff0c8e508bf8ddb8dbacfa0cf44bfe70d1310f",
+        ".specify/memory/intake-authoring-policy.json": "8d42717c2cc7efc128a62e7967a1f877beee85fb2d53fedee1aa828aba9941d9",
+        "specs/intake-authoring-receipts/lh-test.json": "b9d01ea2260c76ede1862ad89e7789ebe2c6dc132460db1f317ee3f500ec4956"
+      },
+      "validatorWrites": 0,
+      "runs": [
+        {
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "ERROR: source hash drift: sources/issue.md"
+        },
+        {
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "ERROR: source hash drift: sources/issue.md"
+        }
+      ]
+    },
+    {
+      "case": "target-drift",
+      "result": "Rejected",
+      "syntheticUrlMetadataOnly": false,
+      "networkRequests": 0,
+      "before": {
+        "constitution.md": "8031f1fb425336dda6dc1e2e582e7cf2d90a680e4f4383253f6a294ae0bd1d6e",
+        "README.md": "b5a230c5343174f2893c884b7f9d90ef7e668a7eda4936286c7577f3de44378a",
+        "AGENTS.md": "a70050039a95935c8d1e4f24497985135692734cd2f68f04b0ed61ae05b20ea9",
+        "intakes/LH-TEST.md": "5403ff16bf0228e612b00e30aa1dd633b117d5fad8e6dcdb3eaf0325f3f78f37",
+        "specs/intake-review-report.md": "0dbf90162a15d1f0a7bd7a61b20278d9c016a44ffc518319cedd8688e36b73de",
+        "specs/intake-review-result.json": "9c7ca93db2ef6e7846d552f5d566753d58873279accc0a2ae04073c46b218b55",
+        "specs/intake-review-request.json": "0e252f47bd79bd155210850491812f954df6e7bb327b68c371655fc8d3d92d01",
+        "sources/constraints.md": "f70bae1f605df782ad5cd9ce77a9bc7ed4bd4d4d5d6ef9c016217653662f8ba1",
+        "sources/issue.md": "479ef33df669dda2c7055a11a28701b9ec03ff468f4c34b56fc795f9eadf6727",
+        ".specify/memory/intake-authoring-profile.md": "a1c5b76292d51888e1f0e6613bff0c8e508bf8ddb8dbacfa0cf44bfe70d1310f",
+        ".specify/memory/intake-authoring-policy.json": "8d42717c2cc7efc128a62e7967a1f877beee85fb2d53fedee1aa828aba9941d9",
+        "specs/intake-authoring-receipts/lh-test.json": "b9d01ea2260c76ede1862ad89e7789ebe2c6dc132460db1f317ee3f500ec4956"
+      },
+      "after": {
+        "constitution.md": "8031f1fb425336dda6dc1e2e582e7cf2d90a680e4f4383253f6a294ae0bd1d6e",
+        "README.md": "b5a230c5343174f2893c884b7f9d90ef7e668a7eda4936286c7577f3de44378a",
+        "AGENTS.md": "a70050039a95935c8d1e4f24497985135692734cd2f68f04b0ed61ae05b20ea9",
+        "intakes/LH-TEST.md": "5403ff16bf0228e612b00e30aa1dd633b117d5fad8e6dcdb3eaf0325f3f78f37",
+        "specs/intake-review-report.md": "0dbf90162a15d1f0a7bd7a61b20278d9c016a44ffc518319cedd8688e36b73de",
+        "specs/intake-review-result.json": "9c7ca93db2ef6e7846d552f5d566753d58873279accc0a2ae04073c46b218b55",
+        "specs/intake-review-request.json": "0e252f47bd79bd155210850491812f954df6e7bb327b68c371655fc8d3d92d01",
+        "sources/constraints.md": "f70bae1f605df782ad5cd9ce77a9bc7ed4bd4d4d5d6ef9c016217653662f8ba1",
+        "sources/issue.md": "479ef33df669dda2c7055a11a28701b9ec03ff468f4c34b56fc795f9eadf6727",
+        ".specify/memory/intake-authoring-profile.md": "a1c5b76292d51888e1f0e6613bff0c8e508bf8ddb8dbacfa0cf44bfe70d1310f",
+        ".specify/memory/intake-authoring-policy.json": "8d42717c2cc7efc128a62e7967a1f877beee85fb2d53fedee1aa828aba9941d9",
+        "specs/intake-authoring-receipts/lh-test.json": "b9d01ea2260c76ede1862ad89e7789ebe2c6dc132460db1f317ee3f500ec4956"
+      },
+      "validatorWrites": 0,
+      "runs": [
+        {
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "ERROR: target hash drift: intakes/LH-TEST.md"
+        },
+        {
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "ERROR: target hash drift: intakes/LH-TEST.md"
+        }
+      ]
+    },
+    {
+      "case": "path-escape",
+      "result": "Rejected",
+      "syntheticUrlMetadataOnly": false,
+      "networkRequests": 0,
+      "before": {
+        "constitution.md": "8031f1fb425336dda6dc1e2e582e7cf2d90a680e4f4383253f6a294ae0bd1d6e",
+        "README.md": "b5a230c5343174f2893c884b7f9d90ef7e668a7eda4936286c7577f3de44378a",
+        "AGENTS.md": "a70050039a95935c8d1e4f24497985135692734cd2f68f04b0ed61ae05b20ea9",
+        "intakes/LH-TEST.md": "388473bd27949e9d23831663c3e5d4462c3cc16d393893fbe5e81176bf3cc0cb",
+        "specs/intake-review-report.md": "0dbf90162a15d1f0a7bd7a61b20278d9c016a44ffc518319cedd8688e36b73de",
+        "specs/intake-review-result.json": "9c7ca93db2ef6e7846d552f5d566753d58873279accc0a2ae04073c46b218b55",
+        "specs/intake-review-request.json": "0e252f47bd79bd155210850491812f954df6e7bb327b68c371655fc8d3d92d01",
+        "sources/constraints.md": "f70bae1f605df782ad5cd9ce77a9bc7ed4bd4d4d5d6ef9c016217653662f8ba1",
+        "sources/issue.md": "479ef33df669dda2c7055a11a28701b9ec03ff468f4c34b56fc795f9eadf6727",
+        ".specify/memory/intake-authoring-profile.md": "a1c5b76292d51888e1f0e6613bff0c8e508bf8ddb8dbacfa0cf44bfe70d1310f",
+        ".specify/memory/intake-authoring-policy.json": "8d42717c2cc7efc128a62e7967a1f877beee85fb2d53fedee1aa828aba9941d9",
+        "specs/intake-authoring-receipts/lh-test.json": "3c135a55e2e5f60f0d113522458242759c7df093cc05a364ce09b070ed8cfe62"
+      },
+      "after": {
+        "constitution.md": "8031f1fb425336dda6dc1e2e582e7cf2d90a680e4f4383253f6a294ae0bd1d6e",
+        "README.md": "b5a230c5343174f2893c884b7f9d90ef7e668a7eda4936286c7577f3de44378a",
+        "AGENTS.md": "a70050039a95935c8d1e4f24497985135692734cd2f68f04b0ed61ae05b20ea9",
+        "intakes/LH-TEST.md": "388473bd27949e9d23831663c3e5d4462c3cc16d393893fbe5e81176bf3cc0cb",
+        "specs/intake-review-report.md": "0dbf90162a15d1f0a7bd7a61b20278d9c016a44ffc518319cedd8688e36b73de",
+        "specs/intake-review-result.json": "9c7ca93db2ef6e7846d552f5d566753d58873279accc0a2ae04073c46b218b55",
+        "specs/intake-review-request.json": "0e252f47bd79bd155210850491812f954df6e7bb327b68c371655fc8d3d92d01",
+        "sources/constraints.md": "f70bae1f605df782ad5cd9ce77a9bc7ed4bd4d4d5d6ef9c016217653662f8ba1",
+        "sources/issue.md": "479ef33df669dda2c7055a11a28701b9ec03ff468f4c34b56fc795f9eadf6727",
+        ".specify/memory/intake-authoring-profile.md": "a1c5b76292d51888e1f0e6613bff0c8e508bf8ddb8dbacfa0cf44bfe70d1310f",
+        ".specify/memory/intake-authoring-policy.json": "8d42717c2cc7efc128a62e7967a1f877beee85fb2d53fedee1aa828aba9941d9",
+        "specs/intake-authoring-receipts/lh-test.json": "3c135a55e2e5f60f0d113522458242759c7df093cc05a364ce09b070ed8cfe62"
+      },
+      "validatorWrites": 0,
+      "runs": [
+        {
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "ERROR: sources[0].path must be repository-relative"
+        },
+        {
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "ERROR: sources[0].path must be repository-relative"
+        }
+      ]
+    },
+    {
+      "case": "symlink-escape",
+      "result": "Rejected",
+      "syntheticUrlMetadataOnly": false,
+      "networkRequests": 0,
+      "before": {
+        "constitution.md": "8031f1fb425336dda6dc1e2e582e7cf2d90a680e4f4383253f6a294ae0bd1d6e",
+        "README.md": "b5a230c5343174f2893c884b7f9d90ef7e668a7eda4936286c7577f3de44378a",
+        "AGENTS.md": "a70050039a95935c8d1e4f24497985135692734cd2f68f04b0ed61ae05b20ea9",
+        "intakes/LH-TEST.md": "388473bd27949e9d23831663c3e5d4462c3cc16d393893fbe5e81176bf3cc0cb",
+        "specs/intake-review-report.md": "0dbf90162a15d1f0a7bd7a61b20278d9c016a44ffc518319cedd8688e36b73de",
+        "specs/intake-review-result.json": "9c7ca93db2ef6e7846d552f5d566753d58873279accc0a2ae04073c46b218b55",
+        "specs/intake-review-request.json": "0e252f47bd79bd155210850491812f954df6e7bb327b68c371655fc8d3d92d01",
+        "sources/constraints.md": "f70bae1f605df782ad5cd9ce77a9bc7ed4bd4d4d5d6ef9c016217653662f8ba1",
+        "sources/issue.md": "479ef33df669dda2c7055a11a28701b9ec03ff468f4c34b56fc795f9eadf6727",
+        ".specify/memory/intake-authoring-profile.md": "a1c5b76292d51888e1f0e6613bff0c8e508bf8ddb8dbacfa0cf44bfe70d1310f",
+        ".specify/memory/intake-authoring-policy.json": "8d42717c2cc7efc128a62e7967a1f877beee85fb2d53fedee1aa828aba9941d9",
+        "specs/intake-authoring-receipts/lh-test.json": "b9d01ea2260c76ede1862ad89e7789ebe2c6dc132460db1f317ee3f500ec4956"
+      },
+      "after": {
+        "constitution.md": "8031f1fb425336dda6dc1e2e582e7cf2d90a680e4f4383253f6a294ae0bd1d6e",
+        "README.md": "b5a230c5343174f2893c884b7f9d90ef7e668a7eda4936286c7577f3de44378a",
+        "AGENTS.md": "a70050039a95935c8d1e4f24497985135692734cd2f68f04b0ed61ae05b20ea9",
+        "intakes/LH-TEST.md": "388473bd27949e9d23831663c3e5d4462c3cc16d393893fbe5e81176bf3cc0cb",
+        "specs/intake-review-report.md": "0dbf90162a15d1f0a7bd7a61b20278d9c016a44ffc518319cedd8688e36b73de",
+        "specs/intake-review-result.json": "9c7ca93db2ef6e7846d552f5d566753d58873279accc0a2ae04073c46b218b55",
+        "specs/intake-review-request.json": "0e252f47bd79bd155210850491812f954df6e7bb327b68c371655fc8d3d92d01",
+        "sources/constraints.md": "f70bae1f605df782ad5cd9ce77a9bc7ed4bd4d4d5d6ef9c016217653662f8ba1",
+        "sources/issue.md": "479ef33df669dda2c7055a11a28701b9ec03ff468f4c34b56fc795f9eadf6727",
+        ".specify/memory/intake-authoring-profile.md": "a1c5b76292d51888e1f0e6613bff0c8e508bf8ddb8dbacfa0cf44bfe70d1310f",
+        ".specify/memory/intake-authoring-policy.json": "8d42717c2cc7efc128a62e7967a1f877beee85fb2d53fedee1aa828aba9941d9",
+        "specs/intake-authoring-receipts/lh-test.json": "b9d01ea2260c76ede1862ad89e7789ebe2c6dc132460db1f317ee3f500ec4956"
+      },
+      "validatorWrites": 0,
+      "runs": [
+        {
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "ERROR: source sources/issue.md: path resolves outside the repository"
+        },
+        {
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "ERROR: source sources/issue.md: path resolves outside the repository"
+        }
+      ]
+    },
+    {
+      "case": "invalid-utf8",
+      "result": "Rejected",
+      "syntheticUrlMetadataOnly": false,
+      "networkRequests": 0,
+      "before": {
+        "constitution.md": "8031f1fb425336dda6dc1e2e582e7cf2d90a680e4f4383253f6a294ae0bd1d6e",
+        "README.md": "b5a230c5343174f2893c884b7f9d90ef7e668a7eda4936286c7577f3de44378a",
+        "AGENTS.md": "a70050039a95935c8d1e4f24497985135692734cd2f68f04b0ed61ae05b20ea9",
+        "intakes/LH-TEST.md": "388473bd27949e9d23831663c3e5d4462c3cc16d393893fbe5e81176bf3cc0cb",
+        "specs/intake-review-report.md": "0dbf90162a15d1f0a7bd7a61b20278d9c016a44ffc518319cedd8688e36b73de",
+        "specs/intake-review-result.json": "9c7ca93db2ef6e7846d552f5d566753d58873279accc0a2ae04073c46b218b55",
+        "specs/intake-review-request.json": "0e252f47bd79bd155210850491812f954df6e7bb327b68c371655fc8d3d92d01",
+        "sources/constraints.md": "f70bae1f605df782ad5cd9ce77a9bc7ed4bd4d4d5d6ef9c016217653662f8ba1",
+        "sources/issue.md": "5f809d7f6fd2bc6798605b7217ff6cd10690120284885e0457038f0ac7ba3ae3",
+        ".specify/memory/intake-authoring-profile.md": "a1c5b76292d51888e1f0e6613bff0c8e508bf8ddb8dbacfa0cf44bfe70d1310f",
+        ".specify/memory/intake-authoring-policy.json": "8d42717c2cc7efc128a62e7967a1f877beee85fb2d53fedee1aa828aba9941d9",
+        "specs/intake-authoring-receipts/lh-test.json": "b9d01ea2260c76ede1862ad89e7789ebe2c6dc132460db1f317ee3f500ec4956"
+      },
+      "after": {
+        "constitution.md": "8031f1fb425336dda6dc1e2e582e7cf2d90a680e4f4383253f6a294ae0bd1d6e",
+        "README.md": "b5a230c5343174f2893c884b7f9d90ef7e668a7eda4936286c7577f3de44378a",
+        "AGENTS.md": "a70050039a95935c8d1e4f24497985135692734cd2f68f04b0ed61ae05b20ea9",
+        "intakes/LH-TEST.md": "388473bd27949e9d23831663c3e5d4462c3cc16d393893fbe5e81176bf3cc0cb",
+        "specs/intake-review-report.md": "0dbf90162a15d1f0a7bd7a61b20278d9c016a44ffc518319cedd8688e36b73de",
+        "specs/intake-review-result.json": "9c7ca93db2ef6e7846d552f5d566753d58873279accc0a2ae04073c46b218b55",
+        "specs/intake-review-request.json": "0e252f47bd79bd155210850491812f954df6e7bb327b68c371655fc8d3d92d01",
+        "sources/constraints.md": "f70bae1f605df782ad5cd9ce77a9bc7ed4bd4d4d5d6ef9c016217653662f8ba1",
+        "sources/issue.md": "5f809d7f6fd2bc6798605b7217ff6cd10690120284885e0457038f0ac7ba3ae3",
+        ".specify/memory/intake-authoring-profile.md": "a1c5b76292d51888e1f0e6613bff0c8e508bf8ddb8dbacfa0cf44bfe70d1310f",
+        ".specify/memory/intake-authoring-policy.json": "8d42717c2cc7efc128a62e7967a1f877beee85fb2d53fedee1aa828aba9941d9",
+        "specs/intake-authoring-receipts/lh-test.json": "b9d01ea2260c76ede1862ad89e7789ebe2c6dc132460db1f317ee3f500ec4956"
+      },
+      "validatorWrites": 0,
+      "runs": [
+        {
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "ERROR: source sources/issue.md: not strict UTF-8: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte"
+        },
+        {
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "ERROR: source sources/issue.md: Ausnahme beim Aufrufen von „GetString“ mit „3“ Argument(en): „Unable to translate bytes [FF] at index 0 from specified code page to Unicode.“"
+        }
+      ]
+    },
+    {
+      "case": "size-limit",
+      "result": "Rejected",
+      "syntheticUrlMetadataOnly": true,
+      "networkRequests": 0,
+      "before": {
+        "constitution.md": "8031f1fb425336dda6dc1e2e582e7cf2d90a680e4f4383253f6a294ae0bd1d6e",
+        "README.md": "b5a230c5343174f2893c884b7f9d90ef7e668a7eda4936286c7577f3de44378a",
+        "AGENTS.md": "a70050039a95935c8d1e4f24497985135692734cd2f68f04b0ed61ae05b20ea9",
+        "intakes/LH-TEST.md": "388473bd27949e9d23831663c3e5d4462c3cc16d393893fbe5e81176bf3cc0cb",
+        "specs/intake-review-report.md": "0dbf90162a15d1f0a7bd7a61b20278d9c016a44ffc518319cedd8688e36b73de",
+        "specs/intake-review-result.json": "9c7ca93db2ef6e7846d552f5d566753d58873279accc0a2ae04073c46b218b55",
+        "specs/intake-review-request.json": "0e252f47bd79bd155210850491812f954df6e7bb327b68c371655fc8d3d92d01",
+        "sources/constraints.md": "f70bae1f605df782ad5cd9ce77a9bc7ed4bd4d4d5d6ef9c016217653662f8ba1",
+        "sources/issue.md": "479ef33df669dda2c7055a11a28701b9ec03ff468f4c34b56fc795f9eadf6727",
+        ".specify/memory/intake-authoring-profile.md": "a1c5b76292d51888e1f0e6613bff0c8e508bf8ddb8dbacfa0cf44bfe70d1310f",
+        ".specify/memory/intake-authoring-policy.json": "8d42717c2cc7efc128a62e7967a1f877beee85fb2d53fedee1aa828aba9941d9",
+        "specs/intake-authoring-receipts/lh-test.json": "8688c43ce86db2995ed23b62dd162086da2872b6d4ff0085718a1ec0b5ca3559"
+      },
+      "after": {
+        "constitution.md": "8031f1fb425336dda6dc1e2e582e7cf2d90a680e4f4383253f6a294ae0bd1d6e",
+        "README.md": "b5a230c5343174f2893c884b7f9d90ef7e668a7eda4936286c7577f3de44378a",
+        "AGENTS.md": "a70050039a95935c8d1e4f24497985135692734cd2f68f04b0ed61ae05b20ea9",
+        "intakes/LH-TEST.md": "388473bd27949e9d23831663c3e5d4462c3cc16d393893fbe5e81176bf3cc0cb",
+        "specs/intake-review-report.md": "0dbf90162a15d1f0a7bd7a61b20278d9c016a44ffc518319cedd8688e36b73de",
+        "specs/intake-review-result.json": "9c7ca93db2ef6e7846d552f5d566753d58873279accc0a2ae04073c46b218b55",
+        "specs/intake-review-request.json": "0e252f47bd79bd155210850491812f954df6e7bb327b68c371655fc8d3d92d01",
+        "sources/constraints.md": "f70bae1f605df782ad5cd9ce77a9bc7ed4bd4d4d5d6ef9c016217653662f8ba1",
+        "sources/issue.md": "479ef33df669dda2c7055a11a28701b9ec03ff468f4c34b56fc795f9eadf6727",
+        ".specify/memory/intake-authoring-profile.md": "a1c5b76292d51888e1f0e6613bff0c8e508bf8ddb8dbacfa0cf44bfe70d1310f",
+        ".specify/memory/intake-authoring-policy.json": "8d42717c2cc7efc128a62e7967a1f877beee85fb2d53fedee1aa828aba9941d9",
+        "specs/intake-authoring-receipts/lh-test.json": "8688c43ce86db2995ed23b62dd162086da2872b6d4ff0085718a1ec0b5ca3559"
+      },
+      "validatorWrites": 0,
+      "runs": [
+        {
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "ERROR: sources[0].contentLength must be 0 through 2097152"
+        },
+        {
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "ERROR: sources[0].contentLength must be 0 through 2097152"
+        }
+      ]
+    },
+    {
+      "case": "binary-extension",
+      "result": "Rejected",
+      "syntheticUrlMetadataOnly": false,
+      "networkRequests": 0,
+      "before": {
+        "constitution.md": "8031f1fb425336dda6dc1e2e582e7cf2d90a680e4f4383253f6a294ae0bd1d6e",
+        "README.md": "b5a230c5343174f2893c884b7f9d90ef7e668a7eda4936286c7577f3de44378a",
+        "AGENTS.md": "a70050039a95935c8d1e4f24497985135692734cd2f68f04b0ed61ae05b20ea9",
+        "intakes/LH-TEST.md": "388473bd27949e9d23831663c3e5d4462c3cc16d393893fbe5e81176bf3cc0cb",
+        "specs/intake-review-report.md": "0dbf90162a15d1f0a7bd7a61b20278d9c016a44ffc518319cedd8688e36b73de",
+        "specs/intake-review-result.json": "9c7ca93db2ef6e7846d552f5d566753d58873279accc0a2ae04073c46b218b55",
+        "specs/intake-review-request.json": "0e252f47bd79bd155210850491812f954df6e7bb327b68c371655fc8d3d92d01",
+        "sources/issue.pdf": "479ef33df669dda2c7055a11a28701b9ec03ff468f4c34b56fc795f9eadf6727",
+        "sources/constraints.md": "f70bae1f605df782ad5cd9ce77a9bc7ed4bd4d4d5d6ef9c016217653662f8ba1",
+        "sources/issue.md": "479ef33df669dda2c7055a11a28701b9ec03ff468f4c34b56fc795f9eadf6727",
+        ".specify/memory/intake-authoring-profile.md": "a1c5b76292d51888e1f0e6613bff0c8e508bf8ddb8dbacfa0cf44bfe70d1310f",
+        ".specify/memory/intake-authoring-policy.json": "8d42717c2cc7efc128a62e7967a1f877beee85fb2d53fedee1aa828aba9941d9",
+        "specs/intake-authoring-receipts/lh-test.json": "9b3b05fb2ff56416e2ade04a946c11f7458f445b7d8a39c8b392b3ad34a1fcc0"
+      },
+      "after": {
+        "constitution.md": "8031f1fb425336dda6dc1e2e582e7cf2d90a680e4f4383253f6a294ae0bd1d6e",
+        "README.md": "b5a230c5343174f2893c884b7f9d90ef7e668a7eda4936286c7577f3de44378a",
+        "AGENTS.md": "a70050039a95935c8d1e4f24497985135692734cd2f68f04b0ed61ae05b20ea9",
+        "intakes/LH-TEST.md": "388473bd27949e9d23831663c3e5d4462c3cc16d393893fbe5e81176bf3cc0cb",
+        "specs/intake-review-report.md": "0dbf90162a15d1f0a7bd7a61b20278d9c016a44ffc518319cedd8688e36b73de",
+        "specs/intake-review-result.json": "9c7ca93db2ef6e7846d552f5d566753d58873279accc0a2ae04073c46b218b55",
+        "specs/intake-review-request.json": "0e252f47bd79bd155210850491812f954df6e7bb327b68c371655fc8d3d92d01",
+        "sources/issue.pdf": "479ef33df669dda2c7055a11a28701b9ec03ff468f4c34b56fc795f9eadf6727",
+        "sources/constraints.md": "f70bae1f605df782ad5cd9ce77a9bc7ed4bd4d4d5d6ef9c016217653662f8ba1",
+        "sources/issue.md": "479ef33df669dda2c7055a11a28701b9ec03ff468f4c34b56fc795f9eadf6727",
+        ".specify/memory/intake-authoring-profile.md": "a1c5b76292d51888e1f0e6613bff0c8e508bf8ddb8dbacfa0cf44bfe70d1310f",
+        ".specify/memory/intake-authoring-policy.json": "8d42717c2cc7efc128a62e7967a1f877beee85fb2d53fedee1aa828aba9941d9",
+        "specs/intake-authoring-receipts/lh-test.json": "9b3b05fb2ff56416e2ade04a946c11f7458f445b7d8a39c8b392b3ad34a1fcc0"
+      },
+      "validatorWrites": 0,
+      "runs": [
+        {
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "ERROR: sources[0].path uses a known binary/document extension"
+        },
+        {
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "ERROR: sources[0].path uses a known binary/document extension"
+        }
+      ]
+    },
+    {
+      "case": "credential-url",
+      "result": "Rejected",
+      "syntheticUrlMetadataOnly": true,
+      "networkRequests": 0,
+      "before": {
+        "constitution.md": "8031f1fb425336dda6dc1e2e582e7cf2d90a680e4f4383253f6a294ae0bd1d6e",
+        "README.md": "b5a230c5343174f2893c884b7f9d90ef7e668a7eda4936286c7577f3de44378a",
+        "AGENTS.md": "a70050039a95935c8d1e4f24497985135692734cd2f68f04b0ed61ae05b20ea9",
+        "intakes/LH-TEST.md": "388473bd27949e9d23831663c3e5d4462c3cc16d393893fbe5e81176bf3cc0cb",
+        "specs/intake-review-report.md": "0dbf90162a15d1f0a7bd7a61b20278d9c016a44ffc518319cedd8688e36b73de",
+        "specs/intake-review-result.json": "9c7ca93db2ef6e7846d552f5d566753d58873279accc0a2ae04073c46b218b55",
+        "specs/intake-review-request.json": "0e252f47bd79bd155210850491812f954df6e7bb327b68c371655fc8d3d92d01",
+        "sources/constraints.md": "f70bae1f605df782ad5cd9ce77a9bc7ed4bd4d4d5d6ef9c016217653662f8ba1",
+        "sources/issue.md": "479ef33df669dda2c7055a11a28701b9ec03ff468f4c34b56fc795f9eadf6727",
+        ".specify/memory/intake-authoring-profile.md": "a1c5b76292d51888e1f0e6613bff0c8e508bf8ddb8dbacfa0cf44bfe70d1310f",
+        ".specify/memory/intake-authoring-policy.json": "8d42717c2cc7efc128a62e7967a1f877beee85fb2d53fedee1aa828aba9941d9",
+        "specs/intake-authoring-receipts/lh-test.json": "d87c93ec09f53382fcde273f29b446f76522cd613f60ee9720e53318bc4b8f31"
+      },
+      "after": {
+        "constitution.md": "8031f1fb425336dda6dc1e2e582e7cf2d90a680e4f4383253f6a294ae0bd1d6e",
+        "README.md": "b5a230c5343174f2893c884b7f9d90ef7e668a7eda4936286c7577f3de44378a",
+        "AGENTS.md": "a70050039a95935c8d1e4f24497985135692734cd2f68f04b0ed61ae05b20ea9",
+        "intakes/LH-TEST.md": "388473bd27949e9d23831663c3e5d4462c3cc16d393893fbe5e81176bf3cc0cb",
+        "specs/intake-review-report.md": "0dbf90162a15d1f0a7bd7a61b20278d9c016a44ffc518319cedd8688e36b73de",
+        "specs/intake-review-result.json": "9c7ca93db2ef6e7846d552f5d566753d58873279accc0a2ae04073c46b218b55",
+        "specs/intake-review-request.json": "0e252f47bd79bd155210850491812f954df6e7bb327b68c371655fc8d3d92d01",
+        "sources/constraints.md": "f70bae1f605df782ad5cd9ce77a9bc7ed4bd4d4d5d6ef9c016217653662f8ba1",
+        "sources/issue.md": "479ef33df669dda2c7055a11a28701b9ec03ff468f4c34b56fc795f9eadf6727",
+        ".specify/memory/intake-authoring-profile.md": "a1c5b76292d51888e1f0e6613bff0c8e508bf8ddb8dbacfa0cf44bfe70d1310f",
+        ".specify/memory/intake-authoring-policy.json": "8d42717c2cc7efc128a62e7967a1f877beee85fb2d53fedee1aa828aba9941d9",
+        "specs/intake-authoring-receipts/lh-test.json": "d87c93ec09f53382fcde273f29b446f76522cd613f60ee9720e53318bc4b8f31"
+      },
+      "validatorWrites": 0,
+      "runs": [
+        {
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "ERROR: sources[0].requestedUrl is not an allowed public HTTPS URL: credentials and fragments are forbidden"
+        },
+        {
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "ERROR: sources[0].requestedUrl is not an allowed public HTTPS URL"
+        }
+      ]
+    },
+    {
+      "case": "create-existing",
+      "result": "Refused by intake-create step 1 existing-target guard",
+      "execution": "Agent applies installed skill guard; no standalone Create CLI is claimed.",
+      "before": {
+        "constitution.md": "8031f1fb425336dda6dc1e2e582e7cf2d90a680e4f4383253f6a294ae0bd1d6e",
+        "README.md": "b5a230c5343174f2893c884b7f9d90ef7e668a7eda4936286c7577f3de44378a",
+        "AGENTS.md": "a70050039a95935c8d1e4f24497985135692734cd2f68f04b0ed61ae05b20ea9",
+        "intakes/LH-TEST.md": "388473bd27949e9d23831663c3e5d4462c3cc16d393893fbe5e81176bf3cc0cb",
+        "specs/intake-review-report.md": "0dbf90162a15d1f0a7bd7a61b20278d9c016a44ffc518319cedd8688e36b73de",
+        "specs/intake-review-result.json": "9c7ca93db2ef6e7846d552f5d566753d58873279accc0a2ae04073c46b218b55",
+        "specs/intake-review-request.json": "0e252f47bd79bd155210850491812f954df6e7bb327b68c371655fc8d3d92d01",
+        "sources/constraints.md": "f70bae1f605df782ad5cd9ce77a9bc7ed4bd4d4d5d6ef9c016217653662f8ba1",
+        "sources/issue.md": "479ef33df669dda2c7055a11a28701b9ec03ff468f4c34b56fc795f9eadf6727",
+        ".specify/memory/intake-authoring-profile.md": "a1c5b76292d51888e1f0e6613bff0c8e508bf8ddb8dbacfa0cf44bfe70d1310f",
+        ".specify/memory/intake-authoring-policy.json": "8d42717c2cc7efc128a62e7967a1f877beee85fb2d53fedee1aa828aba9941d9",
+        "specs/intake-authoring-receipts/lh-test.json": "b9d01ea2260c76ede1862ad89e7789ebe2c6dc132460db1f317ee3f500ec4956"
+      },
+      "after": {
+        "constitution.md": "8031f1fb425336dda6dc1e2e582e7cf2d90a680e4f4383253f6a294ae0bd1d6e",
+        "README.md": "b5a230c5343174f2893c884b7f9d90ef7e668a7eda4936286c7577f3de44378a",
+        "AGENTS.md": "a70050039a95935c8d1e4f24497985135692734cd2f68f04b0ed61ae05b20ea9",
+        "intakes/LH-TEST.md": "388473bd27949e9d23831663c3e5d4462c3cc16d393893fbe5e81176bf3cc0cb",
+        "specs/intake-review-report.md": "0dbf90162a15d1f0a7bd7a61b20278d9c016a44ffc518319cedd8688e36b73de",
+        "specs/intake-review-result.json": "9c7ca93db2ef6e7846d552f5d566753d58873279accc0a2ae04073c46b218b55",
+        "specs/intake-review-request.json": "0e252f47bd79bd155210850491812f954df6e7bb327b68c371655fc8d3d92d01",
+        "sources/constraints.md": "f70bae1f605df782ad5cd9ce77a9bc7ed4bd4d4d5d6ef9c016217653662f8ba1",
+        "sources/issue.md": "479ef33df669dda2c7055a11a28701b9ec03ff468f4c34b56fc795f9eadf6727",
+        ".specify/memory/intake-authoring-profile.md": "a1c5b76292d51888e1f0e6613bff0c8e508bf8ddb8dbacfa0cf44bfe70d1310f",
+        ".specify/memory/intake-authoring-policy.json": "8d42717c2cc7efc128a62e7967a1f877beee85fb2d53fedee1aa828aba9941d9",
+        "specs/intake-authoring-receipts/lh-test.json": "b9d01ea2260c76ede1862ad89e7789ebe2c6dc132460db1f317ee3f500ec4956"
+      },
+      "writes": 0
+    }
+  ],
+  "boundary": "URL cases are constructed invalid receipts, not remote retrieval claims; fixture roots removed after exact evidence capture."
+}

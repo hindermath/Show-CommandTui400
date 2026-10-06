@@ -1,0 +1,147 @@
+[
+  {
+    "case": "missing-fields",
+    "skill": "speckit-intake-create",
+    "appliedBy": "Codex /root",
+    "decisionId": "IAD001",
+    "outcome": "Blocked before authoring; no target or receipt written",
+    "promptState": "Blocked",
+    "blocker": "Fachlicher Zweck, Scope und messbare Abnahme fehlen. / Purpose, scope and measurable acceptance are absent.",
+    "owner": "Thorsten Hindermann",
+    "nextAction": "Owner ergänzt Zweck, Scope und AC; dann eigener neuer Create-Auftrag. / Owner supplies purpose, scope and acceptance before new creation.",
+    "inputs": [
+      {
+        "path": "sources/issue.md",
+        "rawSha256": "13b4632e2b4b5f4f95a18ee30aa90d9fc71f07e52f882f07b2bce4a509035925"
+      },
+      {
+        "path": "sources/constraints.md",
+        "rawSha256": "f70bae1f605df782ad5cd9ce77a9bc7ed4bd4d4d5d6ef9c016217653662f8ba1"
+      },
+      {
+        "path": ".specify/memory/intake-authoring-profile.md",
+        "rawSha256": "a1c5b76292d51888e1f0e6613bff0c8e508bf8ddb8dbacfa0cf44bfe70d1310f"
+      }
+    ],
+    "targetCount": 0,
+    "receiptCount": 0,
+    "downstreamWrites": 0,
+    "checkedAt": "2026-10-06T17:56:57.289979Z"
+  },
+  {
+    "case": "conflicting-sources",
+    "skill": "speckit-intake-create",
+    "appliedBy": "Codex /root",
+    "decisionId": "IAD002",
+    "outcome": "Blocked before authoring; no target or receipt written",
+    "promptState": "Blocked",
+    "blocker": "Quelle 2 fordert produktive TUI/Remote-Lieferung entgegen Quelle 1 und Testauftrag. / Source 2 conflicts with the local-only goal.",
+    "owner": "Thorsten Hindermann",
+    "nextAction": "Owner löst fachlichen Widerspruch; Reihenfolge hat keinen Vorrang. / Owner resolves the conflict; source order gives no precedence.",
+    "inputs": [
+      {
+        "path": "sources/issue.md",
+        "rawSha256": "479ef33df669dda2c7055a11a28701b9ec03ff468f4c34b56fc795f9eadf6727"
+      },
+      {
+        "path": "sources/constraints.md",
+        "rawSha256": "c46dd32143b0fc1b6f0882957d1b604d2198167f32dd8c8b64947d2727e02d45"
+      },
+      {
+        "path": ".specify/memory/intake-authoring-profile.md",
+        "rawSha256": "a1c5b76292d51888e1f0e6613bff0c8e508bf8ddb8dbacfa0cf44bfe70d1310f"
+      }
+    ],
+    "targetCount": 0,
+    "receiptCount": 0,
+    "downstreamWrites": 0,
+    "checkedAt": "2026-10-06T17:56:57.291342Z"
+  },
+  {
+    "case": "unreadable-source",
+    "skill": "speckit-intake-create",
+    "appliedBy": "Codex /root",
+    "decisionId": "IAD003",
+    "outcome": "Blocked before authoring; no target or receipt written",
+    "promptState": "Blocked",
+    "blocker": "Benannte sources/issue.md fehlt, FileNotFoundError. / Named source is absent.",
+    "owner": "Thorsten Hindermann",
+    "nextAction": "Owner stellt genau die fehlende Quelle bereit; kein zusätzlicher Scan. / Supply the exact named source without scanning for substitutes.",
+    "inputs": [
+      {
+        "path": "sources/issue.md",
+        "rawSha256": "N/A"
+      },
+      {
+        "path": "sources/constraints.md",
+        "rawSha256": "f70bae1f605df782ad5cd9ce77a9bc7ed4bd4d4d5d6ef9c016217653662f8ba1"
+      },
+      {
+        "path": ".specify/memory/intake-authoring-profile.md",
+        "rawSha256": "a1c5b76292d51888e1f0e6613bff0c8e508bf8ddb8dbacfa0cf44bfe70d1310f"
+      }
+    ],
+    "targetCount": 0,
+    "receiptCount": 0,
+    "downstreamWrites": 0,
+    "checkedAt": "2026-10-06T17:56:57.291827Z"
+  },
+  {
+    "case": "invalid-utf8",
+    "skill": "speckit-intake-create",
+    "appliedBy": "Codex /root",
+    "decisionId": "IAD004",
+    "outcome": "Blocked before authoring; no target or receipt written",
+    "promptState": "Blocked",
+    "blocker": "Benannte Quelle enthält ungültiges UTF-8 und NUL; strikt abgewiesen. / Invalid UTF-8 and NUL are rejected.",
+    "owner": "Thorsten Hindermann",
+    "nextAction": "Owner liefert sichere vollständige UTF-8-Textquelle. / Supply a safe complete UTF-8 text source.",
+    "inputs": [
+      {
+        "path": "sources/issue.md",
+        "rawSha256": "2dc31b432424c7446238857ef763ad7f45e2b31e2820ebee39852bfbf75febe8"
+      },
+      {
+        "path": "sources/constraints.md",
+        "rawSha256": "f70bae1f605df782ad5cd9ce77a9bc7ed4bd4d4d5d6ef9c016217653662f8ba1"
+      },
+      {
+        "path": ".specify/memory/intake-authoring-profile.md",
+        "rawSha256": "a1c5b76292d51888e1f0e6613bff0c8e508bf8ddb8dbacfa0cf44bfe70d1310f"
+      }
+    ],
+    "targetCount": 0,
+    "receiptCount": 0,
+    "downstreamWrites": 0,
+    "checkedAt": "2026-10-06T17:56:57.292366Z"
+  },
+  {
+    "case": "incomplete-profile",
+    "skill": "speckit-intake-create",
+    "appliedBy": "Codex /root",
+    "decisionId": "IAD005",
+    "outcome": "Blocked before authoring; no target or receipt written",
+    "promptState": "Blocked",
+    "blocker": "Profil enthält keine verbindliche Identität, Sprach-/Ablageregel oder Pflichtabschnitte. / Profile lacks identity, language, storage and required sections.",
+    "owner": "Thorsten Hindermann",
+    "nextAction": "Owner stellt vollständiges ausgewähltes Profil bereit; keinen Fallback erfinden. / Supply the selected complete profile; do not invent fallback rules.",
+    "inputs": [
+      {
+        "path": "sources/issue.md",
+        "rawSha256": "479ef33df669dda2c7055a11a28701b9ec03ff468f4c34b56fc795f9eadf6727"
+      },
+      {
+        "path": "sources/constraints.md",
+        "rawSha256": "f70bae1f605df782ad5cd9ce77a9bc7ed4bd4d4d5d6ef9c016217653662f8ba1"
+      },
+      {
+        "path": ".specify/memory/intake-authoring-profile.md",
+        "rawSha256": "bde9de1792aea572ed74cf370c98f3fa42079191488c8464948e4bc9bbe23e32"
+      }
+    ],
+    "targetCount": 0,
+    "receiptCount": 0,
+    "downstreamWrites": 0,
+    "checkedAt": "2026-10-06T17:56:57.292859Z"
+  }
+]

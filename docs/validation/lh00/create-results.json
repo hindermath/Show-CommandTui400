@@ -1,0 +1,48 @@
+{
+  "operationId": "b6127853-84a9-4b7b-9376-3eaa2168a181",
+  "intakeId": "b719969f-f174-423f-baf7-212102bbbafd",
+  "receiptId": "0e4bfa02-7b60-434b-9036-b76ed7589bd3",
+  "sourceCount": 2,
+  "questionCount": 0,
+  "decisionCount": 1,
+  "status": "ReadyForReview",
+  "promptState": "Enabled",
+  "provenanceMode": "New",
+  "targetNormalizedSha256": "388473bd27949e9d23831663c3e5d4462c3cc16d393893fbe5e81176bf3cc0cb",
+  "targetCount": 1,
+  "receiptCount": 1,
+  "downstreamActions": 0,
+  "validators": [
+    {
+      "language": "Bash",
+      "exit": 0,
+      "stdout": "PASS: intake authoring 0e4bfa02-7b60-434b-9036-b76ed7589bd3 is current (ReadyForReview, 2 sources, intakes/LH-TEST.md)",
+      "stderr": "",
+      "command": [
+        "bash",
+        "<PROJECT_ROOT>/.specify/presets/intake-authoring-governance/scripts/validate-intake-authoring-receipt.sh",
+        "--receipt",
+        "<FIXTURE_ROOT>/specs/intake-authoring-receipts/lh-test.json",
+        "--repo",
+        "<FIXTURE_ROOT>"
+      ]
+    },
+    {
+      "language": "PowerShell",
+      "exit": 0,
+      "stdout": "PASS: intake authoring 0e4bfa02-7b60-434b-9036-b76ed7589bd3 is current (ReadyForReview, 2 sources, intakes/LH-TEST.md)",
+      "stderr": "",
+      "command": [
+        "pwsh",
+        "-NoProfile",
+        "-File",
+        "<PROJECT_ROOT>/.specify/presets/intake-authoring-governance/scripts/validate-intake-authoring-receipt.ps1",
+        "-Receipt",
+        "<FIXTURE_ROOT>/specs/intake-authoring-receipts/lh-test.json",
+        "-Repo",
+        "<FIXTURE_ROOT>"
+      ]
+    }
+  ],
+  "initialCandidateValidation": "First validation identified missing required markers and N/A archive fields; candidate corrected before completed publication. Initial PowerShell parameter spelling corrected to installed Receipt/Repo interface."
+}

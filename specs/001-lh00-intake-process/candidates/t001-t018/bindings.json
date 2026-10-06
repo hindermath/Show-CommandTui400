@@ -1,0 +1,22 @@
+{
+  ".specify/memory/intake-authoring-profile.md": {
+    "predecessorNormalizedSha256": "a1c5b76292d51888e1f0e6613bff0c8e508bf8ddb8dbacfa0cf44bfe70d1310f",
+    "candidateNormalizedSha256": "727d257ee6b4864be0119ca4af43834b62272c37e22126d8a239220ce9be8bc3"
+  },
+  "docs/intake-governance.md": {
+    "predecessorNormalizedSha256": "651b63618da5e75b553e3e88e5408f6c91ef5d680d6f8a4d8ec984c0c89f2e96",
+    "candidateNormalizedSha256": "9c82fb67579f6ba8d6a1143cf2561e4cc54b78e4a2d9ef055760a71c06aa9818"
+  },
+  "docs/Entwicklungsumgebung.md": {
+    "predecessorNormalizedSha256": "04eed95e5afd6eecf126a0c61a3efe051b858826bbf9ef8d1681b6be72637492",
+    "candidateNormalizedSha256": "809dca6ac391a2f08d0f648557f2760ac677fa06c29c78db998d620b0d44f66d"
+  },
+  "docs/security/README.md": {
+    "predecessorNormalizedSha256": "a44547e65f6d77827991c7381c357211f4ba5040feb9b801ef737ac0d2b26f1a",
+    "candidateNormalizedSha256": "c731bc73007c9aea12f8bc3d6e1f3728e364980cd3feea0a6cc6b00eab9768b8"
+  },
+  "docs/Lastenheft-Plan.md": {
+    "predecessorNormalizedSha256": "bf907254ab745246bfe9c4961c1af8e5f6ec21c850aa5812c3ed210547879b8b",
+    "candidateNormalizedSha256": "20e51b228759b6e56404bcb10ed4506b4bff25859acbd41f723181a62ace2e61"
+  }
+}

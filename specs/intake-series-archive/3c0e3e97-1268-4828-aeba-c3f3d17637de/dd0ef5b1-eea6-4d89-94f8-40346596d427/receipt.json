@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "1.0",
+  "documentType": "IntakeSeriesReceipt",
+  "receiptId": "30efcd8f-72a8-4c89-9d18-fae42713cafd",
+  "seriesId": "3c0e3e97-1268-4828-aeba-c3f3d17637de",
+  "generator": {
+    "preset": "intake-sequencing-governance",
+    "version": "0.2.7"
+  },
+  "createdAt": "2026-10-06T19:04:01.793984Z",
+  "operation": {
+    "operationId": "20345501-30be-4092-9318-397aa7588980",
+    "type": "Create",
+    "authorityEvidence": "Explicit T019–T045 execution includes T040 named contract migration; B01 decision remains separate."
+  },
+  "status": "Ready",
+  "manifest": {
+    "path": "specs/intake-series/lh00-process/manifest.json",
+    "normalizedSha256": "c45765c320083d4a7cf5aab7794ffcadf926193e3f15db73d9d7d92173ce1dca"
+  },
+  "supersedes": {
+    "receiptPath": "N/A",
+    "receiptNormalizedSha256": "N/A",
+    "manifestArchivePath": "N/A",
+    "manifestArchiveSha256": "N/A"
+  },
+  "tombstone": {
+    "path": "N/A",
+    "normalizedSha256": "N/A"
+  },
+  "nextAction": "$speckit-intake-series-status specs/intake-series/lh00-process/manifest.json"
+}

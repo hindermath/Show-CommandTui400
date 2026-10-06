@@ -1,0 +1,60 @@
+{
+  "cases": [
+    {
+      "shell": "bash",
+      "rootRelativeReceipt": "specs/intake-authoring-receipts/lh-test.json",
+      "exitCode": 0,
+      "output": "PASS: intake authoring 0e4bfa02-7b60-434b-9036-b76ed7589bd3 is current (ReadyForReview, 2 sources, intakes/LH-TEST.md)",
+      "writes": 0
+    },
+    {
+      "shell": "PowerShell",
+      "rootRelativeReceipt": "specs/intake-authoring-receipts/lh-test.json",
+      "exitCode": 0,
+      "output": "PASS: intake authoring 0e4bfa02-7b60-434b-9036-b76ed7589bd3 is current (ReadyForReview, 2 sources, intakes/LH-TEST.md)",
+      "writes": 0
+    },
+    {
+      "shell": "bash",
+      "rootRelativeReceipt": "./specs/intake-authoring-receipts/lh-test.json",
+      "exitCode": 0,
+      "output": "PASS: intake authoring 0e4bfa02-7b60-434b-9036-b76ed7589bd3 is current (ReadyForReview, 2 sources, intakes/LH-TEST.md)",
+      "writes": 0
+    },
+    {
+      "shell": "PowerShell",
+      "rootRelativeReceipt": "./specs/intake-authoring-receipts/lh-test.json",
+      "exitCode": 0,
+      "output": "PASS: intake authoring 0e4bfa02-7b60-434b-9036-b76ed7589bd3 is current (ReadyForReview, 2 sources, intakes/LH-TEST.md)",
+      "writes": 0
+    }
+  ],
+  "before": {
+    "constitution.md": "8031f1fb425336dda6dc1e2e582e7cf2d90a680e4f4383253f6a294ae0bd1d6e",
+    "README.md": "b5a230c5343174f2893c884b7f9d90ef7e668a7eda4936286c7577f3de44378a",
+    "AGENTS.md": "a70050039a95935c8d1e4f24497985135692734cd2f68f04b0ed61ae05b20ea9",
+    "intakes/LH-TEST.md": "388473bd27949e9d23831663c3e5d4462c3cc16d393893fbe5e81176bf3cc0cb",
+    "specs/intake-review-report.md": "0dbf90162a15d1f0a7bd7a61b20278d9c016a44ffc518319cedd8688e36b73de",
+    "specs/intake-review-result.json": "9c7ca93db2ef6e7846d552f5d566753d58873279accc0a2ae04073c46b218b55",
+    "specs/intake-review-request.json": "0e252f47bd79bd155210850491812f954df6e7bb327b68c371655fc8d3d92d01",
+    "sources/constraints.md": "f70bae1f605df782ad5cd9ce77a9bc7ed4bd4d4d5d6ef9c016217653662f8ba1",
+    "sources/issue.md": "479ef33df669dda2c7055a11a28701b9ec03ff468f4c34b56fc795f9eadf6727",
+    ".specify/memory/intake-authoring-profile.md": "a1c5b76292d51888e1f0e6613bff0c8e508bf8ddb8dbacfa0cf44bfe70d1310f",
+    ".specify/memory/intake-authoring-policy.json": "8d42717c2cc7efc128a62e7967a1f877beee85fb2d53fedee1aa828aba9941d9",
+    "specs/intake-authoring-receipts/lh-test.json": "b9d01ea2260c76ede1862ad89e7789ebe2c6dc132460db1f317ee3f500ec4956"
+  },
+  "after": {
+    "constitution.md": "8031f1fb425336dda6dc1e2e582e7cf2d90a680e4f4383253f6a294ae0bd1d6e",
+    "README.md": "b5a230c5343174f2893c884b7f9d90ef7e668a7eda4936286c7577f3de44378a",
+    "AGENTS.md": "a70050039a95935c8d1e4f24497985135692734cd2f68f04b0ed61ae05b20ea9",
+    "intakes/LH-TEST.md": "388473bd27949e9d23831663c3e5d4462c3cc16d393893fbe5e81176bf3cc0cb",
+    "specs/intake-review-report.md": "0dbf90162a15d1f0a7bd7a61b20278d9c016a44ffc518319cedd8688e36b73de",
+    "specs/intake-review-result.json": "9c7ca93db2ef6e7846d552f5d566753d58873279accc0a2ae04073c46b218b55",
+    "specs/intake-review-request.json": "0e252f47bd79bd155210850491812f954df6e7bb327b68c371655fc8d3d92d01",
+    "sources/constraints.md": "f70bae1f605df782ad5cd9ce77a9bc7ed4bd4d4d5d6ef9c016217653662f8ba1",
+    "sources/issue.md": "479ef33df669dda2c7055a11a28701b9ec03ff468f4c34b56fc795f9eadf6727",
+    ".specify/memory/intake-authoring-profile.md": "a1c5b76292d51888e1f0e6613bff0c8e508bf8ddb8dbacfa0cf44bfe70d1310f",
+    ".specify/memory/intake-authoring-policy.json": "8d42717c2cc7efc128a62e7967a1f877beee85fb2d53fedee1aa828aba9941d9",
+    "specs/intake-authoring-receipts/lh-test.json": "b9d01ea2260c76ede1862ad89e7789ebe2c6dc132460db1f317ee3f500ec4956"
+  }
+}

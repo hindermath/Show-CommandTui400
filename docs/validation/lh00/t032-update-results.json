@@ -1,0 +1,99 @@
+{
+  "task": "T032",
+  "intakeId": "2296d99d-f099-4c4d-88f7-789581693eb0",
+  "priorReceiptId": "e92fb3b7-cadc-481d-913f-68aba06f2ad3",
+  "receiptId": "0df49a07-f388-491a-ba9a-8f3b174e5dfa",
+  "operationId": "1c1709d6-264b-482f-86c2-ff82f8f3307d",
+  "oldReviewId": "a65e169c-aacd-4dac-b80b-bad165da3679",
+  "previousTargetSha256": "fff66ab341600428fffdbd5f8e27cfa47ff780558b69166784f7a72aa2477370",
+  "targetSha256": "ba02800e1ddac1a6005d0be084ba66caa61767f163d7a5dc0b5bf7cb0b4a88e6",
+  "archiveEvidence": [
+    {
+      "originalPath": "intakes/LH-00.md",
+      "archivePath": "specs/intake-authoring-archive/lh-00/e92fb3b7-cadc-481d-913f-68aba06f2ad3/intakes/LH-00.md",
+      "rawSha256": "fff66ab341600428fffdbd5f8e27cfa47ff780558b69166784f7a72aa2477370",
+      "normalizedSha256": "fff66ab341600428fffdbd5f8e27cfa47ff780558b69166784f7a72aa2477370"
+    },
+    {
+      "originalPath": "specs/intake-authoring-receipts/lh-00.json",
+      "archivePath": "specs/intake-authoring-archive/lh-00/e92fb3b7-cadc-481d-913f-68aba06f2ad3/specs/intake-authoring-receipts/lh-00.json",
+      "rawSha256": "6dbdd6a0dc328568ea45679fe131db9026adaf483339852d94e4ca8b590ae1a5",
+      "normalizedSha256": "6dbdd6a0dc328568ea45679fe131db9026adaf483339852d94e4ca8b590ae1a5"
+    },
+    {
+      "originalPath": ".specify/memory/intake-authoring-profile.md",
+      "archivePath": "specs/intake-authoring-archive/lh-00/e92fb3b7-cadc-481d-913f-68aba06f2ad3/.specify/memory/intake-authoring-profile.md",
+      "rawSha256": "a1c5b76292d51888e1f0e6613bff0c8e508bf8ddb8dbacfa0cf44bfe70d1310f",
+      "normalizedSha256": "a1c5b76292d51888e1f0e6613bff0c8e508bf8ddb8dbacfa0cf44bfe70d1310f"
+    },
+    {
+      "originalPath": "docs/intake-governance.md",
+      "archivePath": "specs/intake-authoring-archive/lh-00/e92fb3b7-cadc-481d-913f-68aba06f2ad3/docs/intake-governance.md",
+      "rawSha256": "651b63618da5e75b553e3e88e5408f6c91ef5d680d6f8a4d8ec984c0c89f2e96",
+      "normalizedSha256": "651b63618da5e75b553e3e88e5408f6c91ef5d680d6f8a4d8ec984c0c89f2e96"
+    },
+    {
+      "originalPath": "docs/Entwicklungsumgebung.md",
+      "archivePath": "specs/intake-authoring-archive/lh-00/e92fb3b7-cadc-481d-913f-68aba06f2ad3/docs/Entwicklungsumgebung.md",
+      "rawSha256": "04eed95e5afd6eecf126a0c61a3efe051b858826bbf9ef8d1681b6be72637492",
+      "normalizedSha256": "04eed95e5afd6eecf126a0c61a3efe051b858826bbf9ef8d1681b6be72637492"
+    },
+    {
+      "originalPath": "docs/security/README.md",
+      "archivePath": "specs/intake-authoring-archive/lh-00/e92fb3b7-cadc-481d-913f-68aba06f2ad3/docs/security/README.md",
+      "rawSha256": "a44547e65f6d77827991c7381c357211f4ba5040feb9b801ef737ac0d2b26f1a",
+      "normalizedSha256": "a44547e65f6d77827991c7381c357211f4ba5040feb9b801ef737ac0d2b26f1a"
+    },
+    {
+      "originalPath": "docs/Lastenheft-Plan.md",
+      "archivePath": "specs/intake-authoring-archive/lh-00/e92fb3b7-cadc-481d-913f-68aba06f2ad3/docs/Lastenheft-Plan.md",
+      "rawSha256": "bf907254ab745246bfe9c4961c1af8e5f6ec21c850aa5812c3ed210547879b8b",
+      "normalizedSha256": "bf907254ab745246bfe9c4961c1af8e5f6ec21c850aa5812c3ed210547879b8b"
+    },
+    {
+      "originalPath": "specs/intake-review-request.json",
+      "archivePath": "specs/intake-review-archive/a65e169c-aacd-4dac-b80b-bad165da3679/intake-review-request.json",
+      "rawSha256": "d37ef51c8d65299757d72defa2636311652a4559dcefa2a29d401f5a59341ffd",
+      "normalizedSha256": "d37ef51c8d65299757d72defa2636311652a4559dcefa2a29d401f5a59341ffd"
+    },
+    {
+      "originalPath": "specs/intake-review-result.json",
+      "archivePath": "specs/intake-review-archive/a65e169c-aacd-4dac-b80b-bad165da3679/intake-review-result.json",
+      "rawSha256": "00c71443527fd36ce68668d968236b5f4a7ab48d8fc65a4041709e975c046aeb",
+      "normalizedSha256": "00c71443527fd36ce68668d968236b5f4a7ab48d8fc65a4041709e975c046aeb"
+    },
+    {
+      "originalPath": "specs/intake-review-report.md",
+      "archivePath": "specs/intake-review-archive/a65e169c-aacd-4dac-b80b-bad165da3679/intake-review-report.md",
+      "rawSha256": "fc8817b8fe900b3c58989c6b2d58d46f4983ad1917d07a6cd48f800e1a6968b6",
+      "normalizedSha256": "fc8817b8fe900b3c58989c6b2d58d46f4983ad1917d07a6cd48f800e1a6968b6"
+    }
+  ],
+  "receiptValidation": [
+    {
+      "shell": "bash",
+      "exitCode": 0,
+      "output": "PASS: intake authoring 0df49a07-f388-491a-ba9a-8f3b174e5dfa is current (ReadyForReview, 22 sources, intakes/LH-00.md)"
+    },
+    {
+      "shell": "PowerShell",
+      "exitCode": 0,
+      "output": "PASS: intake authoring 0df49a07-f388-491a-ba9a-8f3b174e5dfa is current (ReadyForReview, 22 sources, intakes/LH-00.md)"
+    }
+  ],
+  "operationValidation": [
+    {
+      "shell": "bash",
+      "exitCode": 0,
+      "output": "PASS: IntakeOperation artifact is valid (<candidate-root>/specs/intake-authoring-operations/1c1709d6-264b-482f-86c2-ff82f8f3307d/operation.json)"
+    },
+    {
+      "shell": "PowerShell",
+      "exitCode": 0,
+      "output": "PASS: IntakeOperation artifact is valid (<candidate-root>/specs/intake-authoring-operations/1c1709d6-264b-482f-86c2-ff82f8f3307d/operation.json)"
+    }
+  ],
+  "normativeFRACUnchanged": true,
+  "newReviewPending": true,
+  "localOnly": true
+}

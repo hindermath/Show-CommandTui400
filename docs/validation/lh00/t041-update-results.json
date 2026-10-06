@@ -1,0 +1,93 @@
+{
+  "task": "T041",
+  "intakeId": "2296d99d-f099-4c4d-88f7-789581693eb0",
+  "priorReceiptId": "f0e63c2d-8a78-4076-95bb-1b4ff5250688",
+  "receiptId": "17d14686-427a-44d7-b903-b94389eb6381",
+  "operationId": "0e8dcbfa-5369-4150-9617-888168be0c95",
+  "oldReviewId": "2a82055c-9b85-4998-ad5c-517029070aee",
+  "previousTargetSha256": "0481d515cfe4bfac75365890d06147e48965c7062b65953179eb41cc8c82a24e",
+  "targetSha256": "e8e89f997b12e46bac100d41755d26e3cd092a639e7e589ecbfc550fccc98c6f",
+  "archiveEvidence": [
+    {
+      "originalPath": "intakes/LH-00.md",
+      "archivePath": "specs/intake-authoring-archive/lh-00/f0e63c2d-8a78-4076-95bb-1b4ff5250688/intakes/LH-00.md",
+      "rawSha256": "0481d515cfe4bfac75365890d06147e48965c7062b65953179eb41cc8c82a24e",
+      "normalizedSha256": "0481d515cfe4bfac75365890d06147e48965c7062b65953179eb41cc8c82a24e"
+    },
+    {
+      "originalPath": "specs/intake-authoring-receipts/lh-00.json",
+      "archivePath": "specs/intake-authoring-archive/lh-00/f0e63c2d-8a78-4076-95bb-1b4ff5250688/specs/intake-authoring-receipts/lh-00.json",
+      "rawSha256": "3118a4082d18bdbeaecb94750d7ff143568e281014b3a0235c654c8b58fd4fb1",
+      "normalizedSha256": "3118a4082d18bdbeaecb94750d7ff143568e281014b3a0235c654c8b58fd4fb1"
+    },
+    {
+      "originalPath": ".specify/memory/intake-authoring-profile.md",
+      "archivePath": "specs/intake-authoring-archive/lh-00/f0e63c2d-8a78-4076-95bb-1b4ff5250688/.specify/memory/intake-authoring-profile.md",
+      "rawSha256": "7f2f09378bef60152cfe5f128f31b06c5de2418da2c1d1699bbc450d48439d2b",
+      "normalizedSha256": "7f2f09378bef60152cfe5f128f31b06c5de2418da2c1d1699bbc450d48439d2b"
+    },
+    {
+      "originalPath": "docs/Entwicklungsumgebung.md",
+      "archivePath": "specs/intake-authoring-archive/lh-00/f0e63c2d-8a78-4076-95bb-1b4ff5250688/docs/Entwicklungsumgebung.md",
+      "rawSha256": "a339821bae50a1cd240fd38547fed3120f0bcb2f1a8edc439712c93daba881e4",
+      "normalizedSha256": "a339821bae50a1cd240fd38547fed3120f0bcb2f1a8edc439712c93daba881e4"
+    },
+    {
+      "originalPath": "docs/intake-governance.md",
+      "archivePath": "specs/intake-authoring-archive/lh-00/f0e63c2d-8a78-4076-95bb-1b4ff5250688/docs/intake-governance.md",
+      "rawSha256": "e091bc4b4ea1176a4b47f8de3cd99a90567ee80d2bc0d675f8a32110c469ca2c",
+      "normalizedSha256": "e091bc4b4ea1176a4b47f8de3cd99a90567ee80d2bc0d675f8a32110c469ca2c"
+    },
+    {
+      "originalPath": "docs/Lastenheft-Plan.md",
+      "archivePath": "specs/intake-authoring-archive/lh-00/f0e63c2d-8a78-4076-95bb-1b4ff5250688/docs/Lastenheft-Plan.md",
+      "rawSha256": "20e51b228759b6e56404bcb10ed4506b4bff25859acbd41f723181a62ace2e61",
+      "normalizedSha256": "20e51b228759b6e56404bcb10ed4506b4bff25859acbd41f723181a62ace2e61"
+    },
+    {
+      "originalPath": "specs/intake-review-request.json",
+      "archivePath": "specs/intake-review-archive/2a82055c-9b85-4998-ad5c-517029070aee/intake-review-request.json",
+      "rawSha256": "7b262e19d8c5ca5542964c3fda39e2f90619004d10fad02bd6a9d31b051bd3d3",
+      "normalizedSha256": "7b262e19d8c5ca5542964c3fda39e2f90619004d10fad02bd6a9d31b051bd3d3"
+    },
+    {
+      "originalPath": "specs/intake-review-result.json",
+      "archivePath": "specs/intake-review-archive/2a82055c-9b85-4998-ad5c-517029070aee/intake-review-result.json",
+      "rawSha256": "0c9c90e13352da0ad826c9110f9fd2b2efc1d06439684d305169a9f6e19036c8",
+      "normalizedSha256": "0c9c90e13352da0ad826c9110f9fd2b2efc1d06439684d305169a9f6e19036c8"
+    },
+    {
+      "originalPath": "specs/intake-review-report.md",
+      "archivePath": "specs/intake-review-archive/2a82055c-9b85-4998-ad5c-517029070aee/intake-review-report.md",
+      "rawSha256": "39cd03814340d02371fb432e66720ae585cade7aeece01710cfe2e6bec696fc3",
+      "normalizedSha256": "39cd03814340d02371fb432e66720ae585cade7aeece01710cfe2e6bec696fc3"
+    }
+  ],
+  "receiptValidation": [
+    {
+      "shell": "bash",
+      "exitCode": 0,
+      "output": "PASS: intake authoring 17d14686-427a-44d7-b903-b94389eb6381 is current (ReadyForReview, 26 sources, intakes/LH-00.md)"
+    },
+    {
+      "shell": "PowerShell",
+      "exitCode": 0,
+      "output": "PASS: intake authoring 17d14686-427a-44d7-b903-b94389eb6381 is current (ReadyForReview, 26 sources, intakes/LH-00.md)"
+    }
+  ],
+  "operationValidation": [
+    {
+      "shell": "bash",
+      "exitCode": 0,
+      "output": "PASS: IntakeOperation artifact is valid (<candidate-root>/specs/intake-authoring-operations/0e8dcbfa-5369-4150-9617-888168be0c95/operation.json)"
+    },
+    {
+      "shell": "PowerShell",
+      "exitCode": 0,
+      "output": "PASS: IntakeOperation artifact is valid (<candidate-root>/specs/intake-authoring-operations/0e8dcbfa-5369-4150-9617-888168be0c95/operation.json)"
+    }
+  ],
+  "normativeFRACUnchanged": true,
+  "newReviewPending": true,
+  "localOnly": true
+}

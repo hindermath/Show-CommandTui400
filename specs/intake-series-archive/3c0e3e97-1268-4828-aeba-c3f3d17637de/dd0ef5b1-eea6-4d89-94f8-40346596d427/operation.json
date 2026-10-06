@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "1.0",
+  "documentType": "IntakeSeriesOperation",
+  "operationId": "20345501-30be-4092-9318-397aa7588980",
+  "seriesId": "3c0e3e97-1268-4828-aeba-c3f3d17637de",
+  "type": "Create",
+  "status": "Prepared",
+  "authorityEvidence": "Explicit T019–T045 execution includes T040 named contract migration; B01 decision remains separate.",
+  "proposalNormalizedSha256": "6e2ce00ca6fc2a96b7151f3a00d69b78a8ee20bb4ba751e53f0c8307185a3f26",
+  "preparedPaths": [
+    "requirements/intake-governance-config.json",
+    "specs/intake-series/lh00-process/manifest.json",
+    "specs/intake-series/lh00-process/receipt.json",
+    ".specify/memory/intake-series-policy.json",
+    "requirements/RequirementsIndex.md"
+  ],
+  "validation": {
+    "bash": "Passed",
+    "powerShell": "Passed"
+  },
+  "publication": {
+    "status": "Published",
+    "publishedPaths": [
+      "requirements/intake-governance-config.json",
+      "specs/intake-series/lh00-process/manifest.json",
+      "specs/intake-series/lh00-process/receipt.json",
+      "specs/intake-series/lh00-process/operation.json",
+      ".specify/memory/intake-series-policy.json",
+      "requirements/RequirementsIndex.md",
+      "requirements/baseline/README.md",
+      "requirements/intakes/archive/README.md",
+      "requirements/intakes/backlog/README.md",
+      "requirements/intakes/history/README.md"
+    ]
+  }
+}

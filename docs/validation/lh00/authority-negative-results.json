@@ -1,0 +1,38 @@
+{
+  "task": "T031",
+  "cases": [
+    {
+      "case": "ReadyForReview without review",
+      "boundary": "Historical T017 created no active review. Authoring status does not supply semantic review or action authority.",
+      "downstreamRuns": 0
+    },
+    {
+      "case": "stale Ready",
+      "runs": [
+        {
+          "shell": "bash",
+          "exitCode": 2,
+          "output": "ERROR: target hash drift: intakes/LH-TEST.md"
+        },
+        {
+          "shell": "PowerShell",
+          "exitCode": 2,
+          "output": "ERROR: target hash drift: intakes/LH-TEST.md"
+        }
+      ],
+      "downstreamRuns": 0
+    },
+    {
+      "case": "Eligible without request",
+      "boundary": "Selection is not execution. Explicit matching task authority absent in this synthetic case.",
+      "downstreamRuns": 0
+    },
+    {
+      "case": "ReadyWithAcceptedRisks without human acceptance",
+      "boundary": "No human acceptance evidence exists; outcome cannot be asserted by author or reviewer.",
+      "acceptedRisks": [],
+      "downstreamRuns": 0
+    }
+  ],
+  "executionBoundary": "Agent applies existing policy authority gates; no new CLI/engine or five fabricated completed semantic reviews."
+}
