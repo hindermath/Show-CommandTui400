@@ -18,3 +18,15 @@ Product language and MSL status remain Open. Existing shell tooling does not
 select a product language. MSL means memory-safe language; the bound CISA guidance
 supports later decisions, with no automatic exception. The owner reassesses at
 the first runtime/integration decision and the stated review date.
+
+## Entscheidungsort LH-01, IAD019 / LH-01 decision stage
+
+Ownerentscheid vom 2026-10-07: „In LH-01 entscheiden.“ Die historische Open-
+Bewertung oben bleibt erhalten. C# wird geprüft; Primärsprache/MSL bleiben unknown.
+OD-01-002 bindet den Sprachentscheid an den technischen LH-01-Plan, mit
+Architekturentscheidung und Machbarkeitsnachweis vor Produktimplementierung.
+
+Owner decision: decide in LH-01. Preserve the historical Open assessment above.
+Evaluate C#; primary language/MSL remain unknown. OD-01-002 requires a recorded
+language choice in LH-01's technical plan with architecture and feasibility
+evidence before product implementation.

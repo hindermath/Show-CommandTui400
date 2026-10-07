@@ -19,3 +19,8 @@ docs/validation/lh00/b01-independent-review.md whitespace=-blank-at-eol
 # Deliberate CRLF/BOM normalization test: carriage return belongs to the EOL.
 # Absichtlicher CRLF/BOM-Prüffall, CR ist Bestandteil des Zeilenendes.
 docs/validation/lh00/fixtures/hash-positive/** whitespace=cr-at-eol
+
+# Exact archived Markdown retains the source's intentional hard line breaks.
+# Bytegenaue Archivkopien behalten absichtliche Markdown-Zeilenumbrueche.
+specs/intake-authoring-archive/lh-00/*/docs/Bedienkonzept.md whitespace=-blank-at-eof,-blank-at-eol
+specs/intake-authoring-archive/lh-00/*/docs/validation/lh00/acceptance.md whitespace=-blank-at-eof,-blank-at-eol

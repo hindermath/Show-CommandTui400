@@ -1,6 +1,6 @@
 # Lastenheft-Governance / Intake governance
 
-Stand / Date: 2026-10-01. Owner: Thorsten Hindermann.
+Stand / Date: 2026-10-07. Owner: Thorsten Hindermann.
 Dokumentationsentscheidung / Documentation decision: **UpdateRequired**.
 
 ## Zweck und Geltung / Purpose and applicability
@@ -9,14 +9,15 @@ Diese Zuordnung verbindet die Level-2-Regeln mit den Lastenheften LH-00 bis
 LH-07. Ein Intake ist ein fachliches Lastenheft. Ein Receipt bindet Inhalt und
 Quellen über SHA-256-Prüfsummen. Ein Review prüft die fachliche Qualität getrennt
 von der Erstellung. Es gibt noch keine Produktimplementierung oder Produktabnahme.
-Die Erstellung von LH-00 setzt nur das minimale Authoring-Profil um; die
-vollständige Umsetzung seiner Prozessanforderungen folgt später.
+Der LH-00-Kernprozess T001–T045 ist geliefert; die begrenzte Pilotfreigabe ist
+dokumentiert. Die vollständige Prozessabnahme bleibt nach LH-02 und vor LH-03 offen.
 
 This mapping connects Level-2 rules to LH-00 through LH-07. An intake is a
 requirements document. A receipt binds content and sources with SHA-256 hashes.
 A review assesses requirements separately from authoring. No product implementation
-or product acceptance exists. Creating LH-00 establishes only the minimal
-authoring profile; full implementation of its process requirements follows later.
+or product acceptance exists. The LH-00 core process T001–T045 is delivered,
+with limited owner pilot permission. Full process acceptance remains after LH-02
+and before LH-03.
 
 Verbindliche Quellen sind die [Constitution](../constitution.md),
 [Agenten-Guidance](../AGENTS.md), das [Bedienkonzept](Bedienkonzept.md),
@@ -59,7 +60,7 @@ authoring checks are recorded separately in the linked validation report.
 | G05 | Constitution IX, XX | Applicable: fünf gleiche Guidance-Dateien, zwei Constitution-Kopien, Leserpfade; alle / guidance parity and reader paths; all | 007, 012 → 005, 009 | Hashvergleich, Links, zentraler Vorschlag / hash comparison, links, central proposal |
 | G06 | Authoring 0.3.7, Policy | Applicable: Quellen-/Zielhashes, UTF-8, HTTPS-Regeln, Überschreibschutz; alle / source and target integrity; all | 008 → 006 | Bash- und PowerShell-Receiptprüfung / both receipt validators |
 | G07 | Review 0.2.4; Constitution Governance | Applicable: Authoring ≠ Review ≠ Laufauftrag; alle / separate authoring, review and execution; all | 009 → 007 | Status-/Prompt-Prüfung; [aktuelles Review / current review](../specs/intake-review-report.md) |
-| G08 | Lastenheft-Plan; Sequencing 0.2.7 | Applicable: IDs, Abhängigkeiten, Reihenfolge; alle / identity, dependencies, order; all | 004, 011 → 009 | Reihenfolgetabelle jetzt, validierte Collection/Serie später / order table now, validated collection/series later |
+| G08 | Lastenheft-Plan; Sequencing 0.2.7 | Applicable: IDs, Abhängigkeiten, Reihenfolge; alle / identity, dependencies, order; all | 004, 011 → 009 | Reihenfolgetabelle und validierter Ready/Eligible-Bootstrap; reale Aktivierung offen / order and validated bootstrap, real activation open |
 | G09 | Constitution VI; Statistikprofil 2 | Applicable: chronologisches Ledger, Gesamtstatistik zuletzt; alle Arbeitspakete / chronological ledger and final overall statistics; all work packages | 007 → 005 | Ledger, Renderer; keine Zeit-/Qualitätsbehauptung / ledger, renderer; no time or quality claim |
 | G10 | Constitution Mermaid/Abschlussbericht | Applicable: hilfreiche Abläufe mit Mermaid und Text; alle / useful flows with Mermaid and equivalent text; all | 006 → 005 | Lesbarer Quelltext und Textablauf; kein Feature-Abschlussbericht durch Authoring / readable diagram and text; authoring is not a completed feature run |
 | G11 | Constitution XVI–XIX; security/README | Applicable: weitere Standards einordnen; alle / classify other standards; all | 007 → 005 | Begründete N/A/Open-Einträge, Re-Evaluation bei Architektur/Release / justified N/A/Open records, reevaluate at architecture/release |
@@ -147,9 +148,9 @@ security exception.
 | FU02 | [Repository-Einstellungen](Repository-Einstellungen.md) | FollowUp: aktuelle deutsche Anleitung; englischer Leserpfad offen. Live-Einstellungen bei Übersetzung erneut prüfen. / Current German guide; English reader path pending. Recheck live settings during translation. |
 | FU03 | [Sicherheitsübersicht](security/README.md) | FollowUp: deutsche Anwendbarkeitsübersicht bleibt als Quelle; englische Zusammenfassung oben mindert, beseitigt aber nicht die Sprachlücke. Vollständigen Sprachpartner prüfen. / German applicability source retained; summary above reduces but does not remove the gap. Check a full language partner. |
 | FU04 | [Einrichtungsnachweis v0.3.5](maintenance/intake-authoring-v035.md) | Historische Evidence erhalten; keine rückwirkende Umdeutung. Bei Bedarf erläuterte Übersetzung als Partner ergänzen. / Preserve historical evidence without rewriting decisions; add an explained translation partner if needed. |
-| FU05 | Zentrales Register / Central registry | Lokale zentrale Ausrichtung am 03.10.2026 umgesetzt; PR-Merge offen. [Nachweis](maintenance/registration-closeout-20261003.md). / Local central alignment completed on 2026-10-03; PR merge pending, see evidence. |
+| FU05 | Zentrales Register / Central registry | Zentrale Übernahme durch [PR #320](https://github.com/hindermath/home-baseline/pull/320) am 03.10.2026 gemergt; spätere angewendete Registerausrichtung bleibt offen. Der [Nachweis](maintenance/registration-closeout-20261003.md) hält den damaligen Pending-Stand fest. / Central adoption merged; later applied registry acceptance remains open, and the earlier record preserves its historical pending state. |
 | FU06 | Issues 1–8 | Ursprüngliche Grundlage veröffentlicht und [nachgewiesen](issue-publication.md). Weitere Änderungen, einschließlich Issue-1-Reparatur, vor Veröffentlichung erneut vergleichen und separat nachweisen. / Original input published and evidenced. Compare later changes, including the Issue 1 repair, again before publication and record separate evidence. |
-| FU07 | PowerShell-Prozess / PowerShell process | FollowUp: Versionen, Basisskripte und Ende-zu-Ende-Nachweise auf vier Umgebungen offen. / Versions, base scripts and end-to-end evidence remain open on four environments. |
+| FU07 | PowerShell-Prozess / PowerShell process | FollowUp: Mac-A-Kernprozess samt Bash-/PowerShell-Nachweisen geliefert; stabilisierte Vollstrecke auf vier Umgebungen offen. / Mac A core flow and paired-shell proof delivered; stabilized full flow on four environments remains open. |
 
 Wiederverwendete Home-Baseline-Dokumente, Manpages und Preset-Templates behalten
 ihre kanonische Herkunft und bestehende Sprachstrategie; keine pauschale
@@ -383,3 +384,20 @@ The linked config/index/manifest/receipt form the local single-member bootstrap.
 There is one active intake, one series member and zero standalone intakes; seven
 future intake files stay absent. Four roles/six paths preserve the interaction
 baseline. Ready/Eligible does not activate work or replace a human owner gate.
+
+## Aktueller Pilot- und Sprachstand IAD019 / Current pilot and language state
+
+T001–T045 sind geliefert; [T045](validation/lh00/acceptance.md) dokumentiert die
+begrenzte Ownerfreigabe. LH-01/LH-02 sind weiterhin nicht erstellt und brauchen
+eigene Aufträge, gültige Intakes und andere Reviews. C# ist eine Prüfoption;
+Primärsprache/MSL werden in LH-01 vor Produktimplementierung entschieden.
+Die ursprünglichen pauschalen Not-Assessed-Aussagen gelten für den damaligen
+Authoring-/Einrichtungsscope; aktuelle Kernnachweise stehen in der
+[Aufgabenvalidierung](../specs/001-lh00-intake-process/checklists/tasks-validation.md).
+Volle Plattform-/A11Y-/Übersetzungs-/Registerabnahme bleibt offen.
+
+T001–T045 are delivered; the linked record grants limited owner permission.
+Neither pilot exists; each needs its own request, valid intake and distinct review.
+C# is a candidate and the language/MSL decision belongs to LH-01 before product
+implementation. Earlier blanket Not-Assessed statements describe their original
+setup scope; task validation records current core proof. Full acceptance remains open.

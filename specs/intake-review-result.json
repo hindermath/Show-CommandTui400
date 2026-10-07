@@ -1,23 +1,23 @@
 {
   "schemaVersion": "1.1",
-  "reviewId": "1bcdfd12-6424-4097-a2fd-c3e522095794",
+  "reviewId": "d0eb303d-0179-4694-8cd7-6fc3308cb3dd",
   "mode": "Single",
   "status": "Ready",
   "policy": "generic-markdown",
-  "reviewedAt": "2026-10-06T19:26:16Z",
+  "reviewedAt": "2026-10-07T17:57:02Z",
   "repository": {
     "root": ".",
-    "head": "e621d195f83f36ab2b99cd35d1b7ae3cbdb8fcdd",
-    "boundary": "Actual local final T041 working tree; no committed or remote delivery state inferred."
+    "head": "9e3c63851c820800955129015260e0d58d4e8a2b",
+    "boundary": "Actual final IAD021 local working tree; complete fresh semantic review, no remote delivery or completed feature inferred."
   },
   "requestEvidence": {
     "path": "specs/intake-review-request.json",
-    "normalizedSha256": "4c2df67bd9c676a1e9ac34199ce3bf4cc89693bb9b5515e79eb682ddb18eb3b1"
+    "normalizedSha256": "e6e9fb31242fcc0ce31eb6660fc98e07a51ce235c28934ab19e430026a8f9c3c"
   },
   "targets": [
     {
       "path": "intakes/LH-00.md",
-      "normalizedSha256": "ea4919bfcff0bfcfbef8bb557bd37ad2483ad6b5ec28b4e1668db4a6948a35bd",
+      "normalizedSha256": "a41a810b983eb6acfe2139dc9655494790570ce428f4d7566106b6d52006d315",
       "role": "Primary",
       "gitBlob": "N/A"
     }
@@ -39,18 +39,18 @@
     "medium": 0,
     "low": 0
   },
-  "supersedes": "7012677e-6a5f-42f3-9715-091f33484e2e",
+  "supersedes": "4e38537f-69e4-49d1-b8a9-5323fe2d5b2b",
   "reviewer": {
     "type": "Automated",
-    "identity": "Codex independent agent /root/lh00_inc2_language_fixture_review",
-    "role": "Complete fresh final T041 semantic review across all intake dimensions and explicitly scoped collection context, distinct from author /root",
+    "identity": "Codex independent agent /root/lh01_source_refresh_review",
+    "role": "Complete fresh final IAD021 semantic review of unchanged intake and all final source/policy/provenance/collection dimensions, distinct from author /root",
     "distinctFromRepairAuthor": true,
     "independentHumanReview": false,
     "delegationEvidence": {
-      "path": "docs/planning/lh00-collection-language-finalization.md",
-      "normalizedSha256": "adc9f0d7614012eb7ed55422593e5218fbd6d43bfd388630ba4da3fb79719c2f"
+      "path": "docs/planning/lh01-source-refresh-decisions.md",
+      "normalizedSha256": "6e3ce589bb0718c919b0586d553bbcf6a3afefff91999020992171b49cc35d6b"
     },
-    "boundary": "Writes only current request/result/report. No sources, target, receipt, preset or human gate/risk acceptance writes."
+    "boundary": "Writes only request/result/report; no reviewed sources, receipts, series, technical artifacts or human risk/gate decisions."
   },
   "policyEvidence": [
     {
@@ -71,7 +71,7 @@
     },
     {
       "path": ".specify/memory/intake-authoring-profile.md",
-      "normalizedSha256": "60c1a63a08b513d9e4b513f57aecbbe3316b8b9340a96aa488f5c16609c234f1"
+      "normalizedSha256": "a145327d6713ccf7ffe13d42ec12c4ee286e1594af7b7657b207c8ce1e22a467"
     },
     {
       "path": "constitution.md",
@@ -83,19 +83,15 @@
     },
     {
       "path": "AGENTS.md",
-      "normalizedSha256": "a70050039a95935c8d1e4f24497985135692734cd2f68f04b0ed61ae05b20ea9"
+      "normalizedSha256": "cfddd301099d82967a8170541d3cd77ba959d30a4d9c00f3c8f074181fd45830"
     },
     {
       "path": "docs/intake-governance.md",
-      "normalizedSha256": "bddb7de7e65b3d4ab9cb513a1c466d595aac5235fe7e1f5bf2da5fef492ddaf0"
+      "normalizedSha256": "400b56476e75f1f34fe1ffbda3595e55b68aeda03ecba782da50d6da8079e30d"
     },
     {
       "path": "docs/Lastenheft-Plan.md",
-      "normalizedSha256": "81c8732d70ba4f614cf8799c629bd3698a072266f1abcd22f571dd73226afbb0"
-    },
-    {
-      "path": "docs/planning/lh00-increment2-update-decisions.md",
-      "normalizedSha256": "48cd6a31e102dd8af436a7c3560cbd6b202435f8bb09e5afbff5935093cc2b69"
+      "normalizedSha256": "e29789e79d9f626f3716befaa9e369df83455ab6aa6c7558c01c7d4ef4cdf60f"
     },
     {
       "path": ".specify/memory/intake-series-policy.json",
@@ -110,354 +106,397 @@
       "normalizedSha256": "decb58b24f9541543540751137850e39ecf5153cf3be72b054f616447c451bbc"
     },
     {
-      "path": "docs/planning/lh00-collection-migration-decisions.md",
-      "normalizedSha256": "6629df7621fad505b881c1062ce798516b263d176e9806ff624bf4b54f114186"
+      "path": "docs/planning/lh01-source-refresh-decisions.md",
+      "normalizedSha256": "6e3ce589bb0718c919b0586d553bbcf6a3afefff91999020992171b49cc35d6b"
     },
     {
-      "path": "docs/planning/lh00-collection-language-finalization.md",
-      "normalizedSha256": "adc9f0d7614012eb7ed55422593e5218fbd6d43bfd388630ba4da3fb79719c2f"
+      "path": "docs/planning/lh01-source-refresh-review-corrections.md",
+      "normalizedSha256": "06b8d6dd6d354ed486213c95345ef127d8061852d2eabc8c5ae5df05a5316547"
     },
     {
-      "path": "docs/planning/lh00-collection-correction-decisions.md",
-      "normalizedSha256": "aa67e142b4dbae1c97f3e2c34c02f6df7d544c112ee300d23049658fad9b530e"
+      "path": "docs/planning/lh01-source-refresh-format-corrections.md",
+      "normalizedSha256": "c3549e0a7124952f9735f749e7992659234421932f155ac76fd206e03540b113"
     }
   ],
   "sourceEvidence": [
     {
-      "path": "specs/intake-authoring-archive/lh-00/831ae5aa-18f6-4368-8ec3-f394189f1fd1/intakes/LH-00.md",
-      "sourceId": "SRC001",
-      "normalizedSha256": "66056f4827f0c24c62afafd217889b58d1a27361f6e46cabdee48335341eb6b5"
+      "path": "specs/intake-authoring-archive/lh-00/d1ee2880-3475-4419-b5d9-f29db3db4c89/intakes/LH-00.md",
+      "normalizedSha256": "a41a810b983eb6acfe2139dc9655494790570ce428f4d7566106b6d52006d315",
+      "sourceId": "SRC001"
+    },
+    {
+      "path": "docs/planning/lh01-source-refresh-format-corrections.md",
+      "normalizedSha256": "c3549e0a7124952f9735f749e7992659234421932f155ac76fd206e03540b113",
+      "sourceId": "SRC002"
+    },
+    {
+      "path": "docs/planning/lh01-source-refresh-review-corrections.md",
+      "normalizedSha256": "06b8d6dd6d354ed486213c95345ef127d8061852d2eabc8c5ae5df05a5316547",
+      "sourceId": "SRC003"
+    },
+    {
+      "path": "docs/planning/lh01-source-refresh-decisions.md",
+      "normalizedSha256": "6e3ce589bb0718c919b0586d553bbcf6a3afefff91999020992171b49cc35d6b",
+      "sourceId": "SRC004"
     },
     {
       "path": "docs/planning/lh00-collection-language-finalization.md",
-      "sourceId": "SRC002",
-      "normalizedSha256": "adc9f0d7614012eb7ed55422593e5218fbd6d43bfd388630ba4da3fb79719c2f"
+      "normalizedSha256": "adc9f0d7614012eb7ed55422593e5218fbd6d43bfd388630ba4da3fb79719c2f",
+      "sourceId": "SRC005"
     },
     {
       "path": "docs/planning/lh00-collection-correction-decisions.md",
-      "sourceId": "SRC003",
-      "normalizedSha256": "aa67e142b4dbae1c97f3e2c34c02f6df7d544c112ee300d23049658fad9b530e"
+      "normalizedSha256": "aa67e142b4dbae1c97f3e2c34c02f6df7d544c112ee300d23049658fad9b530e",
+      "sourceId": "SRC006"
     },
     {
       "path": "docs/planning/lh00-collection-migration-decisions.md",
-      "sourceId": "SRC004",
-      "normalizedSha256": "6629df7621fad505b881c1062ce798516b263d176e9806ff624bf4b54f114186"
+      "normalizedSha256": "6629df7621fad505b881c1062ce798516b263d176e9806ff624bf4b54f114186",
+      "sourceId": "SRC007"
     },
     {
       "path": "docs/planning/lh00-increment2-update-decisions.md",
-      "sourceId": "SRC005",
-      "normalizedSha256": "48cd6a31e102dd8af436a7c3560cbd6b202435f8bb09e5afbff5935093cc2b69"
+      "normalizedSha256": "48cd6a31e102dd8af436a7c3560cbd6b202435f8bb09e5afbff5935093cc2b69",
+      "sourceId": "SRC008"
     },
     {
       "path": "docs/planning/lh00-macos15-refresh-decisions.md",
-      "sourceId": "SRC006",
-      "normalizedSha256": "e358e9e8640e886207838dc89baf199d4a2ba104785d20742e485308439dfb67"
+      "normalizedSha256": "e358e9e8640e886207838dc89baf199d4a2ba104785d20742e485308439dfb67",
+      "sourceId": "SRC009"
     },
     {
       "path": "docs/planning/lh00-v037-refresh-decisions.md",
-      "sourceId": "SRC007",
-      "normalizedSha256": "e8d5fd7307bf5510be3433b48cff43fa9c3c48a52a4c6459e16b465f387bc671"
+      "normalizedSha256": "e8d5fd7307bf5510be3433b48cff43fa9c3c48a52a4c6459e16b465f387bc671",
+      "sourceId": "SRC010"
     },
     {
       "path": "docs/intake-governance.md",
-      "sourceId": "SRC008",
-      "normalizedSha256": "bddb7de7e65b3d4ab9cb513a1c466d595aac5235fe7e1f5bf2da5fef492ddaf0"
+      "normalizedSha256": "400b56476e75f1f34fe1ffbda3595e55b68aeda03ecba782da50d6da8079e30d",
+      "sourceId": "SRC011"
     },
     {
       "path": "docs/Entwicklungsumgebung.md",
-      "sourceId": "SRC009",
-      "normalizedSha256": "1d9e43e3c6a0ab9a8ad02282a09b16923b7ac35d4deb0ff148f468de8bb327fe"
+      "normalizedSha256": "0c4fe962582d0bb2ab7b313a770fdf01bb526a09c2061ceef1be7a1b7ed40409",
+      "sourceId": "SRC012"
     },
     {
       "path": ".specify/memory/intake-authoring-profile.md",
-      "sourceId": "SRC010",
-      "normalizedSha256": "60c1a63a08b513d9e4b513f57aecbbe3316b8b9340a96aa488f5c16609c234f1"
+      "normalizedSha256": "a145327d6713ccf7ffe13d42ec12c4ee286e1594af7b7657b207c8ce1e22a467",
+      "sourceId": "SRC013"
     },
     {
       "path": "docs/Lastenheft-Plan.md",
-      "sourceId": "SRC011",
-      "normalizedSha256": "81c8732d70ba4f614cf8799c629bd3698a072266f1abcd22f571dd73226afbb0"
+      "normalizedSha256": "e29789e79d9f626f3716befaa9e369df83455ab6aa6c7558c01c7d4ef4cdf60f",
+      "sourceId": "SRC014"
     },
     {
       "path": "docs/Bedienkonzept.md",
-      "sourceId": "SRC012",
-      "normalizedSha256": "e41d0d035ad089f64e752d0a01558f744736a9514b394410123084010c12c30c"
+      "normalizedSha256": "42bd0a9243fcda6b1d78ee5976d5dccfcb2b48685c834fff26a942d584779e5a",
+      "sourceId": "SRC015"
     },
     {
       "path": "constitution.md",
-      "sourceId": "SRC013",
-      "normalizedSha256": "8031f1fb425336dda6dc1e2e582e7cf2d90a680e4f4383253f6a294ae0bd1d6e"
+      "normalizedSha256": "8031f1fb425336dda6dc1e2e582e7cf2d90a680e4f4383253f6a294ae0bd1d6e",
+      "sourceId": "SRC016"
     },
     {
       "path": "AGENTS.md",
-      "sourceId": "SRC014",
-      "normalizedSha256": "a70050039a95935c8d1e4f24497985135692734cd2f68f04b0ed61ae05b20ea9"
+      "normalizedSha256": "cfddd301099d82967a8170541d3cd77ba959d30a4d9c00f3c8f074181fd45830",
+      "sourceId": "SRC017"
     },
     {
       "path": "scripts/config/spec-kit-project-statistics-governance-presets.json",
-      "sourceId": "SRC015",
-      "normalizedSha256": "3b41eede1bf49a3b7cc035c73aeecf06acf29447a65039288328f517708a8d64"
+      "normalizedSha256": "3b41eede1bf49a3b7cc035c73aeecf06acf29447a65039288328f517708a8d64",
+      "sourceId": "SRC018"
     },
     {
       "path": "docs/maintenance/coordinated-governance-source-lock.json",
-      "sourceId": "SRC016",
-      "normalizedSha256": "c6c0088bf5fe03376d425dd417fb1a6a3048275ae887d94ae8ffbf92d5cdccf4"
+      "normalizedSha256": "c6c0088bf5fe03376d425dd417fb1a6a3048275ae887d94ae8ffbf92d5cdccf4",
+      "sourceId": "SRC019"
     },
     {
       "path": "docs/maintenance/coordinated-governance-oct03.md",
-      "sourceId": "SRC017",
-      "normalizedSha256": "5eeefe62493b9785acf79505ffc47c1910e1cbbdaa1e641ec637b67a7410f977"
+      "normalizedSha256": "5eeefe62493b9785acf79505ffc47c1910e1cbbdaa1e641ec637b67a7410f977",
+      "sourceId": "SRC020"
     },
     {
       "path": "docs/security/README.md",
-      "sourceId": "SRC018",
-      "normalizedSha256": "e39d533b8ee55eec14f99452c4033ad0ce8e9bca491a155f3acb6f20adb05fec"
+      "normalizedSha256": "2b4da0e2bf3e8c2f5672319c223a0420b6a6c6618374db5eb6c1d552c28332d3",
+      "sourceId": "SRC021"
     },
     {
       "path": "docs/maintenance/assurance-v013-stable-publication.md",
-      "sourceId": "SRC019",
-      "normalizedSha256": "b826b0d5a72365a744c8a3c53c10af3d2095a956b9a9e00a99c8ddf0c59c9c40"
+      "normalizedSha256": "b826b0d5a72365a744c8a3c53c10af3d2095a956b9a9e00a99c8ddf0c59c9c40",
+      "sourceId": "SRC022"
     },
     {
       "path": "docs/maintenance/intake-authoring-v037.md",
-      "sourceId": "SRC020",
-      "normalizedSha256": "f7569316f34df6a68a21123a47de08e3966715e88cc56d455775788d1de9814b"
+      "normalizedSha256": "f7569316f34df6a68a21123a47de08e3966715e88cc56d455775788d1de9814b",
+      "sourceId": "SRC023"
     },
     {
       "path": "docs/maintenance/macos-runner-migration.md",
-      "sourceId": "SRC021",
-      "normalizedSha256": "5c8b26c2d02e2c4fed73b469a674c35afc21c426773ef0354c57704c8463263a"
+      "normalizedSha256": "5c8b26c2d02e2c4fed73b469a674c35afc21c426773ef0354c57704c8463263a",
+      "sourceId": "SRC024"
     },
     {
       "path": "docs/maintenance/macos-runner-documentation-impact.json",
-      "sourceId": "SRC022",
-      "normalizedSha256": "7b578719d2e734dc662133a4dcc8896ae8c55b74529fafd000682b02dcd28a19"
+      "normalizedSha256": "7b578719d2e734dc662133a4dcc8896ae8c55b74529fafd000682b02dcd28a19",
+      "sourceId": "SRC025"
     },
     {
       "path": ".github/workflows/homogeneity-check.yml",
-      "sourceId": "SRC023",
-      "normalizedSha256": "a291288bb739ae3ca4d656e4ad4325b65ed8894a209d52b9759ea631fc03695f"
+      "normalizedSha256": "a291288bb739ae3ca4d656e4ad4325b65ed8894a209d52b9759ea631fc03695f",
+      "sourceId": "SRC026"
     },
     {
       "path": ".github/workflows/powershell-analysis.yml",
-      "sourceId": "SRC024",
-      "normalizedSha256": "b1ce382e088cd875f85a5b69176b01ecd14b0696ce5d9cd18c7e4c5e782a6573"
+      "normalizedSha256": "b1ce382e088cd875f85a5b69176b01ecd14b0696ce5d9cd18c7e4c5e782a6573",
+      "sourceId": "SRC027"
     },
     {
       "path": ".github/workflows/maintenance-tui.yml",
-      "sourceId": "SRC025",
-      "normalizedSha256": "b66ab1f78c8fd9ff9a891bf4cbbb61211985ccd13981039f8e9b926c8b1d863c"
+      "normalizedSha256": "b66ab1f78c8fd9ff9a891bf4cbbb61211985ccd13981039f8e9b926c8b1d863c",
+      "sourceId": "SRC028"
     },
     {
       "path": ".specify/memory/intake-series-policy.json",
-      "sourceId": "SRC026",
-      "normalizedSha256": "c7362796774ec93414954a406d7a9651ef12d9c4bfa4432b1cf655786e2d0eec"
+      "normalizedSha256": "c7362796774ec93414954a406d7a9651ef12d9c4bfa4432b1cf655786e2d0eec",
+      "sourceId": "SRC029"
     },
     {
       "path": "requirements/intake-governance-config.json",
-      "sourceId": "SRC027",
-      "normalizedSha256": "3b885d1895ac2f5c3783a64d3be1a99cf645d61f7622afcc65c8f173ff4f6d4b"
+      "normalizedSha256": "3b885d1895ac2f5c3783a64d3be1a99cf645d61f7622afcc65c8f173ff4f6d4b",
+      "sourceId": "SRC030"
     },
     {
       "path": "requirements/RequirementsIndex.md",
-      "sourceId": "SRC028",
-      "normalizedSha256": "decb58b24f9541543540751137850e39ecf5153cf3be72b054f616447c451bbc"
+      "normalizedSha256": "decb58b24f9541543540751137850e39ecf5153cf3be72b054f616447c451bbc",
+      "sourceId": "SRC031"
+    },
+    {
+      "path": ".specify/memory/constitution.md",
+      "normalizedSha256": "8031f1fb425336dda6dc1e2e582e7cf2d90a680e4f4383253f6a294ae0bd1d6e",
+      "sourceId": "SRC032"
+    },
+    {
+      "path": ".specify/memory/intake-authoring-policy.json",
+      "normalizedSha256": "8d42717c2cc7efc128a62e7967a1f877beee85fb2d53fedee1aa828aba9941d9",
+      "sourceId": "SRC033"
+    },
+    {
+      "path": "docs/security/regulatory-applicability.md",
+      "normalizedSha256": "63b67e588cbec0dbc0100a8b2dc4561426efd696ef3196a249845fdc76fbde61",
+      "sourceId": "SRC034"
+    },
+    {
+      "path": "docs/security/msl-applicability.md",
+      "normalizedSha256": "c082a84ee2e4802d5d56d9d9cf7ebcd73a11dd4eb7f96943098f7169e284829f",
+      "sourceId": "SRC035"
+    },
+    {
+      "path": "docs/validation/lh00/acceptance.md",
+      "normalizedSha256": "9a1579a9db3df8519841a9423fa6541a30213d0037f31219442831c46d44800b",
+      "sourceId": "SRC036"
+    },
+    {
+      "path": "docs/validation/lh00/pilot-owner-decision.json",
+      "normalizedSha256": "b7fabf2d53c9e05b0fc6103979a135d0f4ebb73350d7e94b77bc56220af6fbb3",
+      "sourceId": "SRC037"
     },
     {
       "path": "specs/intake-series/lh00-process/manifest.json",
-      "normalizedSha256": "8ef809bcb6e9fb932586ebced74c0171f96884709520e1dc74ac91a9ee273f0f"
+      "normalizedSha256": "319ac7dccbb71198adc7bdcde525eff3a47a8b1921c6f47730a2eb003c47344b"
     },
     {
       "path": "specs/intake-series/lh00-process/receipt.json",
-      "normalizedSha256": "029bda40920839ce2a604a8567aa3b9ac0be49ef011a210d109a8d6fae122977"
+      "normalizedSha256": "405568da9e7246ea597019cf514aeec2e27349d0deff71e7d803b8d2aedafdc6"
     }
   ],
   "supersessionEvidence": [
     {
-      "path": "specs/intake-review-archive/7012677e-6a5f-42f3-9715-091f33484e2e/intake-review-request.json",
-      "normalizedSha256": "c6464bb81658b2e47c042d77ea13881d7f81407377084088744e876389f64508"
+      "path": "specs/intake-review-archive/1bcdfd12-6424-4097-a2fd-c3e522095794/intake-review-request.json",
+      "normalizedSha256": "4c2df67bd9c676a1e9ac34199ce3bf4cc89693bb9b5515e79eb682ddb18eb3b1"
     },
     {
-      "path": "specs/intake-review-archive/7012677e-6a5f-42f3-9715-091f33484e2e/intake-review-result.json",
-      "normalizedSha256": "1cbd0c8dccf433ae9471f822610c7ad6ab5a4d958883ae16263a1c44e31abf36"
+      "path": "specs/intake-review-archive/1bcdfd12-6424-4097-a2fd-c3e522095794/intake-review-result.json",
+      "normalizedSha256": "266ee185d717d5c5d208065eac91169228de9e89ea9d75d3bd8f64a1483308cc"
     },
     {
-      "path": "specs/intake-review-archive/7012677e-6a5f-42f3-9715-091f33484e2e/intake-review-report.md",
-      "normalizedSha256": "3de16db8c8b2cc5070288f198293edf2fc8f664ef92d1e59e7607330b64f5197"
+      "path": "specs/intake-review-archive/1bcdfd12-6424-4097-a2fd-c3e522095794/intake-review-report.md",
+      "normalizedSha256": "098b388068e4fbaf6793ed3831333e331679250026ae55209341b72116777131"
     },
     {
-      "path": "specs/intake-authoring-archive/lh-00/831ae5aa-18f6-4368-8ec3-f394189f1fd1/intakes/LH-00.md",
-      "normalizedSha256": "66056f4827f0c24c62afafd217889b58d1a27361f6e46cabdee48335341eb6b5"
+      "path": "specs/intake-authoring-archive/lh-00/4ecf3164-881a-413e-9ab0-d717de91757f/intakes/LH-00.md",
+      "normalizedSha256": "ea4919bfcff0bfcfbef8bb557bd37ad2483ad6b5ec28b4e1668db4a6948a35bd"
     },
     {
-      "path": "specs/intake-authoring-archive/lh-00/831ae5aa-18f6-4368-8ec3-f394189f1fd1/specs/intake-authoring-receipts/lh-00.json",
-      "normalizedSha256": "fd7fa5dd25c7e8670ec1c06294259d00b866842e3a373f7c18c1dfe9d58f14a4"
+      "path": "specs/intake-authoring-archive/lh-00/4ecf3164-881a-413e-9ab0-d717de91757f/specs/intake-authoring-receipts/lh-00.json",
+      "normalizedSha256": "e9f9aaea14e87412915dc29d7d55e90ffd95da1fd28dafea3ac59b0d2217bf99"
     },
     {
-      "path": "specs/intake-authoring-archive/lh-00/831ae5aa-18f6-4368-8ec3-f394189f1fd1/.specify/memory/intake-authoring-profile.md",
-      "normalizedSha256": "8fa07b8ff7228d3dad52b526096bd8905ac6b0658daf1df402b2fdd43a3d09c6"
+      "path": "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/intakes/LH-00.md",
+      "normalizedSha256": "afef357c166721000f87690163d8e3ce9e291a4665f1293a8fd2f158a8d15274"
     },
     {
-      "path": "specs/intake-authoring-archive/lh-00/17d14686-427a-44d7-b903-b94389eb6381/intakes/LH-00.md",
-      "normalizedSha256": "e8e89f997b12e46bac100d41755d26e3cd092a639e7e589ecbfc550fccc98c6f"
+      "path": "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/specs/intake-authoring-receipts/lh-00.json",
+      "normalizedSha256": "4fe9fe9d635c4b000b3367e7b401bd6e3eb747a8bda0e76f58c61ce48380aae2"
     },
     {
-      "path": "specs/intake-authoring-archive/lh-00/17d14686-427a-44d7-b903-b94389eb6381/specs/intake-authoring-receipts/lh-00.json",
-      "normalizedSha256": "c3c8e4b41542bce26434c7c6b90ada446f597800597d9cb839949f12bb03e48b"
+      "path": "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/38ea5f91-3753-4c3e-9fc4-794adb5eaf90/manifest.json",
+      "normalizedSha256": "8ef809bcb6e9fb932586ebced74c0171f96884709520e1dc74ac91a9ee273f0f"
     },
     {
-      "path": "specs/intake-authoring-archive/lh-00/17d14686-427a-44d7-b903-b94389eb6381/docs/intake-governance.md",
-      "normalizedSha256": "379bb86e95a13c4caecb22cd05af1d376b4da02772934e1aa3d89e9fd8376c47"
+      "path": "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/38ea5f91-3753-4c3e-9fc4-794adb5eaf90/receipt.json",
+      "normalizedSha256": "029bda40920839ce2a604a8567aa3b9ac0be49ef011a210d109a8d6fae122977"
     },
     {
-      "path": "specs/intake-authoring-archive/lh-00/17d14686-427a-44d7-b903-b94389eb6381/docs/Entwicklungsumgebung.md",
-      "normalizedSha256": "f9a3d2e81392d531d58fe40f12ec5e787fc1019a3039e879aa903e194ae40854"
+      "path": "specs/intake-review-archive/4e38537f-69e4-49d1-b8a9-5323fe2d5b2b/intake-review-request.json",
+      "normalizedSha256": "29fdce51408e95abc4578dd5e9b55566b24594178f8c9d24220d7e81f08f880f"
     },
     {
-      "path": "specs/intake-authoring-archive/lh-00/17d14686-427a-44d7-b903-b94389eb6381/.specify/memory/intake-authoring-profile.md",
-      "normalizedSha256": "7cb2070aee86d6f9d56dfe3ad945b33c7fe02a5c5f2bf1edb05b3820be634acb"
+      "path": "specs/intake-review-archive/4e38537f-69e4-49d1-b8a9-5323fe2d5b2b/intake-review-result.json",
+      "normalizedSha256": "16390fd6159af29b48108e79ce74aaf205f5a5436fd62fb1e28cf19d4b5ee32e"
     },
     {
-      "path": "specs/intake-authoring-archive/lh-00/17d14686-427a-44d7-b903-b94389eb6381/requirements/RequirementsIndex.md.snapshot",
-      "normalizedSha256": "41fe6e93b0d57e729d527da4f6c9bb1ddd63c30126b790b4b46203a3fbe13bad"
+      "path": "specs/intake-review-archive/4e38537f-69e4-49d1-b8a9-5323fe2d5b2b/intake-review-report.md",
+      "normalizedSha256": "5e5910d5e7e4b0365f5b8b9cf890eddde51870c0449f05de98d576a174ed17a3"
     },
     {
-      "path": "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/6b65b6ab-8d4b-4eac-8c31-d79668222fe3/receipt.json",
-      "normalizedSha256": "6e97a47d3de30650bdac01464f3671b336a592126d6e3e8a7ec434a92df4add9"
+      "path": "specs/intake-authoring-archive/lh-00/d1ee2880-3475-4419-b5d9-f29db3db4c89/intakes/LH-00.md",
+      "normalizedSha256": "a41a810b983eb6acfe2139dc9655494790570ce428f4d7566106b6d52006d315"
     },
     {
-      "path": "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/6b65b6ab-8d4b-4eac-8c31-d79668222fe3/manifest.json",
-      "normalizedSha256": "7881e712f45845db77f66b4082dbd2a3caa8972320114d506c51ce3ae23f9e11"
-    },
-    {
-      "path": "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/f2c915bc-675e-4325-8dc8-9cefb9add63b/receipt.json",
-      "normalizedSha256": "2cf193db43e290bd4cb58c0e99627de8b04e4c08cbb7365637265c1653f63251"
-    },
-    {
-      "path": "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/f2c915bc-675e-4325-8dc8-9cefb9add63b/manifest.json",
-      "normalizedSha256": "815e38aabdab38eed20ebb6031cd48d9b7284180df3544d967a9579244123200"
+      "path": "specs/intake-authoring-archive/lh-00/d1ee2880-3475-4419-b5d9-f29db3db4c89/specs/intake-authoring-receipts/lh-00.json",
+      "normalizedSha256": "5d34f6bd85aadc5e738e5c48955ee70953e1fba806fb33303b467580d3360cb4"
     }
   ],
   "authoringEvidence": {
-    "receiptId": "4ecf3164-881a-413e-9ab0-d717de91757f",
+    "receiptId": "a247b752-aa87-4b54-8a03-52a2b27cb212",
     "intakeId": "2296d99d-f099-4c4d-88f7-789581693eb0",
-    "operationId": "27a2ee98-0194-4323-a70d-f24da6a3cb1a",
+    "operationId": "50a23a80-9177-4727-88e2-d29a100e4409",
     "receipt": {
       "path": "specs/intake-authoring-receipts/lh-00.json",
-      "normalizedSha256": "e9f9aaea14e87412915dc29d7d55e90ffd95da1fd28dafea3ac59b0d2217bf99"
+      "normalizedSha256": "b8c63bf04438e3b9b1c4e0a811163c3d57f01d26f893491641d5b48e9b33c664"
     },
-    "operationBoundary": "Mutable journals intentionally unbound. Immediate IAD017 predecessor awaited review; older exact NeedsRemediation triplet is explicitly superseded, with no fabricated intermediate review."
+    "operationBoundary": "Mutable journals intentionally unbound. Immediate IAD020 Ready triplet archived exactly and explicitly superseded. Earlier IAD019 intermediate had no review; none fabricated."
   },
   "dimensionCoverage": [
     {
       "dimension": "IdentityAudienceScope",
       "status": "Pass",
-      "evidence": "One LH-00 identity, Issue 1 and unchanged domain scope; clear audience with basic file/terminal/PowerShell knowledge, no prior Spec Kit training. IAD014 commissions local process T019–T045, excluding other features and delivery."
+      "evidence": "One unchanged LH-00 intake identity and Issue 1; audience needs only basic file/terminal/PowerShell knowledge, no prior Spec Kit training. IAD019/IAD020 refresh current sources and provenance only, creating no LH-01."
     },
     {
       "dimension": "LearnerLanguageContract",
       "status": "Pass",
-      "evidence": "Full current intake reread: each normative section German first then equivalent English; shared FR/AC/OD identifiers. Technical/workflow/security terms explained, qualitative B2 level, no assumed Spec Kit knowledge."
+      "evidence": "Complete intake reread, German first then equivalent English with matching FR/AC/OD identifiers; explained technical and workflow terms, qualitative CEFR B2 and text-first decisions/status. IAD020 resolves stale temporal statements in both languages and German profile tense."
     },
     {
       "dimension": "RequirementsAcceptance",
       "status": "Pass",
-      "evidence": "All 24 FR and 18 AC lines byte-identical to immediate predecessor and earlier reviewed generation: twelve FR/nine AC per language. Requirements are atomic and acceptance measurable; E01–E07 preserve proof mapping."
+      "evidence": "All 24 FR and 18 AC language lines byte-identical to pre-refresh receipt 4ecf3164 and immediate predecessor. Twelve FR/nine AC per language are atomic and measurable with E01–E07 mapping; full AC remain binding."
     },
     {
       "dimension": "DependenciesOrder",
       "status": "Pass",
-      "evidence": "Binding order and IAD010 agree: no LH-00 predecessor; primary Mac core evidence, separately commissioned standalone LH-01 then LH-02 pilots, evidenced LH-01 completion before LH-02; full LH-00 acceptance after LH-02 before LH-03."
+      "evidence": "No LH-00 predecessor. Binding order and staged route require separately commissioned standalone LH-01 then LH-02, evidenced LH-01 domain completion before LH-02, and full LH-00 acceptance after LH-02 before LH-03. No changed edges or automatic pilot selection."
     },
     {
       "dimension": "StatusAuthorityFollowups",
       "status": "Pass",
-      "evidence": "Authoring/review/execution/full acceptance remain distinct. IAD013 scope, non-goals, expected artifacts and dedicated section now explicitly historical; current IAD014 local-only scope and evidence consistent. IAD016 records correction, granting no human decisions."
+      "evidence": "Authoring ReadyForReview differs from semantic Ready and owner ReadyForPilot. T001–T045 delivered; T046–T065 open. Historical IAD014/local owner-pending statements explicitly labeled historical. IAD019 delivery belongs to root; reviewer writes only triplet; prompts inactive templates, no feature or series activation."
     },
     {
       "dimension": "SecurityPrivacyRegulatory",
       "status": "Pass",
-      "evidence": "SSDF/CWE mandatory; strict UTF-8, safe sources, containment, hashes and overwrite protection retained. Applicability and implementation separate. Product/tooling/organisation roles and jurisdiction assessed separately; unknown Open, education/AI-SBOM no blanket exemption. No secrets or unnecessary private data."
+      "evidence": "NIST SSDF/CWE remain mandatory, safe source/UTF-8/hash/containment/overwrite protections retained. Product/tooling/organisation regulatory applicability, roles and jurisdictions separate; unknown Open. Education and AI-SBOM N/A no blanket exemption. No secrets or unnecessary personal information."
     },
     {
       "dimension": "ArchitectureCloudAssurance",
       "status": "Pass",
-      "evidence": "No product language/framework/minimum runtime/session-model choice inferred. Local process foundations do not prove product architecture/runtime. C5 Type1/Type2/Unknown, C3A exact C/AC versus SI interpretation distinguished; no certification, audit or cloud mandate."
+      "evidence": "C# is an LH-01 candidate only; primary language/MSL remain unknown. LH-01 technical plan requires architecture and feasibility before product implementation, distinct from runtime/framework/minimum PowerShell/session decisions. C5/C3A evidence distinctions retained, no audit/cloud mandate or certification implied."
     },
     {
       "dimension": "AccessibilityTextFirst",
       "status": "Pass",
-      "evidence": "Every state/dependency/decision/next step textual; Mermaid carries equivalent bilingual text alternative. Applicable WCAG2.2AA, keyboard/screen-reader/Braille/text-browser evidence remain required and field proof outstanding."
+      "evidence": "Matching Mermaid/text alternative, fully textual status/order/decisions/actions; applicable WCAG2.2AA, keyboard/screenreader/Braille/text-browser needs retained. Document structure proof is no practical assistive field acceptance; inventory translation follow-ups open."
     },
     {
       "dimension": "PlatformTechnology",
       "status": "Pass",
-      "evidence": "Mac A owner-confirmed MacBook Air M2 2023; full Mac B/Windows11/Ubuntu24.04 WSL2 process proof remains open. Actual three workflow matrices reread: Setup Ubuntu22.04/macOS15/Windows2022; this repo analysis/Maintenance TUI Linux-only. Tool CI is no product/platform acceptance."
+      "evidence": "Mac A owner-confirmed MacBook Air M2 2023 isolated core delivered. Stabilized Mac A/B, native Windows11 and Ubuntu24.04/WSL2 full-flow proof remains open. Setup CI Ubuntu22.04/macOS15/Windows2022, analysis/MaintenanceTUI Linux-only, no product acceptance or minimum-version implication."
     },
     {
       "dimension": "SourcesProvenance",
       "status": "Pass",
-      "evidence": "28 ordered sources, predecessor first, stable intake identity, new operation/receipt. All 33 direct current bindings pass; two ordinary successor generations and coherent same-series lineage preserve exact archives. Historical canonical index .md.snapshot content matches original normalized hash and documented original/archive paths."
+      "evidence": "37 ordered final sources, immediate predecessor first. Three ordinary update generations preserve intake ID, requirements and exact archives. All 42 recursive final receipt bindings verified current. Immediate IAD020 published Ready triplet is exactly archived and superseded; earlier IAD019 intermediate had no review, explicitly documented. IAD021 modifies only trailing blank lines in eleven bound text sources; reviewed target bytes unchanged."
     },
     {
       "dimension": "PublicationHistoricalTruth",
       "status": "Pass",
-      "evidence": "IR007/IR008 remain resolved. IR009/IR010 corrected through IAD017/IAD018 ordinary generations, not bare rehash; all old pre-collection descriptions clearly historical and current DE/EN matches published bootstrap. NeedsRemediation remains historical; no review/readiness invented between corrections."
+      "evidence": "Complete re-evaluation confirms IR011 resolved by IAD020, with no reopened findings. IAD021 removes only extra EOF blank lines and preserves all semantic content. Current delivered bootstrap/central registration and open applied-register acceptance agree; frozen Mac/T045 proof stays bound to its historical Git rather than successor receipts/reviews."
     },
     {
       "dimension": "PromptsCollectionStartBoundary",
       "status": "Pass",
-      "evidence": "Config2.0 de-DE independent of implementation; explicit naming, four roles/six physical contained distinct paths, canonical RequirementsIndex, no legacy aliases, eight issues/one actual LH/seven absent. Ready/PrimaryEligible single root/no edges. Index states domain0 and computed README1 for archive/backlog/history. Updated reader paths match config. No human B-01/pilot/Active authority inferred."
+      "evidence": "Config schema2.0 validated first: de-DE independent of implementation, explicit naming, four portable roles, six physically distinct contained paths, index and inventory aligned. Series Ready/LH-00 Eligible, one root/no edges; README artifact counts distinguished from zero domain archives/backlog/history. Neither candidate nor copied prompt grants execution."
     }
   ],
   "proofBoundaries": [
-    "Ready is current semantic Single intake evidence only; no full feature/process/platform/A11Y acceptance.",
-    "Real series remains Ready/Eligible; no Active/Completed, human B-01 closure or limited-pilot decision inferred.",
-    "Statistics/homogeneity delivery drift and later native/assistive field checks remain separate explicit gates.",
-    "Current local T019–T045 authority expands to no commits/push/remote writes or feature pilots."
+    "Ready is current semantic Single intake evidence only; no full process/platform/A11Y acceptance.",
+    "Existing T045 limited human permission preserved; no pilot started or new permission fabricated.",
+    "Real series stays Ready/Eligible; no Active/Completed or LH-01/LH-02 automatic selection.",
+    "Current review writes no sources and accepts no risks; root delivery needs separate exact-head technical gates."
   ],
   "reportPath": "specs/intake-review-report.md",
-  "nextAction": "Parent continues remaining already commissioned local T042–T045 evidence checks, distinguishes open statistics/homogeneity and human B-01/pilot gates, and requests concrete owner decisions only with independent proof. No feature pilot or remote delivery.",
-  "reevaluationTrigger": "Fresh complete independent review after any target, bound source, request, authority, profile/policy or scope change.",
+  "nextAction": "Parent finishes authorized IAD019 analysis and technical checks, then bounded MergeAndSync delivery and current Issue2 publication. Offer improved LH-01 authoring prompt only; no LH-01 creation, feature run or real series activation.",
+  "reevaluationTrigger": "Complete fresh independent review after any target, bound source, authority, profile/policy or scope change.",
   "historicalFindings": {
-    "previousReviewId": "7012677e-6a5f-42f3-9715-091f33484e2e",
+    "previousReviewId": "4e38537f-69e4-49d1-b8a9-5323fe2d5b2b",
+    "prepublicationObservations": [
+      {
+        "id": "IR011",
+        "severity": "Low",
+        "category": "CurrentHistoricalConsistency",
+        "target": "intakes/LH-00.md and intake-authoring-profile.md",
+        "disposition": "Resolved",
+        "owner": "Thorsten Hindermann / authoring agent",
+        "evidence": {
+          "path": "docs/planning/lh01-source-refresh-review-corrections.md",
+          "normalizedSha256": "06b8d6dd6d354ed486213c95345ef127d8061852d2eabc8c5ae5df05a5316547"
+        },
+        "reevaluationTrigger": "A current/historical authority, bootstrap, registration or bilingual source statement changes.",
+        "boundary": "Reported before any intermediate review publication; no intermediate NeedsRemediation/Ready result invented."
+      }
+    ],
     "resolvedIdsRechecked": [
       "IR007",
       "IR008",
       "IR009",
       "IR010"
     ],
-    "resolvedInThisReview": [
-      {
-        "id": "IR009",
-        "severity": "Low",
-        "category": "CollectionReaderPathConsistency",
-        "target": "intakes/LH-00.md",
-        "disposition": "Resolved",
-        "owner": "Thorsten Hindermann / authoring agent",
-        "evidence": "All three active profile/governance/environment reader paragraphs distinguish historical increment-one from current config/RequirementsIndex/Ready series; initial profile section aligned in DE/EN.",
-        "reevaluationTrigger": "Mark initial/increment-one descriptions historically in DE/EN; distinguish current canonical RequirementsIndex, config and Ready bootstrap. Ordinary intake/coherent series update then full independent review."
-      },
-      {
-        "id": "IR010",
-        "severity": "Low",
-        "category": "ComputedInventoryConsistency",
-        "target": "intakes/LH-00.md",
-        "disposition": "Resolved",
-        "owner": "Thorsten Hindermann / authoring agent",
-        "evidence": "Index explicitly distinguishes zero domain LH documents from actual installed count one README artifact per nonactive collection. No schema/preset mutation.",
-        "reevaluationTrigger": "Index must distinguish actual domain intake count zero from computed README artifact count one each (or use non-counted markers); no installed preset mutation. Ordinary update and full review."
-      }
-    ],
-    "boundary": "Complete fresh review across all dimensions; previous NeedsRemediation triplet unchanged and no intermediate review fabricated."
+    "boundary": "Full final review across every dimension. IAD020 correction remains resolved; IAD021 only removes extra EOF blank lines. Immediate archived Ready remains historical and is not reused as current."
   },
   "bindingVerification": {
-    "reviewBindings": 67,
-    "reviewUniquePaths": 53,
-    "receiptBindings": 33,
-    "requestBindings": 1,
-    "combinedRecursiveBindings": 101,
+    "reviewBindings": 74,
+    "reviewUniquePaths": 58,
+    "receiptBindings": 42,
+    "requestBindings": 3,
+    "combinedRecursiveBindings": 119,
     "mismatches": 0,
-    "normalization": "Strict UTF-8; remove one BOM; CRLF/CR to LF only."
-  }
+    "normalization": "Strict UTF8; remove one BOM; CRLF/CR to LF only."
+  },
+  "validation": [
+    {
+      "shell": "Bash",
+      "exitCode": 0,
+      "output": "PASS: intake review d0eb303d-0179-4694-8cd7-6fc3308cb3dd is current (Single, Ready, 1 targets)"
+    },
+    {
+      "shell": "PowerShell",
+      "exitCode": 0,
+      "output": "PASS: intake review d0eb303d-0179-4694-8cd7-6fc3308cb3dd is current (Single, Ready, 1 targets)"
+    }
+  ]
 }

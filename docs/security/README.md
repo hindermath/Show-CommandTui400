@@ -1,6 +1,6 @@
 # Sicherheitsnachweise — Einrichtungsstand
 
-Owner: Thorsten Hindermann. Stand: 03.10.2026.
+Owner: Thorsten Hindermann. Stand: 07.10.2026.
 
 Diese Übersicht beschreibt die Einrichtung, keine abgeschlossene
 Produktsicherheitsprüfung. NIST SSDF und CWE Top 25 gelten für die Arbeit.
@@ -22,7 +22,10 @@ Vor jeder Produktimplementierung die Anwendbarkeit aktualisieren. Vorlagen
 stehen in den installierten Governance-Presets. Offene Punkte sind keine
 bestandenen Gates. Restrisiko dieses Auftrags: installierte Werkzeuge und
 Regeln ersetzen keine Prüfung der zukünftigen Befehlsausführung oder
-Parameterverarbeitung. Nächster fachlicher Schritt bleibt LH-00.
+Parameterverarbeitung. Der LH-00-Kernprozess ist geliefert und T045 begrenzt
+freigegeben; nächster eigener fachlicher Auftrag ist LH-01-Authoring samt anderem
+Review. Volle LH-00-Prozess-/Produktabnahme bleibt offen. C# wird in LH-01 als
+Prüfoption bewertet; Primärsprache und MSL-Status bleiben unknown.
 
 The regulatory screen covers GDPR, the EU AI Act, CRA, NIS2 and DORA. Assess
 the sample product, development tooling and operating organisation separately,
@@ -56,3 +59,20 @@ staging remains historical.
 - [S-ADR](adr/s-adr-lh00-authority.md)
 - [Architektur / Architecture](../architecture/lh00-process.md)
 - [Baseline-Matrix / Baseline matrix](secure-development/2026-10-06-lh00-process/evidence-matrix.md)
+
+## Aktuelle Nachweisgrenze / Current evidence boundary
+
+Die vorhandenen LH-00-Grundlagen und isolierten Mac-A-/B-01-Prüfungen sind
+Prozess-/Toolingnachweise, keine Sicherheitsabnahme der zukünftigen TUI.
+Die Sprache wird in LH-01 vor Produktimplementierung entschieden; C# ist eine
+Prüfoption. Regulatorische Rollen/Pflichten bleiben Open; keine neue Rechtsprüfung
+oder Produkt-Ausnahme wird behauptet. FU03 (vollständiger englischer Sprachpartner
+der historischen Übersicht) bleibt offen.
+
+Existing LH-00 foundations and isolated Mac A/B-01 checks prove process/tooling,
+not the future TUI's security. The core is delivered and T045 grants limited owner
+permission; the next separate request authors LH-01 and obtains distinct review.
+Decide product language before implementation; C# is a candidate and primary
+language/MSL stay unknown. Regulatory roles/duties remain Open. No new legal
+assessment or product exemption is asserted. Full historical translation FU03
+remains outstanding.
