@@ -217,7 +217,7 @@ A missing fourth record prevents full acceptance; the separate pilot rule still 
 
 - [x] T043 [US6] `docs/cross-platform/lh00-parity.md` mit dem installierten `script-parity-checklist-template.md` vervollständigen: fünf Basisskriptpaare, Hilfe/Cmdlet, sichere Eingaben, tatsächliche Exit-/JSON-Parität, Preview-Nullschreibnachweis; passende Secret-/Homogenitäts-/Preset-/PowerShell-Checks aus `quickstart.md` für die vorgenommenen Änderungen vor Pilotbewertung ausführen. / Complete script parity and applicable repository checks for changed surfaces before pilot assessment.
 - [x] T044 [US6] Nach US1–US5 den Kernprozess E01/E02/E04/E05/E07 auf dem eindeutig benannten primären Mac mit isoliertem Beispiel vollständig ausführen; tatsächliches Ergebnis in `docs/validation/lh00/mac-a.md` oder `docs/validation/lh00/mac-b.md` mit Versionen, Prompts, Commit-/Payload-/Entscheidungshashes, Änderungen und Grenzen belegen. / Prove the core flow on the named primary Mac and record exact tool/action evidence and limits.
-- [ ] T045 [US6] Einen anderen Prüfer T044 bewerten und Thorsten die begrenzte Pilotfreigabe in `docs/validation/lh00/acceptance.md` entscheiden lassen; fehlende Vollabnahme offen halten, LH-01/LH-02 nur als separat zu beauftragende Einzelpiloten mit gültigen Intakes und unabhängigem Review nennen. / Obtain independent assessment and an owner decision on limited pilot permission, keeping full acceptance and pilot commissioning distinct.
+- [x] T045 [US6] Einen anderen Prüfer T044 bewerten und Thorsten die begrenzte Pilotfreigabe in `docs/validation/lh00/acceptance.md` entscheiden lassen; fehlende Vollabnahme offen halten, LH-01/LH-02 nur als separat zu beauftragende Einzelpiloten mit gültigen Intakes und unabhängigem Review nennen. / Obtain independent assessment and an owner decision on limited pilot permission, keeping full acceptance and pilot commissioning distinct.
 - [ ] T046 [US6] Erst nach nachgewiesenem Abschluss der separat beauftragten LH-01-/LH-02-Piloten die stabilisierte vollständige Strecke E01–E05/E07 auf Mac A ausführen und `docs/validation/lh00/mac-a.md` ergänzen; vorherige Kernprüfung als Teilnachweis erhalten. / After the two commissioned pilots complete, run the stabilized full flow on Mac A, preserving prior partial evidence.
 - [ ] T047 [P] [US6] Unter denselben Voraussetzungen wie T046 die vollständige Strecke auf Mac B mit eigenem isolierten Bestand durchführen und `docs/validation/lh00/mac-b.md` mit tatsächlichen Host-/Tool-/Hilfsmittel-/Hashbindungen führen. / Run the same full flow on Mac B in separate isolation and record actual environment and evidence bindings.
 - [ ] T048 [P] [US6] Unter denselben Voraussetzungen wie T046 auf nativem Windows 11 PowerShell zuerst, funktionierendes `python3`, Basisskripte und E01–E05/E07 vollständig prüfen; `docs/validation/lh00/windows-11.md` führen, eine CI-Probe nicht als diesen End-to-end-Nachweis ausgeben. / Prove the full native Windows flow and its actual prerequisites; do not substitute a CI smoke result.
@@ -539,3 +539,28 @@ T001–T044 sind abgeschlossen (44/65); T045 bleibt ausdrücklich offen.
 T043 now passes statistics, homogeneity and scoped delivery checks. Render once
 more from the clean evidence commit and verify final PR gates. T001–T044 are
 complete; T045 remains separate human pilot permission.
+
+## Begrenzte Pilotfreigabe, 2026-10-07 / Limited pilot permission
+
+Thorsten Hindermann erteilt ausdrücklich die begrenzte Pilotfreigabe gemäß T045.
+Die vorhandene andere Bewertung und bestandenen B-01-/Liefergates sind im
+[Abnahmeprotokoll](../../docs/validation/lh00/acceptance.md) mit dem
+[Owner-Entscheid](../../docs/validation/lh00/pilot-owner-decision.json) verknüpft.
+T045 ist abgeschlossen: T001–T045 erledigt, 45/65 insgesamt; T046–T065 offen.
+Die älteren datierten Pending-/Failed-Aussagen bleiben historische Nachweise.
+
+Thorsten explicitly grants limited pilot permission under T045. The linked
+acceptance and owner record connect the existing distinct assessment and passed
+prerequisite gates. T001–T045 are complete, 45/65 overall; T046–T065 remain open.
+Earlier dated pending/failed statements are preserved as historical evidence.
+
+LH-01 und danach LH-02 benötigen jeweils eigene Aufträge, gültige Intakes und
+unabhängige Reviews; LH-02 setzt den fachlichen Abschluss von LH-01 voraus.
+Keine reale Serienaktivierung oder Pilotdurchführung durch diese Dokumentation.
+Vollabnahme bleibt nach LH-02 und vor LH-03 einschließlich aller Plattform-/A11Y-,
+Übersetzungs- und Registernachweise offen.
+
+LH-01 and then LH-02 each need their own requests, valid intakes and independent
+reviews; LH-02 requires domain completion of LH-01. This record starts no real
+series activation or pilot execution. Full acceptance remains open after LH-02,
+before LH-03, including platform, accessibility, translation and registry proof.

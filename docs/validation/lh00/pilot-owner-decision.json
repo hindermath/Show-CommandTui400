@@ -1,0 +1,39 @@
+{
+  "task": "T045",
+  "decidedOn": "2026-10-07",
+  "timeZone": "Europe/Berlin",
+  "owner": "Thorsten Hindermann",
+  "userStatement": "Ich erteile die begrenzte Pilotfreigabe gemäß T045. Bitte dokumentieren und T045 abschließen.",
+  "outcome": "ReadyForPilot",
+  "decision": {
+    "de": "Begrenzte Pilotfreigabe für den geprüften LH-00-Kernprozess auf Mac A erteilt; T045 abgeschlossen.",
+    "en": "Limited pilot permission granted for the reviewed LH-00 core process on Mac A; T045 complete."
+  },
+  "host": "Mac A, MacBook Air M2 (2023)",
+  "independentAssessment": {
+    "assessmentId": "3d780c5d-66f5-456f-b78d-4d6a6159346c",
+    "reviewer": "/root/lh00_inc2_b01_review",
+    "path": "docs/validation/lh00/acceptance.md",
+    "historicalGitRevision": "5da877fde456899f80863f4cac256422a4db6aed",
+    "historicalRawSha256": "0a4414c7ac3a4079d6e0a1f1f02f6034a99d9ae2e99d7e6e6d37e74e9cd1ca5e"
+  },
+  "prerequisiteEvidence": {
+    "B01OwnerDecision": "docs/validation/lh00/b01-owner-decision.json",
+    "passedDeliveryGates": "docs/validation/lh00/delivery-gate-results.json",
+    "deliveryPullRequest": "https://github.com/hindermath/Show-CommandTui400/pull/32",
+    "mergedGitRevision": "5da877fde456899f80863f4cac256422a4db6aed",
+    "macEvidence": "docs/validation/lh00/mac-a-results.json",
+    "verifiedMacPayloads": 30,
+    "verifiedCurrentBindings": 101,
+    "intakeReviewId": "1bcdfd12-6424-4097-a2fd-c3e522095794",
+    "intakeReviewState": "Ready"
+  },
+  "scope": {
+    "de": "LH-01, danach LH-02 als jeweils gesondert beauftragte Einzelpiloten mit gültigem Intake und unabhängigem Review. LH-02 setzt den fachlichen Abschluss von LH-01 voraus.",
+    "en": "LH-01, then LH-02 as separately commissioned individual pilots, each with a valid intake and independent review. LH-02 requires domain completion of LH-01."
+  },
+  "boundaries": {
+    "de": "Diese Dokumentation startet keinen Featurepilot oder realen Active-/Completed-Übergang. Die volle LH-00-Abnahme bleibt nach LH-02 und vor LH-03 offen, einschließlich Mac A, Mac B, Windows 11, Ubuntu/WSL2, praktischer A11Y, Übersetzungen und angewendeter Registerausrichtung. ReadyForPilot ist ein Abnahmeergebnis, kein neuer Receipt- oder Serienstatus. Keine Risikoannahme oder Remote-Lieferung.",
+    "en": "This record starts no feature pilot or real Active/Completed transition. Full LH-00 acceptance remains open after LH-02 and before LH-03, including Mac A, Mac B, Windows 11, Ubuntu/WSL2, practical accessibility, translations and applied registry alignment. ReadyForPilot is an acceptance outcome, not a new receipt or series state. No risk acceptance or remote delivery."
+  }
+}
