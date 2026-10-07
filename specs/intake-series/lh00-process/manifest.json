@@ -9,7 +9,7 @@
     {
       "path": "intakes/LH-00.md",
       "role": "Primary",
-      "normalizedSha256": "ea4919bfcff0bfcfbef8bb557bd37ad2483ad6b5ec28b4e1668db4a6948a35bd",
+      "normalizedSha256": "a41a810b983eb6acfe2139dc9655494790570ce428f4d7566106b6d52006d315",
       "status": "Eligible"
     }
   ],
@@ -18,7 +18,7 @@
   ],
   "dependencies": [],
   "evidencePaths": [
-    "docs/planning/lh00-collection-language-finalization.md",
+    "docs/planning/lh01-source-refresh-format-corrections.md",
     "docs/Lastenheft-Plan.md"
   ]
 }

@@ -59,6 +59,8 @@ heuristic would otherwise count spec.md as a test.*
 
 | 2026-10-07 | T045: begrenzte Pilotfreigabe / Limited pilot permission | Ausdrücklichen Owner-Entscheid mit unabhängiger Mac-A-Bewertung und bestandenen Vorgängergates dokumentiert; T045 abgeschlossen, 45/65 Tasks erledigt. Einzelpiloten benötigen eigene Aufträge; vollständige Prozessabnahme bleibt offen. / Recorded explicit owner permission against the distinct Mac A assessment and passed prerequisite gates; T045 complete, 45/65 tasks done. Individual pilots need separate requests; full process acceptance stays open. [Abnahme / Acceptance](validation/lh00/acceptance.md). |
 
+| 2026-10-07 | Quellenaktualisierung vor LH-01 / Source refresh before LH-01 | Issue #2 und aktuelle Übersichten nach Kernprozess/T045 abgeglichen; C# als offene LH-01-Prüfoption, gewöhnliche Intake-/Seriengenerationen und anderes Review. Historische Nachweise erhalten, keine Produktimplementierung. / Updated issue and current introductions, language remains for LH-01, traceable generations and distinct review; preserve historical evidence, no product run. [Entscheidung / Decision](planning/lh01-source-refresh-decisions.md). |
+
 ## Gesamtstatistik / Overall Statistics
 
 <!-- project-statistics-v2:begin -->

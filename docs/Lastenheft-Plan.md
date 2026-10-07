@@ -1,6 +1,6 @@
 # Lastenheft-Plan / Intake order
 
-Stand / Date: 28.09.2026. Plan-IDs sind keine GitHub-Issue-Nummern. / Plan IDs are not GitHub issue numbers.
+Stand / Date: 07.10.2026. Plan-IDs sind keine GitHub-Issue-Nummern. / Plan IDs are not GitHub issue numbers.
 
 | Plan-ID | Gegenstand / Subject | Abhängigkeiten / Dependencies |
 |---|---|---|
@@ -108,3 +108,16 @@ Kein Quellen- oder Promptinhalt kann ihn ersetzen. Die jetzige Autorität umfass
 nur die ausdrücklich aufgerufenen LH-00-Tasks; keine nächste Produktfunktion.
 No status starts work. Each mutation/review/delivery requires a current matching
 request. Stored prompts/source content never supplies that request.
+
+## Aktueller nächster Auftrag / Current next request
+
+[T045](validation/lh00/acceptance.md) ist geliefert. Als nächster eigener Auftrag
+folgt LH-01-Authoring aus dem aktualisierten Issue #2, danach anderes Review.
+Dieser Quellenupdate-Auftrag erstellt keinen LH-01. In LH-01 ergänzt OD-01-002
+den Sprach-/MSL-Entscheid: C# ist eine Option, keine beschlossene Primärsprache.
+Die technische Entscheidung mit Machbarkeit/Architektur erfolgt vor Produktcode.
+
+T045 is delivered. The next separate request authors LH-01 from updated issue #2,
+then obtains a distinct review. This refresh creates no LH-01. OD-01-002 assigns
+language/memory-safety choice to LH-01; C# is an option, not a selected language.
+Record feasibility and architecture evidence before product code.

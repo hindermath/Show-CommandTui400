@@ -1,0 +1,32 @@
+{
+  "schemaVersion": "1.0",
+  "documentType": "IntakeSeriesReceipt",
+  "receiptId": "e67a3c13-9605-4785-96f9-b76de4055101",
+  "seriesId": "3c0e3e97-1268-4828-aeba-c3f3d17637de",
+  "generator": {
+    "preset": "intake-sequencing-governance",
+    "version": "0.2.7"
+  },
+  "createdAt": "2026-10-07T17:39:24.134340Z",
+  "operation": {
+    "operationId": "38ea5f91-3753-4c3e-9fc4-794adb5eaf90",
+    "type": "Update",
+    "authorityEvidence": "docs/planning/lh01-source-refresh-decisions.md"
+  },
+  "status": "Ready",
+  "manifest": {
+    "path": "specs/intake-series/lh00-process/manifest.json",
+    "normalizedSha256": "46f9bda4842a1e9650f5cddcea0feecce4e042bc25d8690537635d21db39030b"
+  },
+  "supersedes": {
+    "receiptPath": "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/38ea5f91-3753-4c3e-9fc4-794adb5eaf90/receipt.json",
+    "receiptNormalizedSha256": "029bda40920839ce2a604a8567aa3b9ac0be49ef011a210d109a8d6fae122977",
+    "manifestArchivePath": "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/38ea5f91-3753-4c3e-9fc4-794adb5eaf90/manifest.json",
+    "manifestArchiveSha256": "8ef809bcb6e9fb932586ebced74c0171f96884709520e1dc74ac91a9ee273f0f"
+  },
+  "tombstone": {
+    "path": "N/A",
+    "normalizedSha256": "N/A"
+  },
+  "nextAction": "$speckit-intake-series-status specs/intake-series/lh00-process/manifest.json"
+}

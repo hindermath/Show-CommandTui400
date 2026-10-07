@@ -1,6 +1,6 @@
 # Entwicklungsumgebung / Development environment
 
-Stand / Date: 04.10.2026. Owner: Thorsten Hindermann.
+Stand / Date: 07.10.2026. Owner: Thorsten Hindermann.
 
 ## Einstieg und Grenzen / Entry and boundaries
 
@@ -571,3 +571,25 @@ is a prerequisite. A receipt records provenance; authoring creates the intake.
 FR/AC/OD identify the same requirements, acceptance and decisions in both languages.
 A manifest lists members. No diagram is needed for this linear procedure; complete
 text does not establish assistive field acceptance.
+
+## Aktueller Stand nach Kernprozesslieferung / Current state after core delivery
+
+T001–T045 sind abgeschlossen, 45/65. Die Mac-A-Kernstrecke auf dem MacBook Air M2
+(2023) einschließlich gepaarter Bash-/PowerShell-Prüfungen ist geliefert; B-01
+ist abgenommen, T045 begrenzt freigegeben. Die älteren Aussagen zur noch fehlenden
+PowerShell-Ende-zu-Ende-Strecke betreffen die damals offene Kernstrecke und die
+weiter offene stabilisierte Vollabnahme auf Mac A/B, Windows 11 und Ubuntu/WSL2.
+Produktcode, praktische A11Y-, Übersetzungs- und Registervollabnahme bleiben offen.
+Nächster Auftrag: LH-01 erstellen und separat unabhängig prüfen. Primärsprache/
+MSL bleiben unknown; C# wird in LH-01 mit Architektur/Machbarkeit bewertet.
+Aktuelle Setup-CI: macOS 15, Ubuntu 22.04, Windows 2022; PowerShell-Analyse und
+Maintenance TUI Linux-only. Diese Checks ersetzen keine Produktplattformabnahme.
+
+T001–T045 are complete, 45/65. Mac A core proof and paired-shell checks are
+delivered, B-01 accepted and limited owner permission granted. Earlier missing
+PowerShell-flow statements refer to their original core scope and the still-open
+stabilized full acceptance across all four environments. Product code, practical
+accessibility, translations and full applied registry proof remain open. Next:
+separately commission LH-01 authoring and distinct review. Language/MSL stay unknown;
+evaluate C# with feasibility/architecture evidence in LH-01. Setup CI and existing
+Linux-only maintenance checks do not prove product platform acceptance.

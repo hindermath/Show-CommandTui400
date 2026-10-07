@@ -435,3 +435,27 @@ selection. Preserve the nine historical B-01 source-CI jobs and IAD012 evidence.
 Do not repeat releases/installations or expand runner matrices. Process contracts
 and full acceptance after LH-02 before LH-03 stay unchanged; runner versions do
 not set product minimums.
+
+## Quellenabgleich IAD019/IAD020, 2026-10-07 / Source reconciliation
+
+Die aktuellen Projektübersichten sind nach Kernprozesslieferung und T045
+aktualisiert. Gewöhnliches LH-00-Update und kohärente Seriennachfolger erhalten
+Intake-ID, alle normativen FR/AC, Reihenfolge, Root, Rolle und Ready/Eligible.
+Historische Plan-/Specify-/Task-Erstellungsstände oben behalten ihren Kontext;
+aktuelle Herkunft und anderes Vollreview stehen in den aktiven Receipt-/Reviewdateien.
+T001–T045 sind abgeschlossen (45/65); T046–T065 bleiben offen.
+C# ist eine Prüfoption für LH-01, kein LH-00-Stackentscheid. Primärsprache/MSL bleiben
+unknown; LH-01 entscheidet vor Produktimplementierung mit Architektur/Machbarkeit.
+Keine neuen Aufgaben, Plattformabnahmen, Feature-Läufe oder Aktivierungen.
+
+Current project introductions now reflect core delivery and T045. Ordinary intake
+and coherent series successors preserve identity, all normative requirements,
+order/root/role and Ready/Eligible. Earlier planning/specifying/task-generation
+snapshots retain their historical context; active receipt/distinct-review files
+record current provenance. T001–T045 are complete, 45/65; T046–T065 remain open.
+C# is a candidate for LH-01, not an LH-00 stack choice. Language/MSL stay unknown;
+LH-01 records feasibility/architecture before product implementation. No new tasks,
+platform acceptance, feature run or activation is performed.
+
+[Entscheidung / Decision](../../docs/planning/lh01-source-refresh-decisions.md),
+[Reviewkorrektur / Review correction](../../docs/planning/lh01-source-refresh-review-corrections.md).

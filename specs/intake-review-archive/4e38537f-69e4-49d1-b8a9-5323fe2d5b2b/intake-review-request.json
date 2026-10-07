@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "1.1",
+  "reviewId": "4e38537f-69e4-49d1-b8a9-5323fe2d5b2b",
+  "mode": "Single",
+  "policy": "generic-markdown",
+  "targets": [
+    {
+      "path": "intakes/LH-00.md",
+      "role": "Primary"
+    }
+  ],
+  "series": {
+    "orderedTargetPaths": [],
+    "roots": [],
+    "dependencies": []
+  },
+  "campaign": {
+    "manifestPath": "N/A",
+    "workers": [],
+    "operatorExceptions": []
+  },
+  "authority": {
+    "request": "Explicit approved IAD019 source-refresh plan commissions complete distinct-agent semantic review after ordinary IAD020 correction. Only local review triplet writes; root owns separately authorized delivery. No feature, series activation or risk acceptance.",
+    "evidence": {
+      "path": "docs/planning/lh01-source-refresh-decisions.md",
+      "normalizedSha256": "6e3ce589bb0718c919b0586d553bbcf6a3afefff91999020992171b49cc35d6b"
+    },
+    "correctionEvidence": {
+      "path": "docs/planning/lh01-source-refresh-review-corrections.md",
+      "normalizedSha256": "06b8d6dd6d354ed486213c95345ef127d8061852d2eabc8c5ae5df05a5316547"
+    },
+    "targetMutationAllowed": false,
+    "implementationAllowed": false,
+    "remoteAccessAllowed": false,
+    "routingAccessAllowed": false
+  },
+  "projectProfile": "show-commandtui400-de-en",
+  "evidenceDelivery": "Only current local independent request/result/report; no reviewed source mutation.",
+  "priorReviewId": "1bcdfd12-6424-4097-a2fd-c3e522095794",
+  "priorReviewArchive": "specs/intake-review-archive/1bcdfd12-6424-4097-a2fd-c3e522095794",
+  "targetHash": "a41a810b983eb6acfe2139dc9655494790570ce428f4d7566106b6d52006d315"
+}

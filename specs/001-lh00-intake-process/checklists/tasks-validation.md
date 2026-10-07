@@ -729,3 +729,77 @@ and affected link/hash/task checks pass. Preview and rendering from the source
 commit precede statistics/homogeneity checks. Final-head PR CI and review state
 are checked before merge. Earlier evidence and the distinct assessment remain
 unchanged. Delivery starts no LH-01 run; the next request is proposed only.
+
+## Quellenaktualisierung vor LH-01 / Source refresh before LH-01
+
+2026-10-07, IAD019–IAD021. Der Owner beauftragt den vorgeschlagenen Quellenplan
+mit MergeAndSync/Admin-Bypass. Die Projektübersichten und der vorbereitete
+Issue-2-Text bilden Kernprozesslieferung und T045 ab. C# bleibt Prüfoption;
+OD-01-002 verlegt den begründeten Sprach-/MSL-Entscheid in die technische LH-01-
+Planung vor Produktimplementierung. Kein LH-01 erstellt oder Pilot gestartet.
+Gewöhnliche LH-00-Updates erhalten Intake-ID und alle 42 normativen FR/AC-
+Sprachzeilen; die drei Vorgängergenerationen und alte Reviews bleiben exakt
+archiviert. 57 Archiv-Rohhashes geprüft; ursprüngliches Abnahmeprotokoll bleibt
+bytegleich als historischer Abschnitt. Serie unverändert Ready/Eligible,
+ein Mitglied/eine Wurzel/keine Kante; keine reale Aktivierung.
+
+The owner commissions IAD019–IAD021 source refresh with MergeAndSync/Admin-Bypass.
+Current introductions and the prepared issue reflect core delivery and T045.
+C# remains a candidate; OD-01-002 requires a reasoned language/MSL decision during
+technical LH-01 planning before product implementation. No new intake/pilot starts.
+Ordinary LH-00 updates preserve identity and all 42 normative bilingual FR/AC
+lines. Three predecessor generations and earlier reviews remain exactly archived;
+57 raw archive hashes pass. The original acceptance report is a byte-identical
+historical section. Series remains Ready/Eligible with one member/root and no edge.
+
+Lesendes `speckit-analyze`: keine Befunde aus Quellenabgleich, keine Constitution-
+Konflikte, 24/24 technische FR und SC-001–009 über die bestehende Matrix abgedeckt,
+keine ungedeckten Aufgaben. Alle 65 Aufgabenzeilen unverändert: 45 erledigt,
+20 offen. T018 vor T017 und T025 vor T024 bleiben verbindlich. Vier vollständige
+Plattformnachweise, praktische A11Y, Übersetzungen und angewendete Registerabnahme
+bleiben nach LH-02/vor LH-03 offen. Keine Extension-Hooks vorhanden.
+
+Read-only analysis finds no source-reconciliation issue, constitution conflict or
+unmapped task. Existing coverage links all 24 technical requirements and nine
+success criteria. All 65 task lines are unchanged: 45 complete, 20 open. Preserve
+negative-case ordering and later full acceptance after LH-02/before LH-03.
+No extension hooks are configured.
+
+Vor Lieferung bestanden: exakte 14-Preset-Matrix; Agent-Secret-Scan high=0;
+PSScriptAnalyzer 1.25.0, 73 Dateien, keine Error/Warning; Intake-/Manifest-/Serien-
+Receipt-Validatoren in Bash und PowerShell sowie alle drei Update-Operationen.
+Routing war zunächst RefreshRequired; nach ausdrücklich bestätigtem lokalem
+`speckit-model-routing-refresh` ist Status erneut Aligned. Nur das unversionierte
+lokale Codex-Profil wurde aktualisiert; keine Presets oder Repository-Routingdaten.
+Statistik wird nach Quellencommit aus sauberem Arbeitsbaum gerendert und geprüft;
+endgültige PR-CI wird vor Merge geprüft. Issue-Veröffentlichung folgt nach Sync
+mit erneutem Vergleich gegen den zuvor gelesenen Inhalt, kein blindes Überschreiben.
+
+Pre-delivery checks pass: exact fourteen-preset matrix, secret scan high=0,
+PowerShell analysis without errors/warnings, paired intake/series validators and
+all three update operations. Routing initially required refresh; the owner
+explicitly authorized local refresh, followed by Aligned status. Only the local
+unversioned Codex profile changes. Render/check statistics from a clean source
+commit and verify final-head CI before merge. After sync, compare live issue
+content against the inspected predecessor before publishing the prepared text.
+
+Finales anderes Vollreview durch `/root/lh01_source_refresh_review`: **Ready**,
+Review-ID `d0eb303d-0179-4694-8cd7-6fc3308cb3dd`, keine offenen Befunde/Fragen/
+Risiken. 37 Quellen und 119 kombinierte rekursive Bindungen aktuell; alle zwölf
+Dimensionen neu geprüft. Beide Reviewvalidatoren und gesamter Diff-Check bestanden.
+Das [aktive Ergebnis](../../intake-review-result.json) ersetzt frühere Ready-Stände;
+kein historischer Nachweis wird als neue Prüfung ausgegeben.
+
+Final complete distinct-agent review is Ready with no open findings, questions
+or risks. All twelve dimensions are reassessed; 37 sources and 119 combined
+recursive bindings are current. Paired review validators and complete diff check
+pass. The linked active result supersedes previous Ready generations.
+
+Die eingefrorenen Archivkopien von Bedienkonzept und Abnahmeprotokoll enthalten
+absichtliche Markdown-Zeilenumbrüche aus dem Original. Zwei gezielte Git-Attribute
+übertragen die bestehende Rohbyte-/Markdown-Behandlung auf genau diese Archivrollen;
+keine Archivbytes werden bereinigt. Vollständiger gestagter Diff-Check danach bestanden.
+
+Frozen interaction/acceptance copies retain intentional Markdown hard breaks.
+Two scoped Git attributes preserve existing raw-byte/Markdown treatment for those
+archive roles only; no archive bytes change. Complete staged diff check then passes.

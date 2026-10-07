@@ -56,14 +56,16 @@ Ziel: `intakes/LH-NN.md`; Receipt: `specs/intake-authoring-receipts/lh-nn.json`.
 Explizites Ziel hat Vorrang vor Profilregel und generischem Preset-Fallback.
 Plan-IDs sind keine Issue-Nummern. `docs/Lastenheft-Plan.md` ist die einzige
 verbindliche Reihenfolge; Issue-Entwürfe sind kein aktiver Intake-Bestand.
-Aktuell wird nur LH-00 erzeugt. Quellenreihenfolge verleiht keinen stillen Vorrang.
+Der aktive Bestand enthält nur LH-00. T045 ist begrenzt freigegeben; weitere
+Intakes brauchen jeweils eigenen Auftrag. Quellenreihenfolge verleiht keinen stillen Vorrang.
 Für Änderungen an existierenden Zielen `speckit-intake-update` verwenden.
 Löschung erfolgt nur mit eigener Autorität über Archiv und Tombstone.
 
 Target: `intakes/LH-NN.md`; receipt: `specs/intake-authoring-receipts/lh-nn.json`.
 An explicit target takes precedence over this profile and the generic fallback.
 Plan IDs are not issue numbers. The intake order document is the only binding
-order; issue drafts are not active intakes. Only LH-00 is created now. Source
+order; issue drafts are not active intakes. Only LH-00 currently exists; T045
+grants limited permission, while each new intake needs a separate request. Source
 order gives no silent precedence. Existing targets require intake-update;
 deletion requires separate authority, archival and a tombstone.
 
@@ -84,7 +86,7 @@ Historischer Authoring-Ausgangsstand: Das Profil unterstützte zunächst
 eigenständige Intakes ohne Serienbindung.
 Damals wurden keine Requirements-Collection-Konfiguration oder Serienmanifest
 vorgetäuscht. Die vier portablen Rollen, sechs Collection-Pfade, kanonischer
-Index, `DirectoryStrict`/`SeriesManifest`, Archiv und Lifecycle-Übergänge werden
+Index, `DirectoryStrict`/`SeriesManifest`, Archiv und Lifecycle-Übergänge wurden
 im LH-00-Prozessnachweis T040/T041 konkretisiert. Vor diesem Nachweis waren
 Serienstatus und Eligible-Auswahl nicht nachgewiesen. Vorhandene Namen werden nicht umbenannt.
 
@@ -288,3 +290,16 @@ The named policy/manifest contain only LH-00. Ready/Eligible is bootstrap, not
 authority. Updates preserve exact intake and series lineage in one coherent
 publication, archive old review and obtain a complete distinct review. No bare
 rehash. Future standalone pilots and full-acceptance boundaries remain binding.
+
+## Quellenstand IAD019 / Source state IAD019
+
+Der LH-00-Kernprozess ist geliefert, die volle Abnahme bleibt offen. C# ist
+Prüfoption in LH-01; der Sprach-/MSL-Entscheid wird vor Produktimplementierung
+im technischen Plan mit Architektur/Machbarkeit dokumentiert. Dieser Auftrag
+aktualisiert Quellen und LH-00-Herkunft, erstellt aber kein LH-01. Autoritätsgrenzen
+bleiben erhalten; historische Paket-/Ownernachweise behalten ihren damaligen Stand.
+
+The core process is delivered; full acceptance remains open. C# is a candidate
+for LH-01's language/MSL decision, documented in the technical plan with architecture
+and feasibility before implementation. This request refreshes sources and provenance
+only; it creates no LH-01 and preserves authority and historical evidence boundaries.

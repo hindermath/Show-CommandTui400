@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "documentType": "IntakeSeriesManifest",
+  "seriesId": "3c0e3e97-1268-4828-aeba-c3f3d17637de",
+  "title": "LH-00-Dateiprozess / LH-00 file process",
+  "policy": ".specify/memory/intake-series-policy.json",
+  "status": "Ready",
+  "orderedTargets": [
+    {
+      "path": "intakes/LH-00.md",
+      "role": "Primary",
+      "normalizedSha256": "ea4919bfcff0bfcfbef8bb557bd37ad2483ad6b5ec28b4e1668db4a6948a35bd",
+      "status": "Eligible"
+    }
+  ],
+  "roots": [
+    "intakes/LH-00.md"
+  ],
+  "dependencies": [],
+  "evidencePaths": [
+    "docs/planning/lh00-collection-language-finalization.md",
+    "docs/Lastenheft-Plan.md"
+  ]
+}

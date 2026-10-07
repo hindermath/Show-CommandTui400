@@ -1,0 +1,276 @@
+{
+  "schemaVersion": "1.0",
+  "documentType": "IntakeOperation",
+  "operationId": "78ad112f-f90b-4421-86b7-d2fb302af56b",
+  "type": "Update",
+  "status": "Completed",
+  "createdAt": "2026-10-07T17:44:08.567902Z",
+  "authorityEvidence": "docs/planning/lh01-source-refresh-review-corrections.md",
+  "proposalPath": "docs/planning/lh01-source-refresh-review-corrections.md",
+  "proposalNormalizedSha256": "06b8d6dd6d354ed486213c95345ef127d8061852d2eabc8c5ae5df05a5316547",
+  "approval": {
+    "approved": true,
+    "approvedBy": "Thorsten Hindermann",
+    "approvedAt": "2026-10-07T17:44:08.567902Z",
+    "evidence": "Explicit user executes proposed source-refresh plan including LH-00 ordinary update, coherent series update and fresh separate review."
+  },
+  "stagingDirectory": "N/A",
+  "intakeId": "2296d99d-f099-4c4d-88f7-789581693eb0",
+  "receiptId": "d1ee2880-3475-4419-b5d9-f29db3db4c89",
+  "priorReceiptId": "63a7f2dd-2393-4f57-88f9-4b12a257500f",
+  "priorReviewId": "1bcdfd12-6424-4097-a2fd-c3e522095794",
+  "archiveEvidence": [
+    {
+      "originalPath": "intakes/LH-00.md",
+      "archivePath": "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/intakes/LH-00.md",
+      "rawSha256": "afef357c166721000f87690163d8e3ce9e291a4665f1293a8fd2f158a8d15274",
+      "normalizedSha256": "afef357c166721000f87690163d8e3ce9e291a4665f1293a8fd2f158a8d15274"
+    },
+    {
+      "originalPath": "specs/intake-authoring-receipts/lh-00.json",
+      "archivePath": "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/specs/intake-authoring-receipts/lh-00.json",
+      "rawSha256": "4fe9fe9d635c4b000b3367e7b401bd6e3eb747a8bda0e76f58c61ce48380aae2",
+      "normalizedSha256": "4fe9fe9d635c4b000b3367e7b401bd6e3eb747a8bda0e76f58c61ce48380aae2"
+    },
+    {
+      "originalPath": "specs/intake-series/lh00-process/manifest.json",
+      "archivePath": "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/specs/intake-series/lh00-process/manifest.json",
+      "rawSha256": "46f9bda4842a1e9650f5cddcea0feecce4e042bc25d8690537635d21db39030b",
+      "normalizedSha256": "46f9bda4842a1e9650f5cddcea0feecce4e042bc25d8690537635d21db39030b"
+    },
+    {
+      "originalPath": "specs/intake-series/lh00-process/receipt.json",
+      "archivePath": "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/specs/intake-series/lh00-process/receipt.json",
+      "rawSha256": "05a7865e491876f9c07046320e6e4fda75093025fda100fde90cf32956c185e4",
+      "normalizedSha256": "05a7865e491876f9c07046320e6e4fda75093025fda100fde90cf32956c185e4"
+    },
+    {
+      "originalPath": "specs/intake-series/lh00-process/operation.json",
+      "archivePath": "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/specs/intake-series/lh00-process/operation.json",
+      "rawSha256": "95d63c7d233a2575c81119f5ecc40fa4e1c35d7a099787e270d9cf992b015be9",
+      "normalizedSha256": "95d63c7d233a2575c81119f5ecc40fa4e1c35d7a099787e270d9cf992b015be9"
+    },
+    {
+      "originalPath": "AGENTS.md",
+      "archivePath": "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/AGENTS.md",
+      "rawSha256": "241606722f250d61cd5dd099fa5d185e4d8ae44d6d0715169a5562280d564203",
+      "normalizedSha256": "241606722f250d61cd5dd099fa5d185e4d8ae44d6d0715169a5562280d564203"
+    },
+    {
+      "originalPath": "CLAUDE.md",
+      "archivePath": "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/CLAUDE.md",
+      "rawSha256": "241606722f250d61cd5dd099fa5d185e4d8ae44d6d0715169a5562280d564203",
+      "normalizedSha256": "241606722f250d61cd5dd099fa5d185e4d8ae44d6d0715169a5562280d564203"
+    },
+    {
+      "originalPath": "GEMINI.md",
+      "archivePath": "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/GEMINI.md",
+      "rawSha256": "241606722f250d61cd5dd099fa5d185e4d8ae44d6d0715169a5562280d564203",
+      "normalizedSha256": "241606722f250d61cd5dd099fa5d185e4d8ae44d6d0715169a5562280d564203"
+    },
+    {
+      "originalPath": ".github/copilot-instructions.md",
+      "archivePath": "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/.github/copilot-instructions.md",
+      "rawSha256": "241606722f250d61cd5dd099fa5d185e4d8ae44d6d0715169a5562280d564203",
+      "normalizedSha256": "241606722f250d61cd5dd099fa5d185e4d8ae44d6d0715169a5562280d564203"
+    },
+    {
+      "originalPath": ".github/agents/copilot-instructions.md",
+      "archivePath": "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/.github/agents/copilot-instructions.md",
+      "rawSha256": "241606722f250d61cd5dd099fa5d185e4d8ae44d6d0715169a5562280d564203",
+      "normalizedSha256": "241606722f250d61cd5dd099fa5d185e4d8ae44d6d0715169a5562280d564203"
+    },
+    {
+      "originalPath": "docs/intake-governance.md",
+      "archivePath": "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/docs/intake-governance.md",
+      "rawSha256": "1fbbb0e8326f10996672b4aafa4d5f89ff023b1d8ad0a2998bc653d3e736ba3d",
+      "normalizedSha256": "1fbbb0e8326f10996672b4aafa4d5f89ff023b1d8ad0a2998bc653d3e736ba3d"
+    },
+    {
+      "originalPath": "docs/Lastenheft-Plan.md",
+      "archivePath": "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/docs/Lastenheft-Plan.md",
+      "rawSha256": "6b6f578ff1aadf54853accad2067c6b88d6ffa87a7126e7d65cabe51fb010a94",
+      "normalizedSha256": "6b6f578ff1aadf54853accad2067c6b88d6ffa87a7126e7d65cabe51fb010a94"
+    },
+    {
+      "originalPath": "docs/Entwicklungsumgebung.md",
+      "archivePath": "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/docs/Entwicklungsumgebung.md",
+      "rawSha256": "0587b16a9b3b3cf6fcb981df19a4f354a60ba0e56bc0d2f99e4c7efcf910d657",
+      "normalizedSha256": "0587b16a9b3b3cf6fcb981df19a4f354a60ba0e56bc0d2f99e4c7efcf910d657"
+    },
+    {
+      "originalPath": ".specify/memory/intake-authoring-profile.md",
+      "archivePath": "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/.specify/memory/intake-authoring-profile.md",
+      "rawSha256": "87b91b85c3487ba15b5f373df599ceed81d8393b8ead95964909a1daed901e8c",
+      "normalizedSha256": "87b91b85c3487ba15b5f373df599ceed81d8393b8ead95964909a1daed901e8c"
+    },
+    {
+      "originalPath": "docs/Bedienkonzept.md",
+      "archivePath": "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/docs/Bedienkonzept.md",
+      "rawSha256": "42bd0a9243fcda6b1d78ee5976d5dccfcb2b48685c834fff26a942d584779e5a",
+      "normalizedSha256": "42bd0a9243fcda6b1d78ee5976d5dccfcb2b48685c834fff26a942d584779e5a"
+    },
+    {
+      "originalPath": "docs/security/README.md",
+      "archivePath": "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/docs/security/README.md",
+      "rawSha256": "b5e79e5e962f3a172a1f2720836b99573e2f31b7817dd6cd346349fb171e06f3",
+      "normalizedSha256": "b5e79e5e962f3a172a1f2720836b99573e2f31b7817dd6cd346349fb171e06f3"
+    },
+    {
+      "originalPath": "docs/security/msl-applicability.md",
+      "archivePath": "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/docs/security/msl-applicability.md",
+      "rawSha256": "2b3e2651ebc4c06c4056cf6f40bfaaed68158c0f1ba3d63f4b7edc564c12464b",
+      "normalizedSha256": "2b3e2651ebc4c06c4056cf6f40bfaaed68158c0f1ba3d63f4b7edc564c12464b"
+    },
+    {
+      "originalPath": "docs/validation/lh00/acceptance.md",
+      "archivePath": "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/docs/validation/lh00/acceptance.md",
+      "rawSha256": "9a1579a9db3df8519841a9423fa6541a30213d0037f31219442831c46d44800b",
+      "normalizedSha256": "9a1579a9db3df8519841a9423fa6541a30213d0037f31219442831c46d44800b"
+    }
+  ],
+  "beforeTargetNormalizedSha256": "afef357c166721000f87690163d8e3ce9e291a4665f1293a8fd2f158a8d15274",
+  "afterTargetNormalizedSha256": "a41a810b983eb6acfe2139dc9655494790570ce428f4d7566106b6d52006d315",
+  "intendedTargets": [
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/intakes/LH-00.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/specs/intake-authoring-receipts/lh-00.json",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/specs/intake-series/lh00-process/manifest.json",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/specs/intake-series/lh00-process/receipt.json",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/specs/intake-series/lh00-process/operation.json",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/AGENTS.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/CLAUDE.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/GEMINI.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/.github/copilot-instructions.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/.github/agents/copilot-instructions.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/docs/intake-governance.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/docs/Lastenheft-Plan.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/docs/Entwicklungsumgebung.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/.specify/memory/intake-authoring-profile.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/docs/Bedienkonzept.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/docs/security/README.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/docs/security/msl-applicability.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/docs/validation/lh00/acceptance.md",
+    "specs/intake-review-archive/1bcdfd12-6424-4097-a2fd-c3e522095794/intake-review-report.md",
+    "specs/intake-review-archive/1bcdfd12-6424-4097-a2fd-c3e522095794/intake-review-result.json",
+    "specs/intake-review-archive/1bcdfd12-6424-4097-a2fd-c3e522095794/intake-review-request.json",
+    "specs/intake-series/lh00-process/manifest.json",
+    "specs/intake-series/lh00-process/receipt.json",
+    "specs/intake-series/lh00-process/operation.json",
+    "specs/intake-authoring-receipts/lh-00.json",
+    "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/4777eafc-d227-48cc-aa0f-830fb5e5f5a5/manifest.json",
+    "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/4777eafc-d227-48cc-aa0f-830fb5e5f5a5/receipt.json",
+    "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/4777eafc-d227-48cc-aa0f-830fb5e5f5a5/operation.json",
+    "intakes/LH-00.md",
+    "docs/planning/lh01-source-refresh-review-corrections.md"
+  ],
+  "validatedTargets": [
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/intakes/LH-00.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/specs/intake-authoring-receipts/lh-00.json",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/specs/intake-series/lh00-process/manifest.json",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/specs/intake-series/lh00-process/receipt.json",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/specs/intake-series/lh00-process/operation.json",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/AGENTS.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/CLAUDE.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/GEMINI.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/.github/copilot-instructions.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/.github/agents/copilot-instructions.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/docs/intake-governance.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/docs/Lastenheft-Plan.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/docs/Entwicklungsumgebung.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/.specify/memory/intake-authoring-profile.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/docs/Bedienkonzept.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/docs/security/README.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/docs/security/msl-applicability.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/docs/validation/lh00/acceptance.md",
+    "specs/intake-review-archive/1bcdfd12-6424-4097-a2fd-c3e522095794/intake-review-report.md",
+    "specs/intake-review-archive/1bcdfd12-6424-4097-a2fd-c3e522095794/intake-review-result.json",
+    "specs/intake-review-archive/1bcdfd12-6424-4097-a2fd-c3e522095794/intake-review-request.json",
+    "specs/intake-series/lh00-process/manifest.json",
+    "specs/intake-series/lh00-process/receipt.json",
+    "specs/intake-series/lh00-process/operation.json",
+    "specs/intake-authoring-receipts/lh-00.json",
+    "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/4777eafc-d227-48cc-aa0f-830fb5e5f5a5/manifest.json",
+    "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/4777eafc-d227-48cc-aa0f-830fb5e5f5a5/receipt.json",
+    "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/4777eafc-d227-48cc-aa0f-830fb5e5f5a5/operation.json",
+    "intakes/LH-00.md",
+    "docs/planning/lh01-source-refresh-review-corrections.md"
+  ],
+  "publishedTargets": [
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/intakes/LH-00.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/specs/intake-authoring-receipts/lh-00.json",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/specs/intake-series/lh00-process/manifest.json",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/specs/intake-series/lh00-process/receipt.json",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/specs/intake-series/lh00-process/operation.json",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/AGENTS.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/CLAUDE.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/GEMINI.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/.github/copilot-instructions.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/.github/agents/copilot-instructions.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/docs/intake-governance.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/docs/Lastenheft-Plan.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/docs/Entwicklungsumgebung.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/.specify/memory/intake-authoring-profile.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/docs/Bedienkonzept.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/docs/security/README.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/docs/security/msl-applicability.md",
+    "specs/intake-authoring-archive/lh-00/63a7f2dd-2393-4f57-88f9-4b12a257500f/docs/validation/lh00/acceptance.md",
+    "specs/intake-review-archive/1bcdfd12-6424-4097-a2fd-c3e522095794/intake-review-report.md",
+    "specs/intake-review-archive/1bcdfd12-6424-4097-a2fd-c3e522095794/intake-review-result.json",
+    "specs/intake-review-archive/1bcdfd12-6424-4097-a2fd-c3e522095794/intake-review-request.json",
+    "specs/intake-series/lh00-process/manifest.json",
+    "specs/intake-series/lh00-process/receipt.json",
+    "specs/intake-series/lh00-process/operation.json",
+    "specs/intake-authoring-receipts/lh-00.json",
+    "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/4777eafc-d227-48cc-aa0f-830fb5e5f5a5/manifest.json",
+    "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/4777eafc-d227-48cc-aa0f-830fb5e5f5a5/receipt.json",
+    "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/4777eafc-d227-48cc-aa0f-830fb5e5f5a5/operation.json",
+    "intakes/LH-00.md",
+    "docs/planning/lh01-source-refresh-review-corrections.md"
+  ],
+  "rollbackBoundary": "Restore predecessor bytes from exact archives and remove new paths if caught publication fails; interrupted publication must be treated as NeedsRepair, not success.",
+  "failure": {
+    "class": "N/A",
+    "message": "N/A"
+  },
+  "reviewSupersession": "Exact old triplet archived; no old Ready retained as current. Complete distinct review is explicitly commissioned by the approved plan.",
+  "nextAction": "$speckit-intake-review intakes/LH-00.md",
+  "validation": [
+    {
+      "kind": "authoring",
+      "shell": "bash",
+      "exitCode": 0,
+      "output": "PASS: intake authoring d1ee2880-3475-4419-b5d9-f29db3db4c89 is current (ReadyForReview, 36 sources, intakes/LH-00.md)\n"
+    },
+    {
+      "kind": "manifest",
+      "shell": "bash",
+      "exitCode": 0,
+      "output": "PASS: 3c0e3e97-1268-4828-aeba-c3f3d17637de (1 targets, 1 roots, 0 dependencies)\n"
+    },
+    {
+      "kind": "series-receipt",
+      "shell": "bash",
+      "exitCode": 0,
+      "output": "PASS: 3c0e3e97-1268-4828-aeba-c3f3d17637de (1 targets, 1 roots, 0 dependencies)\n"
+    },
+    {
+      "kind": "authoring",
+      "shell": "PowerShell",
+      "exitCode": 0,
+      "output": "PASS: intake authoring d1ee2880-3475-4419-b5d9-f29db3db4c89 is current (ReadyForReview, 36 sources, intakes/LH-00.md)\n"
+    },
+    {
+      "kind": "manifest",
+      "shell": "PowerShell",
+      "exitCode": 0,
+      "output": "PASS: 3c0e3e97-1268-4828-aeba-c3f3d17637de (1 targets, 1 roots, 0 dependencies)\n"
+    },
+    {
+      "kind": "series-receipt",
+      "shell": "PowerShell",
+      "exitCode": 0,
+      "output": "PASS: 3c0e3e97-1268-4828-aeba-c3f3d17637de (1 targets, 1 roots, 0 dependencies)\n"
+    }
+  ],
+  "normativeFRACUnchanged": true
+}

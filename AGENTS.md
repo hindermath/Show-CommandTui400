@@ -6,6 +6,7 @@ Level 2 im Workspace `RiderProjects`; kanonische Quelle ist
 `hindermath/Show-CommandTui400`, Standardbranch `main`.
 Fachliche Baseline: `docs/Bedienkonzept.md`; verbindliche Reihenfolge:
 `docs/Lastenheft-Plan.md`. Das Projekt ist in der Konzeptphase.
+Der LH-00-Kernprozess und T045 sind geliefert; vollständige Prozessabnahme bleibt offen.
 Zielumgebung ist die aktuelle PowerShell-7-Sitzung auf macOS, Linux und Windows.
 Implementierungssprache, Framework, minimale PowerShell-Version und technische
 Sitzungsintegration sind offen. Aus dem Workspace-Namen folgt keine .NET-Vorgabe.
@@ -186,3 +187,22 @@ Existing macOS 14 jobs explicitly use `macos-15`. Keep the existing repository
 selection for Linux-only maintenance jobs. Successful CI proves the executed
 checks, not product platform acceptance. Review required check names and
 migration templates whenever runner labels change. See the linked guide.
+
+## Nächster fachlicher Entscheid / Next domain decision
+
+Primärsprache und MSL-Status bleiben unknown. C# ist eine Prüfoption für LH-01;
+der verbindliche Sprachentscheid erfolgt dort im technischen Plan mit
+Architekturentscheidung und Machbarkeitsnachweis vor Produktimplementierung.
+.NET-Version, TUI-Framework, PowerShell-Mindestversion und Sitzungsintegration
+bleiben getrennte Entscheidungen. T045 erlaubt den begrenzten Pilotweg;
+LH-01 ist weiterhin nicht erstellt oder beauftragt. LH-01/LH-02 brauchen eigene
+Aufträge und gültige Intakes/andere Reviews, außerhalb automatischer Serienauswahl.
+[Entscheidung IAD019](docs/planning/lh01-source-refresh-decisions.md).
+
+Primary language and memory-safety status remain unknown. C# is a candidate for
+LH-01; its technical plan must record the language decision with architecture
+and feasibility evidence before product implementation. Decide runtime/framework,
+minimum PowerShell and session integration separately. T045 permits the limited
+pilot route; LH-01 has not been created or commissioned. Both pilots need separate
+requests, valid intakes and distinct reviews outside automatic series selection.
+The LH-00 core is delivered; full process acceptance remains open.
