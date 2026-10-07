@@ -57,6 +57,8 @@ heuristic would otherwise count spec.md as a test.*
 
 | 2026-10-06 | LH-00-Kernprozess T001–T045 / LH-00 core process | Lokale Grundlagen, fünf PowerShell-Imports mit Paritätsnachweisen, echte isolierte Create/Update/Review/Delete/Rollback-Fälle, gewöhnliche Intake-Updates und unabhängiges Ready-Review, Collection-Ready-Bootstrap und Mac-A-Teilnachweis. B-01 menschlich abgenommen; autorisierte Statistik-/PR-Lieferung. Begrenzte Pilotentscheidung und Vollabnahme bleiben offen. / Foundations, script imports/parity, isolated lifecycle and recovery proofs, traceable intake generations, fresh independent Ready, collection bootstrap and Mac A proof. B-01 accepted; delivery authorised, pilot/full acceptance separate. [Liefernachweis / Delivery](validation/lh00/delivery.md). |
 
+| 2026-10-07 | T045: begrenzte Pilotfreigabe / Limited pilot permission | Ausdrücklichen Owner-Entscheid mit unabhängiger Mac-A-Bewertung und bestandenen Vorgängergates dokumentiert; T045 abgeschlossen, 45/65 Tasks erledigt. Einzelpiloten benötigen eigene Aufträge; vollständige Prozessabnahme bleibt offen. / Recorded explicit owner permission against the distinct Mac A assessment and passed prerequisite gates; T045 complete, 45/65 tasks done. Individual pilots need separate requests; full process acceptance stays open. [Abnahme / Acceptance](validation/lh00/acceptance.md). |
+
 ## Gesamtstatistik / Overall Statistics
 
 <!-- project-statistics-v2:begin -->

@@ -662,3 +662,70 @@ are complete, giving 26/27 scoped and 44/65 overall. Only human pilot permission
 T045 remains in this increment; later tasks stay unchanged. Final statistics and
 exact-head hosted CI remain mandatory delivery checks.
 [Beobachtete Gates / Observed gates](../../../docs/validation/lh00/delivery-gate-results.json).
+
+## T045: Owner-Pilotfreigabe, 2026-10-07 / Owner pilot permission
+
+**T045 abgeschlossen.** Thorsten Hindermann: „Ich erteile die begrenzte
+Pilotfreigabe gemäß T045. Bitte dokumentieren und T045 abschließen.“
+Der [Owner-Entscheid](../../../docs/validation/lh00/pilot-owner-decision.json)
+und das [aktuelle Abnahmeprotokoll](../../../docs/validation/lh00/acceptance.md)
+verknüpfen die ausdrückliche Freigabe mit der vorhandenen anderen Bewertung.
+B-01 ist bereits menschlich abgenommen; T043 und die technische Lieferung in
+PR #32 sind abgeschlossen. Die ursprüngliche Bewertung bleibt bytegleich als
+historischer Abschnitt erhalten. Ihre damaligen Pending-/Failed-Stände werden
+nicht nachträglich als erfolgreiche Prüfungen dargestellt.
+
+Lesend erneut bestätigt: 30/30 Mac-Payload-Rohhashes, 101/101 aktuelle
+Receipt-/Request-/Review-Bindungen; unabhängiges Intake-Review Ready, keine
+Befunde oder Risikoannahmen. Die Dokumentationsänderung berührt keine gebundene
+Intake-Quelle und erfordert daher kein neues Intake-Update oder Review.
+Aufgabenumfang: 27/27 im zweiten Inkrement, insgesamt 45/65 abgeschlossen.
+T046–T065 bleiben offen. Ergebnis `ReadyForPilot` ist kein Receipt-/Serienstatus.
+
+**T045 complete.** Thorsten explicitly grants limited pilot permission. The
+linked records connect this decision to the existing distinct assessment,
+accepted B-01 and completed T043/PR #32 delivery. The original assessment remains
+byte-identical in its historical section; earlier pending/failing checks retain
+their original meaning. Read-only verification confirms 30/30 Mac payload hashes
+and 101/101 current bindings, with independent intake review Ready and no findings
+or accepted risks. No bound intake source changes, so no new update/review is
+required. This completes 27/27 scoped tasks and 45/65 overall. T046–T065 remain
+open; `ReadyForPilot` is an acceptance outcome only.
+
+LH-01 und anschließend LH-02 erhalten weiterhin eigene Aufträge, gültige Intakes
+und unabhängige Reviews; der fachliche Abschluss von LH-01 bleibt Voraussetzung
+für LH-02. Kein Pilot gestartet, kein realer Active-/Completed-Übergang.
+Vollständige LH-00-Abnahme nach LH-02/vor LH-03 bleibt offen: vier Plattformen,
+praktische Barrierefreiheit, Übersetzungen und angewendete Registerausrichtung.
+Der Ledger wird beschreibend ergänzt; generierte Statistikzahlen bleiben bis
+zum gesonderten Commit-/Render-Paket unverändert.
+
+LH-01 and then LH-02 still need separate requests, valid intakes and independent
+reviews; LH-02 requires domain completion of LH-01. No pilot or real
+Active/Completed transition starts. Full LH-00 acceptance after LH-02/before LH-03
+remains open, including four platforms, practical accessibility, translations
+and applied registry alignment. The descriptive ledger is updated; generated
+statistics stay unchanged until a separate commit/render package.
+
+### Lieferauftrag zur T045-Dokumentation / T045 documentation delivery request
+
+2026-10-07: Thorsten beauftragt anschließend ausdrücklich DeliveryMode
+MergeAndSync mit Admin-Bypass für die vorhandene T045-Dokumentation.
+Die vorangehende lokale Begrenzung ist damit um Commit, Statistik-Renderer,
+Push, PR, technisch geprüften Merge und lokalen Sync erweitert.
+Vor Quellencommit erneut bestanden: exakte 14-Preset-Matrix, Agent-Secret-Scan
+(high=0), PSScriptAnalyzer 1.25.0 (73 Dateien, keine Error/Warning) und
+betroffene Verweis-/Hash-/Aufgabenprüfungen. Nach dem Quellencommit folgt die
+Statistikvorschau, danach Rendering und Check-only/Homogenität; endgültige
+PR-CI und Reviewzustand werden vor dem gebundenen Merge geprüft.
+Die früheren Prüfartefakte und die unabhängige Bewertung bleiben unverändert.
+Der Lieferauftrag startet keinen LH-01-Lauf; der nächste Auftrag wird nur vorgeschlagen.
+
+Thorsten subsequently authorizes MergeAndSync with Admin-Bypass for the existing
+T045 documentation. This extends local authority to commit, renderer, push, PR,
+technically verified merge and local sync. Before the source commit, the exact
+14-preset matrix, secret scan (high=0), PSScriptAnalyzer (73 files, no error/warning)
+and affected link/hash/task checks pass. Preview and rendering from the source
+commit precede statistics/homogeneity checks. Final-head PR CI and review state
+are checked before merge. Earlier evidence and the distinct assessment remain
+unchanged. Delivery starts no LH-01 run; the next request is proposed only.

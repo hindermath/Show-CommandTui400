@@ -1,3 +1,73 @@
+# LH-00: begrenzte Pilotfreigabe / Limited pilot permission
+
+## Aktueller Owner-Entscheid, 2026-10-07 / Current owner decision
+
+### DE
+
+**Thorsten Hindermann erteilt die begrenzte Pilotfreigabe gemäß T045.
+Abnahmeergebnis: `ReadyForPilot`. T045 ist abgeschlossen.**
+
+Auftrag: „Ich erteile die begrenzte Pilotfreigabe gemäß T045. Bitte dokumentieren
+und T045 abschließen.“ Die Freigabe gilt dem unabhängig geprüften isolierten
+LH-00-Kernprozess auf Mac A, MacBook Air M2 (2023).
+Der [Owner-Entscheid](pilot-owner-decision.json) verbindet diesen Auftrag mit der
+unabhängigen Bewertung `3d780c5d-66f5-456f-b78d-4d6a6159346c`, dem
+[B-01-Abschluss](b01-owner-decision.json) und den bestandenen
+[Lieferprüfungen](delivery-gate-results.json) aus
+[PR #32](https://github.com/hindermath/Show-CommandTui400/pull/32).
+Heute erneut geprüft: alle 30 Mac-Payload-Rohhashes und 101 aktuelle
+Receipt-/Request-/Review-Bindungen stimmen; das unabhängige Intake-Review bleibt
+`Ready`, ohne offene Befunde oder Risikoannahmen. Die vorhandenen technischen
+Nachweise werden wiederverwendet; eine neue Plattformprüfung wurde nicht ausgeführt.
+
+LH-01 und anschließend LH-02 dürfen als jeweils gesondert beauftragte Einzelpiloten
+vorbereitet und durchgeführt werden. Beide brauchen einen eigenen Auftrag,
+ein gültiges Intake und unabhängiges Review. LH-02 setzt den fachlichen Abschluss
+von LH-01 voraus. Diese Dokumentation startet keinen Pilot und ändert keinen
+realen Serienstatus. `ReadyForPilot` bezeichnet nur dieses Abnahmeergebnis.
+
+**Die vollständige LH-00-Abnahme bleibt offen:** nach LH-02, vor LH-03,
+mit Nachweisen auf Mac A, Mac B, Windows 11 und Ubuntu/WSL2 sowie praktischer
+Barrierefreiheit, Übersetzungen und angewendeter Registerausrichtung.
+T046–T065 bleiben offen; LH-00 wird nicht als `Completed` archiviert.
+
+### EN
+
+**Thorsten Hindermann grants limited pilot permission under T045.
+Acceptance outcome: `ReadyForPilot`. T045 is complete.**
+
+The explicit owner request grants permission for the independently reviewed,
+isolated LH-00 core process on Mac A, MacBook Air M2 (2023). The linked owner
+record binds this decision to the separate assessment, B-01 owner acceptance
+and passed delivery checks in PR #32. Today's read-only verification confirms
+all 30 raw Mac payload hashes and 101 current receipt/request/review bindings.
+The independent intake review remains `Ready`, with no findings or accepted risks.
+Existing technical proof is reused; no new platform test was performed.
+
+LH-01, then LH-02 may proceed as separately commissioned individual pilots.
+Each needs its own request, a valid intake and independent review. LH-02 requires
+domain completion of LH-01. This documentation starts no pilot and changes no
+real series state. `ReadyForPilot` describes this acceptance outcome only.
+
+**Full LH-00 acceptance remains open:** after LH-02 and before LH-03, with Mac A,
+Mac B, Windows 11 and Ubuntu/WSL2 evidence, practical accessibility, translations
+and applied registry alignment. T046–T065 stay open; LH-00 is not archived as
+`Completed`.
+
+## Historische unabhängige Bewertung vom 2026-10-06 / Historical independent assessment
+
+Die ursprüngliche Bewertung folgt bytegleich. Ihre Pending-/Failed-Aussagen
+beschreiben ausschließlich den damaligen Stand. Der obige Entscheid und die
+spätere Lieferung ergänzen ihn; historische Prüfungen werden nicht umgedeutet.
+[Unveränderter Git-Vorgänger](https://github.com/hindermath/Show-CommandTui400/blob/5da877fde456899f80863f4cac256422a4db6aed/docs/validation/lh00/acceptance.md).
+
+The original assessment follows byte for byte. Its pending/failed statements
+apply only to its recorded date. The decision above and later delivery supplement
+that state without rewriting historical checks. The linked Git predecessor
+preserves the original reviewed bytes.
+
+---
+
 # LH-00: begrenzte Mac-Pilotbewertung / Limited Mac pilot assessment
 
 Stand / Date: 2026-10-06T19:33:49.774574+00:00.  
