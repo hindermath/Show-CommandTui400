@@ -100,14 +100,34 @@ $excludedFiles = @(
         Where-Object { Test-HBExcludedAnalysisPath -RelativePath $_ -Prefixes $excludedPathPrefixes }
 )
 
+# DE: Nur die absichtliche globale Testvariable des isolierten LH-01-Proofs
+# ausnehmen. Das historische Skript bleibt als hashgebundener Nachweis erhalten.
+# EN: Exempt only the deliberate global probe variable in these two fixtures.
+# Preserve archived evidence; every other global variable still fails analysis.
+$lh01ProbePaths = @(
+    'specs/002-lh01-tui-foundation/feasibility/src/probe-session.ps1',
+    'specs/002-lh01-tui-foundation/feasibility/archive/20261008-before-fv01-fix/src/probe-session.ps1'
+)
+$acceptedProbeFindings = 0
 $findings = @(
     foreach ($relativeFile in $relativeFiles) {
         $path = Join-Path $RepositoryRoot $relativeFile
-        Invoke-ScriptAnalyzer -Path $path -Settings $Settings
+        foreach ($finding in @(Invoke-ScriptAnalyzer -Path $path -Settings $Settings)) {
+            if ($relativeFile.Replace('\', '/') -cin $lh01ProbePaths -and
+                $finding.RuleName -ceq 'PSAvoidGlobalVars' -and
+                $finding.Extent.Text -ceq '$global:Lh01Synthetic') {
+                $acceptedProbeFindings++
+                continue
+            }
+            $finding
+        }
     }
 )
 
 Write-Host "PSScriptAnalyzer ${requiredVersion}: $($relativeFiles.Count) Dateien / files"
+if ($acceptedProbeFindings -gt 0) {
+    Write-Host "LH-01: $acceptedProbeFindings explizite synthetische Testvariablen-Befunde / explicit synthetic probe findings"
+}
 if ($excludedFiles.Count -gt 0) {
     Write-Host "Ausgenommen / excluded generated upstream files: $($excludedFiles.Count)"
 }

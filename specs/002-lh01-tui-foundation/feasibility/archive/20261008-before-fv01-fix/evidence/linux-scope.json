@@ -1,0 +1,81 @@
+{
+  "Mode": "Scope",
+  "TerminalBefore": null,
+  "TerminalAfter": null,
+  "TerminalRestored": null,
+  "Before": {
+    "Pid": 1,
+    "Runspace": "ac7cb143-52a6-42ed-a082-df2f3ba2050a",
+    "Location": "/",
+    "Synthetic": 710,
+    "Preference": 1,
+    "FunctionResult": 710
+  },
+  "After": {
+    "Pid": 1,
+    "Runspace": "ac7cb143-52a6-42ed-a082-df2f3ba2050a",
+    "Location": "/",
+    "Synthetic": 710,
+    "Preference": 1,
+    "FunctionResult": 710
+  },
+  "ContextUnchanged": true,
+  "Results": [
+    {
+      "Checks": [
+        "unknown-or-unavailable:Unknown",
+        "unknown-or-unavailable:Unavailable",
+        "unknown-or-unavailable:Execute",
+        "unknown-or-unavailable:$(bad)",
+        "unknown-or-unavailable:Import",
+        "unknown-or-unavailable:Network",
+        "invalid-context",
+        "preserve-value:Help",
+        "preserve-value:Refresh",
+        "preserve-value:Back",
+        "preserve-value:Confirm",
+        "preserve-value:Next",
+        "preserve-value:Previous",
+        "duplicate-remap-rejected",
+        "missing-exit-rejected",
+        "escape-paths-preserved",
+        "control-display-sanitized",
+        "explicit-exit-only"
+      ],
+      "TargetExecutorPresent": false,
+      "Scope": "fixture model only; not terminal key proof"
+    },
+    {
+      "Pid": 1,
+      "Runspace": "ac7cb143-52a6-42ed-a082-df2f3ba2050a",
+      "Synthetic": 710,
+      "Location": "/",
+      "FunctionVisible": true,
+      "Framework": "2.5.0.0",
+      "UiEvents": []
+    },
+    {
+      "Pid": 1,
+      "Runspace": "ac7cb143-52a6-42ed-a082-df2f3ba2050a",
+      "Synthetic": 711,
+      "Location": "/",
+      "FunctionVisible": true,
+      "Framework": "2.5.0.0",
+      "UiEvents": []
+    },
+    {
+      "Pid": 1,
+      "Runspace": "ac7cb143-52a6-42ed-a082-df2f3ba2050a",
+      "Synthetic": 712,
+      "Location": "/",
+      "FunctionVisible": true,
+      "Framework": "2.5.0.0",
+      "UiEvents": []
+    },
+    {
+      "Case": "RedirectedUi",
+      "ErrorId": "CapabilityRejected,Lh01Feasibility.Fixture"
+    }
+  ],
+  "Failure": null
+}

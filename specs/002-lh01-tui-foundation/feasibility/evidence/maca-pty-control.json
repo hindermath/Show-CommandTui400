@@ -1,0 +1,142 @@
+{
+  "TimestampUtc": "2026-10-08T21:20:24.796562+00:00",
+  "SourceHashes": {
+    "packages.lock.json": "9a50991596ca623b8d4041f1ad193d9f3c18fcadaac18f5df824f2fb7baf4813",
+    "NuGet.Config": "33aa39ee926a9e2651ae39549df08dddc8e43d11896cf14d0465bc869d56b4c2",
+    "Fixture.cs": "4af1620f55b1934304a69565e8050a6dc418db9b1e0f70df0d35c45f8551f9e1",
+    "pty-probe.py": "1534ef1c6699fc99a5f8e2242fe6f5cd9f3283cff4b3c4029ba9aa7d0cced5e8",
+    "Directory.Build.props": "5db21870b2d6450b0e3bb5fa16bdf4af49680c59de93bfa5b321daa5cf271133",
+    "Lh01Fixture.csproj": "23cc499fc374cfbe1782765c402c1ea67cdb6a10dde2dd58e03fa32cfba50838",
+    "termios-abi.c": "4e1597b0e853f8f8615369374a14f2b951ffb0e212711dafedbcdea799053d3c",
+    "probe-session.ps1": "cc7af7189d96fe27e19fcf8700315dbae138ae251ca3549bca6672dcd3a5ac4b",
+    "DarwinTerminalSnapshot.cs": "7092368beb5d4576b7b0e43ba17b680badfbd4c89150f57847beb4163b446909"
+  },
+  "AssemblySha256": "8297990eaf8dfb6eae79b84e3c428c9056806cb975570a21e40ffe6c48ff0240",
+  "Mode": "control",
+  "Command": [
+    "pwsh",
+    "-NoLogo",
+    "-NoProfile",
+    "-File",
+    "/Users/thorstenhindermann/RiderProjects/Show-CommandTui400/specs/002-lh01-tui-foundation/feasibility/src/probe-session.ps1",
+    "-Assembly",
+    "/tmp/lh01-proof-build/bin/net10.0/Lh01Fixture.dll",
+    "-Mode",
+    "Control",
+    "-RestoreSnapshotWindow"
+  ],
+  "Environment": {
+    "TERM": "xterm-256color",
+    "Surface": "synthetic local macOS PTY; no physical/assistive proof"
+  },
+  "ExitCode": 0,
+  "Steps": [
+    "caller-ReadHost-roundtrip",
+    "restore-snapshot-before-shell-exit"
+  ],
+  "InitialPtySettingsMatch": false,
+  "TermiosObservationError": null,
+  "TermiosBefore": [
+    11010,
+    3,
+    19200,
+    1483,
+    9600,
+    9600,
+    [
+      "04",
+      "ff",
+      "ff",
+      "7f",
+      "17",
+      "15",
+      "12",
+      "ff",
+      "03",
+      "1c",
+      "1a",
+      "19",
+      "11",
+      "13",
+      "16",
+      "0f",
+      "01",
+      "00",
+      "14",
+      "ff"
+    ]
+  ],
+  "TermiosAfter": [
+    10242,
+    3,
+    19200,
+    195,
+    9600,
+    9600,
+    [
+      "04",
+      "ff",
+      "ff",
+      "7f",
+      "17",
+      "15",
+      "12",
+      "ff",
+      "03",
+      "1c",
+      "1a",
+      "19",
+      "11",
+      "13",
+      "16",
+      "0f",
+      1,
+      0,
+      "14",
+      "ff"
+    ]
+  ],
+  "CursorShowSequenceObserved": false,
+  "AlternateScreenLeaveObserved": false,
+  "TranscriptSha256": "a88084e2714a5ec6f369d53c0045a1eb42777f75169357912939517f50d5eec0",
+  "Result": {
+    "Mode": "Control",
+    "ConfiguredTerminalModesRestored": true,
+    "NativeRestore": null,
+    "TerminalImmediate": "gfmt1:cflag=4b00:iflag=2b02:lflag=5cb:oflag=3:discard=f:dsusp=19:eof=4:eol=ff:eol2=ff:erase=7f:intr=3:kill=15:lnext=16:min=1:quit=1c:reprint=12:start=11:status=14:stop=13:susp=1a:time=0:werase=17:ispeed=9600:ospeed=9600",
+    "ShellReadback": "LH01_ACK",
+    "TerminalBefore": "gfmt1:cflag=4b00:iflag=2b02:lflag=5cb:oflag=3:discard=f:dsusp=19:eof=4:eol=ff:eol2=ff:erase=7f:intr=3:kill=15:lnext=16:min=1:quit=1c:reprint=12:start=11:status=14:stop=13:susp=1a:time=0:werase=17:ispeed=9600:ospeed=9600",
+    "TerminalAfter": "gfmt1:cflag=4b00:iflag=2b02:lflag=200005cb:oflag=3:discard=f:dsusp=19:eof=4:eol=ff:eol2=ff:erase=7f:intr=3:kill=15:lnext=16:min=1:quit=1c:reprint=12:start=11:status=14:stop=13:susp=1a:time=0:werase=17:ispeed=9600:ospeed=9600",
+    "TerminalRestored": false,
+    "Before": {
+      "Pid": 96967,
+      "Runspace": "ab54e986-784b-4d92-8270-dbedc539f812",
+      "Location": "/Users/thorstenhindermann/RiderProjects/Show-CommandTui400",
+      "Synthetic": 710,
+      "Preference": 1,
+      "FunctionResult": 710
+    },
+    "After": {
+      "Pid": 96967,
+      "Runspace": "ab54e986-784b-4d92-8270-dbedc539f812",
+      "Location": "/Users/thorstenhindermann/RiderProjects/Show-CommandTui400",
+      "Synthetic": 710,
+      "Preference": 1,
+      "FunctionResult": 710
+    },
+    "ContextUnchanged": true,
+    "Results": [
+      {
+        "Pid": 96967,
+        "Runspace": "ab54e986-784b-4d92-8270-dbedc539f812",
+        "Synthetic": 710,
+        "Location": "/Users/thorstenhindermann/RiderProjects/Show-CommandTui400",
+        "FunctionVisible": true,
+        "Framework": "2.5.0.0",
+        "UiEvents": []
+      }
+    ],
+    "Failure": null
+  },
+  "Transcript": "\u001b[?1h\u001b=\u001b[?1h\u001b=\u001b]0;\u0007LH01_CONTROL_NO_GUI\r\n\u001b[?1h\u001b=\u001b]0;\u0007LH01_SHELL_INPUT_READY\r\nLH01_ACK\r\nSynthetic return check: \u001b[6nL\u001b[1;1HLH\u001b[1;1HLH0\u001b[1;1HLH01\u001b[1;1HLH01_\u001b[1;1HLH01_A\u001b[1;1HLH01_AC\u001b[1;1HLH01_ACK\r\n\u001b[?1h\u001b=\u001b]0;\u0007LH01_RESULT\r\n{\"Mode\":\"Control\",\"ConfiguredTerminalModesRestored\":true,\"NativeRestore\":null,\"TerminalImmediate\":\"gfmt1:cflag=4b00:iflag=2b02:lflag=5cb:oflag=3:discard=f:dsusp=19:eof=4:eol=ff:eol2=ff:erase=7f:intr=3:kill=15:lnext=16:min=1:quit=1c:reprint=12:start=11:status=14:stop=13:susp=1a:time=0:werase=17:ispeed=9600:ospeed=9600\",\"ShellReadback\":\"LH01_ACK\",\"TerminalBefore\":\"gfmt1:cflag=4b00:iflag=2b02:lflag=5cb:oflag=3:discard=f:dsusp=19:eof=4:eol=ff:eol2=ff:erase=7f:intr=3:kill=15:lnext=16:min=1:quit=1c:reprint=12:start=11:status=14:stop=13:susp=1a:time=0:werase=17:ispeed=9600:ospeed=9600\",\"TerminalAfter\":\"gfmt1:cflag=4b00:iflag=2b02:lflag=200005cb:oflag=3:discard=f:dsusp=19:eof=4:eol=ff:eol2=ff:erase=7f:intr=3:kill=15:lnext=16:min=1:quit=1c:reprint=12:start=11:status=14:stop=13:susp=1a:time=0:werase=17:ispeed=9600:ospeed=9600\",\"TerminalRestored\":false,\"Before\":{\"Pid\":96967,\"Runspace\":\"ab54e986-784b-4d92-8270-dbedc539f812\",\"Location\":\"/Users/thorstenhindermann/RiderProjects/Show-CommandTui400\",\"Synthetic\":710,\"Preference\":1,\"FunctionResult\":710},\"After\":{\"Pid\":96967,\"Runspace\":\"ab54e986-784b-4d92-8270-dbedc539f812\",\"Location\":\"/Users/thorstenhindermann/RiderProjects/Show-CommandTui400\",\"Synthetic\":710,\"Preference\":1,\"FunctionResult\":710},\"ContextUnchanged\":true,\"Results\":[{\"Pid\":96967,\"Runspace\":\"ab54e986-784b-4d92-8270-dbedc539f812\",\"Synthetic\":710,\"Location\":\"/Users/thorstenhindermann/RiderProjects/Show-CommandTui400\",\"FunctionVisible\":true,\"Framework\":\"2.5.0.0\",\"UiEvents\":[]}],\"Failure\":null}\r\nLH01_RESTORE_READY\r\n"
+}

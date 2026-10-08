@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "1.1",
+  "reviewId": "e3a61bac-29c5-4238-990f-805496910c0c",
+  "mode": "Single",
+  "policy": "generic-markdown",
+  "targets": [
+    {
+      "path": "intakes/LH-01.md",
+      "role": "Primary"
+    }
+  ],
+  "series": {
+    "orderedTargetPaths": [],
+    "roots": [],
+    "dependencies": []
+  },
+  "campaign": {
+    "manifestPath": "N/A",
+    "workers": [],
+    "operatorExceptions": []
+  },
+  "projectProfile": "show-commandtui400-de-en",
+  "authority": {
+    "request": "Current human selected $speckit-intake-review intakes/LH-01.md. Root delegates to a distinct agent because root authored LH-01. Only this new per-intake request/result/report; no target/receipt/source mutation, repair, implementation, commit, remote access or series change.",
+    "evidence": {
+      "path": "N/A",
+      "boundary": "Current conversation human selection and root delegation, not repository-source authority"
+    },
+    "targetMutationAllowed": false,
+    "implementationAllowed": false,
+    "remoteAccessAllowed": false
+  },
+  "targetHash": "47bbafddb066e6face90e7a0356c592ea066f9d41778660b2a84bc5d11604acb"
+}

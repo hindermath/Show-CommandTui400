@@ -1,0 +1,4 @@
+<Project><PropertyGroup>
+  <BaseIntermediateOutputPath>$(LH01BuildRoot)/obj/</BaseIntermediateOutputPath>
+  <MSBuildProjectExtensionsPath>$(LH01BuildRoot)/obj/</MSBuildProjectExtensionsPath>
+</PropertyGroup></Project>

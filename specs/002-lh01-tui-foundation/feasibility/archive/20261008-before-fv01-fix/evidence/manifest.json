@@ -1,0 +1,99 @@
+{
+  "Date": "2026-10-08",
+  "Payload": "uncommitted local feasibility; not commit evidence",
+  "AssemblySha256": "b40b11e0f2b39a59aca12aa8c381afecf1fe7c178eaf521fe2e30d6db852014c",
+  "Files": [
+    {
+      "Path": "README.md",
+      "Sha256": "42245885421ee765ea196b3db61fc8a34db3157e6fb9dfe778a41147531054db"
+    },
+    {
+      "Path": "decisions.md",
+      "Sha256": "f3a2f671329fee179494571f45678c5116a4b834586990420ecc7212c790919c"
+    },
+    {
+      "Path": "evidence/build-maca.txt",
+      "Sha256": "f00886fbb1d61ff414cdb1ee9ac9847b14856db204cf0e951b663a293b17b452"
+    },
+    {
+      "Path": "evidence/linux-environment.json",
+      "Sha256": "45a0fc2a07ffe3ccd21d5ada071ad9a61dbfa7c6af9725473e99e2b554f80947"
+    },
+    {
+      "Path": "evidence/linux-image.txt",
+      "Sha256": "b8545b359553e6a083a24556f6aea2b9eeb231bc394b998605f526385da58a9f"
+    },
+    {
+      "Path": "evidence/linux-scope.json",
+      "Sha256": "b758ec3e6dc2614c8c16861927b6c65250119e1b823c9b9c6e174a35a3476256"
+    },
+    {
+      "Path": "evidence/locked-restore.txt",
+      "Sha256": "1673e9bbcd908d6c34aad5f8282239c223612861029b92423c33dfe3de7ebd5a"
+    },
+    {
+      "Path": "evidence/maca-pty-cancel-before-keymap.json",
+      "Sha256": "7e37d002d789405a1651131406ed7b8b0cb3bdba047a47069a32cd819a087b71"
+    },
+    {
+      "Path": "evidence/maca-pty-cancel.json",
+      "Sha256": "4a2c3ecc3215f833b2049cadb2055493d639ccd73e25a0bc6286e9eb1cb43e05"
+    },
+    {
+      "Path": "evidence/maca-pty-control.json",
+      "Sha256": "240d06c10a96697fcc49aabcc9b0a9f2f4128e77e14bbdcc6f3660106667ef3c"
+    },
+    {
+      "Path": "evidence/maca-pty-error.json",
+      "Sha256": "22ab012bc8f0c280416e13da5e7226d966e145defbea1552d538236fb277dc6d"
+    },
+    {
+      "Path": "evidence/maca-pty-normal.json",
+      "Sha256": "10bea0145232390f9fbebb5ca4acc3a7bb2b945741d338dea9d7e53c8cc0a77c"
+    },
+    {
+      "Path": "evidence/maca-pty-resize.json",
+      "Sha256": "7fa5127f787eb5db49df41980beba12229bdf81e8c17a20095a5338a60260e34"
+    },
+    {
+      "Path": "evidence/maca-pty-small-exit.json",
+      "Sha256": "a6c50d5feb88c472cf455bbe00845a813c9a565584b59ab68c8fbb54c387e797"
+    },
+    {
+      "Path": "evidence/maca-scope.json",
+      "Sha256": "f33aefed9bcc1867fcaef91b81a96341c0b4beebb6ab1271735fe942b0a960a7"
+    },
+    {
+      "Path": "evidence/nuget-vulnerability-audit.json",
+      "Sha256": "4401abbcf95d7f474e2ffedcf68111b5c8541e4d1d15180ed0e8f9b4ebd8d26c"
+    },
+    {
+      "Path": "src/Directory.Build.props",
+      "Sha256": "5db21870b2d6450b0e3bb5fa16bdf4af49680c59de93bfa5b321daa5cf271133"
+    },
+    {
+      "Path": "src/Fixture.cs",
+      "Sha256": "50419159533f40bcf81d6467bd001bb0bef9a59d46f4bf914c64ad3c3b8b79fc"
+    },
+    {
+      "Path": "src/Lh01Fixture.csproj",
+      "Sha256": "23cc499fc374cfbe1782765c402c1ea67cdb6a10dde2dd58e03fa32cfba50838"
+    },
+    {
+      "Path": "src/NuGet.Config",
+      "Sha256": "33aa39ee926a9e2651ae39549df08dddc8e43d11896cf14d0465bc869d56b4c2"
+    },
+    {
+      "Path": "src/packages.lock.json",
+      "Sha256": "9a50991596ca623b8d4041f1ad193d9f3c18fcadaac18f5df824f2fb7baf4813"
+    },
+    {
+      "Path": "src/probe-session.ps1",
+      "Sha256": "9c574dcd3ab4f43427506d0895795658c470a59f8f32bd445f615811db682574"
+    },
+    {
+      "Path": "src/pty-probe.py",
+      "Sha256": "08a599542afb9f59fe4e122b425b01910b50ff093317ff53cb3bbcee7a518320"
+    }
+  ]
+}

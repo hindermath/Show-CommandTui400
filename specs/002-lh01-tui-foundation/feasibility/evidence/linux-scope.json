@@ -1,0 +1,85 @@
+{
+  "Mode": "Scope",
+  "ConfiguredTerminalModesRestored": null,
+  "NativeRestore": null,
+  "TerminalImmediate": null,
+  "ShellReadback": null,
+  "TerminalBefore": null,
+  "TerminalAfter": null,
+  "TerminalRestored": null,
+  "Before": {
+    "Pid": 1,
+    "Runspace": "10400bc2-c044-4952-b7aa-ed5505f6235c",
+    "Location": "/",
+    "Synthetic": 710,
+    "Preference": 1,
+    "FunctionResult": 710
+  },
+  "After": {
+    "Pid": 1,
+    "Runspace": "10400bc2-c044-4952-b7aa-ed5505f6235c",
+    "Location": "/",
+    "Synthetic": 710,
+    "Preference": 1,
+    "FunctionResult": 710
+  },
+  "ContextUnchanged": true,
+  "Results": [
+    {
+      "Checks": [
+        "unknown-or-unavailable:Unknown",
+        "unknown-or-unavailable:Unavailable",
+        "unknown-or-unavailable:Execute",
+        "unknown-or-unavailable:$(bad)",
+        "unknown-or-unavailable:Import",
+        "unknown-or-unavailable:Network",
+        "invalid-context",
+        "preserve-value:Help",
+        "preserve-value:Refresh",
+        "preserve-value:Back",
+        "preserve-value:Confirm",
+        "preserve-value:Next",
+        "preserve-value:Previous",
+        "duplicate-remap-rejected",
+        "missing-exit-rejected",
+        "escape-paths-preserved",
+        "control-display-sanitized",
+        "explicit-exit-only"
+      ],
+      "TargetExecutorPresent": false,
+      "Scope": "fixture model only; not terminal key proof"
+    },
+    {
+      "Pid": 1,
+      "Runspace": "10400bc2-c044-4952-b7aa-ed5505f6235c",
+      "Synthetic": 710,
+      "Location": "/",
+      "FunctionVisible": true,
+      "Framework": "2.5.0.0",
+      "UiEvents": []
+    },
+    {
+      "Pid": 1,
+      "Runspace": "10400bc2-c044-4952-b7aa-ed5505f6235c",
+      "Synthetic": 711,
+      "Location": "/",
+      "FunctionVisible": true,
+      "Framework": "2.5.0.0",
+      "UiEvents": []
+    },
+    {
+      "Pid": 1,
+      "Runspace": "10400bc2-c044-4952-b7aa-ed5505f6235c",
+      "Synthetic": 712,
+      "Location": "/",
+      "FunctionVisible": true,
+      "Framework": "2.5.0.0",
+      "UiEvents": []
+    },
+    {
+      "Case": "RedirectedUi",
+      "ErrorId": "CapabilityRejected,Lh01Feasibility.Fixture"
+    }
+  ],
+  "Failure": null
+}

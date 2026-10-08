@@ -1,0 +1,317 @@
+{
+  "schemaVersion": "1.1",
+  "reviewId": "e3a61bac-29c5-4238-990f-805496910c0c",
+  "mode": "Single",
+  "status": "NeedsRemediation",
+  "policy": "generic-markdown",
+  "reviewedAt": "2026-10-07T19:13:23.997732Z",
+  "repository": {
+    "root": ".",
+    "head": "9756b9b9c40432449a2dcbd392fdb7b97f412256",
+    "boundary": "Actual current local working tree, LH-01 is uncommitted; Single semantic intake review, no product/platform acceptance."
+  },
+  "requestEvidence": {
+    "path": "specs/intake-reviews/lh-01/request.json",
+    "normalizedSha256": "201495f5bf60b9d6d653bce1279aa56de6677f861db1dba66d9fa5a4b48bfda7"
+  },
+  "targets": [
+    {
+      "path": "intakes/LH-01.md",
+      "role": "Primary",
+      "normalizedSha256": "47bbafddb066e6face90e7a0356c592ea066f9d41778660b2a84bc5d11604acb",
+      "gitBlob": "N/A"
+    }
+  ],
+  "findings": [
+    {
+      "id": "IR001",
+      "severity": "Low",
+      "category": "LearnerReadabilityFirstUse",
+      "target": "intakes/LH-01.md",
+      "disposition": "Open; repair requires a separate explicitly authorized intake-repair/update and complete fresh independent review. No risk accepted.",
+      "owner": "Thorsten Hindermann / intake author",
+      "evidence": "intakes/LH-01.md:217-226 introduces NIST SSDF, CWE Top 25, WCAG 2.2 AA and Mermaid without a concise first-use explanation; later architecture/supply-chain acronyms likewise lack a reader introduction. Required by QG-01-001, .specify/memory/intake-authoring-profile.md Language and required content, Constitution VIII. Concrete core examples: SSDF, CWE Top25, Mermaid.",
+      "reevaluationTrigger": "Complete fresh independent review after the bilingual explanation correction or any reviewed target/source/policy change.",
+      "description": {
+        "de": "Die verbindliche Erstverwendungserklärung ist für mehrere Governance-Begriffe unvollständig. Das ausdrücklich voraussetzungsarme Publikum kann Zweck und Bedeutung von SSDF, CWE Top25 oder Mermaid nicht aus dem Lastenheft selbst entnehmen.",
+        "en": "First-use explanations are missing for several governance terms. The declared non-specialist audience cannot infer the purpose and meaning of SSDF, CWE Top25 or Mermaid from the intake itself."
+      },
+      "recommendation": {
+        "de": "Vor dem ersten Einsatz kurze DE/EN-Begriffserklärungen ergänzen, etwa SSDF als Rahmen für sichere Softwareentwicklung, CWE Top25 als priorisierte Liste verbreiteter Sicherheitsfehler und Mermaid als textbasierte Diagrammnotation. Auch die später eingeführten Architektur-/Security-Abkürzungen gezielt erklären oder vor ihrer Verwendung auf einen erklärenden eigenen Abschnitt verweisen. Normative Issue-ID-Sätze und offenen Technikentscheid erhalten.",
+        "en": "Add brief matching DE/EN introductions before first use, for example SSDF as a secure-development framework, CWE Top25 as a prioritized common-weakness list and Mermaid as a text diagram notation. Explain later architecture/security abbreviations or link to an explanatory intake section before use. Preserve normative issue-ID sentences and deferred technical choices."
+      }
+    }
+  ],
+  "questions": [],
+  "acceptedRisks": [],
+  "operatorExceptions": [],
+  "coverage": {
+    "individual": [
+      "intakes/LH-01.md"
+    ],
+    "series": [],
+    "workers": []
+  },
+  "summary": {
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 1
+  },
+  "supersedes": "N/A",
+  "reviewer": {
+    "type": "Automated",
+    "identity": "Codex /root/lh01_independent_review",
+    "authorIdentity": "Codex /root",
+    "distinctFromAuthor": true,
+    "independentHumanReview": false,
+    "boundary": "Different agent; writes only new LH-01 review triplet, no target or bound source mutations."
+  },
+  "policyEvidence": [
+    {
+      "path": ".agents/skills/speckit-intake-review/SKILL.md",
+      "normalizedSha256": "7ee37c0204511d768948e555c131907c458467d40330edb1cf57fd1b3bcedd8a"
+    },
+    {
+      "path": ".specify/presets/intake-review-governance/templates/intake-review-policy-template.json",
+      "normalizedSha256": "fcf4fc8e732e8d949dffcfc08de97ef6dd6f2b9aa23e00c68dd2ea525d2b96e0"
+    },
+    {
+      "path": ".specify/presets/intake-review-governance/templates/intake-review-checklist-template.md",
+      "normalizedSha256": "36821186987b48d42ec15db6ff347304478d4b204fc6f779fee26a466a866cdc"
+    },
+    {
+      "path": ".specify/memory/intake-authoring-policy.json",
+      "normalizedSha256": "8d42717c2cc7efc128a62e7967a1f877beee85fb2d53fedee1aa828aba9941d9"
+    },
+    {
+      "path": ".specify/memory/intake-authoring-profile.md",
+      "normalizedSha256": "a145327d6713ccf7ffe13d42ec12c4ee286e1594af7b7657b207c8ce1e22a467"
+    },
+    {
+      "path": "constitution.md",
+      "normalizedSha256": "8031f1fb425336dda6dc1e2e582e7cf2d90a680e4f4383253f6a294ae0bd1d6e"
+    },
+    {
+      "path": ".specify/memory/constitution.md",
+      "normalizedSha256": "8031f1fb425336dda6dc1e2e582e7cf2d90a680e4f4383253f6a294ae0bd1d6e"
+    },
+    {
+      "path": "AGENTS.md",
+      "normalizedSha256": "cfddd301099d82967a8170541d3cd77ba959d30a4d9c00f3c8f074181fd45830"
+    }
+  ],
+  "sourceEvidence": [
+    {
+      "sourceId": "SRC003",
+      "path": "specs/intake-authoring-receipts/lh-00.json",
+      "normalizedSha256": "b8c63bf04438e3b9b1c4e0a811163c3d57f01d26f893491641d5b48e9b33c664"
+    },
+    {
+      "sourceId": "SRC004",
+      "path": "specs/intake-review-result.json",
+      "normalizedSha256": "def6d53f6d9ad78a362c534c06cba1e43e77d751097f039bf23836128ba119be"
+    },
+    {
+      "sourceId": "SRC005",
+      "path": "specs/intake-review-report.md",
+      "normalizedSha256": "d1ef60e7be2b582e2a780996083b07f1bdd19a6fc188d915b475f6789a5606ce"
+    },
+    {
+      "sourceId": "SRC006",
+      "path": "docs/validation/lh00/pilot-owner-decision.json",
+      "normalizedSha256": "b7fabf2d53c9e05b0fc6103979a135d0f4ebb73350d7e94b77bc56220af6fbb3"
+    },
+    {
+      "sourceId": "SRC007",
+      "path": "docs/validation/lh00/acceptance.md",
+      "normalizedSha256": "9a1579a9db3df8519841a9423fa6541a30213d0037f31219442831c46d44800b"
+    },
+    {
+      "sourceId": "SRC008",
+      "path": "constitution.md",
+      "normalizedSha256": "8031f1fb425336dda6dc1e2e582e7cf2d90a680e4f4383253f6a294ae0bd1d6e"
+    },
+    {
+      "sourceId": "SRC009",
+      "path": ".specify/memory/constitution.md",
+      "normalizedSha256": "8031f1fb425336dda6dc1e2e582e7cf2d90a680e4f4383253f6a294ae0bd1d6e"
+    },
+    {
+      "sourceId": "SRC010",
+      "path": "AGENTS.md",
+      "normalizedSha256": "cfddd301099d82967a8170541d3cd77ba959d30a4d9c00f3c8f074181fd45830"
+    },
+    {
+      "sourceId": "SRC011",
+      "path": "docs/Bedienkonzept.md",
+      "normalizedSha256": "42bd0a9243fcda6b1d78ee5976d5dccfcb2b48685c834fff26a942d584779e5a"
+    },
+    {
+      "sourceId": "SRC012",
+      "path": "docs/Lastenheft-Plan.md",
+      "normalizedSha256": "e29789e79d9f626f3716befaa9e369df83455ab6aa6c7558c01c7d4ef4cdf60f"
+    },
+    {
+      "sourceId": "SRC013",
+      "path": "docs/intake-governance.md",
+      "normalizedSha256": "400b56476e75f1f34fe1ffbda3595e55b68aeda03ecba782da50d6da8079e30d"
+    },
+    {
+      "sourceId": "SRC014",
+      "path": "docs/Entwicklungsumgebung.md",
+      "normalizedSha256": "0c4fe962582d0bb2ab7b313a770fdf01bb526a09c2061ceef1be7a1b7ed40409"
+    },
+    {
+      "sourceId": "SRC015",
+      "path": ".specify/memory/intake-authoring-policy.json",
+      "normalizedSha256": "8d42717c2cc7efc128a62e7967a1f877beee85fb2d53fedee1aa828aba9941d9"
+    },
+    {
+      "sourceId": "SRC016",
+      "path": ".specify/memory/intake-authoring-profile.md",
+      "normalizedSha256": "a145327d6713ccf7ffe13d42ec12c4ee286e1594af7b7657b207c8ce1e22a467"
+    },
+    {
+      "sourceId": "SRC017",
+      "path": "scripts/config/spec-kit-project-statistics-governance-presets.json",
+      "normalizedSha256": "3b41eede1bf49a3b7cc035c73aeecf06acf29447a65039288328f517708a8d64"
+    },
+    {
+      "sourceId": "SRC018",
+      "path": "docs/security/README.md",
+      "normalizedSha256": "2b4da0e2bf3e8c2f5672319c223a0420b6a6c6618374db5eb6c1d552c28332d3"
+    },
+    {
+      "sourceId": "SRC019",
+      "path": "docs/security/msl-applicability.md",
+      "normalizedSha256": "c082a84ee2e4802d5d56d9d9cf7ebcd73a11dd4eb7f96943098f7169e284829f"
+    },
+    {
+      "sourceId": "SRC020",
+      "path": "docs/security/regulatory-applicability.md",
+      "normalizedSha256": "63b67e588cbec0dbc0100a8b2dc4561426efd696ef3196a249845fdc76fbde61"
+    },
+    {
+      "sourceId": "SRC021",
+      "path": "docs/documentation-governance.md",
+      "normalizedSha256": "307b3951c4a7785646c416708dae3b4af85a581831d1ef5f2d25ec2ceabc4622"
+    },
+    {
+      "sourceId": "SRC022",
+      "path": "requirements/intake-governance-config.json",
+      "normalizedSha256": "3b885d1895ac2f5c3783a64d3be1a99cf645d61f7622afcc65c8f173ff4f6d4b"
+    }
+  ],
+  "snapshotEvidence": [
+    {
+      "sourceId": "SRC001",
+      "path": "N/A",
+      "normalizedSha256": "7abd501f3e2b9700c911271ec2838ab321ac8b70758fce89bc5cda97c79f00f2",
+      "boundary": "Locally verified original temporary snapshot, no remote freshness retrieval"
+    },
+    {
+      "sourceId": "SRC002",
+      "path": "N/A",
+      "normalizedSha256": "0d6f14417b55ffcd799fec5a9f24348a91c8d8e992a435d96d323ea65851f8f1",
+      "boundary": "Locally verified original temporary snapshot, no remote freshness retrieval"
+    }
+  ],
+  "authoringEvidence": {
+    "receiptId": "dca52a2e-da00-4403-9ab1-fee65e76e56b",
+    "intakeId": "bca39f76-fdb5-440a-b889-b12e8f4f4f78",
+    "receipt": {
+      "path": "specs/intake-authoring-receipts/lh-01.json",
+      "normalizedSha256": "f37720d14a65414abe60866a02544adb4fbae10c9ac0cf9e16088d80ce7b7874"
+    }
+  },
+  "dimensionCoverage": [
+    {
+      "dimension": "IdentityAudienceScope",
+      "status": "Pass",
+      "evidence": "One LH-01 intake identity, owner and root author; audience needs basic terminal/file/PowerShell knowledge only. Current-session TUI foundation and later-feature non-goals explicit."
+    },
+    {
+      "dimension": "LanguageAndFirstUse",
+      "status": "NeedsRemediation",
+      "evidence": "Matching DE-first/EN-second FR/AC/QG/OD and generally B2 text, but governance acronyms NIST SSDF/CWE Top25 and Mermaid are introduced without concise explanations for the declared non-specialist audience. See IR001."
+    },
+    {
+      "dimension": "RequirementsAndAcceptance",
+      "status": "Pass",
+      "evidence": "All 30 existing Issue FR/AC/QG language lines preserved verbatim; 11 FR, five AC, five QG and two OD in each language. Added six FR derive from LH-01 baseline scope. E01-01 through E01-07 give concrete expected outcomes, platform/version/reviewer recording and no fabricated PASS."
+    },
+    {
+      "dimension": "SessionAndActionContract",
+      "status": "Pass",
+      "evidence": "Caller session identity differs from scope visibility; no hidden second runspace. Navigation/confirmation/refresh/back/exit and future execution separated; Enter is contextual, not field advance or implicit execution. F4/F9/F10 and device work remain assigned to later features, fixtures not finished functionality."
+    },
+    {
+      "dimension": "DependenciesAndPilotRoute",
+      "status": "Pass",
+      "evidence": "LH-00 foundation and T045 recorded human limited permission verified, no early Completed. LH-01 standalone outside series; LH-02 requires separate request plus domain completion; full LH-00 acceptance after LH-02 before LH-03. Collection remains one LH-00 series member and two physical active intakes."
+    },
+    {
+      "dimension": "GovernanceAndApplicability",
+      "status": "Pass",
+      "evidence": "G01-G12 explicitly map all applicable quality, evidence and acceptance. SSDF/CWE mandatory; security/architecture/A11Y/supply-chain/regulatory applicability tied to current sources and reassessment. Product/tooling/organisation separated; current N/A not permanent exception."
+    },
+    {
+      "dimension": "SecurityPrivacy",
+      "status": "Pass",
+      "evidence": "Synthetic local fixtures, controlled terminal characters, unknown/unavailable action no effects, no text evaluation/import/network/persistence through navigation, safe restoration and exact security ADR path. No credentials or unnecessary personal data observed; owner and Mac identity relevant."
+    },
+    {
+      "dimension": "AccessibilityTextFirst",
+      "status": "Pass",
+      "evidence": "Keyboard-only, named screen-reader/Braille workflows, text browser documentation, textual names/focus/status/errors and remapping alternatives. Practical proof remains open. Mermaid has equivalent complete text flow; rendering/colour never sole status evidence."
+    },
+    {
+      "dimension": "PlatformAndTechnicalDecisions",
+      "status": "Pass",
+      "evidence": "macOS/Linux/Windows with Mac A M2 identity, Mac B, native Windows11 and Ubuntu24.04/WSL2 proof separate. Historical PowerShell version not product minimum. OD-01-001/002 remain expressly deferred technical choices before implementation; C# candidate, primary language/MSL unknown, runtime/framework/session separately decided."
+    },
+    {
+      "dimension": "ReferencesAndProvenance",
+      "status": "Pass",
+      "evidence": "Target/current receipt binding and all twenty repository source hashes verified; UTF8 normalization exact, local links resolve, constitution copies equal. Public HTML and extracted issue body/user snapshot verified locally against receipt. SnapshotOnly is not a new remote freshness claim. Existing LH-00 result Ready is prerequisite, not LH-01 review."
+    },
+    {
+      "dimension": "AuthorityAndEmbeddedPrompts",
+      "status": "Pass",
+      "evidence": "Inactive specify/autonomous templates require new authority and own current receipt/review; LocalImplementation future default does not authorize current product work. Exactly one separately commissioned review action; authoring text retains its historical not-reviewed state without rewrite."
+    },
+    {
+      "dimension": "DocumentationAndFollowups",
+      "status": "Pass",
+      "evidence": "FU-LH01-001 explicitly records bounded older index/guidance/profile statements, owner/trigger/deadline/risk and coherent later update. No scope authority for now repairing those bound sources; no documentation follow-up waives security/A11Y. Statistics and delivery deferred to own authorized work."
+    }
+  ],
+  "reportPath": "specs/intake-reviews/lh-01/report.md",
+  "nextAction": "Separately authorize $speckit-intake-repair intakes/LH-01.md for IR001 with traceable receipt update and complete fresh distinct-agent review; no Specify/autonomous/implementation until a current accepted review and separate execution authority.",
+  "reevaluationTrigger": "Any target, bound source, profile/policy or scope change requires fresh complete independent review.",
+  "validation": [
+    {
+      "shell": "Bash",
+      "exitCode": 0,
+      "output": "PASS: intake review e3a61bac-29c5-4238-990f-805496910c0c is current (Single, NeedsRemediation, 1 targets)"
+    },
+    {
+      "shell": "PowerShell",
+      "exitCode": 0,
+      "output": "PASS: intake review e3a61bac-29c5-4238-990f-805496910c0c is current (Single, NeedsRemediation, 1 targets)"
+    }
+  ],
+  "authoringValidation": [
+    {
+      "shell": "Bash",
+      "exitCode": 0,
+      "output": "PASS: intake authoring dca52a2e-da00-4403-9ab1-fee65e76e56b is current (ReadyForReview, 22 sources, intakes/LH-01.md)"
+    },
+    {
+      "shell": "PowerShell",
+      "exitCode": 0,
+      "output": "PASS: intake authoring dca52a2e-da00-4403-9ab1-fee65e76e56b is current (ReadyForReview, 22 sources, intakes/LH-01.md)"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "Mode": "cancel",
+  "Command": [
+    "pwsh",
+    "-NoLogo",
+    "-NoProfile",
+    "-File",
+    "/Users/thorstenhindermann/RiderProjects/Show-CommandTui400/specs/002-lh01-tui-foundation/feasibility/src/probe-session.ps1",
+    "-Assembly",
+    "/tmp/lh01-proof-build/bin/net10.0/Lh01Fixture.dll",
+    "-Mode",
+    "Ui",
+    "-WaitForExitAck"
+  ],
+  "Environment": {
+    "TERM": "xterm-256color",
+    "Surface": "synthetic local macOS PTY, not physical terminal/assistive technology"
+  },
+  "ExitCode": -15,
+  "Steps": [
+    "UI-render-observed",
+    "Ctrl+C",
+    "timeout-terminated"
+  ],
+  "TermiosRestored": null,
+  "TermiosObservationError": "(25, 'Inappropriate ioctl for device')",
+  "TermiosBefore": [
+    11010,
+    3,
+    19200,
+    1483,
+    9600,
+    9600,
+    [
+      "04",
+      "ff",
+      "ff",
+      "7f",
+      "17",
+      "15",
+      "12",
+      "ff",
+      "03",
+      "1c",
+      "1a",
+      "19",
+      "11",
+      "13",
+      "16",
+      "0f",
+      "01",
+      "00",
+      "14",
+      "ff"
+    ]
+  ],
+  "TermiosAfter": null,
+  "CursorShowSequenceObserved": true,
+  "AlternateScreenLeaveObserved": false,
+  "TranscriptSha256": "ddaed07fbce85aedaad99be05873093c1683f50494a128e287fe8fc1a527be70",
+  "Result": null,
+  "Transcript": "\u001b[?1h\u001b=\u001b[?1h\u001b=\u001b]0;\u0007LH01_BEGIN_UI\r\n\u001b[?1049h\u001b[2J\u001b[1;1H\u001b[?25l\u001b[?1003h\u001b[?1015h\u001b[?1006h\u001b[?2004h\u001b[6n\u001b[?u\u001b[0c\u001b]0;LH-01 FIXTURE — F3 exit / Ende, F8 injected error / Testfehler\u001b\\\u001b[1;1H\u001b[39m\u001b[49m┌┤LH-01 FIXTURE — F3 exit / Ende, F8 injected error / Testfehler├──────────────────────────────────┐\u001b[2;1H│                                                                                                  │\u001b[3;1H│ \u001b[30m\u001b[103m\u001b[1msynthetic-value\u001b[97m\u001b[47m\u001b[22m                                                                                 \u001b[39m\u001b[49m │\u001b[4;1H│                                                                                                  │\u001b[5;1H│ F1 Help/Hilfe; F5 Refresh; F12/Esc Back/Zurueck; Alt+X Exit; F4/9/10/11 unavailable              │\u001b[6;1H│                                                                                                  │\u001b[7;1H│                                                                                                  │\u001b[8;1H│                                                                                                  │\u001b[9;1H│                                                                                                  │\u001b[10;1H│                                                                                                  │\u001b[11;1H│                                                                                                  │\u001b[12;1H│                                                                                                  │\u001b[13;1H│                                                                                                  │\u001b[14;1H│                                                                                                  │\u001b[15;1H│                                                                                                  │\u001b[16;1H│                                                                                                  │\u001b[17;1H│                                                                                                  │\u001b[18;1H│                                                                                                  │\u001b[19;1H│                                                                                                  │\u001b[20;1H│                                                                                                  │\u001b[21;1H│                                                                                                  │\u001b[22;1H│                                                                                                  │\u001b[23;1H│                                                                                                  │\u001b[24;1H└──────────────────────────────────────────────────────────────────────────────────────────────────┘\u001b[5 q\u001b[?25h\u001b[3;18H\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h\u001b[?25h"
+}
