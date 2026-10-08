@@ -1,0 +1,12 @@
+{
+  "ExitCode": 0,
+  "Result": {
+    "BeforeLocal": 1483,
+    "AfterLocal": 536872395,
+    "Pendin": 536870912
+  },
+  "BeforeLocal": 1483,
+  "AfterLocal": 536872395,
+  "Source": "SDK-native control, no .NET/PowerShell/Terminal.Gui",
+  "ObservedDelta": 536870912
+}

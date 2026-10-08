@@ -1,0 +1,451 @@
+{
+  "Date": "2026-10-08",
+  "Scope": "NuGet locked content provenance, not source-to-binary attestation; native load not implied",
+  "Packages": [
+    {
+      "Package": "Terminal.Gui",
+      "Version": "2.5.0",
+      "ContentHashMatchesCache": true,
+      "LockContentHash": "TSSgilWaPD0powRvSYhroPVsz+3Q0E4bgrDg4NDpGI8FLjgvPqZue8FSroQz6XtcyvdpCjOF9xzQnJTQf3hLGg==",
+      "Repository": {
+        "type": "git",
+        "url": "https://github.com/tui-cs/Terminal.Gui.git",
+        "branch": "main",
+        "commit": "ece73d25c37df9bb17cb0c0d2171abd4d98eeaff"
+      },
+      "LicenseMetadata": {
+        "Type": "expression",
+        "Value": "MIT"
+      },
+      "NativeAssets": [],
+      "NoticeAssets": []
+    },
+    {
+      "Package": "ColorHelper",
+      "Version": "1.8.1",
+      "ContentHashMatchesCache": true,
+      "LockContentHash": "rblWXd/02TfwJjX53xEfQnbnDRKxCm09VtavV8JaIcmIFWt9efNf6xTQ3WeXgy/she5R31eRTtnizFoUoDrs5w==",
+      "Repository": {
+        "url": "https://github.com/iamartyom/ColorHelper"
+      },
+      "LicenseMetadata": {
+        "Type": "expression",
+        "Value": "MIT"
+      },
+      "NativeAssets": [],
+      "NoticeAssets": []
+    },
+    {
+      "Package": "JetBrains.Annotations",
+      "Version": "2026.2.0",
+      "ContentHashMatchesCache": true,
+      "LockContentHash": "drvAEaI7Xf4wU6dx4UTB9MoZWXZlraaQ0qoeThPQ411FxNhId7QdUTukIC9I8aUHP0ycAaGwZNKqSvfOZQvUlg==",
+      "Repository": {
+        "type": "git",
+        "url": "https://github.com/JetBrains/JetBrains.Annotations.git"
+      },
+      "LicenseMetadata": {
+        "Type": "expression",
+        "Value": "MIT"
+      },
+      "NativeAssets": [],
+      "NoticeAssets": []
+    },
+    {
+      "Package": "Markdig",
+      "Version": "1.3.2",
+      "ContentHashMatchesCache": true,
+      "LockContentHash": "fZgOC/3CswUrndjDTac70aQpYdtxbW5+5bRumR7vzvI2HJbkmgKisB1c9oT+GA6v0jB/JDR9BLa9FiPzQmaK6A==",
+      "Repository": {
+        "type": "git",
+        "url": "https://github.com/xoofx/markdig",
+        "commit": "fc705234fa211d179ee1d5e7656b51ab99f70ca9"
+      },
+      "LicenseMetadata": {
+        "Type": "expression",
+        "Value": "BSD-2-Clause"
+      },
+      "NativeAssets": [],
+      "NoticeAssets": []
+    },
+    {
+      "Package": "Microsoft.Extensions.Configuration",
+      "Version": "10.0.11",
+      "ContentHashMatchesCache": true,
+      "LockContentHash": "wlhRqZW8LcJPa+vk2oLAc/REXDItHtkFQdf/QcXYGZbZOO13izcsKY1pCvuFQYwUiZD+hwSZwsKASjqT+BNaVg==",
+      "Repository": {
+        "type": "git",
+        "url": "https://github.com/dotnet/dotnet",
+        "commit": "e2f47b0110ed922f21a1522da67279133ce28f32"
+      },
+      "LicenseMetadata": {
+        "Type": "expression",
+        "Value": "MIT"
+      },
+      "NativeAssets": [],
+      "NoticeAssets": [
+        "THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "Package": "Microsoft.Extensions.Configuration.Abstractions",
+      "Version": "10.0.11",
+      "ContentHashMatchesCache": true,
+      "LockContentHash": "fVi053xdpda9Em7vSkmgVxO/PtgC2m78ekReKWsgcyskqY0U82Bz/MONwxpGzI0hElYKJfw+fupqMVeKW3fSaA==",
+      "Repository": {
+        "type": "git",
+        "url": "https://github.com/dotnet/dotnet",
+        "commit": "e2f47b0110ed922f21a1522da67279133ce28f32"
+      },
+      "LicenseMetadata": {
+        "Type": "expression",
+        "Value": "MIT"
+      },
+      "NativeAssets": [],
+      "NoticeAssets": [
+        "THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "Package": "Microsoft.Extensions.Configuration.Binder",
+      "Version": "10.0.11",
+      "ContentHashMatchesCache": true,
+      "LockContentHash": "rFn8RuszZn3qquPVkDytMUlPc2+rXl9MCoygwc1XmAgC5vg5/oXJ8hkOosOrLoBLsqdTy4lFwP6iQdPS9uSYOA==",
+      "Repository": {
+        "type": "git",
+        "url": "https://github.com/dotnet/dotnet",
+        "commit": "e2f47b0110ed922f21a1522da67279133ce28f32"
+      },
+      "LicenseMetadata": {
+        "Type": "expression",
+        "Value": "MIT"
+      },
+      "NativeAssets": [],
+      "NoticeAssets": [
+        "THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "Package": "Microsoft.Extensions.Configuration.FileExtensions",
+      "Version": "10.0.11",
+      "ContentHashMatchesCache": true,
+      "LockContentHash": "mDW7KVFB05M6jiRUyaZiOMWhS31n5HlSZwoYctHAZAucD4sMDJ70IxOmkGDt6RpstchD+keWBjhdzcMpSkWvWQ==",
+      "Repository": {
+        "type": "git",
+        "url": "https://github.com/dotnet/dotnet",
+        "commit": "e2f47b0110ed922f21a1522da67279133ce28f32"
+      },
+      "LicenseMetadata": {
+        "Type": "expression",
+        "Value": "MIT"
+      },
+      "NativeAssets": [],
+      "NoticeAssets": [
+        "THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "Package": "Microsoft.Extensions.Configuration.Json",
+      "Version": "10.0.11",
+      "ContentHashMatchesCache": true,
+      "LockContentHash": "nSPrT8U/cNoB4coqkmnanAMK9PsL7lsjG+LLUKEwHRFwS6E78b8S1wdv/y88EOxBhasWov1rLd7RTHmmsYPOLg==",
+      "Repository": {
+        "type": "git",
+        "url": "https://github.com/dotnet/dotnet",
+        "commit": "e2f47b0110ed922f21a1522da67279133ce28f32"
+      },
+      "LicenseMetadata": {
+        "Type": "expression",
+        "Value": "MIT"
+      },
+      "NativeAssets": [],
+      "NoticeAssets": [
+        "THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "Package": "Microsoft.Extensions.DependencyInjection.Abstractions",
+      "Version": "10.0.11",
+      "ContentHashMatchesCache": true,
+      "LockContentHash": "/a1aJz4m7ylhEDf25ugQChLQoN5XwoGjWw/BoR/ZWWKsO1v4DdJElS1uyngahz4B/eOzjFk1KNTkarRLE5wsIg==",
+      "Repository": {
+        "type": "git",
+        "url": "https://github.com/dotnet/dotnet",
+        "commit": "e2f47b0110ed922f21a1522da67279133ce28f32"
+      },
+      "LicenseMetadata": {
+        "Type": "expression",
+        "Value": "MIT"
+      },
+      "NativeAssets": [],
+      "NoticeAssets": [
+        "THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "Package": "Microsoft.Extensions.FileProviders.Abstractions",
+      "Version": "10.0.11",
+      "ContentHashMatchesCache": true,
+      "LockContentHash": "JOjac6SQQgZmdmB8WGEw61/7siqMZoWJMkmq2p1goJGxqI59lO6oB4bOl0jNsbaPBdYy5Mlkb+6U7T4+CjnD8Q==",
+      "Repository": {
+        "type": "git",
+        "url": "https://github.com/dotnet/dotnet",
+        "commit": "e2f47b0110ed922f21a1522da67279133ce28f32"
+      },
+      "LicenseMetadata": {
+        "Type": "expression",
+        "Value": "MIT"
+      },
+      "NativeAssets": [],
+      "NoticeAssets": [
+        "THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "Package": "Microsoft.Extensions.FileProviders.Physical",
+      "Version": "10.0.11",
+      "ContentHashMatchesCache": true,
+      "LockContentHash": "Tq/UqMaczePv9yWwSsJZRgKtgA46djVR5xHj/lZBCueQ3ag8f9v5mu0EdhrNx7tXxNk+Y9OurG2oKuSKINjr0A==",
+      "Repository": {
+        "type": "git",
+        "url": "https://github.com/dotnet/dotnet",
+        "commit": "e2f47b0110ed922f21a1522da67279133ce28f32"
+      },
+      "LicenseMetadata": {
+        "Type": "expression",
+        "Value": "MIT"
+      },
+      "NativeAssets": [],
+      "NoticeAssets": [
+        "THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "Package": "Microsoft.Extensions.FileSystemGlobbing",
+      "Version": "10.0.11",
+      "ContentHashMatchesCache": true,
+      "LockContentHash": "2i6rtW/B5rCnWCnhdmWWEmaM9O0HD0zsPY9eRqa++y4tclI3Uw8zvGbBvhY/LjAdtf8gUHhUPcAWj3DRlWMXmQ==",
+      "Repository": {
+        "type": "git",
+        "url": "https://github.com/dotnet/dotnet",
+        "commit": "e2f47b0110ed922f21a1522da67279133ce28f32"
+      },
+      "LicenseMetadata": {
+        "Type": "expression",
+        "Value": "MIT"
+      },
+      "NativeAssets": [],
+      "NoticeAssets": [
+        "THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "Package": "Microsoft.Extensions.Logging.Abstractions",
+      "Version": "10.0.7",
+      "ContentHashMatchesCache": true,
+      "LockContentHash": "tIEcQ2gvERrH2KiCjdsVcHGhXt9lIsuDStfOIeZWr7/fP8IXhGiYfx0/80PNI7WPO2IYuFtlZLSlnTS8+/Mchw==",
+      "Repository": {
+        "type": "git",
+        "url": "https://github.com/dotnet/dotnet",
+        "commit": "b16286c2284fecf303dbc12a0bb152476d662e44"
+      },
+      "LicenseMetadata": {
+        "Type": "expression",
+        "Value": "MIT"
+      },
+      "NativeAssets": [],
+      "NoticeAssets": [
+        "THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "Package": "Microsoft.Extensions.Options",
+      "Version": "10.0.11",
+      "ContentHashMatchesCache": true,
+      "LockContentHash": "eY1GAKcTfD2maP27J84X9IovT3yjHJ2dVDzPmDg6/XqYvt3jMzJhtfQCLjG9pVsZGAd+8DQ2QrjaDcs2+VQLGw==",
+      "Repository": {
+        "type": "git",
+        "url": "https://github.com/dotnet/dotnet",
+        "commit": "e2f47b0110ed922f21a1522da67279133ce28f32"
+      },
+      "LicenseMetadata": {
+        "Type": "expression",
+        "Value": "MIT"
+      },
+      "NativeAssets": [],
+      "NoticeAssets": [
+        "THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "Package": "Microsoft.Extensions.Primitives",
+      "Version": "10.0.11",
+      "ContentHashMatchesCache": true,
+      "LockContentHash": "SXcz+kF+4Oo9b1+55zntpJFYfwb1jw66ioxptyNOOTDc8g2FHnBFWjZpsWfCvZIhzr0x+4e2trVTs4OKwQfBtw==",
+      "Repository": {
+        "type": "git",
+        "url": "https://github.com/dotnet/dotnet",
+        "commit": "e2f47b0110ed922f21a1522da67279133ce28f32"
+      },
+      "LicenseMetadata": {
+        "Type": "expression",
+        "Value": "MIT"
+      },
+      "NativeAssets": [],
+      "NoticeAssets": [
+        "THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "Package": "Onigwrap",
+      "Version": "1.0.11",
+      "ContentHashMatchesCache": true,
+      "LockContentHash": "5/WAxSYWfiiPzp1X13qqdqjFmYLKDD/U7Vh3WCkKxWG9BjqdrXnQE5fCKCFJX+xWvuYLTxwZIVWBwBWObViE8g==",
+      "Repository": {
+        "type": "git",
+        "url": "https://github.com/aikawayataro/Onigwrap.git",
+        "commit": "dd8a1cbbe3190c18033b96f2922b95c1761ae793"
+      },
+      "LicenseMetadata": {
+        "Type": "expression",
+        "Value": "MIT"
+      },
+      "NativeAssets": [
+        "runtimes/win-arm64/native/libonigwrap.dll",
+        "runtimes/linux-bionic-arm64/native/libonigwrap.so",
+        "runtimes/linux-x64/native/libonigwrap.so",
+        "runtimes/maccatalyst-arm64/native/libonigwrap.dylib",
+        "runtimes/win-x64/native/libonigwrap.dll",
+        "runtimes/osx-arm64/native/libonigwrap.dylib",
+        "runtimes/linux-musl-x64/native/libonigwrap.so",
+        "runtimes/win-x86/native/libonigwrap.dll",
+        "runtimes/linux-bionic-x64/native/libonigwrap.so",
+        "runtimes/linux-musl-arm64/native/libonigwrap.so",
+        "runtimes/linux-arm64/native/libonigwrap.so",
+        "runtimes/osx-x64/native/libonigwrap.dylib",
+        "runtimes/maccatalyst-x64/native/libonigwrap.dylib"
+      ],
+      "NoticeAssets": [
+        "THIRD-PARTY-NOTICES.TXT"
+      ]
+    },
+    {
+      "Package": "System.IO.Abstractions",
+      "Version": "22.2.0",
+      "ContentHashMatchesCache": true,
+      "LockContentHash": "fwnNXyIPb7ABPLae6K9YZz0FAkRjb2s/nElRWrg73usMveY/qdOHjKaNvAF7iAfmzTl1W4wa7S/SnmIc4LDvTg==",
+      "Repository": {
+        "type": "git",
+        "url": "https://github.com/TestableIO/System.IO.Abstractions.git",
+        "commit": "ec68061d1cf181d50f089f979301f874885bf0be"
+      },
+      "LicenseMetadata": {
+        "Type": "expression",
+        "Value": "MIT"
+      },
+      "NativeAssets": [],
+      "NoticeAssets": []
+    },
+    {
+      "Package": "TestableIO.System.IO.Abstractions",
+      "Version": "22.2.0",
+      "ContentHashMatchesCache": true,
+      "LockContentHash": "BQPyr0A1s2HvpVTZIyolrZ3ZdPn8DU2tqciaK1oco3pjm76fiKIk75eup4R9reZjNS75M+WJIICOlNX5OFt50g==",
+      "Repository": {
+        "type": "git",
+        "url": "https://github.com/TestableIO/System.IO.Abstractions.git",
+        "commit": "ec68061d1cf181d50f089f979301f874885bf0be"
+      },
+      "LicenseMetadata": {
+        "Type": "expression",
+        "Value": "MIT"
+      },
+      "NativeAssets": [],
+      "NoticeAssets": []
+    },
+    {
+      "Package": "TestableIO.System.IO.Abstractions.Wrappers",
+      "Version": "22.2.0",
+      "ContentHashMatchesCache": true,
+      "LockContentHash": "0GW9i46ozm687WGAWsBHWMhLR7l1HmKwhiSU2hQrbFnI5m2YRfqXwqTQNjnOwT8BdbvcGqwMr97/zlnPWa1u1Q==",
+      "Repository": {
+        "type": "git",
+        "url": "https://github.com/TestableIO/System.IO.Abstractions.git",
+        "commit": "ec68061d1cf181d50f089f979301f874885bf0be"
+      },
+      "LicenseMetadata": {
+        "Type": "expression",
+        "Value": "MIT"
+      },
+      "NativeAssets": [],
+      "NoticeAssets": []
+    },
+    {
+      "Package": "Testably.Abstractions.FileSystem.Interface",
+      "Version": "10.3.0",
+      "ContentHashMatchesCache": true,
+      "LockContentHash": "5ebMaoADkzjfW7GnZYKaUebV8XmUn++C/4sKk1PTzCiddEgbSKBq3pW4EWEi70rYJAK0gA1yDWrYFeHq18FvHQ==",
+      "Repository": {
+        "type": "git",
+        "url": "https://github.com/Testably/Testably.Abstractions.git",
+        "commit": "9b967ee024caa2d47e3ac27a23d26ea55cd20ded"
+      },
+      "LicenseMetadata": {
+        "Type": "expression",
+        "Value": "MIT"
+      },
+      "NativeAssets": [],
+      "NoticeAssets": []
+    },
+    {
+      "Package": "TextMateSharp",
+      "Version": "2.0.4",
+      "ContentHashMatchesCache": true,
+      "LockContentHash": "5Pvn+A4zb1IF+ACAVhgw1aGf9kTyx6j7v5hdup7nCS89Nzby8KQAlCfQ54VC/GAsEoQwh4zKa5MKlAaql8nkPg==",
+      "Repository": {
+        "type": "git",
+        "url": "https://github.com/danipen/TextMateSharp",
+        "commit": "622d1b240a5be474939857c0b2780249022f14a3"
+      },
+      "LicenseMetadata": {
+        "Type": "expression",
+        "Value": "MIT"
+      },
+      "NativeAssets": [],
+      "NoticeAssets": []
+    },
+    {
+      "Package": "TextMateSharp.Grammars",
+      "Version": "2.0.4",
+      "ContentHashMatchesCache": true,
+      "LockContentHash": "jzOY00q5u5Vs4L9n2m2PnRZDGwWt2uwkOLh7qlVdCx1kkGSn5eaW5XgnYCyTzEbsCwLV2xlEolnNkr/wuIMAbA==",
+      "Repository": {
+        "type": "git",
+        "commit": "622d1b240a5be474939857c0b2780249022f14a3"
+      },
+      "LicenseMetadata": {
+        "Type": "expression",
+        "Value": "MIT"
+      },
+      "NativeAssets": [],
+      "NoticeAssets": []
+    },
+    {
+      "Package": "Wcwidth",
+      "Version": "4.0.1",
+      "ContentHashMatchesCache": true,
+      "LockContentHash": "PMU8u3pGf9nUkee39KMrB8qqId7u7kyGWaZpOh9E4Mal3xChq+relS/hHQOicGAswyzi7F5DjXjac0mTnRBX8Q==",
+      "Repository": {
+        "type": "git",
+        "url": "https://github.com/spectreconsole/wcwidth",
+        "commit": "64a3f523d5dc27124e04ff9079137ac2c5c72143"
+      },
+      "LicenseMetadata": {
+        "Type": "expression",
+        "Value": "MIT"
+      },
+      "NativeAssets": [],
+      "NoticeAssets": []
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "Mode": "Scope",
+  "ConfiguredTerminalModesRestored": null,
+  "NativeRestore": null,
+  "TerminalImmediate": null,
+  "ShellReadback": null,
+  "TerminalBefore": null,
+  "TerminalAfter": null,
+  "TerminalRestored": null,
+  "Before": {
+    "Pid": 97178,
+    "Runspace": "9255db54-3217-4d01-af2b-808b45973cc7",
+    "Location": "/Users/thorstenhindermann/RiderProjects/Show-CommandTui400",
+    "Synthetic": 710,
+    "Preference": 1,
+    "FunctionResult": 710
+  },
+  "After": {
+    "Pid": 97178,
+    "Runspace": "9255db54-3217-4d01-af2b-808b45973cc7",
+    "Location": "/Users/thorstenhindermann/RiderProjects/Show-CommandTui400",
+    "Synthetic": 710,
+    "Preference": 1,
+    "FunctionResult": 710
+  },
+  "ContextUnchanged": true,
+  "Results": [
+    {
+      "Checks": [
+        "unknown-or-unavailable:Unknown",
+        "unknown-or-unavailable:Unavailable",
+        "unknown-or-unavailable:Execute",
+        "unknown-or-unavailable:$(bad)",
+        "unknown-or-unavailable:Import",
+        "unknown-or-unavailable:Network",
+        "invalid-context",
+        "preserve-value:Help",
+        "preserve-value:Refresh",
+        "preserve-value:Back",
+        "preserve-value:Confirm",
+        "preserve-value:Next",
+        "preserve-value:Previous",
+        "duplicate-remap-rejected",
+        "missing-exit-rejected",
+        "escape-paths-preserved",
+        "control-display-sanitized",
+        "explicit-exit-only"
+      ],
+      "TargetExecutorPresent": false,
+      "Scope": "fixture model only; not terminal key proof"
+    },
+    {
+      "Pid": 97178,
+      "Runspace": "9255db54-3217-4d01-af2b-808b45973cc7",
+      "Synthetic": 710,
+      "Location": "/Users/thorstenhindermann/RiderProjects/Show-CommandTui400",
+      "FunctionVisible": true,
+      "Framework": "2.5.0.0",
+      "UiEvents": []
+    },
+    {
+      "Pid": 97178,
+      "Runspace": "9255db54-3217-4d01-af2b-808b45973cc7",
+      "Synthetic": 711,
+      "Location": "/Users/thorstenhindermann/RiderProjects/Show-CommandTui400",
+      "FunctionVisible": true,
+      "Framework": "2.5.0.0",
+      "UiEvents": []
+    },
+    {
+      "Pid": 97178,
+      "Runspace": "9255db54-3217-4d01-af2b-808b45973cc7",
+      "Synthetic": 712,
+      "Location": "/Users/thorstenhindermann/RiderProjects/Show-CommandTui400",
+      "FunctionVisible": true,
+      "Framework": "2.5.0.0",
+      "UiEvents": []
+    },
+    {
+      "Case": "RedirectedUi",
+      "ErrorId": "CapabilityRejected,Lh01Feasibility.Fixture"
+    }
+  ],
+  "Failure": null
+}
