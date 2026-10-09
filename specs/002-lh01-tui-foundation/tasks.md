@@ -2,7 +2,7 @@
 
 **Datum / Date:** 2026-10-09. **Feature:** `002-lh01-tui-foundation`.
 **Profil / Profile:** `show-commandtui400-de-en`. **Owner:** Thorsten Hindermann.
-**Status:** Aufgabenplanung; alle Aufgaben offen / task planning; every task open.
+**Status:** T001–T017 lokal abgeschlossen; T018–T063 offen / T001–T017 locally complete; T018–T063 open.
 
 ## Grundlage und Arbeitsgrenzen / Inputs and work boundaries
 
@@ -23,14 +23,14 @@ domain input. Historical research and failed restoration retain their context.
 The 13 synthetic PTY cases and 67 observed assertions prove the fixture, not a
 future product implementation. Intake review and technical review are distinct.
 
-Dieser Auftrag erzeugt nur diese Aufgabenliste. Er startet keine Aufgabe,
+Der ursprüngliche Tasks-Auftrag erzeugte nur diese Aufgabenliste. Er startet keine Aufgabe,
 Implementierung, Serienmutation, Installation, Veröffentlichung oder Lieferung.
 Ein späterer Auftrag muss den Aufgabenbereich und Schreibumfang nennen. Aufgaben
 für zentrale Register oder native CI benötigen passende Autorität für das andere
 Repository beziehungsweise Remote-Ziel. Eine offene Voraussetzung darf nicht als
 erledigt angekreuzt werden, nur weil ein Vorschlag erstellt wurde.
 
-This request creates the task list only. A later request must authorize execution
+The original Tasks request created the task list only. A later request must authorize execution
 and its write scope. Central registry work and native CI need authority for their
 repository or remote target. A proposal does not complete an applied prerequisite.
 No installation, release or automatic follow-up is implied.
@@ -89,23 +89,23 @@ vorgelagerten startrelevanten Bedingungen belegt sind.
 **Goal:** Align governance and provenance and review secure architecture before
 product code. T017 passes only with evidenced prerequisite completion.
 
-- [ ] T001 Aktuellen Git-Stand, LH-00-Receipt/Ready-Review/T045, LH-01-Receipt/Ready-Review, Modell-Routingstatus, Werkzeuge, exakte 14-Preset-Matrix und beauftragten Schreibumfang in `docs/validation/lh01/start-readiness.md` erfassen; Drift zuerst bewerten, Refresh nur mit passender Autorität. / Record current Git, provenance, T045, routing, tools, fourteen presets and authorized writes; assess drift before changes and refresh only with authority.
-- [ ] T002 Die bereits gewählte Sprache C#14 und MSL-Begründung aus OD-01-002/F01–07 samt Alternativen und Grenzen des eigenen managed Codes in `docs/architecture/decisions/002-lh01-language-msl.md` festhalten; keine erneute freie Kandidatenwahl. / Record the selected language and own-code memory safety, alternatives and native limits from existing proof.
-- [ ] T003 [P] Host-.NET10/net10.0 und nicht mitverteiltes Host-SMA in `docs/architecture/decisions/003-lh01-runtime.md` begründen; keine zweite Runtime oder PowerShell-Sitzung laden. / Record host runtime and non-distributed host SMA, without a second runtime or session.
-- [ ] T004 [P] Terminal.Gui2.5.0 mit explizitem dotnet-Treiber, ausgeschlossenen ANSI-Fallback und nativen Vertrauensgrenzen in `docs/architecture/decisions/004-lh01-framework.md` begründen; Onigwrap-Inventar nicht als Aktivierung ausgeben. / Record explicit driver selection, excluded fallback and native boundaries; inventory does not prove native execution.
-- [ ] T005 [P] Gewählte Mindestversion PowerShell7.6.4 und belegte Patch-/Hostgrenzen in `docs/architecture/decisions/005-lh01-powershell-minimum.md` festhalten; Container-Scope und Mac-UI7.6.6 getrennt darstellen. / Record the selected minimum and separate container scope from Mac UI patch evidence.
-- [ ] T006 [P] In-process PSCmdlet, sichtbare Scopegrenzen, Capabilityprüfung vor Änderungen, Terminal-Lease, StopProcessing und externe Killgrenzen in `docs/architecture/decisions/006-lh01-session-terminal.md` begründen; Darwin-ABI nicht auf andere OS übertragen. / Record session and terminal boundaries, lease/cancellation and external termination limits, without copying Darwin ABI to other systems.
-- [ ] T007 Nach T002–T006 Kontext-, Baustein-, Laufzeit- und Deployment-Sicht, Schnittstellen, Qualitätsszenarien, Risiken und technische Schulden in `docs/architecture/lh01-tui-foundation.md` sowie prüfbare Sicherheitsszenarien in `docs/security/security-quality-scenarios-lh01.md` erstellen; Aktionsmodell vom Framework trennen. / After the ADRs, document views, interfaces, quality scenarios and risks with framework-independent actions.
-- [ ] T008 Nach T002–T006 `docs/security/msl-applicability.md`, `docs/security/secure-coding-language-rules.md` und `docs/security/security-checklist.md` um LH-01 erweitern; eigene managed Sicherheit, Eingaben, Interop/OS/Runtime und sichere Fehler getrennt bewerten, LH-00-Historie erhalten. / Extend existing security evidence for LH-01 with separate managed/native and safe input/error rules, preserving history.
-- [ ] T009 Datenflüsse ohne private Dumps/Persistenz, Entwicklungs-KI, Logs und regulatorische Rollen in `docs/security/regulatory-applicability.md` konkretisieren; DS-GVO/KI-VO/CRA/NIS2/DORA je Produkt/Werkzeuge/Organisation führen, Unknown als Open mit Thorsten, Aktion und Frist belassen. / Update the existing regulatory index by scope, with privacy flows and attributable Open items; no blanket private-project exemption or duplicate legal decision.
-- [ ] T010 Nach T007–T009 STRIDE/CIA-Bedrohungsmodell, maßgebliche CWE-/CAPEC-Fälle und zwei getrennte Schutzschichten Aktions-Whitelist/Kontextprüfung in `docs/security/threat-model.md` ergänzen; Risiken und sichere Rückkehr konkret verifizieren. / Extend the threat model with independent action/context protection, relevant weakness/attack references and explicit restoration risks.
-- [ ] T011 Nach T010 Sicherheitskonzepte in `docs/security/arc42-section-8-lh01.md` und S-ADR in `docs/security/adr/s-adr-lh01-session-display.md` erstellen; Steuerzeichen, private Kontextdaten, Capabilitygrenze, Fehler und Abhängigkeiten behandeln. / Record cross-cutting security and its ADR at the required security ADR path.
-- [ ] T012 Nach T004 Abhängigkeiten/Lockfiles/Registries/Lizenzen/native Assets in `docs/security/dependency-audit.md` und `docs/security/supply-chain-evidence.md` scopebezogen bewerten; SAMM in `docs/security/samm-assessment.md`, OpenSSF in `docs/security/openssf-assessment.md` und ASVS/AI-SBOM/ZeroTrust/C3A/C5 in den zugeordneten Evidenzdateien bewerten. Onigwrap-Buildprovenienz vor künftiger Highlightingnutzung offen führen; keine neue Automation einrichten. / Assess supply chain and applicability with scoped evidence, follow-ups and native-use gates; no new services or automation.
-- [ ] T013 Nach T007–T012 Secure-Development-Startbaseline und Architekturprüfung in `docs/security/secure-development/2026-10-09-lh01-tui-foundation/evidence-matrix.md`, deren `baseline.json` nach installierter Policy und `docs/validation/lh01/architecture-start-review.md` durch passenden Auftrag herstellen; unabhängigen Prüfer, exakte Quellenbindung und offene Befunde nachweisen. / Establish policy-conforming security baseline and distinct architecture review; planning Ready does not substitute for these start checks.
-- [ ] T014 Nach T013 Sprache/MSL/Runtime und Statistikreferenz125 begründet in `constitution.md`, `.specify/memory/constitution.md`, allen fünf identischen Guidance-Dateien, betroffenen lokalen Templates, `docs/project-statistics.config.json`, `docs/security/README.md`, `docs/Entwicklungsumgebung.md` und `docs/intake-governance.md` ausrichten; zentrale Registerzeile mit passender separater Autorität tatsächlich anwenden und in `docs/validation/lh01/registry-alignment.md` belegen. Kein Flottenrollout; Vorschlag allein schließt das Gate nicht. / Align local sources and the applied central row under matching authority, with atomic parity and justified statistics reference; preserve histories and avoid fleet rollout.
-- [ ] T015 Erst nach allen gebundenen Quellenänderungen aus T008/T009/T014 ein gewöhnliches Intake-Update für `intakes/LH-01.md` mit Vorgängerarchiven/Vorgangs-IDs/`specs/intake-authoring-receipts/lh-01.json` durchführen; FR/AC/QG/OD und Pilotgrenzen erhalten. LH-00-Bindungen ebenfalls prüfen und bei Drift `intakes/LH-00.md` samt `specs/intake-authoring-receipts/lh-00.json` regulär aktualisieren; keine bloße Hashersetzung. / Update provenance through normal lineage-preserving intake operations after bound source changes; refresh affected LH-00 as well, preserving domain IDs.
-- [ ] T016 Nach T015 beide betroffenen Intakes vollständig durch einen anderen Prüfer reviewen, aktuelle LH-01-Evidence in `specs/intake-reviews/lh-01/report.md`/`result.json` und LH-00 gemäß dessen aktuellem Reviewpfad liefern; Receipt/Review in Bash und PowerShell prüfen. Auswirkungen gezielt in `specs/002-lh01-tui-foundation/spec.md`, `plan.md` und `tasks.md` abgleichen und speckit-analyze durchführen; geänderte technische Reviewbindungen gezielt erneuern. / Obtain distinct complete intake reviews and paired validation, reconcile only affected design statements and refresh changed technical review bindings.
-- [ ] T017 Nach T001–T016 Quellenfrische, Modell-Routing Aligned, passende Werkzeuge/14-Preset-Matrix, angewendete Registerausrichtung, Security-/Architecture-Gates und fehlende startrelevante Analysebefunde in `docs/validation/lh01/start-readiness.md` erneut belegen; konkreten Implementierungsauftrag verlangen. Spätere praktische Abnahme nicht mit Startfreigabe verwechseln. / Recheck all start gates and authority; only then allow product work, keeping deferred practical acceptance separate.
+- [X] T001 Aktuellen Git-Stand, LH-00-Receipt/Ready-Review/T045, LH-01-Receipt/Ready-Review, Modell-Routingstatus, Werkzeuge, exakte 14-Preset-Matrix und beauftragten Schreibumfang in `docs/validation/lh01/start-readiness.md` erfassen; Drift zuerst bewerten, Refresh nur mit passender Autorität. / Record current Git, provenance, T045, routing, tools, fourteen presets and authorized writes; assess drift before changes and refresh only with authority.
+- [X] T002 Die bereits gewählte Sprache C#14 und MSL-Begründung aus OD-01-002/F01–07 samt Alternativen und Grenzen des eigenen managed Codes in `docs/architecture/decisions/002-lh01-language-msl.md` festhalten; keine erneute freie Kandidatenwahl. / Record the selected language and own-code memory safety, alternatives and native limits from existing proof.
+- [X] T003 [P] Host-.NET10/net10.0 und nicht mitverteiltes Host-SMA in `docs/architecture/decisions/003-lh01-runtime.md` begründen; keine zweite Runtime oder PowerShell-Sitzung laden. / Record host runtime and non-distributed host SMA, without a second runtime or session.
+- [X] T004 [P] Terminal.Gui2.5.0 mit explizitem dotnet-Treiber, ausgeschlossenen ANSI-Fallback und nativen Vertrauensgrenzen in `docs/architecture/decisions/004-lh01-framework.md` begründen; Onigwrap-Inventar nicht als Aktivierung ausgeben. / Record explicit driver selection, excluded fallback and native boundaries; inventory does not prove native execution.
+- [X] T005 [P] Gewählte Mindestversion PowerShell7.6.4 und belegte Patch-/Hostgrenzen in `docs/architecture/decisions/005-lh01-powershell-minimum.md` festhalten; Container-Scope und Mac-UI7.6.6 getrennt darstellen. / Record the selected minimum and separate container scope from Mac UI patch evidence.
+- [X] T006 [P] In-process PSCmdlet, sichtbare Scopegrenzen, Capabilityprüfung vor Änderungen, Terminal-Lease, StopProcessing und externe Killgrenzen in `docs/architecture/decisions/006-lh01-session-terminal.md` begründen; Darwin-ABI nicht auf andere OS übertragen. / Record session and terminal boundaries, lease/cancellation and external termination limits, without copying Darwin ABI to other systems.
+- [X] T007 Nach T002–T006 Kontext-, Baustein-, Laufzeit- und Deployment-Sicht, Schnittstellen, Qualitätsszenarien, Risiken und technische Schulden in `docs/architecture/lh01-tui-foundation.md` sowie prüfbare Sicherheitsszenarien in `docs/security/security-quality-scenarios-lh01.md` erstellen; Aktionsmodell vom Framework trennen. / After the ADRs, document views, interfaces, quality scenarios and risks with framework-independent actions.
+- [X] T008 Nach T002–T006 `docs/security/msl-applicability.md`, `docs/security/secure-coding-language-rules.md` und `docs/security/security-checklist.md` um LH-01 erweitern; eigene managed Sicherheit, Eingaben, Interop/OS/Runtime und sichere Fehler getrennt bewerten, LH-00-Historie erhalten. / Extend existing security evidence for LH-01 with separate managed/native and safe input/error rules, preserving history.
+- [X] T009 Datenflüsse ohne private Dumps/Persistenz, Entwicklungs-KI, Logs und regulatorische Rollen in `docs/security/regulatory-applicability.md` konkretisieren; DS-GVO/KI-VO/CRA/NIS2/DORA je Produkt/Werkzeuge/Organisation führen, Unknown als Open mit Thorsten, Aktion und Frist belassen. / Update the existing regulatory index by scope, with privacy flows and attributable Open items; no blanket private-project exemption or duplicate legal decision.
+- [X] T010 Nach T007–T009 STRIDE/CIA-Bedrohungsmodell, maßgebliche CWE-/CAPEC-Fälle und zwei getrennte Schutzschichten Aktions-Whitelist/Kontextprüfung in `docs/security/threat-model.md` ergänzen; Risiken und sichere Rückkehr konkret verifizieren. / Extend the threat model with independent action/context protection, relevant weakness/attack references and explicit restoration risks.
+- [X] T011 Nach T010 Sicherheitskonzepte in `docs/security/arc42-section-8-lh01.md` und S-ADR in `docs/security/adr/s-adr-lh01-session-display.md` erstellen; Steuerzeichen, private Kontextdaten, Capabilitygrenze, Fehler und Abhängigkeiten behandeln. / Record cross-cutting security and its ADR at the required security ADR path.
+- [X] T012 Nach T004 Abhängigkeiten/Lockfiles/Registries/Lizenzen/native Assets in `docs/security/dependency-audit.md` und `docs/security/supply-chain-evidence.md` scopebezogen bewerten; SAMM in `docs/security/samm-assessment.md`, OpenSSF in `docs/security/openssf-assessment.md` und ASVS/AI-SBOM/ZeroTrust/C3A/C5 in den zugeordneten Evidenzdateien bewerten. Onigwrap-Buildprovenienz vor künftiger Highlightingnutzung offen führen; keine neue Automation einrichten. / Assess supply chain and applicability with scoped evidence, follow-ups and native-use gates; no new services or automation.
+- [X] T013 Nach T007–T012 Secure-Development-Startbaseline und Architekturprüfung in `docs/security/secure-development/2026-10-09-lh01-tui-foundation/evidence-matrix.md`, deren `baseline.json` nach installierter Policy und `docs/validation/lh01/architecture-start-review.md` durch passenden Auftrag herstellen; unabhängigen Prüfer, exakte Quellenbindung und offene Befunde nachweisen. / Establish policy-conforming security baseline and distinct architecture review; planning Ready does not substitute for these start checks.
+- [X] T014 Nach T013 Sprache/MSL/Runtime und Statistikreferenz125 begründet in `constitution.md`, `.specify/memory/constitution.md`, allen fünf identischen Guidance-Dateien, betroffenen lokalen Templates, `docs/project-statistics.config.json`, `docs/security/README.md`, `docs/Entwicklungsumgebung.md` und `docs/intake-governance.md` ausrichten; zentrale Registerzeile mit passender separater Autorität tatsächlich anwenden und in `docs/validation/lh01/registry-alignment.md` belegen. Kein Flottenrollout; Vorschlag allein schließt das Gate nicht. / Align local sources and the applied central row under matching authority, with atomic parity and justified statistics reference; preserve histories and avoid fleet rollout.
+- [X] T015 Erst nach allen gebundenen Quellenänderungen aus T008/T009/T014 ein gewöhnliches Intake-Update für `intakes/LH-01.md` mit Vorgängerarchiven/Vorgangs-IDs/`specs/intake-authoring-receipts/lh-01.json` durchführen; FR/AC/QG/OD und Pilotgrenzen erhalten. LH-00-Bindungen ebenfalls prüfen und bei Drift `intakes/LH-00.md` samt `specs/intake-authoring-receipts/lh-00.json` regulär aktualisieren; keine bloße Hashersetzung. / Update provenance through normal lineage-preserving intake operations after bound source changes; refresh affected LH-00 as well, preserving domain IDs.
+- [X] T016 Nach T015 beide betroffenen Intakes vollständig durch einen anderen Prüfer reviewen, aktuelle LH-01-Evidence in `specs/intake-reviews/lh-01/report.md`/`result.json` und LH-00 gemäß dessen aktuellem Reviewpfad liefern; Receipt/Review in Bash und PowerShell prüfen. Auswirkungen gezielt in `specs/002-lh01-tui-foundation/spec.md`, `plan.md` und `tasks.md` abgleichen und speckit-analyze durchführen; geänderte technische Reviewbindungen gezielt erneuern. / Obtain distinct complete intake reviews and paired validation, reconcile only affected design statements and refresh changed technical review bindings.
+- [X] T017 Nach T001–T016 Quellenfrische, Modell-Routing Aligned, passende Werkzeuge/14-Preset-Matrix, angewendete Registerausrichtung, Security-/Architecture-Gates und fehlende startrelevante Analysebefunde in `docs/validation/lh01/start-readiness.md` erneut belegen; konkreten Implementierungsauftrag verlangen. Spätere praktische Abnahme nicht mit Startfreigabe verwechseln. / Recheck all start gates and authority; only then allow product work, keeping deferred practical acceptance separate.
 
 **Checkpoint:** Vor T017 keine Produktdateien oder Produkt-Builds erzeugen.
 Nicht startrelevante spätere Prüfgrenzen werden mit Owner/Trigger erhalten.
@@ -359,14 +359,14 @@ context file, reinstall or automatic Home synchronization.
    each final task's genuine conditions and preserve practical evidence gaps and
    separate feature/next-pilot decisions.
 
-Diese Liste enthält 63 offene Aufgaben: 17 Startvoraussetzungen, 10 Grundlagen,
+Diese Liste umfasst 63 Aufgaben (aktueller Bearbeitungsstand oben): 17 Startvoraussetzungen, 10 Grundlagen,
 9 US1-, 8 US2-, 7 US3- und 12 Abschlussaufgaben. 13 Aufgaben sind unter den genannten
 Voraussetzungen parallelisierbar. Format: Checkbox, fortlaufende ID, optionale
 Parallelmarke, Storymarke ausschließlich in Storyphasen, konkreter Zielpfad.
 
-This list contains 63 open tasks: 17 readiness, 10 foundation, 9 US1, 8 US2,
-7 US3 and 12 final tasks. Thirteen tasks allow scoped parallel work. No task has
-been executed or marked complete by this planning command.
+This list contains 63 tasks (see current execution status above): 17 readiness, 10 foundation, 9 US1, 8 US2,
+7 US3 and 12 final tasks. Thirteen tasks allow scoped parallel work. The original planning command executed no task; later completion is recorded
+in the current execution section.
 
 ## Historische Prüfung der Tasks-Erstellung / Historical task-generation validation
 
@@ -415,3 +415,33 @@ Driver noch Produkt und schließt keine der 63 Aufgaben ab.
 The owner commissions issue-based coordination and an agent-readable contract.
 Driver implementation, Mac A product proof and separate target execution remain
 future tasks. Preparation grants no execution authority or completed checkbox.
+
+## Lokale Startvorbereitung 2026-10-09 / Local readiness execution
+
+Owner hat T001–T017 beauftragt, die Fortsetzung trotz historischer/praktischer
+Checklistenlücken sowie den lokalen Routingrefresh ausdrücklich freigegeben.
+T001–T012 liefern Eingangsnachweis, getrennte ADRs, Architektur und Sicherheits-
+kontrollentwurf. T013 ist unabhängig Ready im Architektur-/Sicherheitsentwurfsumfang. T014 ist nach ausdrücklicher separater Ownerautorität lokal angewendet; T015–T017
+erneuern Herkunft, unabhängige Reviews und Startprüfung.
+Keine Produktdateien, Plattformläufe, Serienmutation, Commits oder Remote-Writes.
+
+The owner commissions bounded readiness and explicitly permits continuation with
+historical/practical checklist gaps and local routing refresh. T001–T012 supply
+input, ADRs, architecture and security design. Distinct T013 review is Ready for the design scope only.
+Central T014 writes are locally applied under separate explicit authority.
+T015–T017 renew provenance, distinct reviews and readiness. No product/platform/series or delivery action occurred.
+
+## Abschluss dieser Startvorbereitung / Readiness preparation closeout
+
+DE: T001–T017 lokal abgeschlossen (17/63); 46 Produkt-/Abnahme-/Lieferaufgaben
+bleiben offen. T014 angewendet, T015 gewöhnliche Updates mit exakten Archiven,
+T016 andere vollständige Reviews und technischer Abgleich, T017 aktueller
+[Startnachweis](../../docs/validation/lh01/start-readiness.md). Keine Serienstatusänderung,
+Produktdatei, Produktprüfung, Commit oder Remote-Lieferung. Statistik-/Homogenitätsdrift
+ist offen für T061; reale Terminals/Screenreader Deferred, Braillehardware Excluded.
+
+EN: T001–T017 are locally complete (17/63), with46 product/acceptance/delivery tasks
+open. Applied alignment, ordinary archived updates, distinct complete reviews and
+current readiness are recorded. No series status, product file/test, commit or
+remote delivery changed. Statistics/homogeneity drift waits for T061; practical
+terminal/screen-reader proof remains Deferred and Braille hardware Excluded.

@@ -1,6 +1,6 @@
 # Lastenheft-Plan / Intake order
 
-Stand / Date: 07.10.2026. Plan-IDs sind keine GitHub-Issue-Nummern. / Plan IDs are not GitHub issue numbers.
+Stand / Date: 09.10.2026. Plan-IDs sind keine GitHub-Issue-Nummern. / Plan IDs are not GitHub issue numbers.
 
 | Plan-ID | Gegenstand / Subject | Abhängigkeiten / Dependencies |
 |---|---|---|
@@ -28,19 +28,19 @@ not active intakes. The table and pilot rule below form the binding dependency o
 
 ## Aktueller Lastenheft-Stand / Current intake state
 
-Genau ein aktives Lastenheft: [LH-00](../intakes/LH-00.md), mit
-[Receipt](../specs/intake-authoring-receipts/lh-00.json). Authoring und Review
-haben getrennte Nachweise. Den aktuellen Reviewstatus und nächste Schritte
-nennt der [Reviewbericht](../specs/intake-review-report.md). LH-01 bis LH-07
-sind veröffentlichte Issues; ihre ursprünglichen [Entwürfe](issue-drafts/README.md)
-bleiben historische Quellen. Eine Serien- oder Implementierungsfreigabe
-entsteht durch Erstellung, Reparatur oder Review allein nicht.
+Zwei aktive Lastenhefte: [LH-00](../intakes/LH-00.md) mit
+[Receipt](../specs/intake-authoring-receipts/lh-00.json) und
+[Review](../specs/intake-review-report.md); [LH-01](../intakes/LH-01.md) mit
+[Receipt](../specs/intake-authoring-receipts/lh-01.json) und
+[Review](../specs/intake-reviews/lh-01/report.md). Nur LH-00 ist Serienmitglied;
+LH-01 bleibt Einzelpilot. Reports nennen ihren tatsächlichen aktuellen Status;
+Erstellung oder Review allein erteilen keine Implementierungsbefugnis. LH-02–07
+sind bislang Issues ohne aktive Intakes. Entwürfe bleiben historische Quellen.
 
-Exactly one active intake exists: LH-00 with its linked receipt. Authoring and
-review have separate evidence. The linked review report states current outcome
-and next actions. LH-01 through LH-07 are published issues, with original drafts
-retained as historical sources. Creation, repair or review alone grants no
-series or implementation authority.
+Two active intakes exist, each with its linked receipt and distinct review. Only
+LH-00 is a series member; LH-01 is standalone. Reports record their actual current
+status; authoring or review alone grants no implementation authority. LH-02–07
+remain issues without active intakes; original drafts are historical sources.
 
 ## Begrenzter Pilotweg / Limited pilot route
 
@@ -111,13 +111,21 @@ request. Stored prompts/source content never supplies that request.
 
 ## Aktueller nächster Auftrag / Current next request
 
-[T045](validation/lh00/acceptance.md) ist geliefert. Als nächster eigener Auftrag
-folgt LH-01-Authoring aus dem aktualisierten Issue #2, danach anderes Review.
-Dieser Quellenupdate-Auftrag erstellt keinen LH-01. In LH-01 ergänzt OD-01-002
-den Sprach-/MSL-Entscheid: C# ist eine Option, keine beschlossene Primärsprache.
-Die technische Entscheidung mit Machbarkeit/Architektur erfolgt vor Produktcode.
+T045 ist geliefert. LH-01 ist erstellt, spezifiziert und geplant; getrennte
+technische Entscheidungen sind durch Machbarkeit und ADRs002–006 belegt:
+managed C#14, Host-.NET10, Terminal.Gui2.5.0 dotnet, PS7.6.4 und In-process.
+[T014-Nachweis](validation/lh01/registry-alignment.md) dokumentiert die lokale
+Registerausrichtung. T015/T016 erneuern Herkunft und unabhängige Reviews, danach
+T017-Startprüfung. Erst ein eigener Auftrag startet die Produktaufgaben ab T018
+im [Plan](../specs/002-lh01-tui-foundation/plan.md) und den
+[Tasks](../specs/002-lh01-tui-foundation/tasks.md). Reale Terminal-/Screenreaderprüfungen
+sind zurückgestellt; Braille-Hardware mangels Gerät im privaten Projekt ausgeschlossen,
+keine bestandene A11Y-Vollabnahme. Pilotfolge und LH-00-Vollabnahme bleiben erhalten.
 
-T045 is delivered. The next separate request authors LH-01 from updated issue #2,
-then obtains a distinct review. This refresh creates no LH-01. OD-01-002 assigns
-language/memory-safety choice to LH-01; C# is an option, not a selected language.
-Record feasibility and architecture evidence before product code.
+T045 is delivered; LH-01 is authored, specified and planned. Feasibility and
+separate ADRs evidence managed C#14, host.NET10, Terminal.Gui2.5.0 dotnet, PS7.6.4
+and in-process integration. T014 records local registry alignment; T015/T016 renew
+provenance and distinct reviews, then T017 checks readiness. Product tasks from
+T018 require a separate request. Physical terminal/screen reader proof is deferred;
+Braille hardware proof is excluded for lack of a device, not passed. The standalone
+pilot sequence and later full LH-00 acceptance stay unchanged.

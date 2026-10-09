@@ -14,3 +14,11 @@ Owner Thorsten, Wiedervorlage 2026-10-12; Trigger Web-/Dienst-/Cloud-Scope oder 
 Web-application ASVS checks are N/A for this local file process. Input validation and safe errors apply through CWE/SSDF; no ASVS conformity is claimed.
 
 Owner Thorsten; reassess on 2026-10-12 or changed web/service/cloud/contract scope.
+
+## LH-01 Startentwurf 2026-10-09 / Readiness design
+
+Historische LH-00-Bewertungen oben bleiben erhalten. / Prior LH-00 context is preserved.
+
+LH-01-Produkt-ASVS N/A: lokales Binärcmdlet ohne Web/API/Auth/HTTP-Dienst. Sichere Eingaben und Fehler weiterhin Applicable über SSDF/CWE. Bei neuem Web-/API-Scope neu bewerten; Owner Thorsten.
+
+Product ASVS is N/A for the local binary cmdlet without web/API/auth service. SSDF/CWE input/error controls still apply; Thorsten reassesses changed web/API scope.

@@ -1,0 +1,30 @@
+{
+  "applied": true,
+  "scope": "Show-CommandTui400 only",
+  "centralPaths": [
+    "constitution.md",
+    ".specify/memory/constitution.md",
+    "AGENTS.md",
+    "CLAUDE.md",
+    "GEMINI.md",
+    ".github/copilot-instructions.md",
+    ".github/agents/copilot-instructions.md"
+  ],
+  "centralAfterRawSha256": {
+    "constitution.md": "8a4cb92944de7cca0c9a6df2792fca0b8e3396d85a39b97314ceaf813da1b2b8",
+    ".specify/memory/constitution.md": "8a4cb92944de7cca0c9a6df2792fca0b8e3396d85a39b97314ceaf813da1b2b8",
+    "AGENTS.md": "0828af987d6bac2d47de6585f5310f974e3d160aa921665524593038a3dc0cea",
+    "CLAUDE.md": "a4ac0c9d71f125a9c83fd958168c51f8205654b05bd32ba70e397c617392dac1",
+    "GEMINI.md": "0ca50db1d121f34c16ba858ad137c456cfe3bee4f7308b9107440546c45afb2b",
+    ".github/copilot-instructions.md": "40674c9824aecb8f5fb9457a762910dadb0fe574d4058d806a621687316a6aa9",
+    ".github/agents/copilot-instructions.md": "40674c9824aecb8f5fb9457a762910dadb0fe574d4058d806a621687316a6aa9"
+  },
+  "operativeRegistry": {
+    "targetChanges": 1,
+    "otherEntriesUnchanged": true,
+    "primaryLanguage": "C#",
+    "mslStatus": "msl",
+    "privateContentPublished": false
+  },
+  "boundaries": "Local only; no commit, remote write, Home sync or fleet rollout"
+}

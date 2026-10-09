@@ -22,3 +22,11 @@ no OpenSSF score is claimed. Product SBOM, VEX and build provenance remain Open
 until a product delivery exists. An embedded-model AI-SBOM is N/A for this file
 process, which delivers no model. Codex authoring is present and still needs its
 own agent, privacy and regulatory assessment. Reassess at build/model/release scope.
+
+## LH-01 Startentwurf 2026-10-09 / Readiness design
+
+Historische LH-00-Bewertungen oben bleiben erhalten. / Prior LH-00 context is preserved.
+
+Produkt-SBOM/Lizenzen/Notices/Buildherkunft bei tatsächlichem Modulbuild T059; bisher Fixtureinventar statt Produkt-SBOM. VEX nur bei konkreter Betroffenheit. Öffentliche gepinnte NuGet-Quelle, locked Restore, keine Host-SMA-Weitergabe. Paket-Tag/Hash ist kein SLSA-Zertifikat. Onigwrap-Native-Provenienz vor Aktivierung offen, Thorsten/vor Nutzung.
+
+T059 produces actual distributable-module SBOM/notices/build provenance; fixture inventory is not a product SBOM. VEX depends on a concrete vulnerability. Pin public NuGet and locked restore; never redistribute host SMA. Hash/tag proves no certification. Native Onigwrap provenance stays open before activation, owned by Thorsten.

@@ -1,0 +1,22 @@
+{
+  "status": "AppliedLocally",
+  "owner": "Thorsten Hindermann",
+  "scope": "Show-CommandTui400 only; no fleet rollout/Home sync/commit/remote writes",
+  "environmentRow": {
+    "before": "| `RiderProjects/Show-CommandTui400` | Concept-stage PowerShell 7 terminal command prompting; macOS/Linux/Windows; implementation language, framework, minimum version and MSL status undecided | Until product scaffold exists: secret scan, homogeneity, exact preset-matrix validation, statistics renderer and PowerShell analysis; product build/test commands remain open | DE-first/EN-second product docs, intakes and shared guidance at approximately CEFR B2; explain terms on first use; keyboard, screenreader, Braille/text access and WCAG 2.2 AA where applicable | Conservative `80`; provisional concept/scripting Thorsten-Solo `100`, reevaluate to `125` if C#/.NET is selected | Five synchronized agent-guidance files; agy, opencode, claude, copilot, codex; explicit fourteen-preset profile; no implementation authority from setup |",
+    "after": "| `RiderProjects/Show-CommandTui400` | Concept-stage PowerShell 7 terminal command prompting; macOS/Linux/Windows; managed C#14 (MSL for own code), host .NET10/net10.0, Terminal.Gui2.5.0 explicit dotnet driver, minimum PowerShell7.6.4; native/runtime trust boundaries separate | Until product scaffold exists: secret scan, homogeneity, exact preset-matrix validation, statistics renderer and PowerShell analysis; product build/test commands remain open | DE-first/EN-second product docs, intakes and shared guidance at approximately CEFR B2; explain terms on first use; keyboard, screenreader, Braille/text access and WCAG 2.2 AA where applicable | Conservative `80`; Thorsten-Solo `125` after evidenced C# selection; delivery density is no time/quality measure | Five synchronized agent-guidance files; agy, opencode, claude, copilot, codex; explicit fourteen-preset profile; no implementation authority from setup |"
+  },
+  "operativeRegistry": {
+    "before": {
+      "primaryLanguage": "Undecided; PowerShell 7 target environment",
+      "mslStatus": "unknown"
+    },
+    "after": {
+      "primaryLanguage": "C#",
+      "mslStatus": "msl"
+    }
+  },
+  "requiredConsistency": "Both Level-0 constitution copies and five shared guidance surfaces must reflect only this project decision; keep other projects unchanged.",
+  "schemaAdaptation": "Semantic memory-safe proposal is encoded by the existing registry enum msl, not a new status.",
+  "authority": "Owner: Freigegeben, Bitte ausführen; 2026-10-09. No commit/remote/Home/fleet authority."
+}

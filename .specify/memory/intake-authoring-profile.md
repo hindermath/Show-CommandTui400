@@ -56,7 +56,8 @@ Ziel: `intakes/LH-NN.md`; Receipt: `specs/intake-authoring-receipts/lh-nn.json`.
 Explizites Ziel hat Vorrang vor Profilregel und generischem Preset-Fallback.
 Plan-IDs sind keine Issue-Nummern. `docs/Lastenheft-Plan.md` ist die einzige
 verbindliche Reihenfolge; Issue-Entwürfe sind kein aktiver Intake-Bestand.
-Der aktive Bestand enthält nur LH-00. T045 ist begrenzt freigegeben; weitere
+Der aktive Bestand enthält LH-00 und LH-01; nur LH-00 gehört zur Serie.
+T045 ist begrenzt freigegeben; weitere
 Intakes brauchen jeweils eigenen Auftrag. Quellenreihenfolge verleiht keinen stillen Vorrang.
 Für Änderungen an existierenden Zielen `speckit-intake-update` verwenden.
 Löschung erfolgt nur mit eigener Autorität über Archiv und Tombstone.
@@ -64,7 +65,7 @@ Löschung erfolgt nur mit eigener Autorität über Archiv und Tombstone.
 Target: `intakes/LH-NN.md`; receipt: `specs/intake-authoring-receipts/lh-nn.json`.
 An explicit target takes precedence over this profile and the generic fallback.
 Plan IDs are not issue numbers. The intake order document is the only binding
-order; issue drafts are not active intakes. Only LH-00 currently exists; T045
+order; issue drafts are not active intakes. LH-00 and standalone LH-01 exist; only LH-00 is a series member. T045
 grants limited permission, while each new intake needs a separate request. Source
 order gives no silent precedence. Existing targets require intake-update;
 deletion requires separate authority, archival and a tombstone.
@@ -291,7 +292,7 @@ authority. Updates preserve exact intake and series lineage in one coherent
 publication, archive old review and obtain a complete distinct review. No bare
 rehash. Future standalone pilots and full-acceptance boundaries remain binding.
 
-## Quellenstand IAD019 / Source state IAD019
+## Historischer Quellenstand IAD019 / Historical source state IAD019
 
 Der LH-00-Kernprozess ist geliefert, die volle Abnahme bleibt offen. C# ist
 Prüfoption in LH-01; der Sprach-/MSL-Entscheid wird vor Produktimplementierung
@@ -303,3 +304,24 @@ The core process is delivered; full acceptance remains open. C# is a candidate
 for LH-01's language/MSL decision, documented in the technical plan with architecture
 and feasibility before implementation. This request refreshes sources and provenance
 only; it creates no LH-01 and preserves authority and historical evidence boundaries.
+
+## Aktueller Quellenstand T014 / Current source state T014
+
+DE: Stand2026-10-09: LH-01 ist erstellt, spezifiziert und technisch geplant.
+ADRs002–006 unter docs/architecture/decisions/ begründen managed C#14/MSL,
+Host-.NET10, Terminal.Gui2.5.0 dotnet, Mindest-PS7.6.4 und In-process-Integration.
+T014 wendet die freigegebene Projektzeile lokal an; Registerwert C#/msl und
+Statistikreferenz80/125, native Grenzen separat. Bestand und Reihenfolge folgen
+requirements/RequirementsIndex.md und docs/Lastenheft-Plan.md. T015/T016 erneuern
+betroffene Herkunft/Reviews, T017 prüft den Start; ein Produktauftrag bleibt nötig.
+Reale Terminal-/Screenreaderprüfungen sind zurückgestellt, Braille-Hardware bleibt
+begründet mangels Gerät ausgeschlossen; keine bestandene praktische Abnahme.
+
+EN: As of2026-10-09 LH-01 is authored, specified and technically planned. ADRs002–006
+record managed C#14/own-code memory safety, host.NET10, Terminal.Gui2.5.0 dotnet,
+minimum PS7.6.4 and in-process integration. T014 locally applies the approved row,
+C#/msl and references80/125, with separate native boundaries. Inventory and order
+follow the canonical index and plan. T015/T016 renew provenance and distinct reviews;
+T017 checks readiness. A separate product request remains required. Real terminal
+and screen reader proof is deferred; Braille hardware proof remains excluded for
+lack of a device, without claiming practical acceptance.

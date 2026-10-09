@@ -7,7 +7,7 @@
   "activityWindowWeeks": 52,
   "references": {
     "conservativeLinesPerDay": 80,
-    "thorstenLinesPerDay": 100
+    "thorstenLinesPerDay": 125
   },
   "phases": [],
   "excludedPaths": [],
