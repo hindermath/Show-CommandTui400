@@ -44,13 +44,15 @@ C#14, eigener MSL-Status `msl`, Host-.NET10, Terminal.Gui2.5.0/dotnet und PS7.6.
 macOS-first, 14er-Profil und DE/EN B2 bleiben erhalten; Statistik80/125 ist begründet,
 keine Zeitmessung. Native/Interop-Grenzen und spätere Plattform-/A11Y-Abnahmen
 bleiben getrennt. [Anwendungsnachweis](../../docs/validation/lh01/registry-alignment.md).
-Zentrale Quellen sind lokal geändert; keine Remote-Lieferung oder Home-Verteilung.
+Der T014-Anwendungsnachweis beschreibt den damaligen lokalen Stand vor Lieferung;
+den autorisierten Lieferabschluss dokumentiert [Liefernachweis](../../docs/validation/lh01/readiness-delivery.md).
 
 T014 applies the approved row locally: managed C#14, own-code `msl`, host.NET10,
 Terminal.Gui2.5.0/dotnet and PS7.6.4. Keep macOS-first, fourteen presets and bilingual
 readability. References80/125 are justified parameters, not time measurements.
 Native boundaries and practical acceptance remain separate. Central source changes
-are local; no remote delivery or Home distribution occurs.
+describe the historical local state before delivery; the linked delivery record
+tracks authorized publication and its closeout.
 
 | Gate | Vor Recherche / Before research | Nach Entwurf / After design | Evidence, Aktion und Fälligkeit / Evidence, action and due gate |
 |---|---|---|---|

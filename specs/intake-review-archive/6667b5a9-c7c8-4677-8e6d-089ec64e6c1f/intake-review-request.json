@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "1.1",
+  "reviewId": "6667b5a9-c7c8-4677-8e6d-089ec64e6c1f",
+  "mode": "Single",
+  "policy": "generic-markdown",
+  "targets": [
+    {
+      "path": "intakes/LH-00.md",
+      "role": "Primary"
+    }
+  ],
+  "series": {
+    "orderedTargetPaths": [],
+    "roots": [],
+    "dependencies": []
+  },
+  "campaign": {
+    "manifestPath": "N/A",
+    "workers": [],
+    "operatorExceptions": []
+  },
+  "authority": {
+    "request": "Owner commissions distinct full T016 review after PR42 follow-up correction; preparation delivery MergeAndSync/AdminBypass, no product implementation. Reviewer writes only triplet.",
+    "evidence": {
+      "path": "specs/intake-authoring-operations/d7fd87d4-61c6-4585-b6ec-46c399ea5862/update-decisions.md",
+      "normalizedSha256": "3eb68e988d8d5995b97230396928faa292bf90e512c39d0bd0b442dadba2ebcd"
+    },
+    "targetMutationAllowed": false,
+    "implementationAllowed": false,
+    "remoteAccessAllowed": false
+  },
+  "projectProfile": "show-commandtui400-de-en",
+  "priorReviewId": "e4eab25c-1d1f-4747-8c4b-7e155a6ed83c",
+  "priorReviewArchive": "specs/intake-review-archive/e4eab25c-1d1f-4747-8c4b-7e155a6ed83c",
+  "targetHash": "1126780c1b179bb8b98884d4770de5a7c0bccde1b20ba8e4e8e706772a2d0538"
+}

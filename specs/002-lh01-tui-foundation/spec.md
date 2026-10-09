@@ -7,8 +7,8 @@
 
 ## Historische Specify-Eingangsprüfung und Geltungsbereich / Historical Specify input and scope
 
-Vor Erstellung wurden der [Receipt](../intake-authoring-receipts/lh-01.json)
-`59f3e085-f12e-4a6e-8347-8a7c11b7c65a` und das [unabhängige Review](../intake-reviews/lh-01/report.md)
+Vor Erstellung wurden der [Receipt](../intake-authoring-archive/lh-01/59f3e085-f12e-4a6e-8347-8a7c11b7c65a/specs/intake-authoring-receipts/lh-01.json)
+`59f3e085-f12e-4a6e-8347-8a7c11b7c65a` und das [unabhängige Review](../intake-review-archive/dd62a398-16bc-4382-a4bb-5916cef9dfc2/report.md)
 `dd62a398-16bc-4382-a4bb-5916cef9dfc2` maschinell als aktuell geprüft.
 Das damalige Review genau dieses Intakes war Ready ohne offene Befunde oder angenommene
 Risiken; Prüfer war `/root/lh01_independent_review`, nicht der Autor.
@@ -284,16 +284,18 @@ Standards/Evidence G03/G11, genau eine Dokumentationsentscheidung unten und
 macOS-first mit getrennten Plattformbelegen. Das projektspezifische 14er-Profil
 bleibt die vorhandene Ausnahme zur generischen Template-Matrix. Beim ursprünglichen
 Specify erfolgten keine Installation oder Governanceänderung; die spätere lokale
-Ausrichtung T014 steht im aktuellen Startnachweis. Unbekannte Sprache verhindert keine Spezifikation,
-aber verlangt belegte Planung vor Produktimplementierung.
+Ausrichtung T014 steht im aktuellen Startnachweis. Die Sprache war beim ursprünglichen
+Specify unbekannt; die inzwischen belegte Planung hat C#14/MSL unter OD-01-002 gewählt.
+Diese technische Wahl ist keine Produktimplementierungsfreigabe.
 
 Template controls CR-001–014 are covered through the mapped Level-2 context,
-accessibility/language, statistics/parity, open language decision, standards/evidence,
+accessibility/language, statistics/parity, language/MSL selected under OD-01-002, standards/evidence,
 one documentation-impact decision and macOS-first platform proof. The installed
 fourteen-preset project profile remains the existing exception to generic template
 defaults. Initial Specify performed no installation or governance change; later
-local T014 alignment is recorded in the readiness evidence. An unknown language permits
-specification but requires evidenced planning before product implementation.
+local T014 alignment is recorded in the readiness evidence. Language was unknown at
+initial Specify; the evidenced technical plan has since selected C#14/MSL under
+OD-01-002. This technical selection grants no product implementation authority.
 
 Die 14er-Matrix wird nur als vorhandene Governance referenziert: Security,
 Secure Development Assurance, Architecture, iSAQB Architecture, A11Y und
@@ -702,8 +704,8 @@ or delivery changes. Next phase requires its own user request.
 
 DE: Am9.10.2026 wurden die geänderten Governance-/Registerquellen regulär
 aktualisiert, mit exakten Vorgängerarchiven und separatem vollständigem Review.
-LH-01-Receipt `ff697098-91cc-460d-a2b0-c6bb7793c4fc`, Review `2e1342c6-5208-4ee4-b2a0-acf68cd05527`: Ready,
-keine offenen Befunde oder angenommenen Risiken. Zielhash `abf12485471cb36af8759de00522e7d9f28393db8e9ddea6877ba85daef0df32`.
+LH-01-Receipt `fef04f91-8fc2-444a-8db2-6445de49f5f1`, Review `cf380598-13ea-4c9b-8bfd-c52c150aae42`: Ready,
+keine offenen Befunde oder angenommenen Risiken. Zielhash `f86a0e7711cda8290fc0e2c8743b335db6eb71aa69f7340d4a14314d7a152e25`.
 Die ursprünglichen Specify-Bindungen oben sind historisch. Fachliche IDs und
 Anforderungen bleiben erhalten; technische Auswahl und Owner-Prüfgrenzen sind
 im aktualisierten Intake nachvollziehbar. T001–T017 liefern Startvorbereitung,

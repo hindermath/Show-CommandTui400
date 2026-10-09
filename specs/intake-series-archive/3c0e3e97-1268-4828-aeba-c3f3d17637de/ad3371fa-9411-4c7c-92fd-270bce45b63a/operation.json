@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0",
+  "documentType": "IntakeSeriesOperation",
+  "operationId": "d0327351-7899-48fe-8fd6-237a82b83204",
+  "seriesId": "3c0e3e97-1268-4828-aeba-c3f3d17637de",
+  "type": "Update",
+  "status": "Prepared",
+  "authorityEvidence": "specs/intake-authoring-operations/3994d7f9-d36a-4cc0-a782-29604689d48d/update-decisions.md",
+  "proposalNormalizedSha256": "d7d09cee79a6c5100460d5f78c85c3ed4a7f06276aa354a62fc46425d56d612c",
+  "preparedPaths": [
+    "specs/intake-series/lh00-process/manifest.json",
+    "specs/intake-series/lh00-process/receipt.json"
+  ],
+  "validation": {
+    "bash": "Passed",
+    "powerShell": "Passed"
+  },
+  "publication": {
+    "status": "Published",
+    "publishedPaths": [
+      "specs/intake-series/lh00-process/manifest.json",
+      "specs/intake-series/lh00-process/receipt.json"
+    ]
+  }
+}

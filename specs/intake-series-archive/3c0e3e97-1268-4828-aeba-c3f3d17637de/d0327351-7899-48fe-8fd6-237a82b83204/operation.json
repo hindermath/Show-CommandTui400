@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0",
+  "documentType": "IntakeSeriesOperation",
+  "operationId": "2f0ff565-106b-4811-9976-b7b92e3e9443",
+  "seriesId": "3c0e3e97-1268-4828-aeba-c3f3d17637de",
+  "type": "Update",
+  "status": "Prepared",
+  "authorityEvidence": "docs/planning/lh01-source-refresh-format-corrections.md",
+  "proposalNormalizedSha256": "c3549e0a7124952f9735f749e7992659234421932f155ac76fd206e03540b113",
+  "preparedPaths": [
+    "specs/intake-series/lh00-process/manifest.json",
+    "specs/intake-series/lh00-process/receipt.json"
+  ],
+  "validation": {
+    "bash": "Passed",
+    "powerShell": "Passed"
+  },
+  "publication": {
+    "status": "Published",
+    "publishedPaths": [
+      "specs/intake-series/lh00-process/manifest.json",
+      "specs/intake-series/lh00-process/receipt.json"
+    ]
+  }
+}

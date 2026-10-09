@@ -93,10 +93,10 @@ SHA-256 independently inspected bytes; current review excluded. Later changes re
 | `feasibility/src/probe-session.ps1` | `cc7af7189d96fe27e19fcf8700315dbae138ae251ca3549bca6672dcd3a5ac4b` |
 | `feasibility/src/pty-probe.py` | `1534ef1c6699fc99a5f8e2242fe6f5cd9f3283cff4b3c4029ba9aa7d0cced5e8` |
 | `feasibility/src/termios-abi.c` | `4e1597b0e853f8f8615369374a14f2b951ffb0e212711dafedbcdea799053d3c` |
-| `plan.md` | `c3d8d4047dbb4d2c1709805a5a92c0ace16dbed2eb3ff7d10d9f4ce40d3987a7` |
+| `plan.md` | `e691754e8b809cf70eb2e81e084c4cec5a198e2ec50cdaad22ff18a03e8c886b` |
 | `quickstart.md` | `cb48d8da71e0d445e1e57aea66cf3584f2fa735cfbda606f37126b4f7b765c6f` |
 | `research.md` | `34e0e597736ce0f431abd7dbedca8e693864b9e38bc005ea778c061a6859ac75` |
-| `spec.md` | `65325d3047c2ddc2c24913b34dc9362c372f799ef0ab1139333ba059b9a55975` |
+| `spec.md` | `219883aa4626730c6a6cfb8f3d1a726fd7da0f7037c50a2f5258cbcb3eaa5bc4` |
 | `contracts/cmdlet-session.md` | `54ab17c91a3b2251b3911a5f10bcd2f078a624d302dcf0abcdfb9f19dc7dd5ca` |
 | `tasks.md` | `1b3895857f10f9888f00a233f20a59a58352956781914a87a6dfd39c7c6895a5` |
 | `../../docs/validation/lh01/platform-handoff.md` | `389f267aa8b992710b0acd57716e3f3bad7aa202e1cf5160ed046266a9c7a336` |
@@ -398,3 +398,127 @@ Physical terminals/screen readers remain Deferred, Braille hardware owner-exclud
 with requirements and reassessment retained.52 unchanged plus three renewed bindings
 all match (55/55); prior digests are preserved above. No new tests, product files,
 installations, commits, remote writes or owner acceptance were performed by this reviewer.
+
+## Fokussiertes technisches Re-review nach PR #42 / Focused technical re-review after PR #42
+
+Datum / Date: 2026-10-09. Prüfer / Reviewer: separater Agent
+`/root/lh01_handoff_review`. Der Ownerauftrag erneuert nach den nachträglichen
+Copilot-Befunden die betroffenen technischen Aussagen; frühere Reviews und
+Machbarkeitsdaten bleiben mit ihrem historischen Umfang erhalten.
+
+### DE — Ergebnis und drei Korrekturen
+
+**Ready im begrenzten Dokumentations-/Startvorbereitungsumfang.** Keine offenen
+Befunde in den geprüften Korrekturen; keine Produkt-, Plattform- oder Abnahmefreigabe.
+
+1. Historische Specify-Receipt-/Reviewlinks führen jetzt in die exakten Archive
+   zu59f3e085/dd62a398 statt zu wechselnden aktiven Nachfolgern. Verlinkte Dateien
+   existieren. Der ursprüngliche Hash bleibt historisch erkennbar.
+2. DE/EN benennen den ursprünglichen unbekannten Sprachstand als historisch und
+   die heutige technische C#14/MSL-Auswahl unter OD-01-002 konsistent. Getrennte
+   Runtime-/Framework-/Mindestpatch-/Sessionentscheidungen und native Grenzen
+   bleiben erhalten; technische Auswahl erteilt keine Produktimplementierungsbefugnis.
+3. LH-00 IAD019 ist ausdrücklich historischer Quellen-/Kernprozessstand. Die
+   nachfolgende aktuelle Einordnung erhält das offene LH-00 und den Einzelpilotweg,
+   nennt bestehendes LH-01 und technische Auswahl statt eines heutigen Kandidatenstatus.
+   Reguläre Nachfolger mit vollständigen anderen Reviews erneuern die abhängige
+   Herkunft; keine fachlichen Kennungen oder Serienauswahl-/Ausführungserlaubnis ändern.
+
+Aktuelle LH-01-Bindung in der Spec: Receipt49a87deb-8f2d-4ad2-ad58-a6462e33f312,
+Reviewc912ea64-cf36-4865-963d-9659b93db696 Ready; Zielhash
+abf12485471cb36af8759de00522e7d9f28393db8e9ddea6877ba85daef0df32 stimmt mit den
+aktiven Intakebytes überein. Startnachweis nennt den LH-00-Nachfolger
+a8b5cffb-bb50-4e29-90b4-5339d5148f22/6667b5a9-c7c8-4677-8e6d-089ec64e6c1f.
+Plan verweist für tatsächliche Lieferung auf den gesonderten Liefernachweis;
+frühere lokale/uncommitted-Aussagen behalten ihren damaligen Zeitbezug.
+
+T001–T017 bleiben abgeschlossen,46Folgeaufgaben offen. Vorhandene technische
+Verträge, Hand-offs und historische Fixturebytes sind unverändert. Kein neuer
+Fixture-, Produkt-, Terminal-/Hilfsmittel- oder Plattformlauf wurde durchgeführt.
+Dieser Prüfer schreibt ausschließlich dieses Review und keine Liefer-/Ownerentscheidung.
+
+**53 unveränderte Bindungen sowie erneuerte Spec/Plan:55/55 gültig.** Vorherige
+Digests des vorangehenden T016-Snapshots bleiben nachvollziehbar:
+
+- `plan.md`: `c3d8d4047dbb4d2c1709805a5a92c0ace16dbed2eb3ff7d10d9f4ce40d3987a7`.
+- `spec.md`: `65325d3047c2ddc2c24913b34dc9362c372f799ef0ab1139333ba059b9a55975`.
+
+### EN — Outcome and corrections
+
+**Ready within bounded documentation/readiness scope only.** No open findings in
+the reviewed corrections; no product execution, platform or acceptance authority.
+Historical Specify receipt/review links now point to exact59f3e085/dd62a398 archives
+rather than mutable active successors; linked files exist. DE/EN distinguish the
+original unknown language from selected C#14/MSL under OD-01-002, preserving separate
+runtime/framework/minimum/session choices and native limits. LH-00 IAD019 is clearly
+historical and followed by current LH-01/selected-language context, keeping LH-00
+open and the standalone pilot intact. Ordinary successors and distinct full reviews
+renew provenance without new domain IDs, series selection or execution permission.
+
+The current LH-01 receipt49a87deb/reviewc912ea64 Ready match specification identities;
+the active intake raw digest matches the recorded target hash. Readiness identifies
+LH-00 successorsa8b5cffb/6667b5a9. Plan separates former local state from authorized
+delivery through the dedicated evidence link.17readiness tasks remain complete,
+46later tasks open. Existing contracts, hand-offs and historical fixture bytes are
+unchanged.53unchanged plus two renewed bindings match (55/55); previous digests are
+preserved above. No new fixture/product/platform/assistive tests, commits, remote
+writes or owner acceptance were performed by this reviewer. This file is frozen
+for the separate architecture review's subsequent binding.
+
+## Technisches Autoritäts-Re-review nach PR #43 / Technical authority re-review after PR #43
+
+Datum / Date: 2026-10-09. Prüfer / Reviewer: separater Agent
+`/root/lh01_handoff_review`. Fokussierter Auftrag: zwei Copilot-Befunde zur aktuellen
+Receipt-Lieferautorität unabhängig nachprüfen und geänderte Spec-Bindung erneuern.
+Die vorangehenden Reviews bleiben historische Snapshots mit unveränderten Grenzen.
+
+### DE — Ergebnis und geprüfte Korrekturen
+
+**Ready für den begrenzten Governance-/Nachweis-Lieferstand; keine offenen Befunde
+im geprüften Autoritätsabgleich.** Beide aktuellen Receipts führen deliveryAuthority
+MergeAndSync und unterscheiden lokale Authoring-Dateiänderung von ausdrücklich
+beauftragtem Commit/Push/MergeAndSync mit Admin-Bypass für dieses begrenzte Paket.
+Die zuvor pauschale lokale Grenze wird nicht als heutiges Lieferverbot ausgegeben.
+Frühere local-only-Antworten bleiben ausdrücklich historische Authoring-Entscheide;
+die jüngste Entscheidung begründet den aktuellen Lieferumfang. Das ist keine
+Produkt-, Release-, Installations- oder Flottenausführungsbefugnis.
+
+LH-00-Nachfolger0ef60142-cacd-4e01-be35-3824f02e7dd4 mit anderem vollständigem
+Ready-Review1ccc35b4-18e8-4cf0-b8b4-ccd2d91a83d0 und LH-01-Nachfolger
+fef04f91-8fc2-444a-8db2-6445de49f5f1/Ready-Reviewcf380598-13ea-4c9b-8bfd-c52c150aae42
+sind in der aktuellen Startnachweis-/Spec-Einordnung konsistent verzeichnet.
+LH-01 trennt zusätzlich DE/EN das freigegebene Nachweispaket vom inaktiven späteren
+LocalImplementation-Produktfolgeprompt. Dessen eigene Auftragsgrenze bleibt bestehen.
+Die 46 normativen FR-/AC-/QG-/OD-Zeilen sind gegenüber dem vorherigen Git-Stand
+bytegleich. Der Spec-Zielhashf86a0e7711cda8290fc0e2c8743b335db6eb71aa69f7340d4a14314d7a152e25
+stimmt mit dem aktiven Intake überein. T001–T017 bleiben erledigt;46Folgeaufgaben offen.
+
+**54 unveränderte Bindungen und erneuerte Spec:55/55 gültig.** Plan, Tasks,
+Fixturequellen/-Rohdaten, Kommandoschema und Hand-off-Verträge bleiben unverändert.
+Vorheriger Spec-Digest des PR42-Korrektur-Snapshots / Previous spec digest:
+`83ceb9dc60f129a9d7c6351b103ef7b34ae84589feb4fa8d280fa8644347b051`.
+Keine neue Fixture-/Produkt-/Plattform-/Hilfsmittelprüfung, keine Quellenänderung
+außer diesem Review, keine Commits oder Remote-Schreibzugriffe durch den Prüfer.
+Ready ersetzt keine technische Lieferprüfung, genaue Head-Bindung oder Ownerabnahme.
+Diese Datei ist für das anschließende getrennte Architekturreview eingefroren.
+
+### EN — Outcome and corrections
+
+**Ready for bounded governance/evidence delivery; no open finding in the reviewed
+authority reconciliation.** Both active receipts now declare MergeAndSync and
+separate local authoring mutations from explicit package commit/push/admin-bypass
+delivery authority. Historical local-only answers no longer imply a current ban;
+the latest decision states the bounded scope without product, release, installation
+or fleet authority. LH-00 successor0ef60142/Ready1ccc35b4 and LH-01 successor
+fef04f91/Readycf380598 match current readiness/specification identities.
+
+The added DE/EN intake context separates package delivery from the inactive future
+LocalImplementation product prompt. Its separate execution boundary remains intact.
+All46 normative FR/AC/QG/OD lines are unchanged from the prior Git version; the
+specification target digest matches active intake bytes.17readiness tasks remain
+complete and46follow-ups open.54unchanged plus one renewed binding match (55/55);
+previous spec digest is preserved above. Plan, tasks, raw fixture proof and platform
+contracts/schema are unchanged. No new fixture/product/platform/assistive run,
+commit or remote write was performed. Only this review changed. Ready substitutes
+neither technical delivery gates, exact-head verification nor owner acceptance.
+This file is frozen for subsequent distinct architecture review.
