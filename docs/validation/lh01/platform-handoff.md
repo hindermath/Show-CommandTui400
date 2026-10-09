@@ -16,7 +16,7 @@ exakte Dateibytes. Ein Commit ist ein unveränderlicher Git-Stand, kein Branchna
 Ein PTY ist ein automatisiertes Pseudoterminal, keine reale Terminaloberfläche.
 
 **Aktuell Prepared, nicht ausführbar:** Produktcommit, Driverhash, Kommandofreigabe
-und Mac-A-Produktnachweis fehlen. Das vorhandene Feasibility-Fixture darf diese
+und die freigegebene Mac-A-Produktnachweisbindung fehlen. Das vorhandene Feasibility-Fixture darf diese
 Voraussetzungen nicht ersetzen. Das Öffnen eines Issues startet nichts; der
 Agent benötigt einen ausdrücklichen Auftrag für den benannten Host und Umfang.
 Dieses Vorbereitungspaket autorisiert keine Plattformprüfung oder Installation.
@@ -43,8 +43,8 @@ LH-02–LH-07-Funktion. Ein technisches PASS ist keine Ownerabnahme.
 
 ## DE — Freigabe des späteren ausführbaren Prüfstands
 
-T029/T053/T054 erstellen den gemeinsamen Driver und die plattformspezifischen
-Harnesses in einem späteren Implementierungsauftrag. Danach darf ein ausdrücklich
+T029 hat den gemeinsamen Driver und den Unix-PTY-/Sitzungsharness geliefert.
+Windows-Terminalautomation sowie die endgültige Bindung folgen T053/T054. Danach darf ein ausdrücklich
 beauftragter Koordinator das Manifest auf einen gelieferten Stand konkretisieren:
 
 - Vollständigen 40-stelligen Produktcommit eintragen; Driver/Harness, Build-/
@@ -96,10 +96,10 @@ Keine Forderung nach einem selbstreferenziellen Commit-/Manifesthash.
    berichtet lokale Artefaktpfade im Chat; kein Issuekommentar, Commit, Push oder
    Schließen ohne passenden Auftrag. Owner nimmt später ausdrücklich ab.
 
-## DE — Geplante Driverschnittstelle, noch nicht vorhanden
+## DE — Implementierte Driverschnittstelle; Manifest noch Prepared
 
-`tests/feasibility/lh01/Invoke-Lh01PlatformProof.ps1` soll folgende Parameter
-anbieten: `-Plan`, `-Target` (macb/windows/ubuntu-wsl2), `-OutputDirectory` und
+`tests/feasibility/lh01/Invoke-Lh01PlatformProof.ps1` bietet folgende Parameter
+an: `-Plan`, `-Target` (macb/windows/ubuntu-wsl2), `-OutputDirectory` und
 `-CheckOnly`. CheckOnly führt keinerlei Produkt- oder Terminaltest aus; es meldet
 Startfähigkeit und Blocker. Normalmodus benötigt freigegebenes Executable-Manifest
 und einen passenden Ausführungsauftrag. Default ist keine implizite Hostauswahl.
@@ -112,9 +112,10 @@ Driver-Exitcodes: 0 = alle aktivierten Fälle erfüllt, 1 = tatsächlicher Prüf
 verhindert Gesamt-Pass. Der Reporter zeigt Scope, deaktivierte und praktische
 Deferred/Excluded-Fälle zusätzlich, statt sie als PASS zu zählen.
 
-**Jetzt keinen Beispielaufruf ausführen:** Der Pfad bezeichnet einen geplanten
-Testdriver, keine vorhandene Datei. Fehlt Driver oder Stand, ist die korrekte
-Agentenantwort Blocked mit konkreter nächster Aktion.
+**CheckOnly ist jetzt vorhanden:** Es prüft ohne Produktstart und meldet beim
+bestehenden Prepared-Manifest Blocked. Produktläufe bleiben bis zum gebundenen
+Prüfauftrag gesperrt. Der [Mac-A-Inkrementnachweis](session-terminal.md) zeigt den
+vorhandenen Driver, lokale Produktfälle und die fehlende Windows-Terminalautomation.
 
 ## DE — Schreibumfang, Ergebnis und Wiederholung
 
@@ -150,7 +151,7 @@ its approved cases. SHA-256 binds bytes, a commit fixes Git content, and a PTY i
 an automated pseudo-terminal rather than a physical terminal application.
 
 **Prepared, not executable:** Product commit, driver hash, command approval and
-Mac A product evidence are absent. Existing feasibility evidence does not replace
+approved Mac A product evidence bindings are absent. Existing feasibility evidence does not replace
 them. Reading an issue grants no execution authority. Require an explicit request
 for the target host and scope; no installation or platform test starts now.
 
@@ -190,12 +191,14 @@ output digest and total state, blockers and next action. Verify source unchanged
 and no unintended network/target effects. No private session data or local paths.
 A missing test adapter is Blocked, not permission to substitute model tests.
 
-The planned PowerShell test driver has Plan, explicit Target, OutputDirectory and
+The implemented PowerShell test driver has Plan, explicit Target, OutputDirectory and
 CheckOnly parameters. CheckOnly does no product/terminal testing. Exit0 means all
 enabled cases fulfilled; Exit1 means actual failure; Exit2 means Blocked prerequisite.
 Each case is Pass, Fail, Blocked or NotRun; mandatory unexecuted cases prevent total
 Pass. Display disabled and practical Deferred/Excluded cases separately. The driver
-does not exist yet; do not run its planned path now or export probe APIs in product.
+now exists; CheckOnly remains Blocked for the Prepared manifest. Product execution
+requires the pinned target plan. Windows terminal automation is still absent; see
+[Mac A increment evidence](session-terminal.md). Do not export probe APIs in product.
 
 Only authorized isolated output may be written; deliverable evidence uses unique
 platform-runs/<target>/<run-uuid> directories. Preserve old results. Restore only

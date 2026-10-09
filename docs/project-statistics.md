@@ -68,6 +68,8 @@ heuristic would otherwise count spec.md as a test.*
 
 | 2026-10-09 | LH-01 Lieferautorität / Delivery authority | Zwei Receipt-Befunde in PR #43 korrigiert: lokale Authoring-Mutation und separat beauftragtes MergeAndSync getrennt; reguläre Herkunftsnachfolger mit anderen vollständigen Reviews, unveränderte fachliche Anforderungen/Serienbytes. / Correct two receipt findings through ordinary provenance successors and distinct full reviews; separate authoring and delivery authority, unchanged domain requirements/series. [Nachweis / Evidence](validation/lh01/readiness-delivery.md). |
 
+| 2026-10-10 | LH-01 Produktkern T018–T036 / Product core | Managed Cmdlet, Guards, eigene OS-Leases, geprüfte Mac-A-Rückkehr und Plattformdriver; 36/63 Tasks erledigt. Plattform-/A11Y-Abnahme und ausführbare Hand-offs bleiben offen. / Managed cmdlet, guards, native leases, bounded Mac A proof and driver; practical acceptance and executable hand-offs remain open. [Nachweis / Proof](validation/lh01/session-terminal.md). |
+
 ## Gesamtstatistik / Overall Statistics
 
 <!-- project-statistics-v2:begin -->

@@ -1,0 +1,29 @@
+{
+  "hostAssembliesRedistributed": false,
+  "checks": [
+    "N01",
+    "N02",
+    "N03",
+    "N04",
+    "N04-host",
+    "N04-VT",
+    "N04-native",
+    "N05",
+    "N06",
+    "N06-escape",
+    "N06-case",
+    "N06-numeric-action",
+    "N06-syntax",
+    "N07",
+    "primary=False;restore=False",
+    "primary=False;restore=True",
+    "primary=True;restore=False",
+    "primary=True;restore=True",
+    "aggregate-primary-with-successful-restore",
+    "platform-native-doubles"
+  ],
+  "caseId": "B01",
+  "scope": "model/native doubles only; no GUI or foreign-platform proof",
+  "outcome": "LockedBuildAndContractTestsPass",
+  "result": "Pass"
+}

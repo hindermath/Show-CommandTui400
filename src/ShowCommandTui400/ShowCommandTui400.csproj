@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework><LangVersion>14</LangVersion>
+    <Nullable>enable</Nullable><ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks><RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Management.Automation"><HintPath>$(LH01PowerShellHome)/System.Management.Automation.dll</HintPath><Private>false</Private></Reference>
+    <PackageReference Include="Terminal.Gui" Version="[2.5.0]" />
+    <InternalsVisibleTo Include="ShowCommandTui400.Tests" />
+    <None Update="ShowCommandTui400.psd1" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+  <Target Name="RequireHostReference" BeforeTargets="ResolveReferences" Condition="!Exists('$(LH01PowerShellHome)/System.Management.Automation.dll')">
+    <Error Text="Set LH01PowerShellHome to the current PowerShell 7.6.4+ PSHOME; host assemblies are not redistributed." />
+  </Target>
+</Project>

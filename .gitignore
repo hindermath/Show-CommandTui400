@@ -127,3 +127,8 @@ intakes/*
 !requirements/
 !requirements/**
 !.gitleaks.toml
+
+# .NET editor/cache files / Editor- und Cachedateien
+**/*.user
+**/*.suo
+**/packages/

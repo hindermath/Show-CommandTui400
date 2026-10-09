@@ -1,0 +1,169 @@
+{
+  "schemaVersion": "1.0",
+  "documentType": "SecureDevelopmentGateEvidence",
+  "contextId": "lh01-tui-foundation",
+  "gate": "delta",
+  "mode": "development",
+  "createdAt": "2026-10-09T22:00:11.169936+00:00",
+  "scope": "T018–T036 bounded Mac A product increment only; no full product assurance",
+  "review": {
+    "owner": "Thorsten Hindermann",
+    "reviewer": "Codex /root/lh01_start_review: focused independent increment review in docs/validation/lh01/session-increment-review.md",
+    "reviewedAt": "2026-10-09T22:00:11.169936+00:00",
+    "reviewDue": "2026-10-12",
+    "residualRisk": "Foreign native hosts, practical terminals/assistive checks, full security consolidation and distributable inventory remain open.",
+    "reevaluationTrigger": "Changed product/driver/host/dependency/scope or before subsequent product delivery"
+  },
+  "assessments": [
+    {
+      "id": "INC-ENTRY-LIFECYCLE",
+      "applicability": "Applicable",
+      "implementation": "Fulfilled",
+      "evidence": "docs/validation/lh01/session-terminal.md; source/evidence manifest; independent increment review. Pure guards before side effects, managed code, own native boundaries and preserved double errors."
+    },
+    {
+      "id": "FULL-PRODUCT-ASSURANCE",
+      "applicability": "Applicable",
+      "implementation": "Partly Fulfilled",
+      "evidence": "tasks T037–T063 remain open; bounded Mac A proof is not cross-platform/assistive/supply-chain acceptance.",
+      "nextAction": "T052–T059 consolidate security, foreign-host evidence, distinct architecture review and distributable SBOM/notices before feature closeout; T062 human decisions remain separate.",
+      "owner": "Thorsten Hindermann",
+      "dueAt": "Before full LH-01 acceptance / before LH-02 domain completion dependency"
+    }
+  ],
+  "outcome": "NeedsRemediation",
+  "acceptedRisks": [],
+  "externalComparisonBoundary": "HOSK/GWDG: ExternalComparison only; never local evidence",
+  "runbookApplicability": "N/A",
+  "runbookRationale": "Development-only bounded product/test increment, no training or field exercise; session proof and test README provide reproducible entry points. / Begrenztes Entwicklungsinkrement, keine Feldübung.",
+  "changedPaths": [
+    {
+      "path": "src/Directory.Build.props",
+      "rawSha256": "32e91a5ddd7e191c3a2ec198a561a914ddebed129c2eb4a20f16f9839c8e241a"
+    },
+    {
+      "path": "src/ShowCommandTui400/Actions/ActionDescriptor.cs",
+      "rawSha256": "b52ae69025b1a8c97e102d50687cbbb451011c9d3eccf7c852dca60b88f72dd6"
+    },
+    {
+      "path": "src/ShowCommandTui400/Actions/KeyBindingValidator.cs",
+      "rawSha256": "a8e3292d4f51f5545b70f039d4572a4ff5fcca28451f87389c4f6c6fb5c8ffcb"
+    },
+    {
+      "path": "src/ShowCommandTui400/Commands/ShowCommandTui400Command.cs",
+      "rawSha256": "078f44add0e20e7b8a191d0311f25395f4940eb7f3a01f130d2e67c9b9a9a347"
+    },
+    {
+      "path": "src/ShowCommandTui400/NuGet.Config",
+      "rawSha256": "7a77c63a438cdf0524dc336da4bf2191d3f259645de430f5a4c61b3edd52fa9f"
+    },
+    {
+      "path": "src/ShowCommandTui400/Presentation/SafeDisplayText.cs",
+      "rawSha256": "abaaec8c5cf8ba6c1e51fdd459028c6e2810232ffd25015b9cdf82de545d5749"
+    },
+    {
+      "path": "src/ShowCommandTui400/Session/CallerSessionAdapter.cs",
+      "rawSha256": "d616c0fb8c0d908bb5bf13edabc30bbfda2598f5a840dde288a94ebab0be8f8a"
+    },
+    {
+      "path": "src/ShowCommandTui400/Session/EntryGuard.cs",
+      "rawSha256": "f382fa791f8d107ed21b641d1735058458ed5eac72252299ed541de9351e1637"
+    },
+    {
+      "path": "src/ShowCommandTui400/Session/SessionContext.cs",
+      "rawSha256": "b704fd55fb59f9d1b0926b051cea46050f0e3ae3a36f7ed1551a76ac2a87c138"
+    },
+    {
+      "path": "src/ShowCommandTui400/ShowCommandTui400.csproj",
+      "rawSha256": "6f7e753909d10c0a53d06f4e1248600851a38eb157b2611b51f2e3f4c4484007"
+    },
+    {
+      "path": "src/ShowCommandTui400/ShowCommandTui400.psd1",
+      "rawSha256": "fbc58b2fb0420865dca62ad9246aa18d3c5cb05f35cd69b648d2fc933185978a"
+    },
+    {
+      "path": "src/ShowCommandTui400/State/ViewState.cs",
+      "rawSha256": "a9b61a8ccec0a76ba8a78d88d1e7a56c1dc7764233dd935618e60d7f40f8abd3"
+    },
+    {
+      "path": "src/ShowCommandTui400/Terminal/ITerminalLease.cs",
+      "rawSha256": "5eacc9062c95ff9e620f2735eb60a267d8af140d2d7b38c49fd96a9013771ca1"
+    },
+    {
+      "path": "src/ShowCommandTui400/Terminal/LinuxTerminalLease.cs",
+      "rawSha256": "0cf90c10263c95c5eac4ba2b236de31780607a7bee4d846f76c2f39fbd71dc43"
+    },
+    {
+      "path": "src/ShowCommandTui400/Terminal/MacTerminalLease.cs",
+      "rawSha256": "3d327545861afeb64b5f919645a3a68e1765fdc2d8efe236b505e607a490b348"
+    },
+    {
+      "path": "src/ShowCommandTui400/Terminal/NativeTerminalLease.cs",
+      "rawSha256": "192104cdcaa5e72fde8b0af51b3574b42fe459d5cfea80dad85af5a7eac62fd9"
+    },
+    {
+      "path": "src/ShowCommandTui400/Terminal/TerminalApplication.cs",
+      "rawSha256": "465afeceb450804893e7d0d5b1128554b2a1ce3d754d631c52a2292d01f8d11f"
+    },
+    {
+      "path": "src/ShowCommandTui400/Terminal/TerminalLifecycle.cs",
+      "rawSha256": "ac3a561f9f90de1efa642b40c54456e0f5398074284c8fbd16c60e6079413984"
+    },
+    {
+      "path": "src/ShowCommandTui400/Terminal/WindowsTerminalLease.cs",
+      "rawSha256": "e4609d6cea031c5e5903ded3645e560bf350a3ba9acae20cde08d2d35aa2d1d2"
+    },
+    {
+      "path": "src/ShowCommandTui400/packages.lock.json",
+      "rawSha256": "9a50991596ca623b8d4041f1ad193d9f3c18fcadaac18f5df824f2fb7baf4813"
+    },
+    {
+      "path": "tests/Directory.Build.props",
+      "rawSha256": "32e91a5ddd7e191c3a2ec198a561a914ddebed129c2eb4a20f16f9839c8e241a"
+    },
+    {
+      "path": "tests/ShowCommandTui400.Tests/EntryBoundaryTests.cs",
+      "rawSha256": "f22d24b2617f53ed5704e1d782622e0bdf8e16cc0758b3badf262f1f4755416d"
+    },
+    {
+      "path": "tests/ShowCommandTui400.Tests/ProductHarness.cs",
+      "rawSha256": "e70c219b36f1d6d8aede1b54c0f71b7576fdcb29f60cfc1522debd416ed197ba"
+    },
+    {
+      "path": "tests/ShowCommandTui400.Tests/ShowCommandTui400.Tests.csproj",
+      "rawSha256": "0ddbbb332f7267bdad22caaa3fe2ec39b31f97633494e2a185dcff6bf0d80ac7"
+    },
+    {
+      "path": "tests/ShowCommandTui400.Tests/TerminalLifecycleTests.cs",
+      "rawSha256": "7c1a43fd9b2d0a537964e82676ef99df4c0eec948dc1ce4f45295acc2a41d58d"
+    },
+    {
+      "path": "tests/ShowCommandTui400.Tests/packages.lock.json",
+      "rawSha256": "be152f8f6783b9c9f74ff2c1700fee5e38815dfbba0a8772872b62e9c88cd998"
+    },
+    {
+      "path": "tests/feasibility/lh01/Invoke-Lh01ContractProof.ps1",
+      "rawSha256": "88dad6077928884690a984ad100809f15bfda33c0d2a9efe13b04012aeb36366"
+    },
+    {
+      "path": "tests/feasibility/lh01/Invoke-Lh01PlatformProof.ps1",
+      "rawSha256": "2ffb0d82b98c07aedaeccd6f1103779ae0944aa1f0ad3d59c6b718d92ca5fe6c"
+    },
+    {
+      "path": "tests/feasibility/lh01/README.md",
+      "rawSha256": "5809b9ff9972ceb7500aa784307436d5c51179b8793c6d49b65dfeb9200458df"
+    },
+    {
+      "path": "tests/feasibility/lh01/proof-driver-contract.py",
+      "rawSha256": "5640f8391c91eb70e0964f51c268126302e7129c67198d9cd87b6fbaa4fc33da"
+    },
+    {
+      "path": "tests/feasibility/lh01/pty-product.py",
+      "rawSha256": "17b67e6518d54dc4b95524c5845cd148018939141911bc31ca82acb641f84583"
+    },
+    {
+      "path": "tests/feasibility/lh01/session-contract.ps1",
+      "rawSha256": "9f2697b300c3c216842ffbeb1b047b0c3829dcc4895d5dd9b4f4ea1580fad234"
+    }
+  ]
+}
