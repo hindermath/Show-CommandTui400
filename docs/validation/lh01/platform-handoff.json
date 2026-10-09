@@ -35,133 +35,252 @@
       "group": "Preflight",
       "expectedOutcome": "ValidCommitAndHost",
       "description": "Commit, driver hashes, authority and host match",
-      "enabled": true
+      "enabled": true,
+      "evidenceIds": [
+        "E01-06",
+        "E01-07"
+      ],
+      "requiredResult": "Pass",
+      "executionPhase": "Main"
     },
     {
       "id": "N01",
       "group": "Negative",
       "expectedOutcome": "RejectedWithoutStateChange",
       "description": "Unsupported PowerShell version",
-      "enabled": true
+      "enabled": true,
+      "evidenceIds": [
+        "E01-01",
+        "E01-06"
+      ],
+      "requiredResult": "Pass",
+      "executionPhase": "Main"
     },
     {
       "id": "N02",
       "group": "Negative",
       "expectedOutcome": "RejectedWithoutStateChange",
       "description": "Redirected stdin",
-      "enabled": true
+      "enabled": true,
+      "evidenceIds": [
+        "E01-01",
+        "E01-06"
+      ],
+      "requiredResult": "Pass",
+      "executionPhase": "Main"
     },
     {
       "id": "N03",
       "group": "Negative",
       "expectedOutcome": "RejectedWithoutStateChange",
       "description": "Redirected stdout",
-      "enabled": true
+      "enabled": true,
+      "evidenceIds": [
+        "E01-01",
+        "E01-06"
+      ],
+      "requiredResult": "Pass",
+      "executionPhase": "Main"
     },
     {
       "id": "N04",
       "group": "Negative",
       "expectedOutcome": "RejectedWithoutStateChange",
       "description": "Missing terminal capability",
-      "enabled": true
+      "enabled": true,
+      "evidenceIds": [
+        "E01-01",
+        "E01-06"
+      ],
+      "requiredResult": "Pass",
+      "executionPhase": "Main"
     },
     {
       "id": "N05",
       "group": "Negative",
       "expectedOutcome": "RejectedWithoutDomainEffect",
       "description": "Unknown action / invalid context",
-      "enabled": true
+      "enabled": true,
+      "evidenceIds": [
+        "E01-02",
+        "E01-06"
+      ],
+      "requiredResult": "Pass",
+      "executionPhase": "Main"
     },
     {
       "id": "N06",
       "group": "Negative",
       "expectedOutcome": "RejectedBeforeInit",
       "description": "Conflicting remap or unreachable help/back/exit",
-      "enabled": true
+      "enabled": true,
+      "evidenceIds": [
+        "E01-02",
+        "E01-06"
+      ],
+      "requiredResult": "Pass",
+      "executionPhase": "Main"
     },
     {
       "id": "N07",
       "group": "Negative",
       "expectedOutcome": "SafeDisplayWithoutControlInjection",
       "description": "Untrusted display control characters",
-      "enabled": true
+      "enabled": true,
+      "evidenceIds": [
+        "E01-03",
+        "E01-06"
+      ],
+      "requiredResult": "Pass",
+      "executionPhase": "Main"
     },
     {
       "id": "B01",
       "group": "Build",
       "expectedOutcome": "LockedBuildAndContractTestsPass",
       "description": "Locked restore, build and domain contract tests",
-      "enabled": true
+      "enabled": true,
+      "evidenceIds": [
+        "E01-06"
+      ],
+      "requiredResult": "Pass",
+      "executionPhase": "Main"
     },
     {
       "id": "S01",
       "group": "Session",
       "expectedOutcome": "CallerContextRetained",
       "description": "Global/function/module synthetic scope, process/runspace/location/preferences",
-      "enabled": true
+      "enabled": true,
+      "evidenceIds": [
+        "E01-01"
+      ],
+      "requiredResult": "Pass",
+      "executionPhase": "Main"
     },
     {
       "id": "S02",
       "group": "Lifecycle",
       "expectedOutcome": "RestoredAndShellUsable",
       "description": "Normal exit, modes/cursor and shell input roundtrip",
-      "enabled": true
+      "enabled": true,
+      "evidenceIds": [
+        "E01-04"
+      ],
+      "requiredResult": "Pass",
+      "executionPhase": "Main"
     },
     {
       "id": "S03",
       "group": "Lifecycle",
       "expectedOutcome": "RestoredAndShellUsable",
       "description": "Ctrl+C cancellation",
-      "enabled": true
+      "enabled": true,
+      "evidenceIds": [
+        "E01-04"
+      ],
+      "requiredResult": "Pass",
+      "executionPhase": "Main"
     },
     {
       "id": "S04",
       "group": "Lifecycle",
       "expectedOutcome": "StoppedAndRestored",
       "description": "Actual PowerShell StopProcessing with clearly isolated test runspace",
-      "enabled": true
+      "enabled": true,
+      "evidenceIds": [
+        "E01-04"
+      ],
+      "requiredResult": "Pass",
+      "executionPhase": "Main"
     },
     {
       "id": "S05",
       "group": "Lifecycle",
       "expectedOutcome": "RestoredAndErrorPreserved",
-      "description": "Handled error and tested restoration failure boundary",
-      "enabled": true
+      "description": "Handled product error with successful restoration and preserved primary error",
+      "enabled": true,
+      "evidenceIds": [
+        "E01-04",
+        "E01-06"
+      ],
+      "requiredResult": "Pass",
+      "executionPhase": "Main"
     },
     {
       "id": "S06",
       "group": "Lifecycle",
       "expectedOutcome": "NoLeakedState",
       "description": "Repeated entry in one caller session",
-      "enabled": true
+      "enabled": true,
+      "evidenceIds": [
+        "E01-01",
+        "E01-04"
+      ],
+      "requiredResult": "Pass",
+      "executionPhase": "Main"
     },
     {
       "id": "K01",
       "group": "Keyboard",
       "expectedOutcome": "ActionContractsPass",
       "description": "Defined keys/alternatives/remap, no target execution",
-      "enabled": true
+      "enabled": true,
+      "evidenceIds": [
+        "E01-02"
+      ],
+      "requiredResult": "Pass",
+      "executionPhase": "Main"
     },
     {
       "id": "V01",
       "group": "View",
       "expectedOutcome": "ValuesAndFocusRetained",
       "description": "Resize, then navigation",
-      "enabled": true
+      "enabled": true,
+      "evidenceIds": [
+        "E01-05"
+      ],
+      "requiredResult": "Pass",
+      "executionPhase": "Main"
     },
     {
       "id": "V02",
       "group": "View",
       "expectedOutcome": "ExplainedAndSafeExit",
       "description": "Too-small surface, help and keyboard exit",
-      "enabled": true
+      "enabled": true,
+      "evidenceIds": [
+        "E01-03",
+        "E01-05"
+      ],
+      "requiredResult": "Pass",
+      "executionPhase": "Main"
     },
     {
-      "id": "E01",
+      "id": "S07",
+      "group": "RestorationFailure",
+      "expectedOutcome": "FailWithPrimaryAndRestorationErrorsPreserved",
+      "description": "Actual restoration failure; retain both errors and stop positive tests in a separate diagnostic run",
+      "enabled": true,
+      "evidenceIds": [
+        "E01-04",
+        "E01-06"
+      ],
+      "requiredResult": "Fail",
+      "executionPhase": "SeparateFailureRun"
+    },
+    {
+      "id": "EV01",
       "group": "Evidence",
       "expectedOutcome": "CompleteAndBound",
       "description": "Case inventory, hashes, raw outputs, DE/EN report, no private values",
-      "enabled": true
+      "enabled": true,
+      "evidenceIds": [
+        "E01-07"
+      ],
+      "requiredResult": "Pass",
+      "executionPhase": "Main"
     }
   ],
   "physicalTerminalChecks": "Deferred",
@@ -172,5 +291,6 @@
     "macb": "https://github.com/hindermath/Show-CommandTui400/issues/37",
     "windows": "https://github.com/hindermath/Show-CommandTui400/issues/38",
     "ubuntu-wsl2": "https://github.com/hindermath/Show-CommandTui400/issues/39"
-  }
+  },
+  "approvedCommandsSchema": "approved-commands.schema.json"
 }

@@ -6,7 +6,8 @@ Owner: Thorsten Hindermann. Datum: 2026-10-09. Vorbereitung, keine ausgeführten
 Plattformtests. Kanonische maschinenlesbare Auftragsdaten:
 [platform-handoff.json](platform-handoff.json). Fachliche Quelle bleibt
 [LH-01](../../../intakes/LH-01.md); technische Grundlage sind
-[Plan und Tasks](../../../specs/002-lh01-tui-foundation/tasks.md) und die
+[Plan](../../../specs/002-lh01-tui-foundation/plan.md),
+[Tasks](../../../specs/002-lh01-tui-foundation/tasks.md) und die
 [Owner-Prüfgrenzen](../../../specs/002-lh01-tui-foundation/feasibility/owner-validation-boundaries.md).
 
 Ein Hand-off ist ein übertragbarer Prüfauftrag. Ein Prüfdriver führt dieselben
@@ -245,3 +246,56 @@ in each file at about B2. Distribution is sourceOnly, without Home sync. Prepare
 texts, hash bindings and distinct technical review are evidence of preparation,
 not executed platform examples. Reevaluate changes to scope, revision, driver,
 authority or platform limits. Preserve the feature's existing UpdateRequired decision.
+
+## DE — Präzisierungen nach unabhängigem PR-Review
+
+Das versionierte [Kommandoschema](approved-commands.schema.json), Version 1,
+definiert `approvedCommands` als Array: commandId, targetId, caseId, executable,
+arguments, workingDirectory, expectedExitCodes, expectedCaseResult und
+expectedOutcome sind Pflicht; weitere Felder sind unzulässig. Argumente sind
+ein Stringarray, erwartete Exitcodes ein nicht leeres Integerarray. Das Schema
+wird lokal gelesen, nicht aus dem Netz geladen. Die leere Prepared-Liste bleibt
+gültig als Vorbereitung, niemals als ausführbarer Auftrag.
+
+T029 validiert vor jedem Aufruf sowohl das Schema als auch semantische Bindungen:
+eindeutige commandIds, bekannte Ziel-/Fall-IDs, Fall-Sollwerte und freigegebene
+Executables. Arbeitsverzeichnisse liegen relativ im isolierten Checkout; absolute
+Pfade, Traversal und Symlinkausbrüche abweisen. Keine Shellausdrücke auswerten.
+Im Executable-Stand müssen alle aktivierten ausführbaren Fälle des gewählten Ziels
+passende Kommandos haben. Preflight und Nachweisintegrität sind Driverprüfungen.
+Struktureller Schema-PASS ist kein Freigabe- oder Ergebnis-PASS.
+
+Jeder Fall und jedes Resultat führen `evidenceIds` mit den einschlägigen
+E01-01–E01-07-Kennungen; der Driver übernimmt und prüft diese Zuordnung und
+berichtet die Abdeckung einschließlich NotRun/Deferred/Excluded. EV01 bezeichnet
+die Nachweisintegrität und ist kein E01-Anforderungskürzel.
+
+S05 prüft einen behandelbaren Produktfehler mit erfolgreichem Restore. S07 prüft
+einen tatsächlichen Wiederherstellungsfehler in einem getrennten diagnostischen
+Lauf (`SeparateFailureRun`). Dieser Fall und sein Gesamtlauf müssen Fail bleiben;
+Primär- und Restorefehler erhalten, positive Läufe stoppen, Exitcode 1 melden.
+Auch ein erwarteter oder injizierter Restorefehler wird niemals zu Pass umgedeutet.
+Das getrennte erwartete Fehlerresultat kann den Schutzmechanismus nachweisen,
+ersetzt aber kein erfolgreiches Wiederherstellungs- oder Gesamtprüfergebnis.
+
+## EN — Clarifications after distinct PR review
+
+The local version 1 [command schema](approved-commands.schema.json) defines the
+approvedCommands array, its required fields and rejects additional fields.
+Arguments are string arrays; expected exit codes are nonempty integer arrays.
+Load the schema locally without network retrieval. An empty Prepared array never
+authorizes execution. T029 validates shape and semantic bindings before invocation:
+unique command IDs, known targets/cases, matching expectations, approved executables
+and checkout-relative directories. Reject rooted paths, traversal and symlink
+escapes; never evaluate shell strings. Every enabled executable target case needs
+approved commands in an Executable plan; preflight/integrity are driver checks.
+Schema validity grants neither execution authority nor a passing test outcome.
+
+Every case/result retains its explicit E01-01–E01-07 evidenceIds. The driver checks
+and reports coverage, including missing/deferred/excluded proof. EV01 identifies
+evidence integrity without colliding with the specification evidence prefix.
+S05 requires successful restoration after a handled product error. S07 requires
+a separate diagnostic failure run: actual restoration failure retains both errors,
+stops positive tests and reports case Fail, overall Fail and exit 1. Even expected
+or injected restoration failure never becomes Pass. That diagnostic can prove
+error reporting, but cannot substitute for successful restore or total acceptance.
