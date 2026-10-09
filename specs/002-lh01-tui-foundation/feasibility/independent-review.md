@@ -96,5 +96,157 @@ SHA-256 independently inspected bytes; current review excluded. Later changes re
 | `plan.md` | `51464545f81c621a60b8389ca311f1b0242c4d73d93fa497c8692cfc06cd8128` |
 | `quickstart.md` | `cb48d8da71e0d445e1e57aea66cf3584f2fa735cfbda606f37126b4f7b765c6f` |
 | `research.md` | `34e0e597736ce0f431abd7dbedca8e693864b9e38bc005ea778c061a6859ac75` |
-| `spec.md` | `ff7f07296912e4cd09d5d676b0efad41b10fbb936b7726d996a3f02cfd9f3cb3` |
+| `spec.md` | `a377786bedbf7d1aa0456411655ff42745bec0f2c86209c555912d6056d19e92` |
 | `contracts/cmdlet-session.md` | `54ab17c91a3b2251b3911a5f10bcd2f078a624d302dcf0abcdfb9f19dc7dd5ca` |
+| `tasks.md` | `5772d187a4b0c9295336828a450a7f53776533d7ad7f498f58318894f0153955` |
+| `../../docs/validation/lh01/platform-handoff.md` | `009dd41c5b7e57ef51a9a762ab6a6b173cdfe77028a575dbfec0ada1980be36f` |
+| `../../docs/validation/lh01/platform-handoff.json` | `f75f032cac5fa431f4c2abc1722d5ed5daeb440c6d0eed1372379c023c532b4c` |
+| `../../docs/issue-drafts/lh01-platform-parent.md` | `dc774aa1995524e595a789dee11044b2ad3b977483533028e7ba490aa9889ab4` |
+| `../../docs/issue-drafts/lh01-platform-macb.md` | `ecb200843508c67b68317354e655ed6f31b3ec77ba88e4812da24cd449cfdc5c` |
+| `../../docs/issue-drafts/lh01-platform-windows.md` | `1546e6fe8ec3979009aefd659d337797abfb58f732b94443947bce920291a22e` |
+| `../../docs/issue-drafts/lh01-platform-ubuntu-wsl2.md` | `3502af9987145225ee0784b9f569c902b92b5cec798223ce20b3632254770e5f` |
+
+## Fokussiertes unabhängiges Re-review 2026-10-09 / Focused independent re-review 2026-10-09
+
+### DE — Umfang und Ergebnis
+
+Prüfer: separater Agent `/root/lh01_corrections_review`. Auftrag: ausschließlich
+Textkorrekturen I1/I2/I3 in `spec.md` und `tasks.md` sowie ihre Abhängigkeiten und
+Prüfgrenzen erneut unabhängig bewerten. Der oben dokumentierte technische Lauf vom
+2026-10-08 bleibt historisch erhalten; seine Rohdaten wurden nicht neu erzeugt.
+
+**Ergebnis: Ready für die begrenzte technische Planung; keine offenen Befunde im
+geprüften Korrekturumfang.** I1 nennt abgeschlossene technische Planung und begrenzte
+automatisierte Machbarkeit, praktische Abnahme und Implementierungsfreigabe bleiben
+offen. Die frühere fehlende Architekturwahl/Fixture ist ausdrücklich historisch;
+formale Architektur-ADRs und Startnachweise bleiben vor Produktcode erforderlich.
+I2 führt T022 zusätzlich zu T018/T021 als Voraussetzung von T025 sowohl in der
+Aufgabe als auch in der Abhängigkeitsbeschreibung. I3 ordnet T060 → T062 → gegebenenfalls
+T063 → bedingtes T061: Abschlussartefakte vor Quellencommit und Statistikrender,
+abschließende Statistik-/Homogenitätsprüfung danach. Ein nicht anwendbarer
+vollständiger Abschlussbericht blockiert keinen begrenzten Lieferstand. Ohne
+Lieferautorität bleibt der Statistik-/Homogenitätsdrift offen; neue Quellen nach
+Render verlangen erneute Render-/Prüffolge. Alle 63 Aufgaben bleiben offen.
+
+Alle 46 unveränderten bisherigen Hashbindungen stimmen weiterhin exakt. Die
+aktuelle `spec.md`-Bindung wurde nach Prüfung erneuert; ihr bisheriger, am
+2026-10-08 geprüfter SHA-256 war
+`ff7f07296912e4cd09d5d676b0efad41b10fbb936b7726d996a3f02cfd9f3cb3`.
+`tasks.md` ist für diesen fokussierten Prüfumfang neu gebunden. Intake und Receipt,
+Fixturequellen und Evidence-Manifest wurden nicht geändert. Kein neuer
+Produkt-/Plattformlauf, keine physische Terminal-/Screenreader-/Brailleprüfung,
+kein Commit oder Remote-Schreibzugriff. Ready ist weder vollständige Abnahme noch
+Implementierungs-/Lieferautorität; Ownergrenzen und Einzelpilotweg bleiben bestehen.
+
+### EN — Scope and outcome
+
+Reviewer: distinct agent `/root/lh01_corrections_review`. This focused review only
+assessed I1/I2/I3 corrections in `spec.md` and `tasks.md`, their dependency order
+and evidence boundaries. The 2026-10-08 technical review and its raw evidence
+remain historical; no technical run was repeated.
+
+**Outcome: Ready for bounded technical planning; no open findings in the reviewed
+correction scope.** I1 distinguishes completed planning and bounded automated
+feasibility from open practical acceptance and implementation authority. The old
+absence of a selected design/fixture is explicitly historical; formal ADRs and
+start evidence still precede product code. I2 explicitly makes T025 wait for
+T018/T021/T022 in both task and dependency text. I3 orders T060, T062, applicable
+T063 and conditional T061: create closure artefacts before the source commit and
+statistics render, then verify final statistics/homogeneity. An inapplicable full
+completion report does not block bounded delivery. Drift remains open without
+delivery authority; later source changes require another render/check cycle.
+All 63 tasks remain open.
+
+All 46 unchanged prior hash bindings still match. The reviewed `spec.md` binding
+was renewed, with its prior 2026-10-08 digest preserved above; `tasks.md` was newly
+bound for this focused review. Intake/receipt, fixture sources and evidence
+manifest were unchanged. No new product/platform run, physical assistive test,
+commit or remote write was performed. Ready grants no full acceptance or
+implementation/delivery authority; owner limits and standalone pilot remain intact.
+
+## Fokussiertes unabhängiges Hand-off-Review 2026-10-09 / Focused independent hand-off review 2026-10-09
+
+### DE — Umfang und Ergebnis
+
+Prüfer: separater Agent `/root/lh01_handoff_review`. Auftrag: gemeinsamen
+Plattform-Prüfvertrag und Prepared-Manifest, vier veröffentlichte Issue-Drafts
+(#36–#39) sowie die T029/T053/T054-Ergänzungen unabhängig prüfen und betroffene
+Hashbindungen erneuern. Die früheren Reviews und technischen Messdaten bleiben
+historisch erhalten. Keine Produkt-, Plattform- oder Terminaltests wurden ausgeführt.
+
+**Ergebnis: Ready für das begrenzte Hand-off-Vorbereitungspaket; keine offenen
+Befunde im geprüften Umfang.** Das Manifest bleibt Prepared und
+executionAuthorized=false. Produktcommit, Driverhash, erlaubte Kommandos und
+Mac-A-Produktnachweis fehlen ausdrücklich; der geplante Driver ist tatsächlich
+noch nicht vorhanden. Die Feasibility-Fixture ersetzt keinen dieser Nachweise.
+Lesen eines Issues oder dieses Ready erteilt keine Ausführungsbefugnis.
+
+Mac B/Mac mini M4 Pro, native Windows-11-PowerShell und Ubuntu24.04/Linux-PowerShell
+in WSL2 sind getrennte Ziele. Der Agent muss tatsächliche Hosts/Versionen und exakt
+freigegebene Commit-/Plan-/Driver-/Entscheidungsbindungen prüfen; Abweichung oder
+fehlender Adapter führt zu Blocked. T029 erstellt künftig Driver/Harness, T053
+bindet nach tatsächlichem Mac-A-Produktproof den Prüfstand, T054 verwendet erst
+unter separatem Auftrag die drei Ziel-Hand-offs. Alle 63 Aufgaben bleiben offen.
+
+Der geplante Ablauf ist explizit negativ vor positiv. Erwartete Abweisungen
+benötigen Soll/Ist, Exitcode und Nullwirkung; bloßes Exit0 reicht nicht. Sichere
+Abbruch-/Restoregrenzen, isolierte Schreibwurzeln, neue Run-UUIDs, synthetische
+bereinigte Rohdaten, eingeschränkter Locked-Restore und fehlende Installations-/
+Reparatur-/Remote-Autorität sind beschrieben. Ergebnisse und DE/EN-Berichte werden
+maschinenlesbar gebunden; ein anderer Prüfer und Ownerabnahme bleiben eigenständige
+Schritte. Reale Terminals/Screenreader sind Deferred, Braillehardware Excluded mit
+Ownergrund; kein A11Y-, vollständiges Produkt- oder LH-00-Abnahme-PASS wird erzeugt.
+
+Unabhängig geprüft: Prepared-Felder, 19 eindeutige Fall-IDs, 63 offene Task-IDs,
+vorhandene lokale Quelllinks und finale gegenseitige Issue-URLs #36–#39. Die 47
+unveränderten bisherigen Bindungen stimmen exakt. Die tasks.md-Bindung wurde nach
+Prüfung erneuert; der bisherige Digest des vorangehenden Korrektur-Reviews war
+`416bb8e7316518cb15483090ba5491f8a8c828c2154d13351a95a9f1750e2323`.
+Sechs geprüfte Vertrags-/Draftdateien sind neu gebunden; insgesamt bestehen 54
+aktuelle Hashbindungen. Intake/Receipt und technische Roh-Evidence unverändert.
+Keine Implementation, Installation, neue Messung, Commits oder Remote-Schreibzugriffe
+durch diesen Reviewer. Ready bewertet Vorbereitung, keine spätere Ausführung.
+Der ergänzte Dokumentationsentscheid UpdateRequired ist geprüft: Zielgruppe,
+Dokumentklasse, kanonische Quelle/Owner, Issue-zu-Evidence-Leserpfad, DE/EN,
+sourceOnly ohne Home-Sync und Neubewertungstrigger sind konkret benannt.
+Vorbereitete Texte werden nicht als ausgeführte Plattformbeispiele ausgegeben.
+
+### EN — Scope and outcome
+
+Reviewer: distinct agent `/root/lh01_handoff_review`. This focused review inspected
+the platform contract/Prepared manifest, four published issue drafts (#36–#39)
+and future T029/T053/T054 changes, then renewed affected bindings. Earlier reviews
+and raw technical evidence retain historical scope. No product, platform or
+terminal tests were executed.
+
+**Outcome: Ready for the bounded hand-off preparation package; no open findings
+in the reviewed scope.** Prepared and executionAuthorized=false remain; missing
+product commit, driver digest, approved commands and actual Mac A product evidence
+block execution. The planned driver does not yet exist. The feasibility fixture,
+reading an issue or this Ready grant no execution authority.
+
+Mac B/Mac mini M4 Pro, native Windows 11 PowerShell and Ubuntu24.04 Linux PowerShell
+in WSL2 are separate targets. Actual hosts, versions and exact approved revision/
+manifest/driver/decision bindings are prerequisites. Missing or conflicting inputs
+and unavailable adapters yield Blocked. Future T029 creates driver/harness; T053
+binds the test revision after genuine Mac A product proof; T054 executes separately
+authorized target instructions. All 63 tasks remain open.
+
+The negative-first sequence evaluates exact expectations, exit codes and zero
+unintended effects. Safe stop/restore, isolated outputs, fresh run UUIDs, scrubbed
+synthetic data, locked restore and no implicit installation/repair/remote authority
+are explicit. Machine-readable evidence and bilingual reports require distinct
+review followed by separate owner acceptance. Real terminals and screen readers
+remain Deferred; Braille hardware remains owner-excluded for absent equipment,
+without accessibility, full product or LH-00 acceptance claims.
+
+Independently checked Prepared fields, 19 unique cases, 63 open tasks, local source
+links and final reciprocal issue URLs. All 47 unchanged prior bindings still match.
+The old tasks digest is preserved above and its current binding renewed; six
+contract/draft files were added, giving 54 current bindings. Intake/receipt and
+raw evidence remain unchanged. This reviewer made no implementation, installation,
+new measurement, commit or remote write. Ready assesses preparation only.
+The added UpdateRequired documentation decision explicitly identifies audience,
+class, canonical source/owner, issue-to-evidence reader path, DE/EN, sourceOnly
+without Home sync and reassessment triggers. Prepared documentation is not
+misrepresented as executed platform examples.
