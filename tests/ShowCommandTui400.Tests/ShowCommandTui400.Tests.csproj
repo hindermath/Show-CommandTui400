@@ -1,0 +1,6 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><TargetFramework>net10.0</TargetFramework><LangVersion>14</LangVersion><Nullable>enable</Nullable><ImplicitUsings>enable</ImplicitUsings><RestorePackagesWithLockFile>true</RestorePackagesWithLockFile></PropertyGroup>
+  <ItemGroup><ProjectReference Include="../../src/ShowCommandTui400/ShowCommandTui400.csproj" />
+    <Reference Include="System.Management.Automation"><HintPath>$(LH01PowerShellHome)/System.Management.Automation.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+</Project>

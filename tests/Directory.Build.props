@@ -1,0 +1,8 @@
+<Project>
+  <PropertyGroup><DefaultItemExcludes>$(DefaultItemExcludes);**/bin/**;**/obj/**</DefaultItemExcludes></PropertyGroup>
+  <PropertyGroup Condition="'$(LH01BuildRoot)' != ''">
+    <BaseIntermediateOutputPath>$(LH01BuildRoot)/$(MSBuildProjectName)/obj/</BaseIntermediateOutputPath>
+    <MSBuildProjectExtensionsPath>$(LH01BuildRoot)/$(MSBuildProjectName)/obj/</MSBuildProjectExtensionsPath>
+    <OutputPath>$(LH01BuildRoot)/$(MSBuildProjectName)/bin/</OutputPath>
+  </PropertyGroup>
+</Project>

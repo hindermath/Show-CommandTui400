@@ -43,3 +43,29 @@ Alt+X Ende/Exit, Alt+M textuelle Aktionsübersicht/text action overview. Root-Zu
 erhält Zustand und beendet nicht; tatsächliches Remapping im isolierten Proof
 F1→F2, F3-Konflikt vor Init abgewiesen. / Root back retains state and never exits;
 actual F1→F2 proof and pre-Init F3 conflict rejection are recorded.
+
+## Öffentliche Signatur des ersten Inkrements / First increment public signature
+
+DE: `Show-CommandTui400 [-KeyBinding <hashtable>] [<CommonParameters>]`.
+Kein Pipelineinput und keine Ausgabeobjekte; Rückkehr zur aufrufenden Sitzung.
+Das Manifest exportiert genau dieses Binärcmdlet; `Show` ist ein Approved Verb
+(`Get-Verb Show`). Keine Modi, Treiber- oder Fehler-Injektionsparameter.
+`KeyBinding` ordnet ActionIds Tasten zu: ausschließlich `Help`, `Back`, `Exit`;
+Werte `F1` bis `F12`, `Esc` oder `Alt+H/B/X/M`. Unbekannte IDs/Syntax und
+Kollisionen und abweichende Groß-/Kleinschreibung werden vor UI-Init abgewiesen. Fest erhalten bleiben Alt+H, Alt+B,
+Alt+X und Esc/Back; Remaps dürfen diese Pfade nicht verdrängen. Vorgaben sind
+F1/Help, F3/Exit, F12/Back. Vollständige Aktionen/Remap-Oberfläche folgen T037–T044.
+
+EN: The signature above accepts an optional ActionId-to-key hashtable, no pipeline
+input and emits no objects. Names and key spelling are exact. Only Help, Back and Exit are configurable in this
+increment. Values, fixed alternatives and conflict rejection follow the rules
+above. The manifest exports this binary cmdlet only; Show is approved. No test
+mode, driver or fault injection parameters are public. Later action UI remains open.
+
+DE: Stabile ErrorId-Präfixe: `CapabilityRejected`, `InvalidConfiguration`,
+`InvalidContext`, `Cancelled`, `HandledFailure`, `RestorationFailure`.
+Ctrl+C/StopProcessing beendet ohne Zielwirkung; die PowerShell-Pipeline darf dabei
+`PipelineStopped` melden. Primär- und Restorefehler bleiben gemeinsam erhalten.
+EN: Stable error prefixes are listed above. Cancellation stops without domain
+effects; the caller pipeline may report PipelineStopped. Combined errors retain
+both causes. Restoration failure is never presented as successful restoration.

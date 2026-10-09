@@ -1,0 +1,9 @@
+{
+  "result": "Pass",
+  "checks": [
+    "all-query-splits-and-descriptor-isolation",
+    "multiple-queries-without-duplicate-replies",
+    "case-varied-build-root-rejected-before-write",
+    "case-varied-output-root-rejected-before-write"
+  ]
+}

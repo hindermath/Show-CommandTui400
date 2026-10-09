@@ -3,7 +3,10 @@
 **Datum / Date:** 2026-10-08. **Feature:** `002-lh01-tui-foundation`.
 **Git-Branch / Git branch:** `main`; Setup-BRANCH ist Feature-ID, kein neuer Git-Branch / setup identity does not create a branch.
 **Input:** [spec.md](spec.md), ausschließlich LH-01 / LH-01 only.
-**Status:** technische Auswahl getroffen; praktische Abnahme offen, kein Produktimplementierungsauftrag / technical choices selected; practical acceptance open, no product implementation authority.
+**Status:** T018–T036 ausdrücklich beauftragt und begrenzt auf Mac A umgesetzt;
+praktische Abnahme und T037–T063 offen. / T018–T036 explicitly commissioned and
+implemented on Mac A; practical acceptance and T037–T063 remain open.
+Aktueller Nachweis / Current proof: [Sitzung und Terminal](../../docs/validation/lh01/session-terminal.md).
 
 ## Zusammenfassung / Summary
 
@@ -15,12 +18,12 @@ Ownerauftrag zurückgestellt, Braillehardware-Nachweis wegen fehlender Hardware
 im privaten persönlichen Projekt ausgeschlossen. Keine behauptete A11Y-Konformität.
 [Nachweisgrenzen](feasibility/owner-validation-boundaries.md) und vollständige
 Produkt-/Plattformabnahme bleiben getrennt. Isolierte Prüfungen sind ausgeführt;
-kein Produktcode, Commit, Push oder Serienlauf wurde gestartet.
+beim damaligen Planlauf wurden kein Produktcode, Commit, Push oder Serienlauf gestartet.
 
 Select C#14 in-process cmdlet, host .NET10, minimum PS7.6.4, Terminal.Gui2.5.0 with
 explicit dotnet driver and terminal lease. ODs are resolved choices. Owner defers
 physical terminal/screen-reader tests and excludes Braille hardware proof; do not
-claim conformance. Isolated evidence is recorded, with no product or delivery run.
+claim conformance. The original planning run recorded isolated evidence without product or delivery work.
 
 ## Technischer Kontext / Technical context
 
@@ -63,7 +66,7 @@ tracks authorized publication and its closeout.
 | P05 A11Y/Plattform | Applicable | Praktische Evidence deferred/excluded by owner | Ownergrenzen dokumentiert; kein praktisches PASS und kein CI-Ersatz / evidence limits, no acceptance claim |
 | P06 Sprache/Doku / language/docs | PASS Entwurf / draft | PASS Entwurf / draft | DE/EN, definierte Begriffe, Leserpfad, Textalternative / matching text access |
 | P07 Guidance/Statistik | N/A historischer Planlauf / historical | T014 lokal angewendet / applied locally | Guidance/Register/Referenz80–125 ausgerichtet; Statistikrender bei autorisierter Lieferung offen / render pending authorized delivery |
-| P08 Produktimplementierung / product implementation | Kein Auftrag / no authority | Kein Auftrag / no authority | Eigener Implementierungsauftrag, technische Startchecks/Sicherheitsartefakte und Quellenfrische; praktische Abnahme separat / separate implementation authority and start checks |
+| P08 Produktimplementierung / product implementation | Kein Auftrag im Planlauf / no authority during planning | T018–T036 eigener Auftrag / separately commissioned | Eigener Implementierungsauftrag, technische Startchecks/Sicherheitsartefakte und Quellenfrische; praktische Abnahme separat / separate implementation authority and start checks |
 
 **Gate-Ergebnis:** Technische Auswahl und automatisierte begrenzte Machbarkeit
 liegen vor; anderes Review bewertet die korrigierte Baseline. Vollständige
