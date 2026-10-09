@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LH-01 approved commands / Freigegebene Kommandos",
+  "description": "Version 1: array interface; an empty Prepared array grants no execution authority. / Leere Prepared-Liste erlaubt keine Ausf\u00fchrung.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "commandId",
+      "targetId",
+      "caseId",
+      "executable",
+      "arguments",
+      "workingDirectory",
+      "expectedExitCodes",
+      "expectedCaseResult",
+      "expectedOutcome"
+    ],
+    "properties": {
+      "commandId": {
+        "type": "string",
+        "pattern": "^[A-Za-z][A-Za-z0-9_-]{0,63}$"
+      },
+      "targetId": {
+        "enum": [
+          "macb",
+          "windows",
+          "ubuntu-wsl2"
+        ]
+      },
+      "caseId": {
+        "type": "string",
+        "pattern": "^(PF01|N0[1-7]|B01|S0[1-7]|K01|V0[12]|EV01)$"
+      },
+      "executable": {
+        "type": "string",
+        "minLength": 1,
+        "description": "Approved executable name or verified checkout-relative path; no shell expression. / Freigegebener Name oder gebundener relativer Pfad, kein Shellausdruck."
+      },
+      "arguments": {
+        "type": "array",
+        "items": {
+          "type": "string"
+        }
+      },
+      "workingDirectory": {
+        "type": "string",
+        "minLength": 1,
+        "description": "Checkout-relative directory; driver rejects rooted paths, traversal and escape symlinks. / Relatives Verzeichnis; absolute Pfade, Traversal und ausbrechende Symlinks abweisen."
+      },
+      "expectedExitCodes": {
+        "type": "array",
+        "minItems": 1,
+        "uniqueItems": true,
+        "items": {
+          "type": "integer"
+        }
+      },
+      "expectedCaseResult": {
+        "enum": [
+          "Pass",
+          "Fail"
+        ]
+      },
+      "expectedOutcome": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "$id": "urn:show-commandtui400:lh01:approved-commands:v1"
+}

@@ -98,13 +98,14 @@ SHA-256 independently inspected bytes; current review excluded. Later changes re
 | `research.md` | `34e0e597736ce0f431abd7dbedca8e693864b9e38bc005ea778c061a6859ac75` |
 | `spec.md` | `a377786bedbf7d1aa0456411655ff42745bec0f2c86209c555912d6056d19e92` |
 | `contracts/cmdlet-session.md` | `54ab17c91a3b2251b3911a5f10bcd2f078a624d302dcf0abcdfb9f19dc7dd5ca` |
-| `tasks.md` | `5772d187a4b0c9295336828a450a7f53776533d7ad7f498f58318894f0153955` |
-| `../../docs/validation/lh01/platform-handoff.md` | `009dd41c5b7e57ef51a9a762ab6a6b173cdfe77028a575dbfec0ada1980be36f` |
-| `../../docs/validation/lh01/platform-handoff.json` | `f75f032cac5fa431f4c2abc1722d5ed5daeb440c6d0eed1372379c023c532b4c` |
+| `tasks.md` | `ee3789c1f9166936aeb419f3468b27fe799950281eea86d1b824aab37ab2ed85` |
+| `../../docs/validation/lh01/platform-handoff.md` | `389f267aa8b992710b0acd57716e3f3bad7aa202e1cf5160ed046266a9c7a336` |
+| `../../docs/validation/lh01/platform-handoff.json` | `82a5c263dbc76be769b48a31b172934a31dfb00c566e86a974dc55de5ca68e1a` |
 | `../../docs/issue-drafts/lh01-platform-parent.md` | `dc774aa1995524e595a789dee11044b2ad3b977483533028e7ba490aa9889ab4` |
 | `../../docs/issue-drafts/lh01-platform-macb.md` | `ecb200843508c67b68317354e655ed6f31b3ec77ba88e4812da24cd449cfdc5c` |
 | `../../docs/issue-drafts/lh01-platform-windows.md` | `1546e6fe8ec3979009aefd659d337797abfb58f732b94443947bce920291a22e` |
 | `../../docs/issue-drafts/lh01-platform-ubuntu-wsl2.md` | `3502af9987145225ee0784b9f569c902b92b5cec798223ce20b3632254770e5f` |
+| `../../docs/validation/lh01/approved-commands.schema.json` | `aebc793ebef874e7b76b019e622f5bac3e54485e9b7be92e706190002cafd286` |
 
 ## Fokussiertes unabhängiges Re-review 2026-10-09 / Focused independent re-review 2026-10-09
 
@@ -250,3 +251,74 @@ The added UpdateRequired documentation decision explicitly identifies audience,
 class, canonical source/owner, issue-to-evidence reader path, DE/EN, sourceOnly
 without Home sync and reassessment triggers. Prepared documentation is not
 misrepresented as executed platform examples.
+
+## Unabhängiges Korrektur-Re-review nach PR #40 / Independent correction re-review after PR #40
+
+Datum / Date: 2026-10-09. Prüfer / Reviewer: separater Agent
+`/root/lh01_handoff_review`. Das vorherige 54-Bindungen-Review bleibt historisch;
+die folgenden Aussagen gelten für die gezielten nachfolgenden Korrekturen.
+
+### DE — Umfang und Ergebnis
+
+**Ready für das korrigierte Vorbereitungspaket; keine offenen Befunde im geprüften
+Korrekturumfang.** Die vier PR-Reviewbefunde sind nachvollziehbar geschlossen:
+
+- S05 verlangt einen behandelbaren Produktfehler mit erfolgreicher Wiederherstellung.
+  S07 ist ein separater diagnostischer Wiederherstellungsfehlerlauf. Sein Fallresultat
+  bleibt Fail, sein Gesamtlauf Fail/Exit1; positive Läufe stoppen und beide Fehler
+  bleiben erhalten. Erwarteter Fehler ist kein Restore-PASS oder Gesamt-PASS.
+- Das lokale Version-1-Kommandoschema definiert Array/Object-Form, neun Pflichtfelder,
+  Stringargumentarray und eindeutige Integer-Exitcodes sowie keine Zusatzfelder.
+  T029/Vertrag verlangen zusätzlich semantische Bindungen, eindeutige Kommandokennungen,
+  vollständigen aktivierten Fallumfang, freigegebene Executables und sichere relative
+  Arbeitsverzeichnisse. Shape-PASS allein ist keine Ausführungsfreigabe.
+- Alle 20 eindeutigen Fälle führen ausdrückliche evidenceIds; die Vereinigung deckt
+  E01-01–E01-07 ab. EV01 ist die eindeutige Inventar-/Integritätsfallkennung.
+  Resultate müssen die Zuordnung erhalten und NotRun/Deferred/Excluded offen berichten.
+- Plan und Tasks besitzen getrennte richtige Quelllinks. Die ergänzten T029-Verträge
+  sind künftige Implementierungsaufgaben, keine jetzt vorhandene Driverfunktion.
+
+Prepared/executionAuthorized=false, fehlender Produktcommit/Driver/Mac-A-Produktproof,
+getrennte Zielhosts und unabhängige Review-/Ownerentscheidung bleiben erhalten.
+Kein Produkt-, Plattform-, Terminal- oder Hilfsmittellauf wurde ausgeführt. Das Schema
+wurde als JSON und statischer Vertrag geprüft; zusätzlich validierte der Reviewer
+unabhängig mittels PowerShell Test-Json die leere Prepared-Liste und ein vollständiges
+Kommandobeispiel erfolgreich. Dies ist Schemaprüfung, kein Produktlauf.
+
+51 unveränderte bisherige Bindungen stimmen. Drei geprüfte Bindungen wurden erneuert,
+das neue lokale Kommandoschema zusätzlich gebunden: **55/55 aktuelle Bindungen gültig**.
+Bisherige Digests des ursprünglichen Hand-off-Reviews bleiben hier historisch erhalten:
+
+- `tasks.md`: `5772d187a4b0c9295336828a450a7f53776533d7ad7f498f58318894f0153955`.
+- `../../docs/validation/lh01/platform-handoff.md`: `009dd41c5b7e57ef51a9a762ab6a6b173cdfe77028a575dbfec0ada1980be36f`.
+- `../../docs/validation/lh01/platform-handoff.json`: `f75f032cac5fa431f4c2abc1722d5ed5daeb440c6d0eed1372379c023c532b4c`.
+
+Intake/Receipt, Roh-Evidence und vier Issue-Drafts bleiben unverändert. Nur dieses
+Review wurde durch den Reviewer geschrieben; keine Implementierung, Installation,
+Commits oder Remote-Schreibzugriffe. Ready gilt ausschließlich für Vorbereitung.
+
+### EN — Scope and outcome
+
+**Ready for the corrected preparation package; no open findings in the reviewed
+correction scope.** S05 is a handled product error with successful restore; S07
+is a separate diagnostic restore-failure run with case Fail, overall Fail and
+exit1, preserving both errors and stopping positive tests. An expected failure
+never becomes restore or total Pass.
+
+The local version-1 command schema defines closed objects and nine required fields,
+string argument arrays and unique integer exit codes. T029 and the contract also
+require semantic bindings, unique commands, full enabled executable-case coverage,
+approved executables and safe relative directories. Shape validity grants no authority.
+All 20 unique cases retain explicit evidenceIds covering E01-01–E01-07; EV01 avoids
+identifier collision. Results must preserve this mapping and open coverage limits.
+Plan and Tasks links are distinct and correct. These remain future driver tasks.
+
+Prepared, no execution authority and missing product/driver/Mac A prerequisites remain;
+target isolation, distinct review and owner acceptance are retained. No product,
+platform, terminal or assistive tests were run. The schema was parsed and statically
+reviewed; the distinct reviewer also successfully validated an empty Prepared array
+and complete command exemplar with PowerShell Test-Json. This tests shape, not product.
+51 unchanged bindings match; three were renewed and the schema added: 55/55 current
+bindings match. Prior hashes are preserved above. Intake/receipt, raw evidence and
+four issue drafts are unchanged. Only this review was written, without implementation,
+installation, commits or remote writes. Ready covers preparation only.
