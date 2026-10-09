@@ -67,7 +67,7 @@ the pre-change input, never current readiness. No intake/receipt update has been
 published yet. The ordinary update and distinct review follow T014; no product
 start authorization.
 
-## Abschließende Prüfung T017 / Final readiness T017
+## Abschließende Prüfung T017 vor Lieferung / Final readiness T017 before delivery
 
 **Ready für einen gesonderten Produktauftrag, keine Ausführungsbefugnis / Ready
 for a separate product request, not execution authority.** Stand2026-10-09.
@@ -77,8 +77,8 @@ Agenten, technische Erneuerung durch getrennte Architektur-/Handoff-Prüfer.
 
 | Nachweis / Evidence | Tatsächliches Ergebnis / Actual result |
 |---|---|
-| LH-00 Herkunft / provenance | Receipt`830005cb-1d24-4a5d-982e-05ef9fcf0bf1`; Review`e4eab25c-1d1f-4747-8c4b-7e155a6ed83c` Ready; 64 aktuelle Datei-Bindungen / current file bindings |
-| LH-01 Herkunft / provenance | Receipt`ff697098-91cc-460d-a2b0-c6bb7793c4fc`; Review`2e1342c6-5208-4ee4-b2a0-acf68cd05527` Ready; 38 aktuelle Datei-Bindungen plus2historische Snapshots / current file bindings plus2historical snapshots |
+| LH-00 Herkunft / provenance | Receipt`a8b5cffb-bb50-4e29-90b4-5339d5148f22`; Review`6667b5a9-c7c8-4677-8e6d-089ec64e6c1f` Ready; 82 aktuelle Datei-Bindungen / current file bindings |
+| LH-01 Herkunft / provenance | Receipt`49a87deb-8f2d-4ad2-ad58-a6462e33f312`; Review`c912ea64-cf36-4865-963d-9659b93db696` Ready; 47 aktuelle Datei-Bindungen plus2historische Snapshots / current file bindings plus2historical snapshots |
 | Receipt-/Reviewvalidatoren / paired validators | Je Intake Bash/PowerShell Exit0; Authoring vor Publikation im isolierten Staging validiert, aktive Quellen danach exakt bestätigt / staged before publication, active bindings confirmed |
 | Sprache/Scope / language/scope | Sämtliche normativen FR/AC/QG/OD-Zeilen bytegleich; DE/EN, ursprüngliche IDs und Einzelpilot erhalten / unchanged normative lines and pilot |
 | Routing | Codex0.160.0 Aligned nach autorisiertem lokalen Refresh; kein versioniertes Profil / authorized local profile only |
@@ -111,3 +111,24 @@ or fleet action. LH-00 stays open; T045 is limited pilot permission, not Complet
 Later target-host product proof needs separate requests. Practical terminals/screen
 readers remain Deferred; Braille hardware remains Excluded for lack of a device.
 A new request must name LH-01 product tasks from T018 and authorized writes.
+
+## Quellenkorrektur nach PR #42 / Source correction after PR #42
+
+DE: Das Lieferpaket #42 ist gemergt. Das nachträglich veröffentlichte Copilot-Review
+benannte drei Dokumentationsbefunde: historische Specify-Links, englischer Sprachstand
+und Zeitbezug von LH-00 IAD019. Alle drei sind korrigiert; gewöhnliche Intake-Updates,
+exakte Vorgängerarchive und vollständige andere Reviews erneuern die Herkunft.
+Die obige Tabelle nennt nun die Nachfolger; Validatoren werden erneut ausgeführt.
+LH-00-Manifest/Receipt erhalten ausschließlich die abhängige Hashbindung samt Archiv;
+Ready/Eligible, Mitgliedschaft und Kanten bleiben gleich. T001–T017 bleiben erledigt;
+46 Produkt-/Abnahmeaufgaben bleiben offen. Die lokalen/uncommitted-/Drift-Aussagen
+im vorherigen T017-Bericht beschreiben den damaligen Zustand vor dem Lieferauftrag.
+
+EN: Delivery #42 is merged. Its late Copilot review found three documentation issues:
+historical Specify links, English language state and LH-00 IAD019 time context. All
+three are corrected through ordinary updates, exact archives and complete distinct
+reviews. The table above now identifies the successors; validators are rerun.
+The LH-00 series changes only its dependent hash and archive; Ready/Eligible,
+membership and edges stay unchanged. T001–T017 remain complete;46product/acceptance
+tasks remain open. Earlier local/uncommitted/drift statements describe the historical
+T017 state before delivery authority.

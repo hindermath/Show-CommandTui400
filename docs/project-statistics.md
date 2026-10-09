@@ -64,6 +64,8 @@ heuristic would otherwise count spec.md as a test.*
 
 | 2026-10-09 | LH-01 Startvorbereitung T001–T017 / LH-01 readiness | Getrennte ADRs, Security-/Architekturstart, angewendete Registerausrichtung C#/msl, reguläre Updates beider Intakes und vollständige andere Ready-Reviews; Analyze ohne offene Befunde. 17/63 Aufgaben, kein Produktcode/keine Vollabnahme; autorisierte Lieferung und Renderer mit Referenz80/125. / Separate ADR/security/architecture preparation, bounded registry application, ordinary updates and distinct complete reviews; no product or full acceptance. [Liefernachweis / Delivery](validation/lh01/readiness-delivery.md). |
 
+| 2026-10-09 | LH-01 Herkunft und Zeitbezug / Provenance and time context | Drei nachträgliche Copilot-Befunde aus PR #42 korrigiert; exakte historische Links, DE/EN-Sprachstand, LH-00-Zeitbezug. Reguläre Update-/Review-Nachfolger und Serienhasharchiv, unveränderte Anforderungen/Ready-Eligible; keine Produktimplementierung. / Three late review findings corrected, exact lineage and independent reviews, unchanged requirements/status; no product implementation. [Nachweis / Evidence](validation/lh01/readiness-delivery.md). |
+
 ## Gesamtstatistik / Overall Statistics
 
 <!-- project-statistics-v2:begin -->

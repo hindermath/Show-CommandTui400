@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "reviewId": "e4eab25c-1d1f-4747-8c4b-7e155a6ed83c",
+  "reviewId": "6667b5a9-c7c8-4677-8e6d-089ec64e6c1f",
   "mode": "Single",
   "policy": "generic-markdown",
   "targets": [
@@ -20,17 +20,17 @@
     "operatorExceptions": []
   },
   "authority": {
-    "request": "Owner T001–T017/T016 commissions complete distinct review after ordinary T015 update; reviewer writes only triplet.",
+    "request": "Owner commissions distinct full T016 review after PR42 follow-up correction; preparation delivery MergeAndSync/AdminBypass, no product implementation. Reviewer writes only triplet.",
     "evidence": {
-      "path": "specs/intake-authoring-operations/18acbe98-f0bf-46a1-8029-5c93b2a5f57f/update-decisions.md",
-      "normalizedSha256": "ae15adfe7a7b53d5f3618118bcec1f025cf0c7b4d585ce564ad1b27c39fbd65a"
+      "path": "specs/intake-authoring-operations/d7fd87d4-61c6-4585-b6ec-46c399ea5862/update-decisions.md",
+      "normalizedSha256": "3eb68e988d8d5995b97230396928faa292bf90e512c39d0bd0b442dadba2ebcd"
     },
     "targetMutationAllowed": false,
     "implementationAllowed": false,
     "remoteAccessAllowed": false
   },
   "projectProfile": "show-commandtui400-de-en",
-  "priorReviewId": "b9871c59-670b-4ac7-8f41-a486e1562af1",
-  "priorReviewArchive": "specs/intake-review-archive/b9871c59-670b-4ac7-8f41-a486e1562af1",
-  "targetHash": "a41a810b983eb6acfe2139dc9655494790570ce428f4d7566106b6d52006d315"
+  "priorReviewId": "e4eab25c-1d1f-4747-8c4b-7e155a6ed83c",
+  "priorReviewArchive": "specs/intake-review-archive/e4eab25c-1d1f-4747-8c4b-7e155a6ed83c",
+  "targetHash": "1126780c1b179bb8b98884d4770de5a7c0bccde1b20ba8e4e8e706772a2d0538"
 }

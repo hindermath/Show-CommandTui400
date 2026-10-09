@@ -131,13 +131,13 @@ self-binding. Installed preset files remain unmodified and uncommitted.
 | `docs/security/ai-sbom-applicability.md` | `25c98c873f8749b409554272994276e55e3063930bb00a37fb98db8ed41547b8` |
 | `docs/security/secure-development/2026-10-09-lh01-tui-foundation/baseline.json` | `f27faab91430d8699375305b54cf9796f54baff3c7e52b003f0571b3d095ff39` |
 | `docs/security/secure-development/2026-10-09-lh01-tui-foundation/evidence-matrix.md` | `27541ff0d6d297e5aa0354d3ac6eaf0dc61183702be11827d5c40a1b21c84e73` |
-| `specs/002-lh01-tui-foundation/spec.md` | `65325d3047c2ddc2c24913b34dc9362c372f799ef0ab1139333ba059b9a55975` |
-| `specs/002-lh01-tui-foundation/plan.md` | `c3d8d4047dbb4d2c1709805a5a92c0ace16dbed2eb3ff7d10d9f4ce40d3987a7` |
+| `specs/002-lh01-tui-foundation/spec.md` | `83ceb9dc60f129a9d7c6351b103ef7b34ae84589feb4fa8d280fa8644347b051` |
+| `specs/002-lh01-tui-foundation/plan.md` | `e691754e8b809cf70eb2e81e084c4cec5a198e2ec50cdaad22ff18a03e8c886b` |
 | `specs/002-lh01-tui-foundation/tasks.md` | `1b3895857f10f9888f00a233f20a59a58352956781914a87a6dfd39c7c6895a5` |
 | `specs/002-lh01-tui-foundation/feasibility/decisions.md` | `b02a18ced7a9b256332eaef770f0477484a3c2099ce14429d80493607af0b0f4` |
 | `specs/002-lh01-tui-foundation/feasibility/README.md` | `1bebff20bf1e03b8b7f388d151eb7277e8eb574c25d92a82c1a087490c1c9acf` |
 | `specs/002-lh01-tui-foundation/feasibility/native-dependency-assessment.md` | `e4c01b11a79f0026fd177211ac9225e39a103984930e4117c3b7e910971054d5` |
-| `specs/002-lh01-tui-foundation/feasibility/independent-review.md` | `1da20ee0190600d432eeff3f2991122353842f322c1067d0b41e1afc7c06df4d` |
+| `specs/002-lh01-tui-foundation/feasibility/independent-review.md` | `ad599ae663c472f4eb3e610cd1a1bdf311140546a611952502b90ee5c9261f10` |
 | `specs/002-lh01-tui-foundation/feasibility/owner-validation-boundaries.md` | `d5df23b28c3e1aedc2e1dd6c41baa30299efde527a0c1c8f6b9b48829b87e22d` |
 | `specs/002-lh01-tui-foundation/feasibility/evidence/manifest.json` | `6138ac8689d216b167e6b35868c2fd3ddb1c7f372c40ee8e8ef54e1b32a21695` |
 | `specs/002-lh01-tui-foundation/feasibility/evidence/maca-termios-abi.json` | `9cf2518f1854a134d2d23f075a231154350e286e425d3aba707aaf40d1d73b3b` |
@@ -163,11 +163,16 @@ self-binding. Installed preset files remain unmodified and uncommitted.
 | `docs/validation/lh01/registry-alignment.md` | `eef4e85c1e2ffd450dde555462d223fcf4bc1e0d41c3139324cba7d7882ef578` |
 | `docs/validation/lh01/registry-alignment-proposal.json` | `8f4504428f0a66dbd626eaa919cb9bbe3f6578a5fb32e88ee2086e6acbedf549` |
 | `docs/validation/lh01/registry-alignment-applied.json` | `8f342634abb29c0731d607163dbab937dd6a26478cc508cd463d7aa4d40963f3` |
-| `docs/validation/lh01/start-readiness.md` | `e1751e463040baeaaf16caf23919383c895f76068b8c7f271e2cbb38d708dc3d` |
-| `specs/intake-authoring-receipts/lh-00.json` | `43d96e09ba2e41d7db794f112a39984c2ccd5f87ced157ce7100f5cf4fb53056` |
-| `specs/intake-authoring-receipts/lh-01.json` | `39f844c91aa11200df20c895a9e22a328e8ea753f22bf7994d8edfd2ced5851c` |
-| `specs/intake-review-result.json` | `0cbea5580f4f98703c377fee317e80540c18eada33976117f902c17d61924c00` |
-| `specs/intake-reviews/lh-01/result.json` | `2aae9e682388fe2c4401dd86ba2e4b821ae75a7045228e91151cfb058c7ea51f` |
+| `docs/validation/lh01/start-readiness.md` | `94b4d3d1a0dad636b09dc3627e940fc15a366e5060c18f90dbd0ff6af78d8b99` |
+| `specs/intake-authoring-receipts/lh-00.json` | `e9032fcf1f4a581618ff141db6ba68a5cbbb58a0331cc35a7773ed24da5d54ea` |
+| `specs/intake-authoring-receipts/lh-01.json` | `44f44d7357942988c63ec6b423c12104a6172a9dae74c1b0e6749bb9bcad5866` |
+| `specs/intake-review-result.json` | `c94963f584577137dda0fbe00e5aea8f0f8b0e97b8b426dd0f024c65721549b9` |
+| `specs/intake-reviews/lh-01/result.json` | `a4adcb2ddbba0b5922a769c5e41f62fbb410e17e1e792bd1a0a592fa7b111d88` |
+| `intakes/LH-00.md` | `1126780c1b179bb8b98884d4770de5a7c0bccde1b20ba8e4e8e706772a2d0538` |
+| `specs/intake-series/lh00-process/manifest.json` | `a6fb5dbb1259d9b35dd4b3a909ba0a47099fcedfb071e61b60e4c96b5268c040` |
+| `specs/intake-series/lh00-process/operation.json` | `c70d5be05b456d351eff559bd4c5ff3efc64cfdc588e6d68b8c3aeffeedfa5b5` |
+| `specs/intake-series/lh00-process/receipt.json` | `5147c254286facd5eecd71dde13ef4fde636dfa30db71622ed0b1e13607e08f1` |
+| `docs/validation/lh01/readiness-delivery.md` | `2411967d37abcdb4d48b3c91c0f834dfdfea5476ed5d55b3edb114b46646e3a6` |
 
 ## Dokumentationsauswirkung / Documentation impact
 
@@ -266,3 +271,82 @@ phases only and must never be checked as current source evidence.
 - specs/002-lh01-tui-foundation/feasibility/independent-review.md: `f302d73bf891844deb1fe563f8b5810232528191b3e451a832ada734ad6d0473`.
 
 - constitution.md: `8031f1fb425336dda6dc1e2e582e7cf2d90a680e4f4383253f6a294ae0bd1d6e`.
+
+## DE — Unabhängige Nachprüfung der späten PR42-Befunde
+
+Stand2026-10-09; gleicher anderer Prüfer Codex `/root/lh01_start_review`.
+**Ready für korrigierte Dokumentation und Startvoraussetzungen; keine praktische
+Abnahme oder Produkt-Ausführungsbefugnis.** Alle früheren Prüfstände bleiben
+historisch. Das frühere lokale/uncommitted- und Statistikdrift-Ergebnis bezeichnet
+den Stand vor dem gesonderten Lieferauftrag; Lieferabschluss steht nun im
+separaten readiness-delivery.md. Dessen zentrale Liefer-/Home-Aussagen sind
+attribuierte Lieferevidence des Hauptagenten, kein hier ausgeführter Sync/Remotecheck.
+
+Die drei nach Merge von PR42 veröffentlichten Copilot-Befunde wurden unabhängig
+nachgeprüft: Historische Specify-Links zeigen auf die exakten59f3e085/dd62a398-Archive
+und existieren; DE/EN trennen den damaligen unbekannten Sprachstand von heute
+gewähltem C#14/MSL; LH-00 IAD019 ist historisch und sein Zusatz nennt die vorhandene
+LH-01-Planung/angewendete Registerausrichtung. Keine normative FR/AC-Erweiterung,
+keine Änderung von Einzelpilot, LH-00-Offenstatus oder praktischen Prüfgrenzen.
+
+Aktuelle Nachfolger: LH-00 Receipt`a8b5cffb-bb50-4e29-90b4-5339d5148f22`,
+Review`6667b5a9-c7c8-4677-8e6d-089ec64e6c1f`; LH-01
+Receipt`49a87deb-8f2d-4ad2-ad58-a6462e33f312`,
+Review`c912ea64-cf36-4865-963d-9659b93db696`. Beide aktuellen vollständigen anderen
+Reviewresultate erneut mit Bash-Validator geprüft: Exit0, aktuell Ready.
+Vorgängerarchive und gewöhnliche Updatevorgänge erhalten Herkunft; diese technische
+Prüfung ersetzt keine der getrennten fachlichen Vollprüfungen.
+
+Das LH-00-Serienmanifest ist gegenüber HEAD nach Entfernen genau der geänderten
+Intake-Hashbindung identisch: Ready/Eligible, ein Mitglied, Roots und Kanten erhalten.
+Operation/Receipt führen den abhängigen Update-/Archivnachweis; keine Aktivierung.
+Tasks:63eindeutige Einträge,17abgeschlossen,46offen. Die bereits nachgewiesene
+Architektur-/Securityauswahl und begrenzte Fixture bleiben unverändert; keine neuen
+Fixture-, Build-, Produkt-, Terminal-, Screenreader- oder Plattformläufe.
+
+**67/67 aktuelle rohe Quellenbindungen gültig.** Das ebenfalls unabhängig erneuerte
+technische Review wurde nach dessen Frozen-Meldung gebunden. Alle erkannten
+Dokumentations-/Konsistenzbefunde in diesem Umfang sind geschlossen. Der Owner
+entscheidet spätere Produktaufträge/Abnahmen separat; dieser Prüfer schreibt nur
+diesen Bericht und führt keine Lieferung oder Remoteaktion aus.
+
+## EN — Independent follow-up to late PR42 findings
+
+Same distinct reviewer,2026-10-09. **Ready for corrected documentation/readiness
+only, without product execution or practical acceptance.** Earlier local/no-commit/
+statistics drift statements retain their pre-delivery historical meaning. Dedicated
+delivery evidence attributes central publication/Home status to the lead agent; this
+review performed no sync or remote verification.
+
+Historical Specify links address existing exact59f3e085/dd62a398 archives. DE/EN
+now distinguish original unknown language from selected C#14/MSL. LH-00 IAD019 is
+historical with an explicit current-state addition. These corrections add no
+domain requirement, pilot/acceptance permission or series activation. Both current
+separate full-review results, with successor IDs above, independently pass the Bash
+currentness validator now. Ordinary updates and predecessor archives retain lineage;
+this technical check does not replace complete semantic intake reviews.
+
+The series manifest is identical to HEAD except its dependent intake digest;
+Ready/Eligible, membership, roots and dependencies remain unchanged.63tasks/17done/
+46open agree. Frozen renewed technical review is bound after its distinct review.
+All67current raw bindings match; previous digests remain historical below. No
+fixture, product, platform, terminal, assistive, build or delivery run was performed
+by this reviewer. No consistency finding remains within the bounded corrections.
+
+### Historische Vergleichsdigests vor PR42-Nachprüfung / Prior historical digests
+
+- specs/002-lh01-tui-foundation/spec.md: `65325d3047c2ddc2c24913b34dc9362c372f799ef0ab1139333ba059b9a55975`.
+
+- specs/002-lh01-tui-foundation/plan.md: `c3d8d4047dbb4d2c1709805a5a92c0ace16dbed2eb3ff7d10d9f4ce40d3987a7`.
+
+- specs/002-lh01-tui-foundation/feasibility/independent-review.md: `1da20ee0190600d432eeff3f2991122353842f322c1067d0b41e1afc7c06df4d`.
+
+- docs/validation/lh01/start-readiness.md: `e1751e463040baeaaf16caf23919383c895f76068b8c7f271e2cbb38d708dc3d`.
+
+- specs/intake-authoring-receipts/lh-00.json: `43d96e09ba2e41d7db794f112a39984c2ccd5f87ced157ce7100f5cf4fb53056`.
+
+- specs/intake-authoring-receipts/lh-01.json: `39f844c91aa11200df20c895a9e22a328e8ea753f22bf7994d8edfd2ced5851c`.
+
+- specs/intake-review-result.json: `0cbea5580f4f98703c377fee317e80540c18eada33976117f902c17d61924c00`.
+
+- specs/intake-reviews/lh-01/result.json: `2aae9e682388fe2c4401dd86ba2e4b821ae75a7045228e91151cfb058c7ea51f`.

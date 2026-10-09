@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "reviewId": "c912ea64-cf36-4865-963d-9659b93db696",
+  "reviewId": "2e1342c6-5208-4ee4-b2a0-acf68cd05527",
   "mode": "Single",
   "policy": "generic-markdown",
   "targets": [
@@ -21,16 +21,16 @@
   },
   "projectProfile": "show-commandtui400-de-en",
   "authority": {
-    "request": "Current owner authorizes T016 complete distinct review and MergeAndSync delivery after PR42 follow-up; review agent writes only the LH-01 review triplet, no reviewed sources or product execution.",
+    "request": "Current owner commissions T001–T017 and T016 complete independent review after ordinary T015 update; writes only LH-01 review triplet.",
     "evidence": {
-      "path": "specs/intake-authoring-operations/7293c6cc-7fd8-4f54-8934-e1dc31905c0f/update-decisions.md",
-      "normalizedSha256": "519443bd69ee7252ec65f6b47a17c078818ee93e1189cb09b1c09f4aca30b273"
+      "path": "specs/intake-authoring-operations/0617bfc7-d472-4883-b7ca-2467cf89bce9/update-decisions.md",
+      "normalizedSha256": "f6663d3db5830f5d7d7638879d5b6836509d2b7bff91226a4bcf99d404a2faf2"
     },
     "targetMutationAllowed": false,
     "implementationAllowed": false,
     "remoteAccessAllowed": false
   },
   "targetHash": "abf12485471cb36af8759de00522e7d9f28393db8e9ddea6877ba85daef0df32",
-  "priorReviewId": "2e1342c6-5208-4ee4-b2a0-acf68cd05527",
-  "priorReviewArchive": "specs/intake-review-archive/2e1342c6-5208-4ee4-b2a0-acf68cd05527"
+  "priorReviewId": "dd62a398-16bc-4382-a4bb-5916cef9dfc2",
+  "priorReviewArchive": "specs/intake-review-archive/dd62a398-16bc-4382-a4bb-5916cef9dfc2"
 }

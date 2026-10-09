@@ -1,28 +1,28 @@
 {
   "schemaVersion": "1.0",
   "documentType": "IntakeSeriesReceipt",
-  "receiptId": "92e25ec9-f7cb-42eb-9ea4-32d195006d99",
+  "receiptId": "5092871d-f830-4595-a1a4-af98f55ab9a5",
   "seriesId": "3c0e3e97-1268-4828-aeba-c3f3d17637de",
   "generator": {
     "preset": "intake-sequencing-governance",
     "version": "0.2.7"
   },
-  "createdAt": "2026-10-07T17:54:43.457221Z",
+  "createdAt": "2026-10-09T20:21:23.082007Z",
   "operation": {
-    "operationId": "2f0ff565-106b-4811-9976-b7b92e3e9443",
+    "operationId": "ad3371fa-9411-4c7c-92fd-270bce45b63a",
     "type": "Update",
-    "authorityEvidence": "docs/planning/lh01-source-refresh-format-corrections.md"
+    "authorityEvidence": "specs/intake-authoring-operations/d7fd87d4-61c6-4585-b6ec-46c399ea5862/update-decisions.md"
   },
   "status": "Ready",
   "manifest": {
     "path": "specs/intake-series/lh00-process/manifest.json",
-    "normalizedSha256": "319ac7dccbb71198adc7bdcde525eff3a47a8b1921c6f47730a2eb003c47344b"
+    "normalizedSha256": "a6fb5dbb1259d9b35dd4b3a909ba0a47099fcedfb071e61b60e4c96b5268c040"
   },
   "supersedes": {
-    "receiptPath": "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/2f0ff565-106b-4811-9976-b7b92e3e9443/receipt.json",
-    "receiptNormalizedSha256": "7a37a7c2b549344c07252f9153311e73ef1a81becbf57e546f3f797e752a9ab0",
-    "manifestArchivePath": "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/2f0ff565-106b-4811-9976-b7b92e3e9443/manifest.json",
-    "manifestArchiveSha256": "a730cba5b7fa5943398c3b771aaf728b49a75345f7bcf89ed78e52afc8e7a77d"
+    "receiptPath": "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/ad3371fa-9411-4c7c-92fd-270bce45b63a/receipt.json",
+    "receiptNormalizedSha256": "0b67fd09f333da12edab5d9cab19897086e7643b77bed66916fab85787e002f8",
+    "manifestArchivePath": "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/ad3371fa-9411-4c7c-92fd-270bce45b63a/manifest.json",
+    "manifestArchiveSha256": "a6fb5dbb1259d9b35dd4b3a909ba0a47099fcedfb071e61b60e4c96b5268c040"
   },
   "tombstone": {
     "path": "N/A",
