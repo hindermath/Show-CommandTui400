@@ -1,6 +1,6 @@
 # Feature-Spezifikation: LH-01 — TUI-Grundlage / Feature specification: LH-01 — TUI foundation
 
-**Erstellt / Created:** 2026-10-07. **Status:** spezifiziert; technische Planung ausstehend / specified; technical planning pending.
+**Erstellt / Created:** 2026-10-07. **Status:** technische Planung und begrenzte automatisierte Machbarkeit abgeschlossen; praktische Abnahme offen; keine Implementierungsfreigabe / technical planning and bounded automated feasibility complete; practical acceptance open; no implementation authorization.
 **Feature:** `002-lh01-tui-foundation`. **Git-Branch / Git branch:** `main` (kein neuer Branch / no new branch).
 **Profil / Profile:** `show-commandtui400-de-en`. **Owner:** Thorsten Hindermann. **Autor / Author:** Codex `/root`.
 **Fachlicher Input / Domain input:** ausschließlich [LH-01](../../intakes/LH-01.md).
@@ -521,14 +521,21 @@ zugängliche Zustände und sichere Wiederherstellung. US-01–03 bilden Qualitä
 Vor Umsetzung erwartet: technische Entscheidungen unter `docs/architecture/`,
 allgemeine ADRs für OD-01-001/002 und klare Trennung von Sprache, Runtime,
 Framework, PowerShell-Minimum, Session/Host/Terminal. ADR bedeutet begründetes
-Entscheidungsprotokoll; kein Architekturentwurf wird hier als beschlossen ausgegeben.
+Entscheidungsprotokoll. Historischer Specify-Stand: noch kein gewählter Architekturentwurf
+oder Machbarkeitsprototyp. Aktuell liegen die getrennten technischen Entscheidungen
+und der unabhängig geprüfte isolierte Machbarkeitsaufbau vor; deren Grenzen stehen
+in `feasibility/decisions.md`. Die genannten Architektur-ADRs und Startnachweise
+bleiben vor Produktimplementierung zu erstellen.
 
 Applicable to context, interfaces, runtime, platform/quality boundaries and safe
 return. Goals are identity, predictable actions, accessible state and restoration;
 US-01–03 are quality scenarios. Before implementation expect architecture evidence
 and separate ADR decisions under docs/architecture. Record language, runtime,
-framework, PowerShell minimum and session/host/terminal independently. Nothing
-here claims a chosen architecture or completed feasibility prototype.
+framework, PowerShell minimum and session/host/terminal independently. At the
+historical Specify stage, no architecture choice or feasibility prototype existed.
+Separate choices and an independently reviewed isolated setup now exist, bounded
+by feasibility/decisions.md. Formal architecture ADRs and readiness evidence still
+precede product implementation.
 
 ## Sichere Architektur / Architecture governance applicability
 
