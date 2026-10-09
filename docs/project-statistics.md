@@ -70,6 +70,8 @@ heuristic would otherwise count spec.md as a test.*
 
 | 2026-10-10 | LH-01 Produktkern T018–T036 / Product core | Managed Cmdlet, Guards, eigene OS-Leases, geprüfte Mac-A-Rückkehr und Plattformdriver; 36/63 Tasks erledigt. Plattform-/A11Y-Abnahme und ausführbare Hand-offs bleiben offen. / Managed cmdlet, guards, native leases, bounded Mac A proof and driver; practical acceptance and executable hand-offs remain open. [Nachweis / Proof](validation/lh01/session-terminal.md). |
 
+| 2026-10-10 | Drei Preset-Patches / Three preset patches | UpdateRequired: Security 0.7.1, Architecture 0.6.2 und Sequencing 0.2.8 mit unveraenderlichen Quellenbindungen, 14er-Profil und aktuellen Guidance-/Template-Versionen; andere Presets und historische Receipts erhalten. Kein Produktlauf oder neue fachliche Freigabe; bestehender Statistik-Renderer und unveraenderte Methodik. / Bounded patch adoption, exact source bindings and current guidance; preserve history, no product run or new acceptance. [Nachweis / Evidence](maintenance/preset-patches-2026-10-10.md). |
+
 ## Gesamtstatistik / Overall Statistics
 
 <!-- project-statistics-v2:begin -->
