@@ -1,24 +1,24 @@
 {
   "schemaVersion": "1.1",
-  "reviewId": "cf380598-13ea-4c9b-8bfd-c52c150aae42",
+  "reviewId": "c912ea64-cf36-4865-963d-9659b93db696",
   "mode": "Single",
   "status": "Ready",
   "policy": "generic-markdown",
-  "reviewedAt": "2026-10-09T20:41:30.893550Z",
+  "reviewedAt": "2026-10-09T20:25:51.943041Z",
   "repository": {
     "root": ".",
-    "head": "7d3bba7563caec4b05928b1f0b79a17b38580f71",
+    "head": "a2b2c1899a318ef2fdd9f75de32547f6f94421b7",
     "boundary": "Post-merge PR42 provenance/time-context correction with ordinary successors; owner separately authorizes delivery. No product implementation or series activation."
   },
   "requestEvidence": {
     "path": "specs/intake-reviews/lh-01/request.json",
-    "normalizedSha256": "e18aa290487afd4ff6926b762e36fdc55bc826f7324c55d3bf58edf85678625a"
+    "normalizedSha256": "1540d70b0f0ebe4e2f4cfb25f4ca7e49f6cfbef1ea6792028acf8cd7891c6799"
   },
   "targets": [
     {
       "path": "intakes/LH-01.md",
       "role": "Primary",
-      "normalizedSha256": "f86a0e7711cda8290fc0e2c8743b335db6eb71aa69f7340d4a14314d7a152e25",
+      "normalizedSha256": "abf12485471cb36af8759de00522e7d9f28393db8e9ddea6877ba85daef0df32",
       "gitBlob": "N/A"
     }
   ],
@@ -39,7 +39,7 @@
     "medium": 0,
     "low": 0
   },
-  "supersedes": "c912ea64-cf36-4865-963d-9659b93db696",
+  "supersedes": "2e1342c6-5208-4ee4-b2a0-acf68cd05527",
   "reviewer": {
     "type": "Automated",
     "identity": "Codex /root/lh01_followup_intake_review",
@@ -85,270 +85,260 @@
   "sourceEvidence": [
     {
       "sourceId": "SRC001",
-      "path": "specs/intake-authoring-archive/lh-01/49a87deb-8f2d-4ad2-ad58-a6462e33f312/intakes/LH-01.md",
-      "normalizedSha256": "abf12485471cb36af8759de00522e7d9f28393db8e9ddea6877ba85daef0df32"
-    },
-    {
-      "sourceId": "SRC002",
-      "path": "specs/intake-authoring-operations/f99f1f37-70e0-4591-98cf-bcacb9ae7ccc/update-decisions.md",
-      "normalizedSha256": "433bed3e920527d1e20f94957de93ccca88638b94beb680e510c1c51cf7e63fa"
-    },
-    {
-      "sourceId": "SRC003",
       "path": "specs/intake-authoring-archive/lh-01/ff697098-91cc-460d-a2b0-c6bb7793c4fc/intakes/LH-01.md",
       "normalizedSha256": "abf12485471cb36af8759de00522e7d9f28393db8e9ddea6877ba85daef0df32"
     },
     {
-      "sourceId": "SRC004",
+      "sourceId": "SRC002",
       "path": "specs/intake-authoring-operations/7293c6cc-7fd8-4f54-8934-e1dc31905c0f/update-decisions.md",
       "normalizedSha256": "519443bd69ee7252ec65f6b47a17c078818ee93e1189cb09b1c09f4aca30b273"
     },
     {
-      "sourceId": "SRC005",
+      "sourceId": "SRC003",
       "path": "docs/validation/lh01/registry-alignment.md",
       "normalizedSha256": "eef4e85c1e2ffd450dde555462d223fcf4bc1e0d41c3139324cba7d7882ef578"
     },
     {
-      "sourceId": "SRC006",
+      "sourceId": "SRC004",
       "path": "docs/validation/lh01/registry-alignment-applied.json",
       "normalizedSha256": "8f342634abb29c0731d607163dbab937dd6a26478cc508cd463d7aa4d40963f3"
     },
     {
-      "sourceId": "SRC007",
+      "sourceId": "SRC005",
       "path": "docs/architecture/decisions/002-lh01-language-msl.md",
       "normalizedSha256": "07a0a99f44ae0cd7207e7e96b2fd93b117b420129321b355bc849e7b832b3d5f"
     },
     {
-      "sourceId": "SRC008",
+      "sourceId": "SRC006",
       "path": "docs/architecture/decisions/003-lh01-runtime.md",
       "normalizedSha256": "cfabe9086509e257436b15bca5406fc37f949d65999a8396225c98823feabdc5"
     },
     {
-      "sourceId": "SRC009",
+      "sourceId": "SRC007",
       "path": "docs/architecture/decisions/004-lh01-framework.md",
       "normalizedSha256": "971ffaa2203467fd653b66e221002b26722b44b7efe76f62becd306b83bd5905"
     },
     {
-      "sourceId": "SRC010",
+      "sourceId": "SRC008",
       "path": "docs/architecture/decisions/005-lh01-powershell-minimum.md",
       "normalizedSha256": "54879654384f7c0e8f70996c393f93cef3e66b3887eff48e0de17749717c6395"
     },
     {
-      "sourceId": "SRC011",
+      "sourceId": "SRC009",
       "path": "docs/architecture/decisions/006-lh01-session-terminal.md",
       "normalizedSha256": "b1991ceb57c9ee1a9d2aa2c40f794b859a70a82fd1fc8ba5c4a48963b5acab19"
     },
     {
-      "sourceId": "SRC012",
+      "sourceId": "SRC010",
       "path": "specs/intake-authoring-archive/lh-01/59f3e085-f12e-4a6e-8347-8a7c11b7c65a/intakes/LH-01.md",
       "normalizedSha256": "c16726a57928553c131df49e0f3e6f96ffa417e6e931402d975436232e07343a"
     },
     {
-      "sourceId": "SRC013",
+      "sourceId": "SRC011",
       "path": "specs/intake-authoring-operations/0617bfc7-d472-4883-b7ca-2467cf89bce9/update-decisions.md",
       "normalizedSha256": "f6663d3db5830f5d7d7638879d5b6836509d2b7bff91226a4bcf99d404a2faf2"
     },
     {
-      "sourceId": "SRC014",
+      "sourceId": "SRC012",
       "path": "docs/validation/lh01/registry-alignment.md",
       "normalizedSha256": "eef4e85c1e2ffd450dde555462d223fcf4bc1e0d41c3139324cba7d7882ef578"
     },
     {
-      "sourceId": "SRC015",
+      "sourceId": "SRC013",
       "path": "docs/validation/lh01/registry-alignment-applied.json",
       "normalizedSha256": "8f342634abb29c0731d607163dbab937dd6a26478cc508cd463d7aa4d40963f3"
     },
     {
-      "sourceId": "SRC016",
+      "sourceId": "SRC014",
       "path": "docs/architecture/decisions/002-lh01-language-msl.md",
       "normalizedSha256": "07a0a99f44ae0cd7207e7e96b2fd93b117b420129321b355bc849e7b832b3d5f"
     },
     {
-      "sourceId": "SRC017",
+      "sourceId": "SRC015",
       "path": "docs/architecture/decisions/003-lh01-runtime.md",
       "normalizedSha256": "cfabe9086509e257436b15bca5406fc37f949d65999a8396225c98823feabdc5"
     },
     {
-      "sourceId": "SRC018",
+      "sourceId": "SRC016",
       "path": "docs/architecture/decisions/004-lh01-framework.md",
       "normalizedSha256": "971ffaa2203467fd653b66e221002b26722b44b7efe76f62becd306b83bd5905"
     },
     {
-      "sourceId": "SRC019",
+      "sourceId": "SRC017",
       "path": "docs/architecture/decisions/005-lh01-powershell-minimum.md",
       "normalizedSha256": "54879654384f7c0e8f70996c393f93cef3e66b3887eff48e0de17749717c6395"
     },
     {
-      "sourceId": "SRC020",
+      "sourceId": "SRC018",
       "path": "docs/architecture/decisions/006-lh01-session-terminal.md",
       "normalizedSha256": "b1991ceb57c9ee1a9d2aa2c40f794b859a70a82fd1fc8ba5c4a48963b5acab19"
     },
     {
-      "sourceId": "SRC021",
+      "sourceId": "SRC019",
       "path": "specs/intake-authoring-archive/lh-01/416bbc9e-f0bd-4a98-85a9-7aecd74b71d4/intakes/LH-01.md",
       "normalizedSha256": "7d46fa204c5020e0a7cf0063565fdf00dbcb2ea2dfd0d4a1d702962b9e58e0cc"
     },
     {
-      "sourceId": "SRC022",
+      "sourceId": "SRC020",
       "path": "specs/intake-authoring-operations/92499938-1de6-480c-b88b-596e68aa9e57/repair-decisions.md",
       "normalizedSha256": "8dbb4b455a947587a0d5a081bfc73bb57952e89bde6bd269af1548155d2c92aa"
     },
     {
-      "sourceId": "SRC023",
+      "sourceId": "SRC021",
       "path": "specs/intake-review-archive/e3a61bac-29c5-4238-990f-805496910c0c/result.json",
       "normalizedSha256": "7758bed6d0846283c61cf48247b3e0fa8e46e78779cf594f212274fe919a4e8a"
     },
     {
-      "sourceId": "SRC024",
+      "sourceId": "SRC022",
       "path": "specs/intake-authoring-archive/lh-01/9146b4c3-5bb9-4f12-9cec-279ac68ed63d/intakes/LH-01.md",
       "normalizedSha256": "b5ab4c435988b34f3e8ea84d0a7efe4176c9de1711ccde8f6b68cccc5c7eab4f"
     },
     {
-      "sourceId": "SRC025",
+      "sourceId": "SRC023",
       "path": "specs/intake-authoring-operations/9f552866-fb96-4c93-af27-cb88bc2ee1fe/repair-decisions.md",
       "normalizedSha256": "d4c57751a6ef4b80f06feb4fa59795a2e2c4655f29e88d81b68b8b3884e9c26b"
     },
     {
-      "sourceId": "SRC026",
+      "sourceId": "SRC024",
       "path": "specs/intake-review-archive/e3a61bac-29c5-4238-990f-805496910c0c/result.json",
       "normalizedSha256": "7758bed6d0846283c61cf48247b3e0fa8e46e78779cf594f212274fe919a4e8a"
     },
     {
-      "sourceId": "SRC027",
+      "sourceId": "SRC025",
       "path": "specs/intake-authoring-archive/lh-01/dca52a2e-da00-4403-9ab1-fee65e76e56b/intakes/LH-01.md",
       "normalizedSha256": "47bbafddb066e6face90e7a0356c592ea066f9d41778660b2a84bc5d11604acb"
     },
     {
-      "sourceId": "SRC028",
+      "sourceId": "SRC026",
       "path": "specs/intake-authoring-operations/550f7916-fdd7-47b7-b29a-2b55485e0345/repair-decisions.md",
       "normalizedSha256": "fef38021bec8220f36ece3233f24654524ffb1c726e5da08b43581fa0f3d3e7c"
     },
     {
-      "sourceId": "SRC029",
+      "sourceId": "SRC027",
       "path": "specs/intake-review-archive/e3a61bac-29c5-4238-990f-805496910c0c/result.json",
       "normalizedSha256": "7758bed6d0846283c61cf48247b3e0fa8e46e78779cf594f212274fe919a4e8a"
     },
     {
-      "sourceId": "SRC032",
+      "sourceId": "SRC030",
       "path": "specs/intake-authoring-receipts/lh-00.json",
-      "normalizedSha256": "11a050590c6fef4c5fde643972a4bbc0bd2a127c6c5437628920c47a586f751c"
+      "normalizedSha256": "e9032fcf1f4a581618ff141db6ba68a5cbbb58a0331cc35a7773ed24da5d54ea"
+    },
+    {
+      "sourceId": "SRC031",
+      "path": "specs/intake-review-result.json",
+      "normalizedSha256": "c94963f584577137dda0fbe00e5aea8f0f8b0e97b8b426dd0f024c65721549b9"
+    },
+    {
+      "sourceId": "SRC032",
+      "path": "specs/intake-review-report.md",
+      "normalizedSha256": "e89885999d13b335e86b19a659f649528100c39bb77b8292b408c10ea5739937"
     },
     {
       "sourceId": "SRC033",
-      "path": "specs/intake-review-result.json",
-      "normalizedSha256": "a4797cb1f4c6518412db018e592f7da1b69514a03437b31bd8b023a352b903ab"
-    },
-    {
-      "sourceId": "SRC034",
-      "path": "specs/intake-review-report.md",
-      "normalizedSha256": "b02486d445d2170b34248a1ca85137432906e7a28b4b444d9c9f62fb2a1ff189"
-    },
-    {
-      "sourceId": "SRC035",
       "path": "docs/validation/lh00/pilot-owner-decision.json",
       "normalizedSha256": "b7fabf2d53c9e05b0fc6103979a135d0f4ebb73350d7e94b77bc56220af6fbb3"
     },
     {
-      "sourceId": "SRC036",
+      "sourceId": "SRC034",
       "path": "docs/validation/lh00/acceptance.md",
       "normalizedSha256": "9a1579a9db3df8519841a9423fa6541a30213d0037f31219442831c46d44800b"
     },
     {
-      "sourceId": "SRC037",
+      "sourceId": "SRC035",
       "path": "constitution.md",
       "normalizedSha256": "1089e2750e1a837dda669fda2da1027616fd9cb768e4293bbc1e410528f69f96"
     },
     {
-      "sourceId": "SRC038",
+      "sourceId": "SRC036",
       "path": ".specify/memory/constitution.md",
       "normalizedSha256": "1089e2750e1a837dda669fda2da1027616fd9cb768e4293bbc1e410528f69f96"
     },
     {
-      "sourceId": "SRC039",
+      "sourceId": "SRC037",
       "path": "AGENTS.md",
       "normalizedSha256": "2d07ec9ee266efdfedfcc5af63857c50ddf5de82c400ea65156599ba40be3938"
     },
     {
-      "sourceId": "SRC040",
+      "sourceId": "SRC038",
       "path": "docs/Bedienkonzept.md",
       "normalizedSha256": "42bd0a9243fcda6b1d78ee5976d5dccfcb2b48685c834fff26a942d584779e5a"
     },
     {
-      "sourceId": "SRC041",
+      "sourceId": "SRC039",
       "path": "docs/Lastenheft-Plan.md",
       "normalizedSha256": "2801f591ce479b2aef8b28c99d4f05ce8d09fc9e7a8c83688c60dd175f128cf5"
     },
     {
-      "sourceId": "SRC042",
+      "sourceId": "SRC040",
       "path": "docs/intake-governance.md",
       "normalizedSha256": "3cc4998cf41e57b513a2db4576707d7b07f7bb2a0aa8ca9af3efb278c2d5cc9b"
     },
     {
-      "sourceId": "SRC043",
+      "sourceId": "SRC041",
       "path": "docs/Entwicklungsumgebung.md",
       "normalizedSha256": "d95e83d8d923a81839d4f1613f8e141f4eec1e099dbef0fdb13899a7410957d0"
     },
     {
-      "sourceId": "SRC044",
+      "sourceId": "SRC042",
       "path": ".specify/memory/intake-authoring-policy.json",
       "normalizedSha256": "8d42717c2cc7efc128a62e7967a1f877beee85fb2d53fedee1aa828aba9941d9"
     },
     {
-      "sourceId": "SRC045",
+      "sourceId": "SRC043",
       "path": ".specify/memory/intake-authoring-profile.md",
       "normalizedSha256": "a534f5a813bc166f4bc5c7358e320321c641ce0bf9cade40063cce57390bf611"
     },
     {
-      "sourceId": "SRC046",
+      "sourceId": "SRC044",
       "path": "scripts/config/spec-kit-project-statistics-governance-presets.json",
       "normalizedSha256": "3b41eede1bf49a3b7cc035c73aeecf06acf29447a65039288328f517708a8d64"
     },
     {
-      "sourceId": "SRC047",
+      "sourceId": "SRC045",
       "path": "docs/security/README.md",
       "normalizedSha256": "6435df9d48afd4f4c2c72b143e8936e943139a21ad422302f2e5bd2682392d26"
     },
     {
-      "sourceId": "SRC048",
+      "sourceId": "SRC046",
       "path": "docs/security/msl-applicability.md",
       "normalizedSha256": "75a266292902a5fbebde71afad22d8a0b1712aaaabb546fd248b754881178a3b"
     },
     {
-      "sourceId": "SRC049",
+      "sourceId": "SRC047",
       "path": "docs/security/regulatory-applicability.md",
       "normalizedSha256": "a40b8f3cc4a041a791ef30f9b03c5ac7c42ce5f0276f1bac7271668aefba1020"
     },
     {
-      "sourceId": "SRC050",
+      "sourceId": "SRC048",
       "path": "docs/documentation-governance.md",
       "normalizedSha256": "307b3951c4a7785646c416708dae3b4af85a581831d1ef5f2d25ec2ceabc4622"
     },
     {
-      "sourceId": "SRC051",
+      "sourceId": "SRC049",
       "path": "requirements/intake-governance-config.json",
       "normalizedSha256": "3b885d1895ac2f5c3783a64d3be1a99cf645d61f7622afcc65c8f173ff4f6d4b"
     }
   ],
   "snapshotEvidence": [
     {
-      "sourceId": "SRC030",
+      "sourceId": "SRC028",
       "path": "N/A",
       "normalizedSha256": "7abd501f3e2b9700c911271ec2838ab321ac8b70758fce89bc5cda97c79f00f2",
       "boundary": "Historical original Create SnapshotOnly evidence retained through exact predecessor receipt; no new remote retrieval/freshness claim."
     },
     {
-      "sourceId": "SRC031",
+      "sourceId": "SRC029",
       "path": "N/A",
       "normalizedSha256": "0d6f14417b55ffcd799fec5a9f24348a91c8d8e992a435d96d323ea65851f8f1",
       "boundary": "Historical original Create SnapshotOnly evidence retained through exact predecessor receipt; no new remote retrieval/freshness claim."
     }
   ],
   "authoringEvidence": {
-    "receiptId": "fef04f91-8fc2-444a-8db2-6445de49f5f1",
+    "receiptId": "49a87deb-8f2d-4ad2-ad58-a6462e33f312",
     "intakeId": "bca39f76-fdb5-440a-b889-b12e8f4f4f78",
     "receipt": {
       "path": "specs/intake-authoring-receipts/lh-01.json",
-      "normalizedSha256": "2dbd36ddab6638ec4e00da059e8d5aacd3992594ad855c26bf61c77a3beb1722"
+      "normalizedSha256": "44f44d7357942988c63ec6b423c12104a6172a9dae74c1b0e6749bb9bcad5866"
     }
   },
   "dimensionCoverage": [
@@ -375,7 +365,7 @@
     {
       "dimension": "DependenciesAndPilotRoute",
       "status": "Pass",
-      "evidence": "Current LH-00 receipt 0ef60142-cacd-4e01-be35-3824f02e7dd4 and full distinct Ready review 1ccc35b4-18e8-4cf0-b8b4-ccd2d91a83d0 plus T045 evidence verified. LH-01 standalone outside automatic series; LH-00 remains open, LH-02 separate authority/domain completion, full LH-00 acceptance after LH-02/before LH-03."
+      "evidence": "Current LH-00 receipt a8b5cffb-bb50-4e29-90b4-5339d5148f22 and full distinct Ready review 6667b5a9-c7c8-4677-8e6d-089ec64e6c1f plus T045 evidence verified. LH-01 standalone outside automatic series; LH-00 remains open, LH-02 separate authority/domain completion, full LH-00 acceptance after LH-02/before LH-03."
     },
     {
       "dimension": "GovernanceAndApplicability",
@@ -400,12 +390,12 @@
     {
       "dimension": "ReferencesAndProvenance",
       "status": "Pass",
-      "evidence": "All 49 File hashes independently recomputed; 51 sources total, two original historical SnapshotOnly sources with no new retrieval. Only bilingual delivery-authority context added; all 46 normative language lines exact against first-source predecessor; all local intake links resolve. Previous receipt/intake/review archives retained. Current LH-00 successors carry explicit historical IAD019 and mechanically renewed series hash; no status/membership/authority change."
+      "evidence": "All 47 File hashes independently recomputed; 49 sources total, two original historical SnapshotOnly sources with no new retrieval. Target byte-identical to exact first-source predecessor; all local intake links resolve. Previous receipt/intake/review archives retained. Current LH-00 successors carry explicit historical IAD019 and mechanically renewed series hash; no status/membership/authority change."
     },
     {
       "dimension": "AuthorityAndEmbeddedPrompts",
       "status": "Pass",
-      "evidence": "Current receipt, latest IAD029 and operation explicitly record MergeAndSync with Admin-Bypass for this governance/evidence package. Historical local-only IAD027/028 are labeled historical; local authoring command mutation remains distinct. New DE/EN target context preserves the inactive future LocalImplementation product prompt and separate product authority. Original authoring limits and embedded Specify/Autonomous prompts are explicitly historical/inactive. This review cannot start product tasks, activate series, accept risk or perform remote delivery."
+      "evidence": "Current T001–T017/T014/T015/T016 and MergeAndSync owner authority are distinct from product execution. Original authoring limits and embedded Specify/Autonomous prompts are explicitly historical/inactive. This review cannot start product tasks, activate series, accept risk or perform remote delivery."
     },
     {
       "dimension": "DocumentationAndFollowups",
@@ -417,7 +407,7 @@
   "nextAction": "Finish separately authorized affected technical review, analysis and MergeAndSync correction delivery. Product T018 onward requires a separate owner request; no automatic Specify, feature execution or series activation.",
   "reevaluationTrigger": "Any reviewed intake, source, policy/profile, authority or material scope change requires a new complete independent review.",
   "historicalFindings": {
-    "previousReviewId": "c912ea64-cf36-4865-963d-9659b93db696",
+    "previousReviewId": "2e1342c6-5208-4ee4-b2a0-acf68cd05527",
     "resolved": [
       {
         "id": "IR001",
@@ -442,28 +432,28 @@
   },
   "supersessionEvidence": [
     {
-      "path": "specs/intake-review-archive/c912ea64-cf36-4865-963d-9659b93db696/request.json",
-      "normalizedSha256": "1540d70b0f0ebe4e2f4cfb25f4ca7e49f6cfbef1ea6792028acf8cd7891c6799"
+      "path": "specs/intake-review-archive/2e1342c6-5208-4ee4-b2a0-acf68cd05527/request.json",
+      "normalizedSha256": "d0170fcb71c44b3fa3df632dcc4a865b30d58b3056fa0883c318b617503d164d"
     },
     {
-      "path": "specs/intake-review-archive/c912ea64-cf36-4865-963d-9659b93db696/result.json",
-      "normalizedSha256": "a4adcb2ddbba0b5922a769c5e41f62fbb410e17e1e792bd1a0a592fa7b111d88"
+      "path": "specs/intake-review-archive/2e1342c6-5208-4ee4-b2a0-acf68cd05527/result.json",
+      "normalizedSha256": "2aae9e682388fe2c4401dd86ba2e4b821ae75a7045228e91151cfb058c7ea51f"
     },
     {
-      "path": "specs/intake-review-archive/c912ea64-cf36-4865-963d-9659b93db696/report.md",
-      "normalizedSha256": "f4bb165cd9b4fda6391590d9c21b487a911410debfa873b30f08f072686e237d"
+      "path": "specs/intake-review-archive/2e1342c6-5208-4ee4-b2a0-acf68cd05527/report.md",
+      "normalizedSha256": "51eb4523c78d05aac30ed2cfffd04e8cdd9422f3df95961e81a301dee6f71dd0"
     }
   ],
   "validation": [
     {
       "shell": "Bash",
       "exitCode": 0,
-      "output": "PASS: intake review cf380598-13ea-4c9b-8bfd-c52c150aae42 is current (Single, Ready, 1 targets)"
+      "output": "PASS: intake review c912ea64-cf36-4865-963d-9659b93db696 is current (Single, Ready, 1 targets)"
     },
     {
       "shell": "PowerShell",
       "exitCode": 0,
-      "output": "PASS: intake review cf380598-13ea-4c9b-8bfd-c52c150aae42 is current (Single, Ready, 1 targets)"
+      "output": "PASS: intake review c912ea64-cf36-4865-963d-9659b93db696 is current (Single, Ready, 1 targets)"
     }
   ]
 }

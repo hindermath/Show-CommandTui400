@@ -704,8 +704,8 @@ or delivery changes. Next phase requires its own user request.
 
 DE: Am9.10.2026 wurden die geänderten Governance-/Registerquellen regulär
 aktualisiert, mit exakten Vorgängerarchiven und separatem vollständigem Review.
-LH-01-Receipt `49a87deb-8f2d-4ad2-ad58-a6462e33f312`, Review `c912ea64-cf36-4865-963d-9659b93db696`: Ready,
-keine offenen Befunde oder angenommenen Risiken. Zielhash `abf12485471cb36af8759de00522e7d9f28393db8e9ddea6877ba85daef0df32`.
+LH-01-Receipt `fef04f91-8fc2-444a-8db2-6445de49f5f1`, Review `cf380598-13ea-4c9b-8bfd-c52c150aae42`: Ready,
+keine offenen Befunde oder angenommenen Risiken. Zielhash `f86a0e7711cda8290fc0e2c8743b335db6eb71aa69f7340d4a14314d7a152e25`.
 Die ursprünglichen Specify-Bindungen oben sind historisch. Fachliche IDs und
 Anforderungen bleiben erhalten; technische Auswahl und Owner-Prüfgrenzen sind
 im aktualisierten Intake nachvollziehbar. T001–T017 liefern Startvorbereitung,

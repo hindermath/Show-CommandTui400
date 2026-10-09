@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "1.0",
+  "documentType": "IntakeOperation",
+  "operationId": "f99f1f37-70e0-4591-98cf-bcacb9ae7ccc",
+  "type": "Update",
+  "status": "Completed",
+  "createdAt": "2026-10-09T20:40:17.837662Z",
+  "authorityEvidence": "specs/intake-authoring-operations/f99f1f37-70e0-4591-98cf-bcacb9ae7ccc/update-decisions.md",
+  "proposalPath": "specs/intake-authoring-operations/f99f1f37-70e0-4591-98cf-bcacb9ae7ccc/update-decisions.md",
+  "proposalNormalizedSha256": "433bed3e920527d1e20f94957de93ccca88638b94beb680e510c1c51cf7e63fa",
+  "approval": {
+    "approved": true,
+    "approvedBy": "Thorsten Hindermann",
+    "approvedAt": "2026-10-09T20:40:17.837662Z",
+    "evidence": "Current T001–T017 order, explicit T014 separate central-write approval, and owner request: Bitte committen und pushen. DeliveryMode MergeAndSync mit Admin-Bypass."
+  },
+  "stagingDirectory": "N/A",
+  "intakeId": "bca39f76-fdb5-440a-b889-b12e8f4f4f78",
+  "receiptId": "fef04f91-8fc2-444a-8db2-6445de49f5f1",
+  "priorReceiptId": "49a87deb-8f2d-4ad2-ad58-a6462e33f312",
+  "priorReviewId": "c912ea64-cf36-4865-963d-9659b93db696",
+  "archiveEvidence": [
+    {
+      "originalPath": "intakes/LH-01.md",
+      "archivePath": "specs/intake-authoring-archive/lh-01/49a87deb-8f2d-4ad2-ad58-a6462e33f312/intakes/LH-01.md",
+      "rawSha256": "abf12485471cb36af8759de00522e7d9f28393db8e9ddea6877ba85daef0df32",
+      "normalizedSha256": "abf12485471cb36af8759de00522e7d9f28393db8e9ddea6877ba85daef0df32"
+    },
+    {
+      "originalPath": "specs/intake-authoring-receipts/lh-01.json",
+      "archivePath": "specs/intake-authoring-archive/lh-01/49a87deb-8f2d-4ad2-ad58-a6462e33f312/specs/intake-authoring-receipts/lh-01.json",
+      "rawSha256": "44f44d7357942988c63ec6b423c12104a6172a9dae74c1b0e6749bb9bcad5866",
+      "normalizedSha256": "44f44d7357942988c63ec6b423c12104a6172a9dae74c1b0e6749bb9bcad5866"
+    },
+    {
+      "originalPath": "specs/intake-reviews/lh-01/request.json",
+      "archivePath": "specs/intake-review-archive/c912ea64-cf36-4865-963d-9659b93db696/request.json",
+      "rawSha256": "1540d70b0f0ebe4e2f4cfb25f4ca7e49f6cfbef1ea6792028acf8cd7891c6799",
+      "normalizedSha256": "1540d70b0f0ebe4e2f4cfb25f4ca7e49f6cfbef1ea6792028acf8cd7891c6799"
+    },
+    {
+      "originalPath": "specs/intake-reviews/lh-01/result.json",
+      "archivePath": "specs/intake-review-archive/c912ea64-cf36-4865-963d-9659b93db696/result.json",
+      "rawSha256": "a4adcb2ddbba0b5922a769c5e41f62fbb410e17e1e792bd1a0a592fa7b111d88",
+      "normalizedSha256": "a4adcb2ddbba0b5922a769c5e41f62fbb410e17e1e792bd1a0a592fa7b111d88"
+    },
+    {
+      "originalPath": "specs/intake-reviews/lh-01/report.md",
+      "archivePath": "specs/intake-review-archive/c912ea64-cf36-4865-963d-9659b93db696/report.md",
+      "rawSha256": "f4bb165cd9b4fda6391590d9c21b487a911410debfa873b30f08f072686e237d",
+      "normalizedSha256": "f4bb165cd9b4fda6391590d9c21b487a911410debfa873b30f08f072686e237d"
+    }
+  ],
+  "beforeTargetNormalizedSha256": "abf12485471cb36af8759de00522e7d9f28393db8e9ddea6877ba85daef0df32",
+  "afterTargetNormalizedSha256": "f86a0e7711cda8290fc0e2c8743b335db6eb71aa69f7340d4a14314d7a152e25",
+  "intendedTargets": [
+    "intakes/LH-01.md",
+    "specs/intake-authoring-receipts/lh-01.json"
+  ],
+  "validatedTargets": [
+    "intakes/LH-01.md",
+    "specs/intake-authoring-receipts/lh-01.json"
+  ],
+  "publishedTargets": [
+    "intakes/LH-01.md",
+    "specs/intake-authoring-receipts/lh-01.json"
+  ],
+  "rollbackBoundary": "Exact predecessor archives restore active bytes on publication failure; interrupted state is NeedsRepair.",
+  "reviewSupersession": "Old exact triplet archived; old active triplet removed, no current Ready before separate complete review.",
+  "nextAction": "$speckit-intake-review intakes/LH-01.md",
+  "validation": [
+    {
+      "kind": "authoring",
+      "shell": "Bash",
+      "exitCode": 0,
+      "output": "PASS: intake authoring fef04f91-8fc2-444a-8db2-6445de49f5f1 is current (ReadyForReview, 51 sources, intakes/LH-01.md)\n"
+    },
+    {
+      "kind": "authoring",
+      "shell": "PowerShell",
+      "exitCode": 0,
+      "output": "PASS: intake authoring fef04f91-8fc2-444a-8db2-6445de49f5f1 is current (ReadyForReview, 51 sources, intakes/LH-01.md)\n"
+    }
+  ],
+  "normativeFRACUnchanged": true
+}

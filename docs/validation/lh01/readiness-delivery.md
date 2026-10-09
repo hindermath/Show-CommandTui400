@@ -66,3 +66,18 @@ b11f86ed and Home Runtime are synchronized, check-only Exit0. Copilot reported
 a provider error, not a passed central review. Ordinary update/review successors preserve provenance
 and the dependent LH-00 series hash without status or scope changes. Technical
 reviews and Analyze are renewed against the corrected state; no product task runs.
+
+## Autoritätskorrektur in PR #43 / Authority correction in PR #43
+
+DE: Zwei zusätzliche Receipt-Befunde korrigieren den Unterschied zwischen lokalem
+Authoring-Befehl und separat beauftragter Paketlieferung. Reguläre Nachfolger haben
+deliveryAuthority MergeAndSync, eindeutige aktuelle Owner-Autorität und historisch
+gekennzeichnete frühere local-only-Entscheide. Vollständige andere Reviews werden
+an diese Nachfolger gebunden. LH-00 und Serienbytes bleiben gleich; LH-01 ergänzt nur DE/EN-Lieferkontext,
+alle normativen Anforderungszeilen bleiben erhalten.
+EN: Two additional receipt findings correct the boundary between local authoring
+commands and separately commissioned package delivery. Ordinary successors record
+MergeAndSync deliveryAuthority, explicit current owner authority and historical
+prior local-only decisions. Complete distinct reviews bind the successors. LH-00
+and series bytes stay unchanged; LH-01 only adds DE/EN delivery context, preserving
+every normative requirement line.

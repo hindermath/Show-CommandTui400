@@ -131,13 +131,13 @@ self-binding. Installed preset files remain unmodified and uncommitted.
 | `docs/security/ai-sbom-applicability.md` | `25c98c873f8749b409554272994276e55e3063930bb00a37fb98db8ed41547b8` |
 | `docs/security/secure-development/2026-10-09-lh01-tui-foundation/baseline.json` | `f27faab91430d8699375305b54cf9796f54baff3c7e52b003f0571b3d095ff39` |
 | `docs/security/secure-development/2026-10-09-lh01-tui-foundation/evidence-matrix.md` | `27541ff0d6d297e5aa0354d3ac6eaf0dc61183702be11827d5c40a1b21c84e73` |
-| `specs/002-lh01-tui-foundation/spec.md` | `83ceb9dc60f129a9d7c6351b103ef7b34ae84589feb4fa8d280fa8644347b051` |
+| `specs/002-lh01-tui-foundation/spec.md` | `219883aa4626730c6a6cfb8f3d1a726fd7da0f7037c50a2f5258cbcb3eaa5bc4` |
 | `specs/002-lh01-tui-foundation/plan.md` | `e691754e8b809cf70eb2e81e084c4cec5a198e2ec50cdaad22ff18a03e8c886b` |
 | `specs/002-lh01-tui-foundation/tasks.md` | `1b3895857f10f9888f00a233f20a59a58352956781914a87a6dfd39c7c6895a5` |
 | `specs/002-lh01-tui-foundation/feasibility/decisions.md` | `b02a18ced7a9b256332eaef770f0477484a3c2099ce14429d80493607af0b0f4` |
 | `specs/002-lh01-tui-foundation/feasibility/README.md` | `1bebff20bf1e03b8b7f388d151eb7277e8eb574c25d92a82c1a087490c1c9acf` |
 | `specs/002-lh01-tui-foundation/feasibility/native-dependency-assessment.md` | `e4c01b11a79f0026fd177211ac9225e39a103984930e4117c3b7e910971054d5` |
-| `specs/002-lh01-tui-foundation/feasibility/independent-review.md` | `ad599ae663c472f4eb3e610cd1a1bdf311140546a611952502b90ee5c9261f10` |
+| `specs/002-lh01-tui-foundation/feasibility/independent-review.md` | `6ee86af09b5b169e3e0dc5a9f3e48c007c58b87625ec5791d99e1cb0b14ef84f` |
 | `specs/002-lh01-tui-foundation/feasibility/owner-validation-boundaries.md` | `d5df23b28c3e1aedc2e1dd6c41baa30299efde527a0c1c8f6b9b48829b87e22d` |
 | `specs/002-lh01-tui-foundation/feasibility/evidence/manifest.json` | `6138ac8689d216b167e6b35868c2fd3ddb1c7f372c40ee8e8ef54e1b32a21695` |
 | `specs/002-lh01-tui-foundation/feasibility/evidence/maca-termios-abi.json` | `9cf2518f1854a134d2d23f075a231154350e286e425d3aba707aaf40d1d73b3b` |
@@ -163,16 +163,17 @@ self-binding. Installed preset files remain unmodified and uncommitted.
 | `docs/validation/lh01/registry-alignment.md` | `eef4e85c1e2ffd450dde555462d223fcf4bc1e0d41c3139324cba7d7882ef578` |
 | `docs/validation/lh01/registry-alignment-proposal.json` | `8f4504428f0a66dbd626eaa919cb9bbe3f6578a5fb32e88ee2086e6acbedf549` |
 | `docs/validation/lh01/registry-alignment-applied.json` | `8f342634abb29c0731d607163dbab937dd6a26478cc508cd463d7aa4d40963f3` |
-| `docs/validation/lh01/start-readiness.md` | `94b4d3d1a0dad636b09dc3627e940fc15a366e5060c18f90dbd0ff6af78d8b99` |
-| `specs/intake-authoring-receipts/lh-00.json` | `e9032fcf1f4a581618ff141db6ba68a5cbbb58a0331cc35a7773ed24da5d54ea` |
-| `specs/intake-authoring-receipts/lh-01.json` | `44f44d7357942988c63ec6b423c12104a6172a9dae74c1b0e6749bb9bcad5866` |
-| `specs/intake-review-result.json` | `c94963f584577137dda0fbe00e5aea8f0f8b0e97b8b426dd0f024c65721549b9` |
-| `specs/intake-reviews/lh-01/result.json` | `a4adcb2ddbba0b5922a769c5e41f62fbb410e17e1e792bd1a0a592fa7b111d88` |
+| `docs/validation/lh01/start-readiness.md` | `8b238b721394cd2ff2a1516b43de503bdfcd8b6a61b3be86cc2485b59de1845e` |
+| `specs/intake-authoring-receipts/lh-00.json` | `11a050590c6fef4c5fde643972a4bbc0bd2a127c6c5437628920c47a586f751c` |
+| `specs/intake-authoring-receipts/lh-01.json` | `2dbd36ddab6638ec4e00da059e8d5aacd3992594ad855c26bf61c77a3beb1722` |
+| `specs/intake-review-result.json` | `a4797cb1f4c6518412db018e592f7da1b69514a03437b31bd8b023a352b903ab` |
+| `specs/intake-reviews/lh-01/result.json` | `f8b106b42191258698828f420f0cda07e3770894d211aa8e2e5b5e980b87c6e8` |
 | `intakes/LH-00.md` | `1126780c1b179bb8b98884d4770de5a7c0bccde1b20ba8e4e8e706772a2d0538` |
 | `specs/intake-series/lh00-process/manifest.json` | `a6fb5dbb1259d9b35dd4b3a909ba0a47099fcedfb071e61b60e4c96b5268c040` |
 | `specs/intake-series/lh00-process/operation.json` | `c70d5be05b456d351eff559bd4c5ff3efc64cfdc588e6d68b8c3aeffeedfa5b5` |
 | `specs/intake-series/lh00-process/receipt.json` | `5147c254286facd5eecd71dde13ef4fde636dfa30db71622ed0b1e13607e08f1` |
-| `docs/validation/lh01/readiness-delivery.md` | `2411967d37abcdb4d48b3c91c0f834dfdfea5476ed5d55b3edb114b46646e3a6` |
+| `docs/validation/lh01/readiness-delivery.md` | `08393db11dfea3912f6b84ffe02ec5156a34405f3c309d26cbea25d35e0e162b` |
+| `intakes/LH-01.md` | `f86a0e7711cda8290fc0e2c8743b335db6eb71aa69f7340d4a14314d7a152e25` |
 
 ## Dokumentationsauswirkung / Documentation impact
 
@@ -350,3 +351,79 @@ by this reviewer. No consistency finding remains within the bounded corrections.
 - specs/intake-review-result.json: `0cbea5580f4f98703c377fee317e80540c18eada33976117f902c17d61924c00`.
 
 - specs/intake-reviews/lh-01/result.json: `2aae9e682388fe2c4401dd86ba2e4b821ae75a7045228e91151cfb058c7ea51f`.
+
+## DE — Autoritäts-Re-review PR43
+
+2026-10-09, gleicher anderer Prüfer Codex `/root/lh01_start_review`.
+**Ready im begrenzten Governance-/Nachweis-Lieferumfang.** Die beiden späten
+Copilot-Receipt-Befunde sind geschlossen: Aktuelle Receipts führen ausdrücklich
+deliveryAuthority`MergeAndSync`; ihre aktuelle Owner-Evidence erlaubt das benannte
+Commit-/Push-/Admin-Bypass-Paket. Lokale Authoring-Kommandos und die früheren
+local-only-Entscheide werden davon getrennt und historisch eingeordnet. Daraus
+folgt keine Produkt-, Release-, Installations- oder Flottenautorität.
+
+LH-01 fügt ausschließlich DE/EN-Lieferkontext vor dem weiterhin inaktiven
+Produktfolgeprompt ein. Dessen LocalImplementation-Grenze ist erhalten. Genau
+46normative FR-/AC-/QG-/OD-Sprachzeilen stimmen bytegleich mit HEAD überein.
+Der neue rohe Zielhash ist
+`f86a0e7711cda8290fc0e2c8743b335db6eb71aa69f7340d4a14314d7a152e25`;
+Spec und aktueller Receipt stimmen überein. LH-00 und alle drei aktiven Dateien
+der LH-00-Serie sind in dieser Korrekturrunde bytegleich mit HEAD; keine erneute
+Hash-, Status-, Mitgliedschafts- oder Kantenmutation.
+
+Aktuelle gewöhnliche Nachfolger und vollständige andere Reviews:
+LH-00`0ef60142-cacd-4e01-be35-3824f02e7dd4`/
+`1ccc35b4-18e8-4cf0-b8b4-ccd2d91a83d0` mit84Dateiquellen;
+LH-01`fef04f91-8fc2-444a-8db2-6445de49f5f1`/
+`cf380598-13ea-4c9b-8bfd-c52c150aae42` mit49Dateiquellen plus2historischen
+Snapshots. Beide aktuellen Bash-Reviewvalidatoren unabhängig erneut Exit0/Ready.
+Das nach Frozen-Meldung gebundene andere technische Review trennt dieselben
+Autoritätsgrenzen. Dieser technische Reviewer ersetzt keine fachliche Vollprüfung.
+
+**68/68 aktuelle rohe Bindungen gültig.** Frühere Receipt-/Reviewidentitäten und
+Digests in den obigen Teilprüfungen sind historisch. T001–T017 bleiben erledigt,
+46Folgeaufgaben offen. Keine neuen Fixture-, Produkt-, Terminal-, Screenreader-,
+Plattform- oder Buildläufe, keine Commits/Remoteaktionen durch diesen Prüfer.
+Ready ersetzt keine technische Lieferprüfung, exakte Head-Bindung oder Abnahme.
+Keine offenen Befunde im geprüften Autoritäts-/Konsistenzumfang.
+
+## EN — Authority re-review PR43
+
+Same distinct reviewer,2026-10-09. **Ready for bounded governance/evidence delivery.**
+Both late receipt findings are corrected: current MergeAndSync delivery authority
+and owner evidence explicitly permit the named commit/push/admin-bypass package;
+local authoring and earlier local-only decisions retain their separate historical
+meaning. No product, release, installation or fleet authority follows.
+
+LH-01 adds bilingual delivery context without changing its inactive future
+LocalImplementation prompt. All46normative requirement/acceptance/quality/decision
+lines match HEAD byte for byte; the new target digest matches specification and
+receipt. LH-00 and all three active series files are unchanged in this round.
+Ordinary successor receipt/full-review identities above match current readiness;
+counts are84file sources for LH-00 and49files plus2historical snapshots for LH-01.
+Both current review validators independently pass in Bash. Separate technical
+review was bound after its Frozen notice; this does not replace semantic intake review.
+
+All68current raw bindings match; previous identities/digests are historical.
+17readiness tasks complete,46follow-ups open. No fixture/product/terminal/assistive/
+platform/build, commit or remote action was performed. No authority-consistency
+finding remains; Ready never substitutes for delivery gates, exact-head proof or
+owner acceptance.
+
+### Historische Digests vor Autoritäts-Re-review / Previous authority-review digests
+
+- specs/002-lh01-tui-foundation/spec.md: `83ceb9dc60f129a9d7c6351b103ef7b34ae84589feb4fa8d280fa8644347b051`.
+
+- specs/002-lh01-tui-foundation/feasibility/independent-review.md: `ad599ae663c472f4eb3e610cd1a1bdf311140546a611952502b90ee5c9261f10`.
+
+- docs/validation/lh01/start-readiness.md: `94b4d3d1a0dad636b09dc3627e940fc15a366e5060c18f90dbd0ff6af78d8b99`.
+
+- specs/intake-authoring-receipts/lh-00.json: `e9032fcf1f4a581618ff141db6ba68a5cbbb58a0331cc35a7773ed24da5d54ea`.
+
+- specs/intake-authoring-receipts/lh-01.json: `44f44d7357942988c63ec6b423c12104a6172a9dae74c1b0e6749bb9bcad5866`.
+
+- specs/intake-review-result.json: `c94963f584577137dda0fbe00e5aea8f0f8b0e97b8b426dd0f024c65721549b9`.
+
+- specs/intake-reviews/lh-01/result.json: `a4adcb2ddbba0b5922a769c5e41f62fbb410e17e1e792bd1a0a592fa7b111d88`.
+
+- docs/validation/lh01/readiness-delivery.md: `2411967d37abcdb4d48b3c91c0f834dfdfea5476ed5d55b3edb114b46646e3a6`.

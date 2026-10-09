@@ -77,8 +77,8 @@ Agenten, technische Erneuerung durch getrennte Architektur-/Handoff-Prüfer.
 
 | Nachweis / Evidence | Tatsächliches Ergebnis / Actual result |
 |---|---|
-| LH-00 Herkunft / provenance | Receipt`a8b5cffb-bb50-4e29-90b4-5339d5148f22`; Review`6667b5a9-c7c8-4677-8e6d-089ec64e6c1f` Ready; 82 aktuelle Datei-Bindungen / current file bindings |
-| LH-01 Herkunft / provenance | Receipt`49a87deb-8f2d-4ad2-ad58-a6462e33f312`; Review`c912ea64-cf36-4865-963d-9659b93db696` Ready; 47 aktuelle Datei-Bindungen plus2historische Snapshots / current file bindings plus2historical snapshots |
+| LH-00 Herkunft / provenance | Receipt`0ef60142-cacd-4e01-be35-3824f02e7dd4`; Review`1ccc35b4-18e8-4cf0-b8b4-ccd2d91a83d0` Ready; 84 aktuelle Datei-Bindungen / current file bindings |
+| LH-01 Herkunft / provenance | Receipt`fef04f91-8fc2-444a-8db2-6445de49f5f1`; Review`cf380598-13ea-4c9b-8bfd-c52c150aae42` Ready; 49 aktuelle Datei-Bindungen plus2historische Snapshots / current file bindings plus2historical snapshots |
 | Receipt-/Reviewvalidatoren / paired validators | Je Intake Bash/PowerShell Exit0; Authoring vor Publikation im isolierten Staging validiert, aktive Quellen danach exakt bestätigt / staged before publication, active bindings confirmed |
 | Sprache/Scope / language/scope | Sämtliche normativen FR/AC/QG/OD-Zeilen bytegleich; DE/EN, ursprüngliche IDs und Einzelpilot erhalten / unchanged normative lines and pilot |
 | Routing | Codex0.160.0 Aligned nach autorisiertem lokalen Refresh; kein versioniertes Profil / authorized local profile only |
@@ -132,3 +132,15 @@ The LH-00 series changes only its dependent hash and archive; Ready/Eligible,
 membership and edges stay unchanged. T001–T017 remain complete;46product/acceptance
 tasks remain open. Earlier local/uncommitted/drift statements describe the historical
 T017 state before delivery authority.
+
+DE: Die beiden Receipt-Befunde aus PR #43 sind durch gewöhnliche Nachfolger
+korrigiert: Authoring-Kommandos ändern lokale Artefakte; getrennt davon ist das
+begrenzte Paket ausdrücklich für MergeAndSync mit Admin-Bypass freigegeben.
+Aktuelle deliveryAuthority ist MergeAndSync, frühere local-only-Entscheide sind
+historisch eingeordnet. LH-00 und Serie bleiben bytegleich; LH-01 ergänzt nur diesen DE/EN-Lieferkontext. Neue vollständige
+unabhängige Reviews und beide Validatoren bestätigen den korrigierten Stand.
+EN: Ordinary successors correct both receipt findings in PR #43. Authoring commands
+mutate local artifacts; separate explicit authority permits bounded package delivery
+via MergeAndSync with Admin-Bypass. Current deliveryAuthority is MergeAndSync and
+prior local-only decisions are historical. LH-00 and series bytes stay
+unchanged; LH-01 only adds this DE/EN delivery context. Complete distinct reviews and paired validators confirm the corrected state.

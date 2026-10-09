@@ -66,6 +66,8 @@ heuristic would otherwise count spec.md as a test.*
 
 | 2026-10-09 | LH-01 Herkunft und Zeitbezug / Provenance and time context | Drei nachträgliche Copilot-Befunde aus PR #42 korrigiert; exakte historische Links, DE/EN-Sprachstand, LH-00-Zeitbezug. Reguläre Update-/Review-Nachfolger und Serienhasharchiv, unveränderte Anforderungen/Ready-Eligible; keine Produktimplementierung. / Three late review findings corrected, exact lineage and independent reviews, unchanged requirements/status; no product implementation. [Nachweis / Evidence](validation/lh01/readiness-delivery.md). |
 
+| 2026-10-09 | LH-01 Lieferautorität / Delivery authority | Zwei Receipt-Befunde in PR #43 korrigiert: lokale Authoring-Mutation und separat beauftragtes MergeAndSync getrennt; reguläre Herkunftsnachfolger mit anderen vollständigen Reviews, unveränderte fachliche Anforderungen/Serienbytes. / Correct two receipt findings through ordinary provenance successors and distinct full reviews; separate authoring and delivery authority, unchanged domain requirements/series. [Nachweis / Evidence](validation/lh01/readiness-delivery.md). |
+
 ## Gesamtstatistik / Overall Statistics
 
 <!-- project-statistics-v2:begin -->

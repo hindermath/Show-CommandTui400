@@ -1,62 +1,24 @@
 {
   "schemaVersion": "2.0",
   "documentType": "IntakeReceipt",
-  "receiptId": "fef04f91-8fc2-444a-8db2-6445de49f5f1",
+  "receiptId": "49a87deb-8f2d-4ad2-ad58-a6462e33f312",
   "intakeId": "bca39f76-fdb5-440a-b889-b12e8f4f4f78",
   "generator": {
     "preset": "intake-authoring-governance",
     "version": "0.3.7"
   },
-  "createdAt": "2026-10-09T20:40:17.837662Z",
+  "createdAt": "2026-10-09T20:23:45.322753Z",
   "operation": {
-    "operationId": "f99f1f37-70e0-4591-98cf-bcacb9ae7ccc",
+    "operationId": "7293c6cc-7fd8-4f54-8934-e1dc31905c0f",
     "type": "Update",
-    "authorityEvidence": "specs/intake-authoring-operations/f99f1f37-70e0-4591-98cf-bcacb9ae7ccc/update-decisions.md"
+    "authorityEvidence": "specs/intake-authoring-operations/7293c6cc-7fd8-4f54-8934-e1dc31905c0f/update-decisions.md"
   },
   "status": "ReadyForReview",
   "target": {
     "path": "intakes/LH-01.md",
-    "normalizedSha256": "f86a0e7711cda8290fc0e2c8743b335db6eb71aa69f7340d4a14314d7a152e25"
+    "normalizedSha256": "abf12485471cb36af8759de00522e7d9f28393db8e9ddea6877ba85daef0df32"
   },
   "sources": [
-    {
-      "kind": "File",
-      "location": "Repository",
-      "path": "specs/intake-authoring-archive/lh-01/49a87deb-8f2d-4ad2-ad58-a6462e33f312/intakes/LH-01.md",
-      "normalizedSha256": "abf12485471cb36af8759de00522e7d9f28393db8e9ddea6877ba85daef0df32",
-      "gitBlob": "N/A",
-      "requestedUrl": "N/A",
-      "finalUrl": "N/A",
-      "retrievedAt": "N/A",
-      "httpStatus": "N/A",
-      "contentType": "N/A",
-      "contentLength": "N/A",
-      "redirectChain": [],
-      "rawSha256": "N/A",
-      "proofBoundary": "Current local Update T015; domain scope preserved; no remote retrieval.",
-      "sourceId": "SRC001",
-      "order": 1,
-      "label": "specs/intake-authoring-archive/lh-01/49a87deb-8f2d-4ad2-ad58-a6462e33f312/intakes/LH-01.md"
-    },
-    {
-      "kind": "File",
-      "location": "Repository",
-      "path": "specs/intake-authoring-operations/f99f1f37-70e0-4591-98cf-bcacb9ae7ccc/update-decisions.md",
-      "normalizedSha256": "433bed3e920527d1e20f94957de93ccca88638b94beb680e510c1c51cf7e63fa",
-      "gitBlob": "N/A",
-      "requestedUrl": "N/A",
-      "finalUrl": "N/A",
-      "retrievedAt": "N/A",
-      "httpStatus": "N/A",
-      "contentType": "N/A",
-      "contentLength": "N/A",
-      "redirectChain": [],
-      "rawSha256": "N/A",
-      "proofBoundary": "Current local Update T015; domain scope preserved; no remote retrieval.",
-      "sourceId": "SRC002",
-      "order": 2,
-      "label": "specs/intake-authoring-operations/f99f1f37-70e0-4591-98cf-bcacb9ae7ccc/update-decisions.md"
-    },
     {
       "kind": "File",
       "location": "Repository",
@@ -72,8 +34,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "Current local Update T015; domain scope preserved; no remote retrieval.",
-      "sourceId": "SRC003",
-      "order": 3,
+      "sourceId": "SRC001",
+      "order": 1,
       "label": "specs/intake-authoring-archive/lh-01/ff697098-91cc-460d-a2b0-c6bb7793c4fc/intakes/LH-01.md"
     },
     {
@@ -91,8 +53,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "Current local Update T015; domain scope preserved; no remote retrieval.",
-      "sourceId": "SRC004",
-      "order": 4,
+      "sourceId": "SRC002",
+      "order": 2,
       "label": "specs/intake-authoring-operations/7293c6cc-7fd8-4f54-8934-e1dc31905c0f/update-decisions.md"
     },
     {
@@ -110,8 +72,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "Current local Update T015; domain scope preserved; no remote retrieval.",
-      "sourceId": "SRC005",
-      "order": 5,
+      "sourceId": "SRC003",
+      "order": 3,
       "label": "docs/validation/lh01/registry-alignment.md"
     },
     {
@@ -129,8 +91,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "Current local Update T015; domain scope preserved; no remote retrieval.",
-      "sourceId": "SRC006",
-      "order": 6,
+      "sourceId": "SRC004",
+      "order": 4,
       "label": "docs/validation/lh01/registry-alignment-applied.json"
     },
     {
@@ -148,8 +110,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "Current local Update T015; domain scope preserved; no remote retrieval.",
-      "sourceId": "SRC007",
-      "order": 7,
+      "sourceId": "SRC005",
+      "order": 5,
       "label": "docs/architecture/decisions/002-lh01-language-msl.md"
     },
     {
@@ -167,8 +129,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "Current local Update T015; domain scope preserved; no remote retrieval.",
-      "sourceId": "SRC008",
-      "order": 8,
+      "sourceId": "SRC006",
+      "order": 6,
       "label": "docs/architecture/decisions/003-lh01-runtime.md"
     },
     {
@@ -186,8 +148,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "Current local Update T015; domain scope preserved; no remote retrieval.",
-      "sourceId": "SRC009",
-      "order": 9,
+      "sourceId": "SRC007",
+      "order": 7,
       "label": "docs/architecture/decisions/004-lh01-framework.md"
     },
     {
@@ -205,8 +167,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "Current local Update T015; domain scope preserved; no remote retrieval.",
-      "sourceId": "SRC010",
-      "order": 10,
+      "sourceId": "SRC008",
+      "order": 8,
       "label": "docs/architecture/decisions/005-lh01-powershell-minimum.md"
     },
     {
@@ -224,8 +186,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "Current local Update T015; domain scope preserved; no remote retrieval.",
-      "sourceId": "SRC011",
-      "order": 11,
+      "sourceId": "SRC009",
+      "order": 9,
       "label": "docs/architecture/decisions/006-lh01-session-terminal.md"
     },
     {
@@ -243,8 +205,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "Current local Update T015; domain scope preserved; no remote retrieval.",
-      "sourceId": "SRC012",
-      "order": 12,
+      "sourceId": "SRC010",
+      "order": 10,
       "label": "specs/intake-authoring-archive/lh-01/59f3e085-f12e-4a6e-8347-8a7c11b7c65a/intakes/LH-01.md"
     },
     {
@@ -262,8 +224,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "Current local Update T015; domain scope preserved; no remote retrieval.",
-      "sourceId": "SRC013",
-      "order": 13,
+      "sourceId": "SRC011",
+      "order": 11,
       "label": "specs/intake-authoring-operations/0617bfc7-d472-4883-b7ca-2467cf89bce9/update-decisions.md"
     },
     {
@@ -281,8 +243,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "Current local Update T015; domain scope preserved; no remote retrieval.",
-      "sourceId": "SRC014",
-      "order": 14,
+      "sourceId": "SRC012",
+      "order": 12,
       "label": "docs/validation/lh01/registry-alignment.md"
     },
     {
@@ -300,8 +262,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "Current local Update T015; domain scope preserved; no remote retrieval.",
-      "sourceId": "SRC015",
-      "order": 15,
+      "sourceId": "SRC013",
+      "order": 13,
       "label": "docs/validation/lh01/registry-alignment-applied.json"
     },
     {
@@ -319,8 +281,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "Current local Update T015; domain scope preserved; no remote retrieval.",
-      "sourceId": "SRC016",
-      "order": 16,
+      "sourceId": "SRC014",
+      "order": 14,
       "label": "docs/architecture/decisions/002-lh01-language-msl.md"
     },
     {
@@ -338,8 +300,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "Current local Update T015; domain scope preserved; no remote retrieval.",
-      "sourceId": "SRC017",
-      "order": 17,
+      "sourceId": "SRC015",
+      "order": 15,
       "label": "docs/architecture/decisions/003-lh01-runtime.md"
     },
     {
@@ -357,8 +319,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "Current local Update T015; domain scope preserved; no remote retrieval.",
-      "sourceId": "SRC018",
-      "order": 18,
+      "sourceId": "SRC016",
+      "order": 16,
       "label": "docs/architecture/decisions/004-lh01-framework.md"
     },
     {
@@ -376,8 +338,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "Current local Update T015; domain scope preserved; no remote retrieval.",
-      "sourceId": "SRC019",
-      "order": 19,
+      "sourceId": "SRC017",
+      "order": 17,
       "label": "docs/architecture/decisions/005-lh01-powershell-minimum.md"
     },
     {
@@ -395,8 +357,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "Current local Update T015; domain scope preserved; no remote retrieval.",
-      "sourceId": "SRC020",
-      "order": 20,
+      "sourceId": "SRC018",
+      "order": 18,
       "label": "docs/architecture/decisions/006-lh01-session-terminal.md"
     },
     {
@@ -414,8 +376,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "RepositoryCurrent",
-      "sourceId": "SRC021",
-      "order": 21,
+      "sourceId": "SRC019",
+      "order": 19,
       "label": "specs/intake-authoring-archive/lh-01/416bbc9e-f0bd-4a98-85a9-7aecd74b71d4/intakes/LH-01.md"
     },
     {
@@ -433,8 +395,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "RepositoryCurrent",
-      "sourceId": "SRC022",
-      "order": 22,
+      "sourceId": "SRC020",
+      "order": 20,
       "label": "specs/intake-authoring-operations/92499938-1de6-480c-b88b-596e68aa9e57/repair-decisions.md"
     },
     {
@@ -452,8 +414,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "RepositoryCurrent",
-      "sourceId": "SRC023",
-      "order": 23,
+      "sourceId": "SRC021",
+      "order": 21,
       "label": "specs/intake-review-archive/e3a61bac-29c5-4238-990f-805496910c0c/result.json"
     },
     {
@@ -471,8 +433,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "RepositoryCurrent",
-      "sourceId": "SRC024",
-      "order": 24,
+      "sourceId": "SRC022",
+      "order": 22,
       "label": "specs/intake-authoring-archive/lh-01/9146b4c3-5bb9-4f12-9cec-279ac68ed63d/intakes/LH-01.md"
     },
     {
@@ -490,8 +452,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "RepositoryCurrent",
-      "sourceId": "SRC025",
-      "order": 25,
+      "sourceId": "SRC023",
+      "order": 23,
       "label": "specs/intake-authoring-operations/9f552866-fb96-4c93-af27-cb88bc2ee1fe/repair-decisions.md"
     },
     {
@@ -509,8 +471,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "RepositoryCurrent",
-      "sourceId": "SRC026",
-      "order": 26,
+      "sourceId": "SRC024",
+      "order": 24,
       "label": "specs/intake-review-archive/e3a61bac-29c5-4238-990f-805496910c0c/result.json"
     },
     {
@@ -528,8 +490,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "RepositoryCurrent",
-      "sourceId": "SRC027",
-      "order": 27,
+      "sourceId": "SRC025",
+      "order": 25,
       "label": "specs/intake-authoring-archive/lh-01/dca52a2e-da00-4403-9ab1-fee65e76e56b/intakes/LH-01.md"
     },
     {
@@ -547,8 +509,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "RepositoryCurrent",
-      "sourceId": "SRC028",
-      "order": 28,
+      "sourceId": "SRC026",
+      "order": 26,
       "label": "specs/intake-authoring-operations/550f7916-fdd7-47b7-b29a-2b55485e0345/repair-decisions.md"
     },
     {
@@ -566,8 +528,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "RepositoryCurrent",
-      "sourceId": "SRC029",
-      "order": 29,
+      "sourceId": "SRC027",
+      "order": 27,
       "label": "specs/intake-review-archive/e3a61bac-29c5-4238-990f-805496910c0c/result.json"
     },
     {
@@ -585,8 +547,8 @@
       "redirectChain": [],
       "rawSha256": "7abd501f3e2b9700c911271ec2838ab321ac8b70758fce89bc5cda97c79f00f2",
       "proofBoundary": "SnapshotOnly",
-      "sourceId": "SRC030",
-      "order": 30,
+      "sourceId": "SRC028",
+      "order": 28,
       "label": "Public current Issue 2 snapshot",
       "publicDnsValidated": true,
       "authenticationUsed": false,
@@ -615,15 +577,53 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "SnapshotOnly",
-      "sourceId": "SRC031",
-      "order": 31,
+      "sourceId": "SRC029",
+      "order": 29,
       "label": "Current explicit LH-01 Create request"
     },
     {
       "kind": "File",
       "location": "Repository",
       "path": "specs/intake-authoring-receipts/lh-00.json",
-      "normalizedSha256": "11a050590c6fef4c5fde643972a4bbc0bd2a127c6c5437628920c47a586f751c",
+      "normalizedSha256": "e9032fcf1f4a581618ff141db6ba68a5cbbb58a0331cc35a7773ed24da5d54ea",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "RepositoryCurrent",
+      "sourceId": "SRC030",
+      "order": 30,
+      "label": "specs/intake-authoring-receipts/lh-00.json"
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": "specs/intake-review-result.json",
+      "normalizedSha256": "c94963f584577137dda0fbe00e5aea8f0f8b0e97b8b426dd0f024c65721549b9",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "RepositoryCurrent",
+      "sourceId": "SRC031",
+      "order": 31,
+      "label": "specs/intake-review-result.json"
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": "specs/intake-review-report.md",
+      "normalizedSha256": "e89885999d13b335e86b19a659f649528100c39bb77b8292b408c10ea5739937",
       "gitBlob": "N/A",
       "requestedUrl": "N/A",
       "finalUrl": "N/A",
@@ -636,44 +636,6 @@
       "proofBoundary": "RepositoryCurrent",
       "sourceId": "SRC032",
       "order": 32,
-      "label": "specs/intake-authoring-receipts/lh-00.json"
-    },
-    {
-      "kind": "File",
-      "location": "Repository",
-      "path": "specs/intake-review-result.json",
-      "normalizedSha256": "a4797cb1f4c6518412db018e592f7da1b69514a03437b31bd8b023a352b903ab",
-      "gitBlob": "N/A",
-      "requestedUrl": "N/A",
-      "finalUrl": "N/A",
-      "retrievedAt": "N/A",
-      "httpStatus": "N/A",
-      "contentType": "N/A",
-      "contentLength": "N/A",
-      "redirectChain": [],
-      "rawSha256": "N/A",
-      "proofBoundary": "RepositoryCurrent",
-      "sourceId": "SRC033",
-      "order": 33,
-      "label": "specs/intake-review-result.json"
-    },
-    {
-      "kind": "File",
-      "location": "Repository",
-      "path": "specs/intake-review-report.md",
-      "normalizedSha256": "b02486d445d2170b34248a1ca85137432906e7a28b4b444d9c9f62fb2a1ff189",
-      "gitBlob": "N/A",
-      "requestedUrl": "N/A",
-      "finalUrl": "N/A",
-      "retrievedAt": "N/A",
-      "httpStatus": "N/A",
-      "contentType": "N/A",
-      "contentLength": "N/A",
-      "redirectChain": [],
-      "rawSha256": "N/A",
-      "proofBoundary": "RepositoryCurrent",
-      "sourceId": "SRC034",
-      "order": 34,
       "label": "specs/intake-review-report.md"
     },
     {
@@ -691,8 +653,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "RepositoryCurrent",
-      "sourceId": "SRC035",
-      "order": 35,
+      "sourceId": "SRC033",
+      "order": 33,
       "label": "docs/validation/lh00/pilot-owner-decision.json"
     },
     {
@@ -710,8 +672,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "RepositoryCurrent",
-      "sourceId": "SRC036",
-      "order": 36,
+      "sourceId": "SRC034",
+      "order": 34,
       "label": "docs/validation/lh00/acceptance.md"
     },
     {
@@ -729,8 +691,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "RepositoryCurrent",
-      "sourceId": "SRC037",
-      "order": 37,
+      "sourceId": "SRC035",
+      "order": 35,
       "label": "constitution.md"
     },
     {
@@ -748,8 +710,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "RepositoryCurrent",
-      "sourceId": "SRC038",
-      "order": 38,
+      "sourceId": "SRC036",
+      "order": 36,
       "label": ".specify/memory/constitution.md"
     },
     {
@@ -767,8 +729,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "RepositoryCurrent",
-      "sourceId": "SRC039",
-      "order": 39,
+      "sourceId": "SRC037",
+      "order": 37,
       "label": "AGENTS.md"
     },
     {
@@ -786,8 +748,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "RepositoryCurrent",
-      "sourceId": "SRC040",
-      "order": 40,
+      "sourceId": "SRC038",
+      "order": 38,
       "label": "docs/Bedienkonzept.md"
     },
     {
@@ -805,8 +767,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "RepositoryCurrent",
-      "sourceId": "SRC041",
-      "order": 41,
+      "sourceId": "SRC039",
+      "order": 39,
       "label": "docs/Lastenheft-Plan.md"
     },
     {
@@ -824,8 +786,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "RepositoryCurrent",
-      "sourceId": "SRC042",
-      "order": 42,
+      "sourceId": "SRC040",
+      "order": 40,
       "label": "docs/intake-governance.md"
     },
     {
@@ -843,8 +805,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "RepositoryCurrent",
-      "sourceId": "SRC043",
-      "order": 43,
+      "sourceId": "SRC041",
+      "order": 41,
       "label": "docs/Entwicklungsumgebung.md"
     },
     {
@@ -862,8 +824,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "RepositoryCurrent",
-      "sourceId": "SRC044",
-      "order": 44,
+      "sourceId": "SRC042",
+      "order": 42,
       "label": ".specify/memory/intake-authoring-policy.json"
     },
     {
@@ -881,8 +843,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "RepositoryCurrent",
-      "sourceId": "SRC045",
-      "order": 45,
+      "sourceId": "SRC043",
+      "order": 43,
       "label": ".specify/memory/intake-authoring-profile.md"
     },
     {
@@ -900,8 +862,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "RepositoryCurrent",
-      "sourceId": "SRC046",
-      "order": 46,
+      "sourceId": "SRC044",
+      "order": 44,
       "label": "scripts/config/spec-kit-project-statistics-governance-presets.json"
     },
     {
@@ -919,8 +881,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "RepositoryCurrent",
-      "sourceId": "SRC047",
-      "order": 47,
+      "sourceId": "SRC045",
+      "order": 45,
       "label": "docs/security/README.md"
     },
     {
@@ -938,8 +900,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "RepositoryCurrent",
-      "sourceId": "SRC048",
-      "order": 48,
+      "sourceId": "SRC046",
+      "order": 46,
       "label": "docs/security/msl-applicability.md"
     },
     {
@@ -957,8 +919,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "RepositoryCurrent",
-      "sourceId": "SRC049",
-      "order": 49,
+      "sourceId": "SRC047",
+      "order": 47,
       "label": "docs/security/regulatory-applicability.md"
     },
     {
@@ -976,8 +938,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "RepositoryCurrent",
-      "sourceId": "SRC050",
-      "order": 50,
+      "sourceId": "SRC048",
+      "order": 48,
       "label": "docs/documentation-governance.md"
     },
     {
@@ -995,8 +957,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "RepositoryCurrent",
-      "sourceId": "SRC051",
-      "order": 51,
+      "sourceId": "SRC049",
+      "order": 49,
       "label": "requirements/intake-governance-config.json"
     }
   ],
@@ -1042,22 +1004,15 @@
       "id": "IAD027",
       "status": "Answered",
       "question": "How is current T014 governance drift handled?",
-      "answer": "Historical authoring-operation boundary only; separate current package delivery is governed by the latest decision. Ordinary provenance update with evaluated source changes, exact predecessor archives, unchanged domain IDs and distinct complete review; local only.",
+      "answer": "Ordinary provenance update with evaluated source changes, exact predecessor archives, unchanged domain IDs and distinct complete review; local only.",
       "evidence": "specs/intake-authoring-operations/0617bfc7-d472-4883-b7ca-2467cf89bce9/update-decisions.md"
     },
     {
       "id": "IAD028",
       "status": "Answered",
       "question": "How is current T014 governance drift handled?",
-      "answer": "Historical authoring-operation boundary only; separate current package delivery is governed by the latest decision. Ordinary provenance update with evaluated source changes, exact predecessor archives, unchanged domain IDs and distinct complete review; local only.",
+      "answer": "Ordinary provenance update with evaluated source changes, exact predecessor archives, unchanged domain IDs and distinct complete review; local only.",
       "evidence": "specs/intake-authoring-operations/7293c6cc-7fd8-4f54-8934-e1dc31905c0f/update-decisions.md"
-    },
-    {
-      "id": "IAD029",
-      "status": "Answered",
-      "question": "How is current T014 governance drift handled?",
-      "answer": "Ordinary provenance update with evaluated source changes, exact predecessor archives, unchanged domain IDs and distinct complete review. Authoring mutates local artifacts; the owner separately authorizes this bounded package delivery via MergeAndSync with Admin-Bypass. No product/release/installation/fleet authority.",
-      "evidence": "specs/intake-authoring-operations/f99f1f37-70e0-4591-98cf-bcacb9ae7ccc/update-decisions.md"
     }
   ],
   "openDecisionIds": [],
@@ -1068,15 +1023,15 @@
     "autonomousCanonicalId": "speckit.autonomous",
     "autonomousInvocation": "$speckit-autonomous intakes/LH-01.md"
   },
-  "deliveryAuthority": "MergeAndSync",
-  "authorityEvidence": "Current owner commissions T001–T017 and separately approves T014 central alignment; authoring commands mutate local artifacts only; current owner separately commissions commit/push, MergeAndSync with Admin-Bypass for this bounded package, and required seven-file Home Runtime sync only.",
+  "deliveryAuthority": "LocalImplementation",
+  "authorityEvidence": "Current owner commissions T001–T017 and separately approves T014 central alignment; local provenance update and independent review only.",
   "promptState": "Enabled",
   "provenanceMode": "Supersession",
   "supersedes": {
-    "receiptPath": "specs/intake-authoring-archive/lh-01/49a87deb-8f2d-4ad2-ad58-a6462e33f312/specs/intake-authoring-receipts/lh-01.json",
+    "receiptPath": "specs/intake-authoring-archive/lh-01/ff697098-91cc-460d-a2b0-c6bb7793c4fc/specs/intake-authoring-receipts/lh-01.json",
     "targetNormalizedSha256": "abf12485471cb36af8759de00522e7d9f28393db8e9ddea6877ba85daef0df32",
-    "archiveTargetPath": "specs/intake-authoring-archive/lh-01/49a87deb-8f2d-4ad2-ad58-a6462e33f312/intakes/LH-01.md",
-    "archiveReceiptPath": "specs/intake-authoring-archive/lh-01/49a87deb-8f2d-4ad2-ad58-a6462e33f312/specs/intake-authoring-receipts/lh-01.json"
+    "archiveTargetPath": "specs/intake-authoring-archive/lh-01/ff697098-91cc-460d-a2b0-c6bb7793c4fc/intakes/LH-01.md",
+    "archiveReceiptPath": "specs/intake-authoring-archive/lh-01/ff697098-91cc-460d-a2b0-c6bb7793c4fc/specs/intake-authoring-receipts/lh-01.json"
   },
   "legacyAdoption": {
     "evidenceType": "N/A",
@@ -1084,7 +1039,7 @@
     "priorGitBlob": "N/A"
   },
   "updateAuthorized": true,
-  "updateAuthorityEvidence": "specs/intake-authoring-operations/f99f1f37-70e0-4591-98cf-bcacb9ae7ccc/update-decisions.md",
+  "updateAuthorityEvidence": "specs/intake-authoring-operations/7293c6cc-7fd8-4f54-8934-e1dc31905c0f/update-decisions.md",
   "series": {
     "seriesId": "N/A",
     "manifestPath": "N/A",
@@ -1116,10 +1071,10 @@
     }
   ],
   "updateEvidence": {
-    "decisionsPath": "specs/intake-authoring-operations/f99f1f37-70e0-4591-98cf-bcacb9ae7ccc/update-decisions.md",
-    "operationPath": "specs/intake-authoring-operations/f99f1f37-70e0-4591-98cf-bcacb9ae7ccc/operation.json",
-    "previousReviewId": "c912ea64-cf36-4865-963d-9659b93db696",
-    "previousReviewArchive": "specs/intake-review-archive/c912ea64-cf36-4865-963d-9659b93db696",
-    "previousReceiptNormalizedSha256": "44f44d7357942988c63ec6b423c12104a6172a9dae74c1b0e6749bb9bcad5866"
+    "decisionsPath": "specs/intake-authoring-operations/7293c6cc-7fd8-4f54-8934-e1dc31905c0f/update-decisions.md",
+    "operationPath": "specs/intake-authoring-operations/7293c6cc-7fd8-4f54-8934-e1dc31905c0f/operation.json",
+    "previousReviewId": "2e1342c6-5208-4ee4-b2a0-acf68cd05527",
+    "previousReviewArchive": "specs/intake-review-archive/2e1342c6-5208-4ee4-b2a0-acf68cd05527",
+    "previousReceiptNormalizedSha256": "39f844c91aa11200df20c895a9e22a328e8ea753f22bf7994d8edfd2ced5851c"
   }
 }
