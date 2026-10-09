@@ -26,3 +26,11 @@ Bash behavior is retained. Fourteen installed presets match the pinned project
 matrix. Tag URLs establish provenance, not signatures. No product dependency
 set exists. No Dependabot/Renovate configuration is present; new automated
 updates remain Open for the owner at the first product dependency decision.
+
+## LH-01 Startentwurf 2026-10-09 / Readiness design
+
+Historische LH-00-Bewertungen oben bleiben erhalten. / Prior LH-00 context is preserved.
+
+LH-01-Auswahl Terminal.Gui2.5.0 und 24 locked Fixturepakete: vorhandene Contenthash-/Lizenz-/Native-Assetbewertung in specs/002-lh01-tui-foundation/feasibility/native-dependency-assessment.md. Kein neuer Restore oder aktueller Schwachstellen-Freibrief. Produktpackages.lock.json und freigegebene öffentliche Registry erst T019. Onigwrap1.0.11 über TextMateSharp2.0.4 nicht aktivieren; native Oniguruma-Version/Buildherkunft vor Highlighting. Thorsten prüft mindestens monatlich (2026-11-09), vor Release und bei Advisories/Paketwechsel; Updateautomation bleibt eigener Auftrag.
+
+Terminal.Gui2.5.0 and 24 locked fixture packages have existing content/license/native evidence; no new restore or current vulnerability clearance is claimed. Product lock/feed follow at T019. Do not activate Onigwrap/TextMate highlighting before native source/build provenance. Thorsten audits monthly (2026-11-09), before release and on advisory/package changes; automation requires separate authority.

@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "reviewId": "dd62a398-16bc-4382-a4bb-5916cef9dfc2",
+  "reviewId": "2e1342c6-5208-4ee4-b2a0-acf68cd05527",
   "mode": "Single",
   "policy": "generic-markdown",
   "targets": [
@@ -21,15 +21,16 @@
   },
   "projectProfile": "show-commandtui400-de-en",
   "authority": {
-    "request": "Current explicit human speckit-intake-repair intakes/LH-01.md commissions IR001 repair and complete fresh distinct-agent review, including coherent IR002 source-label correction. Only new local LH-01 request/result/report; no target/receipt/source mutation, implementation, commit, remote access or series change.",
+    "request": "Current owner commissions T001–T017 and T016 complete independent review after ordinary T015 update; writes only LH-01 review triplet.",
     "evidence": {
-      "path": "specs/intake-authoring-operations/92499938-1de6-480c-b88b-596e68aa9e57/repair-decisions.md",
-      "normalizedSha256": "8dbb4b455a947587a0d5a081bfc73bb57952e89bde6bd269af1548155d2c92aa"
+      "path": "specs/intake-authoring-operations/0617bfc7-d472-4883-b7ca-2467cf89bce9/update-decisions.md",
+      "normalizedSha256": "f6663d3db5830f5d7d7638879d5b6836509d2b7bff91226a4bcf99d404a2faf2"
     },
     "targetMutationAllowed": false,
     "implementationAllowed": false,
     "remoteAccessAllowed": false
   },
-  "targetHash": "c16726a57928553c131df49e0f3e6f96ffa417e6e931402d975436232e07343a",
-  "priorReviewId": "e3a61bac-29c5-4238-990f-805496910c0c"
+  "targetHash": "abf12485471cb36af8759de00522e7d9f28393db8e9ddea6877ba85daef0df32",
+  "priorReviewId": "dd62a398-16bc-4382-a4bb-5916cef9dfc2",
+  "priorReviewArchive": "specs/intake-review-archive/dd62a398-16bc-4382-a4bb-5916cef9dfc2"
 }

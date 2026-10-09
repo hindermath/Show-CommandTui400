@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "1.1",
+  "reviewId": "b9871c59-670b-4ac7-8f41-a486e1562af1",
+  "mode": "Single",
+  "policy": "generic-markdown",
+  "targets": [
+    {
+      "path": "intakes/LH-00.md",
+      "role": "Primary"
+    }
+  ],
+  "series": {
+    "orderedTargetPaths": [],
+    "roots": [],
+    "dependencies": []
+  },
+  "campaign": {
+    "manifestPath": "N/A",
+    "workers": [],
+    "operatorExceptions": []
+  },
+  "authority": {
+    "request": "Owner T001–T017/T016 commissions complete distinct review after ordinary T015 update; reviewer writes only triplet.",
+    "evidence": {
+      "path": "specs/intake-authoring-operations/d5382066-64f4-40be-9bd2-1d52dc15cce4/update-decisions.md",
+      "normalizedSha256": "43220bb89c63e46ce9400d795407eb8ac56952b2c9514fbebc761fda21edd322"
+    },
+    "targetMutationAllowed": false,
+    "implementationAllowed": false,
+    "remoteAccessAllowed": false
+  },
+  "projectProfile": "show-commandtui400-de-en",
+  "priorReviewId": "d0eb303d-0179-4694-8cd7-6fc3308cb3dd",
+  "priorReviewArchive": "specs/intake-review-archive/d0eb303d-0179-4694-8cd7-6fc3308cb3dd",
+  "targetHash": "a41a810b983eb6acfe2139dc9655494790570ce428f4d7566106b6d52006d315"
+}

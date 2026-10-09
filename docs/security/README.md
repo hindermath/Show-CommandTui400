@@ -1,6 +1,30 @@
-# Sicherheitsnachweise — Einrichtungsstand
+# Sicherheitsnachweise / Security evidence
 
-Owner: Thorsten Hindermann. Stand: 07.10.2026.
+Owner: Thorsten Hindermann. Stand / Date: 09.10.2026.
+
+## Aktueller LH-01-Startentwurf / Current LH-01 readiness design
+
+Managed C#14 ist eigener MSL-Code; Runtime/OS/PInvoke/native Pakete bleiben
+separat. Host-.NET10, Terminal.Gui2.5.0/dotnet und MinimumPS7.6.4 sind ausgewählt,
+keine Produktimplementierung. Architektur-/Sicherheitsentwurf und Baseline sind
+geprüft; Produktkontrollen und praktische Plattform-/A11Y-Abnahme bleiben offen.
+
+Own managed C#14 code is memory-safe; native/runtime/interop boundaries remain
+separate. Host .NET10, explicit Terminal.Gui2.5.0/dotnet and minimumPS7.6.4 are
+selected, with no product implementation. Reviewed design/baseline does not pass
+product controls or practical platform/assistive acceptance.
+
+- [Architektur / Architecture](../architecture/lh01-tui-foundation.md)
+- [S-ADR](adr/s-adr-lh01-session-display.md)
+- [Startreview / Readiness review](../validation/lh01/architecture-start-review.md)
+- [Baseline](secure-development/2026-10-09-lh01-tui-foundation/evidence-matrix.md)
+- [Herkunft und Startprüfung / Provenance and readiness](../validation/lh01/start-readiness.md)
+
+Documentation impact UpdateRequired, sourceOnly DE/EN, Thorsten; no Home sync.
+Reevaluate changes to scope, dependencies or native use.
+
+## Historische Einrichtung 07.10.2026 / Historical setup
+
 
 Diese Übersicht beschreibt die Einrichtung, keine abgeschlossene
 Produktsicherheitsprüfung. NIST SSDF und CWE Top 25 gelten für die Arbeit.
@@ -60,7 +84,7 @@ staging remains historical.
 - [Architektur / Architecture](../architecture/lh00-process.md)
 - [Baseline-Matrix / Baseline matrix](secure-development/2026-10-06-lh00-process/evidence-matrix.md)
 
-## Aktuelle Nachweisgrenze / Current evidence boundary
+## Historische Nachweisgrenze 07.10.2026 / Historical evidence boundary
 
 Die vorhandenen LH-00-Grundlagen und isolierten Mac-A-/B-01-Prüfungen sind
 Prozess-/Toolingnachweise, keine Sicherheitsabnahme der zukünftigen TUI.

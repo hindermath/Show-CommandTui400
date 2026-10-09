@@ -14,3 +14,11 @@ Owner Thorsten, Wiedervorlage 2026-10-12; Trigger Web-/Dienst-/Cloud-Scope oder 
 Least privilege and explicit authority apply through the S-ADR. A network Zero Trust deployment is N/A because no service identity or network topology is built.
 
 Owner Thorsten; reassess on 2026-10-12 or changed web/service/cloud/contract scope.
+
+## LH-01 Startentwurf 2026-10-09 / Readiness design
+
+Historische LH-00-Bewertungen oben bleiben erhalten. / Prior LH-00 context is preserved.
+
+Produkt-ZeroTrust N/A: kein verteilter Remotezugriff/Authentisierungsdienst. Lokale Eingabe-/Kontextschutzschichten bleiben Applicable. Neu bewerten bei Remote-/Dienstscope; Owner Thorsten.
+
+Product distributed Zero Trust is N/A without remote access/authentication service. Local input/context controls still apply; Thorsten reassesses remote/service changes.

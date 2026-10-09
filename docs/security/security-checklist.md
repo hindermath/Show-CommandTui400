@@ -28,3 +28,11 @@ integration. Only the owner may accept residual risk; none is accepted here.
 Offene Teile: Owner Thorsten, Wiedervorlage 2026-10-12, Trigger entsprechender
 Task-/Scopebeginn. Keine offene spätere Abnahme wird zu einem PASS umgedeutet.
 Open controls retain the owner/date above and are reassessed at their matching task.
+
+## LH-01 Startentwurf 2026-10-09 / Readiness design
+
+Historische LH-00-Bewertungen oben bleiben erhalten. / Prior LH-00 context is preserved.
+
+Applicable: Versions-/Capabilityguard, Textentkräftung, Whitelist plus Kontext, Lease/Restore, sichere Fehler, Lockfile/Provenienz und Datensparsamkeit. Planungsartefakte T002–T013 belegen Kontrollentwurf; Produktumsetzung/-tests T021–T060 bleiben Not Fulfilled. Kein Planungs-Ready als Produktkontroll-PASS.
+
+Version/capability guard, safe display, independent action/context checks, restore/error handling, dependency provenance and privacy apply. T002–T013 prove design; actual product controls/tests T021–T060 remain Not Fulfilled. Planning readiness never passes product controls.

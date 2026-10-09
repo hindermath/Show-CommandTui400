@@ -14,3 +14,11 @@ Owner Thorsten, Wiedervorlage 2026-10-12; Trigger Web-/Dienst-/Cloud-Scope oder 
 C5 is N/A for the local file process. No assurance report exists: type Unknown, period absent. Codex tool usage is not a verified provider attestation; provider/contract evaluation remains Open in the regulatory mapping.
 
 Owner Thorsten; reassess on 2026-10-12 or changed web/service/cloud/contract scope.
+
+## LH-01 Startentwurf 2026-10-09 / Readiness design
+
+Historische LH-00-Bewertungen oben bleiben erhalten. / Prior LH-00 context is preserved.
+
+Produkt-C5 N/A ohne Cloudservice; kein Konformitäts-/Testatclaim. Tooling/Organisation getrennt Open mit Thorsten/2026-10-12/vor betroffener Nutzung; echte Providerberichte und Kundenkontrollen erforderlich. C5 ersetzt C3A nicht.
+
+Product C5 is N/A without a cloud service; no conformity/attestation claim. Tooling/organisation stays separately Open, Thorsten/2026-10-12/before affected use; actual provider reports and customer controls are needed. C5 does not replace C3A.

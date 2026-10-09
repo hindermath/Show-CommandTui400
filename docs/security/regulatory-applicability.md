@@ -39,3 +39,11 @@ and publish nothing. Agent review does not replace the owner's legal determinati
 | [DORA](https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng) | Organisation / organisation | Open | Not Assessed | Jurisdiktion/Rolle/Pflicht unbekannt / jurisdiction, role, direct/contractual duties unknown | Thorsten / T012 agent | Quellen geprüft 2026-10-06; kein Rechtsbefund / sources inspected, no legal determination | Owner klärt Daten, Betreiber, Verträge und Markt / clarify data, operator, contracts and market; 2026-10-12 |
 
 Trigger: neue Daten-/Dienst-/Liefer-/Organisationskonstellation. / Reassess whenever data, services, delivery or organisational roles change.
+
+## LH-01 Startentwurf 2026-10-09 / Readiness design
+
+Historische LH-00-Bewertungen oben bleiben erhalten. / Prior LH-00 context is preserved.
+
+LH-01-Datenfluss: lokale Sitzung → in-process Cmdlet → Terminal; keine Speicherung privater Kontextdaten, Logs nur synthetisch, keine Produkt-KI oder Netzwerkdienste. Entwicklungs-KI separat als Tooling bewerten. Alle bestehenden DS-GVO/KI-VO/CRA/NIS2/DORA-Zuordnungen bleiben Open: Rollen/Jurisdiktion/Markt/Verträge unbekannt; Thorsten, Aktion qualifizierte Einordnung, Frist 2026-10-12/vor betroffener Nutzung oder Lieferung. Keine neue Rechtsentscheidung oder Privatprojekt-Ausnahme.
+
+LH-01 data remains in-process and displayed locally, without private context persistence; evidence uses synthetic data. No product AI/network service; development AI is separate tooling. Existing GDPR/AI Act/CRA/NIS2/DORA assessments remain Open pending qualified role/jurisdiction/market/contract classification by Thorsten on 2026-10-12 and before affected use/delivery. No new legal determination or private-project exemption.

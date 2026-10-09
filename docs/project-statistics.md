@@ -4,14 +4,15 @@
 
 Profil 2 zählt Git-getrackte Texte einschließlich importierter Governance und
 Wartung. Es misst Lieferdichte, keine Produktqualität oder persönliche Arbeitszeit.
-Referenzen: 80 konservativ, vorläufig 100 Zeilen/Arbeitstag für Konzept/Scripting;
-bei C#/.NET auf 125 reevaluieren. Noch keine belastbaren Implementierungsphasen.
+Referenzen: 80 konservativ und 125 Zeilen/Arbeitstag nach dem belegten managed
+C#-Entscheid in LH-01; native Grenzen bleiben getrennt. Noch keine belastbaren Implementierungsphasen.
 Die neue LH-00-Prozessspezifikation wird über die Projektkonfiguration ausdrücklich
 als Dokumentation gezählt; die Dateinamen-Heuristik würde `spec.md` sonst als Test zählen.
 
 *Profile 2 includes tracked text, imported governance and maintenance tooling.
 It measures delivery density, not quality or personal time. Reference values
-are 80 and provisionally 100 lines/day; reevaluate to 125 if C#/.NET is chosen.
+are 80 and 125 lines/day after the evidenced LH-01 managed C# selection, with
+separate native boundaries.
 No implementation phase values are available. The project configuration explicitly
 classifies the new LH-00 process specification as documentation; the filename
 heuristic would otherwise count spec.md as a test.*
@@ -60,6 +61,8 @@ heuristic would otherwise count spec.md as a test.*
 | 2026-10-07 | T045: begrenzte Pilotfreigabe / Limited pilot permission | Ausdrücklichen Owner-Entscheid mit unabhängiger Mac-A-Bewertung und bestandenen Vorgängergates dokumentiert; T045 abgeschlossen, 45/65 Tasks erledigt. Einzelpiloten benötigen eigene Aufträge; vollständige Prozessabnahme bleibt offen. / Recorded explicit owner permission against the distinct Mac A assessment and passed prerequisite gates; T045 complete, 45/65 tasks done. Individual pilots need separate requests; full process acceptance stays open. [Abnahme / Acceptance](validation/lh00/acceptance.md). |
 
 | 2026-10-07 | Quellenaktualisierung vor LH-01 / Source refresh before LH-01 | Issue #2 und aktuelle Übersichten nach Kernprozess/T045 abgeglichen; C# als offene LH-01-Prüfoption, gewöhnliche Intake-/Seriengenerationen und anderes Review. Historische Nachweise erhalten, keine Produktimplementierung. / Updated issue and current introductions, language remains for LH-01, traceable generations and distinct review; preserve historical evidence, no product run. [Entscheidung / Decision](planning/lh01-source-refresh-decisions.md). |
+
+| 2026-10-09 | LH-01 Startvorbereitung T001–T017 / LH-01 readiness | Getrennte ADRs, Security-/Architekturstart, angewendete Registerausrichtung C#/msl, reguläre Updates beider Intakes und vollständige andere Ready-Reviews; Analyze ohne offene Befunde. 17/63 Aufgaben, kein Produktcode/keine Vollabnahme; autorisierte Lieferung und Renderer mit Referenz80/125. / Separate ADR/security/architecture preparation, bounded registry application, ordinary updates and distinct complete reviews; no product or full acceptance. [Liefernachweis / Delivery](validation/lh01/readiness-delivery.md). |
 
 ## Gesamtstatistik / Overall Statistics
 

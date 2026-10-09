@@ -1,6 +1,6 @@
 # Entwicklungsumgebung / Development environment
 
-Stand / Date: 07.10.2026. Owner: Thorsten Hindermann.
+Stand / Date: 09.10.2026. Owner: Thorsten Hindermann.
 
 ## Einstieg und Grenzen / Entry and boundaries
 
@@ -11,8 +11,9 @@ Standardbranch `main`. Der lokale Klon liegt unter
 
 Das [Bedienkonzept](Bedienkonzept.md) bleibt die fachliche Baseline. Die
 [Lastenheft-Reihenfolge](Lastenheft-Plan.md) bleibt verbindlich. Es existiert
-noch keine Produktimplementierung: Sprache, Framework, Mindestversion von
-PowerShell 7 und Sitzungsintegration bleiben offen. Die mitgelieferte
+noch keine Produktimplementierung. LH-01 wählt managed C#14, Host-.NET10/net10.0,
+Terminal.Gui2.5.0/dotnet, Mindest-PowerShell7.6.4 und in-process PSCmdlet;
+[ADRs](architecture/decisions/002-lh01-language-msl.md) begründen die getrennten Entscheidungen. Die mitgelieferte
 .NET-basierte Wartungs-TUI gehört zu Home Baseline und entscheidet nicht über
 die Produktsprache.
 
@@ -78,7 +79,8 @@ Windows-Setup-CI belegen diesen Ablauf noch nicht. Die vorhandene
 Bash-Initialisierung wird durch diese Dokumentationskorrektur nicht umgestellt.
 
 Die operative GSDB-Registry führt dieses Projekt explizit mit 14 Presets,
-`gsdbRequired: true`, offener Primärsprache und `mslStatus: unknown`.
+`gsdbRequired: true`, Primärsprache C# und `mslStatus: msl` nach angewendetem
+[Registerabgleich](validation/lh01/registry-alignment.md). Native Grenzen bleiben separat.
 Der globale Default bleibt unverändert. Lokale Registry und Agentenzustände
 werden nicht veröffentlicht.
 Die kanonische Wartungsflotte führt `show-commandtui400` mit CI-Profil
@@ -100,8 +102,9 @@ governance and inspect differences before updates. PowerShell maintenance
 scripts support Windows; Bash initialization does not imply missing PowerShell
 on macOS. End-to-end PowerShell base-script operation remains to be proven on
 the Macs and separately on Windows. Existing Windows setup CI does not prove it.
-The operational GSDB registry requires this project, leaves language/MSL open,
-and selects fourteen presets without changing the fleet default. Local registries
+The operational GSDB registry records C#/msl after the authorized T014 alignment,
+with own managed memory safety and separate native limits. It selects fourteen
+presets without changing the fleet default. Local registries
 and agent state stay private. The maintenance fleet uses public-product CI.
 The pre-push hook uses versioned CI registries and workflow contracts; private
 CI-gate evidence is not required here, while secret scanning remains active.
@@ -418,8 +421,7 @@ Darstellung bilden die A11Y-Basis; WCAG 2.2 AA gilt soweit anwendbar.
 [Profil 2](project-statistics.md) zählt versionierten Text und Git-Aktivität.
 Es umfasst auch importierte Governance und Wartungswerkzeuge und ist deshalb
 kein Maß für selbst geschriebenen Produktcode. Referenzen: `80` konservativ,
-vorläufig `100` Zeilen/Arbeitstag für Konzept/Scripting; bei C#/.NET auf `125`
-reevaluieren. Das zusätzliche Statistik-Preset ist nur installiert; ein
+`125` Zeilen/Arbeitstag nach belegter C#-Auswahl. Das zusätzliche Statistik-Preset ist nur installiert; ein
 Pilotmesslauf oder eine Aussage über KI-Zeitersparnis folgt daraus nicht.
 In der ursprünglichen lokalen Authoring-Phase wurde das Protokoll ohne Commit
 ergänzt. Bei beauftragter Lieferung folgen Inhaltscommit, Statistikgenerierung
@@ -432,8 +434,7 @@ mapping. Five guidance files remain identical. Keyboard, screen-reader, Braille
 and text access form the accessibility baseline, with WCAG 2.2 AA where relevant.
 Statistics Profile 2 counts tracked text and Git activity, including imported
 governance and tools; it is not a measure of authored product code. References
-are 80 and provisionally 100 lines/workday for concept/scripting, with 125 to be
-reevaluated if C#/.NET is selected. Installing the statistics preset starts no
+are80 and125 lines/workday after evidenced C# selection. Installing the statistics preset starts no
 pilot and proves no AI time saving. Original local authoring added a ledger entry
 without committing. Authorized delivery uses a content commit, statistics rendering
 and a separate statistics commit.
@@ -572,7 +573,7 @@ FR/AC/OD identify the same requirements, acceptance and decisions in both langua
 A manifest lists members. No diagram is needed for this linear procedure; complete
 text does not establish assistive field acceptance.
 
-## Aktueller Stand nach Kernprozesslieferung / Current state after core delivery
+## Historischer Stand nach Kernprozesslieferung 07.10.2026 / Historical core delivery state
 
 T001–T045 sind abgeschlossen, 45/65. Die Mac-A-Kernstrecke auf dem MacBook Air M2
 (2023) einschließlich gepaarter Bash-/PowerShell-Prüfungen ist geliefert; B-01
@@ -593,3 +594,19 @@ accessibility, translations and full applied registry proof remain open. Next:
 separately commission LH-01 authoring and distinct review. Language/MSL stay unknown;
 evaluate C# with feasibility/architecture evidence in LH-01. Setup CI and existing
 Linux-only maintenance checks do not prove product platform acceptance.
+
+## Aktueller LH-01-Startentwurf 09.10.2026 / Current LH-01 readiness
+
+LH-01 ist erstellt, spezifiziert, geplant und hat eine Aufgabenliste. Gewählte
+Technik: managed C#14, Host-.NET10, Terminal.Gui2.5.0/dotnet ohne ANSI-Fallback,
+MinimumPS7.6.4 und in-process Cmdlet. [Startprüfung](validation/lh01/start-readiness.md)
+und [Registerabgleich](validation/lh01/registry-alignment.md) führen den aktuellen
+Nachweis. Produkt- und praktische Abnahme bleiben offen; eigene Umsetzung erst
+nach aktuellem Receipt, anderem Review, Startgates und passendem Auftrag.
+
+LH-01 is authored/specified/planned with tasks. Evidence selects managed C#14,
+host .NET10, explicit Terminal.Gui2.5.0/dotnet without ANSI fallback, minimum
+PS7.6.4 and in-process cmdlet. Linked readiness and applied alignment are current
+sources. No product or practical acceptance; implementation needs fresh provenance,
+distinct review, start gates and matching authority. Documentation UpdateRequired,
+sourceOnly DE/EN, Thorsten; reevaluate changed scope/host/dependency.

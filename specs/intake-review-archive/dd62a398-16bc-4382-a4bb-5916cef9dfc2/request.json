@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "1.1",
+  "reviewId": "dd62a398-16bc-4382-a4bb-5916cef9dfc2",
+  "mode": "Single",
+  "policy": "generic-markdown",
+  "targets": [
+    {
+      "path": "intakes/LH-01.md",
+      "role": "Primary"
+    }
+  ],
+  "series": {
+    "orderedTargetPaths": [],
+    "roots": [],
+    "dependencies": []
+  },
+  "campaign": {
+    "manifestPath": "N/A",
+    "workers": [],
+    "operatorExceptions": []
+  },
+  "projectProfile": "show-commandtui400-de-en",
+  "authority": {
+    "request": "Current explicit human speckit-intake-repair intakes/LH-01.md commissions IR001 repair and complete fresh distinct-agent review, including coherent IR002 source-label correction. Only new local LH-01 request/result/report; no target/receipt/source mutation, implementation, commit, remote access or series change.",
+    "evidence": {
+      "path": "specs/intake-authoring-operations/92499938-1de6-480c-b88b-596e68aa9e57/repair-decisions.md",
+      "normalizedSha256": "8dbb4b455a947587a0d5a081bfc73bb57952e89bde6bd269af1548155d2c92aa"
+    },
+    "targetMutationAllowed": false,
+    "implementationAllowed": false,
+    "remoteAccessAllowed": false
+  },
+  "targetHash": "c16726a57928553c131df49e0f3e6f96ffa417e6e931402d975436232e07343a",
+  "priorReviewId": "e3a61bac-29c5-4238-990f-805496910c0c"
+}

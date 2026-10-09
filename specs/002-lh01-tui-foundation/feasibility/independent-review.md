@@ -93,12 +93,12 @@ SHA-256 independently inspected bytes; current review excluded. Later changes re
 | `feasibility/src/probe-session.ps1` | `cc7af7189d96fe27e19fcf8700315dbae138ae251ca3549bca6672dcd3a5ac4b` |
 | `feasibility/src/pty-probe.py` | `1534ef1c6699fc99a5f8e2242fe6f5cd9f3283cff4b3c4029ba9aa7d0cced5e8` |
 | `feasibility/src/termios-abi.c` | `4e1597b0e853f8f8615369374a14f2b951ffb0e212711dafedbcdea799053d3c` |
-| `plan.md` | `51464545f81c621a60b8389ca311f1b0242c4d73d93fa497c8692cfc06cd8128` |
+| `plan.md` | `c3d8d4047dbb4d2c1709805a5a92c0ace16dbed2eb3ff7d10d9f4ce40d3987a7` |
 | `quickstart.md` | `cb48d8da71e0d445e1e57aea66cf3584f2fa735cfbda606f37126b4f7b765c6f` |
 | `research.md` | `34e0e597736ce0f431abd7dbedca8e693864b9e38bc005ea778c061a6859ac75` |
-| `spec.md` | `a377786bedbf7d1aa0456411655ff42745bec0f2c86209c555912d6056d19e92` |
+| `spec.md` | `65325d3047c2ddc2c24913b34dc9362c372f799ef0ab1139333ba059b9a55975` |
 | `contracts/cmdlet-session.md` | `54ab17c91a3b2251b3911a5f10bcd2f078a624d302dcf0abcdfb9f19dc7dd5ca` |
-| `tasks.md` | `ee3789c1f9166936aeb419f3468b27fe799950281eea86d1b824aab37ab2ed85` |
+| `tasks.md` | `1b3895857f10f9888f00a233f20a59a58352956781914a87a6dfd39c7c6895a5` |
 | `../../docs/validation/lh01/platform-handoff.md` | `389f267aa8b992710b0acd57716e3f3bad7aa202e1cf5160ed046266a9c7a336` |
 | `../../docs/validation/lh01/platform-handoff.json` | `82a5c263dbc76be769b48a31b172934a31dfb00c566e86a974dc55de5ca68e1a` |
 | `../../docs/issue-drafts/lh01-platform-parent.md` | `dc774aa1995524e595a789dee11044b2ad3b977483533028e7ba490aa9889ab4` |
@@ -322,3 +322,79 @@ and complete command exemplar with PowerShell Test-Json. This tests shape, not p
 bindings match. Prior hashes are preserved above. Intake/receipt, raw evidence and
 four issue drafts are unchanged. Only this review was written, without implementation,
 installation, commits or remote writes. Ready covers preparation only.
+
+## Technische Bindungserneuerung nach T001–T017 / Technical binding renewal after T001–T017
+
+Datum / Date: 2026-10-09. Prüfer / Reviewer: separater Agent
+`/root/lh01_handoff_review`. Auftrag: veränderte Spec/Plan/Tasks nach der ausdrücklich
+beauftragten lokalen Startvorbereitung unabhängig abgleichen; keine Produktarbeit.
+Die früheren Machbarkeits- und Hand-off-Reviews oben bleiben historisch gültig in
+ihrem damaligen Umfang und erhalten ihre Abnahme-/Ausführungsgrenzen.
+
+### DE — Ergebnis und Abgleich
+
+**Ready für den begrenzten technischen Startvorbereitungsstand.** Spec und Plan
+trennen die ursprüngliche Specify-/Plan-Herkunft vom regulär erneuerten T016-Stand.
+C#14/eigener managed MSL-Code, Host-.NET10, Terminal.Gui2.5.0/dotnet ohne ANSI-Fallback,
+PS7.6.4 und in-process PSCmdlet stimmen mit den getrennten ADR002–006 und der lokal
+angewendeten Governance-/Registerausrichtung überein. Native/Interop-Grenzen bleiben
+separat; historische Statistik80/100 ist als ursprünglicher Planstand gekennzeichnet,
+aktuell gilt80/125. Zentrale Änderungen sind lokal, keine Remote-/Home-/Flottenlieferung.
+
+Ein verbleibender Textbefund wurde dem Autor gemeldet und erneut geprüft: die
+ursprüngliche Dokumentationsauswirkung des Plans mit unveränderter Herkunft und
+Statistik80/100 ist nun ausdrücklich historisch. Ebenso sind ursprüngliche
+Specify-/Plan-Laufgrenzen keine Behauptung eines unveränderten heutigen Standes.
+Keine offene Inkonsistenz im geprüften technischen Abgleich bleibt bestehen.
+
+T001–T017 sind lokal abgeschlossen (17/63); T018–T063 bleiben offen. Aktuelle
+vollständige unabhängige Intake-Reviews, reguläre Vorgängerarchive und neue Herkunft
+werden im Startnachweis ausdrücklich getrennt vom historischen Fixture-Proof geführt.
+Das getrennte Architektur-/Sicherheitsreview bindet die ADR-/Securityquellen; dieser
+fokussierte Bericht erneuert ausschließlich die drei technischen Dateibindungen.
+Der gemeinsame Plattformvertrag, alle Issue-Drafts und Kommandoschema bleiben
+unverändert Prepared; kein vorhandener oder ausgeführter Produktdriver wird behauptet.
+
+Statistik-/Homogenitätsdrift bleibt offen bis zum gesondert autorisierten
+Quellencommit-/Render-/Prüfpaket. Ready ist kein PASS dieser Lieferchecks, keine
+Produkt-Ausführungsbefugnis und keine volle Abnahme. LH-00 bleibt offen, LH-01
+Einzelpilot; T045 bleibt begrenzt. Mac-B-/Windows-/Ubuntu-WSL2-Produktbelege benötigen
+spätere Aufträge. Reale Terminals/Screenreader Deferred, Braillehardware Excluded
+mangels Gerät; Anforderungen und Neubewertung bleiben erhalten.
+
+**52 unveränderte und drei erneuerte Bindungen:55/55 gültig.** Vorherige Digests
+werden für den historischen Reviewstand erhalten:
+
+- `spec.md`: `a377786bedbf7d1aa0456411655ff42745bec0f2c86209c555912d6056d19e92`.
+- `plan.md`: `51464545f81c621a60b8389ca311f1b0242c4d73d93fa497c8692cfc06cd8128`.
+- `tasks.md`: `ee3789c1f9166936aeb419f3468b27fe799950281eea86d1b824aab37ab2ed85`.
+
+Keine Quellenmutation außer diesem Review, keine neuen Tests, Produktdateien,
+Installationen, Commits, Remote-Writes oder Ownerabnahme durch diesen Prüfer.
+
+### EN — Outcome and reconciliation
+
+**Ready for bounded technical readiness preparation.** Specification and plan
+separate original provenance from normally renewed T016 input. Managed C#14/own-code
+MSL, host.NET10, Terminal.Gui2.5.0 explicit dotnet without ANSI fallback, PS7.6.4
+and in-process PSCmdlet match separate ADR002–006 and locally applied governance/
+registry records. Native limits remain separate. Original80/100 documentation is
+explicitly historical; current references are80/125. Central changes remain local,
+without remote, Home or fleet delivery.
+
+The reviewer reported stale plan documentation-impact wording, then rechecked its
+historical qualification; original command boundaries no longer imply unchanged
+current sources. No open technical reconciliation finding remains. T001–T017 are
+locally complete (17/63); T018–T063 remain open. Current distinct complete intake
+reviews and ordinary archived updates are separate from historical fixture proof.
+ADR/security sources belong to the distinct architecture review. This focused
+renewal only changes three technical bindings; platform contract, issue drafts and
+command schema remain unchanged Prepared without a product driver/test claim.
+
+Statistics/homogeneity drift awaits separately authorized commit/render/check work.
+Ready neither passes delivery checks nor grants product execution/full acceptance.
+LH-00 remains open and LH-01 standalone; target product proofs need future requests.
+Physical terminals/screen readers remain Deferred, Braille hardware owner-excluded,
+with requirements and reassessment retained.52 unchanged plus three renewed bindings
+all match (55/55); prior digests are preserved above. No new tests, product files,
+installations, commits, remote writes or owner acceptance were performed by this reviewer.

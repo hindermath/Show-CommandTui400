@@ -8,14 +8,16 @@ Fachliche Baseline: `docs/Bedienkonzept.md`; verbindliche Reihenfolge:
 `docs/Lastenheft-Plan.md`. Das Projekt ist in der Konzeptphase.
 Der LH-00-Kernprozess und T045 sind geliefert; vollständige Prozessabnahme bleibt offen.
 Zielumgebung ist die aktuelle PowerShell-7-Sitzung auf macOS, Linux und Windows.
-Implementierungssprache, Framework, minimale PowerShell-Version und technische
-Sitzungsintegration sind offen. Aus dem Workspace-Namen folgt keine .NET-Vorgabe.
+LH-01 wählt managed C#14, Host-.NET10/net10.0, Terminal.Gui2.5.0 mit explizitem
+dotnet-Treiber, Mindest-PowerShell7.6.4 und in-process PSCmdlet. Native/Runtime-
+Grenzen und praktische Abnahme bleiben getrennt; kein Produktcode vorhanden.
 
 *Level 2 in RiderProjects. The canonical source is hindermath/Show-CommandTui400
 on main. Read the interaction concept and intake order before work. This is a
 concept-stage project targeting the current PowerShell 7 session on macOS,
-Linux and Windows. Language, framework, minimum PowerShell version and session
-integration remain undecided; the workspace name does not select .NET.*
+Linux and Windows. LH-01 selects managed C#14, host .NET10, Terminal.Gui2.5.0 explicit dotnet driver,
+minimum PowerShell7.6.4 and in-process PSCmdlet. Native/runtime proof and practical
+acceptance remain separate; no product code exists.*
 
 ## Arbeitsgrenzen / Work Boundaries
 
@@ -34,7 +36,7 @@ changes. Release automation needs a separate request.*
 
 `constitution.md` und `.specify/memory/constitution.md` gemeinsam pflegen.
 Die Projektzeile im Level-2-Umgebungsregister gilt für Runtime, Prüfungen,
-Barrierefreiheit und Statistik. Primärsprache und MSL-Status bleiben `unknown`.
+Barrierefreiheit und Statistik. Primärsprache C#14; eigener managed Code ist MSL, native Grenzen separat.
 Die zentralen Level-0-Regeln sind die gemeinsame Basis, keine Übernahme fremder
 Produktanforderungen. NIST SSDF und CWE Top 25 gelten auch für die Einrichtung.
 Anwendbarkeit und offene Produktnachweise stehen in `docs/security/README.md`.
@@ -45,7 +47,7 @@ Neue Logik auf Eingabevalidierung, Datei-/Netzwerkzugriffe und sichere Defaults
 prüfen. Kommentare erklären Gründe und Grenzen, nicht offensichtlichen Code.
 
 *Keep both constitution copies aligned and use the project environment row.
-Implementation language and MSL status remain unknown. Shared Level-0 policy
+Own managed C#14 code uses an MSL; native/runtime boundaries remain separate. Shared Level-0 policy
 does not import another product's requirements. NIST SSDF and CWE Top 25 apply;
 record applicability and open evidence in docs/security/README.md. Never commit
 secrets, agent state or preset caches. Preview writes first; use Bash first on
@@ -95,8 +97,7 @@ Grundlage ist die Level-0-Dokumentations-Governance.
 Statistikprofil 2 verwendet `docs/project-statistics.config.json` und den
 Renderer; Ledger nach abgeschlossenen Arbeitspaketen fortschreiben, älteste
 Einträge zuerst, `Gesamtstatistik` zuletzt. Referenzen: `80` konservativ und
-vorläufig `100` Thorsten-Solo für Konzept/Scripting; bei C#/.NET auf `125`
-reevaluieren. Git-Lieferdichte ist keine Zeitmessung oder Qualitätsbewertung.
+`125` Thorsten-Solo nach belegter C#-Auswahl; keine Zeit-/Qualitätsmessung. Git-Lieferdichte ist keine Zeitmessung oder Qualitätsbewertung.
 ASCII-Diagramme maximal 100 Zeichen breit, mit exakten Zahlen und bilingualer
 Textalternative. Das zusätzliche Statistik-Preset startet keine Messung.
 
@@ -109,8 +110,7 @@ context. Outstanding translations have an owner and deadline in
 `docs/intake-governance.md`; upstream templates remain unchanged.
 Record documentation impact and reader paths in the same PR. Maintain the
 Profile 2 ledger through its renderer, oldest entries first and overall
-statistics last. References are 80 and provisionally 100 lines/day for concept
-and scripting work; reevaluate to 125 if C#/.NET is selected. Git delivery
+statistics last. References are 80 and125 lines/day after evidenced C# selection. Git delivery
 density is no time or quality measurement. ASCII charts need exact numbers,
 bilingual alternatives and at most 100 columns. The extra statistics preset
 starts no measurement.*
@@ -129,7 +129,8 @@ Verbindlich sind `.specify/memory/intake-authoring-policy.json`,
 ein Receipt ist der maschinenlesbare Herkunfts- und Hashnachweis.
 `ReadyForReview` bedeutet nur bereit für ein gesondertes Review.
 `docs/issue-drafts/` enthält historische Quellen der veröffentlichten Issues,
-keine weiteren aktiven Lastenhefte. Aktuell ist genau `intakes/LH-00.md` beauftragt.
+keine weiteren aktiven Lastenhefte. LH-00 und der LH-01-Einzelpilot sind beauftragt; neue Folgefeatures brauchen
+eigene Aufträge.
 Der ursprüngliche Authoring-Auftrag war lokal begrenzt. Die danach ausdrücklich
 beauftragten Reparatur-, Review- und Lieferaktionen stehen in
 `docs/planning/lh00-repair-decisions.md`; aktueller Stand in Receipt und Reviewbericht.
@@ -141,7 +142,8 @@ The policy, profile and governance mapping linked above are binding. An intake
 is a requirements document; a receipt records its sources and content hashes.
 `ReadyForReview` only means ready for a separate review. The issue-draft directory
 contains historical sources for published issues, not additional active intakes.
-Only `intakes/LH-00.md` is currently commissioned. Original authoring was limited
+LH-00 and the LH-01 standalone pilot are commissioned; further features need
+separate authority. Original authoring was limited
 to local changes. Later explicitly authorized repair, review and delivery actions
 are recorded in docs/planning/lh00-repair-decisions.md; the current receipt and
 review report show the state. Further creation, review or delivery needs matching
@@ -188,21 +190,23 @@ selection for Linux-only maintenance jobs. Successful CI proves the executed
 checks, not product platform acceptance. Review required check names and
 migration templates whenever runner labels change. See the linked guide.
 
-## Nächster fachlicher Entscheid / Next domain decision
+## Aktueller LH-01-Stand / Current LH-01 state
 
-Primärsprache und MSL-Status bleiben unknown. C# ist eine Prüfoption für LH-01;
-der verbindliche Sprachentscheid erfolgt dort im technischen Plan mit
-Architekturentscheidung und Machbarkeitsnachweis vor Produktimplementierung.
-.NET-Version, TUI-Framework, PowerShell-Mindestversion und Sitzungsintegration
-bleiben getrennte Entscheidungen. T045 erlaubt den begrenzten Pilotweg;
-LH-01 ist weiterhin nicht erstellt oder beauftragt. LH-01/LH-02 brauchen eigene
-Aufträge und gültige Intakes/andere Reviews, außerhalb automatischer Serienauswahl.
-[Entscheidung IAD019](docs/planning/lh01-source-refresh-decisions.md).
+LH-01 ist erstellt und technisch spezifiziert/geplant. Sprache/MSL, Runtime,
+Framework, PowerShell-Minimum und Sitzungsintegration sind getrennt entschieden:
+managed C#14, Host-.NET10, Terminal.Gui2.5.0 dotnet ohne ANSI-Fallback, PS7.6.4 und
+in-process PSCmdlet. [ADRs](docs/architecture/decisions/002-lh01-language-msl.md)
+und [Startprüfung](docs/validation/lh01/start-readiness.md) führen Grenzen.
+T001–T017 bereiten nur den Produktstart vor; Produktcode braucht eigenen Auftrag.
+LH-01 bleibt Einzelpilot außerhalb Serienauswahl. LH-02 braucht eigenen Auftrag
+und fachlichen LH-01-Abschluss. Volle LH-00-Abnahme nach LH-02/vor LH-03 offen.
+Reale Terminals/Screenreader Deferred, Braillehardware Excluded gemäß Ownergrund;
+keine Konformität oder vollständige Abnahme behaupten.
 
-Primary language and memory-safety status remain unknown. C# is a candidate for
-LH-01; its technical plan must record the language decision with architecture
-and feasibility evidence before product implementation. Decide runtime/framework,
-minimum PowerShell and session integration separately. T045 permits the limited
-pilot route; LH-01 has not been created or commissioned. Both pilots need separate
-requests, valid intakes and distinct reviews outside automatic series selection.
-The LH-00 core is delivered; full process acceptance remains open.
+LH-01 is authored and technically planned. Separate evidence-based choices are
+managed C#14, host .NET10, Terminal.Gui2.5.0 explicit dotnet without ANSI fallback,
+minimum PS7.6.4 and in-process PSCmdlet. Linked ADRs/readiness retain native and
+practical limits. Readiness tasks grant no product execution. Preserve standalone
+pilot, separate LH-02 authority/completion and full LH-00 acceptance order.
+Physical terminals/screen readers remain Deferred; Braille hardware Excluded with
+owner rationale. Never claim conformity or complete acceptance.

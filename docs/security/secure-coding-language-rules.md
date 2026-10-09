@@ -25,3 +25,11 @@ mode, terminating errors, literal paths and NoProfile. Never evaluate issue text
 Empty Windows HOME must not change root resolution. Preserve proven upstream
 behavior rather than adding untested global strict mode. Only trusted fixtures
 supply feature parameters; later tasks test lifecycle traversal and hash attacks.
+
+## LH-01 Startentwurf 2026-10-09 / Readiness design
+
+Historische LH-00-Bewertungen oben bleiben erhalten. / Prior LH-00 context is preserved.
+
+Eigener C#14-Code: kein unsafe, kein Eval/Scripttextaufruf, keine Targetausführung. Fremde Texte entkräften; ActionId-Whitelist und Kontext getrennt prüfen. Literalpfade/Argumentarrays, Root-/Symlinkprüfung für Prüfharness. Feste native ABI, Größen-/Architekturprüfung und Rückgabecodes; Lease auch bei Fehler disponieren, Primär-/Restorefehler bewahren. PENDIN nur mit nativer Kontrolle getrennt.
+
+Own C#14 code uses no unsafe, code evaluation or target execution. Sanitize display text; separate allow-list and context checks. Use literal paths/argument arrays and contained harness outputs. Verify native size/architecture/return codes; dispose leases on errors and preserve both failures. Separate PENDIN only with native control evidence.

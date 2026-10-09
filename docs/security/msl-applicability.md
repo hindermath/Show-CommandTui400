@@ -30,3 +30,11 @@ Owner decision: decide in LH-01. Preserve the historical Open assessment above.
 Evaluate C#; primary language/MSL remain unknown. OD-01-002 requires a recorded
 language choice in LH-01's technical plan with architecture and feasibility
 evidence before product implementation.
+
+## LH-01 Startentwurf 2026-10-09 / Readiness design
+
+Historische LH-00-Bewertungen oben bleiben erhalten. / Prior LH-00 context is preserved.
+
+LH-01 managed C#14 ohne unsafe/Pointerarithmetik ist die gewählte eigene MSL. Runtime/OS/PInvoke/native Pakete bleiben eigene Vertrauensgrenzen. ADR002 und native Bewertung begründen Auswahl; Produktprüfung T058 offen.
+
+LH-01 selects managed C#14 without unsafe/pointer arithmetic. Runtime/OS/interop/native dependencies remain separate trust boundaries. ADR002 and native assessment justify selection; product verification T058 remains open.

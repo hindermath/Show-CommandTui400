@@ -1,16 +1,16 @@
 # Feature-Spezifikation: LH-01 — TUI-Grundlage / Feature specification: LH-01 — TUI foundation
 
-**Erstellt / Created:** 2026-10-07. **Status:** technische Planung und begrenzte automatisierte Machbarkeit abgeschlossen; praktische Abnahme offen; keine Implementierungsfreigabe / technical planning and bounded automated feasibility complete; practical acceptance open; no implementation authorization.
+**Erstellt / Created:** 2026-10-07. **Status:** technische Planung und begrenzte automatisierte Machbarkeit abgeschlossen; praktische Abnahme offen; keine Produktimplementierungsfreigabe / technical planning and bounded automated feasibility complete; practical acceptance open; no product implementation authorization.
 **Feature:** `002-lh01-tui-foundation`. **Git-Branch / Git branch:** `main` (kein neuer Branch / no new branch).
 **Profil / Profile:** `show-commandtui400-de-en`. **Owner:** Thorsten Hindermann. **Autor / Author:** Codex `/root`.
 **Fachlicher Input / Domain input:** ausschließlich [LH-01](../../intakes/LH-01.md).
 
-## Eingangsprüfung und Geltungsbereich / Input verification and scope
+## Historische Specify-Eingangsprüfung und Geltungsbereich / Historical Specify input and scope
 
 Vor Erstellung wurden der [Receipt](../intake-authoring-receipts/lh-01.json)
 `59f3e085-f12e-4a6e-8347-8a7c11b7c65a` und das [unabhängige Review](../intake-reviews/lh-01/report.md)
 `dd62a398-16bc-4382-a4bb-5916cef9dfc2` maschinell als aktuell geprüft.
-Das Review genau dieses Intakes ist Ready ohne offene Befunde oder angenommene
+Das damalige Review genau dieses Intakes war Ready ohne offene Befunde oder angenommene
 Risiken; Prüfer war `/root/lh01_independent_review`, nicht der Autor.
 Zielbindung: `c16726a57928553c131df49e0f3e6f96ffa417e6e931402d975436232e07343a`.
 31 Receipt-Quellen sind gebunden; dies ist Herkunftsprüfung, keine Produktabnahme.
@@ -18,8 +18,8 @@ Die historischen Authoring-Status-/Folgeprompttexte im Intake werden nicht als
 aktuelles Review oder neue Ausführungsautorität ausgegeben. Constitution und
 installierte Vorlagen liefern Governance, keine weiteren fachlichen Features.
 
-The named current receipt and distinct-agent review were validated before writing.
-The review binds exactly this intake, is Ready and has no open findings or accepted
+The historical receipt and distinct-agent review were validated before initial writing.
+That review bound exactly the initial intake and was Ready and has no open findings or accepted
 risks. Its reviewer differs from this author. The hash above binds the target;
 31 sources provide provenance, not product acceptance. Historical authoring status
 and follow-up text remain historical. Constitution and installed templates govern
@@ -282,15 +282,17 @@ Die Template-Kontrollen CR-001–014 werden damit abgedeckt: Level-2-Kontext G01
 A11Y/DEEN G01/G02, Statistik/Parität G05/G09, Sprache/MSL technisch entschieden unter OD-01-002,
 Standards/Evidence G03/G11, genau eine Dokumentationsentscheidung unten und
 macOS-first mit getrennten Plattformbelegen. Das projektspezifische 14er-Profil
-bleibt die vorhandene Ausnahme zur generischen Template-Matrix; keine Installation
-oder Governanceänderung entsteht. Unbekannte Sprache verhindert keine Spezifikation,
+bleibt die vorhandene Ausnahme zur generischen Template-Matrix. Beim ursprünglichen
+Specify erfolgten keine Installation oder Governanceänderung; die spätere lokale
+Ausrichtung T014 steht im aktuellen Startnachweis. Unbekannte Sprache verhindert keine Spezifikation,
 aber verlangt belegte Planung vor Produktimplementierung.
 
 Template controls CR-001–014 are covered through the mapped Level-2 context,
 accessibility/language, statistics/parity, open language decision, standards/evidence,
 one documentation-impact decision and macOS-first platform proof. The installed
 fourteen-preset project profile remains the existing exception to generic template
-defaults. No installation or governance change occurs. An unknown language permits
+defaults. Initial Specify performed no installation or governance change; later
+local T014 alignment is recorded in the readiness evidence. An unknown language permits
 specification but requires evidenced planning before product implementation.
 
 Die 14er-Matrix wird nur als vorhandene Governance referenziert: Security,
@@ -426,7 +428,7 @@ context. Exit, cancel and handled failure restore the terminal and return to the
 same session. External termination and host failure have documented limits.
 The standalone pilot dependencies are described separately above.
 
-## Autonomous-run-Anwendbarkeit / Autonomous-run applicability
+## Historische Specify-Grenze für Autonomous / Historical Specify autonomous boundary
 
 N/A für autonomes Ausführen, Delivery-Set, Gate-Tokens, Run-State, Resume und
 Retrospektive: nur Specify beauftragt, keine Änderungen an Orchestrierungsverträgen.
@@ -441,7 +443,7 @@ on separate autonomous authority. Current authority covers local specification,
 quality checklist and feature pointer only. No implementation, delivery or series
 mutation. A standalone Specify phase does not create a feature completion report.
 
-## Agent-Parität / Agent parity applicability
+## Historische Specify-Grenze für Agent-Parität / Historical Specify agent parity boundary
 
 N/A für Änderungen an gemeinsamer Guidance, Constitution, Vorlagen oder Routing:
 der Lauf erstellt ausschließlich Feature-Spezifikation und zugehörige Prüfliste.
@@ -695,3 +697,21 @@ Erneute Bewertung bei Plan-, Scope-, Quellen-, Sprache-/MSL- oder Lieferänderun
 No platform example was executed. Statistics await matching delivery authority;
 historical values remain unchanged. Reevaluate on plan, scope, source, language/MSL
 or delivery changes. Next phase requires its own user request.
+
+## Aktuelle Herkunft T016 / Current provenance T016
+
+DE: Am9.10.2026 wurden die geänderten Governance-/Registerquellen regulär
+aktualisiert, mit exakten Vorgängerarchiven und separatem vollständigem Review.
+LH-01-Receipt `ff697098-91cc-460d-a2b0-c6bb7793c4fc`, Review `2e1342c6-5208-4ee4-b2a0-acf68cd05527`: Ready,
+keine offenen Befunde oder angenommenen Risiken. Zielhash `abf12485471cb36af8759de00522e7d9f28393db8e9ddea6877ba85daef0df32`.
+Die ursprünglichen Specify-Bindungen oben sind historisch. Fachliche IDs und
+Anforderungen bleiben erhalten; technische Auswahl und Owner-Prüfgrenzen sind
+im aktualisierten Intake nachvollziehbar. T001–T017 liefern Startvorbereitung,
+keine Produktimplementierung. [Startnachweis](../../docs/validation/lh01/start-readiness.md).
+
+EN: On9October2026 normal lineage-preserving updates and separate complete review
+renewed governance/registry provenance. The current receipt/review IDs and target
+hash above are Ready with no open findings or accepted risks. Earlier Specify
+bindings remain historical. Domain IDs/requirements are preserved; the updated
+intake records existing technical selection and owner proof limits. T001–T017
+prepare readiness; product implementation needs a separate request.

@@ -370,7 +370,7 @@ or mark NeedsRepair and block downstream actions. Resume needs explicit authorit
 never automatically restart a partial operation. One writer compares expected
 source hashes and publishes coherent generations serially.
 
-## Publizierter Collection-Bootstrap / Published collection bootstrap
+## Historisch publizierter Collection-Bootstrap / Historically published collection bootstrap
 
 [Konfiguration](../requirements/intake-governance-config.json),
 [Bestandsindex](../requirements/RequirementsIndex.md),
@@ -385,7 +385,7 @@ There is one active intake, one series member and zero standalone intakes; seven
 future intake files stay absent. Four roles/six paths preserve the interaction
 baseline. Ready/Eligible does not activate work or replace a human owner gate.
 
-## Aktueller Pilot- und Sprachstand IAD019 / Current pilot and language state
+## Historischer Pilot- und Sprachstand IAD019 / Historical pilot and language state
 
 T001–T045 sind geliefert; [T045](validation/lh00/acceptance.md) dokumentiert die
 begrenzte Ownerfreigabe. LH-01/LH-02 sind weiterhin nicht erstellt und brauchen
@@ -401,3 +401,25 @@ Neither pilot exists; each needs its own request, valid intake and distinct revi
 C# is a candidate and the language/MSL decision belongs to LH-01 before product
 implementation. Earlier blanket Not-Assessed statements describe their original
 setup scope; task validation records current core proof. Full acceptance remains open.
+
+## LH-01 nach Technikauswahl 09.10.2026 / After technical selection
+
+LH-00-Kernprozess/T045 sind geliefert; volle Prozessabnahme bleibt offen. LH-01
+existiert als beauftragter Einzelpilot außerhalb der automatischen Serienauswahl.
+Der frühere Ein-Mitglied-Bootstrap gilt für die LH-00-Collection, nicht als Behauptung
+fehlender eigenständiger LH-01-Datei. LH-02–LH-07 bleiben eigene spätere Aufträge.
+[ADRs](architecture/decisions/002-lh01-language-msl.md) halten Sprache/MSL/Runtime/
+Framework/Minimum/Session getrennt fest: C#14 managed, Host-.NET10,
+Terminal.Gui2.5.0/dotnet, PS7.6.4, in-process PSCmdlet. Native Grenzen bleiben separat.
+[Registerausrichtung](validation/lh01/registry-alignment.md) ist lokal angewendet,
+Referenzen80/125; keine Remote-/Flotten-/Produktfreigabe. Herkunft wird über
+normale Update-Vorgänge und andere vollständige Reviews erneuert.
+
+The LH-00 core/T045 are delivered, full acceptance open. LH-01 exists as a
+commissioned standalone pilot outside series selection. The historical one-member
+collection does not deny this standalone file. Further intakes need separate
+authority. ADRs record the separate selected choices and native boundaries.
+Central/project alignment is locally applied with80/125 references; no remote,
+fleet or product authority follows. Normal lineage-preserving updates and distinct
+complete reviews renew provenance. Documentation UpdateRequired, sourceOnly DE/EN,
+Thorsten; reader path governance → ADR/alignment → updated intake/review → readiness.

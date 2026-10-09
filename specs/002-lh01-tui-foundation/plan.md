@@ -3,7 +3,7 @@
 **Datum / Date:** 2026-10-08. **Feature:** `002-lh01-tui-foundation`.
 **Git-Branch / Git branch:** `main`; Setup-BRANCH ist Feature-ID, kein neuer Git-Branch / setup identity does not create a branch.
 **Input:** [spec.md](spec.md), ausschließlich LH-01 / LH-01 only.
-**Status:** technische Auswahl getroffen; praktische Abnahme offen, kein Implementierungsauftrag / technical choices selected; practical acceptance open, no implementation authority.
+**Status:** technische Auswahl getroffen; praktische Abnahme offen, kein Produktimplementierungsauftrag / technical choices selected; practical acceptance open, no product implementation authority.
 
 ## Zusammenfassung / Summary
 
@@ -26,7 +26,7 @@ claim conformance. Isolated evidence is recorded, with no product or delivery ru
 
 | Aspekt / Aspect | Planungsbaseline und Grenze / Baseline and limit |
 |---|---|
-| Sprache/MSL / language | C#14 managed gewählt; native Grenzen separat; hashgebundene Registry bisher unknown / selected managed C#, native boundaries separate, prior registry unknown |
+| Sprache/MSL / language | C#14 managed gewählt; native Grenzen separat; T014 lokal C#/msl angewendet / selected managed C#, native boundaries separate, T014 applied locally |
 | Runtime | .NET10 im laufenden PS-Prozess; kein eigener Host / caller runtime, no custom host |
 | Mindest-PowerShell / minimum | 7.6.4 gewählt; tatsächliche Hostpatch-/Plattformprüfung separat / selected minimum; actual host/platform verification separate |
 | Abhängigkeiten / dependencies | Terminal.Gui2.5.0 dotnet-Treiber; kein ansi-Fallback, Host-SMA nicht mitverteilen; native Bewertung / explicit dotnet, no ansi fallback, host SMA excluded |
@@ -39,26 +39,28 @@ claim conformance. Isolated evidence is recorded, with no product or delivery ru
 
 ## Constitution-Prüfung / Constitution check
 
-Die Projektzeile Show-CommandTui400 gilt: Primärsprache unknown, macOS-first,
-14er-Profil, DE/EN B2, Text-/Hilfsmittelzugang, Statistik80/100; 125 erst bei
-belegtem C#-Entscheid neu bewerten. Governance ist keine fremde Produktanforderung.
-Ein Gate ist eine notwendige Bedingung; Open bedeutet ausstehender Nachweis.
-Owner aller Gates Thorsten, technische Evidence beauftragter Autor plus anderer Prüfer.
+Die Projektzeile ist durch den freigegebenen T014 lokal ausgerichtet: managed
+C#14, eigener MSL-Status `msl`, Host-.NET10, Terminal.Gui2.5.0/dotnet und PS7.6.4.
+macOS-first, 14er-Profil und DE/EN B2 bleiben erhalten; Statistik80/125 ist begründet,
+keine Zeitmessung. Native/Interop-Grenzen und spätere Plattform-/A11Y-Abnahmen
+bleiben getrennt. [Anwendungsnachweis](../../docs/validation/lh01/registry-alignment.md).
+Zentrale Quellen sind lokal geändert; keine Remote-Lieferung oder Home-Verteilung.
 
-Use the project row: language unknown, macOS-first, fourteen presets, bilingual
-readability, assistive/text access and statistics80/100. Reevaluate125 only after
-an evidenced C# choice. A gate is a prerequisite; Open means proof is outstanding.
-Thorsten owns gates, commissioned author and distinct reviewer supply evidence.
+T014 applies the approved row locally: managed C#14, own-code `msl`, host.NET10,
+Terminal.Gui2.5.0/dotnet and PS7.6.4. Keep macOS-first, fourteen presets and bilingual
+readability. References80/125 are justified parameters, not time measurements.
+Native boundaries and practical acceptance remain separate. Central source changes
+are local; no remote delivery or Home distribution occurs.
 
 | Gate | Vor Recherche / Before research | Nach Entwurf / After design | Evidence, Aktion und Fälligkeit / Evidence, action and due gate |
 |---|---|---|---|
-| P01 Eingang / input | PASS | PASS | Receipt59f3e085 und unabhängiges Reviewdd62a398 aktuell; vor Folgelauf erneut / recheck before next run |
+| P01 Eingang / input | PASS historischer Planlauf / historical | T016 erneuert / refreshed | Historischer Eingang59f3e085/dd62a398; aktuelle Quellen und Reviews im T017-Nachweis / current provenance in readiness record |
 | P02 Scope/Pilot | PASS | PASS | Spec/Verträge erhalten Einzelpilot, LH-00 offen, keine Folgefeatures / preserved boundaries |
 | P03 Sprache/Runtime/Framework | Open historisch / historical | Auswahl entschieden / selection resolved | OD-01-001/002, D01–03, F01–07, getrennte ADRs und anderes Review vor Produktcode / before product code |
 | P04 Sicherheit / security | Applicable | Applicable/Open | Eingabevalidierung + Kontextprüfung, sichere Anzeige + keine Codeauswertung; Threat Model/S-ADR/arc42 vor Umsetzung / explicit security gates |
 | P05 A11Y/Plattform | Applicable | Praktische Evidence deferred/excluded by owner | Ownergrenzen dokumentiert; kein praktisches PASS und kein CI-Ersatz / evidence limits, no acceptance claim |
 | P06 Sprache/Doku / language/docs | PASS Entwurf / draft | PASS Entwurf / draft | DE/EN, definierte Begriffe, Leserpfad, Textalternative / matching text access |
-| P07 Guidance/Statistik | N/A heutige Änderung / current change | N/A heutige Änderung / current change | Keine gemeinsamen Regeln/Statistikrender; spätere autorisierte Lieferung / later delivery |
+| P07 Guidance/Statistik | N/A historischer Planlauf / historical | T014 lokal angewendet / applied locally | Guidance/Register/Referenz80–125 ausgerichtet; Statistikrender bei autorisierter Lieferung offen / render pending authorized delivery |
 | P08 Produktimplementierung / product implementation | Kein Auftrag / no authority | Kein Auftrag / no authority | Eigener Implementierungsauftrag, technische Startchecks/Sicherheitsartefakte und Quellenfrische; praktische Abnahme separat / separate implementation authority and start checks |
 
 **Gate-Ergebnis:** Technische Auswahl und automatisierte begrenzte Machbarkeit
@@ -75,7 +77,7 @@ sources/provenance and perform security/architecture checks under separate autho
 
 ## Projektstruktur / Project structure
 
-Heute erzeugt / Created now:
+Historischer Planungsstand — damals erzeugt / Historical planning output:
 - `plan.md`, `research.md`, `data-model.md`, `quickstart.md`.
 - `contracts/cmdlet-session.md`, `contracts/actions-terminal.md`.
 - `checklists/plan-validation.md`.
@@ -87,9 +89,9 @@ Für spätere Produktumsetzung vorgesehen / Proposed for later product work:
 - `docs/architecture/`: getrennte Sprache/MSL-, Runtime-, Framework-, Session-/Terminal-ADRs.
 - `docs/security/adr/`: S-ADR für Eingabe/Anzeige/Sitzungsgrenzen.
 
-Kein Produktgerüst oder tasks.md wird heute erzeugt. Die vorgeschlagene Struktur
+Beim ursprünglichen Planlauf wurden weder Produktgerüst noch tasks.md erzeugt. Die vorgeschlagene Struktur
 kann nach F01–07 revidiert werden; klare Adaptergrenzen verhindern Frameworklogik
-im fachlichen Aktionsmodell. / No scaffold or tasks file is created; refine layout
+im fachlichen Aktionsmodell. / The original planning run created no scaffold/tasks; refine layout
 after proof. Adapter boundaries isolate UI framework from domain actions.
 
 ## Reihenfolge der späteren Arbeit / Subsequent work order
@@ -161,12 +163,12 @@ WhatIf work is N/A. New script tools require paired safe-mode, quoting, strict-m
 bilingual-help and parity proof.
 
 Alle 14 Presets gelten gemäß Spec-Zuordnung; keine Installation oder Versionänderung.
-Agent-Parität: heute keine Änderung der fünf gemeinsamen Guidance-Dateien oder
+Agent-Parität im ursprünglichen Planlauf: keine Änderung der fünf gemeinsamen Guidance-Dateien oder
 Vorlagen/Constitution; bei späterer Regeländerung atomar synchronisieren. Kontext-
 Skript fehlt in Installation; kein Ersatz-Verweisdokument (research D06).
 
-The fourteen presets retain spec applicability and versions. Shared guidance,
-templates/constitution remain unchanged; future shared rule changes require atomic
+The fourteen presets retain spec applicability and versions. In the original plan
+run shared guidance/templates/constitution stayed unchanged; later changes require atomic
 parity. Context script is absent; no redundant pointer artifact is created.
 
 ## Komplexität / Complexity tracking
@@ -178,7 +180,7 @@ Keine unnötige zweite Runtime, Netzwerkdienste oder Datenbank.
 No unjustified constitution deviation or waiver. Conditional candidates do not
 approve unsafe boundaries; audit those independently. No extra runtime/service/database.
 
-## Dokumentationsauswirkung / Documentation impact
+## Historische Dokumentationsauswirkung des Planlaufs / Historical planning documentation impact
 
 **UpdateRequired:** Feature-Plan, Recherche, Datenmodell, Verträge und Prüfanleitung
 DE zuerst/EN danach, ungefähr B2; technische Quelle dieser Plan, fachlicher Input LH-01,
@@ -208,3 +210,22 @@ text/state/gate tables fully explain relationships, so no additional diagram.
 Der erste fehlgeschlagene Restorelauf bleibt im Archive historisch erhalten;
 die korrigierte Baseline ist getrennt gehasht. / Linked evidence is current; initial
 failed restoration remains historical with separate current payload hashes.
+
+## Ausgeführte Startvorbereitung T001–T017 / Completed readiness preparation
+
+DE: Lokale ADR-/Security-/Architekturarbeit, angewendete zentrale Projektzeile
+und operative C#/msl-Zuordnung sind belegt. Herkunft beider Intakes regulär erneuert;
+aktuelle vollständige unabhängige Reviews Ready. T016 gleicht nur geänderte
+Herkunfts-/Governanceaussagen ab; technische Entscheidungen bleiben erhalten.
+Aktuelle IDs, Validatoren und Grenzen stehen im
+[Startnachweis](../../docs/validation/lh01/start-readiness.md). Statistik-/Homogenitätsdrift
+bleibt bis zum autorisierten Commit-/Renderpaket offen (T061), kein falscher PASS.
+Produktaufgaben ab T018 brauchen einen eigenen Auftrag; keine praktische Abnahme.
+
+EN: Local ADR/security/architecture work, applied central row and operative C#/msl
+are evidenced. Normal updates renewed both intakes; distinct complete reviews are
+Ready. T016 reconciles only changed provenance/governance statements, preserving
+technical choices. The readiness record contains current identities, validators and
+limits. Statistics/homogeneity drift remains open until authorized commit/render
+work (T061), never labelled Pass. Product tasks from T018 need a separate request;
+this preparation grants no practical acceptance.
