@@ -5,11 +5,11 @@
   "gate": "delta",
   "mode": "development",
   "createdAt": "2026-10-09T22:00:11.169936+00:00",
-  "scope": "T018–T036 bounded Mac A product increment only; no full product assurance",
+  "scope": "T018\u2013T036 bounded Mac A product increment only; no full product assurance",
   "review": {
     "owner": "Thorsten Hindermann",
     "reviewer": "Codex /root/lh01_start_review: focused independent increment review in docs/validation/lh01/session-increment-review.md",
-    "reviewedAt": "2026-10-09T22:00:11.169936+00:00",
+    "reviewedAt": "2026-10-09T22:18:59.551995+00:00",
     "reviewDue": "2026-10-12",
     "residualRisk": "Foreign native hosts, practical terminals/assistive checks, full security consolidation and distributable inventory remain open.",
     "reevaluationTrigger": "Changed product/driver/host/dependency/scope or before subsequent product delivery"
@@ -25,8 +25,8 @@
       "id": "FULL-PRODUCT-ASSURANCE",
       "applicability": "Applicable",
       "implementation": "Partly Fulfilled",
-      "evidence": "tasks T037–T063 remain open; bounded Mac A proof is not cross-platform/assistive/supply-chain acceptance.",
-      "nextAction": "T052–T059 consolidate security, foreign-host evidence, distinct architecture review and distributable SBOM/notices before feature closeout; T062 human decisions remain separate.",
+      "evidence": "tasks T037\u2013T063 remain open; bounded Mac A proof is not cross-platform/assistive/supply-chain acceptance.",
+      "nextAction": "T052\u2013T059 consolidate security, foreign-host evidence, distinct architecture review and distributable SBOM/notices before feature closeout; T062 human decisions remain separate.",
       "owner": "Thorsten Hindermann",
       "dueAt": "Before full LH-01 acceptance / before LH-02 domain completion dependency"
     }
@@ -35,7 +35,7 @@
   "acceptedRisks": [],
   "externalComparisonBoundary": "HOSK/GWDG: ExternalComparison only; never local evidence",
   "runbookApplicability": "N/A",
-  "runbookRationale": "Development-only bounded product/test increment, no training or field exercise; session proof and test README provide reproducible entry points. / Begrenztes Entwicklungsinkrement, keine Feldübung.",
+  "runbookRationale": "Development-only bounded product/test increment, no training or field exercise; session proof and test README provide reproducible entry points. / Begrenztes Entwicklungsinkrement, keine Feld\u00fcbung.",
   "changedPaths": [
     {
       "path": "src/Directory.Build.props",
@@ -143,15 +143,15 @@
     },
     {
       "path": "tests/feasibility/lh01/Invoke-Lh01ContractProof.ps1",
-      "rawSha256": "88dad6077928884690a984ad100809f15bfda33c0d2a9efe13b04012aeb36366"
+      "rawSha256": "ed7f5b7aa73b0019273998875ddfdc93425d6e668da99af9e9c810f719f8d367"
     },
     {
       "path": "tests/feasibility/lh01/Invoke-Lh01PlatformProof.ps1",
-      "rawSha256": "2ffb0d82b98c07aedaeccd6f1103779ae0944aa1f0ad3d59c6b718d92ca5fe6c"
+      "rawSha256": "b31da5792498b6400352e12dab39803173f55810d9ceb1a426a0369b38a20abc"
     },
     {
       "path": "tests/feasibility/lh01/README.md",
-      "rawSha256": "5809b9ff9972ceb7500aa784307436d5c51179b8793c6d49b65dfeb9200458df"
+      "rawSha256": "7d9ce2ae2dd631e22dcdab56f94ac72ecda43260b7254de15212ae5abe56c8e4"
     },
     {
       "path": "tests/feasibility/lh01/proof-driver-contract.py",
@@ -159,11 +159,19 @@
     },
     {
       "path": "tests/feasibility/lh01/pty-product.py",
-      "rawSha256": "17b67e6518d54dc4b95524c5845cd148018939141911bc31ca82acb641f84583"
+      "rawSha256": "3abd8785f12e53871505b6c6c69fff287f2b2736711dc5ab2933c35b6598e59b"
     },
     {
       "path": "tests/feasibility/lh01/session-contract.ps1",
       "rawSha256": "9f2697b300c3c216842ffbeb1b047b0c3829dcc4895d5dd9b4f4ea1580fad234"
+    },
+    {
+      "path": "tests/feasibility/lh01/terminal_probes.py",
+      "rawSha256": "35e7f2b74e27a348a2fd24cd70496c15d8a7572527cc1a61276f289fa428e257"
+    },
+    {
+      "path": "tests/feasibility/lh01/proof-tooling-contract.py",
+      "rawSha256": "223cf79d29cc80ab3e066add242b8bb55d5659330e18638c2c06eddab3f858d6"
     }
   ]
 }

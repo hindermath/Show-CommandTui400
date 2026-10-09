@@ -122,7 +122,7 @@ while($ancestor){
     $parent=Split-Path -Parent $ancestor
     if($parent -eq $ancestor){break};$ancestor=$parent
 }
-if($out.StartsWith($root+[IO.Path]::DirectorySeparatorChar,[StringComparison]::Ordinal)){throw 'Use isolated output outside the source checkout'}
+if($out.StartsWith($root+[IO.Path]::DirectorySeparatorChar,[StringComparison]::OrdinalIgnoreCase)){throw 'Use isolated output outside the source checkout'}
 } catch {$blockers.Add($_.Exception.Message)}
 if($blockers.Count){[ordered]@{status='Blocked';target=$Target;blockers=@($blockers);nextAction='Provide a separately approved complete plan and matching target checkout; no automatic repair'}|ConvertTo-Json -Depth 8;exit 2}
 if($CheckOnly){[ordered]@{status='Ready';target=$Target;productCommit=$head;execution='NotRun'}|ConvertTo-Json;exit 0}

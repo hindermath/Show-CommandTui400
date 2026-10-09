@@ -61,3 +61,24 @@ ignored local STATS.md retains one warning. Final gates follow the authorized
 source commit, clean-tree render/check/statistics commit, PR checks at the exact
 head, admin merge and clean main synchronization. No product CI, release,
 series activation or fleet rollout is introduced.
+
+## DE — Gezielte PR-Nachprüfung
+
+Die drei Copilot-Befunde in PR #44 wurden vor Lieferung korrigiert:
+Build-/Nachweispfade sperren Checkout-Präfixe unabhängig von Schreibweise;
+der PTY-Aufbau sammelt Abfragefragmente je Deskriptor ohne doppelte Antworten.
+Zusätzlich bindet der Vertragsbuild die versionierte NuGet.Config ausdrücklich.
+Vier neue Regression-Prüfgruppen stehen in
+[proof-tooling-contract.json](session-increment-maca/proof-tooling-contract.json).
+Build-/Lifecycleverträge und alle zehn PTY-Produktszenarien wurden am korrigierten
+Werkzeugstand wiederholt. Die Restoreinjektion bleibt Fail/Exit1. Keine fremde
+Plattform oder praktische Abnahme wird damit nachgewiesen.
+
+## EN — Focused PR recheck
+
+The three Copilot findings in PR #44 were corrected before delivery: checkout
+exclusion is case-insensitive and PTY query fragments are tracked per descriptor
+without repeated replies. The build also explicitly binds the versioned package
+configuration. Four new regression groups are linked above. Build/lifecycle checks
+and all ten PTY product scenarios were repeated; injected restoration failure
+remains Fail/exit1. Foreign native and practical acceptance stay open.

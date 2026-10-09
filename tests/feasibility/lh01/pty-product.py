@@ -1,6 +1,7 @@
 """DE: Synthetischer Unix-PTY-Produkttest. EN: Synthetic Unix PTY product test."""
 import argparse, fcntl, hashlib, json, os, pty, select, struct, subprocess, termios, time
 from pathlib import Path
+from terminal_probes import TerminalProbes
 parser = argparse.ArgumentParser()
 parser.add_argument('--scenario', choices=['Normal','Cancel','Repeat','Stop','HandledFailure','RestorationFailure','Redirect','HiddenCursor','InputRedirect','AggregateFailure'], required=True)
 parser.add_argument('--output', required=True)
@@ -25,6 +26,7 @@ redirect=args.scenario=='Redirect'
 process=subprocess.Popen(command,cwd=root,stdin=subprocess.PIPE if args.scenario=='InputRedirect' else slave,stdout=subprocess.PIPE if redirect else slave,stderr=slave,env=env,preexec_fn=setup)
 fds=[master]+([process.stdout.fileno()] if redirect else [])
 for fd in fds:os.set_blocking(fd,False)
+probes=TerminalProbes()
 raw=bytearray();start=time.monotonic();ui_at=None;phase=0;ack=False;sample=None;steps=[]
 try:
     while time.monotonic()-start<30:
@@ -32,8 +34,7 @@ try:
             try: chunk=os.read(fd,65536)
             except OSError: continue
             raw.extend(chunk)
-            if b'\x1b[c' in chunk or b'\x1b[0c' in chunk:os.write(master,b'\x1b[?1;2c')
-            if b'\x1b[6n' in chunk:os.write(master,b'\x1b[1;1R')
+            for response in probes.feed(fd,chunk):os.write(master,response)
         if ui_at is None and b'Show-CommandTui400' in raw and args.scenario in ('Normal','Cancel','Repeat','HiddenCursor'):ui_at=time.monotonic()
         if ui_at is not None:
             elapsed=time.monotonic()-ui_at

@@ -1,7 +1,7 @@
 {
-  "sanitizedTranscript": "\u001b[?1h\u001b=\u001b[?25s\u001b[?25rLH01_SHELL_INPUT_READY\r\nLH01_ACK\r\nSynthetic return check: \u001b[6nL\u001b[1;1HLH\u001b[1;1HLH0\u001b[1;1HLH01\u001b[1;1HLH01_\u001b[1;1HLH01_A\u001b[1;1HLH01_AC\u001b[1;1HLH01_ACK\r\nLH01_RESULT\r\n{\"Scenario\":\"HandledFailure\",\"Before\":{\"Pid\":89817,\"Runspace\":\"a8377683-c0eb-4af7-bd32-08172d7f0e8d\",\"Location\":\"synthetic-working-directory\",\"Synthetic\":710,\"Preference\":1,\"FunctionResult\":710},\"After\":{\"Pid\":89817,\"Runspace\":\"a8377683-c0eb-4af7-bd32-08172d7f0e8d\",\"Location\":\"synthetic-working-directory\",\"Synthetic\":710,\"Preference\":1,\"FunctionResult\":710},\"ContextUnchanged\":true,\"LocationUnchanged\":true,\"ModuleSetUnchanged\":true,\"LeaseAcquisitions\":1,\"UiCreations\":1,\"ScopeObservations\":[],\"NativeRestore\":{\"Platform\":\"macOS-arm64\",\"Before\":\"022B0000000000000300000000000000004B000000000000CB0500000000000004FFFF7F171512FF031C1A191113160F010014FF0000000080250000000000008025000000000000\",\"After\":\"022B0000000000000300000000000000004B000000000000CB0500200000000004FFFF7F171512FF031C1A191113160F010014FF0000000080250000000000008025000000000000\",\"RawEqual\":false,\"ConfiguredEqual\":true,\"Boundary\":\"Only independently reproduced Darwin PENDIN (0x20000000) excluded from configured comparison; raw bytes retained\"},\"StopCalls\":0,\"PipelineState\":null,\"IsolatedTestRunspace\":false,\"ShellReadback\":\"LH01_ACK\",\"Failure\":{\"ErrorId\":\"HandledFailure,ShowCommandTui400.Commands.ShowCommandTui400Command\",\"Message\":\"synthetic primary failure\"}}\r\nLH01_RESTORE_READY\r\n",
-  "sanitizedTranscriptSha256": "98db28a56a1c25143fcd3da21cf3db2db5be4aa3345f4acd222fc9bdd25e320f",
-  "assemblySha256": "45738f1fd8a143a7d05584c1b445d01e2d39f1b09d9cc491cecf21021db3e7e6",
+  "sanitizedTranscript": "\u001b[?1h\u001b=\u001b[?25s\u001b[?25rLH01_SHELL_INPUT_READY\r\nLH01_ACK\r\nSynthetic return check: \u001b[6nL\u001b[1;1HLH\u001b[1;1HLH0\u001b[1;1HLH01\u001b[1;1HLH01_\u001b[1;1HLH01_A\u001b[1;1HLH01_AC\u001b[1;1HLH01_ACK\r\nLH01_RESULT\r\n{\"Scenario\":\"HandledFailure\",\"Before\":{\"Pid\":34391,\"Runspace\":\"0914d3c7-c8aa-46fd-9863-ea5424f595cd\",\"Location\":\"synthetic-working-directory\",\"Synthetic\":710,\"Preference\":1,\"FunctionResult\":710},\"After\":{\"Pid\":34391,\"Runspace\":\"0914d3c7-c8aa-46fd-9863-ea5424f595cd\",\"Location\":\"synthetic-working-directory\",\"Synthetic\":710,\"Preference\":1,\"FunctionResult\":710},\"ContextUnchanged\":true,\"LocationUnchanged\":true,\"ModuleSetUnchanged\":true,\"LeaseAcquisitions\":1,\"UiCreations\":1,\"ScopeObservations\":[],\"NativeRestore\":{\"Platform\":\"macOS-arm64\",\"Before\":\"022B0000000000000300000000000000004B000000000000CB0500000000000004FFFF7F171512FF031C1A191113160F010014FF0000000080250000000000008025000000000000\",\"After\":\"022B0000000000000300000000000000004B000000000000CB0500200000000004FFFF7F171512FF031C1A191113160F010014FF0000000080250000000000008025000000000000\",\"RawEqual\":false,\"ConfiguredEqual\":true,\"Boundary\":\"Only independently reproduced Darwin PENDIN (0x20000000) excluded from configured comparison; raw bytes retained\"},\"StopCalls\":0,\"PipelineState\":null,\"IsolatedTestRunspace\":false,\"ShellReadback\":\"LH01_ACK\",\"Failure\":{\"ErrorId\":\"HandledFailure,ShowCommandTui400.Commands.ShowCommandTui400Command\",\"Message\":\"synthetic primary failure\"}}\r\nLH01_RESTORE_READY\r\n",
+  "sanitizedTranscriptSha256": "537294b9f6ba0418cf60a7fa5847ffc884e51e943dc82c6abe681eb266d10368",
+  "assemblySha256": "0fdf80fc9d767f09b5601805646d2884bba62b9794a415e5c176689df84f28c8",
   "finalCursorVisibleAtReturn": true,
   "cursorModeRestoreObserved": true,
   "initialCursorBoundary": "synthetic xterm mode-25 protocol emulation; hidden and visible cases; no physical terminal proof",
@@ -30,7 +30,7 @@
     "synthetic-shell-readback"
   ],
   "cursorShowObserved": false,
-  "transcriptSha256": "98db28a56a1c25143fcd3da21cf3db2db5be4aa3345f4acd222fc9bdd25e320f",
+  "transcriptSha256": "537294b9f6ba0418cf60a7fa5847ffc884e51e943dc82c6abe681eb266d10368",
   "termiosBefore": [
     11010,
     3,
@@ -94,16 +94,16 @@
   "observation": {
     "Scenario": "HandledFailure",
     "Before": {
-      "Pid": 89817,
-      "Runspace": "a8377683-c0eb-4af7-bd32-08172d7f0e8d",
+      "Pid": 34391,
+      "Runspace": "0914d3c7-c8aa-46fd-9863-ea5424f595cd",
       "Location": "synthetic-working-directory",
       "Synthetic": 710,
       "Preference": 1,
       "FunctionResult": 710
     },
     "After": {
-      "Pid": 89817,
-      "Runspace": "a8377683-c0eb-4af7-bd32-08172d7f0e8d",
+      "Pid": 34391,
+      "Runspace": "0914d3c7-c8aa-46fd-9863-ea5424f595cd",
       "Location": "synthetic-working-directory",
       "Synthetic": 710,
       "Preference": 1,

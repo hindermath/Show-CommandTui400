@@ -50,7 +50,7 @@ Testaufbau ab: locked Build ohne Compilerwarnungen; **20 Modell-/Lifecyclechecks
 sind Pass. Die injizierte RestorationFailure bleibt **Fail/Exit1**, mit erfülltem
 Diagnosevertrag und beiden erhaltenen Ursachen. Der native Restore war vor der
 Injektion erfolgreich; daraus wird kein realer defekter Hostrestore abgeleitet.
-Die Rohhashprüfung des Manifests umfasst **44/44** gültige Quellen-/Nachweisbindungen.
+Die aktuelle Rohhashprüfung des Manifests umfasst **47/47** gültige Quellen-/Nachweisbindungen.
 Alle63 Aufgaben-IDs bleiben erhalten:36 abgeschlossen,27 offen.
 
 E01-01/E01-04 sind begrenzt lokal belegt. Linux-/Windows-Adapter sind durch
@@ -96,7 +96,7 @@ The author-executed locked build,20 model/lifecycle checks,7 negative driver pla
 contracts and10 synthetic product PTY scenarios were inspected against the code.
 Nine scenarios Pass; injected restoration failure remains Fail/exit1 while satisfying
 its diagnostic contract. Actual native restoration succeeded before injection.
-The manifest has44/44 matching raw source/evidence bindings;63 task IDs remain,
+The current manifest has47/47 matching raw source/evidence bindings;63 task IDs remain,
 36 locally complete and27 open. These are bounded E01-01/E01-04 observations.
 
 No native Mac B, Windows or Ubuntu/WSL2 run occurred; foreign adapters have doubles
@@ -132,23 +132,51 @@ hash. Independent HEAD comparison confirms identical parsed JSON and44/44 matchi
 raw bindings. No scanner exemption, product change or new product run. Ready keeps
 its bounded scope; the historical HEAD hash is above and the current hash below.
 
-## Rohhashbindungen / Raw hash bindings
+## PR44: unabhängige Korrekturprüfung / Independent corrective re-review
 
-DE: SHA256 über unveränderte Dateibytes am Prüfzeitpunkt; keine normalisierten
-Inhaltswerte. Die Tabelle bindet 58 geprüfte Dateien. Änderungen erfordern
-gezielte Neubewertung; die Reviewdatei bindet sich nicht selbst.
-EN: Raw-byte SHA256 at review time binds 58 files. Reassess changed files;
-the review does not bind itself. Generated build/cache outputs are excluded.
+DE: Erneute gezielte Prüfung am 2026-10-09T22:19:19.209829+00:00
+durch denselben getrennten Prüfer. Die drei Copilot-Befunde sind **geschlossen**:
+Build-/Nachweispfade sperren Checkout-Präfixe mit OrdinalIgnoreCase vor dem
+Schreiben; konservative Ablehnung auf case-sensitiven Volumes bleibt zulässig.
+Der PTY-Parser hält je Deskriptor drei Tailbytes, erkennt alle Teilungen seiner
+drei Abfragen und unterdrückt bereits beantwortete vollständige Tailabfragen.
+Mehrere Abfragen bleiben in ihrer Reihenfolge erhalten. Zusätzlich erzwingt der
+Build RestoreConfigFile mit der versionierten NuGet.Config als globale
+MSBuild-Eigenschaft für Produkt und Testprojekt; deren clear/nuget.org-Quelle
+verhindert geerbte zusätzliche Paketquellen. Locked Restore bleibt aktiv.
 
-| Datei / File | SHA256 |
+Vier neue Regression-Prüfgruppen, erneut20 Build-/Lifecyclechecks, sieben negative
+Driververträge und zehn wiederholte PTY-Resultate wurden unabhängig mit Quellen
+abgeglichen: neun Pass, Restoreinjektion weiterhin Fail/Exit1 mit erfülltem
+Diagnosevertrag. Aktuell47/47 Manifestbindungen und61/61 Reviewbindungen
+stimmen überein. Kein zusätzlicher Produktlauf durch den Reviewer. Umfang,
+Prepared-Hand-offs, Deferred/Excluded-Grenzen und NeedsRemediation bleiben wie oben;
+Ready bleibt auf T018–T036/Mac A begrenzt. Frühere44-Bindungs-Aussagen in der
+Lieferformatierungsnotiz beschreiben ausschließlich deren damaligen Prüfstand.
+
+EN: The distinct reviewer rechecked all three Copilot corrections and found them
+**resolved**. Case-insensitive checkout-prefix exclusion precedes output writes.
+Per-descriptor three-byte tails reconstruct all supported query splits, retain
+multiple-query order and avoid answering completed tail queries twice. The global
+RestoreConfigFile property explicitly supplies the versioned clear/nuget.org
+configuration for product and test restore, retaining locked mode.
+
+Four regression groups, repeated20 build/lifecycle checks, seven negative driver
+contracts and ten repeated PTY records match current sources: nine Pass; injected
+restoration failure remains Fail/exit1 with its diagnostic contract satisfied.
+Current47/47 manifest and61/61 review bindings match. No new reviewer product run.
+Scope, Prepared handoffs, practical limits and full Assurance NeedsRemediation
+remain unchanged. Ready still covers T018–T036/Mac A only. Earlier44-binding counts
+in the formatting note are historical observations of that earlier snapshot.
+
+### Vorherige geänderte Bindungen / Previous changed bindings
+
+DE: Folgende Rohhashes dokumentieren den vorherigen Reviewstand; sie sind keine
+aktuellen Bindungen. EN: These hashes preserve the previous review snapshot only.
+
+| Historische Datei / Historical file | Vorheriger SHA256 / Previous SHA256 |
 |---|---|
-| `.gitignore` | `85af767878a9dba97c5be46cceb54485b8c28fd17e1599ea3b2b0df9793a28a7` |
-| `docs/lh01/session-and-terminal.md` | `aad7cf6c146c5c997e78b6e500334df2d83f3bb05320223a920819f9ed33d541` |
 | `docs/security/secure-development/2026-10-09-lh01-tui-foundation/deltas/lh01-session-increment.json` | `7a1af80ff850b8dfede522f437e9212e090ad17c9d0511b747fd99ac30188cfe` |
-| `docs/validation/lh01/approved-commands.schema.json` | `aebc793ebef874e7b76b019e622f5bac3e54485e9b7be92e706190002cafd286` |
-| `docs/validation/lh01/negative-entry.md` | `d5891c04b3d6527a2d62551e24de559840c4fac483986506de99dc383a7cc816` |
-| `docs/validation/lh01/platform-handoff.json` | `82a5c263dbc76be769b48a31b172934a31dfb00c566e86a974dc55de5ca68e1a` |
-| `docs/validation/lh01/platform-handoff.md` | `42bce0f3cd7b6b777e1ec827755584603c43d08a3e14afe617b94477c6abec16` |
 | `docs/validation/lh01/session-increment-checks.md` | `78b21128d7fa161d69dfae41b2c2a6fd80afe42e83d50a6ad69572aa5eb84b5e` |
 | `docs/validation/lh01/session-increment-maca/AggregateFailure.json` | `30e13704500fbca56af7cc135e095e7ae0131ae3fc3dc681c39d38352e59ef26` |
 | `docs/validation/lh01/session-increment-maca/Cancel.json` | `4209846fd35f8db0c991910e56f4e196baddcf683b995fcc755cd564433f4f23` |
@@ -162,7 +190,43 @@ the review does not bind itself. Generated build/cache outputs are excluded.
 | `docs/validation/lh01/session-increment-maca/Stop.json` | `c3514f4fa536be5088e24a28c236217f2e076cda74054ec441482b210c4c047d` |
 | `docs/validation/lh01/session-increment-maca/build-contract.json` | `59dde2983d2e1d2583a2fa4f2a0132078cc9b48903e01da935644a7057516a40` |
 | `docs/validation/lh01/session-increment-maca/manifest.json` | `44713a4125790a8bacfdbbdb000be8ae29fb90eb3dd47390d33c44ddea0fad21` |
+| `tests/feasibility/lh01/Invoke-Lh01ContractProof.ps1` | `88dad6077928884690a984ad100809f15bfda33c0d2a9efe13b04012aeb36366` |
+| `tests/feasibility/lh01/Invoke-Lh01PlatformProof.ps1` | `2ffb0d82b98c07aedaeccd6f1103779ae0944aa1f0ad3d59c6b718d92ca5fe6c` |
+| `tests/feasibility/lh01/README.md` | `5809b9ff9972ceb7500aa784307436d5c51179b8793c6d49b65dfeb9200458df` |
+| `tests/feasibility/lh01/pty-product.py` | `17b67e6518d54dc4b95524c5845cd148018939141911bc31ca82acb641f84583` |
+
+## Rohhashbindungen / Raw hash bindings
+
+DE: SHA256 über unveränderte Dateibytes am aktuellen Prüfzeitpunkt; keine
+normalisierten Inhaltswerte. Die Tabelle bindet61 geprüfte Dateien.
+Änderungen erfordern gezielte Neubewertung; die Reviewdatei bindet sich nicht selbst.
+EN: Current raw-byte SHA256 binds61 files. Reassess changed files;
+the review does not bind itself. Generated build/cache outputs are excluded.
+
+| Datei / File | SHA256 |
+|---|---|
+| `.gitignore` | `85af767878a9dba97c5be46cceb54485b8c28fd17e1599ea3b2b0df9793a28a7` |
+| `docs/lh01/session-and-terminal.md` | `aad7cf6c146c5c997e78b6e500334df2d83f3bb05320223a920819f9ed33d541` |
+| `docs/security/secure-development/2026-10-09-lh01-tui-foundation/deltas/lh01-session-increment.json` | `838479007092c80986d395158c76f747b68c13b4c4a050ee1d8d00de9bd93469` |
+| `docs/validation/lh01/approved-commands.schema.json` | `aebc793ebef874e7b76b019e622f5bac3e54485e9b7be92e706190002cafd286` |
+| `docs/validation/lh01/negative-entry.md` | `d5891c04b3d6527a2d62551e24de559840c4fac483986506de99dc383a7cc816` |
+| `docs/validation/lh01/platform-handoff.json` | `82a5c263dbc76be769b48a31b172934a31dfb00c566e86a974dc55de5ca68e1a` |
+| `docs/validation/lh01/platform-handoff.md` | `42bce0f3cd7b6b777e1ec827755584603c43d08a3e14afe617b94477c6abec16` |
+| `docs/validation/lh01/session-increment-checks.md` | `fe1f82c654849c28d058c9279d7cf81db67b9569a1d56d883654e85de181f9fa` |
+| `docs/validation/lh01/session-increment-maca/AggregateFailure.json` | `21e816784649b1be87427b7dff04c2d426a7bed82455400633d70032591b6023` |
+| `docs/validation/lh01/session-increment-maca/Cancel.json` | `b7c8a9b3b36d58f5cd4c0a0f89055b3ea888c4b32e99c716298e3227e853aa04` |
+| `docs/validation/lh01/session-increment-maca/HandledFailure.json` | `e109fa421f95b184595cf7394fb8bbdb5a3252323245595bf3e13cfa8475ea2b` |
+| `docs/validation/lh01/session-increment-maca/HiddenCursor.json` | `cbd1dbb06264080a8cebcf79113622eff70bd148816c67b9a03558179786b2cc` |
+| `docs/validation/lh01/session-increment-maca/InputRedirect.json` | `648b234d45bc4e3496f463a9a1e05e7c87d61eaabf7c5dc4d92391367b2b8d30` |
+| `docs/validation/lh01/session-increment-maca/Normal.json` | `82a2751d6dadc71103e942af54014cc814105f002f41f0390abf01cc9a70a660` |
+| `docs/validation/lh01/session-increment-maca/Redirect.json` | `3a1b67376777fc9a01fbabdb4a38157403ee07222f618050dfbc07cf687a50ba` |
+| `docs/validation/lh01/session-increment-maca/Repeat.json` | `aad123c49a1fe028abeb9139c47a9aa2889f818e6cb0830247b965a8b18bdb28` |
+| `docs/validation/lh01/session-increment-maca/RestorationFailure.json` | `6bbdab7ce3209874429a4d68b7d2d07ba5e7d19906907b7722c0975e41b69fca` |
+| `docs/validation/lh01/session-increment-maca/Stop.json` | `d747412925754641c2149a44d5372151ac0fddf4b1e1ae0d2fc73d6aca9da8c3` |
+| `docs/validation/lh01/session-increment-maca/build-contract.json` | `19f77323f1ffdb3ec7047828c79155667bb13dc5db8c1fa33fc96b740e0480c7` |
+| `docs/validation/lh01/session-increment-maca/manifest.json` | `98c8de802d69bb102b33735b0200d50ea99f82ec41ee370d3d2157a6985872d3` |
 | `docs/validation/lh01/session-increment-maca/proof-driver-contract.json` | `1e62f10a3d761191b40e5a1d9dd289f79d0a4a0add3e8676e60b3fd8e58a159e` |
+| `docs/validation/lh01/session-increment-maca/proof-tooling-contract.json` | `1e178321f2e4419490ab358a28ef85283e7c84775389b3a4d3036170df3e0dbc` |
 | `docs/validation/lh01/session-terminal.md` | `25dab1e79d7ff036e5e74185a7f955b2fc91e5bf2bea1988b4ba0ce21a7c0bba` |
 | `specs/002-lh01-tui-foundation/contracts/actions-terminal.md` | `b3221f30cf9759932197700bd2a340d159d07cd6d4c6f6b83937b1ae831fba34` |
 | `specs/002-lh01-tui-foundation/contracts/cmdlet-session.md` | `64caf9abc52e3d8e254554e5d9ab93fbad311b744d467320ca49be86b5cdfd03` |
@@ -194,9 +258,11 @@ the review does not bind itself. Generated build/cache outputs are excluded.
 | `tests/ShowCommandTui400.Tests/ShowCommandTui400.Tests.csproj` | `0ddbbb332f7267bdad22caaa3fe2ec39b31f97633494e2a185dcff6bf0d80ac7` |
 | `tests/ShowCommandTui400.Tests/TerminalLifecycleTests.cs` | `7c1a43fd9b2d0a537964e82676ef99df4c0eec948dc1ce4f45295acc2a41d58d` |
 | `tests/ShowCommandTui400.Tests/packages.lock.json` | `be152f8f6783b9c9f74ff2c1700fee5e38815dfbba0a8772872b62e9c88cd998` |
-| `tests/feasibility/lh01/Invoke-Lh01ContractProof.ps1` | `88dad6077928884690a984ad100809f15bfda33c0d2a9efe13b04012aeb36366` |
-| `tests/feasibility/lh01/Invoke-Lh01PlatformProof.ps1` | `2ffb0d82b98c07aedaeccd6f1103779ae0944aa1f0ad3d59c6b718d92ca5fe6c` |
-| `tests/feasibility/lh01/README.md` | `5809b9ff9972ceb7500aa784307436d5c51179b8793c6d49b65dfeb9200458df` |
+| `tests/feasibility/lh01/Invoke-Lh01ContractProof.ps1` | `ed7f5b7aa73b0019273998875ddfdc93425d6e668da99af9e9c810f719f8d367` |
+| `tests/feasibility/lh01/Invoke-Lh01PlatformProof.ps1` | `b31da5792498b6400352e12dab39803173f55810d9ceb1a426a0369b38a20abc` |
+| `tests/feasibility/lh01/README.md` | `7d9ce2ae2dd631e22dcdab56f94ac72ecda43260b7254de15212ae5abe56c8e4` |
 | `tests/feasibility/lh01/proof-driver-contract.py` | `5640f8391c91eb70e0964f51c268126302e7129c67198d9cd87b6fbaa4fc33da` |
-| `tests/feasibility/lh01/pty-product.py` | `17b67e6518d54dc4b95524c5845cd148018939141911bc31ca82acb641f84583` |
+| `tests/feasibility/lh01/proof-tooling-contract.py` | `223cf79d29cc80ab3e066add242b8bb55d5659330e18638c2c06eddab3f858d6` |
+| `tests/feasibility/lh01/pty-product.py` | `3abd8785f12e53871505b6c6c69fff287f2b2736711dc5ab2933c35b6598e59b` |
 | `tests/feasibility/lh01/session-contract.ps1` | `9f2697b300c3c216842ffbeb1b047b0c3829dcc4895d5dd9b4f4ea1580fad234` |
+| `tests/feasibility/lh01/terminal_probes.py` | `35e7f2b74e27a348a2fd24cd70496c15d8a7572527cc1a61276f289fa428e257` |

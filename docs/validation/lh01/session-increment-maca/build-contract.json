@@ -1,5 +1,8 @@
 {
-  "hostAssembliesRedistributed": false,
+  "outcome": "LockedBuildAndContractTestsPass",
+  "result": "Pass",
+  "caseId": "B01",
+  "scope": "model/native doubles only; no GUI or foreign-platform proof",
   "checks": [
     "N01",
     "N02",
@@ -22,8 +25,5 @@
     "aggregate-primary-with-successful-restore",
     "platform-native-doubles"
   ],
-  "caseId": "B01",
-  "scope": "model/native doubles only; no GUI or foreign-platform proof",
-  "outcome": "LockedBuildAndContractTestsPass",
-  "result": "Pass"
+  "hostAssembliesRedistributed": false
 }

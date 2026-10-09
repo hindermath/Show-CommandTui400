@@ -20,7 +20,7 @@ Set-StrictMode -Version Latest
 $ErrorActionPreference='Stop'
 $root=(Resolve-Path (Join-Path $PSScriptRoot '../../..')).Path
 $build=[IO.Path]::GetFullPath($BuildRoot)
-if($build -eq $root -or $build.StartsWith($root+[IO.Path]::DirectorySeparatorChar,[StringComparison]::Ordinal)){throw 'BuildRoot must stay outside source'}
+if($build -eq $root -or $build.StartsWith($root+[IO.Path]::DirectorySeparatorChar,[StringComparison]::OrdinalIgnoreCase)){throw 'BuildRoot must stay outside source'}
 $parent=$build
 while($parent){if(Test-Path -LiteralPath $parent){$item=Get-Item -LiteralPath $parent -Force;if($item.LinkType -or ($item.Attributes -band [IO.FileAttributes]::ReparsePoint)){throw 'Symlink/reparse build parent'}};$next=Split-Path -Parent $parent;if($next -eq $parent){break};$parent=$next}
 $marker=Join-Path $build 'lh01-build-owner.json'
@@ -32,7 +32,7 @@ if(Test-Path -LiteralPath $build){
 }else{[void](New-Item -ItemType Directory -Path $build);@{productCommit=$head}|ConvertTo-Json|Set-Content -LiteralPath $marker}
 Push-Location $root
 try {
-    & dotnet build tests/ShowCommandTui400.Tests/ShowCommandTui400.Tests.csproj -p:RestoreLockedMode=true "-p:LH01PowerShellHome=$PSHOME" "-p:LH01BuildRoot=$build" | Out-Host
+    & dotnet build tests/ShowCommandTui400.Tests/ShowCommandTui400.Tests.csproj -p:RestoreLockedMode=true "-p:RestoreConfigFile=$(Join-Path $root 'src/ShowCommandTui400/NuGet.Config')" "-p:LH01PowerShellHome=$PSHOME" "-p:LH01BuildRoot=$build" | Out-Host
     if($LASTEXITCODE -ne 0){throw 'Locked build failed'}
     Import-Module (Join-Path $build 'ShowCommandTui400/bin/net10.0/ShowCommandTui400.psd1')
     Add-Type -Path (Join-Path $build 'ShowCommandTui400.Tests/bin/net10.0/ShowCommandTui400.Tests.dll')

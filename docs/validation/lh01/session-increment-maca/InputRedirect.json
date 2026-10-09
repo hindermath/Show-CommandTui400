@@ -1,7 +1,7 @@
 {
-  "sanitizedTranscript": "\u001b[?1h\u001b=LH01_RESULT\r\n{\"Scenario\":\"InputRedirect\",\"Before\":{\"Pid\":89829,\"Runspace\":\"e7e2a5a9-eeff-4aa0-8de4-c9137bb02041\",\"Location\":\"synthetic-working-directory\",\"Synthetic\":710,\"Preference\":1,\"FunctionResult\":710},\"After\":{\"Pid\":89829,\"Runspace\":\"e7e2a5a9-eeff-4aa0-8de4-c9137bb02041\",\"Location\":\"synthetic-working-directory\",\"Synthetic\":710,\"Preference\":1,\"FunctionResult\":710},\"ContextUnchanged\":true,\"LocationUnchanged\":true,\"ModuleSetUnchanged\":true,\"LeaseAcquisitions\":0,\"UiCreations\":0,\"ScopeObservations\":[],\"NativeRestore\":null,\"StopCalls\":0,\"PipelineState\":null,\"IsolatedTestRunspace\":false,\"ShellReadback\":null,\"Failure\":{\"ErrorId\":\"CapabilityRejected,ShowCommandTui400.Commands.ShowCommandTui400Command\",\"Message\":\"Interaktive ConsoleHost-Sitzung ab PowerShell 7.6.4 mit unterstütztem Terminal erforderlich. / An interactive supported ConsoleHost terminal on PowerShell 7.6.4+ is required.\"}}\r\nLH01_RESTORE_READY\r\n",
-  "sanitizedTranscriptSha256": "3dd2d3ee4f5c266b242309938d6242d1646642a9b667c4d3f66da167292d211d",
-  "assemblySha256": "45738f1fd8a143a7d05584c1b445d01e2d39f1b09d9cc491cecf21021db3e7e6",
+  "sanitizedTranscript": "\u001b[?1h\u001b=LH01_RESULT\r\n{\"Scenario\":\"InputRedirect\",\"Before\":{\"Pid\":34425,\"Runspace\":\"e1b6790a-98dc-421d-b249-79ab53a911fb\",\"Location\":\"synthetic-working-directory\",\"Synthetic\":710,\"Preference\":1,\"FunctionResult\":710},\"After\":{\"Pid\":34425,\"Runspace\":\"e1b6790a-98dc-421d-b249-79ab53a911fb\",\"Location\":\"synthetic-working-directory\",\"Synthetic\":710,\"Preference\":1,\"FunctionResult\":710},\"ContextUnchanged\":true,\"LocationUnchanged\":true,\"ModuleSetUnchanged\":true,\"LeaseAcquisitions\":0,\"UiCreations\":0,\"ScopeObservations\":[],\"NativeRestore\":null,\"StopCalls\":0,\"PipelineState\":null,\"IsolatedTestRunspace\":false,\"ShellReadback\":null,\"Failure\":{\"ErrorId\":\"CapabilityRejected,ShowCommandTui400.Commands.ShowCommandTui400Command\",\"Message\":\"Interaktive ConsoleHost-Sitzung ab PowerShell 7.6.4 mit unterstütztem Terminal erforderlich. / An interactive supported ConsoleHost terminal on PowerShell 7.6.4+ is required.\"}}\r\nLH01_RESTORE_READY\r\n",
+  "sanitizedTranscriptSha256": "4766daef5e61918483718abe0b4b4398f9b0ec21abad947faa40319f583f3033",
+  "assemblySha256": "0fdf80fc9d767f09b5601805646d2884bba62b9794a415e5c176689df84f28c8",
   "finalCursorVisibleAtReturn": true,
   "cursorModeRestoreObserved": false,
   "initialCursorBoundary": "synthetic xterm mode-25 protocol emulation; hidden and visible cases; no physical terminal proof",
@@ -28,7 +28,7 @@
   "timeout": false,
   "steps": [],
   "cursorShowObserved": false,
-  "transcriptSha256": "3dd2d3ee4f5c266b242309938d6242d1646642a9b667c4d3f66da167292d211d",
+  "transcriptSha256": "4766daef5e61918483718abe0b4b4398f9b0ec21abad947faa40319f583f3033",
   "termiosBefore": [
     11010,
     3,
@@ -92,16 +92,16 @@
   "observation": {
     "Scenario": "InputRedirect",
     "Before": {
-      "Pid": 89829,
-      "Runspace": "e7e2a5a9-eeff-4aa0-8de4-c9137bb02041",
+      "Pid": 34425,
+      "Runspace": "e1b6790a-98dc-421d-b249-79ab53a911fb",
       "Location": "synthetic-working-directory",
       "Synthetic": 710,
       "Preference": 1,
       "FunctionResult": 710
     },
     "After": {
-      "Pid": 89829,
-      "Runspace": "e7e2a5a9-eeff-4aa0-8de4-c9137bb02041",
+      "Pid": 34425,
+      "Runspace": "e1b6790a-98dc-421d-b249-79ab53a911fb",
       "Location": "synthetic-working-directory",
       "Synthetic": 710,
       "Preference": 1,
