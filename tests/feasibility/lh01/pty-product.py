@@ -3,7 +3,7 @@ import argparse, fcntl, hashlib, json, os, pty, select, struct, subprocess, term
 from pathlib import Path
 from terminal_probes import TerminalProbes
 parser = argparse.ArgumentParser()
-parser.add_argument('--scenario', choices=['Normal','Cancel','Repeat','Stop','HandledFailure','RestorationFailure','Redirect','HiddenCursor','InputRedirect','AggregateFailure'], required=True)
+parser.add_argument('--scenario', choices=['Normal','Cancel','Repeat','Stop','HandledFailure','RestorationFailure','Redirect','HiddenCursor','InputRedirect','AggregateFailure','Keyboard','Remap','FunctionExit','BindingConflict'], required=True)
 parser.add_argument('--output', required=True)
 parser.add_argument('--build-root')
 parser.add_argument('--case-id', choices=['N02','N03','S01','S02','S03','S04','S05','S06','S07'])
@@ -28,19 +28,24 @@ fds=[master]+([process.stdout.fileno()] if redirect else [])
 for fd in fds:os.set_blocking(fd,False)
 probes=TerminalProbes()
 raw=bytearray();start=time.monotonic();ui_at=None;phase=0;ack=False;sample=None;steps=[]
+sequences = {
+    'Keyboard': [('Unknown',b'z'),('Esc',b'\x1b'),('F12',b'\x1b[24~'),('F4',b'\x1bOS'),('F9',b'\x1b[20~'),('F10',b'\x1b[21~'),('F11',b'\x1b[23~'),('Tab',b'\t'),('Enter',b'\r'),('Alt+B',b'\x1bb'),('Shift+Tab',b'\x1b[Z'),('Down',b'\x1b[B'),('Up',b'\x1b[A'),('Right',b'\x1b[C'),('Left',b'\x1b[D'),('PageDown',b'\x1b[6~'),('Enter',b'\r'),('PageUp',b'\x1b[5~'),('Enter',b'\r'),('F5',b'\x1b[15~'),('F1',b'\x1bOP'),('Alt+B',b'\x1bb'),('Alt+M',b'\x1bm'),('Alt+H',b'\x1bh'),('F12',b'\x1b[24~'),('Esc',b'\x1b'),('Alt+X',b'\x1bx')],
+    'Remap': [('F1-unbound',b'\x1bOP'),('F5-unbound',b'\x1b[15~'),('F6',b'\x1b[17~'),('F2',b'\x1bOQ'),('Alt+B',b'\x1bb'),('Alt+H',b'\x1bh'),('Esc',b'\x1b'),('Alt+X',b'\x1bx')],
+    'FunctionExit': [('F3',b'\x1bOR')]
+}
+sequence = sequences.get(args.scenario, [('Ctrl+C',b'\x03')] if args.scenario=='Cancel' else [('Alt+X',b'\x1bx')] * (3 if args.scenario=='Repeat' else 1))
 try:
-    while time.monotonic()-start<30:
+    while time.monotonic()-start<45:
         for fd in select.select(fds,[],[],.05)[0]:
             try: chunk=os.read(fd,65536)
             except OSError: continue
             raw.extend(chunk)
             for response in probes.feed(fd,chunk):os.write(master,response)
-        if ui_at is None and b'Show-CommandTui400' in raw and args.scenario in ('Normal','Cancel','Repeat','HiddenCursor'):ui_at=time.monotonic()
+        if ui_at is None and b'Show-CommandTui400' in raw and args.scenario in ('Normal','Cancel','Repeat','HiddenCursor','Keyboard','Remap','FunctionExit'):ui_at=time.monotonic()
         if ui_at is not None:
             elapsed=time.monotonic()-ui_at
-            count=3 if args.scenario=='Repeat' else 1
-            if phase<count and elapsed>.6+phase*1.3:
-                os.write(master,b'\x03' if args.scenario=='Cancel' else b'\x1bx');phase+=1;steps.append('Ctrl+C' if args.scenario=='Cancel' else 'Alt+X')
+            if phase<len(sequence) and elapsed>.8+phase*.65:
+                label,data=sequence[phase];os.write(master,data);phase+=1;steps.append(label)
         if not ack and b'LH01_SHELL_INPUT_READY' in raw:os.write(master,b'LH01_ACK\r');ack=True;steps.append('synthetic-shell-readback')
         if sample is None and b'LH01_RESTORE_READY' in raw:sample=termios.tcgetattr(slave)
         if process.poll() is not None:break
@@ -63,13 +68,31 @@ try:
     expected_exit=1 if args.scenario=='RestorationFailure' else 0
     expected_failure=args.scenario=='RestorationFailure'
     ok=not timeout and process.returncode==expected_exit and parsed is not None and parsed['ContextUnchanged']
-    if args.scenario not in ('Redirect','InputRedirect'):
+    if args.scenario not in ('Redirect','InputRedirect','BindingConflict'):
         ok=ok and parsed['ShellReadback']=='LH01_ACK' and parsed['NativeRestore']['ConfiguredEqual']
     if args.scenario in ('Normal','Repeat','Cancel'):
         ok=ok and b'\x1b[?25h' in raw
     if args.scenario=='Repeat':
         observations=parsed['ScopeObservations'];ok=ok and len(observations)==3 and [v['Synthetic'] for v in observations]==[710,711,712] and all(v['ProcessId']==parsed['Before']['Pid'] and v['RunspaceId']==parsed['Before']['Runspace'] for v in observations)
     if args.scenario=='Stop':ok=ok and parsed['StopCalls']>0 and parsed['PipelineState']=='Stopped'
+    if args.scenario in ('Keyboard','Remap','FunctionExit'):
+        observations=parsed.get('InputObservations',[]) if parsed else []
+        expected=[v[0] for v in sequence if v[0] not in ('Unknown','F1-unbound','F5-unbound')]
+        ok=ok and phase==len(sequence) and parsed['ModuleSetUnchanged'] and observations[-1:]==[v for v in observations[-1:] if v['ExitRequested']]
+        ok=ok and all(not v['ExitRequested'] for v in observations[:-1])
+        ok=ok and [v['Key'] for v in observations]==expected and all(v['Focus']==v['FrameworkFocus'] for v in observations)
+        if args.scenario=='Keyboard':
+            ok=ok and all(not v['Accepted'] for v in observations[2:6]) and all(not v['ExitRequested'] for v in observations[:-1])
+            ok=ok and observations[0]['Context']=='Root' and observations[1]['Context']=='Root'
+            ok=ok and [v['Action'] for v in observations if v['Key']=='Enter']==['ActionsMenu','Refresh','Help']
+            contexts=['Root']*7+['ActionsMenu']+['Root']*9+['Help']*3+['Root','ActionsMenu','Help','ActionsMenu','Root','Root']
+            focuses=['Help']*6+['ActionsMenu']*3+['Help','ActionsMenu','Help','ActionsMenu','Help','Refresh','Refresh']+['Help']*10
+            actions=['Back','Back','Context','AllParameters','MoreParameters','Details',None,'ActionsMenu','Back',None,None,None,None,None,None,'Refresh',None,'Help','Refresh','Help','Back','ActionsMenu','Help','Back','Back','Exit']
+            ok=ok and [v['Context'] for v in observations]==contexts and [v['Focus'] for v in observations]==focuses
+            ok=ok and [v['Action'] for v in observations]==actions and [v['Accepted'] for v in observations]==[i not in (2,3,4,5) for i in range(26)]
+
+        if args.scenario=='Remap':ok=ok and observations[0]['Key']=='F6' and observations[0]['Action']=='Refresh' and observations[1]['Key']=='F2' and observations[1]['Context']=='Help'
+    if args.scenario=='BindingConflict':ok=ok and parsed['LeaseAcquisitions']==0 and parsed['UiCreations']==0 and parsed['ModuleSetUnchanged'] and parsed['Failure']['ErrorId'].startswith('InvalidConfiguration')
     boundary=bytes(raw).split(b'LH01_SHELL_INPUT_READY')[0]
     import re
     cursor_visible=True; saved_cursor=None; restore_observed=False
@@ -80,7 +103,7 @@ try:
         elif operation==b's':saved_cursor=cursor_visible
         elif operation==b'r' and saved_cursor is not None:cursor_visible=saved_cursor;restore_observed=True
     final_cursor_visible=cursor_visible
-    if args.scenario in ('Normal','Cancel','Repeat','HiddenCursor'):ok=ok and restore_observed and cursor_visible==(args.scenario!='HiddenCursor')
+    if args.scenario in ('Normal','Cancel','Repeat','HiddenCursor','Keyboard','Remap','FunctionExit'):ok=ok and restore_observed and cursor_visible==(args.scenario!='HiddenCursor')
     binary=Path(command[command.index('-Module')+1]).with_suffix('.dll')
     if not binary.is_absolute():binary=root/binary
     sanitized=raw.decode('utf-8','replace').replace(str(root),'<checkout>')

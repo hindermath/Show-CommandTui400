@@ -8,11 +8,12 @@ public static class KeyBindingValidator
         ["Alt+H"] = ActionId.Help,
         ["Alt+B"] = ActionId.Back,
         ["Alt+X"] = ActionId.Exit,
-        ["Esc"] = ActionId.Back
+        ["Esc"] = ActionId.Back,
+        ["Alt+M"] = ActionId.ActionsMenu
     };
     public static IReadOnlyDictionary<string, ActionId> Validate(IDictionary<string, string>? remap)
     {
-        var primary = new Dictionary<ActionId, string> { [ActionId.Help] = "F1", [ActionId.Exit] = "F3", [ActionId.Back] = "F12" };
+        var primary = new Dictionary<ActionId, string> { [ActionId.Help] = "F1", [ActionId.Exit] = "F3", [ActionId.Back] = "F12", [ActionId.Context] = "F4", [ActionId.Refresh] = "F5", [ActionId.AllParameters] = "F9", [ActionId.MoreParameters] = "F10", [ActionId.Details] = "F11" };
         var seen = new HashSet<ActionId>();
         foreach (var pair in remap ?? new Dictionary<string, string>())
         {

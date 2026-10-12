@@ -1,9 +1,11 @@
 # Feature-Spezifikation: LH-01 — TUI-Grundlage / Feature specification: LH-01 — TUI foundation
 
-**Erstellt / Created:** 2026-10-07. **Status:** technische Planung und begrenzte automatisierte Machbarkeit abgeschlossen; praktische Abnahme offen; keine Produktimplementierungsfreigabe / technical planning and bounded automated feasibility complete; practical acceptance open; no product implementation authorization.
+**Erstellt / Created:** 2026-10-07. **Status:** technische Planung abgeschlossen; T018–T044 durch gesonderte Owner-Aufträge begrenzt auf Mac A umgesetzt; T045–T063 und praktische Abnahme offen / technical planning complete; separate owner requests delivered bounded Mac A T018–T044; T045–T063 and practical acceptance open.
 **Feature:** `002-lh01-tui-foundation`. **Git-Branch / Git branch:** `main` (kein neuer Branch / no new branch).
 **Profil / Profile:** `show-commandtui400-de-en`. **Owner:** Thorsten Hindermann. **Autor / Author:** Codex `/root`.
 **Fachlicher Input / Domain input:** ausschließlich [LH-01](../../intakes/LH-01.md).
+
+Aktueller begrenzter Produktstand / Current bounded product status: [Tastatur- und Herkunftsnachweis](../../docs/validation/lh01/keyboard-actions.md).
 
 ## Historische Specify-Eingangsprüfung und Geltungsbereich / Historical Specify input and scope
 
@@ -276,7 +278,7 @@ Revisit open proof before implementation or its specified acceptance gate.
 | G09 | Ledger/Renderer erst bei autorisierter Lieferung / statistics at authorized delivery | Dokumentationsauswirkung unten / impact below |
 | G10 | Mermaid mit vollständiger Textalternative / equivalent text alternative | Ablauf unten; E01-07 / flow below |
 | G11 | Scopebezogene Sicherheits-/Rechtsbewertung / scoped security and legal assessment | Sicherheitsmatrix unten; E01-06 / security matrix below |
-| G12 | Historische CI bleibt Werkzeugnachweis / tooling CI stays historical tooling proof | Alle Produktnachweise Open; AC-01-005 / product proof Open |
+| G12 | Historische CI bleibt Werkzeugnachweis / tooling CI stays historical tooling proof | Begrenzter Mac-A-Nachweis T018–T044; übrige Produktabnahme Open / bounded Mac A proof, remaining acceptance Open |
 
 Die Template-Kontrollen CR-001–014 werden damit abgedeckt: Level-2-Kontext G01/G04,
 A11Y/DEEN G01/G02, Statistik/Parität G05/G09, Sprache/MSL technisch entschieden unter OD-01-002,

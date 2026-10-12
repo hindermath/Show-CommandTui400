@@ -1,0 +1,183 @@
+{
+  "sanitizedTranscript": "\u001b[?1h\u001b=\u001b[?25s\u001b[?1049h\u001b[?25l\u001b[?1003h\u001b[?1015h\u001b[?1006h\u001b[?2004h\u001b[?u\u001b[0c\u001b]0;Show-CommandTui400 — LH-01\u001b\\\u001b[1;1H\u001b[39m\u001b[49m┌┤Show-CommandTui400 — LH-01├──────────────────────────────────────────────────────────────────────┐\u001b[2;1H│                                                                                                  │\u001b[3;1H│ \u001b[30m\u001b[107m⟦ Hilfe / Help ⟧\u001b[30m\u001b[49m▖\u001b[39m\u001b[49m         ⟦ Aktionen / Actions ⟧\u001b[30m\u001b[49m▖\u001b[39m\u001b[49m   ⟦ Refresh ⟧\u001b[30m\u001b[49m▖\u001b[39m\u001b[49m                                 │\u001b[4;1H│ \u001b[30m\u001b[49m▝▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▘\u001b[39m\u001b[49m         \u001b[30m\u001b[49m▝▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▘\u001b[39m\u001b[49m   \u001b[30m\u001b[49m▝▀▀▀▀▀▀▀▀▀▀▘\u001b[39m\u001b[49m                                 │\u001b[5;1H│                                                                                                  │\u001b[6;1H│ Fokus / Focus: Help                                                                              │\u001b[7;1H│ Bereit / Ready                                                                                   │\u001b[8;1H│ Root: Hilfe und Aktionen / Help and actions                                                      │\u001b[9;1H│ Tab / Shift+Tab; Pfeile / arrows; PageUp / PageDown. Enter betätigt den fokussierten Knopf /     │\u001b[10;1H│ activates the focused control. Keine Zielausführung / No target execution.                       │\u001b[11;1H│ Alt+H, F1 Hilfe / Help: verfügbar / available                                                    │\u001b[12;1H│ Alt+X, F3 Beenden / Exit: verfügbar / available                                                  │\u001b[13;1H│ Alt+B, Esc, F12 Zurück / Back: verfügbar / available                                             │\u001b[14;1H│ F5 Aktualisieren / Refresh: verfügbar / available                                                │\u001b[15;1H│ Alt+M Aktionen / Actions: verfügbar / available                                                  │\u001b[16;1H│ F4 Kontextauswahl / Context selection: nicht verfügbar / unavailable                             │\u001b[17;1H│ F9 Alle Parameter / All parameters: nicht verfügbar / unavailable                                │\u001b[18;1H│ F10 Weitere Parameter / More parameters: nicht verfügbar / unavailable                           │\u001b[19;1H│ F11 Details / Details: nicht verfügbar / unavailable                                             │\u001b[20;1H│  Auswählen / Select: nicht verfügbar / unavailable                                               │\u001b[21;1H│  Bearbeiten / Edit: nicht verfügbar / unavailable                                                │\u001b[22;1H│  Ausführen / Execute: nicht verfügbar / unavailable                                              │\u001b[23;1H│                                                                                                  │\u001b[24;1H└──────────────────────────────────────────────────────────────────────────────────────────────────┘\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?2004l\u001b[?1003l\u001b[?1015l\u001b[?1006l\u001b[?1049l\u001b[?25h\u001b[?25r\u001b[?25s\u001b[?1049h\u001b[?25l\u001b[?1003h\u001b[?1015h\u001b[?1006h\u001b[?2004h\u001b[?u\u001b[0c\u001b]0;Show-CommandTui400 — LH-01\u001b\\\u001b[1;1H\u001b[39m\u001b[49m┌┤Show-CommandTui400 — LH-01├──────────────────────────────────────────────────────────────────────┐\u001b[2;1H│                                                                                                  │\u001b[3;1H│ \u001b[30m\u001b[107m⟦ Hilfe / Help ⟧\u001b[30m\u001b[49m▖\u001b[39m\u001b[49m         ⟦ Aktionen / Actions ⟧\u001b[30m\u001b[49m▖\u001b[39m\u001b[49m   ⟦ Refresh ⟧\u001b[30m\u001b[49m▖\u001b[39m\u001b[49m                                 │\u001b[4;1H│ \u001b[30m\u001b[49m▝▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▘\u001b[39m\u001b[49m         \u001b[30m\u001b[49m▝▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▘\u001b[39m\u001b[49m   \u001b[30m\u001b[49m▝▀▀▀▀▀▀▀▀▀▀▘\u001b[39m\u001b[49m                                 │\u001b[5;1H│                                                                                                  │\u001b[6;1H│ Fokus / Focus: Help                                                                              │\u001b[7;1H│ Bereit / Ready                                                                                   │\u001b[8;1H│ Root: Hilfe und Aktionen / Help and actions                                                      │\u001b[9;1H│ Tab / Shift+Tab; Pfeile / arrows; PageUp / PageDown. Enter betätigt den fokussierten Knopf /     │\u001b[10;1H│ activates the focused control. Keine Zielausführung / No target execution.                       │\u001b[11;1H│ Alt+H, F1 Hilfe / Help: verfügbar / available                                                    │\u001b[12;1H│ Alt+X, F3 Beenden / Exit: verfügbar / available                                                  │\u001b[13;1H│ Alt+B, Esc, F12 Zurück / Back: verfügbar / available                                             │\u001b[14;1H│ F5 Aktualisieren / Refresh: verfügbar / available                                                │\u001b[15;1H│ Alt+M Aktionen / Actions: verfügbar / available                                                  │\u001b[16;1H│ F4 Kontextauswahl / Context selection: nicht verfügbar / unavailable                             │\u001b[17;1H│ F9 Alle Parameter / All parameters: nicht verfügbar / unavailable                                │\u001b[18;1H│ F10 Weitere Parameter / More parameters: nicht verfügbar / unavailable                           │\u001b[19;1H│ F11 Details / Details: nicht verfügbar / unavailable                                             │\u001b[20;1H│  Auswählen / Select: nicht verfügbar / unavailable                                               │\u001b[21;1H│  Bearbeiten / Edit: nicht verfügbar / unavailable                                                │\u001b[22;1H│  Ausführen / Execute: nicht verfügbar / unavailable                                              │\u001b[23;1H│                                                                                                  │\u001b[24;1H└──────────────────────────────────────────────────────────────────────────────────────────────────┘\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?2004l\u001b[?1003l\u001b[?1015l\u001b[?1006l\u001b[?1049l\u001b[?25h\u001b[?25r\u001b[?25s\u001b[?1049h\u001b[?25l\u001b[?1003h\u001b[?1015h\u001b[?1006h\u001b[?2004h\u001b[?u\u001b[0c\u001b]0;Show-CommandTui400 — LH-01\u001b\\\u001b[1;1H\u001b[39m\u001b[49m┌┤Show-CommandTui400 — LH-01├──────────────────────────────────────────────────────────────────────┐\u001b[2;1H│                                                                                                  │\u001b[3;1H│ \u001b[30m\u001b[107m⟦ Hilfe / Help ⟧\u001b[30m\u001b[49m▖\u001b[39m\u001b[49m         ⟦ Aktionen / Actions ⟧\u001b[30m\u001b[49m▖\u001b[39m\u001b[49m   ⟦ Refresh ⟧\u001b[30m\u001b[49m▖\u001b[39m\u001b[49m                                 │\u001b[4;1H│ \u001b[30m\u001b[49m▝▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▘\u001b[39m\u001b[49m         \u001b[30m\u001b[49m▝▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▘\u001b[39m\u001b[49m   \u001b[30m\u001b[49m▝▀▀▀▀▀▀▀▀▀▀▘\u001b[39m\u001b[49m                                 │\u001b[5;1H│                                                                                                  │\u001b[6;1H│ Fokus / Focus: Help                                                                              │\u001b[7;1H│ Bereit / Ready                                                                                   │\u001b[8;1H│ Root: Hilfe und Aktionen / Help and actions                                                      │\u001b[9;1H│ Tab / Shift+Tab; Pfeile / arrows; PageUp / PageDown. Enter betätigt den fokussierten Knopf /     │\u001b[10;1H│ activates the focused control. Keine Zielausführung / No target execution.                       │\u001b[11;1H│ Alt+H, F1 Hilfe / Help: verfügbar / available                                                    │\u001b[12;1H│ Alt+X, F3 Beenden / Exit: verfügbar / available                                                  │\u001b[13;1H│ Alt+B, Esc, F12 Zurück / Back: verfügbar / available                                             │\u001b[14;1H│ F5 Aktualisieren / Refresh: verfügbar / available                                                │\u001b[15;1H│ Alt+M Aktionen / Actions: verfügbar / available                                                  │\u001b[16;1H│ F4 Kontextauswahl / Context selection: nicht verfügbar / unavailable                             │\u001b[17;1H│ F9 Alle Parameter / All parameters: nicht verfügbar / unavailable                                │\u001b[18;1H│ F10 Weitere Parameter / More parameters: nicht verfügbar / unavailable                           │\u001b[19;1H│ F11 Details / Details: nicht verfügbar / unavailable                                             │\u001b[20;1H│  Auswählen / Select: nicht verfügbar / unavailable                                               │\u001b[21;1H│  Bearbeiten / Edit: nicht verfügbar / unavailable                                                │\u001b[22;1H│  Ausführen / Execute: nicht verfügbar / unavailable                                              │\u001b[23;1H│                                                                                                  │\u001b[24;1H└──────────────────────────────────────────────────────────────────────────────────────────────────┘\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?2004l\u001b[?1003l\u001b[?1015l\u001b[?1006l\u001b[?1049l\u001b[?25h\u001b[?25rLH01_SHELL_INPUT_READY\r\nLH01_ACK\r\nSynthetic return check: \u001b[6nL\u001b[1;1HLH\u001b[1;1HLH0\u001b[1;1HLH01\u001b[1;1HLH01_\u001b[1;1HLH01_A\u001b[1;1HLH01_AC\u001b[1;1HLH01_ACK\r\nLH01_RESULT\r\n{\"Scenario\":\"Repeat\",\"InputObservations\":[{\"Key\":\"Alt+X\",\"Action\":\"Exit\",\"Context\":\"Root\",\"Focus\":\"Help\",\"FrameworkFocus\":\"Help\",\"Accepted\":true,\"ExitRequested\":true},{\"Key\":\"Alt+X\",\"Action\":\"Exit\",\"Context\":\"Root\",\"Focus\":\"Help\",\"FrameworkFocus\":\"Help\",\"Accepted\":true,\"ExitRequested\":true},{\"Key\":\"Alt+X\",\"Action\":\"Exit\",\"Context\":\"Root\",\"Focus\":\"Help\",\"FrameworkFocus\":\"Help\",\"Accepted\":true,\"ExitRequested\":true}],\"Before\":{\"Pid\":99780,\"Runspace\":\"547bc33a-0a5c-48fb-9e9b-a21bce6226b6\",\"Location\":\"synthetic-working-directory\",\"Synthetic\":710,\"Preference\":1,\"FunctionResult\":710},\"After\":{\"Pid\":99780,\"Runspace\":\"547bc33a-0a5c-48fb-9e9b-a21bce6226b6\",\"Location\":\"synthetic-working-directory\",\"Synthetic\":710,\"Preference\":1,\"FunctionResult\":710},\"ContextUnchanged\":true,\"LocationUnchanged\":true,\"ModuleSetUnchanged\":true,\"LeaseAcquisitions\":3,\"UiCreations\":3,\"ScopeObservations\":[{\"ProcessId\":99780,\"RunspaceId\":\"547bc33a-0a5c-48fb-9e9b-a21bce6226b6\",\"Location\":\"synthetic-working-directory\",\"Synthetic\":710},{\"ProcessId\":99780,\"RunspaceId\":\"547bc33a-0a5c-48fb-9e9b-a21bce6226b6\",\"Location\":\"synthetic-working-directory\",\"Synthetic\":711},{\"ProcessId\":99780,\"RunspaceId\":\"547bc33a-0a5c-48fb-9e9b-a21bce6226b6\",\"Location\":\"synthetic-working-directory\",\"Synthetic\":712}],\"NativeRestore\":{\"Platform\":\"macOS-arm64\",\"Before\":\"022B0000000000000300000000000000004B000000000000CB0500200000000004FFFF7F171512FF031C1A191113160F010014FF0000000080250000000000008025000000000000\",\"After\":\"022B0000000000000300000000000000004B000000000000CB0500200000000004FFFF7F171512FF031C1A191113160F010014FF0000000080250000000000008025000000000000\",\"RawEqual\":true,\"ConfiguredEqual\":true,\"Boundary\":\"Only independently reproduced Darwin PENDIN (0x20000000) excluded from configured comparison; raw bytes retained\"},\"StopCalls\":0,\"PipelineState\":null,\"IsolatedTestRunspace\":false,\"ShellReadback\":\"LH01_ACK\",\"Failure\":null}\r\nLH01_RESTORE_READY\r\n",
+  "sanitizedTranscriptSha256": "88b153d4e73fa7bc0e25dd32633f3a7b59a505d30eb4c3c764f7a940d17dbf3a",
+  "assemblySha256": "52fa54ea9322bf89153b0b14e71625055fcc9c37b7439264fbe7dd4b3ceba74a",
+  "finalCursorVisibleAtReturn": true,
+  "cursorModeRestoreObserved": true,
+  "initialCursorBoundary": "synthetic xterm mode-25 protocol emulation; hidden and visible cases; no physical terminal proof",
+  "scenario": "Repeat",
+  "environment": "synthetic Unix PTY; no physical terminal/assistive acceptance",
+  "command": [
+    "pwsh",
+    "-NoLogo",
+    "-NoProfile",
+    "-File",
+    "tests/feasibility/lh01/session-contract.ps1",
+    "-Scenario",
+    "Repeat",
+    "-Module",
+    "<build>/ShowCommandTui400/bin/net10.0/ShowCommandTui400.psd1",
+    "-TestAssembly",
+    "<build>/ShowCommandTui400.Tests/bin/net10.0/ShowCommandTui400.Tests.dll"
+  ],
+  "exitCode": 0,
+  "expectedExitCode": 0,
+  "result": "Pass",
+  "diagnosticContractSatisfied": true,
+  "failureScope": null,
+  "timeout": false,
+  "steps": [
+    "Alt+X",
+    "Alt+X",
+    "Alt+X",
+    "synthetic-shell-readback"
+  ],
+  "cursorShowObserved": true,
+  "transcriptSha256": "88b153d4e73fa7bc0e25dd32633f3a7b59a505d30eb4c3c764f7a940d17dbf3a",
+  "termiosBefore": [
+    11010,
+    3,
+    19200,
+    1483,
+    9600,
+    9600,
+    [
+      "04",
+      "ff",
+      "ff",
+      "7f",
+      "17",
+      "15",
+      "12",
+      "ff",
+      "03",
+      "1c",
+      "1a",
+      "19",
+      "11",
+      "13",
+      "16",
+      "0f",
+      "01",
+      "00",
+      "14",
+      "ff"
+    ]
+  ],
+  "termiosAfter": [
+    10242,
+    3,
+    19200,
+    195,
+    9600,
+    9600,
+    [
+      "04",
+      "ff",
+      "ff",
+      "7f",
+      "17",
+      "15",
+      "12",
+      "ff",
+      "03",
+      "1c",
+      "1a",
+      "19",
+      "11",
+      "13",
+      "16",
+      "0f",
+      1,
+      0,
+      "14",
+      "ff"
+    ]
+  ],
+  "observation": {
+    "Scenario": "Repeat",
+    "InputObservations": [
+      {
+        "Key": "Alt+X",
+        "Action": "Exit",
+        "Context": "Root",
+        "Focus": "Help",
+        "FrameworkFocus": "Help",
+        "Accepted": true,
+        "ExitRequested": true
+      },
+      {
+        "Key": "Alt+X",
+        "Action": "Exit",
+        "Context": "Root",
+        "Focus": "Help",
+        "FrameworkFocus": "Help",
+        "Accepted": true,
+        "ExitRequested": true
+      },
+      {
+        "Key": "Alt+X",
+        "Action": "Exit",
+        "Context": "Root",
+        "Focus": "Help",
+        "FrameworkFocus": "Help",
+        "Accepted": true,
+        "ExitRequested": true
+      }
+    ],
+    "Before": {
+      "Pid": 99780,
+      "Runspace": "547bc33a-0a5c-48fb-9e9b-a21bce6226b6",
+      "Location": "synthetic-working-directory",
+      "Synthetic": 710,
+      "Preference": 1,
+      "FunctionResult": 710
+    },
+    "After": {
+      "Pid": 99780,
+      "Runspace": "547bc33a-0a5c-48fb-9e9b-a21bce6226b6",
+      "Location": "synthetic-working-directory",
+      "Synthetic": 710,
+      "Preference": 1,
+      "FunctionResult": 710
+    },
+    "ContextUnchanged": true,
+    "LocationUnchanged": true,
+    "ModuleSetUnchanged": true,
+    "LeaseAcquisitions": 3,
+    "UiCreations": 3,
+    "ScopeObservations": [
+      {
+        "ProcessId": 99780,
+        "RunspaceId": "547bc33a-0a5c-48fb-9e9b-a21bce6226b6",
+        "Location": "synthetic-working-directory",
+        "Synthetic": 710
+      },
+      {
+        "ProcessId": 99780,
+        "RunspaceId": "547bc33a-0a5c-48fb-9e9b-a21bce6226b6",
+        "Location": "synthetic-working-directory",
+        "Synthetic": 711
+      },
+      {
+        "ProcessId": 99780,
+        "RunspaceId": "547bc33a-0a5c-48fb-9e9b-a21bce6226b6",
+        "Location": "synthetic-working-directory",
+        "Synthetic": 712
+      }
+    ],
+    "NativeRestore": {
+      "Platform": "macOS-arm64",
+      "Before": "022B0000000000000300000000000000004B000000000000CB0500200000000004FFFF7F171512FF031C1A191113160F010014FF0000000080250000000000008025000000000000",
+      "After": "022B0000000000000300000000000000004B000000000000CB0500200000000004FFFF7F171512FF031C1A191113160F010014FF0000000080250000000000008025000000000000",
+      "RawEqual": true,
+      "ConfiguredEqual": true,
+      "Boundary": "Only independently reproduced Darwin PENDIN (0x20000000) excluded from configured comparison; raw bytes retained"
+    },
+    "StopCalls": 0,
+    "PipelineState": null,
+    "IsolatedTestRunspace": false,
+    "ShellReadback": "LH01_ACK",
+    "Failure": null
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "result": "ExpectedFailure",
+  "stage": "T037/T038 before implementation",
+  "compilerErrors": [
+    "CS0234: missing ShowCommandTui400.Views in both new contract test files"
+  ],
+  "exitCode": 1,
+  "testFiles": [
+    "tests/ShowCommandTui400.Tests/ActionContractTests.cs",
+    "tests/ShowCommandTui400.Tests/KeyBindingTests.cs"
+  ]
+}

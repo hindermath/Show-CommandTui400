@@ -18,7 +18,7 @@ pwsh -NoProfile -File ./session-contract.ps1 -Scenario Normal -Module ./ShowComm
 #>
 [CmdletBinding()]
 param(
-    [ValidateSet('Normal','Cancel','Repeat','Stop','HandledFailure','RestorationFailure','Redirect','HiddenCursor','InputRedirect','AggregateFailure')][string]$Scenario='Normal',
+    [ValidateSet('Normal','Cancel','Repeat','Stop','HandledFailure','RestorationFailure','Redirect','HiddenCursor','InputRedirect','AggregateFailure','Keyboard','Remap','FunctionExit','BindingConflict')][string]$Scenario='Normal',
     [Parameter(Mandatory)][string]$Module,
     [Parameter(Mandatory)][string]$TestAssembly
 )
@@ -56,7 +56,9 @@ try {
             $state=$pipeline.InvocationStateInfo.State.ToString()
             if([ShowCommandTui400.Tests.ProductHarness]::StopCalls -lt 1 -or $state -ne 'Stopped'){throw 'StopProcessing not observed'}
         } finally {$pipeline.Dispose();$testRunspace.Dispose()}
-    } elseif($Scenario -in @('Normal','Repeat','HiddenCursor')) {
+    } elseif($Scenario -eq 'BindingConflict') { Show-CommandTui400 -KeyBinding @{Help='F5'}
+    } elseif($Scenario -eq 'Remap') { Show-CommandTui400 -KeyBinding @{Help='F2';Refresh='F6'}
+    } elseif($Scenario -in @('Normal','Repeat','HiddenCursor','Keyboard','FunctionExit')) {
         if($Scenario -eq 'HiddenCursor'){[Console]::Out.Write("`e[?25l");[Console]::Out.Flush()}
         Show-CommandTui400
         $scopes.Add(([ShowCommandTui400.Tests.ProductHarness]::ObservedContext | ConvertFrom-Json))
@@ -81,7 +83,7 @@ $locationUnchanged=$actualLocationBefore -ceq (Get-Location).ProviderPath
 $unchanged=$locationUnchanged -and (($before|ConvertTo-Json -Compress) -ceq ($after|ConvertTo-Json -Compress))
 if($Scenario -notin @('Redirect','InputRedirect')){Write-Host 'LH01_SHELL_INPUT_READY';$readback=Read-Host 'Synthetic return check'}
 [ShowCommandTui400.Tests.ProductHarness]::Reset()
-$record=[ordered]@{Scenario=$Scenario;Before=$before;After=$after;ContextUnchanged=$unchanged;LocationUnchanged=$locationUnchanged;ModuleSetUnchanged=$moduleSetUnchanged;LeaseAcquisitions=[ShowCommandTui400.Tests.ProductHarness]::LeaseAcquisitions;UiCreations=[ShowCommandTui400.Tests.ProductHarness]::UiCreations;ScopeObservations=@($scopes);NativeRestore=$native;StopCalls=[ShowCommandTui400.Tests.ProductHarness]::StopCalls;PipelineState=$state;IsolatedTestRunspace=($Scenario -eq 'Stop');ShellReadback=$readback;Failure=$failure}
+$record=[ordered]@{Scenario=$Scenario;InputObservations=@([ShowCommandTui400.Tests.ProductHarness]::InputObservations | ForEach-Object {$_ | ConvertFrom-Json});Before=$before;After=$after;ContextUnchanged=$unchanged;LocationUnchanged=$locationUnchanged;ModuleSetUnchanged=$moduleSetUnchanged;LeaseAcquisitions=[ShowCommandTui400.Tests.ProductHarness]::LeaseAcquisitions;UiCreations=[ShowCommandTui400.Tests.ProductHarness]::UiCreations;ScopeObservations=@($scopes);NativeRestore=$native;StopCalls=[ShowCommandTui400.Tests.ProductHarness]::StopCalls;PipelineState=$state;IsolatedTestRunspace=($Scenario -eq 'Stop');ShellReadback=$readback;Failure=$failure}
 Write-Host 'LH01_RESULT'
 $record|ConvertTo-Json -Depth 12 -Compress
 Write-Host 'LH01_RESTORE_READY'
@@ -89,6 +91,7 @@ Start-Sleep -Milliseconds 500
 if(-not $unchanged){exit 1}
 if($Scenario -in @('Redirect','InputRedirect')){if([ShowCommandTui400.Tests.ProductHarness]::LeaseAcquisitions -ne 0 -or [ShowCommandTui400.Tests.ProductHarness]::UiCreations -ne 0 -or -not $moduleSetUnchanged){exit 1};if($failure -and $failure.ErrorId -like 'CapabilityRejected*'){exit 0};exit 1}
 if($readback -cne 'LH01_ACK'){exit 1}
+if($Scenario -eq 'BindingConflict'){if($failure.ErrorId -like 'InvalidConfiguration*' -and [ShowCommandTui400.Tests.ProductHarness]::LeaseAcquisitions -eq 0 -and [ShowCommandTui400.Tests.ProductHarness]::UiCreations -eq 0 -and $moduleSetUnchanged){exit 0};exit 1}
 if($Scenario -in @('HandledFailure','AggregateFailure')){if($failure -and $failure.ErrorId -like 'HandledFailure*'){exit 0};exit 1}
 if($Scenario -eq 'RestorationFailure'){if($failure -and $failure.ErrorId -like 'RestorationFailure*' -and $failure.Message -match 'synthetic primary failure' -and $failure.Message -match 'synthetic restoration failure'){exit 1};exit 2}
 if($failure){exit 1}

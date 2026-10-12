@@ -7,6 +7,7 @@ public static class ProductHarness
 {
     public static readonly ManualResetEventSlim Ready = new(false);
     public static int StopCalls;
+    public static readonly List<string> InputObservations = new();
     public static int LeaseAcquisitions, UiCreations;
     public static string? ObservedContext;
     public static TerminalRestoreObservation? LastRestore;
@@ -14,6 +15,8 @@ public static class ProductHarness
     public static void Configure(string requested)
     {
         if (!new[] { "Real", "HandledFailure", "RestorationFailure", "AggregateFailure" }.Contains(requested)) throw new ArgumentException("Test scenario");
+        InputObservations.Clear();
+        TerminalApplication.InputObserver = observation => InputObservations.Add(System.Text.Json.JsonSerializer.Serialize(observation));
         mode = requested; Ready.Reset(); StopCalls = 0; LeaseAcquisitions=0; UiCreations=0; ObservedContext = null; LastRestore = null;
         ShowCommandTui400Command.StopObserver = () => Interlocked.Increment(ref StopCalls);
         ShowCommandTui400Command.ContextObserver = (context, state) =>
@@ -26,6 +29,7 @@ public static class ProductHarness
     }
     public static void Reset()
     {
+        TerminalApplication.InputObserver = null;
         ShowCommandTui400Command.LeaseFactory = ShowCommandTui400Command.CreateLease;
         ShowCommandTui400Command.ApplicationFactory = () => new TerminalApplication();
         ShowCommandTui400Command.ContextObserver = null; ShowCommandTui400Command.StopObserver = null;

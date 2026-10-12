@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "reviewId": "1ccc35b4-18e8-4cf0-b8b4-ccd2d91a83d0",
+  "reviewId": "9484cac7-daee-422f-a72c-a2d886d55c3a",
   "mode": "Single",
   "policy": "generic-markdown",
   "targets": [
@@ -19,18 +19,18 @@
     "workers": [],
     "operatorExceptions": []
   },
+  "projectProfile": "show-commandtui400-de-en",
   "authority": {
-    "request": "Owner commissions distinct full T016 review after PR43 receipt authority correction; preparation delivery MergeAndSync/AdminBypass, no product implementation. Reviewer writes only triplet.",
+    "request": "Owner explicitly authorizes ordinary LH00/LH01 source updates and distinct complete reviews before separately commissioned Mac A T037–T044 and MergeAndSync delivery.",
     "evidence": {
-      "path": "specs/intake-authoring-operations/24845016-ebda-4634-8267-32b31dd93060/update-decisions.md",
-      "normalizedSha256": "74dfb33be56b92ca6a02c3d734ff870523cadd20bda2b685b18ababc7ddb02a5"
+      "path": "specs/intake-authoring-operations/45f77a36-ced2-4237-a8e1-06a2e47e96c5/update-decisions.md",
+      "normalizedSha256": "e4d57fcb56271c667bdce4138b533a7599558c11b06e6d17cadddb70bd4336dc"
     },
     "targetMutationAllowed": false,
     "implementationAllowed": false,
     "remoteAccessAllowed": false
   },
-  "projectProfile": "show-commandtui400-de-en",
-  "priorReviewId": "6667b5a9-c7c8-4677-8e6d-089ec64e6c1f",
-  "priorReviewArchive": "specs/intake-review-archive/6667b5a9-c7c8-4677-8e6d-089ec64e6c1f",
-  "targetHash": "1126780c1b179bb8b98884d4770de5a7c0bccde1b20ba8e4e8e706772a2d0538"
+  "targetHash": "1126780c1b179bb8b98884d4770de5a7c0bccde1b20ba8e4e8e706772a2d0538",
+  "priorReviewId": "1ccc35b4-18e8-4cf0-b8b4-ccd2d91a83d0",
+  "priorReviewArchive": "specs/intake-review-archive/1ccc35b4-18e8-4cf0-b8b4-ccd2d91a83d0"
 }

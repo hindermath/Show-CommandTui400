@@ -72,6 +72,8 @@ heuristic would otherwise count spec.md as a test.*
 
 | 2026-10-10 | Drei Preset-Patches / Three preset patches | UpdateRequired: Security 0.7.1, Architecture 0.6.2 und Sequencing 0.2.8 mit unveraenderlichen Quellenbindungen, 14er-Profil und aktuellen Guidance-/Template-Versionen; andere Presets und historische Receipts erhalten. Kein Produktlauf oder neue fachliche Freigabe; bestehender Statistik-Renderer und unveraenderte Methodik. / Bounded patch adoption, exact source bindings and current guidance; preserve history, no product run or new acceptance. [Nachweis / Evidence](maintenance/preset-patches-2026-10-10.md). |
 
+| 2026-10-12 | LH-01 Tastaturaktionen T037–T044 / Keyboard actions | Aktionswhitelist, Kontextprüfung, vollständige Belegungen/Remaps, Navigation, Hilfe und nicht verfügbare Folgeaktionen; 44/63 Aufgaben. Gewöhnliche bytegleiche Intake-Updates und andere Ready-Reviews; begrenzte Mac-A-Produktnachweise, keine fremde Plattform-/A11Y-Abnahme. / Action/context controls, remaps, navigation and local help; traceable provenance and distinct reviews; bounded Mac A evidence only. [Nachweis / Proof](validation/lh01/keyboard-actions.md). |
+
 ## Gesamtstatistik / Overall Statistics
 
 <!-- project-statistics-v2:begin -->
