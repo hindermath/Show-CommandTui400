@@ -44,23 +44,27 @@ erhält Zustand und beendet nicht; tatsächliches Remapping im isolierten Proof
 F1→F2, F3-Konflikt vor Init abgewiesen. / Root back retains state and never exits;
 actual F1→F2 proof and pre-Init F3 conflict rejection are recorded.
 
-## Öffentliche Signatur des ersten Inkrements / First increment public signature
+## Öffentliche Signatur bis T044 / Public signature through T044
 
 DE: `Show-CommandTui400 [-KeyBinding <hashtable>] [<CommonParameters>]`.
 Kein Pipelineinput und keine Ausgabeobjekte; Rückkehr zur aufrufenden Sitzung.
 Das Manifest exportiert genau dieses Binärcmdlet; `Show` ist ein Approved Verb
 (`Get-Verb Show`). Keine Modi, Treiber- oder Fehler-Injektionsparameter.
-`KeyBinding` ordnet ActionIds Tasten zu: ausschließlich `Help`, `Back`, `Exit`;
+`KeyBinding` ordnet ActionIds Tasten zu: `Help`, `Back`, `Exit`, `Context`, `Refresh`, `AllParameters`, `MoreParameters`, `Details`;
 Werte `F1` bis `F12`, `Esc` oder `Alt+H/B/X/M`. Unbekannte IDs/Syntax und
 Kollisionen und abweichende Groß-/Kleinschreibung werden vor UI-Init abgewiesen. Fest erhalten bleiben Alt+H, Alt+B,
-Alt+X und Esc/Back; Remaps dürfen diese Pfade nicht verdrängen. Vorgaben sind
-F1/Help, F3/Exit, F12/Back. Vollständige Aktionen/Remap-Oberfläche folgen T037–T044.
+Alt+X, Alt+M und Esc/Back; Remaps dürfen diese Pfade nicht verdrängen. Vorgaben sind F1/Help, F3/Exit, F4/Context, F5/Refresh, F9/AllParameters,
+F10/MoreParameters, F11/Details und F12/Back. T037–T044 liefern diese Oberfläche.
+Remapping macht unverfügbare Folgeaktionen nicht verfügbar. Enter betätigt den
+fokussierten lokalen Hilfe-/Aktions-/Refreshknopf; die Modellaktion Confirm bleibt
+eine getrennte Bestätigung ohne Zielausführung.
 
 EN: The signature above accepts an optional ActionId-to-key hashtable, no pipeline
-input and emits no objects. Names and key spelling are exact. Only Help, Back and Exit are configurable in this
-increment. Values, fixed alternatives and conflict rejection follow the rules
+input and emits no objects. Names and key spelling are exact. The eight function-key actions listed above are configurable through T044. Values, fixed alternatives and conflict rejection follow the rules
 above. The manifest exports this binary cmdlet only; Show is approved. No test
-mode, driver or fault injection parameters are public. Later action UI remains open.
+mode, driver or fault injection parameters are public. Alt+M and escape paths remain fixed. Remapping never enables unavailable later
+features. Enter activates the focused local Help/Actions/Refresh control; model
+Confirm stays a separate confirmation without target execution.
 
 DE: Stabile ErrorId-Präfixe: `CapabilityRejected`, `InvalidConfiguration`,
 `InvalidContext`, `Cancelled`, `HandledFailure`, `RestorationFailure`.

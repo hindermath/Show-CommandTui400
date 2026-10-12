@@ -3,11 +3,15 @@ using Terminal.Gui.Input;
 using Terminal.Gui.ViewBase;
 using Terminal.Gui.Views;
 using ShowCommandTui400.Actions;
+using ShowCommandTui400.State;
+using ShowCommandTui400.Views;
 namespace ShowCommandTui400.Terminal;
 
 internal interface ITerminalApplication : IDisposable { void Run(IReadOnlyDictionary<string, ActionId> bindings); void Stop(); }
 internal sealed class TerminalApplication : ITerminalApplication
 {
+    internal sealed record InputObservation(string Key, string? Action, string Context, string Focus, string? FrameworkFocus, bool Accepted, bool ExitRequested);
+    internal static Action<InputObservation>? InputObserver { get; set; }
     private readonly object gate = new();
     private IApplication? active;
     private bool stopRequested;
@@ -24,18 +28,63 @@ internal sealed class TerminalApplication : ITerminalApplication
         using IApplication app = Application.Create();
         app.Init("dotnet");
         using Window window = new() { Title = "Show-CommandTui400 — LH-01" };
-        Label text = new() { X = 1, Y = 1, Width = Dim.Fill(1), Height = Dim.Fill(1), Text = "Bereit / Ready. Alt+H Hilfe/Help; Alt+X Ende/Exit. Keine Zielausführung / No target execution." };
+        var state = new ViewState();
+        var dispatcher = new ActionDispatcher(state);
+        var navigation = new NavigationAdapter(state);
+        var map = new KeyBindingMap(bindings);
+        Label text = new() { X = 1, Y = 4, Width = Dim.Fill(1), Height = Dim.Fill(1) };
+        var controls = NavigationAdapter.FocusOrder.Select((name, index) => new Button
+        {
+            X = 1 + index * 26, Y = 1, Text = name switch { "Help" => "Hilfe / Help", "ActionsMenu" => "Aktionen / Actions", _ => "Refresh" }, CanFocus = true
+        }).ToArray();
+        // Activation is owned by the action adapter; Enter never runs a target command.
+        foreach (var control in controls) window.Add(control);
         window.Add(text);
-        var keys = bindings.Select(p => (Key: Parse(p.Key), Action: p.Value)).ToArray();
+        void Render()
+        {
+            text.Text = $"Fokus / Focus: {state.Focus}\n{state.Status}\n" + ActionHelpView.Render(dispatcher.Context, map);
+            int index = NavigationAdapter.FocusOrder.ToList().IndexOf(state.Focus);
+            if (index >= 0) controls[index].SetFocus();
+        }
+        foreach (var pair in controls.Select((control, index) => (control, index)))
+        {
+            pair.control.Accepting += (_, args) =>
+            {
+                args.Handled = true;
+                state.Focus = NavigationAdapter.FocusOrder[pair.index];
+                var action = pair.index switch { 0 => ActionId.Help, 1 => ActionId.ActionsMenu, _ => ActionId.Refresh };
+                dispatcher.Dispatch(action, dispatcher.Context); Render();
+            };
+        }
+        Render();
+        var keys = map.Keys.Select(k => (Key: Parse(k), Name: k)).ToArray();
         app.Keyboard.KeyDown += (_, key) =>
         {
             if (key == Key.C.WithCtrl) { key.Handled = true; app.RequestStop(); return; }
-            var match = keys.FirstOrDefault(p => key == p.Key);
-            if (!keys.Any(p => key == p.Key)) return;
+            string? name = keys.Where(p => key == p.Key).Select(p => p.Name).FirstOrDefault();
+            string? navigationKey = key == Key.Tab ? "Tab" : key == Key.Tab.WithShift ? "Shift+Tab" :
+                key == Key.CursorUp ? "Up" : key == Key.CursorDown ? "Down" : key == Key.CursorLeft ? "Left" :
+                key == Key.CursorRight ? "Right" : key == Key.PageUp ? "PageUp" : key == Key.PageDown ? "PageDown" : null;
+            ActionId? action = name == null ? null : map.Resolve(name);
+            if (key == Key.Enter) action = navigation.ActivationAction;
+            // Unmapped input has no effect; framework defaults must not bypass the action whitelist.
+            if (action == null && navigationKey == null)
+            {
+                key.Handled = true;
+                return;
+            }
             key.Handled = true;
-            if (match.Action == ActionId.Exit) app.RequestStop();
-            else if (match.Action == ActionId.Help) text.Text = "Hilfe / Help: Alt+X Ende/Exit; Alt+B Zurück/Back. Dieser Einstieg führt keine Befehle aus / This entry executes no commands.";
-            else text.Text = "Bereit / Ready; Alt+H Hilfe/Help; Alt+X Ende/Exit.";
+            bool accepted;
+            if (navigationKey != null) accepted = navigation.Move(navigationKey);
+            else
+            {
+                var result = dispatcher.Dispatch(action!.Value, dispatcher.Context);
+                accepted = result.Accepted;
+                if (!accepted) text.Text = result.Message + "\n" + ActionHelpView.Render(dispatcher.Context, map);
+            }
+            if (accepted) Render();
+            InputObserver?.Invoke(new(name ?? navigationKey ?? "Enter", action?.ToString(), dispatcher.Context.ToString(), state.Focus, controls.Select((c, i) => (c, i)).Where(p => p.c.HasFocus).Select(p => NavigationAdapter.FocusOrder[p.i]).FirstOrDefault(), accepted, dispatcher.ExitRequested));
+            if (dispatcher.ExitRequested) app.RequestStop();
         };
         app.Iteration += (_, _) => { lock (gate) { if (stopRequested) app.RequestStop(); } };
         lock (gate) { active = app; }

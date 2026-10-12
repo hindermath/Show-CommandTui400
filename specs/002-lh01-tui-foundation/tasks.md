@@ -2,7 +2,7 @@
 
 **Datum / Date:** 2026-10-09. **Feature:** `002-lh01-tui-foundation`.
 **Profil / Profile:** `show-commandtui400-de-en`. **Owner:** Thorsten Hindermann.
-**Status:** T001–T036 lokal abgeschlossen; T037–T063 offen / T001–T036 locally complete; T037–T063 open.
+**Status:** T001–T044 lokal abgeschlossen; T045–T063 offen / T001–T044 locally complete; T045–T063 open.
 
 ## Grundlage und Arbeitsgrenzen / Inputs and work boundaries
 
@@ -166,14 +166,14 @@ US1 erfolgt erst im letzten Storynachweis.
 **Goal and independent test:** Test action/state contracts independently using
 synthetic controls and adapter doubles; then integrate with US1.
 
-- [ ] T037 [P] [US2] Nach T027 Tests für Whitelist, gültigen/ungültigen Kontext, Nichtverfügbarkeit, Enter ohne Ausführung und Root-Zurück in `tests/ShowCommandTui400.Tests/ActionContractTests.cs` schreiben; kein unbekannter Input hat eine Wirkung. / Test action/context boundaries and state-preserving confirmation/back before implementation.
-- [ ] T038 [P] [US2] Nach T027 Tests für F1/F3/F4/F5/F9/F10/F11/F12/Esc, Alt+H/B/X/M, echtes F1→F2-Remap und Konflikt-/unerreichbare Escape-Belegung in `tests/ShowCommandTui400.Tests/KeyBindingTests.cs` erstellen; Negativfälle zuerst. / Test all defined keys, alternatives, valid remapping and rejected conflicts/escape loss first.
-- [ ] T039 [US2] Nach T037 `src/ShowCommandTui400/Actions/ActionDispatcher.cs` mit getrennten Effekten, Whitelist und zweiter Kontextkontrolle implementieren; Refresh/Bestätigen/Zurück ändern keinen Zielbefehl und verlieren keine Werte. / Implement independent allow-list/context controls and state-preserving actions without execution.
-- [ ] T040 [US2] Nach T038 Tastenbelegungen und Alternativen in `src/ShowCommandTui400/Actions/KeyBindingMap.cs` mit dem bestehenden KeyBindingValidator aus T025 umsetzen; Hilfe/Zurück/Beenden erreichbar, Menüaktion textuell, Konflikte vor UI-Init abweisen. / Implement validated bindings and reachable alternatives with pre-init conflict rejection.
-- [ ] T041 [US2] Nach T039/T040 Frameworkadapter für Tab/Umschalt+Tab, Pfeil-/Bildnavigation, Enter und Zurück in `src/ShowCommandTui400/Views/NavigationAdapter.cs` implementieren; Fokusfolge und getrennte Aktionen ohne Geräteadapter erhalten. / Implement predictable navigation through action IDs, without device adapters or target effects.
-- [ ] T042 [US2] Nach T040/T041 Hilfe, kontextbezogene Legende und textuelle Aktionsübersicht in `src/ShowCommandTui400/Views/ActionHelpView.cs` mit sichtbaren Alternativen erzeugen; lokaler Helptext ohne Netzabfrage. / Show local help, legend and alternatives without network access.
-- [ ] T043 [US2] Nach T039/T042 F4/F9/F10/F11 ohne bestehende Folgefunktion ausdrücklich nicht verfügbar darstellen und in `src/ShowCommandTui400/Actions/ActionAvailability.cs` absichern; kein Formular-/Details-/Completionfeature implementieren. / Keep later contextual actions visibly unavailable and effect-free.
-- [ ] T044 [US2] Nach T035/T041–T043 vollständigen E01-02-Produktnachweis einschließlich abgefangener Funktionstasten, Remap, Root-Zurück, Refresh und null Zielwirkungen in `docs/validation/lh01/keyboard-actions.md` liefern; synthetische Erzeugung nicht als reale Hosttastenübertragung ausgeben. / Prove all product action contracts and limits after US1 integration.
+- [X] T037 [P] [US2] Nach T027 Tests für Whitelist, gültigen/ungültigen Kontext, Nichtverfügbarkeit, Enter ohne Ausführung und Root-Zurück in `tests/ShowCommandTui400.Tests/ActionContractTests.cs` schreiben; kein unbekannter Input hat eine Wirkung. / Test action/context boundaries and state-preserving confirmation/back before implementation.
+- [X] T038 [P] [US2] Nach T027 Tests für F1/F3/F4/F5/F9/F10/F11/F12/Esc, Alt+H/B/X/M, echtes F1→F2-Remap und Konflikt-/unerreichbare Escape-Belegung in `tests/ShowCommandTui400.Tests/KeyBindingTests.cs` erstellen; Negativfälle zuerst. / Test all defined keys, alternatives, valid remapping and rejected conflicts/escape loss first.
+- [X] T039 [US2] Nach T037 `src/ShowCommandTui400/Actions/ActionDispatcher.cs` mit getrennten Effekten, Whitelist und zweiter Kontextkontrolle implementieren; Refresh/Bestätigen/Zurück ändern keinen Zielbefehl und verlieren keine Werte. / Implement independent allow-list/context controls and state-preserving actions without execution.
+- [X] T040 [US2] Nach T038 Tastenbelegungen und Alternativen in `src/ShowCommandTui400/Actions/KeyBindingMap.cs` mit dem bestehenden KeyBindingValidator aus T025 umsetzen; Hilfe/Zurück/Beenden erreichbar, Menüaktion textuell, Konflikte vor UI-Init abweisen. / Implement validated bindings and reachable alternatives with pre-init conflict rejection.
+- [X] T041 [US2] Nach T039/T040 Frameworkadapter für Tab/Umschalt+Tab, Pfeil-/Bildnavigation, Enter und Zurück in `src/ShowCommandTui400/Views/NavigationAdapter.cs` implementieren; Fokusfolge und getrennte Aktionen ohne Geräteadapter erhalten. / Implement predictable navigation through action IDs, without device adapters or target effects.
+- [X] T042 [US2] Nach T040/T041 Hilfe, kontextbezogene Legende und textuelle Aktionsübersicht in `src/ShowCommandTui400/Views/ActionHelpView.cs` mit sichtbaren Alternativen erzeugen; lokaler Helptext ohne Netzabfrage. / Show local help, legend and alternatives without network access.
+- [X] T043 [US2] Nach T039/T042 F4/F9/F10/F11 ohne bestehende Folgefunktion ausdrücklich nicht verfügbar darstellen und in `src/ShowCommandTui400/Actions/ActionAvailability.cs` absichern; kein Formular-/Details-/Completionfeature implementieren. / Keep later contextual actions visibly unavailable and effect-free.
+- [X] T044 [US2] Nach T035/T041–T043 vollständigen E01-02-Produktnachweis einschließlich abgefangener Funktionstasten, Remap, Root-Zurück, Refresh und null Zielwirkungen in `docs/validation/lh01/keyboard-actions.md` liefern; synthetische Erzeugung nicht als reale Hosttastenübertragung ausgeben. / Prove all product action contracts and limits after US1 integration.
 
 ## Phase 5 — US3: Zugänglicher Zustand und Größe / Accessible state and size (P1)
 

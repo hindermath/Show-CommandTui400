@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "1.0",
+  "documentType": "IntakeOperation",
+  "operationId": "04991296-9b6b-4b3c-b4a8-199a264ac43b",
+  "type": "Update",
+  "status": "Completed",
+  "createdAt": "2026-10-12T20:35:58.143078Z",
+  "authorityEvidence": "specs/intake-authoring-operations/04991296-9b6b-4b3c-b4a8-199a264ac43b/update-decisions.md",
+  "proposalPath": "specs/intake-authoring-operations/04991296-9b6b-4b3c-b4a8-199a264ac43b/update-decisions.md",
+  "proposalNormalizedSha256": "bba10b3bebeebe08df8eef3c81f15007d4c8ffa7aff300feeba2159cca1a00ab",
+  "approval": {
+    "approved": true,
+    "approvedBy": "Thorsten Hindermann",
+    "approvedAt": "2026-10-12T20:35:58.143078Z",
+    "evidence": "Owner reply on 2026-10-12: Vorbereitung und unabhängige Reviews freigeben; separate Mac A T037–T044 implementation and MergeAndSync/admin delivery order."
+  },
+  "stagingDirectory": "N/A",
+  "intakeId": "bca39f76-fdb5-440a-b889-b12e8f4f4f78",
+  "receiptId": "061a8170-5b85-42f3-8b95-219c6456b16d",
+  "priorReceiptId": "fef04f91-8fc2-444a-8db2-6445de49f5f1",
+  "priorReviewId": "cf380598-13ea-4c9b-8bfd-c52c150aae42",
+  "archiveEvidence": [
+    {
+      "originalPath": "intakes/LH-01.md",
+      "archivePath": "specs/intake-authoring-archive/lh-01/fef04f91-8fc2-444a-8db2-6445de49f5f1/intakes/LH-01.md",
+      "rawSha256": "f86a0e7711cda8290fc0e2c8743b335db6eb71aa69f7340d4a14314d7a152e25",
+      "normalizedSha256": "f86a0e7711cda8290fc0e2c8743b335db6eb71aa69f7340d4a14314d7a152e25"
+    },
+    {
+      "originalPath": "specs/intake-authoring-receipts/lh-01.json",
+      "archivePath": "specs/intake-authoring-archive/lh-01/fef04f91-8fc2-444a-8db2-6445de49f5f1/specs/intake-authoring-receipts/lh-01.json",
+      "rawSha256": "2dbd36ddab6638ec4e00da059e8d5aacd3992594ad855c26bf61c77a3beb1722",
+      "normalizedSha256": "2dbd36ddab6638ec4e00da059e8d5aacd3992594ad855c26bf61c77a3beb1722"
+    },
+    {
+      "originalPath": "specs/intake-reviews/lh-01/request.json",
+      "archivePath": "specs/intake-review-archive/cf380598-13ea-4c9b-8bfd-c52c150aae42/request.json",
+      "rawSha256": "e18aa290487afd4ff6926b762e36fdc55bc826f7324c55d3bf58edf85678625a",
+      "normalizedSha256": "e18aa290487afd4ff6926b762e36fdc55bc826f7324c55d3bf58edf85678625a"
+    },
+    {
+      "originalPath": "specs/intake-reviews/lh-01/result.json",
+      "archivePath": "specs/intake-review-archive/cf380598-13ea-4c9b-8bfd-c52c150aae42/result.json",
+      "rawSha256": "f8b106b42191258698828f420f0cda07e3770894d211aa8e2e5b5e980b87c6e8",
+      "normalizedSha256": "f8b106b42191258698828f420f0cda07e3770894d211aa8e2e5b5e980b87c6e8"
+    },
+    {
+      "originalPath": "specs/intake-reviews/lh-01/report.md",
+      "archivePath": "specs/intake-review-archive/cf380598-13ea-4c9b-8bfd-c52c150aae42/report.md",
+      "rawSha256": "a3a80fb25fd2252387c98bc54da72e9850828d8a6f2005dc0610b1373d3be4e0",
+      "normalizedSha256": "a3a80fb25fd2252387c98bc54da72e9850828d8a6f2005dc0610b1373d3be4e0"
+    }
+  ],
+  "beforeTargetNormalizedSha256": "f86a0e7711cda8290fc0e2c8743b335db6eb71aa69f7340d4a14314d7a152e25",
+  "afterTargetNormalizedSha256": "f86a0e7711cda8290fc0e2c8743b335db6eb71aa69f7340d4a14314d7a152e25",
+  "intendedTargets": [
+    "intakes/LH-01.md",
+    "specs/intake-authoring-receipts/lh-01.json"
+  ],
+  "validatedTargets": [
+    "intakes/LH-01.md",
+    "specs/intake-authoring-receipts/lh-01.json"
+  ],
+  "publishedTargets": [
+    "intakes/LH-01.md",
+    "specs/intake-authoring-receipts/lh-01.json"
+  ],
+  "rollbackBoundary": "Exact predecessor archives restore active bytes on publication failure; interrupted state is NeedsRepair.",
+  "reviewSupersession": "Old exact triplet archived; old active triplet removed, no current Ready before separate complete review.",
+  "nextAction": "$speckit-intake-review intakes/LH-01.md",
+  "validation": [
+    {
+      "kind": "authoring",
+      "shell": "Bash",
+      "exitCode": 0,
+      "output": "PASS: intake authoring 061a8170-5b85-42f3-8b95-219c6456b16d is current (ReadyForReview, 54 sources, intakes/LH-01.md)\n"
+    },
+    {
+      "kind": "authoring",
+      "shell": "PowerShell",
+      "exitCode": 0,
+      "output": "PASS: intake authoring 061a8170-5b85-42f3-8b95-219c6456b16d is current (ReadyForReview, 54 sources, intakes/LH-01.md)\npwsh(79723) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(79736) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(79739) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(79741) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(79748) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(79790) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(79792) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(79796) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(79800) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(79803) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(79853) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(79861) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(79907) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(79912) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(79926) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(79929) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(79930) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(79972) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(79974) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(79975) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(79978) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(79980) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(79981) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(79982) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(79984) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80028) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80029) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80030) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80033) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80038) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80039) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80040) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80041) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80083) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80084) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80085) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80088) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80089) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80090) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80093) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80094) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80125) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80136) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80137) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80138) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80139) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80140) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80141) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80142) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80143) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80184) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80185) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80186) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80187) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80188) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80190) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80191) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80192) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80233) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80234) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80235) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80236) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80237) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80238) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80239) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80240) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80281) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80282) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80283) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80284) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80285) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\npwsh(80354) MallocStackLogging: can't turn off malloc stack logging because it was not enabled.\n"
+    }
+  ],
+  "normativeFRACUnchanged": true
+}

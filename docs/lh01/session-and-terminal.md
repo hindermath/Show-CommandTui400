@@ -1,6 +1,9 @@
 # Sitzung und Terminal / Session and terminal
 
-## DE — Benutzung des begrenzten Inkrements
+## DE — Historischer Stand T018–T036
+
+Der folgende Abschnitt beschreibt die erste gelieferte Generation. Aktuell ergänzt
+die Tastatursektion unten T037–T044 und erweitert die Remapoberfläche.
 
 `Show-CommandTui400` öffnet eine einfache Hilfe-/Ende-Ansicht in der aktuellen
 PowerShell-Sitzung. Voraussetzung: ConsoleHost, PowerShell mindestens7.6.4,
@@ -38,7 +41,10 @@ Screenreader bleiben Deferred; Braillehardware wegen fehlendem Gerät Excluded.
 Andere Plattformen, vollständige LH-01-/LH-00-Abnahme und Folgefeatures sind offen.
 Details: [Mac-A-Nachweise](../validation/lh01/session-terminal.md).
 
-## EN — Using the bounded increment
+## EN — Historical T018–T036 state
+
+This section records the first delivered generation. The keyboard section below
+adds T037–T044 and expands the remap surface.
 
 The command opens a simple help/exit view in the current PowerShell session.
 It requires interactive ConsoleHost, PS7.6.4+, host.NET10 and supported VT capability.
@@ -64,3 +70,29 @@ runs after restoration failure. Native mode/cursor proof is synthetic Mac A only
 External kill, host or power failure cannot guarantee recovery. Practical terminals
 and screen readers remain Deferred, Braille hardware Excluded for lack of a device.
 Other platforms and complete LH-01/LH-00 acceptance remain open; see linked evidence.
+
+## DE — Tastaturinkrement T037–T044
+
+F1/Alt+H öffnet lokale Hilfe, Alt+M die textuelle Aktionsübersicht. Tab,
+Umschalt+Tab, Pfeile und Bildtasten bewegen den Fokus zwischen den lokalen
+Hilfe-/Aktions-/Refreshknöpfen. Enter betätigt den fokussierten Knopf, niemals
+einen Zielbefehl. F5 aktualisiert die Ansicht und erhält Werte/Fokus; F12/Esc/Alt+B
+kehrt eine Ebene zurück. Auf der Wurzel bleibt Zurück ohne Beenden. F3/Alt+X
+beendet. F4/F9/F10/F11 bleiben sichtbar nicht verfügbar.
+
+`-KeyBinding @{Help='F2';Refresh='F6'}` ersetzt die Primärtasten tatsächlich.
+Alle acht definierten Funktionstastenaktionen sind konfigurierbar; feste
+Alt+H/B/X/M- und Esc-Pfade bleiben erhalten. Kollisionen werden vor Init abgewiesen.
+Die Legende zeigt die wirksame Belegung. [Nachweis und Grenzen](../validation/lh01/keyboard-actions.md).
+
+## EN — Keyboard increment T037–T044
+
+F1/Alt+H opens local help, Alt+M the text action overview. Tab, Shift+Tab, arrows
+and page keys move focus between local Help/Actions/Refresh controls. Enter
+activates that control without invoking any target. F5 refreshes while retaining
+values/focus; F12/Esc/Alt+B goes back one level. Root back never exits. F3/Alt+X
+exits. F4/F9/F10/F11 stay visibly unavailable.
+
+The example above really replaces the primary keys. All eight defined function-key
+actions can be remapped; fixed Alt+H/B/X/M and Esc remain reachable. Conflicts fail
+before Init. The legend shows effective bindings. The linked proof records limits.
