@@ -11,6 +11,8 @@ nothing. Missing prerequisites return Blocked (exit2). Executes argument arrays
 without shell evaluation. No installation, repair, publishing or acceptance.
 .PARAMETER Plan
 DE: Expliziter lokaler Prüfplan. EN: Explicit local test manifest.
+.PARAMETER ExpectedPlanSha256
+DE: SHA-256 aus dem ausdrücklichen Prüfauftrag. EN: SHA-256 pinned by the target execution order.
 .PARAMETER Target
 DE: macb, windows oder ubuntu-wsl2. EN: Explicit approved target identifier.
 .PARAMETER OutputDirectory
@@ -22,7 +24,7 @@ DE: Nur Voraussetzungen prüfen. EN: Inspect prerequisites without running tests
 pwsh -NoProfile -File ./tests/feasibility/lh01/Invoke-Lh01PlatformProof.ps1 -Plan ./docs/validation/lh01/platform-handoff.json -Target macb -OutputDirectory /tmp/lh01-proof-new -CheckOnly
 #>
 [CmdletBinding()]
-param([Parameter(Mandatory)][string]$Plan,
+param([Parameter(Mandatory)][string]$Plan,[string]$ExpectedPlanSha256,
     [Parameter(Mandatory)][ValidateSet('macb','windows','ubuntu-wsl2')][string]$Target,
     [Parameter(Mandatory)][string]$OutputDirectory,[switch]$CheckOnly)
 Set-StrictMode -Version Latest
@@ -50,6 +52,7 @@ try {
     $schema=Resolve-BoundPath 'docs/validation/lh01/approved-commands.schema.json'
     $commandsJson=ConvertTo-Json -InputObject @($manifest.approvedCommands) -Depth 30
     if(-not(Test-Json -Json $commandsJson -SchemaFile $schema -ErrorAction Stop)){throw 'Invalid approvedCommands schema'}
+    if($manifest.state -ceq 'Executable' -and ($ExpectedPlanSha256 -cnotmatch '^[0-9a-f]{64}$' -or (Get-Sha $planPath) -cne $ExpectedPlanSha256)){$blockers.Add('Execution order must pin the exact approval manifest hash')}
     if($manifest.schemaVersion -ne 1){throw 'Unsupported proof plan schema'}
     if($manifest.executionAuthorized -isnot [bool]){throw 'executionAuthorized must be boolean'}
     foreach($case in $manifest.cases){if($case.enabled -isnot [bool]){throw 'Case enabled must be boolean'}}
@@ -72,7 +75,13 @@ try {
         if($proof.productCommit -cne $manifest.productCommit -or $proof.mainStatus -cne 'Pass' -or $proof.scope -cne 'maca' -or $proof.diagnosticStatus -cne 'Fail' -or $proof.diagnosticExpectationSatisfied -ne $true){throw 'Mac A proof does not cover approved product revision'}
         if($proof.environment.hardware.machine_name -notmatch 'MacBook Air' -or $proof.environment.hardware.chip_type -cne 'Apple M2'){throw 'Mac A proof hardware mismatch'}
         $proofCases=@($proof.cases)
-        if($proofCases.Count -ne 20 -or @($proofCases|Where-Object {$_.expectationSatisfied -ne $true}).Count){throw 'Mac A proof inventory incomplete'}
+        $proofIds=@($proofCases|ForEach-Object caseId|Sort-Object)
+        $planIds=@($manifest.cases|ForEach-Object id|Sort-Object)
+        if($proofCases.Count -ne 20 -or ($proofIds|ConvertTo-Json -Compress) -cne ($planIds|ConvertTo-Json -Compress) -or @($proofCases|Where-Object {$_.expectationSatisfied -ne $true}).Count){throw 'Mac A proof inventory incomplete'}
+        foreach($caseProof in $proofCases){
+            $caseDefinition=@($manifest.cases|Where-Object id -CEQ $caseProof.caseId)[0]
+            if($caseProof.result -cne $caseDefinition.requiredResult -or $caseProof.exitCode -ne $(if($caseProof.caseId -eq 'S07'){1}else{0})){throw 'Mac A proof result mismatch'}
+        }
         foreach($bound in $proof.files){
             $relative=[string]$bound.path
             if([IO.Path]::IsPathRooted($relative) -or $relative.Contains('\') -or $relative -match '(^|/)\.\.(/|$)'){throw 'Invalid raw evidence path'}
@@ -92,6 +101,16 @@ try {
     if($head -cne $manifest.productCommit -or $status.Count -ne 0){$blockers.Add('Checkout differs from clean approved product commit')}
     foreach($requiredFile in @('src/ShowCommandTui400/ShowCommandTui400.csproj','src/ShowCommandTui400/packages.lock.json','tests/ShowCommandTui400.Tests/ShowCommandTui400.Tests.csproj','tests/ShowCommandTui400.Tests/packages.lock.json','tests/feasibility/lh01/session-contract.ps1')){[void](Resolve-BoundPath $requiredFile)}
     if($PSVersionTable.PSVersion -lt [semver]'7.6.4'){$blockers.Add('PowerShell 7.6.4+ required')}
+    $sdk=Get-Command dotnet -CommandType Application -ErrorAction SilentlyContinue
+    if(-not $sdk){$blockers.Add('NET10 SDK missing')}else{
+        $sdks=& $sdk.Source --list-sdks
+        if($LASTEXITCODE -ne 0 -or -not @($sdks|Where-Object {$_ -match '^10\.0\.'}).Count){$blockers.Add('NET10 SDK required')}
+    }
+    $python=Get-Command python3 -CommandType Application -ErrorAction SilentlyContinue
+    if(-not $python){$blockers.Add('Python3 missing')}else{
+        $pythonVersion=& $python.Source --version
+        if($LASTEXITCODE -ne 0 -or $pythonVersion -notmatch '^Python (3\.(9|[1-9][0-9])|[4-9]\.)'){$blockers.Add('Python3.9+ required')}
+    }
     $targetEntry=@($manifest.targets|Where-Object id -CEQ $Target)
     if($targetEntry.Count -ne 1){$blockers.Add('Target missing or duplicated')}
     if($Target -eq 'macb'){
