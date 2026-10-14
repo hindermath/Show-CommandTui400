@@ -1,5 +1,5 @@
 """DE: Synthetischer Unix-PTY-Produkttest. EN: Synthetic Unix PTY product test."""
-import argparse, hashlib, json, os, time
+import argparse, hashlib, json, os, sys, time
 from terminal_transport import UnixTerminal, WindowsTerminal
 from pathlib import Path
 from terminal_probes import TerminalProbes
@@ -148,7 +148,7 @@ try:
     print(json.dumps({'caseId':args.case_id,'outcome':outcomes.get(args.case_id),'scenario':args.scenario,'result':record['result'],'diagnosticContractSatisfied':bool(ok),'exitCode':exit_code}))
     if not ok:
         # Test output is synthetic; scrub the checkout prefix before diagnostics.
-        print(raw.decode('utf-8','replace').replace(str(root),'<checkout>')[-2500:])
+        print(raw.decode('utf-8','replace').replace(str(root),'<checkout>')[-2500:],file=sys.stderr)
     raise SystemExit(expected_exit if ok else 2)
 finally:
     terminal.close()

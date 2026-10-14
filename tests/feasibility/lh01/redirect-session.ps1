@@ -43,8 +43,8 @@ public static class Lh01RedirectConsole {
 '@
 $originalInput=[Lh01RedirectConsole]::GetStdHandle(-10)
 $originalOutput=[Lh01RedirectConsole]::GetStdHandle(-11)
-$consoleInput=[Lh01RedirectConsole]::CreateFileW('CONIN$',0xC0000000,3,[IntPtr]::Zero,3,0,[IntPtr]::Zero)
-$consoleOutput=[Lh01RedirectConsole]::CreateFileW('CONOUT$',0xC0000000,3,[IntPtr]::Zero,3,0,[IntPtr]::Zero)
+$consoleInput=[Lh01RedirectConsole]::CreateFileW('CONIN$',[uint32]3221225472,3,[IntPtr]::Zero,3,0,[IntPtr]::Zero)
+$consoleOutput=[Lh01RedirectConsole]::CreateFileW('CONOUT$',[uint32]3221225472,3,[IntPtr]::Zero,3,0,[IntPtr]::Zero)
 if($consoleInput -eq [IntPtr]::new(-1) -or $consoleOutput -eq [IntPtr]::new(-1)){throw 'ConPTY console handles unavailable'}
 if(-not [Lh01RedirectConsole]::SetStdHandle(-10,$consoleInput) -or -not [Lh01RedirectConsole]::SetStdHandle(-11,$consoleOutput)){throw 'Unable to bind parent console handles'}
 $info=[Diagnostics.ProcessStartInfo]::new()

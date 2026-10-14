@@ -101,12 +101,12 @@ try {
     if($head -cne $manifest.productCommit -or $status.Count -ne 0){$blockers.Add('Checkout differs from clean approved product commit')}
     foreach($requiredFile in @('src/ShowCommandTui400/ShowCommandTui400.csproj','src/ShowCommandTui400/packages.lock.json','tests/ShowCommandTui400.Tests/ShowCommandTui400.Tests.csproj','tests/ShowCommandTui400.Tests/packages.lock.json','tests/feasibility/lh01/session-contract.ps1')){[void](Resolve-BoundPath $requiredFile)}
     if($PSVersionTable.PSVersion -lt [semver]'7.6.4'){$blockers.Add('PowerShell 7.6.4+ required')}
-    $sdk=Get-Command dotnet -CommandType Application -ErrorAction SilentlyContinue
+    $sdk=Get-Command dotnet -CommandType Application -ErrorAction SilentlyContinue|Select-Object -First 1
     if(-not $sdk){$blockers.Add('NET10 SDK missing')}else{
         $sdks=& $sdk.Source --list-sdks
         if($LASTEXITCODE -ne 0 -or -not @($sdks|Where-Object {$_ -match '^10\.0\.'}).Count){$blockers.Add('NET10 SDK required')}
     }
-    $python=Get-Command python3 -CommandType Application -ErrorAction SilentlyContinue
+    $python=Get-Command python3 -CommandType Application -ErrorAction SilentlyContinue|Select-Object -First 1
     if(-not $python){$blockers.Add('Python3 missing')}else{
         $pythonVersion=& $python.Source --version
         if($LASTEXITCODE -ne 0 -or $pythonVersion -notmatch '^Python (3\.(9|[1-9][0-9])|[4-9]\.)'){$blockers.Add('Python3.9+ required')}
@@ -183,7 +183,7 @@ foreach($case in $ordered){
     $command=@($targetCommands|Where-Object caseId -CEQ $case.id)[0]
     $working=Resolve-BoundPath $command.workingDirectory
     $toolPath=if($command.executable -in @('pwsh','dotnet','python3','python')){$command.executable}else{Resolve-BoundPath $command.executable}
-    $executable=(Get-Command $toolPath -CommandType Application).Source
+    $executable=(Get-Command $toolPath -CommandType Application|Select-Object -First 1).Source
     $arguments=[string[]]@($command.arguments|ForEach-Object {
         switch -CaseSensitive ($_){
             '{buildRoot}'{Join-Path $out 'build'}
