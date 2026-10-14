@@ -17,7 +17,7 @@ for parent in [Path(args.output).absolute(), *Path(args.output).absolute().paren
     if parent.is_symlink():raise SystemExit('Symlink in output path')
 output.parent.mkdir(parents=True,exist_ok=True)
 observation_file=output.with_suffix('.observation.json')
-if observation_file.exists():raise SystemExit('Observation must be new')
+if any(Path(str(observation_file)+suffix).exists() for suffix in ('','.input-ready','.restore-ready')):raise SystemExit('Observation/signals must be new')
 command=['pwsh','-NoLogo','-NoProfile','-File','tests/feasibility/lh01/session-contract.ps1','-Scenario',args.scenario,'-Module','src/ShowCommandTui400/bin/Debug/net10.0/ShowCommandTui400.psd1','-TestAssembly','tests/ShowCommandTui400.Tests/bin/Debug/net10.0/ShowCommandTui400.Tests.dll']
 if args.build_root:
     build=Path(args.build_root).resolve()
@@ -56,8 +56,8 @@ try:
                     terminal.resize(columns,rows)
                 else:terminal.write(data)
                 phase+=1;steps.append(label)
-        if not ack and b'LH01_SHELL_INPUT_READY' in raw:terminal.write(b'LH01_ACK\r');ack=True;steps.append('synthetic-shell-readback')
-        if sample is None and b'LH01_RESTORE_READY' in raw:sample=terminal.sample()
+        if not ack and (Path(str(observation_file)+'.input-ready').exists() or b'LH01_SHELL_INPUT_READY' in raw):terminal.write(b'LH01_ACK\r');ack=True;steps.append('synthetic-shell-readback')
+        if sample is None and (Path(str(observation_file)+'.restore-ready').exists() or b'LH01_RESTORE_READY' in raw):sample=terminal.sample()
         if terminal.poll() is not None:break
     timeout=terminal.poll() is None
     if timeout:terminal.terminate()
@@ -139,9 +139,9 @@ try:
     if os.name!='nt' and args.scenario in ('Normal','Cancel','Repeat','HiddenCursor','Keyboard','Remap','FunctionExit','Resize','SmallExit','TinyExit','TextState'):ok=ok and restore_observed and cursor_visible==(args.scenario!='HiddenCursor')
     binary=Path(command[command.index('-Module')+1]).with_suffix('.dll')
     if not binary.is_absolute():binary=root/binary
-    sanitized=raw.decode('utf-8','replace').replace(str(root),'<checkout>')
+    sanitized=raw.decode('utf-8','replace').replace(str(root),'<checkout>').replace(str(output.parent),'<case>')
     if args.build_root:sanitized=sanitized.replace(str(Path(args.build_root).resolve()),'<build>')
-    record={'sanitizedTranscript':sanitized,'sanitizedTranscriptSha256':hashlib.sha256(sanitized.encode()).hexdigest(),'assemblySha256':hashlib.sha256(binary.read_bytes()).hexdigest(),'finalCursorVisibleAtReturn':final_cursor_visible,'cursorModeRestoreObserved':restore_observed,'initialCursorBoundary':('Windows native restore observation; no Unix mode-25 assertion' if os.name=='nt' else 'synthetic xterm mode-25 protocol emulation; hidden and visible cases; no physical terminal proof'),'scenario':args.scenario,'environment':('synthetic Windows ConPTY; native console restore observation; redirects use real pipes (one stream per case)' if os.name=='nt' else 'synthetic Unix PTY; no physical terminal/assistive acceptance'),'command':[v.replace(str(root),'<checkout>').replace(str(Path(args.build_root).resolve()),'<build>') if args.build_root else v.replace(str(root),'<checkout>') for v in command],'exitCode':exit_code,'expectedExitCode':expected_exit,'result':'Pass' if ok and not expected_failure else 'Fail','diagnosticContractSatisfied':bool(ok),'failureScope':'injected restoration failure after successful real restore; not actual host restore failure' if expected_failure else None,'timeout':timeout,'steps':steps,'cursorShowObserved':b'\x1b[?25h' in raw,'transcriptSha256':hashlib.sha256(raw).hexdigest(),'termiosBefore':before,'termiosAfter':sample,'observation':parsed}
+    record={'sanitizedTranscript':sanitized,'sanitizedTranscriptSha256':hashlib.sha256(sanitized.encode()).hexdigest(),'assemblySha256':hashlib.sha256(binary.read_bytes()).hexdigest(),'finalCursorVisibleAtReturn':final_cursor_visible,'cursorModeRestoreObserved':restore_observed,'initialCursorBoundary':('Windows native restore observation; no Unix mode-25 assertion' if os.name=='nt' else 'synthetic xterm mode-25 protocol emulation; hidden and visible cases; no physical terminal proof'),'scenario':args.scenario,'environment':('synthetic Windows ConPTY; native console restore observation; redirects use real pipes (one stream per case)' if os.name=='nt' else 'synthetic Unix PTY; no physical terminal/assistive acceptance'),'command':[v.replace(str(root),'<checkout>').replace(str(Path(args.build_root).resolve()),'<build>').replace(str(output.parent),'<case>') if args.build_root else v.replace(str(root),'<checkout>') for v in command],'exitCode':exit_code,'expectedExitCode':expected_exit,'result':'Pass' if ok and not expected_failure else 'Fail','diagnosticContractSatisfied':bool(ok),'failureScope':'injected restoration failure after successful real restore; not actual host restore failure' if expected_failure else None,'timeout':timeout,'steps':steps,'cursorShowObserved':b'\x1b[?25h' in raw,'transcriptSha256':hashlib.sha256(raw).hexdigest(),'termiosBefore':before,'termiosAfter':sample,'observation':parsed}
     output.parent.mkdir(parents=True,exist_ok=True)
     output.write_text(json.dumps(record,ensure_ascii=False,indent=2,default=lambda v:v.hex() if isinstance(v,bytes) else str(v))+'\n',encoding='utf-8')
     outcomes={'N02':'RejectedWithoutStateChange','N03':'RejectedWithoutStateChange','S01':'CallerContextRetained','S02':'RestoredAndShellUsable','S03':'RestoredAndShellUsable','S04':'StoppedAndRestored','S05':'RestoredAndErrorPreserved','S06':'NoLeakedState','S07':'FailWithPrimaryAndRestorationErrorsPreserved','K01':'ActionContractsPass','V01':'ValuesAndFocusRetained','V02':'ExplainedAndSafeExit'}

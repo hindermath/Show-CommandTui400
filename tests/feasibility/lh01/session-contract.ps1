@@ -109,7 +109,13 @@ $native=[ShowCommandTui400.Tests.ProductHarness]::LastRestore
 $after=Get-Snapshot
 $locationUnchanged=$actualLocationBefore -ceq (Get-Location).ProviderPath
 $unchanged=$locationUnchanged -and (($before|ConvertTo-Json -Compress) -ceq ($after|ConvertTo-Json -Compress))
-if($Scenario -notin @('Redirect','InputRedirect')){Write-Host 'LH01_SHELL_INPUT_READY';$readback=Read-Host 'Synthetic return check'}
+function Write-ProofSignal([string]$Suffix){
+    if($ObservationFile){
+        $signal=[IO.File]::Open($ObservationFile+$Suffix,[IO.FileMode]::CreateNew,[IO.FileAccess]::Write,[IO.FileShare]::None)
+        try{$signal.WriteByte(49)}finally{$signal.Dispose()}
+    }
+}
+if($Scenario -notin @('Redirect','InputRedirect')){Write-ProofSignal '.input-ready';Write-Host 'LH01_SHELL_INPUT_READY';$readback=Read-Host 'Synthetic return check'}
 [ShowCommandTui400.Tests.ProductHarness]::Reset()
 $record=[ordered]@{Scenario=$Scenario;RedirectBoundary=$redirectBoundary;SecurityNegative=$securityNegative;RenderObservations=@([ShowCommandTui400.Tests.ProductHarness]::RenderObservations | ForEach-Object {$_ | ConvertFrom-Json});SyntheticValueRetained=($Scenario -notin @('TextState','Resize') -or [ShowCommandTui400.Tests.ProductHarness]::ObservedViewState.Values['synthetic'] -ceq 'retained');InputObservations=@([ShowCommandTui400.Tests.ProductHarness]::InputObservations | ForEach-Object {$_ | ConvertFrom-Json});Before=$before;After=$after;ContextUnchanged=$unchanged;LocationUnchanged=$locationUnchanged;ModuleSetUnchanged=$moduleSetUnchanged;LeaseAcquisitions=[ShowCommandTui400.Tests.ProductHarness]::LeaseAcquisitions;UiCreations=[ShowCommandTui400.Tests.ProductHarness]::UiCreations;ScopeObservations=@($scopes);NativeRestore=$native;StopCalls=[ShowCommandTui400.Tests.ProductHarness]::StopCalls;PipelineState=$state;IsolatedTestRunspace=($Scenario -eq 'Stop');ShellReadback=$readback;Failure=$failure}
 if($ObservationFile){
@@ -119,6 +125,7 @@ if($ObservationFile){
 }
 Write-Host 'LH01_RESULT'
 $record|ConvertTo-Json -Depth 12 -Compress
+Write-ProofSignal '.restore-ready'
 Write-Host 'LH01_RESTORE_READY'
 Start-Sleep -Milliseconds 500
 if(-not $unchanged){exit 1}
