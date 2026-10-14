@@ -48,7 +48,7 @@ def main():
     parser.add_argument('--output-root', required=True)
     parser.add_argument('--product-commit', required=True)
     args = parser.parse_args()
-    manifest = json.loads((ROOT / 'docs/validation/lh01/platform-handoff.json').read_text())
+    manifest = json.loads((ROOT / 'docs/validation/lh01/platform-handoff.json').read_text(encoding="utf-8-sig"))
     definition = next(c for c in manifest['cases'] if c['id'] == args.case_id)
     head = subprocess.check_output(['git', '-C', str(ROOT), 'rev-parse', 'HEAD'], text=True).strip()
     if head != args.product_commit:
@@ -76,7 +76,7 @@ def main():
             if entry['id'] in ('EV01', 'S07') or not entry['enabled']:
                 continue
             path = output / entry['id'] / 'result.json'
-            record = json.loads(path.read_text())
+            record = json.loads(path.read_text(encoding="utf-8-sig"))
             if record['result'] != 'Pass' or record['caseId'] != entry['id'] or record['productCommit'] != head:
                 raise ValueError('Prior case evidence incomplete or revision mismatch')
             for bound in record['files']:
@@ -94,7 +94,7 @@ def main():
                 '--scenario', scenario, '--output', str(raw), '--build-root', str(build)]
             code, record = run(command, log)
             expected = 1 if args.case_id == 'S07' else 0
-            proof = json.loads(raw.read_text())
+            proof = json.loads(raw.read_text(encoding="utf-8-sig"))
             if code != expected or not record['diagnosticContractSatisfied'] or not proof['diagnosticContractSatisfied']:
                 raise RuntimeError(f'Product case failed: {scenario}; exit {code}')
             observations.append({'scenario': scenario, 'exitCode': code,
@@ -112,7 +112,7 @@ def main():
         'result': definition['requiredResult'], 'evidenceIds': definition['evidenceIds'],
         'observations': observations, 'files': files,
         'scope': 'automated product/model evidence only; independent review and physical acceptance remain open'}
-    (case / 'result.json').write_text(json.dumps(record, ensure_ascii=False, indent=2) + '\n')
+    (case / 'result.json').write_text(json.dumps(record, ensure_ascii=False, indent=2) + '\n',encoding='utf-8')
     print(json.dumps(record, ensure_ascii=False))
     return 1 if args.case_id == 'S07' else 0
 

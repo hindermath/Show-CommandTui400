@@ -18,7 +18,7 @@ root=Path(__file__).resolve().parents[3]
 out=external(args.output_root)
 out.mkdir()  # New run only.
 head=subprocess.check_output(['git','rev-parse','HEAD'],cwd=root,text=True).strip()
-manifest=json.loads((root/'docs/validation/lh01/platform-handoff.json').read_text())
+manifest=json.loads((root/'docs/validation/lh01/platform-handoff.json').read_text(encoding="utf-8-sig"))
 order=sorted(manifest['cases'],key=lambda c: 9 if c['id']=='S07' else 0 if c['id']=='PF01' else 1 if c['group']=='Negative' else 3 if c['id']=='EV01' else 2)
 records=[]
 try:
@@ -57,5 +57,5 @@ record={'schemaVersion':1,'mainStatus':status,'diagnosticStatus':'Fail' if statu
     'limits':['7.6.4 minimum is a model boundary; actual host version listed above',
               'CI does not prove Windows 11, WSL2 or Mac B',
               'S07 injects failure after real restore; its result remains Fail']}
-(out/'suite-result.json').write_text(json.dumps(record,ensure_ascii=False,indent=2)+'\n')
+(out/'suite-result.json').write_text(json.dumps(record,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
 raise SystemExit(0 if status=='Pass' else 2)
