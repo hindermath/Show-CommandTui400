@@ -1,0 +1,11 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  ShowCommandTui400 -> <user>/work/_temp/lh01-product-proof/build/ShowCommandTui400/bin/net10.0/ShowCommandTui400.dll
+  ShowCommandTui400.Tests -> <user>/work/_temp/lh01-product-proof/build/ShowCommandTui400.Tests/bin/net10.0/ShowCommandTui400.Tests.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.30
+{"hostAssembliesRedistributed":false,"checks":["SEC01-unknown-context-unavailable-no-effect","SEC02-action-text-never-evaluated","SEC03-key-injection-conflict-rejected","SEC04-control-format-display-sanitized","N01","N02","N03","N04","N04-host","N04-VT","N04-native","N05","N06","N06-escape","N06-case","N06-numeric-action","N06-syntax","N07"],"outcome":"RejectedBeforeInit","caseId":"N06","result":"Pass","scope":"model/native doubles only; no GUI or foreign-platform proof"}

@@ -1,0 +1,67 @@
+{
+  "caseId": "V02",
+  "productCommit": "b1848b0157158fa4d821c975cfb3cea08753475d",
+  "outcome": "ExplainedAndSafeExit",
+  "result": "Pass",
+  "evidenceIds": [
+    "E01-03",
+    "E01-05"
+  ],
+  "observations": [
+    {
+      "scenario": "SmallExit",
+      "exitCode": 0,
+      "result": "Pass",
+      "diagnosticContractSatisfied": true
+    },
+    {
+      "scenario": "TinyExit",
+      "exitCode": 0,
+      "result": "Pass",
+      "diagnosticContractSatisfied": true
+    }
+  ],
+  "files": [
+    {
+      "path": "SmallExit.json",
+      "sha256": "3fef0efcaceb86d4383607643aca25f81ea7bd62a83959f2e0469761ed04ea23"
+    },
+    {
+      "path": "SmallExit.observation.json",
+      "sha256": "266ad118404d18aa502ec7b8648726434c2876d116747a385a66003120c1d6c5"
+    },
+    {
+      "path": "SmallExit.observation.json.input-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "SmallExit.observation.json.restore-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "SmallExit.txt",
+      "sha256": "07127819349c3e0c25245838317380f25b29ebdff3634b1312fc03506d60591c"
+    },
+    {
+      "path": "TinyExit.json",
+      "sha256": "f352ca64d3cd08158935d26669155316306d43af3d246a180137a0ac8116514d"
+    },
+    {
+      "path": "TinyExit.observation.json",
+      "sha256": "aafebea8345a5e9a7c9d547d656352f35c74a8087706ceb2f44dce3761d6db54"
+    },
+    {
+      "path": "TinyExit.observation.json.input-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "TinyExit.observation.json.restore-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "TinyExit.txt",
+      "sha256": "bbadf5a144b15fe425cace3b42a6ac86eb4ed3e0b92efa6f3ce51ee0b7392378"
+    }
+  ],
+  "scope": "automated product/model evidence only; independent review and physical acceptance remain open"
+}

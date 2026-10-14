@@ -24,3 +24,8 @@ docs/validation/lh00/fixtures/hash-positive/** whitespace=cr-at-eol
 # Bytegenaue Archivkopien behalten absichtliche Markdown-Zeilenumbrueche.
 specs/intake-authoring-archive/lh-00/*/docs/Bedienkonzept.md whitespace=-blank-at-eof,-blank-at-eol
 specs/intake-authoring-archive/lh-00/*/docs/validation/lh00/acceptance.md whitespace=-blank-at-eof,-blank-at-eol
+
+# Exact product proof exports retain Windows CRLF and all raw evidence hashes.
+# Bytegenaue Produktnachweise: keine EOL-Normalisierung der Rohbelege.
+docs/validation/lh01/platform-proof-maca/** -text whitespace=cr-at-eol
+docs/validation/lh01/platform-proof-ci/** -text whitespace=cr-at-eol

@@ -1,0 +1,40 @@
+{
+  "caseId": "S04",
+  "productCommit": "41ec0f34d35c9d9e187e1a101b806d7ac93f6b00",
+  "outcome": "StoppedAndRestored",
+  "result": "Pass",
+  "evidenceIds": [
+    "E01-04"
+  ],
+  "observations": [
+    {
+      "scenario": "Stop",
+      "exitCode": 0,
+      "result": "Pass",
+      "diagnosticContractSatisfied": true
+    }
+  ],
+  "files": [
+    {
+      "path": "Stop.json",
+      "sha256": "b5c5f6a5b1ac869b7051c383ab38dad3dab341d1105e74f4b1f1c32970fd176d"
+    },
+    {
+      "path": "Stop.observation.json",
+      "sha256": "1eb0e6b4a08dc0546074c1a11f35e3ea73fb47118f580705b430cc88aa8ea4f1"
+    },
+    {
+      "path": "Stop.observation.json.input-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "Stop.observation.json.restore-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "Stop.txt",
+      "sha256": "430992db79a5e92e4114bd4b9b52ed9e14c88b5cf6cc43e9efd8e722d7fcac0f"
+    }
+  ],
+  "scope": "automated product/model evidence only; independent review and physical acceptance remain open"
+}

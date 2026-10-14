@@ -1,0 +1,136 @@
+{
+  "result": "Pass",
+  "scope": "check-only approval tampering and raw evidence; no product or foreign-host execution",
+  "cases": [
+    {
+      "case": "base",
+      "exitCode": 2,
+      "expectedBlockerObserved": true,
+      "outputCreated": false
+    },
+    {
+      "case": "missing-pinned-plan",
+      "exitCode": 2,
+      "expectedBlockerObserved": true,
+      "outputCreated": false
+    },
+    {
+      "case": "driver-hash",
+      "exitCode": 2,
+      "expectedBlockerObserved": true,
+      "outputCreated": false
+    },
+    {
+      "case": "decision-hash",
+      "exitCode": 2,
+      "expectedBlockerObserved": true,
+      "outputCreated": false
+    },
+    {
+      "case": "source-hash",
+      "exitCode": 2,
+      "expectedBlockerObserved": true,
+      "outputCreated": false
+    },
+    {
+      "case": "proof-hash",
+      "exitCode": 2,
+      "expectedBlockerObserved": true,
+      "outputCreated": false
+    },
+    {
+      "case": "proof-escape",
+      "exitCode": 2,
+      "expectedBlockerObserved": true,
+      "outputCreated": false
+    },
+    {
+      "case": "missing-command",
+      "exitCode": 2,
+      "expectedBlockerObserved": true,
+      "outputCreated": false
+    },
+    {
+      "case": "duplicate-command",
+      "exitCode": 2,
+      "expectedBlockerObserved": true,
+      "outputCreated": false
+    },
+    {
+      "case": "unsafe-token",
+      "exitCode": 2,
+      "expectedBlockerObserved": true,
+      "outputCreated": false
+    },
+    {
+      "case": "evidence-map",
+      "exitCode": 2,
+      "expectedBlockerObserved": true,
+      "outputCreated": false
+    },
+    {
+      "case": "revision",
+      "exitCode": 2,
+      "expectedBlockerObserved": true,
+      "outputCreated": false
+    }
+  ],
+  "exportRawHashes": "Pass",
+  "independentReview": "Open",
+  "preparedInventoryRegression": {
+    "result": "Pass",
+    "checks": [
+      {
+        "case": "prepared",
+        "exitCode": 2,
+        "outputCreated": false,
+        "expectedBlockerObserved": true
+      },
+      {
+        "case": "empty-inventory",
+        "exitCode": 2,
+        "outputCreated": false,
+        "expectedBlockerObserved": true
+      },
+      {
+        "case": "changed-outcome",
+        "exitCode": 2,
+        "outputCreated": false,
+        "expectedBlockerObserved": true
+      },
+      {
+        "case": "changed-order",
+        "exitCode": 2,
+        "outputCreated": false,
+        "expectedBlockerObserved": true
+      },
+      {
+        "case": "missing-evidence",
+        "exitCode": 2,
+        "outputCreated": false,
+        "expectedBlockerObserved": true
+      },
+      {
+        "case": "duplicate-case",
+        "exitCode": 2,
+        "outputCreated": false,
+        "expectedBlockerObserved": true
+      },
+      {
+        "case": "schema",
+        "exitCode": 2,
+        "outputCreated": false,
+        "expectedBlockerObserved": true
+      }
+    ]
+  },
+  "toolingRegression": {
+    "result": "Pass",
+    "checks": [
+      "all-query-splits-and-descriptor-isolation",
+      "multiple-queries-without-duplicate-replies",
+      "case-varied-build-root-rejected-before-write",
+      "case-varied-output-root-rejected-before-write"
+    ]
+  }
+}

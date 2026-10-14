@@ -1,0 +1,152 @@
+{
+  "sanitizedTranscript": "\u001b[2J\u001b[m\u001b[H\u001b]0;Administrator: D:\\a\\_temp\\lh01-powershell-7.6.6\\pwsh.EXE\u0007\u001b[?25h\u001b[?25l\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\u001b[H\u001b[?25h\u001b[?1003h\u001b[?1015h\u001b[?1006h\u001b[?2004h\u001b]10;?\u001b\\\u001b[?u\u001b[?25l\u001b]0;Show-CommandTui400 — LH-01\u0007┌┤Show-CommandTui400 — LH-01├──────────────────────────────────────────────────────────────────────┐│                                                                                                  ││ \u001b[38;2;0;0;0m\u001b[48;2;255;255;255m⟦ Hilfe / Help ⟧\u001b[49m▖                                                                                \u001b[K\u001b[m││ ⟦ Aktionen / Actions ⟧\u001b[38;2;0;0;0m▖                                                                          \u001b[K\u001b[m││ ⟦ Aktualisieren / Refresh ⟧\u001b[38;2;0;0;0m▖                                                                     \u001b[K\u001b[m││ \u001b[38;2;0;0;0m▝▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▘                                                                     \u001b[K\u001b[m││ \u001b[38;2;128;128;128m\u001b[48;2;128;128;128mFokus / Focus: Hilfe / Help                                                                     \u001b[K\u001b[m ││ \u001b[38;2;128;128;128m\u001b[48;2;128;128;128mBeschäftigt / Busy: Nein / No                                                                   \u001b[K\u001b[m ││ \u001b[38;2;128;128;128m\u001b[48;2;128;128;128mStatus / Status: Bereit / Ready                                                                 \u001b[K\u001b[m ││ \u001b[38;2;128;128;128m\u001b[48;2;128;128;128mFehler / Error: Kein Fehler / No error                                                          \u001b[K\u001b[m ││ \u001b[38;2;128;128;128m\u001b[48;2;128;128;128mRolle: Textansicht mit Knöpfen / Role: text view with buttons                                   \u001b[K\u001b[m ││ \u001b[38;2;128;128;128m\u001b[48;2;128;128;128mStartansicht / Start view: Hilfe und Aktionen / Help and actions                                \u001b[K\u001b[m ││ \u001b[38;2;128;128;128m\u001b[48;2;128;128;128mTab/Umschalt+Tab und Pfeile bewegen den Fokus. Enter betätigt den Knopf. Bildtasten blättern    \u001b[m ││ \u001b[38;2;128;128;128m\u001b[48;2;128;128;128mHilfe/Aktionen. Keine Zielausführung. / Tab/Shift+Tab and arrows move focus. Enter activates    \u001b[m ││ \u001b[38;2;128;128;128m\u001b[48;2;128;128;128mthe button. Page keys scroll help/actions. No target execution.                                 \u001b[K\u001b[m ││ \u001b[38;2;128;128;128m\u001b[48;2;128;128;128mAlt+H, F1 Hilfe / Help: verfügbar / available                                                   \u001b[K\u001b[m ││ \u001b[38;2;128;128;128m\u001b[48;2;128;128;128mAlt+X, F3 Beenden / Exit: verfügbar / available                                                 \u001b[K\u001b[m ││ \u001b[38;2;128;128;128m\u001b[48;2;128;128;128mAlt+B, Esc, F12 Zurück / Back: verfügbar / available                                            \u001b[K\u001b[m ││ \u001b[38;2;128;128;128m\u001b[48;2;128;128;128mF5 Aktualisieren / Refresh: verfügbar / available                                               \u001b[K\u001b[m ││ \u001b[38;2;128;128;128m\u001b[48;2;128;128;128mAlt+M Aktionen / Actions: verfügbar / available                                                 \u001b[K\u001b[m ││ \u001b[38;2;128;128;128m\u001b[48;2;128;128;128mF4 Kontextauswahl / Context selection: nicht verfügbar / unavailable                            \u001b[K\u001b[m ││ \u001b[38;2;128;128;128m\u001b[48;2;128;128;128mF9 Alle Parameter / All parameters: nicht verfügbar / unavailable                               \u001b[K\u001b[m ││                                                                                                  │└──────────────────────────────────────────────────────────────────────────────────────────────────┘\u001b[8;5;20t\u001b[H───────────────────────────────────────────────────────────────────────────────┘\r\n\u001b[K\u001b[20C\u001b]11;?\u001b\\\u001b[H┌┤Show-CommandTui4├┐│                  ││ \u001b[38;2;0;0;0m\u001b[48;2;255;255;255m⟦ Hilfe / Help ⟧\u001b[49m▖\u001b[m││ ⟦ Aktionen / Acti│└──────────────────┘\u001b[H┌┤Show-CommandTui4├┐│\u001b[38;2;128;128;128m\u001b[48;2;128;128;128mAlt+X Ende/Exit  \u001b[m ││\u001b[38;2;128;128;128m\u001b[48;2;128;128;128mAlt+H Hilfe/Help \u001b[m ││                  │└──────────────────┘\u001b[H┌┤Show-CommandTui4├┐│\u001b[38;2;128;128;128m\u001b[48;2;128;128;128mAlt+X Ende/Exit  \u001b[m ││\u001b[38;2;128;128;128m\u001b[48;2;128;128;128mAlt+H Hilfe/Help \u001b[m ││                  │└──────────────────┘\u001b[H┌┤Show-CommandTui4├┐│\u001b[38;2;128;128;128m\u001b[48;2;128;128;128mAlt+X Ende/Exit  \u001b[m\u001b[1C││\u001b[38;2;128;128;128m\u001b[48;2;128;128;128mAlt+H Hilfe/Help \u001b[m\u001b[1C││ \u001b[17C│└──────────────────┘\u001b[H┌┤Show-CommandTui4├┐│\u001b[38;2;128;128;128m\u001b[48;2;128;128;128mAlt+X Ende/Exit  \u001b[m\u001b[1C││\u001b[38;2;128;128;128m\u001b[48;2;128;128;128mAlt+H Hilfe/Help \u001b[m\u001b[1C││ \u001b[17C│└──────────────────┘\u001b[?2004l\u001b[?1003l\u001b[?1015l\u001b[?1006l\u001b[H\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\u001b[H\u001b[?25hLH01_SHELL_INPUT_READY\r\nSynthetic return check: LH01_ACK\r\nLH01_RESULT\r\n{\"Scenario\":\"SmallEx\r\n\u001b[4;20Hxit\",\"RedirectBoundar\r\n\u001b[4;20Hry\":{\"Input\":false,\"O\r\n\u001b[4;20HOutput\":false},\"Secur\r\n\u001b[4;20HrityNegative\":null,\"R\r\n\u001b[4;20HRenderObservations\":[\r\n\u001b[4;20H[{\"Width\":100,\"Height\r\n\u001b[4;20Ht\":24,\"Small\":false,\"\r\n\u001b[4;20H\"Focus\":\"Help\",\"Conte\r\n\u001b[4;20Hext\":\"Root\",\"Busy\":fa\r\n\u001b[4;20Halse,\"Text\":\"Fokus / \r\n\u001b[4;20H Focus: Hilfe / Help\\\r\n\u001b[4;20H\\r\\nBeschäftigt / Bus\r\n\u001b[4;20Hsy: Nein / No\\r\\nStat\r\n\u001b[4;20Htus / Status: Bereit \r\n\u001b[4;20H / Ready\\r\\nFehler / \r\n\u001b[4;20H Error: Kein Fehler /\r\n\u001b[4;20H/ No error\\r\\nRolle: \r\n\u001b[4;20H Textansicht mit Knöp\r\n\u001b[4;20Hpfen / Role: text vie\r\n\u001b[4;20Hew with buttons\\r\\nSt\r\n\u001b[4;20Htartansicht / Start v\r\n\u001b[4;20Hview: Hilfe und Aktio\r\n\u001b[4;20Honen / Help and actio\r\n\u001b[4;20Hons\\r\\nTab/Umschalt+T\r\n\u001b[4;20HTab und Pfeile bewege\r\n\u001b[4;20Hen den Fokus. Enter b\r\n\u001b[4;20Hbetätigt den Knopf. B\r\n\u001b[4;20HBildtasten blättern H\r\n\u001b[4;20HHilfe/Aktionen. Keine\r\n\u001b[4;20He Zielausführung. / T\r\n\u001b[4;20HTab/Shift+Tab and arr\r\n\u001b[4;20Hrows move focus. Ente\r\n\u001b[4;20Her activates the butt\r\n\u001b[4;20Hton. Page keys scroll\r\n\u001b[4;20Hl help/actions. No ta\r\n\u001b[4;20Harget execution.\\r\\nA\r\n\u001b[4;20HAlt+H, F1 Hilfe / Hel\r\n\u001b[4;20Hlp: verfügbar / avail\r\n\u001b[4;20Hlable\\r\\nAlt+X, F3 Be\r\n\u001b[4;20Heenden / Exit: verfüg\r\n\u001b[4;20Hgbar / available\\r\\nA\r\n\u001b[4;20HAlt+B, Esc, F12 Zurüc\r\n\u001b[4;20Hck / Back: verfügbar \r\n\u001b[4;20H / available\\r\\nF5 Ak\r\n\u001b[4;20Hktualisieren / Refres\r\n\u001b[4;20Hsh: verfügbar / avail\r\n\u001b[4;20Hlable\\r\\nAlt+M Aktion\r\n\u001b[4;20Hnen / Actions: verfüg\r\n\u001b[4;20Hgbar / available\\r\\nF\r\n\u001b[4;20HF4 Kontextauswahl / C\r\n\u001b[4;20HContext selection: ni\r\n\u001b[4;20Hicht verfügbar / unav\r\n\u001b[4;20Hvailable\\r\\nF9 Alle P\r\n\u001b[4;20HParameter / All param\r\n\u001b[4;20Hmeters: nicht verfügb\r\n\u001b[4;20Hbar / unavailable\\r\\n\r\n\u001b[4;20HnF10 Weitere Paramete\r\n\u001b[4;20Her / More parameters:\r\n\u001b[4;20H: nicht verfügbar / u\r\n\u001b[4;20Hunavailable\\r\\nF11 De\r\n\u001b[4;20Hetails / Details: nic\r\n\u001b[4;20Hcht verfügbar / unava\r\n\u001b[4;20Hailable\\r\\n Auswählen\r\n\u001b[4;20Hn / Select: nicht ver\r\n\u001b[4;20Hrfügbar / unavailable\r\n\u001b[4;20He\\r\\n Bearbeiten / Ed\r\n\u001b[4;20Hdit: nicht verfügbar \r\n\u001b[4;20H / unavailable\\r\\n Au\r\n\u001b[4;20Husführen / Execute: n\r\n\u001b[4;20Hnicht verfügbar / una\r\n\u001b[4;20Havailable\"},{\"Width\":\r\n\u001b[4;20H:20,\"Height\":5,\"Small\r\n\u001b[4;20Hl\":true,\"Focus\":\"Help\r\n\u001b[4;20Hp\",\"Context\":\"Root\",\"\r\n\u001b[4;20H\"Busy\":false,\"Text\":\"\r\n\u001b[4;20H\"Alt+X Ende/Exit\\r\\nA\r\n\u001b[4;20HAlt+H Hilfe/Help\\r\\nK\r\n\u001b[4;20HKlein/Small\\r\\nTermin\r\n\u001b[4;20Hnal zu klein. Ansicht\r\n\u001b[4;20Ht vergrößern oder sic\r\n\u001b[4;20Hcher beenden. / Termi\r\n\u001b[4;20Hinal too small. Enlar\r\n\u001b[4;20Hrge the view or exit \r\n\u001b[4;20H safely.\\r\\nAlt+H Hil\r\n\u001b[4;20Hlfe; Alt+X Ende; Esc \r\n\u001b[4;20H zurück / Alt+H help;\r\n\u001b[4;20H; Alt+X exit; Esc bac\r\n\u001b[4;20Hck\\r\\n20x5; 29x13\"},{\r\n\u001b[4;20H{\"Width\":20,\"Height\":\r\n\u001b[4;20H:5,\"Small\":true,\"Focu\r\n\u001b[4;20Hus\":\"Help\",\"Context\":\r\n\u001b[4;20H:\"Help\",\"Busy\":false,\r\n\u001b[4;20H,\"Text\":\"Alt+X Ende/E\r\n\u001b[4;20HExit\\r\\nAlt+H Hilfe/H\r\n\u001b[4;20HHelp\\r\\nKlein/Small\\r\r\n\u001b[4;20Hr\\nHilfe: Eingaben bl\r\n\u001b[4;20Hleiben erhalten. Alt+\r\n\u001b[4;20H+X führt zur Shell zu\r\n\u001b[4;20Hurück. / Help: inputs\r\n\u001b[4;20Hs are retained. Alt+X\r\n\u001b[4;20HX returns to the shel\r\n\u001b[4;20Hll.\\r\\nAlt+H Hilfe; A\r\n\u001b[4;20HAlt+X Ende; Esc zurüc\r\n\u001b[4;20Hck / Alt+H help; Alt+\r\n\u001b[4;20H+X exit; Esc back\\r\\n\r\n\u001b[4;20Hn20x5; 29x13\"},{\"Widt\r\n\u001b[4;20Hth\":20,\"Height\":5,\"Sm\r\n\u001b[4;20Hmall\":true,\"Focus\":\"H\r\n\u001b[4;20HHelp\",\"Context\":\"Help\r\n\u001b[4;20Hp\",\"Busy\":false,\"Text\r\n\u001b[4;20Ht\":\"Alt+X Ende/Exit\\r\r\n\u001b[4;20Hr\\nAlt+H Hilfe/Help\\r\r\n\u001b[4;20Hr\\nKlein/Small\\r\\nHil\r\n\u001b[4;20Hlfe: Eingaben bleiben\r\n\u001b[4;20Hn erhalten. Alt+X füh\r\n\u001b[4;20Hhrt zur Shell zurück.\r\n\u001b[4;20H. / Help: inputs are \r\n\u001b[4;20H retained. Alt+X retu\r\n\u001b[4;20Hurns to the shell.\\r\\\r\n\u001b[4;20H\\nAlt+H Hilfe; Alt+X \r\n\u001b[4;20H Ende; Esc zurück / A\r\n\u001b[4;20HAlt+H help; Alt+X exi\r\n\u001b[4;20Hit; Esc back\\r\\n20x5;\r\n\u001b[4;20H; 29x13\"}],\"Synthetic\r\n\u001b[4;20HcValueRetained\":true,\r\n\u001b[4;20H,\"InputObservations\":\r\n\u001b[4;20H:[{\"Key\":\"Alt+H\",\"Act\r\n\u001b[4;20Htion\":\"Help\",\"Context\r\n\u001b[4;20Ht\":\"Help\",\"Focus\":\"He\r\n\u001b[4;20Help\",\"FrameworkFocus\"\r\n\u001b[4;20H\":null,\"Accepted\":tru\r\n\u001b[4;20Hue,\"ExitRequested\":fa\r\n\u001b[4;20Halse,\"ScrollTop\":0},{\r\n\u001b[4;20H{\"Key\":\"Alt+X\",\"Actio\r\n\u001b[4;20Hon\":\"Exit\",\"Context\":\r\n\u001b[4;20H:\"Help\",\"Focus\":\"Help\r\n\u001b[4;20Hp\",\"FrameworkFocus\":n\r\n\u001b[4;20Hnull,\"Accepted\":true,\r\n\u001b[4;20H,\"ExitRequested\":true\r\n\u001b[4;20He,\"ScrollTop\":0}],\"Be\r\n\u001b[4;20Hefore\":{\"Pid\":6764,\"R\r\n\u001b[4;20HRunspace\":\"3fed763b-5\r\n\u001b[4;20H5607-49a7-a9f7-8c96d6\r\n\u001b[4;20H6bc4ad4\",\"Location\":\"\r\n\u001b[4;20H\"synthetic-working-di\r\n\u001b[4;20Hirectory\",\"Synthetic\"\r\n\u001b[4;20H\":710,\"Preference\":1,\r\n\u001b[4;20H,\"FunctionResult\":710\r\n\u001b[4;20H0},\"After\":{\"Pid\":676\r\n\u001b[4;20H64,\"Runspace\":\"3fed76\r\n\u001b[4;20H63b-5607-49a7-a9f7-8c\r\n\u001b[4;20Hc96d6bc4ad4\",\"Locatio\r\n\u001b[4;20Hon\":\"synthetic-workin\r\n\u001b[4;20Hng-directory\",\"Synthe\r\n\u001b[4;20Hetic\":710,\"Preference\r\n\u001b[4;20He\":1,\"FunctionResult\"\r\n\u001b[4;20H\":710},\"ContextUnchan\r\n\u001b[4;20Hnged\":true,\"LocationU\r\n\u001b[4;20HUnchanged\":true,\"Modu\r\n\u001b[4;20HuleSetUnchanged\":true\r\n\u001b[4;20He,\"LeaseAcquisitions\"\r\n\u001b[4;20H\":1,\"UiCreations\":1,\"\r\n\u001b[4;20H\"ScopeObservations\":[\r\n\u001b[4;20H[{\"ProcessId\":6764,\"R\r\n\u001b[4;20HRunspaceId\":\"3fed763b\r\n\u001b[4;20Hb-5607-49a7-a9f7-8c96\r\n\u001b[4;20H6d6bc4ad4\",\"Location\"\r\n\u001b[4;20H\":\"synthetic-working-\r\n\u001b[4;20H-directory\",\"Syntheti\r\n\u001b[4;20Hic\":710}],\"NativeRest\r\n\u001b[4;20Htore\":{\"Platform\":\"Wi\r\n\u001b[4;20Hindows\",\"Before\":\"Win\r\n\u001b[4;20HndowsSnapshot { Input\r\n\u001b[4;20HtMode = 503, OutputMo\r\n\u001b[4;20Hode = 7, CursorSize =\r\n\u001b[4;20H= 25, CursorVisible =\r\n\u001b[4;20H= True }\",\"After\":\"Wi\r\n\u001b[4;20HindowsSnapshot { Inpu\r\n\u001b[4;20HutMode = 503, OutputM\r\n\u001b[4;20HMode = 7, CursorSize \r\n\u001b[4;20H = 25, CursorVisible \r\n\u001b[4;20H = True }\",\"RawEqual\"\r\n\u001b[4;20H\":true,\"ConfiguredEqu\r\n\u001b[4;20Hual\":true,\"Boundary\":\r\n\u001b[4;20H:\"Windows console mod\r\n\u001b[4;20Hdes/cursor; native ta\r\n\u001b[4;20Harget proof outstandi\r\n\u001b[4;20Hing\"},\"StopCalls\":0,\"\r\n\u001b[4;20H\"PipelineState\":null,\r\n\u001b[4;20H,\"IsolatedTestRunspac\r\n\u001b[4;20Hce\":false,\"ShellReadb\r\n\u001b[4;20Hback\":\"LH01_ACK\",\"Fai\r\n\u001b[4;20Hilure\":null}\r\nLH01_RESTORE_READY  \r\n",
+  "sanitizedTranscriptSha256": "592c871a147959eca3a6d1217e5be6e56c579caa8aec33dab7d4d9022532a2e4",
+  "assemblySha256": "f5cc31288fd7e265cf6455c77580f59aadb2990ae2769972713c01a555a78775",
+  "finalCursorVisibleAtReturn": true,
+  "cursorModeRestoreObserved": false,
+  "initialCursorBoundary": "Windows native restore observation; no Unix mode-25 assertion",
+  "scenario": "SmallExit",
+  "environment": "synthetic Windows ConPTY; native console restore observation; redirects use real pipes (one stream per case)",
+  "command": [
+    "pwsh",
+    "-NoLogo",
+    "-NoProfile",
+    "-File",
+    "tests/feasibility/lh01/redirect-session.ps1",
+    "-Scenario",
+    "SmallExit",
+    "-Module",
+    "<build>\\ShowCommandTui400\\bin\\net10.0\\ShowCommandTui400.psd1",
+    "-TestAssembly",
+    "<build>\\ShowCommandTui400.Tests\\bin\\net10.0\\ShowCommandTui400.Tests.dll",
+    "-ObservationFile",
+    "<case>\\SmallExit.observation.json"
+  ],
+  "exitCode": 0,
+  "expectedExitCode": 0,
+  "result": "Pass",
+  "diagnosticContractSatisfied": true,
+  "failureScope": null,
+  "timeout": false,
+  "steps": [
+    "Resize-small",
+    "Alt+H",
+    "Alt+X",
+    "synthetic-shell-readback"
+  ],
+  "cursorShowObserved": true,
+  "transcriptSha256": "592c871a147959eca3a6d1217e5be6e56c579caa8aec33dab7d4d9022532a2e4",
+  "termiosBefore": null,
+  "termiosAfter": null,
+  "observation": {
+    "Scenario": "SmallExit",
+    "RedirectBoundary": {
+      "Input": false,
+      "Output": false
+    },
+    "SecurityNegative": null,
+    "RenderObservations": [
+      {
+        "Width": 100,
+        "Height": 24,
+        "Small": false,
+        "Focus": "Help",
+        "Context": "Root",
+        "Busy": false,
+        "Text": "Fokus / Focus: Hilfe / Help\r\nBeschäftigt / Busy: Nein / No\r\nStatus / Status: Bereit / Ready\r\nFehler / Error: Kein Fehler / No error\r\nRolle: Textansicht mit Knöpfen / Role: text view with buttons\r\nStartansicht / Start view: Hilfe und Aktionen / Help and actions\r\nTab/Umschalt+Tab und Pfeile bewegen den Fokus. Enter betätigt den Knopf. Bildtasten blättern Hilfe/Aktionen. Keine Zielausführung. / Tab/Shift+Tab and arrows move focus. Enter activates the button. Page keys scroll help/actions. No target execution.\r\nAlt+H, F1 Hilfe / Help: verfügbar / available\r\nAlt+X, F3 Beenden / Exit: verfügbar / available\r\nAlt+B, Esc, F12 Zurück / Back: verfügbar / available\r\nF5 Aktualisieren / Refresh: verfügbar / available\r\nAlt+M Aktionen / Actions: verfügbar / available\r\nF4 Kontextauswahl / Context selection: nicht verfügbar / unavailable\r\nF9 Alle Parameter / All parameters: nicht verfügbar / unavailable\r\nF10 Weitere Parameter / More parameters: nicht verfügbar / unavailable\r\nF11 Details / Details: nicht verfügbar / unavailable\r\n Auswählen / Select: nicht verfügbar / unavailable\r\n Bearbeiten / Edit: nicht verfügbar / unavailable\r\n Ausführen / Execute: nicht verfügbar / unavailable"
+      },
+      {
+        "Width": 20,
+        "Height": 5,
+        "Small": true,
+        "Focus": "Help",
+        "Context": "Root",
+        "Busy": false,
+        "Text": "Alt+X Ende/Exit\r\nAlt+H Hilfe/Help\r\nKlein/Small\r\nTerminal zu klein. Ansicht vergrößern oder sicher beenden. / Terminal too small. Enlarge the view or exit safely.\r\nAlt+H Hilfe; Alt+X Ende; Esc zurück / Alt+H help; Alt+X exit; Esc back\r\n20x5; 29x13"
+      },
+      {
+        "Width": 20,
+        "Height": 5,
+        "Small": true,
+        "Focus": "Help",
+        "Context": "Help",
+        "Busy": false,
+        "Text": "Alt+X Ende/Exit\r\nAlt+H Hilfe/Help\r\nKlein/Small\r\nHilfe: Eingaben bleiben erhalten. Alt+X führt zur Shell zurück. / Help: inputs are retained. Alt+X returns to the shell.\r\nAlt+H Hilfe; Alt+X Ende; Esc zurück / Alt+H help; Alt+X exit; Esc back\r\n20x5; 29x13"
+      },
+      {
+        "Width": 20,
+        "Height": 5,
+        "Small": true,
+        "Focus": "Help",
+        "Context": "Help",
+        "Busy": false,
+        "Text": "Alt+X Ende/Exit\r\nAlt+H Hilfe/Help\r\nKlein/Small\r\nHilfe: Eingaben bleiben erhalten. Alt+X führt zur Shell zurück. / Help: inputs are retained. Alt+X returns to the shell.\r\nAlt+H Hilfe; Alt+X Ende; Esc zurück / Alt+H help; Alt+X exit; Esc back\r\n20x5; 29x13"
+      }
+    ],
+    "SyntheticValueRetained": true,
+    "InputObservations": [
+      {
+        "Key": "Alt+H",
+        "Action": "Help",
+        "Context": "Help",
+        "Focus": "Help",
+        "FrameworkFocus": null,
+        "Accepted": true,
+        "ExitRequested": false,
+        "ScrollTop": 0
+      },
+      {
+        "Key": "Alt+X",
+        "Action": "Exit",
+        "Context": "Help",
+        "Focus": "Help",
+        "FrameworkFocus": null,
+        "Accepted": true,
+        "ExitRequested": true,
+        "ScrollTop": 0
+      }
+    ],
+    "Before": {
+      "Pid": 6764,
+      "Runspace": "3fed763b-5607-49a7-a9f7-8c96d6bc4ad4",
+      "Location": "synthetic-working-directory",
+      "Synthetic": 710,
+      "Preference": 1,
+      "FunctionResult": 710
+    },
+    "After": {
+      "Pid": 6764,
+      "Runspace": "3fed763b-5607-49a7-a9f7-8c96d6bc4ad4",
+      "Location": "synthetic-working-directory",
+      "Synthetic": 710,
+      "Preference": 1,
+      "FunctionResult": 710
+    },
+    "ContextUnchanged": true,
+    "LocationUnchanged": true,
+    "ModuleSetUnchanged": true,
+    "LeaseAcquisitions": 1,
+    "UiCreations": 1,
+    "ScopeObservations": [
+      {
+        "ProcessId": 6764,
+        "RunspaceId": "3fed763b-5607-49a7-a9f7-8c96d6bc4ad4",
+        "Location": "synthetic-working-directory",
+        "Synthetic": 710
+      }
+    ],
+    "NativeRestore": {
+      "Platform": "Windows",
+      "Before": "WindowsSnapshot { InputMode = 503, OutputMode = 7, CursorSize = 25, CursorVisible = True }",
+      "After": "WindowsSnapshot { InputMode = 503, OutputMode = 7, CursorSize = 25, CursorVisible = True }",
+      "RawEqual": true,
+      "ConfiguredEqual": true,
+      "Boundary": "Windows console modes/cursor; native target proof outstanding"
+    },
+    "StopCalls": 0,
+    "PipelineState": null,
+    "IsolatedTestRunspace": false,
+    "ShellReadback": "LH01_ACK",
+    "Failure": null
+  }
+}

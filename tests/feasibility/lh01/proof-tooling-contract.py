@@ -1,5 +1,5 @@
 """DE: Regressionen für Pfadgrenzen/PTY-Fragmente. EN: Boundary/fragment regressions."""
-import json, subprocess
+import json, subprocess, tempfile
 from pathlib import Path
 from terminal_probes import TerminalProbes
 root = Path(__file__).resolve().parents[3]
@@ -23,7 +23,12 @@ assert not inside.exists()
 result = subprocess.run(['pwsh', '-NoProfile', '-File', str(root/'tests/feasibility/lh01/Invoke-Lh01ContractProof.ps1'), '-CaseId', 'B01', '-BuildRoot', str(inside)], capture_output=True, text=True, timeout=30)
 assert result.returncode != 0 and 'BuildRoot must stay outside source' in result.stderr and not inside.exists(), result.stderr
 checks.append('case-varied-build-root-rejected-before-write')
-result = subprocess.run(['pwsh','-NoProfile','-File',str(root/'tests/feasibility/lh01/Invoke-Lh01PlatformProof.ps1'),'-Plan',str(root/'docs/validation/lh01/platform-handoff.json'),'-Target','macb','-OutputDirectory',str(inside),'-CheckOnly'], capture_output=True,text=True,timeout=30)
+fixture=json.loads((root/'docs/validation/lh01/platform-handoff.json').read_text())
+fixture.update(state='Prepared',executionAuthorized=False,productCommit=None,decisionSha256=None,macAProofReference=None)
+fixture['driver']['sha256']=None
+fixture_dir=Path(tempfile.mkdtemp(prefix='lh01-output-boundary-'))
+fixture_path=fixture_dir/'prepared.json';fixture_path.write_text(json.dumps(fixture))
+result = subprocess.run(['pwsh','-NoProfile','-File',str(root/'tests/feasibility/lh01/Invoke-Lh01PlatformProof.ps1'),'-Plan',str(fixture_path),'-Target','macb','-OutputDirectory',str(inside),'-CheckOnly'], capture_output=True,text=True,timeout=30)
 assert result.returncode == 2 and 'Use isolated output outside the source checkout' in result.stdout and not inside.exists(), (result.stdout,result.stderr)
 checks.append('case-varied-output-root-rejected-before-write')
 print(json.dumps({'result':'Pass','checks':checks}, indent=2))

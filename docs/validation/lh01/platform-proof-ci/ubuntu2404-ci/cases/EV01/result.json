@@ -1,0 +1,85 @@
+{
+  "caseId": "EV01",
+  "productCommit": "b1848b0157158fa4d821c975cfb3cea08753475d",
+  "outcome": "CompleteAndBound",
+  "result": "Pass",
+  "evidenceIds": [
+    "E01-07"
+  ],
+  "observations": [
+    {
+      "caseId": "PF01",
+      "sha256": "e01581ee4c399325ea4fe6f471b3d022e40750c4a2d9340af292f4856e42555a"
+    },
+    {
+      "caseId": "N01",
+      "sha256": "c087be8846e745296839b6724642d0da11ef5f19a1aae856f09bf11e5b575cb0"
+    },
+    {
+      "caseId": "N02",
+      "sha256": "7b48d0f7fffe15d1382f68b695e68f06f25f8660451b9693995cccd65c132956"
+    },
+    {
+      "caseId": "N03",
+      "sha256": "6ead206fc35f538e80805cae8d5073affab87c90e45c9f6e98c1278122a629c1"
+    },
+    {
+      "caseId": "N04",
+      "sha256": "7c17fd9e4689ee98bcbaa644a6170d406dccee104e906e2661b299bbfee3629b"
+    },
+    {
+      "caseId": "N05",
+      "sha256": "b37e0ac69c81b8cd790679b16d82ffab12b56c3518984ef6346c4193b3eb6c9b"
+    },
+    {
+      "caseId": "N06",
+      "sha256": "5782ec59d3b449acf3c91dbe4bb2235c04a72994c9b8dbc25ca3b47e9ab1f730"
+    },
+    {
+      "caseId": "N07",
+      "sha256": "ee72343c28bc832ee820d2fd31f786741f85e9b0314b2eb6dc0240700d0828e7"
+    },
+    {
+      "caseId": "B01",
+      "sha256": "9109d49c1301e53b281a22adb80b5375cb714155ffe76a6ab5dfab8e9335bc44"
+    },
+    {
+      "caseId": "S01",
+      "sha256": "5c83b22329dffd609796f7a8b184e0b0ed4cfd92a75eea012a21bde7e1959a74"
+    },
+    {
+      "caseId": "S02",
+      "sha256": "c1ee56fcb94f8948300c310ef95665c804a0bb73358fa68926f80bfc9007670e"
+    },
+    {
+      "caseId": "S03",
+      "sha256": "5366ab9ae178a2bcbf458fe81c0ecfa5ac48628b02a10b21881c19fb3efb03e2"
+    },
+    {
+      "caseId": "S04",
+      "sha256": "51d28f9294f8db316125c84b8f2ebeb5104923ff3fa15771e63a493b2841be20"
+    },
+    {
+      "caseId": "S05",
+      "sha256": "f4d91dd1fd5bf36c4c40296ed6fa2a246c38780af386620e15588a72b70ea0b4"
+    },
+    {
+      "caseId": "S06",
+      "sha256": "a955bcec2220d0fe6e96f20b8ffa404670dc1f1f3302a1b4554d0829556148ca"
+    },
+    {
+      "caseId": "K01",
+      "sha256": "de228ac57b83890a068ee192328a49cb269884d17af9f7b7be8d9ee3ebe2adee"
+    },
+    {
+      "caseId": "V01",
+      "sha256": "f2946a9f974ddf5da4562f52f7af1d227dc1d3aeaea5524dd542c0eb3a7e3e99"
+    },
+    {
+      "caseId": "V02",
+      "sha256": "b9767705f07c4d22bd89276e6725453d0d5efdc27f2f56f04e1a0cc4d862e629"
+    }
+  ],
+  "files": [],
+  "scope": "automated product/model evidence only; independent review and physical acceptance remain open"
+}

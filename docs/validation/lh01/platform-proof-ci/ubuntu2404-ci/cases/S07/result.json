@@ -1,0 +1,41 @@
+{
+  "caseId": "S07",
+  "productCommit": "b1848b0157158fa4d821c975cfb3cea08753475d",
+  "outcome": "FailWithPrimaryAndRestorationErrorsPreserved",
+  "result": "Fail",
+  "evidenceIds": [
+    "E01-04",
+    "E01-06"
+  ],
+  "observations": [
+    {
+      "scenario": "RestorationFailure",
+      "exitCode": 1,
+      "result": "Fail",
+      "diagnosticContractSatisfied": true
+    }
+  ],
+  "files": [
+    {
+      "path": "RestorationFailure.json",
+      "sha256": "ef7a473b4291689390a0cc6499fa453b489e7cdfdceea31f201aa1d0ea01556e"
+    },
+    {
+      "path": "RestorationFailure.observation.json",
+      "sha256": "c01ff7578b5ec65067598c13e97ea062701828218f08ab97f88a3b7ac9077984"
+    },
+    {
+      "path": "RestorationFailure.observation.json.input-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "RestorationFailure.observation.json.restore-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "RestorationFailure.txt",
+      "sha256": "70c2ea28dd59bb1d280b7c7e9efb0500403511bd615499d2ed0d5adf97f8847a"
+    }
+  ],
+  "scope": "automated product/model evidence only; independent review and physical acceptance remain open"
+}

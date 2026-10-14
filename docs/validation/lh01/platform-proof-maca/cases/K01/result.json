@@ -1,0 +1,118 @@
+{
+  "caseId": "K01",
+  "productCommit": "41ec0f34d35c9d9e187e1a101b806d7ac93f6b00",
+  "outcome": "ActionContractsPass",
+  "result": "Pass",
+  "evidenceIds": [
+    "E01-02"
+  ],
+  "observations": [
+    {
+      "scenario": "Keyboard",
+      "exitCode": 0,
+      "result": "Pass",
+      "diagnosticContractSatisfied": true
+    },
+    {
+      "scenario": "Remap",
+      "exitCode": 0,
+      "result": "Pass",
+      "diagnosticContractSatisfied": true
+    },
+    {
+      "scenario": "FunctionExit",
+      "exitCode": 0,
+      "result": "Pass",
+      "diagnosticContractSatisfied": true
+    },
+    {
+      "scenario": "BindingConflict",
+      "exitCode": 0,
+      "result": "Pass",
+      "diagnosticContractSatisfied": true
+    }
+  ],
+  "files": [
+    {
+      "path": "BindingConflict.json",
+      "sha256": "ef1c1939aea1996ee2bedc57f6c588e3b9a2a68121a47c9bdef7e25b327206e4"
+    },
+    {
+      "path": "BindingConflict.observation.json",
+      "sha256": "b68c8a8b7cb3f8cf4553f138573e953fc5564b16323546d0035f204746442183"
+    },
+    {
+      "path": "BindingConflict.observation.json.input-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "BindingConflict.observation.json.restore-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "BindingConflict.txt",
+      "sha256": "a9fac882f7e4d7f57898d4729932ea609830878cfaff1caeea5611396e7871fb"
+    },
+    {
+      "path": "FunctionExit.json",
+      "sha256": "37aa74ed95ce787975f2b707871abb35b1b8c4392a1c0f6ddb056a713b3fd46d"
+    },
+    {
+      "path": "FunctionExit.observation.json",
+      "sha256": "ee17b58c173041417fd4c3ac5549e285b45c91d743400e4faee2faecf82c2431"
+    },
+    {
+      "path": "FunctionExit.observation.json.input-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "FunctionExit.observation.json.restore-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "FunctionExit.txt",
+      "sha256": "d556cc7bd75aa6be729bf6cbd2a676ee76b4d2aa53b934f695fd0417929bf943"
+    },
+    {
+      "path": "Keyboard.json",
+      "sha256": "38b1c6a9d29d81d55b887019e364fee9a91ef0c78fb04163cf2085416e207926"
+    },
+    {
+      "path": "Keyboard.observation.json",
+      "sha256": "2bf7d456dfdc00c16102b04f2a33ffb5ae6796eefad3a2a9800770aa883c6a95"
+    },
+    {
+      "path": "Keyboard.observation.json.input-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "Keyboard.observation.json.restore-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "Keyboard.txt",
+      "sha256": "1854c4985f0f0aec4b40db51be0feeb2bc0a1f9a0fc3d18ced15e6de9227a283"
+    },
+    {
+      "path": "Remap.json",
+      "sha256": "a03ab30fc3e8aead969149c859869e017eec358ab7342af4d240ceb7604eab1e"
+    },
+    {
+      "path": "Remap.observation.json",
+      "sha256": "b7c78aba6aa98cda5e70e8c04d58b8030f52cb87be2a771ad518bc3f89a315e8"
+    },
+    {
+      "path": "Remap.observation.json.input-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "Remap.observation.json.restore-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "Remap.txt",
+      "sha256": "18ec0400aa70b3def76c2d685b62236f78962d860cbfd999865c1f73d3e67de9"
+    }
+  ],
+  "scope": "automated product/model evidence only; independent review and physical acceptance remain open"
+}

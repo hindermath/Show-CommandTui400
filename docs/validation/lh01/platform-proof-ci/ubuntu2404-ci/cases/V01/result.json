@@ -1,0 +1,66 @@
+{
+  "caseId": "V01",
+  "productCommit": "b1848b0157158fa4d821c975cfb3cea08753475d",
+  "outcome": "ValuesAndFocusRetained",
+  "result": "Pass",
+  "evidenceIds": [
+    "E01-05"
+  ],
+  "observations": [
+    {
+      "scenario": "Resize",
+      "exitCode": 0,
+      "result": "Pass",
+      "diagnosticContractSatisfied": true
+    },
+    {
+      "scenario": "TextState",
+      "exitCode": 0,
+      "result": "Pass",
+      "diagnosticContractSatisfied": true
+    }
+  ],
+  "files": [
+    {
+      "path": "Resize.json",
+      "sha256": "acc4a4355e08db5821e5abc855a2377fbf9c0bb92e6ef8ed4d845d698b4dc65e"
+    },
+    {
+      "path": "Resize.observation.json",
+      "sha256": "e2bd9cc760af34b6ed6475dcc41803d456af9dc9b08c081e3a1282988fa92515"
+    },
+    {
+      "path": "Resize.observation.json.input-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "Resize.observation.json.restore-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "Resize.txt",
+      "sha256": "6bff4956f0e99fa3ef7d623e9926d768963d3564e278aa611252e9359f516dec"
+    },
+    {
+      "path": "TextState.json",
+      "sha256": "edb30e43024da22578ee6a9ea1bd5d1ebf33a4edb4860bee73a8ffa3c3c9acc4"
+    },
+    {
+      "path": "TextState.observation.json",
+      "sha256": "d49033dcc3dbb09336e519ff8e4529d861b8402a98eb227598bc1a55d7c74683"
+    },
+    {
+      "path": "TextState.observation.json.input-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "TextState.observation.json.restore-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "TextState.txt",
+      "sha256": "565e9628fb9acf8ef286ea9ed7a5d8be245436be29ffb7f7a9e6c30f2c4f6793"
+    }
+  ],
+  "scope": "automated product/model evidence only; independent review and physical acceptance remain open"
+}

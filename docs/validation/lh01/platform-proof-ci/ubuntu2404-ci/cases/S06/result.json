@@ -1,0 +1,41 @@
+{
+  "caseId": "S06",
+  "productCommit": "b1848b0157158fa4d821c975cfb3cea08753475d",
+  "outcome": "NoLeakedState",
+  "result": "Pass",
+  "evidenceIds": [
+    "E01-01",
+    "E01-04"
+  ],
+  "observations": [
+    {
+      "scenario": "Repeat",
+      "exitCode": 0,
+      "result": "Pass",
+      "diagnosticContractSatisfied": true
+    }
+  ],
+  "files": [
+    {
+      "path": "Repeat.json",
+      "sha256": "62d154e9f951530838513d888802a59672e1c66ec600075d3db821e5b0adecf2"
+    },
+    {
+      "path": "Repeat.observation.json",
+      "sha256": "d6ed94c0912788e39414538114b86b4820ed15b0190a51c73a69330235cf30e5"
+    },
+    {
+      "path": "Repeat.observation.json.input-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "Repeat.observation.json.restore-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "Repeat.txt",
+      "sha256": "59744535994ccaa5d8718b26ef747ed61743caf0e27cbe864523a10031b35b05"
+    }
+  ],
+  "scope": "automated product/model evidence only; independent review and physical acceptance remain open"
+}

@@ -1,0 +1,1 @@
+{"caseId": null, "outcome": null, "scenario": "Remap", "result": "Pass", "diagnosticContractSatisfied": true, "exitCode": 0}

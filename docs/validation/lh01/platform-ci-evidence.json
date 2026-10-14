@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "scope": "Native runner product automation only; no Windows11/WSL2/MacB acceptance",
+  "runs": [
+    {
+      "runner": "windows-server2022",
+      "productPayloadCommit": "41ec0f34d35c9d9e187e1a101b806d7ac93f6b00",
+      "actualCiCommit": "b1848b0157158fa4d821c975cfb3cea08753475d",
+      "runUrl": "https://github.com/hindermath/Show-CommandTui400/actions/runs/38627974610",
+      "proofReference": "platform-proof-ci/windows-server2022/suite-result.json",
+      "proofSha256": "57bc38795095c413efe915759a8d7ac37f557e8be4cb52bef317635f31220d85",
+      "sourcePayloadBindingsMatch": true,
+      "matchedSourceBindings": 58,
+      "mainStatus": "Pass",
+      "diagnosticStatus": "Fail",
+      "diagnosticExpectationSatisfied": true,
+      "actualTargetHostAcceptance": false,
+      "review": "Open"
+    },
+    {
+      "runner": "ubuntu2404-ci",
+      "productPayloadCommit": "41ec0f34d35c9d9e187e1a101b806d7ac93f6b00",
+      "actualCiCommit": "b1848b0157158fa4d821c975cfb3cea08753475d",
+      "runUrl": "https://github.com/hindermath/Show-CommandTui400/actions/runs/38627974610",
+      "proofReference": "platform-proof-ci/ubuntu2404-ci/suite-result.json",
+      "proofSha256": "c960ebf50307cbad99d3f6c7f975ae83e36a3c2700fbcf2104a90ac9e8f6121f",
+      "sourcePayloadBindingsMatch": true,
+      "matchedSourceBindings": 58,
+      "mainStatus": "Pass",
+      "diagnosticStatus": "Fail",
+      "diagnosticExpectationSatisfied": true,
+      "actualTargetHostAcceptance": false,
+      "review": "Open"
+    }
+  ]
+}

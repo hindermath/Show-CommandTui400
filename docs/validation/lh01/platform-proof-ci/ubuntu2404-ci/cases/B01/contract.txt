@@ -1,0 +1,11 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  ShowCommandTui400 -> <user>/work/_temp/lh01-product-proof/build/ShowCommandTui400/bin/net10.0/ShowCommandTui400.dll
+  ShowCommandTui400.Tests -> <user>/work/_temp/lh01-product-proof/build/ShowCommandTui400.Tests/bin/net10.0/ShowCommandTui400.Tests.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.27
+{"caseId":"B01","scope":"model/native doubles only; no GUI or foreign-platform proof","outcome":"LockedBuildAndContractTestsPass","result":"Pass","checks":["SEC01-unknown-context-unavailable-no-effect","SEC02-action-text-never-evaluated","SEC03-key-injection-conflict-rejected","SEC04-control-format-display-sanitized","N01","N02","N03","N04","N04-host","N04-VT","N04-native","N05","N06","N06-escape","N06-case","N06-numeric-action","N06-syntax","N07","primary=False;restore=False","primary=False;restore=True","primary=True;restore=False","primary=True;restore=True","aggregate-primary-with-successful-restore","platform-native-doubles","K01-whitelist-context-negative","K02-unavailable-no-effects","K03-root-back","K04-state-preservation","K05-focus-navigation","K06-nested-help-menu","K07-explicit-exit","K08-conflicts-before-init","K09-complete-bindings","K10-real-remap-map","K11-effective-help","A01-safe-text-negative","A02-names-availability-focus-busy-error-legend","A03-idle-no-error","A04-resource-language-parity","R01-invalid-tiny-size","R02-resize-preserves-values-focus","R03-measured-layout-boundary","R04-post-resize-navigation"],"hostAssembliesRedistributed":false}

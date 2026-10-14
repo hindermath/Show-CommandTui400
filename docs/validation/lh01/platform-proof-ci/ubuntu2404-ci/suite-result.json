@@ -1,0 +1,1126 @@
+{
+  "schemaVersion": 1,
+  "mainStatus": "Pass",
+  "diagnosticStatus": "Fail",
+  "diagnosticExpectationSatisfied": true,
+  "scope": "ci",
+  "productCommit": "b1848b0157158fa4d821c975cfb3cea08753475d",
+  "environment": {
+    "os": "Linux-6.17.0-1022-azure-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "python": "3.12.3",
+    "powershell": [
+      "7.6.6",
+      "10.0.12"
+    ],
+    "sdk": "10.0.401"
+  },
+  "cases": [
+    {
+      "caseId": "PF01",
+      "exitCode": 0,
+      "expectationSatisfied": true,
+      "result": "Pass"
+    },
+    {
+      "caseId": "N01",
+      "exitCode": 0,
+      "expectationSatisfied": true,
+      "result": "Pass"
+    },
+    {
+      "caseId": "N02",
+      "exitCode": 0,
+      "expectationSatisfied": true,
+      "result": "Pass"
+    },
+    {
+      "caseId": "N03",
+      "exitCode": 0,
+      "expectationSatisfied": true,
+      "result": "Pass"
+    },
+    {
+      "caseId": "N04",
+      "exitCode": 0,
+      "expectationSatisfied": true,
+      "result": "Pass"
+    },
+    {
+      "caseId": "N05",
+      "exitCode": 0,
+      "expectationSatisfied": true,
+      "result": "Pass"
+    },
+    {
+      "caseId": "N06",
+      "exitCode": 0,
+      "expectationSatisfied": true,
+      "result": "Pass"
+    },
+    {
+      "caseId": "N07",
+      "exitCode": 0,
+      "expectationSatisfied": true,
+      "result": "Pass"
+    },
+    {
+      "caseId": "B01",
+      "exitCode": 0,
+      "expectationSatisfied": true,
+      "result": "Pass"
+    },
+    {
+      "caseId": "S01",
+      "exitCode": 0,
+      "expectationSatisfied": true,
+      "result": "Pass"
+    },
+    {
+      "caseId": "S02",
+      "exitCode": 0,
+      "expectationSatisfied": true,
+      "result": "Pass"
+    },
+    {
+      "caseId": "S03",
+      "exitCode": 0,
+      "expectationSatisfied": true,
+      "result": "Pass"
+    },
+    {
+      "caseId": "S04",
+      "exitCode": 0,
+      "expectationSatisfied": true,
+      "result": "Pass"
+    },
+    {
+      "caseId": "S05",
+      "exitCode": 0,
+      "expectationSatisfied": true,
+      "result": "Pass"
+    },
+    {
+      "caseId": "S06",
+      "exitCode": 0,
+      "expectationSatisfied": true,
+      "result": "Pass"
+    },
+    {
+      "caseId": "K01",
+      "exitCode": 0,
+      "expectationSatisfied": true,
+      "result": "Pass"
+    },
+    {
+      "caseId": "V01",
+      "exitCode": 0,
+      "expectationSatisfied": true,
+      "result": "Pass"
+    },
+    {
+      "caseId": "V02",
+      "exitCode": 0,
+      "expectationSatisfied": true,
+      "result": "Pass"
+    },
+    {
+      "caseId": "EV01",
+      "exitCode": 0,
+      "expectationSatisfied": true,
+      "result": "Pass"
+    },
+    {
+      "caseId": "S07",
+      "exitCode": 1,
+      "expectationSatisfied": true,
+      "result": "Fail"
+    }
+  ],
+  "files": [
+    {
+      "path": "B01.txt",
+      "sha256": "11aadb6698fa8d78730f66596ed7c1077316f320e4291807393d17bab350519a"
+    },
+    {
+      "path": "EV01.txt",
+      "sha256": "83900845d975a3c8c47c62207267f1bbfd638189d4da4e23c783ca3f6dfc9410"
+    },
+    {
+      "path": "K01.txt",
+      "sha256": "dfc4bf22d866a712d6d990b4b9934877215aef536902c1f00a15242fdd347c81"
+    },
+    {
+      "path": "N01.txt",
+      "sha256": "ba86a5d57b2602464084c496df09edb58325dd090e7117c70298fc4fdb68f30e"
+    },
+    {
+      "path": "N02.txt",
+      "sha256": "155a57a82c0882ca97e64d0c2b9ecf700f861f455c8637f3d0f986a86854bf75"
+    },
+    {
+      "path": "N03.txt",
+      "sha256": "6acac5afc66d668f46f076f3527dca68724431bb614a748b7042c68c71384652"
+    },
+    {
+      "path": "N04.txt",
+      "sha256": "8530801f22c87344edf6a41c5fabac3281e6532fb955f731e3fa743816968029"
+    },
+    {
+      "path": "N05.txt",
+      "sha256": "3c09a569c46e0e2d31c7de423314391f1157752e8e5a863d2fed5a7b8f149d05"
+    },
+    {
+      "path": "N06.txt",
+      "sha256": "0a16dfedcf1e5041c17ffd6983b91e6295dd36b04e5ea31ce84b082d14028a8d"
+    },
+    {
+      "path": "N07.txt",
+      "sha256": "05f0214376959f89cf1818b26e07a91a04f6bd1b90fcb1689f10f36ddd725470"
+    },
+    {
+      "path": "PF01.txt",
+      "sha256": "29cc2bd8fb5b476d9ef1be01ce1ac8458fee2db0aa7bc419a9dd25f3f1fb2746"
+    },
+    {
+      "path": "S01.txt",
+      "sha256": "22b67620f34537a4315576d707af9934fadefd3712a637dbf85e557a8ca66efd"
+    },
+    {
+      "path": "S02.txt",
+      "sha256": "d3b4a4ed32614a785e1620d7ba8ed8ea4526be15c53372d5811ef57138b3b601"
+    },
+    {
+      "path": "S03.txt",
+      "sha256": "670cddbed67eed1c97920788d7aae4ac022d20b73dbfbaf5ff2db85cf7d74af6"
+    },
+    {
+      "path": "S04.txt",
+      "sha256": "ad3cf1af59df287f35c34b0e2e5419f7ae12af3472971973c5ae2e54ed04a769"
+    },
+    {
+      "path": "S05.txt",
+      "sha256": "2e833d112e7e4eac5a73c603c1bc78766c6c2c97ee1bd908ed37cde1cd2a83c6"
+    },
+    {
+      "path": "S06.txt",
+      "sha256": "fad7f4cdd45156175e609389a838e77ee344dd9d5c8e5b0bfc3e539d2dfcb41e"
+    },
+    {
+      "path": "S07.txt",
+      "sha256": "2e7a56507813706c902c3ceed578c7bd4985f889addad6e906b202dd2c816dd8"
+    },
+    {
+      "path": "V01.txt",
+      "sha256": "ba6cadb1102bd25230cad0a435ee83a4fb1db94929280cf3e28675a33cb8b55f"
+    },
+    {
+      "path": "V02.txt",
+      "sha256": "4a9898106c38366dbf67844b5b40cf54c514c33cb7312813ab190b5f2db9a3fc"
+    },
+    {
+      "path": "cases/B01/contract.txt",
+      "sha256": "dd7bd1e094f544182c94ea76ac911a62d6f775365d93477a8bf291a10ebc9178"
+    },
+    {
+      "path": "cases/B01/result.json",
+      "sha256": "9109d49c1301e53b281a22adb80b5375cb714155ffe76a6ab5dfab8e9335bc44"
+    },
+    {
+      "path": "cases/EV01/result.json",
+      "sha256": "55c2d55438e62a1a383b9698466ce21bcd6c330f80228922692395c594e97de5"
+    },
+    {
+      "path": "cases/K01/BindingConflict.json",
+      "sha256": "2f7cfdfe2c188b5c465ad9413f8f59ca5243f22acf7d8f214374224d533664e7"
+    },
+    {
+      "path": "cases/K01/BindingConflict.observation.json",
+      "sha256": "cf1cb05d6cf7a31ef8a422cac9c132aabd717bbcd8c664d13ebcfce534ca6160"
+    },
+    {
+      "path": "cases/K01/BindingConflict.observation.json.input-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "cases/K01/BindingConflict.observation.json.restore-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "cases/K01/BindingConflict.txt",
+      "sha256": "a9fac882f7e4d7f57898d4729932ea609830878cfaff1caeea5611396e7871fb"
+    },
+    {
+      "path": "cases/K01/FunctionExit.json",
+      "sha256": "faea8ca4bf2faa7447a1c833fd168d787f03c8b5bb9ab8cab7114e0e34de5437"
+    },
+    {
+      "path": "cases/K01/FunctionExit.observation.json",
+      "sha256": "d73f2a1b9f6f6f0a751ac00908c2f40bccf20d1f769e0e7652f12b7a444c4e24"
+    },
+    {
+      "path": "cases/K01/FunctionExit.observation.json.input-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "cases/K01/FunctionExit.observation.json.restore-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "cases/K01/FunctionExit.txt",
+      "sha256": "d556cc7bd75aa6be729bf6cbd2a676ee76b4d2aa53b934f695fd0417929bf943"
+    },
+    {
+      "path": "cases/K01/Keyboard.json",
+      "sha256": "ac256991a648d575095b3c4b565e304c337d77429502ac7bf7bf71492accf572"
+    },
+    {
+      "path": "cases/K01/Keyboard.observation.json",
+      "sha256": "756a904962a345e05fd00851256fec20acbeceed8bb03d507050316bb70994b6"
+    },
+    {
+      "path": "cases/K01/Keyboard.observation.json.input-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "cases/K01/Keyboard.observation.json.restore-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "cases/K01/Keyboard.txt",
+      "sha256": "1854c4985f0f0aec4b40db51be0feeb2bc0a1f9a0fc3d18ced15e6de9227a283"
+    },
+    {
+      "path": "cases/K01/Remap.json",
+      "sha256": "2869311f6c966b78ca7e19ee6d277f6a428c4dd4a8bf60e04571601adcce1ea3"
+    },
+    {
+      "path": "cases/K01/Remap.observation.json",
+      "sha256": "85182ea4e6cc9c291b2f78c82ce9ed1e0265c15f5c5efb5d6f7129792fc9bdaf"
+    },
+    {
+      "path": "cases/K01/Remap.observation.json.input-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "cases/K01/Remap.observation.json.restore-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "cases/K01/Remap.txt",
+      "sha256": "18ec0400aa70b3def76c2d685b62236f78962d860cbfd999865c1f73d3e67de9"
+    },
+    {
+      "path": "cases/K01/result.json",
+      "sha256": "de228ac57b83890a068ee192328a49cb269884d17af9f7b7be8d9ee3ebe2adee"
+    },
+    {
+      "path": "cases/N01/contract.txt",
+      "sha256": "e21fa6980d973d84783cf5c48b16166b358cb593d098bbcc7a6bd75005bfaa2c"
+    },
+    {
+      "path": "cases/N01/result.json",
+      "sha256": "c087be8846e745296839b6724642d0da11ef5f19a1aae856f09bf11e5b575cb0"
+    },
+    {
+      "path": "cases/N02/InputRedirect.json",
+      "sha256": "63d321159914ebb6fdf29d3b9038b12e581944dfea82a180bc8767a3fa5a2c67"
+    },
+    {
+      "path": "cases/N02/InputRedirect.observation.json",
+      "sha256": "ca207a6a2684c15c1d013b96096eda86add97d6bc613e3e819aeefd23b85ca73"
+    },
+    {
+      "path": "cases/N02/InputRedirect.observation.json.restore-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "cases/N02/InputRedirect.txt",
+      "sha256": "415a913fe01189fcd1ca3f7262e50c05775fcb1cd3fe9ebed58a95c35dbe2f1c"
+    },
+    {
+      "path": "cases/N02/result.json",
+      "sha256": "7b48d0f7fffe15d1382f68b695e68f06f25f8660451b9693995cccd65c132956"
+    },
+    {
+      "path": "cases/N03/Redirect.json",
+      "sha256": "24a27bca833535acbe2924bbd81319bc63377c920ad7ba16a868fcbe3be91470"
+    },
+    {
+      "path": "cases/N03/Redirect.observation.json",
+      "sha256": "254bd0e9f657f9bfd7c408633ec09e77976144ade256ea9330c3320fb7d3ee97"
+    },
+    {
+      "path": "cases/N03/Redirect.observation.json.restore-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "cases/N03/Redirect.txt",
+      "sha256": "010f89157107c1dbb06bd19aa34360e9cacb9c3e1f2c2b10f4cf691d43571624"
+    },
+    {
+      "path": "cases/N03/result.json",
+      "sha256": "6ead206fc35f538e80805cae8d5073affab87c90e45c9f6e98c1278122a629c1"
+    },
+    {
+      "path": "cases/N04/contract.txt",
+      "sha256": "698b9384d8f9d52f4e76a7664eb982550c02c4d4c3bb193ae685bb763fca3c23"
+    },
+    {
+      "path": "cases/N04/result.json",
+      "sha256": "7c17fd9e4689ee98bcbaa644a6170d406dccee104e906e2661b299bbfee3629b"
+    },
+    {
+      "path": "cases/N05/contract.txt",
+      "sha256": "052ec5e39dd4b69606d797838031e606b601bd869dae5d16c0317605c63cce92"
+    },
+    {
+      "path": "cases/N05/result.json",
+      "sha256": "b37e0ac69c81b8cd790679b16d82ffab12b56c3518984ef6346c4193b3eb6c9b"
+    },
+    {
+      "path": "cases/N06/contract.txt",
+      "sha256": "361815e1ca0c394aea026e4e7a139e3f03b9c635f13a9cffc4a71a084172c532"
+    },
+    {
+      "path": "cases/N06/result.json",
+      "sha256": "5782ec59d3b449acf3c91dbe4bb2235c04a72994c9b8dbc25ca3b47e9ab1f730"
+    },
+    {
+      "path": "cases/N07/contract.txt",
+      "sha256": "09a93f9794cba643ba7908cd6878926eb62f4fe6aea86002300fc86f735ae872"
+    },
+    {
+      "path": "cases/N07/result.json",
+      "sha256": "ee72343c28bc832ee820d2fd31f786741f85e9b0314b2eb6dc0240700d0828e7"
+    },
+    {
+      "path": "cases/PF01/result.json",
+      "sha256": "e01581ee4c399325ea4fe6f471b3d022e40750c4a2d9340af292f4856e42555a"
+    },
+    {
+      "path": "cases/S01/Repeat.json",
+      "sha256": "a32c36eb87eb087195799e642b84d9923086a6d689219e49bd2b5f87182c821f"
+    },
+    {
+      "path": "cases/S01/Repeat.observation.json",
+      "sha256": "55529b1f925bbc5c9b4d15473b22969086bd4267d6bc4fd94c6f2f164a65ba8d"
+    },
+    {
+      "path": "cases/S01/Repeat.observation.json.input-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "cases/S01/Repeat.observation.json.restore-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "cases/S01/Repeat.txt",
+      "sha256": "59744535994ccaa5d8718b26ef747ed61743caf0e27cbe864523a10031b35b05"
+    },
+    {
+      "path": "cases/S01/result.json",
+      "sha256": "5c83b22329dffd609796f7a8b184e0b0ed4cfd92a75eea012a21bde7e1959a74"
+    },
+    {
+      "path": "cases/S02/HiddenCursor.json",
+      "sha256": "a0bd4298e2b5ce1cd6c1bd6e533f5e9001c18e9419477a6afae4b48d37cfa73c"
+    },
+    {
+      "path": "cases/S02/HiddenCursor.observation.json",
+      "sha256": "fad5d9cd7d7bf510d76efb5e136d9c2567db3bb87820b92cebd0fffb4dbe9503"
+    },
+    {
+      "path": "cases/S02/HiddenCursor.observation.json.input-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "cases/S02/HiddenCursor.observation.json.restore-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "cases/S02/HiddenCursor.txt",
+      "sha256": "b7f4c75c2ba8ef2cd5c2f0cd8746c6aaa74cf402d467ca1b8fd25c54b4a9e7a2"
+    },
+    {
+      "path": "cases/S02/Normal.json",
+      "sha256": "b1d603f04f83271bb85dd85e8668fa905bfa6cc8ac5c51dd6f8a6a9466c64603"
+    },
+    {
+      "path": "cases/S02/Normal.observation.json",
+      "sha256": "e0ccdd8dcc173ba8bf3e2d3fd14b5397eb9a28461f69d5800a9a46201afd78c9"
+    },
+    {
+      "path": "cases/S02/Normal.observation.json.input-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "cases/S02/Normal.observation.json.restore-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "cases/S02/Normal.txt",
+      "sha256": "d4969e40ee4786a1b5ad6383237063d4b3ad7260e3695bb59e0ceef04f517d0e"
+    },
+    {
+      "path": "cases/S02/result.json",
+      "sha256": "c1ee56fcb94f8948300c310ef95665c804a0bb73358fa68926f80bfc9007670e"
+    },
+    {
+      "path": "cases/S03/Cancel.json",
+      "sha256": "cf38a186b1f91fda2e095af56249d7517b68c48ab434fcc75e2d68dbaf0aa3e6"
+    },
+    {
+      "path": "cases/S03/Cancel.observation.json",
+      "sha256": "f3b5045bff765741e95f6f782b7d27a371b9208d5dfcc0afa94cce654a1990cd"
+    },
+    {
+      "path": "cases/S03/Cancel.observation.json.input-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "cases/S03/Cancel.observation.json.restore-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "cases/S03/Cancel.txt",
+      "sha256": "15eb3c5891137d973e2c8679b9582b8a9dc28aac6f07ba1aae8fb52ea92f6660"
+    },
+    {
+      "path": "cases/S03/result.json",
+      "sha256": "5366ab9ae178a2bcbf458fe81c0ecfa5ac48628b02a10b21881c19fb3efb03e2"
+    },
+    {
+      "path": "cases/S04/Stop.json",
+      "sha256": "a90a798bbf14e10fbbaca9eb9c615d77e6096d4fd16dfb1128705261e768ed84"
+    },
+    {
+      "path": "cases/S04/Stop.observation.json",
+      "sha256": "664cca2fee7a9f9adf636b9717e9c5f2935d52896cfb2e331cf81333d8a6e9d3"
+    },
+    {
+      "path": "cases/S04/Stop.observation.json.input-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "cases/S04/Stop.observation.json.restore-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "cases/S04/Stop.txt",
+      "sha256": "430992db79a5e92e4114bd4b9b52ed9e14c88b5cf6cc43e9efd8e722d7fcac0f"
+    },
+    {
+      "path": "cases/S04/result.json",
+      "sha256": "51d28f9294f8db316125c84b8f2ebeb5104923ff3fa15771e63a493b2841be20"
+    },
+    {
+      "path": "cases/S05/AggregateFailure.json",
+      "sha256": "6d5b9f8a6b53ef53e10b1f1c2b6c116691b51a538e98653e01bf562c39df2a8c"
+    },
+    {
+      "path": "cases/S05/AggregateFailure.observation.json",
+      "sha256": "137b41b90a672792dede66fcb2e4784fbae3e6a51261834e3c7ef8343b5a1503"
+    },
+    {
+      "path": "cases/S05/AggregateFailure.observation.json.input-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "cases/S05/AggregateFailure.observation.json.restore-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "cases/S05/AggregateFailure.txt",
+      "sha256": "1f2743e2c163a7b4cb489071c4ad007b14fa3595e21cfefa2c7b6d8853da6f45"
+    },
+    {
+      "path": "cases/S05/HandledFailure.json",
+      "sha256": "922b9de0bbdb6186cdd430d611852c0b47dc7f8f6be7146d74c847e5fa54d4a4"
+    },
+    {
+      "path": "cases/S05/HandledFailure.observation.json",
+      "sha256": "519252c5fdfc938377b4b6252cad84847b72c1b74f30028cb70c8906a54ee655"
+    },
+    {
+      "path": "cases/S05/HandledFailure.observation.json.input-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "cases/S05/HandledFailure.observation.json.restore-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "cases/S05/HandledFailure.txt",
+      "sha256": "ac59f9f067337585d58c32fca991bb6f7bf7ad5c12f46b11d848777a4f421378"
+    },
+    {
+      "path": "cases/S05/result.json",
+      "sha256": "f4d91dd1fd5bf36c4c40296ed6fa2a246c38780af386620e15588a72b70ea0b4"
+    },
+    {
+      "path": "cases/S06/Repeat.json",
+      "sha256": "62d154e9f951530838513d888802a59672e1c66ec600075d3db821e5b0adecf2"
+    },
+    {
+      "path": "cases/S06/Repeat.observation.json",
+      "sha256": "d6ed94c0912788e39414538114b86b4820ed15b0190a51c73a69330235cf30e5"
+    },
+    {
+      "path": "cases/S06/Repeat.observation.json.input-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "cases/S06/Repeat.observation.json.restore-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "cases/S06/Repeat.txt",
+      "sha256": "59744535994ccaa5d8718b26ef747ed61743caf0e27cbe864523a10031b35b05"
+    },
+    {
+      "path": "cases/S06/result.json",
+      "sha256": "a955bcec2220d0fe6e96f20b8ffa404670dc1f1f3302a1b4554d0829556148ca"
+    },
+    {
+      "path": "cases/S07/RestorationFailure.json",
+      "sha256": "ef7a473b4291689390a0cc6499fa453b489e7cdfdceea31f201aa1d0ea01556e"
+    },
+    {
+      "path": "cases/S07/RestorationFailure.observation.json",
+      "sha256": "c01ff7578b5ec65067598c13e97ea062701828218f08ab97f88a3b7ac9077984"
+    },
+    {
+      "path": "cases/S07/RestorationFailure.observation.json.input-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "cases/S07/RestorationFailure.observation.json.restore-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "cases/S07/RestorationFailure.txt",
+      "sha256": "70c2ea28dd59bb1d280b7c7e9efb0500403511bd615499d2ed0d5adf97f8847a"
+    },
+    {
+      "path": "cases/S07/result.json",
+      "sha256": "ab8844ef19f1469706a547e2b7868c01aa485f9de4fb7ff2d4e3f39c914c90ac"
+    },
+    {
+      "path": "cases/V01/Resize.json",
+      "sha256": "acc4a4355e08db5821e5abc855a2377fbf9c0bb92e6ef8ed4d845d698b4dc65e"
+    },
+    {
+      "path": "cases/V01/Resize.observation.json",
+      "sha256": "e2bd9cc760af34b6ed6475dcc41803d456af9dc9b08c081e3a1282988fa92515"
+    },
+    {
+      "path": "cases/V01/Resize.observation.json.input-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "cases/V01/Resize.observation.json.restore-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "cases/V01/Resize.txt",
+      "sha256": "6bff4956f0e99fa3ef7d623e9926d768963d3564e278aa611252e9359f516dec"
+    },
+    {
+      "path": "cases/V01/TextState.json",
+      "sha256": "edb30e43024da22578ee6a9ea1bd5d1ebf33a4edb4860bee73a8ffa3c3c9acc4"
+    },
+    {
+      "path": "cases/V01/TextState.observation.json",
+      "sha256": "d49033dcc3dbb09336e519ff8e4529d861b8402a98eb227598bc1a55d7c74683"
+    },
+    {
+      "path": "cases/V01/TextState.observation.json.input-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "cases/V01/TextState.observation.json.restore-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "cases/V01/TextState.txt",
+      "sha256": "565e9628fb9acf8ef286ea9ed7a5d8be245436be29ffb7f7a9e6c30f2c4f6793"
+    },
+    {
+      "path": "cases/V01/result.json",
+      "sha256": "f2946a9f974ddf5da4562f52f7af1d227dc1d3aeaea5524dd542c0eb3a7e3e99"
+    },
+    {
+      "path": "cases/V02/SmallExit.json",
+      "sha256": "3fef0efcaceb86d4383607643aca25f81ea7bd62a83959f2e0469761ed04ea23"
+    },
+    {
+      "path": "cases/V02/SmallExit.observation.json",
+      "sha256": "266ad118404d18aa502ec7b8648726434c2876d116747a385a66003120c1d6c5"
+    },
+    {
+      "path": "cases/V02/SmallExit.observation.json.input-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "cases/V02/SmallExit.observation.json.restore-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "cases/V02/SmallExit.txt",
+      "sha256": "07127819349c3e0c25245838317380f25b29ebdff3634b1312fc03506d60591c"
+    },
+    {
+      "path": "cases/V02/TinyExit.json",
+      "sha256": "f352ca64d3cd08158935d26669155316306d43af3d246a180137a0ac8116514d"
+    },
+    {
+      "path": "cases/V02/TinyExit.observation.json",
+      "sha256": "aafebea8345a5e9a7c9d547d656352f35c74a8087706ceb2f44dce3761d6db54"
+    },
+    {
+      "path": "cases/V02/TinyExit.observation.json.input-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "cases/V02/TinyExit.observation.json.restore-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "cases/V02/TinyExit.txt",
+      "sha256": "bbadf5a144b15fe425cace3b42a6ac86eb4ed3e0b92efa6f3ce51ee0b7392378"
+    },
+    {
+      "path": "cases/V02/result.json",
+      "sha256": "b9767705f07c4d22bd89276e6725453d0d5efdc27f2f56f04e1a0cc4d862e629"
+    },
+    {
+      "path": "source-suite-result.json",
+      "sha256": "705fd8185986663453e93e8d59fefae5ea7234ea94dbf95668528891371a3c96"
+    }
+  ],
+  "review": "Open",
+  "physicalTerminal": "Deferred",
+  "screenReader": "Deferred",
+  "brailleHardware": "Excluded",
+  "limits": [
+    "7.6.4 minimum is a model boundary; actual host version listed above",
+    "CI does not prove Windows 11, WSL2 or Mac B",
+    "S07 injects failure after real restore; its result remains Fail"
+  ],
+  "export": {
+    "sourceSuiteReference": "source-suite-result.json",
+    "sourceSuiteSha256": "705fd8185986663453e93e8d59fefae5ea7234ea94dbf95668528891371a3c96",
+    "excludedNonEvidenceFiles": [
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/00d512629e980653adf1f59fe08867ce19ced313",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/019ceafa6222a073cd70a51a46d86a75e53247fd",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/0249e43af3e2b989131194f9498d35e59f5e7bef",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/03c1166a1591f5d0e8db341f6a6df36c55a0ba70",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/04a4fbd9702eabb502cc6e913be4e7a3311d1c33",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/05a71260b6b8edb02ff328f892367c8d9ea3a685",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/0a57d0f3b0229d80373c6eb3f2fe30ba1c9027c8",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/0ac0363f992e68ac08a355bb014b0769fc0a0f57",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/0b50ede6f6900864769b4602188680c13f8c9544",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/16473e685e6e50d3e679e6950f2b1ada44e7dee8",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/1943856f103ce13aabf43ee14145a3471b3ada50",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/1cb96ca26874c77cc067469bd9d9186deab400e6",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/1ebc1a568ea7ee6609b1dcd47a0d926e864308b7",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/252b0221f34a1053d07369059374a2ed89c59a33",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/267dcb363f6cbabdce0e7300e6a9f49750a65582",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/2a31b8e3de9a685041cdded2aee127e527d496df",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/2bb074f947f9b561c77c46c62995f39bfdb7b02b",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/2ef8ccf1fbc944621420fd36ac1f0bf03262fc4b",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/346b54cb9fcb159fa3356aecb52a811fad7bc4d3",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/3c0df86571469d0cfa46b2bd78c6ccd8bcd2ec8d",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/3f43c1836d9d3b6c6fce58e9cd1f87f83f26310f",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/40005eb9eb99ef60fa794ec23100818fa557044b",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/434069ed2f6dd29d63382c52468657672e7b7d19",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/4a157630758dbc23cdb8b0338048184f3542a398",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/4d5330beecab7ca3d1545966586de9c8d630b9a0",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/4de5ce64db246c188556f3052ad4ba483e14215d",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/4e66380b96fa0cfba41eaa829993106c66b1a3e5",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/517032dd00db39b92919d03292e95cd5ca7b7a74",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/5330e4ce7d650adda3477c8153ce5e1fc722af3a",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/57c55d1cb9866b5430a9df1a72ef9f0a66d04add",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/57d7999b690c218c0555f84965cf233fb66bdcb5",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/5b13e2befe91f9b6648d6ad6b9b89a80b3986ccb",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/5cb34960f3f26254c029e11a1d90ca7fe588dc4e",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/5e1d5ec29a93f5376a2aa3d34c47e97795c74593",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/60d58fd7162a40fe5385fdbee670072cb46ebf66",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/63c067746748dad175859a08af3e9090250d5468",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/63e149dd6c04e4f84c4796fb29a5a60986c28346",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/6610f549e5ec419104c33b5bc8debe2fbf3c2c8c",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/6b61b75231e873ffddc598cd809890ed08aee892",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/6b97b040fd6a484fd87947ac972c2c936cb75f08",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/6d2aefb5647927bd44bf8700ff0013b8e832490e",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/6f3b2019b8edd01537fc5f7f895950cfbeb18471",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/726f28076c614e425be69c8975fdeac54bee1cb9",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/7591a9f74487694f5c6ccbbd98f758cda4358d8f",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/77efac313ea57e5c7e7315eda0166f979055c172",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/7bd309b0a930b72934668cca34aec709051a92ca",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/7c3beac651f7fcc412d8e0aeba5c62813806211f",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/7c646b0ef3cf1073adc284ebf1204c9b50dc082c",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/7eb37965ab9dc57d8d83d11f4cf3a19ba23eb698",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/811aea6c147d122d5cfe5fa9ec85da4184012a72",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/8657532d113307ae3cbd48acba9da520a2221cfa",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/873d5a0bbc0d299b0bae7ef6964dc322c5b3110a",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/887ec80e397b68d58741c3eafbb0d2c4a4825631",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/89784b9fae16f1a3cbfa940169c7adc0e87e73f8",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/8af84b40a26888efb8eb71f36bb562d5d7871c60",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/8ced80eb53fb6ccee6097a785e3755d4ec2edee3",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/95430dc8c4d6299887be1c91937ad58c2764f17e",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/9af4b31f8c6d1f4d5ae6c5aa5b9915c3c8094e2b",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/9ead009523683bd32e4288950ab3c0b8a1932eae",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/9fdbce22c59cd9fc83ccb0955d765a1bedcd9ed4",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/a00b7e2f35039001233d59229a9fb3fc1dec8572",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/a21574f054a396b31d74e1b9e8c0b6f26bc90d61",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/a3274fd4828e6329053e7286a328c1b94a666064",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/a47ed80e5a81d936215067b1368fc75c6236b28d",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/a621f70d9fcd02b5964829571e22bc833e31cecf",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/a6739f996de6cd2265eefd7749ed276071df0c07",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/a67e4ca5c91d71b1e81d385bb414d9c473e4b2ff",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/a8aabc4987f7f517e8cecdfc4bde023f2f23b79e",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/aac97115e8e548802783ec38c31d9c1fab9f30d5",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/ab0a65d4a98f8de72096ad515a3f04ab0446bf6f",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/ab470fb63e479740350f762bea7700f7d12c7b94",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/ab750edd3a4d82758663b7d410aa0c8832ae789b",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/ac40429dcabdea35edd4d4ca33a75d15dce94c4c",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/ae59c446c209a4456544c06cf52b1954b3599d68",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/afca2dc385e03ed6abce9c6af1ea046241da5cdc",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/b015e02aeb9ba79a192735d2a4d67fe3e7f2a8cb",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/b49e72a3f54d1c0cc2b79efd5d1795bda428d1a4",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/b6a04f4d9598bf79f1bc30c15f9b209a2e76fc85",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/c3510f333f51fe877ae2ad55478d099bd93bda5b",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/c6111c48531d48cafa260a5669344fd01d59a426",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/c8b018d74200e2029b6c77570c153a5572787130",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/c9890faf0f3b0255bb4ce97e7dcb5abf4c561787",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/cb205a56b379767f7f537ff0b6fd0299ce869ffe",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/cce0699caf748908c8cdfdbddca9bc6c269fcd10",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/cda43ab97ded93c901db5fae239c0d4d51317634",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/d0cf828e21efd60b9ab926c810efce381c7cbc3e",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/d5f8963a48ed6b9089af307528faa1e3bd7348a8",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/dbf568721d89e7fbeaee1e31dc31c9139048dca9",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/dfe2b4282778b181c7e9fbcd95b8300dd8a87680",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/e085f2edb2c47ff9c9e449ef9e4e6a1d5efc571d",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/e0deff994206ee01732c26a2ce7d3906183ed8c8",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/e2dcf6eab08bae96b1c7624859242b0fc93dc7c9",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/e496216497c4bc103f8917fb462a8ecbe2f82865",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/e644b49cb4ca86bfed808c12cb112478681c9320",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/ed4e54cde82bbaff8404af7355a0dac989af386a",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/ed9d6cb27c673134e08e75d06c25ce4291ddcfee",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/ef45d8a151c5cf7ce7fa8aba2a4080b049113679",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/f3bcd450266eabcf4532ad60be7d33de480971d9",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/f5a383b558ab3691681e83b81a7d95cf26e66bf5",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/f68d99e813414dba48a63b3757ed99bdb1b12ccc",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/f986dca8a27f2fda95dee7eaf4acf55a8419566f",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": "cases/temporary/NuGetScratchrunner/lock/fd683d9e00f9f2889b2d1f63a4c7e5b95e4e198b",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "reason": "Temporäre NuGet-Locks/Compiler-Caches nicht verteilen; alle Fall- und Rohbelege erhalten. / Exclude temporary locks/compiler caches; preserve all case and raw proof."
+  }
+}

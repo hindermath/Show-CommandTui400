@@ -2,6 +2,10 @@
 import json,subprocess,tempfile
 from pathlib import Path
 root=Path.cwd();base=json.loads((root/'docs/validation/lh01/platform-handoff.json').read_text());temp=Path(tempfile.mkdtemp(prefix='lh01-driver-contract-'));records=[]
+# These are Prepared inventory fixtures, regardless of the delivered approval.
+# Executable approval/hash branches are covered separately at the pinned product.
+base.update(state='Prepared',executionAuthorized=False,productCommit=None,decisionSha256=None,macAProofReference=None)
+base['driver']['sha256']=None
 variants=[('prepared',lambda p:p.update(state='Prepared',executionAuthorized=False),'Prepared plan grants no execution authority'),('empty-inventory',lambda p:p.update(cases=[]),'Canonical case inventory'),('changed-outcome',lambda p:p['cases'][1].update(expectedOutcome='Anything'),'Canonical case field'),('changed-order',lambda p:p['cases'][1].update(group='Positive'),'Canonical case field'),('missing-evidence',lambda p:p['cases'][1].update(evidenceIds=[]),'Canonical E01'),('duplicate-case',lambda p:p['cases'].append(p['cases'][1]),'Canonical case inventory'),('schema',lambda p:p.update(approvedCommands=[{'bad':1}]),'')]
 for name,mutate,expected in variants:
  plan=json.loads(json.dumps(base));mutate(plan);path=temp/(name+'.json');path.write_text(json.dumps(plan));out=temp/(name+'-output')
