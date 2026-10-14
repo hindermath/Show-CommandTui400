@@ -24,7 +24,7 @@ if args.build_root:
     command[command.index('-Module')+1]=str(build/'ShowCommandTui400/bin/net10.0/ShowCommandTui400.psd1')
     command[command.index('-TestAssembly')+1]=str(build/'ShowCommandTui400.Tests/bin/net10.0/ShowCommandTui400.Tests.dll')
 command+=['-ObservationFile',str(observation_file)]
-if os.name=='nt' and args.scenario in ('InputRedirect','Redirect'):
+if os.name=='nt':
     command[command.index('-File')+1]='tests/feasibility/lh01/redirect-session.ps1'
 env=os.environ.copy();env['TERM']='xterm-256color';env['LC_ALL']='en_US.UTF-8'
 terminal=(WindowsTerminal if os.name=='nt' else UnixTerminal)(command,root,env,args.scenario)

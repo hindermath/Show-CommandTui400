@@ -37,9 +37,10 @@ public static class Lh01RedirectConsole
         }
         b.Append('\\',slashes*2); return b.Append('"').ToString();
     }
-    public static int Run(string executable,string[] arguments,bool redirectInput)
+    public static int Run(string executable,string[] arguments,string mode)
     {
         if(!OperatingSystem.IsWindows()) throw new PlatformNotSupportedException();
+        bool redirectInput=mode=="InputRedirect", redirectOutput=mode=="Redirect";
         var security=new Security { Size=Marshal.SizeOf<Security>(), Inherit=true };
         IntPtr cin=IntPtr.Zero,cout=IntPtr.Zero,read=IntPtr.Zero,write=IntPtr.Zero;
         ProcessInfo process=default; Task<string> pending=null; StreamReader reader=null;
@@ -47,17 +48,19 @@ public static class Lh01RedirectConsole
             cin=CreateFileW("CONIN$",0xC0000000u,3,ref security,3,0,IntPtr.Zero);
             cout=CreateFileW("CONOUT$",0xC0000000u,3,ref security,3,0,IntPtr.Zero);
             Check(cin!=new IntPtr(-1) && cout!=new IntPtr(-1));
-            Check(CreatePipe(out read,out write,ref security,0));
-            Check(SetHandleInformation(redirectInput?write:read,1,0));
+            if(redirectInput || redirectOutput) {
+                Check(CreatePipe(out read,out write,ref security,0));
+                Check(SetHandleInformation(redirectInput?write:read,1,0));
+            }
             var startup=new Startup { Size=Marshal.SizeOf<Startup>(), Flags=0x100,
-                Input=redirectInput?read:cin, Output=redirectInput?cout:write, Error=cout };
+                Input=redirectInput?read:cin, Output=redirectOutput?write:cout, Error=cout };
             var command=new StringBuilder(Quote(executable));
             foreach(var arg in arguments) command.Append(' ').Append(Quote(arg));
             // Explicit Win32 handles avoid cached Console streams in the parent
             // PowerShell host. Only the requested child stream receives a pipe.
             Check(CreateProcessW(executable,command,IntPtr.Zero,IntPtr.Zero,true,0,IntPtr.Zero,null,ref startup,out process));
             if(redirectInput) { CloseHandle(write);write=IntPtr.Zero; }
-            else {
+            else if(redirectOutput) {
                 CloseHandle(write);write=IntPtr.Zero;
                 reader=new StreamReader(new FileStream(new SafeFileHandle(read,true),FileAccess.Read),Encoding.UTF8);
                 read=IntPtr.Zero;pending=reader.ReadToEndAsync();
@@ -67,7 +70,12 @@ public static class Lh01RedirectConsole
                 throw new TimeoutException("Redirect child timeout; stop further cases");
             }
             Check(GetExitCodeProcess(process.Process,out var code));
-            Output=pending==null?"":pending.GetAwaiter().GetResult();return checked((int)code);
+            Output=pending==null?"":pending.GetAwaiter().GetResult();
+            if(Output.Length>0) {
+                using var forward=new StreamWriter(new FileStream(new SafeFileHandle(cout,false),FileAccess.Write),new UTF8Encoding(false));
+                forward.Write(Output);forward.Flush();
+            }
+            return checked((int)code);
         } finally {
             reader?.Dispose();
             foreach(var handle in new[]{process.Thread,process.Process,read,write,cin,cout})
