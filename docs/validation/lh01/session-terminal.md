@@ -1,5 +1,9 @@
 # LH-01 Sitzung und Terminal: Mac A / Session and terminal: Mac A
 
+DE: Historischer Nachweis T018–T036 vom 09.10.2026. Der aktuelle T053/T054-Prüfstand steht in der [Plattformmatrix](platform-matrix.md) und im [Prüfvertrag](platform-handoff.md). Aussagen über damals fehlende Adapter gelten für den damaligen Stand.
+
+EN: Historical T018–T036 proof from 2026-10-09. See the linked current matrix/contract for T053/T054; earlier missing-adapter statements describe their historical state.
+
 ## DE — Auftrag und Ergebnis
 
 Thorsten beauftragte T018–T036 auf **Mac A, MacBook Air M2 2023**, mit

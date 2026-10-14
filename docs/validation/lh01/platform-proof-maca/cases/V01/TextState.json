@@ -1,0 +1,222 @@
+{
+  "sanitizedTranscript": "\u001b[?1h\u001b=\u001b[?25s\u001b[?1049h\u001b[?25l\u001b[?1003h\u001b[?1015h\u001b[?1006h\u001b[?2004h\u001b[?u\u001b[0c\u001b]0;Show-CommandTui400 — LH-01\u001b\\\u001b[1;1H\u001b[39m\u001b[49m┌┤Show-CommandTui400 — LH-01├──────────────────────────────────────────────────────────────────────┐\u001b[2;1H│                                                                                                  │\u001b[3;1H│ ⟦ Hilfe / Help ⟧\u001b[30m\u001b[49m▖\u001b[39m\u001b[49m                                                                                │\u001b[4;1H│ \u001b[30m\u001b[107m⟦ Aktionen / Actions ⟧\u001b[30m\u001b[49m▖\u001b[39m\u001b[49m                                                                          │\u001b[5;1H│ ⟦ Aktualisieren / Refresh ⟧\u001b[30m\u001b[49m▖\u001b[39m\u001b[49m                                                                     │\u001b[6;1H│ \u001b[30m\u001b[49m▝▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▘\u001b[39m\u001b[49m                                                                     │\u001b[7;1H│ \u001b[37m\u001b[47mFokus / Focus: Aktionen / Actions                                                               \u001b[39m\u001b[49m │\u001b[8;1H│ \u001b[37m\u001b[47mBeschäftigt / Busy: Ja / Yes                                                                    \u001b[39m\u001b[49m │\u001b[9;1H│ \u001b[37m\u001b[47mStatus / Status: synthetic?status                                                               \u001b[39m\u001b[49m │\u001b[10;1H│ \u001b[37m\u001b[47mFehler / Error: synthetic?[2J?error                                                             \u001b[39m\u001b[49m │\u001b[11;1H│ \u001b[37m\u001b[47mRolle: Textansicht mit Knöpfen / Role: text view with buttons                                   \u001b[39m\u001b[49m │\u001b[12;1H│ \u001b[37m\u001b[47mStartansicht / Start view: Hilfe und Aktionen / Help and actions                                \u001b[39m\u001b[49m │\u001b[13;1H│ \u001b[37m\u001b[47mTab/Umschalt+Tab und Pfeile bewegen den Fokus. Enter betätigt den Knopf. Bildtasten blättern    \u001b[39m\u001b[49m │\u001b[14;1H│ \u001b[37m\u001b[47mHilfe/Aktionen. Keine Zielausführung. / Tab/Shift+Tab and arrows move focus. Enter activates    \u001b[39m\u001b[49m │\u001b[15;1H│ \u001b[37m\u001b[47mthe button. Page keys scroll help/actions. No target execution.                                 \u001b[39m\u001b[49m │\u001b[16;1H│ \u001b[37m\u001b[47mAlt+H, F1 Hilfe / Help: verfügbar / available                                                   \u001b[39m\u001b[49m │\u001b[17;1H│ \u001b[37m\u001b[47mAlt+X, F3 Beenden / Exit: verfügbar / available                                                 \u001b[39m\u001b[49m │\u001b[18;1H│ \u001b[37m\u001b[47mAlt+B, Esc, F12 Zurück / Back: verfügbar / available                                            \u001b[39m\u001b[49m │\u001b[19;1H│ \u001b[37m\u001b[47mF5 Aktualisieren / Refresh: verfügbar / available                                               \u001b[39m\u001b[49m │\u001b[20;1H│ \u001b[37m\u001b[47mAlt+M Aktionen / Actions: verfügbar / available                                                 \u001b[39m\u001b[49m │\u001b[21;1H│ \u001b[37m\u001b[47mF4 Kontextauswahl / Context selection: nicht verfügbar / unavailable                            \u001b[39m\u001b[49m │\u001b[22;1H│ \u001b[37m\u001b[47mF9 Alle Parameter / All parameters: nicht verfügbar / unavailable                               \u001b[39m\u001b[49m │\u001b[23;1H│                                                                                                  │\u001b[24;1H└──────────────────────────────────────────────────────────────────────────────────────────────────┘\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[1;1H\u001b[39m\u001b[49m┌┤Show-CommandTui400 — LH-01├──────────────────────────────────────────────────────────────────────┐\u001b[2;1H│ \u001b[2;100H│\u001b[3;1H│ \u001b[3;19H\u001b[30m\u001b[49m▖\u001b[3;100H\u001b[39m\u001b[49m│\u001b[4;1H│ \u001b[4;25H\u001b[30m\u001b[49m▖\u001b[4;100H\u001b[39m\u001b[49m│\u001b[5;1H│ \u001b[5;30H\u001b[30m\u001b[49m▖\u001b[5;100H\u001b[39m\u001b[49m│\u001b[6;1H│ \u001b[30m\u001b[49m▝▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▘\u001b[6;100H\u001b[39m\u001b[49m│\u001b[7;1H│ \u001b[37m\u001b[47mFokus / Focus: Aktionen / Actions                                                               \u001b[7;100H\u001b[39m\u001b[49m│\u001b[8;1H│ \u001b[37m\u001b[47mBeschäftigt / Busy: Ja / Yes                                                                    \u001b[8;100H\u001b[39m\u001b[49m│\u001b[9;1H│ \u001b[37m\u001b[47mStatus / Status: synthetic?status                                                               \u001b[9;100H\u001b[39m\u001b[49m│\u001b[10;1H│ \u001b[37m\u001b[47mFehler / Error: synthetic?[2J?error                                                             \u001b[10;100H\u001b[39m\u001b[49m│\u001b[11;1H│ \u001b[37m\u001b[47mRolle: Textansicht mit Knöpfen / Role: text view with buttons                                   \u001b[11;100H\u001b[39m\u001b[49m│\u001b[12;1H│ \u001b[37m\u001b[47mHilfe / Help: Hilfe und Aktionen / Help and actions                                             \u001b[12;100H\u001b[39m\u001b[49m│\u001b[13;1H│ \u001b[37m\u001b[47mTab/Umschalt+Tab und Pfeile bewegen den Fokus. Enter betätigt den Knopf. Bildtasten blättern    \u001b[13;100H\u001b[39m\u001b[49m│\u001b[14;1H│ \u001b[37m\u001b[47mHilfe/Aktionen. Keine Zielausführung. / Tab/Shift+Tab and arrows move focus. Enter activates    \u001b[14;100H\u001b[39m\u001b[49m│\u001b[15;1H│ \u001b[37m\u001b[47mthe button. Page keys scroll help/actions. No target execution.                                 \u001b[15;100H\u001b[39m\u001b[49m│\u001b[16;1H│ \u001b[37m\u001b[47mAlt+H, F1 Hilfe / Help: verfügbar / available                                                   \u001b[16;100H\u001b[39m\u001b[49m│\u001b[17;1H│ \u001b[37m\u001b[47mAlt+X, F3 Beenden / Exit: verfügbar / available                                                 \u001b[17;100H\u001b[39m\u001b[49m│\u001b[18;1H│ \u001b[37m\u001b[47mAlt+B, Esc, F12 Zurück / Back: verfügbar / available                                            \u001b[18;100H\u001b[39m\u001b[49m│\u001b[19;1H│ \u001b[37m\u001b[47mF5 Aktualisieren / Refresh: verfügbar / available                                               \u001b[19;100H\u001b[39m\u001b[49m│\u001b[20;1H│ \u001b[37m\u001b[47mAlt+M Aktionen / Actions: verfügbar / available                                                 \u001b[20;100H\u001b[39m\u001b[49m│\u001b[21;1H│ \u001b[37m\u001b[47mF4 Kontextauswahl / Context selection: nicht verfügbar / unavailable                            \u001b[21;100H\u001b[39m\u001b[49m│\u001b[22;1H│ \u001b[37m\u001b[47mF9 Alle Parameter / All parameters: nicht verfügbar / unavailable                               \u001b[22;100H\u001b[39m\u001b[49m│\u001b[23;1H│ \u001b[23;100H│\u001b[24;1H└──────────────────────────────────────────────────────────────────────────────────────────────────┘\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[1;1H\u001b[39m\u001b[49m┌┤Show-CommandTui400 — LH-01├──────────────────────────────────────────────────────────────────────┐\u001b[2;1H│ \u001b[2;100H│\u001b[3;1H│ \u001b[3;19H\u001b[30m\u001b[49m▖\u001b[3;100H\u001b[39m\u001b[49m│\u001b[4;1H│ \u001b[4;25H\u001b[30m\u001b[49m▖\u001b[4;100H\u001b[39m\u001b[49m│\u001b[5;1H│ \u001b[5;30H\u001b[30m\u001b[49m▖\u001b[5;100H\u001b[39m\u001b[49m│\u001b[6;1H│ \u001b[30m\u001b[49m▝▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▘\u001b[6;100H\u001b[39m\u001b[49m│\u001b[7;1H│ \u001b[37m\u001b[47mF9 Alle Parameter / All parameters: nicht verfügbar / unavailable                               \u001b[7;100H\u001b[39m\u001b[49m│\u001b[8;1H│ \u001b[37m\u001b[47mF10 Weitere Parameter / More parameters: nicht verfügbar / unavailable                          \u001b[8;100H\u001b[39m\u001b[49m│\u001b[9;1H│ \u001b[37m\u001b[47mF11 Details / Details: nicht verfügbar / unavailable                                            \u001b[9;100H\u001b[39m\u001b[49m│\u001b[10;1H│ \u001b[37m\u001b[47m Auswählen / Select: nicht verfügbar / unavailable                                              \u001b[10;100H\u001b[39m\u001b[49m│\u001b[11;1H│ \u001b[37m\u001b[47m Bearbeiten / Edit: nicht verfügbar / unavailable                                               \u001b[11;100H\u001b[39m\u001b[49m│\u001b[12;1H│ \u001b[37m\u001b[47m Ausführen / Execute: nicht verfügbar / unavailable                                             \u001b[12;100H\u001b[39m\u001b[49m│\u001b[13;1H│ \u001b[37m\u001b[47m                                                                                                \u001b[13;100H\u001b[39m\u001b[49m│\u001b[14;1H│ \u001b[37m\u001b[47m                                                                                                \u001b[14;100H\u001b[39m\u001b[49m│\u001b[15;1H│ \u001b[37m\u001b[47m                                                                                                \u001b[15;100H\u001b[39m\u001b[49m│\u001b[16;1H│ \u001b[37m\u001b[47m                                                                                                \u001b[16;100H\u001b[39m\u001b[49m│\u001b[17;1H│ \u001b[37m\u001b[47m                                                                                                \u001b[17;100H\u001b[39m\u001b[49m│\u001b[18;1H│ \u001b[37m\u001b[47m                                                                                                \u001b[18;100H\u001b[39m\u001b[49m│\u001b[19;1H│ \u001b[37m\u001b[47m                                                                                                \u001b[19;100H\u001b[39m\u001b[49m│\u001b[20;1H│ \u001b[37m\u001b[47m                                                                                                \u001b[20;100H\u001b[39m\u001b[49m│\u001b[21;1H│ \u001b[37m\u001b[47m                                                                                                \u001b[21;100H\u001b[39m\u001b[49m│\u001b[22;1H│ \u001b[37m\u001b[47m                                                                                                \u001b[22;100H\u001b[39m\u001b[49m│\u001b[23;1H│ \u001b[23;100H│\u001b[24;1H└──────────────────────────────────────────────────────────────────────────────────────────────────┘\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[1;1H\u001b[39m\u001b[49m┌┤Show-CommandTui400 — LH-01├──────────────────────────────────────────────────────────────────────┐\u001b[2;1H│ \u001b[2;100H│\u001b[3;1H│ \u001b[3;19H\u001b[30m\u001b[49m▖\u001b[3;100H\u001b[39m\u001b[49m│\u001b[4;1H│ \u001b[4;25H\u001b[30m\u001b[49m▖\u001b[4;100H\u001b[39m\u001b[49m│\u001b[5;1H│ \u001b[5;30H\u001b[30m\u001b[49m▖\u001b[5;100H\u001b[39m\u001b[49m│\u001b[6;1H│ \u001b[30m\u001b[49m▝▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▘\u001b[6;100H\u001b[39m\u001b[49m│\u001b[7;1H│ \u001b[37m\u001b[47mFokus / Focus: Aktionen / Actions                                                               \u001b[7;100H\u001b[39m\u001b[49m│\u001b[8;1H│ \u001b[37m\u001b[47mBeschäftigt / Busy: Ja / Yes                                                                    \u001b[8;100H\u001b[39m\u001b[49m│\u001b[9;1H│ \u001b[37m\u001b[47mStatus / Status: synthetic?status                                                               \u001b[9;100H\u001b[39m\u001b[49m│\u001b[10;1H│ \u001b[37m\u001b[47mFehler / Error: synthetic?[2J?error                                                             \u001b[10;100H\u001b[39m\u001b[49m│\u001b[11;1H│ \u001b[37m\u001b[47mRolle: Textansicht mit Knöpfen / Role: text view with buttons                                   \u001b[11;100H\u001b[39m\u001b[49m│\u001b[12;1H│ \u001b[37m\u001b[47mHilfe / Help: Hilfe und Aktionen / Help and actions                                             \u001b[12;100H\u001b[39m\u001b[49m│\u001b[13;1H│ \u001b[37m\u001b[47mTab/Umschalt+Tab und Pfeile bewegen den Fokus. Enter betätigt den Knopf. Bildtasten blättern    \u001b[13;100H\u001b[39m\u001b[49m│\u001b[14;1H│ \u001b[37m\u001b[47mHilfe/Aktionen. Keine Zielausführung. / Tab/Shift+Tab and arrows move focus. Enter activates    \u001b[14;100H\u001b[39m\u001b[49m│\u001b[15;1H│ \u001b[37m\u001b[47mthe button. Page keys scroll help/actions. No target execution.                                 \u001b[15;100H\u001b[39m\u001b[49m│\u001b[16;1H│ \u001b[37m\u001b[47mAlt+H, F1 Hilfe / Help: verfügbar / available                                                   \u001b[16;100H\u001b[39m\u001b[49m│\u001b[17;1H│ \u001b[37m\u001b[47mAlt+X, F3 Beenden / Exit: verfügbar / available                                                 \u001b[17;100H\u001b[39m\u001b[49m│\u001b[18;1H│ \u001b[37m\u001b[47mAlt+B, Esc, F12 Zurück / Back: verfügbar / available                                            \u001b[18;100H\u001b[39m\u001b[49m│\u001b[19;1H│ \u001b[37m\u001b[47mF5 Aktualisieren / Refresh: verfügbar / available                                               \u001b[19;100H\u001b[39m\u001b[49m│\u001b[20;1H│ \u001b[37m\u001b[47mAlt+M Aktionen / Actions: verfügbar / available                                                 \u001b[20;100H\u001b[39m\u001b[49m│\u001b[21;1H│ \u001b[37m\u001b[47mF4 Kontextauswahl / Context selection: nicht verfügbar / unavailable                            \u001b[21;100H\u001b[39m\u001b[49m│\u001b[22;1H│ \u001b[37m\u001b[47mF9 Alle Parameter / All parameters: nicht verfügbar / unavailable                               \u001b[22;100H\u001b[39m\u001b[49m│\u001b[23;1H│ \u001b[23;100H│\u001b[24;1H└──────────────────────────────────────────────────────────────────────────────────────────────────┘\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[1;1H\u001b[39m\u001b[49m┌┤Show-CommandTui400 — LH-01├──────────────────────────────────────────────────────────────────────┐\u001b[2;1H│ \u001b[2;100H│\u001b[3;1H│ \u001b[3;19H\u001b[30m\u001b[49m▖\u001b[3;100H\u001b[39m\u001b[49m│\u001b[4;1H│ \u001b[4;25H\u001b[30m\u001b[49m▖\u001b[4;100H\u001b[39m\u001b[49m│\u001b[5;1H│ \u001b[5;30H\u001b[30m\u001b[49m▖\u001b[5;100H\u001b[39m\u001b[49m│\u001b[6;1H│ \u001b[30m\u001b[49m▝▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▘\u001b[6;100H\u001b[39m\u001b[49m│\u001b[7;1H│ \u001b[37m\u001b[47mFokus / Focus: Aktionen / Actions                                                               \u001b[7;100H\u001b[39m\u001b[49m│\u001b[8;1H│ \u001b[37m\u001b[47mBeschäftigt / Busy: Ja / Yes                                                                    \u001b[8;100H\u001b[39m\u001b[49m│\u001b[9;1H│ \u001b[37m\u001b[47mStatus / Status: synthetic?status                                                               \u001b[9;100H\u001b[39m\u001b[49m│\u001b[10;1H│ \u001b[37m\u001b[47mFehler / Error: synthetic?[2J?error                                                             \u001b[10;100H\u001b[39m\u001b[49m│\u001b[11;1H│ \u001b[37m\u001b[47mRolle: Textansicht mit Knöpfen / Role: text view with buttons                                   \u001b[11;100H\u001b[39m\u001b[49m│\u001b[12;1H│ \u001b[37m\u001b[47mHilfe / Help: Hilfe und Aktionen / Help and actions                                             \u001b[12;100H\u001b[39m\u001b[49m│\u001b[13;1H│ \u001b[37m\u001b[47mTab/Umschalt+Tab und Pfeile bewegen den Fokus. Enter betätigt den Knopf. Bildtasten blättern    \u001b[13;100H\u001b[39m\u001b[49m│\u001b[14;1H│ \u001b[37m\u001b[47mHilfe/Aktionen. Keine Zielausführung. / Tab/Shift+Tab and arrows move focus. Enter activates    \u001b[14;100H\u001b[39m\u001b[49m│\u001b[15;1H│ \u001b[37m\u001b[47mthe button. Page keys scroll help/actions. No target execution.                                 \u001b[15;100H\u001b[39m\u001b[49m│\u001b[16;1H│ \u001b[37m\u001b[47mAlt+H, F1 Hilfe / Help: verfügbar / available                                                   \u001b[16;100H\u001b[39m\u001b[49m│\u001b[17;1H│ \u001b[37m\u001b[47mAlt+X, F3 Beenden / Exit: verfügbar / available                                                 \u001b[17;100H\u001b[39m\u001b[49m│\u001b[18;1H│ \u001b[37m\u001b[47mAlt+B, Esc, F12 Zurück / Back: verfügbar / available                                            \u001b[18;100H\u001b[39m\u001b[49m│\u001b[19;1H│ \u001b[37m\u001b[47mF5 Aktualisieren / Refresh: verfügbar / available                                               \u001b[19;100H\u001b[39m\u001b[49m│\u001b[20;1H│ \u001b[37m\u001b[47mAlt+M Aktionen / Actions: verfügbar / available                                                 \u001b[20;100H\u001b[39m\u001b[49m│\u001b[21;1H│ \u001b[37m\u001b[47mF4 Kontextauswahl / Context selection: nicht verfügbar / unavailable                            \u001b[21;100H\u001b[39m\u001b[49m│\u001b[22;1H│ \u001b[37m\u001b[47mF9 Alle Parameter / All parameters: nicht verfügbar / unavailable                               \u001b[22;100H\u001b[39m\u001b[49m│\u001b[23;1H│ \u001b[23;100H│\u001b[24;1H└──────────────────────────────────────────────────────────────────────────────────────────────────┘\u001b[?25l\u001b[1;1H\u001b[?2004l\u001b[?1003l\u001b[?1015l\u001b[?1006l\u001b[?1049l\u001b[?25h\u001b[?25rLH01_SHELL_INPUT_READY\r\nLH01_ACK\r\nSynthetic return check: \u001b[6nL\u001b[1;1HLH\u001b[1;1HLH0\u001b[1;1HLH01\u001b[1;1HLH01_\u001b[1;1HLH01_A\u001b[1;1HLH01_AC\u001b[1;1HLH01_ACK\r\nLH01_RESULT\r\n{\"Scenario\":\"TextState\",\"RedirectBoundary\":{\"Input\":false,\"Output\":false},\"SecurityNegative\":null,\"RenderObservations\":[{\"Width\":100,\"Height\":24,\"Small\":false,\"Focus\":\"ActionsMenu\",\"Context\":\"Root\",\"Busy\":true,\"Text\":\"Fokus / Focus: Aktionen / Actions\\nBeschäftigt / Busy: Ja / Yes\\nStatus / Status: synthetic?status\\nFehler / Error: synthetic?[2J?error\\nRolle: Textansicht mit Knöpfen / Role: text view with buttons\\nStartansicht / Start view: Hilfe und Aktionen / Help and actions\\nTab/Umschalt+Tab und Pfeile bewegen den Fokus. Enter betätigt den Knopf. Bildtasten blättern Hilfe/Aktionen. Keine Zielausführung. / Tab/Shift+Tab and arrows move focus. Enter activates the button. Page keys scroll help/actions. No target execution.\\nAlt+H, F1 Hilfe / Help: verfügbar / available\\nAlt+X, F3 Beenden / Exit: verfügbar / available\\nAlt+B, Esc, F12 Zurück / Back: verfügbar / available\\nF5 Aktualisieren / Refresh: verfügbar / available\\nAlt+M Aktionen / Actions: verfügbar / available\\nF4 Kontextauswahl / Context selection: nicht verfügbar / unavailable\\nF9 Alle Parameter / All parameters: nicht verfügbar / unavailable\\nF10 Weitere Parameter / More parameters: nicht verfügbar / unavailable\\nF11 Details / Details: nicht verfügbar / unavailable\\n Auswählen / Select: nicht verfügbar / unavailable\\n Bearbeiten / Edit: nicht verfügbar / unavailable\\n Ausführen / Execute: nicht verfügbar / unavailable\"},{\"Width\":100,\"Height\":24,\"Small\":false,\"Focus\":\"ActionsMenu\",\"Context\":\"Help\",\"Busy\":true,\"Text\":\"Fokus / Focus: Aktionen / Actions\\nBeschäftigt / Busy: Ja / Yes\\nStatus / Status: synthetic?status\\nFehler / Error: synthetic?[2J?error\\nRolle: Textansicht mit Knöpfen / Role: text view with buttons\\nHilfe / Help: Hilfe und Aktionen / Help and actions\\nTab/Umschalt+Tab und Pfeile bewegen den Fokus. Enter betätigt den Knopf. Bildtasten blättern Hilfe/Aktionen. Keine Zielausführung. / Tab/Shift+Tab and arrows move focus. Enter activates the button. Page keys scroll help/actions. No target execution.\\nAlt+H, F1 Hilfe / Help: verfügbar / available\\nAlt+X, F3 Beenden / Exit: verfügbar / available\\nAlt+B, Esc, F12 Zurück / Back: verfügbar / available\\nF5 Aktualisieren / Refresh: verfügbar / available\\nAlt+M Aktionen / Actions: verfügbar / available\\nF4 Kontextauswahl / Context selection: nicht verfügbar / unavailable\\nF9 Alle Parameter / All parameters: nicht verfügbar / unavailable\\nF10 Weitere Parameter / More parameters: nicht verfügbar / unavailable\\nF11 Details / Details: nicht verfügbar / unavailable\\n Auswählen / Select: nicht verfügbar / unavailable\\n Bearbeiten / Edit: nicht verfügbar / unavailable\\n Ausführen / Execute: nicht verfügbar / unavailable\"},{\"Width\":100,\"Height\":24,\"Small\":false,\"Focus\":\"ActionsMenu\",\"Context\":\"Help\",\"Busy\":true,\"Text\":\"Fokus / Focus: Aktionen / Actions\\nBeschäftigt / Busy: Ja / Yes\\nStatus / Status: synthetic?status\\nFehler / Error: synthetic?[2J?error\\nRolle: Textansicht mit Knöpfen / Role: text view with buttons\\nHilfe / Help: Hilfe und Aktionen / Help and actions\\nTab/Umschalt+Tab und Pfeile bewegen den Fokus. Enter betätigt den Knopf. Bildtasten blättern Hilfe/Aktionen. Keine Zielausführung. / Tab/Shift+Tab and arrows move focus. Enter activates the button. Page keys scroll help/actions. No target execution.\\nAlt+H, F1 Hilfe / Help: verfügbar / available\\nAlt+X, F3 Beenden / Exit: verfügbar / available\\nAlt+B, Esc, F12 Zurück / Back: verfügbar / available\\nF5 Aktualisieren / Refresh: verfügbar / available\\nAlt+M Aktionen / Actions: verfügbar / available\\nF4 Kontextauswahl / Context selection: nicht verfügbar / unavailable\\nF9 Alle Parameter / All parameters: nicht verfügbar / unavailable\\nF10 Weitere Parameter / More parameters: nicht verfügbar / unavailable\\nF11 Details / Details: nicht verfügbar / unavailable\\n Auswählen / Select: nicht verfügbar / unavailable\\n Bearbeiten / Edit: nicht verfügbar / unavailable\\n Ausführen / Execute: nicht verfügbar / unavailable\"}],\"SyntheticValueRetained\":true,\"InputObservations\":[{\"Key\":\"Alt+H\",\"Action\":\"Help\",\"Context\":\"Help\",\"Focus\":\"ActionsMenu\",\"FrameworkFocus\":\"ActionsMenu\",\"Accepted\":true,\"ExitRequested\":false,\"ScrollTop\":0},{\"Key\":\"PageDown\",\"Action\":null,\"Context\":\"Help\",\"Focus\":\"ActionsMenu\",\"FrameworkFocus\":\"ActionsMenu\",\"Accepted\":true,\"ExitRequested\":false,\"ScrollTop\":15},{\"Key\":\"PageUp\",\"Action\":null,\"Context\":\"Help\",\"Focus\":\"ActionsMenu\",\"FrameworkFocus\":\"ActionsMenu\",\"Accepted\":true,\"ExitRequested\":false,\"ScrollTop\":0},{\"Key\":\"Alt+X\",\"Action\":\"Exit\",\"Context\":\"Help\",\"Focus\":\"ActionsMenu\",\"FrameworkFocus\":\"ActionsMenu\",\"Accepted\":true,\"ExitRequested\":true,\"ScrollTop\":0}],\"Before\":{\"Pid\":72398,\"Runspace\":\"5cb564b6-1fca-446b-96cb-218753a47cd2\",\"Location\":\"synthetic-working-directory\",\"Synthetic\":710,\"Preference\":1,\"FunctionResult\":710},\"After\":{\"Pid\":72398,\"Runspace\":\"5cb564b6-1fca-446b-96cb-218753a47cd2\",\"Location\":\"synthetic-working-directory\",\"Synthetic\":710,\"Preference\":1,\"FunctionResult\":710},\"ContextUnchanged\":true,\"LocationUnchanged\":true,\"ModuleSetUnchanged\":true,\"LeaseAcquisitions\":1,\"UiCreations\":1,\"ScopeObservations\":[{\"ProcessId\":72398,\"RunspaceId\":\"5cb564b6-1fca-446b-96cb-218753a47cd2\",\"Location\":\"synthetic-working-directory\",\"Synthetic\":710}],\"NativeRestore\":{\"Platform\":\"macOS-arm64\",\"Before\":\"022B0000000000000300000000000000004B000000000000CB0500000000000004FFFF7F171512FF031C1A191113160F010014FF0000000080250000000000008025000000000000\",\"After\":\"022B0000000000000300000000000000004B000000000000CB0500200000000004FFFF7F171512FF031C1A191113160F010014FF0000000080250000000000008025000000000000\",\"RawEqual\":false,\"ConfiguredEqual\":true,\"Boundary\":\"Only independently reproduced Darwin PENDIN (0x20000000) excluded from configured comparison; raw bytes retained\"},\"StopCalls\":0,\"PipelineState\":null,\"IsolatedTestRunspace\":false,\"ShellReadback\":\"LH01_ACK\",\"Failure\":null}\r\nLH01_RESTORE_READY\r\n",
+  "sanitizedTranscriptSha256": "debfb3b9028250328901251bf3bccc45e91c07218cc434611f1b259f52f70397",
+  "assemblySha256": "b6de42d56a6ffd9b93dfea14eb4604caf4d3a869b8d07ac362df645fa82b437f",
+  "finalCursorVisibleAtReturn": true,
+  "cursorModeRestoreObserved": true,
+  "initialCursorBoundary": "synthetic xterm mode-25 protocol emulation; hidden and visible cases; no physical terminal proof",
+  "scenario": "TextState",
+  "environment": "synthetic Unix PTY; no physical terminal/assistive acceptance",
+  "command": [
+    "pwsh",
+    "-NoLogo",
+    "-NoProfile",
+    "-File",
+    "tests/feasibility/lh01/session-contract.ps1",
+    "-Scenario",
+    "TextState",
+    "-Module",
+    "<build>/ShowCommandTui400/bin/net10.0/ShowCommandTui400.psd1",
+    "-TestAssembly",
+    "<build>/ShowCommandTui400.Tests/bin/net10.0/ShowCommandTui400.Tests.dll",
+    "-ObservationFile",
+    "<case>/TextState.observation.json"
+  ],
+  "exitCode": 0,
+  "expectedExitCode": 0,
+  "result": "Pass",
+  "diagnosticContractSatisfied": true,
+  "failureScope": null,
+  "timeout": false,
+  "steps": [
+    "Alt+H",
+    "PageDown",
+    "PageUp",
+    "Alt+X",
+    "synthetic-shell-readback"
+  ],
+  "cursorShowObserved": true,
+  "transcriptSha256": "debfb3b9028250328901251bf3bccc45e91c07218cc434611f1b259f52f70397",
+  "termiosBefore": [
+    11010,
+    3,
+    19200,
+    1483,
+    9600,
+    9600,
+    [
+      "04",
+      "ff",
+      "ff",
+      "7f",
+      "17",
+      "15",
+      "12",
+      "ff",
+      "03",
+      "1c",
+      "1a",
+      "19",
+      "11",
+      "13",
+      "16",
+      "0f",
+      "01",
+      "00",
+      "14",
+      "ff"
+    ]
+  ],
+  "termiosAfter": [
+    10242,
+    3,
+    19200,
+    195,
+    9600,
+    9600,
+    [
+      "04",
+      "ff",
+      "ff",
+      "7f",
+      "17",
+      "15",
+      "12",
+      "ff",
+      "03",
+      "1c",
+      "1a",
+      "19",
+      "11",
+      "13",
+      "16",
+      "0f",
+      1,
+      0,
+      "14",
+      "ff"
+    ]
+  ],
+  "observation": {
+    "Scenario": "TextState",
+    "RedirectBoundary": {
+      "Input": false,
+      "Output": false
+    },
+    "SecurityNegative": null,
+    "RenderObservations": [
+      {
+        "Width": 100,
+        "Height": 24,
+        "Small": false,
+        "Focus": "ActionsMenu",
+        "Context": "Root",
+        "Busy": true,
+        "Text": "Fokus / Focus: Aktionen / Actions\nBeschäftigt / Busy: Ja / Yes\nStatus / Status: synthetic?status\nFehler / Error: synthetic?[2J?error\nRolle: Textansicht mit Knöpfen / Role: text view with buttons\nStartansicht / Start view: Hilfe und Aktionen / Help and actions\nTab/Umschalt+Tab und Pfeile bewegen den Fokus. Enter betätigt den Knopf. Bildtasten blättern Hilfe/Aktionen. Keine Zielausführung. / Tab/Shift+Tab and arrows move focus. Enter activates the button. Page keys scroll help/actions. No target execution.\nAlt+H, F1 Hilfe / Help: verfügbar / available\nAlt+X, F3 Beenden / Exit: verfügbar / available\nAlt+B, Esc, F12 Zurück / Back: verfügbar / available\nF5 Aktualisieren / Refresh: verfügbar / available\nAlt+M Aktionen / Actions: verfügbar / available\nF4 Kontextauswahl / Context selection: nicht verfügbar / unavailable\nF9 Alle Parameter / All parameters: nicht verfügbar / unavailable\nF10 Weitere Parameter / More parameters: nicht verfügbar / unavailable\nF11 Details / Details: nicht verfügbar / unavailable\n Auswählen / Select: nicht verfügbar / unavailable\n Bearbeiten / Edit: nicht verfügbar / unavailable\n Ausführen / Execute: nicht verfügbar / unavailable"
+      },
+      {
+        "Width": 100,
+        "Height": 24,
+        "Small": false,
+        "Focus": "ActionsMenu",
+        "Context": "Help",
+        "Busy": true,
+        "Text": "Fokus / Focus: Aktionen / Actions\nBeschäftigt / Busy: Ja / Yes\nStatus / Status: synthetic?status\nFehler / Error: synthetic?[2J?error\nRolle: Textansicht mit Knöpfen / Role: text view with buttons\nHilfe / Help: Hilfe und Aktionen / Help and actions\nTab/Umschalt+Tab und Pfeile bewegen den Fokus. Enter betätigt den Knopf. Bildtasten blättern Hilfe/Aktionen. Keine Zielausführung. / Tab/Shift+Tab and arrows move focus. Enter activates the button. Page keys scroll help/actions. No target execution.\nAlt+H, F1 Hilfe / Help: verfügbar / available\nAlt+X, F3 Beenden / Exit: verfügbar / available\nAlt+B, Esc, F12 Zurück / Back: verfügbar / available\nF5 Aktualisieren / Refresh: verfügbar / available\nAlt+M Aktionen / Actions: verfügbar / available\nF4 Kontextauswahl / Context selection: nicht verfügbar / unavailable\nF9 Alle Parameter / All parameters: nicht verfügbar / unavailable\nF10 Weitere Parameter / More parameters: nicht verfügbar / unavailable\nF11 Details / Details: nicht verfügbar / unavailable\n Auswählen / Select: nicht verfügbar / unavailable\n Bearbeiten / Edit: nicht verfügbar / unavailable\n Ausführen / Execute: nicht verfügbar / unavailable"
+      },
+      {
+        "Width": 100,
+        "Height": 24,
+        "Small": false,
+        "Focus": "ActionsMenu",
+        "Context": "Help",
+        "Busy": true,
+        "Text": "Fokus / Focus: Aktionen / Actions\nBeschäftigt / Busy: Ja / Yes\nStatus / Status: synthetic?status\nFehler / Error: synthetic?[2J?error\nRolle: Textansicht mit Knöpfen / Role: text view with buttons\nHilfe / Help: Hilfe und Aktionen / Help and actions\nTab/Umschalt+Tab und Pfeile bewegen den Fokus. Enter betätigt den Knopf. Bildtasten blättern Hilfe/Aktionen. Keine Zielausführung. / Tab/Shift+Tab and arrows move focus. Enter activates the button. Page keys scroll help/actions. No target execution.\nAlt+H, F1 Hilfe / Help: verfügbar / available\nAlt+X, F3 Beenden / Exit: verfügbar / available\nAlt+B, Esc, F12 Zurück / Back: verfügbar / available\nF5 Aktualisieren / Refresh: verfügbar / available\nAlt+M Aktionen / Actions: verfügbar / available\nF4 Kontextauswahl / Context selection: nicht verfügbar / unavailable\nF9 Alle Parameter / All parameters: nicht verfügbar / unavailable\nF10 Weitere Parameter / More parameters: nicht verfügbar / unavailable\nF11 Details / Details: nicht verfügbar / unavailable\n Auswählen / Select: nicht verfügbar / unavailable\n Bearbeiten / Edit: nicht verfügbar / unavailable\n Ausführen / Execute: nicht verfügbar / unavailable"
+      }
+    ],
+    "SyntheticValueRetained": true,
+    "InputObservations": [
+      {
+        "Key": "Alt+H",
+        "Action": "Help",
+        "Context": "Help",
+        "Focus": "ActionsMenu",
+        "FrameworkFocus": "ActionsMenu",
+        "Accepted": true,
+        "ExitRequested": false,
+        "ScrollTop": 0
+      },
+      {
+        "Key": "PageDown",
+        "Action": null,
+        "Context": "Help",
+        "Focus": "ActionsMenu",
+        "FrameworkFocus": "ActionsMenu",
+        "Accepted": true,
+        "ExitRequested": false,
+        "ScrollTop": 15
+      },
+      {
+        "Key": "PageUp",
+        "Action": null,
+        "Context": "Help",
+        "Focus": "ActionsMenu",
+        "FrameworkFocus": "ActionsMenu",
+        "Accepted": true,
+        "ExitRequested": false,
+        "ScrollTop": 0
+      },
+      {
+        "Key": "Alt+X",
+        "Action": "Exit",
+        "Context": "Help",
+        "Focus": "ActionsMenu",
+        "FrameworkFocus": "ActionsMenu",
+        "Accepted": true,
+        "ExitRequested": true,
+        "ScrollTop": 0
+      }
+    ],
+    "Before": {
+      "Pid": 72398,
+      "Runspace": "5cb564b6-1fca-446b-96cb-218753a47cd2",
+      "Location": "synthetic-working-directory",
+      "Synthetic": 710,
+      "Preference": 1,
+      "FunctionResult": 710
+    },
+    "After": {
+      "Pid": 72398,
+      "Runspace": "5cb564b6-1fca-446b-96cb-218753a47cd2",
+      "Location": "synthetic-working-directory",
+      "Synthetic": 710,
+      "Preference": 1,
+      "FunctionResult": 710
+    },
+    "ContextUnchanged": true,
+    "LocationUnchanged": true,
+    "ModuleSetUnchanged": true,
+    "LeaseAcquisitions": 1,
+    "UiCreations": 1,
+    "ScopeObservations": [
+      {
+        "ProcessId": 72398,
+        "RunspaceId": "5cb564b6-1fca-446b-96cb-218753a47cd2",
+        "Location": "synthetic-working-directory",
+        "Synthetic": 710
+      }
+    ],
+    "NativeRestore": {
+      "Platform": "macOS-arm64",
+      "Before": "022B0000000000000300000000000000004B000000000000CB0500000000000004FFFF7F171512FF031C1A191113160F010014FF0000000080250000000000008025000000000000",
+      "After": "022B0000000000000300000000000000004B000000000000CB0500200000000004FFFF7F171512FF031C1A191113160F010014FF0000000080250000000000008025000000000000",
+      "RawEqual": false,
+      "ConfiguredEqual": true,
+      "Boundary": "Only independently reproduced Darwin PENDIN (0x20000000) excluded from configured comparison; raw bytes retained"
+    },
+    "StopCalls": 0,
+    "PipelineState": null,
+    "IsolatedTestRunspace": false,
+    "ShellReadback": "LH01_ACK",
+    "Failure": null
+  }
+}

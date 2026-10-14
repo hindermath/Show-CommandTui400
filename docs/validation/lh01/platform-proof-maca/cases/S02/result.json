@@ -1,0 +1,66 @@
+{
+  "caseId": "S02",
+  "productCommit": "41ec0f34d35c9d9e187e1a101b806d7ac93f6b00",
+  "outcome": "RestoredAndShellUsable",
+  "result": "Pass",
+  "evidenceIds": [
+    "E01-04"
+  ],
+  "observations": [
+    {
+      "scenario": "Normal",
+      "exitCode": 0,
+      "result": "Pass",
+      "diagnosticContractSatisfied": true
+    },
+    {
+      "scenario": "HiddenCursor",
+      "exitCode": 0,
+      "result": "Pass",
+      "diagnosticContractSatisfied": true
+    }
+  ],
+  "files": [
+    {
+      "path": "HiddenCursor.json",
+      "sha256": "10d461df603933e962b0e19adf8cdf563bf61e5f42a168d53e017bbd831219e4"
+    },
+    {
+      "path": "HiddenCursor.observation.json",
+      "sha256": "871e194aebd7756de0458f84a1fae29f19c33be75947b205d19cbcdab504988f"
+    },
+    {
+      "path": "HiddenCursor.observation.json.input-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "HiddenCursor.observation.json.restore-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "HiddenCursor.txt",
+      "sha256": "b7f4c75c2ba8ef2cd5c2f0cd8746c6aaa74cf402d467ca1b8fd25c54b4a9e7a2"
+    },
+    {
+      "path": "Normal.json",
+      "sha256": "adbf7df44fb0989d9c59129bf4dcf55b20f4507b6544ccce35915f995587b8e4"
+    },
+    {
+      "path": "Normal.observation.json",
+      "sha256": "83ceb2d371c18da0d3a271828ceee4cffb388518fafb270763232b3f76b986c9"
+    },
+    {
+      "path": "Normal.observation.json.input-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "Normal.observation.json.restore-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "Normal.txt",
+      "sha256": "d4969e40ee4786a1b5ad6383237063d4b3ad7260e3695bb59e0ceef04f517d0e"
+    }
+  ],
+  "scope": "automated product/model evidence only; independent review and physical acceptance remain open"
+}

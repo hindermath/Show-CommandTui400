@@ -1,0 +1,37 @@
+{
+  "caseId": "N02",
+  "productCommit": "b1848b0157158fa4d821c975cfb3cea08753475d",
+  "outcome": "RejectedWithoutStateChange",
+  "result": "Pass",
+  "evidenceIds": [
+    "E01-01",
+    "E01-06"
+  ],
+  "observations": [
+    {
+      "scenario": "InputRedirect",
+      "exitCode": 0,
+      "result": "Pass",
+      "diagnosticContractSatisfied": true
+    }
+  ],
+  "files": [
+    {
+      "path": "InputRedirect.json",
+      "sha256": "f5042d13688dda18f2f4770ff68293326f134cb575836653199bab3328501431"
+    },
+    {
+      "path": "InputRedirect.observation.json",
+      "sha256": "98bb66595b76bb7759cfc1e26befe8f9ac64594a0c44d1d1b91d1e090d73e05d"
+    },
+    {
+      "path": "InputRedirect.observation.json.restore-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "InputRedirect.txt",
+      "sha256": "eeac177b74f621a59d496e35f4cef180c34d5cb5df1af9ccda2753747c6e4c08"
+    }
+  ],
+  "scope": "automated product/model evidence only; independent review and physical acceptance remain open"
+}

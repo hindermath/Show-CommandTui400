@@ -11,6 +11,8 @@ nothing. Missing prerequisites return Blocked (exit2). Executes argument arrays
 without shell evaluation. No installation, repair, publishing or acceptance.
 .PARAMETER Plan
 DE: Expliziter lokaler Prüfplan. EN: Explicit local test manifest.
+.PARAMETER ExpectedPlanSha256
+DE: SHA-256 aus dem ausdrücklichen Prüfauftrag. EN: SHA-256 pinned by the target execution order.
 .PARAMETER Target
 DE: macb, windows oder ubuntu-wsl2. EN: Explicit approved target identifier.
 .PARAMETER OutputDirectory
@@ -22,7 +24,7 @@ DE: Nur Voraussetzungen prüfen. EN: Inspect prerequisites without running tests
 pwsh -NoProfile -File ./tests/feasibility/lh01/Invoke-Lh01PlatformProof.ps1 -Plan ./docs/validation/lh01/platform-handoff.json -Target macb -OutputDirectory /tmp/lh01-proof-new -CheckOnly
 #>
 [CmdletBinding()]
-param([Parameter(Mandatory)][string]$Plan,
+param([Parameter(Mandatory)][string]$Plan,[string]$ExpectedPlanSha256,
     [Parameter(Mandatory)][ValidateSet('macb','windows','ubuntu-wsl2')][string]$Target,
     [Parameter(Mandatory)][string]$OutputDirectory,[switch]$CheckOnly)
 Set-StrictMode -Version Latest
@@ -50,6 +52,7 @@ try {
     $schema=Resolve-BoundPath 'docs/validation/lh01/approved-commands.schema.json'
     $commandsJson=ConvertTo-Json -InputObject @($manifest.approvedCommands) -Depth 30
     if(-not(Test-Json -Json $commandsJson -SchemaFile $schema -ErrorAction Stop)){throw 'Invalid approvedCommands schema'}
+    if($manifest.state -ceq 'Executable' -and ($ExpectedPlanSha256 -cnotmatch '^[0-9a-f]{64}$' -or (Get-Sha $planPath) -cne $ExpectedPlanSha256)){$blockers.Add('Execution order must pin the exact approval manifest hash')}
     if($manifest.schemaVersion -ne 1){throw 'Unsupported proof plan schema'}
     if($manifest.executionAuthorized -isnot [bool]){throw 'executionAuthorized must be boolean'}
     foreach($case in $manifest.cases){if($case.enabled -isnot [bool]){throw 'Case enabled must be boolean'}}
@@ -57,13 +60,57 @@ try {
     if($manifest.productCommit -notmatch '^[0-9a-f]{40}$'){$blockers.Add('Exact product commit missing')}
     if($manifest.driver.sha256 -notmatch '^[0-9a-f]{64}$' -or (Get-Sha (Resolve-BoundPath $manifest.driver.path)) -cne $manifest.driver.sha256){$blockers.Add('Driver hash missing or mismatched')}
     if($manifest.decisionSha256 -notmatch '^[0-9a-f]{64}$' -or (Get-Sha (Resolve-BoundPath 'specs/002-lh01-tui-foundation/feasibility/decisions.md')) -cne $manifest.decisionSha256){$blockers.Add('Decision hash missing or mismatched')}
-    if(-not $manifest.macAProofReference){$blockers.Add('Mac A product proof missing')}else{[void](Resolve-BoundPath $manifest.macAProofReference)}
+    if(-not $manifest.macAProofReference){$blockers.Add('Mac A product proof missing')}else{
+        # Approval evidence can follow the immutable product commit. Resolve only
+        # within the approval manifest directory, never relative to the product.
+        $proofRelative=[string]$manifest.macAProofReference
+        if([IO.Path]::IsPathRooted($proofRelative) -or $proofRelative -match '(^|[/\\])\.\.([/\\]|$)' -or $proofRelative.Contains('\')){throw 'Invalid approval proof path'}
+        $proofRoot=Split-Path -Parent $planPath
+        $proofPath=[IO.Path]::GetFullPath((Join-Path $proofRoot $proofRelative))
+        if(-not $proofPath.StartsWith($proofRoot+[IO.Path]::DirectorySeparatorChar,[StringComparison]::OrdinalIgnoreCase)){throw 'Proof escapes approval directory'}
+        $ancestor=$proofPath
+        while($ancestor){if(Test-Path -LiteralPath $ancestor){$item=Get-Item -LiteralPath $ancestor -Force;if($item.LinkType -or ($item.Attributes -band [IO.FileAttributes]::ReparsePoint)){throw 'Symlink/reparse in approval proof'}};$ancestor=Split-Path -Parent $ancestor}
+        if(-not $manifest.ContainsKey('macAProofSha256') -or $manifest.macAProofSha256 -notmatch '^[0-9a-f]{64}$' -or (Get-Sha $proofPath) -cne $manifest.macAProofSha256){throw 'Mac A proof hash missing or mismatched'}
+        $proof=Get-Content -LiteralPath $proofPath -Raw|ConvertFrom-Json -AsHashtable
+        if($proof.productCommit -cne $manifest.productCommit -or $proof.mainStatus -cne 'Pass' -or $proof.scope -cne 'maca' -or $proof.diagnosticStatus -cne 'Fail' -or $proof.diagnosticExpectationSatisfied -ne $true){throw 'Mac A proof does not cover approved product revision'}
+        if($proof.environment.hardware.machine_name -notmatch 'MacBook Air' -or $proof.environment.hardware.chip_type -cne 'Apple M2'){throw 'Mac A proof hardware mismatch'}
+        $proofCases=@($proof.cases)
+        $proofIds=@($proofCases|ForEach-Object caseId|Sort-Object)
+        $planIds=@($manifest.cases|ForEach-Object id|Sort-Object)
+        if($proofCases.Count -ne 20 -or ($proofIds|ConvertTo-Json -Compress) -cne ($planIds|ConvertTo-Json -Compress) -or @($proofCases|Where-Object {$_.expectationSatisfied -ne $true}).Count){throw 'Mac A proof inventory incomplete'}
+        foreach($caseProof in $proofCases){
+            $caseDefinition=@($manifest.cases|Where-Object id -CEQ $caseProof.caseId)[0]
+            if($caseProof.result -cne $caseDefinition.requiredResult -or $caseProof.exitCode -ne $(if($caseProof.caseId -eq 'S07'){1}else{0})){throw 'Mac A proof result mismatch'}
+        }
+        foreach($bound in $proof.files){
+            $relative=[string]$bound.path
+            if([IO.Path]::IsPathRooted($relative) -or $relative.Contains('\') -or $relative -match '(^|/)\.\.(/|$)'){throw 'Invalid raw evidence path'}
+            $file=Join-Path (Split-Path -Parent $proofPath) $relative
+            $current=$file
+            while($current){if(Test-Path -LiteralPath $current){$item=Get-Item -LiteralPath $current -Force;if($item.LinkType -or ($item.Attributes -band [IO.FileAttributes]::ReparsePoint)){throw 'Symlink/reparse raw evidence'}};$current=Split-Path -Parent $current}
+            if($bound.sha256 -notmatch '^[0-9a-f]{64}$' -or (Get-Sha $file) -cne $bound.sha256){throw 'Mac A raw evidence hash mismatch'}
+        }
+    }
+    if($manifest.state -ceq 'Executable'){
+        if(-not $manifest.ContainsKey('fileBindings') -or @($manifest.fileBindings).Count -lt 8){throw 'Execution file bindings missing'}
+        foreach($bound in $manifest.fileBindings){if($bound.sha256 -notmatch '^[0-9a-f]{64}$' -or (Get-Sha (Resolve-BoundPath $bound.path)) -cne $bound.sha256){throw 'Execution file binding mismatch'}}
+    }
     if(-not $manifest.ContainsKey('approval') -or $manifest.approval.owner -cne 'Thorsten Hindermann' -or -not $manifest.approval.requestReference -or -not $manifest.approval.approvedAt){$blockers.Add('Separate target execution approval missing')}
     $head=(& git -C $root rev-parse HEAD).Trim()
     $status=@(& git -C $root status --porcelain --untracked-files=all)
     if($head -cne $manifest.productCommit -or $status.Count -ne 0){$blockers.Add('Checkout differs from clean approved product commit')}
     foreach($requiredFile in @('src/ShowCommandTui400/ShowCommandTui400.csproj','src/ShowCommandTui400/packages.lock.json','tests/ShowCommandTui400.Tests/ShowCommandTui400.Tests.csproj','tests/ShowCommandTui400.Tests/packages.lock.json','tests/feasibility/lh01/session-contract.ps1')){[void](Resolve-BoundPath $requiredFile)}
     if($PSVersionTable.PSVersion -lt [semver]'7.6.4'){$blockers.Add('PowerShell 7.6.4+ required')}
+    $sdk=Get-Command dotnet -CommandType Application -ErrorAction SilentlyContinue|Select-Object -First 1
+    if(-not $sdk){$blockers.Add('NET10 SDK missing')}else{
+        $sdks=& $sdk.Source --list-sdks
+        if($LASTEXITCODE -ne 0 -or -not @($sdks|Where-Object {$_ -match '^10\.0\.'}).Count){$blockers.Add('NET10 SDK required')}
+    }
+    $python=Get-Command python3 -CommandType Application -ErrorAction SilentlyContinue|Select-Object -First 1
+    if(-not $python){$blockers.Add('Python3 missing')}else{
+        $pythonVersion=& $python.Source --version
+        if($LASTEXITCODE -ne 0 -or $pythonVersion -notmatch '^Python (3\.(9|[1-9][0-9])|[4-9]\.)'){$blockers.Add('Python3.9+ required')}
+    }
     $targetEntry=@($manifest.targets|Where-Object id -CEQ $Target)
     if($targetEntry.Count -ne 1){$blockers.Add('Target missing or duplicated')}
     if($Target -eq 'macb'){
@@ -75,6 +122,7 @@ try {
     }
     if($Target -eq 'windows' -and (-not $IsWindows -or [Environment]::OSVersion.Version.Build -lt 22000)){$blockers.Add('Native Windows 11 required')}
     if($Target -eq 'ubuntu-wsl2'){
+        foreach($toolName in @('cmd.exe','wsl.exe')){if(-not(Get-Command $toolName -CommandType Application -ErrorAction SilentlyContinue)){$blockers.Add('WSL host version tool missing: '+$toolName)}}
         if(-not $IsLinux){$blockers.Add('Linux PowerShell required')}else{
             $osRelease=Get-Content /etc/os-release -Raw
             $kernel=Get-Content /proc/sys/kernel/osrelease -Raw
@@ -107,9 +155,10 @@ try {
         $command=$matching[0]
         if($command.expectedCaseResult -cne $case.requiredResult -or $command.expectedOutcome -cne $case.expectedOutcome){throw 'Command/case expectation mismatch'}
         if(($case.id -eq 'S07') -ne ($case.executionPhase -ceq 'SeparateFailureRun')){throw 'S07 failure phase must be isolated'}
+        foreach($argument in $command.arguments){if($argument -match '[{}]' -and $argument -cnotin @('{buildRoot}','{caseRoot}','{productCommit}')){throw 'Unknown or embedded command token'}}
         $working=Resolve-BoundPath $command.workingDirectory
         if(-not(Test-Path -LiteralPath $working -PathType Container)){throw 'Working directory is not a directory'}
-        $toolPath=if($command.executable -in @('pwsh','dotnet','python3')){$command.executable}else{Resolve-BoundPath $command.executable}
+        $toolPath=if($command.executable -in @('pwsh','dotnet','python3','python')){$command.executable}else{Resolve-BoundPath $command.executable}
         $tool=Get-Command $toolPath -CommandType Application -ErrorAction SilentlyContinue
         if(-not $tool){$blockers.Add("Executable unavailable: $($command.executable)")}
     }
@@ -122,7 +171,7 @@ while($ancestor){
     $parent=Split-Path -Parent $ancestor
     if($parent -eq $ancestor){break};$ancestor=$parent
 }
-if($out.StartsWith($root+[IO.Path]::DirectorySeparatorChar,[StringComparison]::OrdinalIgnoreCase)){throw 'Use isolated output outside the source checkout'}
+if($out -eq $root -or $out.StartsWith($root+[IO.Path]::DirectorySeparatorChar,[StringComparison]::OrdinalIgnoreCase)){throw 'Use isolated output outside the source checkout'}
 } catch {$blockers.Add($_.Exception.Message)}
 if($blockers.Count){[ordered]@{status='Blocked';target=$Target;blockers=@($blockers);nextAction='Provide a separately approved complete plan and matching target checkout; no automatic repair'}|ConvertTo-Json -Depth 8;exit 2}
 if($CheckOnly){[ordered]@{status='Ready';target=$Target;productCommit=$head;execution='NotRun'}|ConvertTo-Json;exit 0}
@@ -130,13 +179,20 @@ if($CheckOnly){[ordered]@{status='Ready';target=$Target;productCommit=$head;exec
 $records=[System.Collections.Generic.List[object]]::new()
 $overall='Pass'
 # S07 is a diagnostic failure run and follows all successful cases; its Fail never becomes Pass.
-$ordered=@($manifest.cases|Where-Object enabled|Sort-Object @{Expression={if($_.id -eq 'S07'){9}elseif($_.group -eq 'Preflight'){0}elseif($_.group -eq 'Negative'){1}else{2}}})
+$ordered=@($manifest.cases|Where-Object enabled|Sort-Object @{Expression={if($_.id -eq 'S07'){9}elseif($_.group -eq 'Preflight'){0}elseif($_.group -eq 'Negative'){1}elseif($_.id -eq 'EV01'){3}else{2}}})
 foreach($case in $ordered){
     $command=@($targetCommands|Where-Object caseId -CEQ $case.id)[0]
     $working=Resolve-BoundPath $command.workingDirectory
-    $toolPath=if($command.executable -in @('pwsh','dotnet','python3')){$command.executable}else{Resolve-BoundPath $command.executable}
-    $executable=(Get-Command $toolPath -CommandType Application).Source
-    $arguments=[string[]]$command.arguments
+    $toolPath=if($command.executable -in @('pwsh','dotnet','python3','python')){$command.executable}else{Resolve-BoundPath $command.executable}
+    $executable=(Get-Command $toolPath -CommandType Application|Select-Object -First 1).Source
+    $arguments=[string[]]@($command.arguments|ForEach-Object {
+        switch -CaseSensitive ($_){
+            '{buildRoot}'{Join-Path $out 'build'}
+            '{caseRoot}'{Join-Path $out 'cases'}
+            '{productCommit}'{$head}
+            default{$_}
+        }
+    })
     $watch=[Diagnostics.Stopwatch]::StartNew()
     $info=[Diagnostics.ProcessStartInfo]::new()
     $info.FileName=$executable;$info.WorkingDirectory=$working;$info.UseShellExecute=$false

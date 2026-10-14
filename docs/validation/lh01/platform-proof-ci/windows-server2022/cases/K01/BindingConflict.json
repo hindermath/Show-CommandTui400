@@ -1,0 +1,80 @@
+{
+  "sanitizedTranscript": "\u001b[2J\u001b[m\u001b[H\u001b]0;Administrator: D:\\a\\_temp\\lh01-powershell-7.6.6\\pwsh.EXE\u0007\u001b[?25hLH01_SHELL_INPUT_READY\r\nSynthetic return check: LH01_ACK\r\nLH01_RESULT\r\n{\"Scenario\":\"BindingConflict\",\"RedirectBoundary\":{\"Input\":false,\"Output\":false},\"SecurityNegative\":null,\"RenderObservations\":[],\"SyntheticValueRetained\":true,\"InputObservations\":[],\"Before\":{\"Pid\":4440,\"Runspace\":\"74dbfdc9-9f3c-468e-8782-b64e4f8ef4c7\",\"Location\":\"synthetic-working-directory\",\"Synthetic\":710,\"Preference\":1,\"FunctionResult\":710},\"After\":{\"Pid\":4440,\"Runspace\":\"74dbfdc9-9f3c-468e-8782-b64e4f8ef4c7\",\"Location\":\"synthetic-working-directory\",\"Synthetic\":710,\"Preference\":1,\"FunctionResult\":710},\"ContextUnchanged\":true,\"LocationUnchanged\":true,\"ModuleSetUnchanged\":true,\"LeaseAcquisitions\":0,\"UiCreations\":0,\"ScopeObservations\":[],\"NativeRestore\":null,\"StopCalls\":0,\"PipelineState\":null,\"IsolatedTestRunspace\":false,\"ShellReadback\":\"LH01_ACK\",\"Failure\":{\"ErrorId\":\"InvalidConfiguration,ShowCommandTui400.Commands.ShowCommandTui400Command\",\"Message\":\"Ungültige oder kollidierende Tastenbelegung. / Invalid or conflicting key binding.\"}}\r\nLH01_RESTORE_READY\r\n",
+  "sanitizedTranscriptSha256": "be87517f3cf6df71199aa5d866b5560d365b3f2fe730ee27b1cfe8e7fb09c748",
+  "assemblySha256": "f5cc31288fd7e265cf6455c77580f59aadb2990ae2769972713c01a555a78775",
+  "finalCursorVisibleAtReturn": true,
+  "cursorModeRestoreObserved": false,
+  "initialCursorBoundary": "Windows native restore observation; no Unix mode-25 assertion",
+  "scenario": "BindingConflict",
+  "environment": "synthetic Windows ConPTY; native console restore observation; redirects use real pipes (one stream per case)",
+  "command": [
+    "pwsh",
+    "-NoLogo",
+    "-NoProfile",
+    "-File",
+    "tests/feasibility/lh01/redirect-session.ps1",
+    "-Scenario",
+    "BindingConflict",
+    "-Module",
+    "<build>\\ShowCommandTui400\\bin\\net10.0\\ShowCommandTui400.psd1",
+    "-TestAssembly",
+    "<build>\\ShowCommandTui400.Tests\\bin\\net10.0\\ShowCommandTui400.Tests.dll",
+    "-ObservationFile",
+    "<case>\\BindingConflict.observation.json"
+  ],
+  "exitCode": 0,
+  "expectedExitCode": 0,
+  "result": "Pass",
+  "diagnosticContractSatisfied": true,
+  "failureScope": null,
+  "timeout": false,
+  "steps": [
+    "synthetic-shell-readback"
+  ],
+  "cursorShowObserved": true,
+  "transcriptSha256": "be87517f3cf6df71199aa5d866b5560d365b3f2fe730ee27b1cfe8e7fb09c748",
+  "termiosBefore": null,
+  "termiosAfter": null,
+  "observation": {
+    "Scenario": "BindingConflict",
+    "RedirectBoundary": {
+      "Input": false,
+      "Output": false
+    },
+    "SecurityNegative": null,
+    "RenderObservations": [],
+    "SyntheticValueRetained": true,
+    "InputObservations": [],
+    "Before": {
+      "Pid": 4440,
+      "Runspace": "74dbfdc9-9f3c-468e-8782-b64e4f8ef4c7",
+      "Location": "synthetic-working-directory",
+      "Synthetic": 710,
+      "Preference": 1,
+      "FunctionResult": 710
+    },
+    "After": {
+      "Pid": 4440,
+      "Runspace": "74dbfdc9-9f3c-468e-8782-b64e4f8ef4c7",
+      "Location": "synthetic-working-directory",
+      "Synthetic": 710,
+      "Preference": 1,
+      "FunctionResult": 710
+    },
+    "ContextUnchanged": true,
+    "LocationUnchanged": true,
+    "ModuleSetUnchanged": true,
+    "LeaseAcquisitions": 0,
+    "UiCreations": 0,
+    "ScopeObservations": [],
+    "NativeRestore": null,
+    "StopCalls": 0,
+    "PipelineState": null,
+    "IsolatedTestRunspace": false,
+    "ShellReadback": "LH01_ACK",
+    "Failure": {
+      "ErrorId": "InvalidConfiguration,ShowCommandTui400.Commands.ShowCommandTui400Command",
+      "Message": "Ungültige oder kollidierende Tastenbelegung. / Invalid or conflicting key binding."
+    }
+  }
+}

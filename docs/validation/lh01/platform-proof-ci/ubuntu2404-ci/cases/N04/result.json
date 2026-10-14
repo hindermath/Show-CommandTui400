@@ -1,0 +1,46 @@
+{
+  "caseId": "N04",
+  "productCommit": "b1848b0157158fa4d821c975cfb3cea08753475d",
+  "outcome": "RejectedWithoutStateChange",
+  "result": "Pass",
+  "evidenceIds": [
+    "E01-01",
+    "E01-06"
+  ],
+  "observations": [
+    {
+      "hostAssembliesRedistributed": false,
+      "result": "Pass",
+      "checks": [
+        "SEC01-unknown-context-unavailable-no-effect",
+        "SEC02-action-text-never-evaluated",
+        "SEC03-key-injection-conflict-rejected",
+        "SEC04-control-format-display-sanitized",
+        "N01",
+        "N02",
+        "N03",
+        "N04",
+        "N04-host",
+        "N04-VT",
+        "N04-native",
+        "N05",
+        "N06",
+        "N06-escape",
+        "N06-case",
+        "N06-numeric-action",
+        "N06-syntax",
+        "N07"
+      ],
+      "scope": "model/native doubles only; no GUI or foreign-platform proof",
+      "caseId": "N04",
+      "outcome": "RejectedWithoutStateChange"
+    }
+  ],
+  "files": [
+    {
+      "path": "contract.txt",
+      "sha256": "698b9384d8f9d52f4e76a7664eb982550c02c4d4c3bb193ae685bb763fca3c23"
+    }
+  ],
+  "scope": "automated product/model evidence only; independent review and physical acceptance remain open"
+}

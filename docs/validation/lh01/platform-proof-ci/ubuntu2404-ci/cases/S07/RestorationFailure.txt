@@ -1,0 +1,1 @@
+{"caseId": null, "outcome": null, "scenario": "RestorationFailure", "result": "Fail", "diagnosticContractSatisfied": true, "exitCode": 1}

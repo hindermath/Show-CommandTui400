@@ -1,304 +1,69 @@
 # LH-01 Plattform-Hand-offs / Platform hand-offs
 
-## DE — Zweck, Stand und Autorität
+## DE — Ausführbarer Prüfvertrag
 
-Owner: Thorsten Hindermann. Datum: 2026-10-09. Vorbereitung, keine ausgeführten
-Plattformtests. Kanonische maschinenlesbare Auftragsdaten:
-[platform-handoff.json](platform-handoff.json). Fachliche Quelle bleibt
-[LH-01](../../../intakes/LH-01.md); technische Grundlage sind
-[Plan](../../../specs/002-lh01-tui-foundation/plan.md),
-[Tasks](../../../specs/002-lh01-tui-foundation/tasks.md) und die
-[Owner-Prüfgrenzen](../../../specs/002-lh01-tui-foundation/feasibility/owner-validation-boundaries.md).
+Owner: Thorsten Hindermann. Stand: 2026-10-14. Die Hand-offs [Mac B #37](https://github.com/hindermath/Show-CommandTui400/issues/37), [Windows #38](https://github.com/hindermath/Show-CommandTui400/issues/38) und [Ubuntu/WSL2 #39](https://github.com/hindermath/Show-CommandTui400/issues/39) gehören zum [Prüf-Issue #36](https://github.com/hindermath/Show-CommandTui400/issues/36).
 
-Ein Hand-off ist ein übertragbarer Prüfauftrag. Ein Prüfdriver führt dieselben
-vereinbarten Fälle auf dem benannten Host aus. Eine Prüfsumme (SHA-256) bindet
-exakte Dateibytes. Ein Commit ist ein unveränderlicher Git-Stand, kein Branchname.
-Ein PTY ist ein automatisiertes Pseudoterminal, keine reale Terminaloberfläche.
+Der exakte Produktcommit, Driver-/Dateihashes, der neue Mac-A-Produktnachweis und alle 60 Zielkommandos stehen in [platform-handoff.json](platform-handoff.json). Ein SHA-256 bindet exakte Dateibytes. Ein Commit bezeichnet einen unveränderlichen Git-Stand. Das Manifest darf aus einem späteren Genehmigungscommit stammen; dadurch entsteht kein selbstreferenzieller Hash.
 
-**Aktuell Prepared, nicht ausführbar:** Produktcommit, Driverhash, Kommandofreigabe
-und die freigegebene Mac-A-Produktnachweisbindung fehlen. Das vorhandene Feasibility-Fixture darf diese
-Voraussetzungen nicht ersetzen. Das Öffnen eines Issues startet nichts; der
-Agent benötigt einen ausdrücklichen Auftrag für den benannten Host und Umfang.
-Dieses Vorbereitungspaket autorisiert keine Plattformprüfung oder Installation.
+**Prüfstand und Durchführung sind getrennt:** Der beauftragte T053/T054-Lauf bereitet den Stand vor. Jeder Zielagent braucht weiterhin einen ausdrücklichen Auftrag für seinen Host und den veröffentlichten Manifesthash. Das Lesen eines Issues startet keine Prüfung. Fehlende Voraussetzungen ergeben `Blocked`; keine eigenmächtige Installation, Reparatur oder Änderung des Prüfstands.
 
-## DE — Ziele, Stufen und Grenzen
+Fachliche Quelle: [LH-01](../../../intakes/LH-01.md). Technische Quellen: [Plan](../../../specs/002-lh01-tui-foundation/plan.md) und [Tasks](../../../specs/002-lh01-tui-foundation/tasks.md). Aktueller Nachweisstand: [Plattformmatrix](platform-matrix.md). Frühere Vorbereitung und frühere fehlende Adapter sind historische Zustände in Git und [session-terminal.md](session-terminal.md).
 
-| Ziel-ID | Erwartete Umgebung | Getrennte Aussage |
+## DE — Host und Voraussetzungen
+
+| Ziel | Erforderlicher Host | Aussagegrenze |
 |---|---|---|
-| macb | Mac B, Mac mini M4 Pro, native macOS-Sitzung | eigener Hardware-/Hostnachweis, nicht Mac A |
-| windows | Windows 11, native PowerShell, Windows Terminal bei späterer Oberflächenprüfung | kein Linux-/WSL2-Nachweis |
-| ubuntu-wsl2 | Ubuntu 24.04 in WSL2, PowerShell unter Linux | WSL2/Ubuntu und Windows-Hostversion erfassen; keine native Ubuntu-Desktopabnahme |
+| macb | Mac mini M4 Pro, native macOS-Sitzung | eigener Hardware-/Hostnachweis, kein Mac-A-Ersatz |
+| windows | natives Windows 11, OS-Build ab 22000, PowerShell | ConPTY-Automation; keine praktische Windows-Terminal-Abnahme |
+| ubuntu-wsl2 | Ubuntu 24.04, WSL2-Kernel, PowerShell unter Linux; cmd.exe/wsl.exe erreichbar | eigener WSL-/Windows-Hostnachweis, keine native Ubuntu-Desktopabnahme |
 
-Stufe A: Nach geliefertem Mac-A-Produktinkrement automatisierte Build-, Vertrags-
-und Sitzungs-/PTY-Prüfungen. Nur freigegebene, auf diesem Ziel tatsächlich ausführbare
-Fälle zählen; CI belegt ausschließlich ihre Runnerumgebung. Stufe B: Reale
-Terminaloberflächen erst mit eigenem Auftrag und stabilisiertem LH-01-Bedienumfang.
-Screenreader bleiben Deferred; Braillehardware ist Excluded, weil der Owner im
-privaten persönlichen Projekt keine Braillezeile besitzt. Text-/Tastaturdesign
-bleibt Pflicht; keine WCAG- oder Hilfsmittel-Konformität behaupten.
+Werkzeuge müssen vorhanden sein: PowerShell mindestens 7.6.4 mit Host-.NET10, .NET10-SDK und Python3.9+ als `python3`. Tatsächlich geprüft wurde 7.6.6; 7.6.4 bleibt zusätzlich eine Modellgrenze, kein ausgeführter Mindestversionshost. Keine Werkzeuginstallation durch den Prüfagenten. Gesperrter NuGet-Restore verwendet ausschließlich die Repository-Konfiguration und deren öffentliche Quelle; nur dieser benannte Restore darf Netzwerk nutzen. Der Produktprozess selbst führt keine Netzwerk- oder Zielaktionen aus.
 
-LH-01-Produktprüfung ist getrennt von der vollständigen LH-00-Prozessabnahme nach
-LH-02, vor LH-03. Dieser Vertrag aktiviert keine Serie und beauftragt keine
-LH-02–LH-07-Funktion. Ein technisches PASS ist keine Ownerabnahme.
+PTY bedeutet automatisiertes Pseudoterminal. Unix nutzt PTY/termios, Windows nutzt natives ConPTY und explizite Win32-Konsolenhandles. Der Testbootstrap erzeugt einen kontrollierten Testhost; der Produktaufruf muss dessen Prozess, Runspace und synthetischen Sitzungskontext erhalten. Der Produktcode startet dadurch keine neue Sitzung. stdin und stdout werden einzeln umgeleitet und ihre tatsächlichen Flags geprüft. Windows meldet native Modus-/Cursorwiederherstellung; Unix-Protokollbelege werden nicht auf Windows übertragen.
 
-## DE — Freigabe des späteren ausführbaren Prüfstands
+## DE — Vollständiger Agentenauftrag
 
-T029 hat den gemeinsamen Driver und den Unix-PTY-/Sitzungsharness geliefert.
-Windows-Terminalautomation sowie die endgültige Bindung folgen T053/T054. Danach darf ein ausdrücklich
-beauftragter Koordinator das Manifest auf einen gelieferten Stand konkretisieren:
+1. Lies eigenes Issue, Eltern-Issue, diesen gepinnten Vertrag und das freigegebene Manifest. Prüfe Auftrag, Ziel und Manifest-SHA-256. Widersprüche oder fehlende Autorität: `Blocked`, Grund und konkrete nächste Aktion nennen.
+2. Erhalte vorhandene Checkouts und fremde Änderungen. Stelle einen **isolierten, sauberen Checkout genau von `productCommit`** her. Kein Branchname als Ersatz. Hole die Genehmigungsunterlagen getrennt aus dem im Issue gepinnten Genehmigungscommit: Manifest und vollständigen Mac-A-Nachweisbaum. Verändere keine Produktdatei, auch nicht das dort historische Prepared-Manifest. `.gitattributes` erhält LF-Dateibytes; Hashabweichung niemals durch Neubinden beheben.
+3. Lege eine neue externe Ausgabewurzel fest; keine bestehenden Nachweise ersetzen und keine Symlink-/Reparse-Pfade verwenden. Driver und alle gebundenen Ausführungsdateien stammen aus dem Produktcheckout. Genehmigung und Nachweise können außerhalb dieses Checkouts liegen.
+4. Rufe zuerst den Driver mit `-CheckOnly` auf. Er prüft Manifesthash, Schema, genaue Revision, sauberen Bestand, Dateihashes, alle 20 Fälle/E01-Zuordnungen, Mac-A-Rohbelege, Host und Werkzeuge. Exit2 bedeutet fehlende Voraussetzung und erlaubt keine Produktläufe.
+5. Nur nach `Ready` und mit passendem Hostauftrag denselben Driver ohne `-CheckOnly` ausführen. Keine Testkommandos aus Issue-Prosa nachbauen. Er erweitert ausschließlich die ganzen Argumenttokens `{buildRoot}`, `{caseRoot}`, `{productCommit}` zu eigenen isolierten Pfaden und dem gebundenen Commit. Keine Shellauswertung, `eval` oder `Invoke-Expression`.
+6. Der feste Ablauf ist PF01 → N01–N07 → B01 → S01–S06/K01/V01/V02 → EV01 → **getrennter S07-Fehlerlauf**. Negativfälle müssen ihre genaue Abweisung/Nullwirkung zeigen. K01 bündelt Tastatur, Remapping, F3-Ausgang und Konflikt; V01 Größenrückkehr/Textzustand; V02 kleine und 1×1-Ansicht. EV01 prüft die 18 vorausgehenden regulären Fallbelege. Bei unerwartetem Fehler/Timeout stoppen; keine automatische Reparatur oder Wiederholung.
+7. S07 erhält beide injizierten Fehler und bleibt `Fail/exit1`, auch wenn sein Diagnosevertrag erfüllt ist. Deshalb liefert der vollständige Driver **Exit1 mit `mainStatus=Pass` und getrenntem, erwartungsgemäßem S07-Fail**. Dies ist kein erfolgreicher Gesamt-Restore. Ein unerwartetes Fail oder ein nicht erfüllter Diagnosevertrag bleibt ein echter Blocker. Externer Prozesskill, Host- oder Stromausfall garantieren keine Wiederherstellung.
+8. Erzeuge automatisch `result.json`, `report.md` DE/EN und synthetische Rohdateien/Hashes. Erfasse Host/OS/WSL, PowerShell/.NET/Python/SDK, Commit/Manifest/Entscheidung/Driver, Fälle/E01/Soll/Ist/Exitcodes/Befehle, Quellenunverändertheit und Grenzen. Nur neue externe Outputs und darin isolierte temporäre/Restore-Caches schreiben. Keine realen Profile, Variablen, Tokens oder privaten Sitzungsdaten veröffentlichen.
+9. Berichte lokale Artefaktpfade im Chat. Ein anderer Prüfer prüft Vollständigkeit und Bindungen; bis dahin bleibt `review=Open`. Keine Issuekommentare, Commits, Pushes, Schließungen oder Abnahme ohne eigenen Lieferauftrag. Spätere versionierte Nachweise verwenden `platform-runs/<target>/<run-id>/`. Thorsten entscheidet die Abnahme getrennt.
 
-- Vollständigen 40-stelligen Produktcommit eintragen; Driver/Harness, Build-/
-  Testprojekte und ihre Lockfiles müssen in diesem Commit vorhanden sein.
-- Aktuellen Entscheidungshash und tatsächlichen Mac-A-Produktnachweis binden.
-  Der Feasibility-Nachweis ist kein Mac-A-Produktnachweis.
-- Driverhash aus den Commitbytes berechnen. Kommandos als erlaubte Executable-/
-  Argumentarrays mit Arbeitsverzeichnis, Fall-ID und erwarteter Exitcode-/
-  Ergebnisbedingung festlegen. Kein shell-String, Invoke-Expression oder Eval.
-- Gültige Freigabe mit Owner, Datum und getrenntem Auftrag verlinken; erst dann
-  `state=Executable` und `executionAuthorized=true`. Dies sind interne
-  Prüfauftragsfelder, keine Änderung von Receipt- oder Serienstatusmodellen.
-- Teilinkrement: Nicht vorhandene spätere Fälle dürfen nur durch den Koordinator
-  ausdrücklich `enabled=false` mit Grund/Owner/Trigger werden. Der Agent darf
-  den Fallumfang nicht selbst verkleinern. Ein Teil-PASS ist kein Gesamt-PASS.
+```powershell
+# Im sauberen Produktcheckout; Werte aus dem gepinnten Zielauftrag verwenden.
+# Run in the clean product checkout using values from the pinned target order.
+./tests/feasibility/lh01/Invoke-Lh01PlatformProof.ps1 `
+  -Plan <externe-Genehmigung/platform-handoff.json> `
+  -ExpectedPlanSha256 <freigegebener-SHA256> `
+  -Target <macb|windows|ubuntu-wsl2> `
+  -OutputDirectory <neue-externe-Ausgabewurzel> -CheckOnly
+```
 
-Das Manifest kann nach dem Produktcommit in einem eigenen Governancecommit
-versioniert sein. Auftrag und Manifesthash müssen diesen konkreten Prüfplan binden;
-Produktdateien und Driver werden trotzdem aus exakt `productCommit` geprüft.
-Keine Forderung nach einem selbstreferenziellen Commit-/Manifesthash.
+## DE — Offene Abnahmegrenzen
 
-## DE — Einheitlicher Agentenablauf
+CI beweist ausschließlich den benannten Runner: Ubuntu24.04/azure-glibc oder Windows Server2022, niemals Mac B, Windows11 oder WSL2. Bereits vorhandene CI-Nachweise ersetzen keine Zielausführung oder anderes Ergebnisreview. Praktische Terminaloberflächen und Screenreader bleiben **Deferred** bis zu einem gesonderten Auftrag. Braillehardware bleibt **Excluded**, weil im privaten Projekt kein Gerät vorhanden ist; bei Hardware-/Scopeänderung neu bewerten. Tastatur/Textzugang bleiben Pflicht. Keine WCAG-Konformität oder vollständige LH-01-Abnahme behaupten.
 
-1. **Auftrag lesen:** Eigenes Issue, Eltern-Issue und versionierten Vertrag lesen.
-   Nur festgelegten Zielhost und Prüfplan verwenden. Widersprüche zwischen Issue,
-   Manifest oder Auftrag führen zu Blocked, nicht zu freier Auslegung.
-2. **Preflight:** Manifeststatus/Freigabe, Produktcommit, Plan-/Entscheidungs-/
-   Driverhash und Mac-A-Nachweis prüfen. Tatsächliche Hardware, OS, Host, Terminal,
-   PowerShell, .NET und gegebenenfalls WSL/Distroversionen erfassen. Fehlende
-   Werkzeuge, falscher Host oder nicht unterstützter Treiber führen zu Blocked.
-3. **Isolation:** Vorhandenen Checkout und fremde Änderungen erhalten. Einen
-   isolierten Arbeitsbestand aus dem Produktcommit verwenden; Manifest aus dem
-   gebundenen Prüfplan übernehmen und dessen Hash erhalten. Product tree bleibt
-   unverändert. Build-/Testoutputs nur außerhalb des Quellbestands zulassen.
-4. **Ausführen:** Prüfdriver mit Ziel-ID aufrufen. Er prüft Manifest und Umgebung
-   selbst, führt freigegebene Negativfälle zuerst aus und überprüft deren erwartete
-   Abweisung samt Nullwirkung. Erst dann Build/Verträge und positive Sitzungsfälle.
-   Erwartete Negativ-Exitcodes sind erfolgreich, wenn genau die Sollbedingung erfüllt
-   ist; ein allgemeines Exit0 reicht nicht als PASS.
-5. **Fehler:** Bei Sicherheits-/Terminalzustandsverlust oder Timeout sicher
-   abbrechen, Restore versuchen und FAIL mit Rohdaten melden; keine weiteren
-   positiven Läufe. Externe Host-/Prozesskillgrenzen ehrlich benennen. Keine
-   Ergebnisüberschreibung, automatische Reparatur oder eigenmächtige Wiederholung.
-6. **Nachweis:** Ergebnisdatei und DE/EN-Bericht automatisch erzeugen, kontrollierte
-   synthetische Rohdaten beilegen, vollständigen Fallbestand prüfen und Hashes
-   binden. Keine realen Variablen, Profile, Tokens oder absolute Privatpfade kopieren.
-7. **Review und Rückgabe:** Ein anderer Prüfer bewertet Ergebnisbindung und
-   Vollständigkeit. Ohne separat beauftragten Prüfer bleibt Review Open. Agent
-   berichtet lokale Artefaktpfade im Chat; kein Issuekommentar, Commit, Push oder
-   Schließen ohne passenden Auftrag. Owner nimmt später ausdrücklich ab.
+LH-01 bleibt Einzelpilot außerhalb automatischer Serienauswahl. LH-00 bleibt offen; vollständige Prozessabnahme nach LH-02, vor LH-03. Keine Serienaktivierung oder LH-02–LH-07-Funktion durch diesen Prüfauftrag.
 
-## DE — Implementierte Driverschnittstelle; Manifest noch Prepared
+## EN — Executable contract and agent order
 
-`tests/feasibility/lh01/Invoke-Lh01PlatformProof.ps1` bietet folgende Parameter
-an: `-Plan`, `-Target` (macb/windows/ubuntu-wsl2), `-OutputDirectory` und
-`-CheckOnly`. CheckOnly führt keinerlei Produkt- oder Terminaltest aus; es meldet
-Startfähigkeit und Blocker. Normalmodus benötigt freigegebenes Executable-Manifest
-und einen passenden Ausführungsauftrag. Default ist keine implizite Hostauswahl.
-Driver kann geplante Harnesses mit Argumentarrays aufrufen; keine Produktparameter
-oder Testmodi in `Show-CommandTui400` exportieren.
+Owner: Thorsten Hindermann; updated 2026-10-14. Linked issues #36–#39 define the parent and three targets. The JSON binds the immutable product commit, decisions, driver/files, fresh Mac A evidence and 60 command arrays. Approval evidence may follow the product commit in Git; no self-referential hash is needed. This prepares an executable stand, not an automatic target dispatch. Each agent still needs explicit target authority and the published manifest SHA-256.
 
-Driver-Exitcodes: 0 = alle aktivierten Fälle erfüllt, 1 = tatsächlicher Prüffehler,
-2 = fehlende/ungültige Voraussetzung (Blocked). Das Ergebnis unterscheidet
-`Pass`, `Fail`, `Blocked` und `NotRun` je Fall; eine nicht ausgeführte Pflichtprüfung
-verhindert Gesamt-Pass. Der Reporter zeigt Scope, deaktivierte und praktische
-Deferred/Excluded-Fälle zusätzlich, statt sie als PASS zu zählen.
+Targets are native Mac B/Mac mini M4 Pro; native Windows11/build22000+; Ubuntu24.04/WSL2 with cmd.exe/wsl.exe available. Require existing PS7.6.4+ on host .NET10, .NET10 SDK and Python3.9+ as python3. Actual automation uses PS7.6.6; the minimum remains a separate model boundary. No installation or repair. Locked restore may use only the configured public feed and isolated caches; product execution has no network or target effects.
 
-**CheckOnly ist jetzt vorhanden:** Es prüft ohne Produktstart und meldet beim
-bestehenden Prepared-Manifest Blocked. Produktläufe bleiben bis zum gebundenen
-Prüfauftrag gesperrt. Der [Mac-A-Inkrementnachweis](session-terminal.md) zeigt den
-vorhandenen Driver, lokale Produktfälle und die fehlende Windows-Terminalautomation.
+Read own/parent issue, pinned contract and manifest. Reject conflicts or absent authority with Blocked and a concrete next action. Preserve existing work. Use a separate clean checkout of exactly productCommit, while obtaining approval manifest and its complete Mac A proof tree from the pinned later approval commit. Never replace the historical Prepared manifest inside the product checkout. Preserve LF bytes and reject changed hashes.
 
-## DE — Schreibumfang, Ergebnis und Wiederholung
+Choose a new external output root without links/reparse points. Invoke the product commit's driver with Plan, ExpectedPlanSha256, explicit Target and OutputDirectory, first with CheckOnly. Exit2 is Blocked and grants no product entry. The driver validates exact revision, clean sources, schema, hashes, complete cases/E01 mapping, Mac A raw proof, actual host and tools. Only after Ready and the target request, invoke the same command without CheckOnly. Whole argument tokens buildRoot/caseRoot/productCommit are resolved to driver-owned paths and the verified commit; no shell evaluation.
 
-Nur die beauftragte isolierte Ausgabewurzel darf geschrieben werden. Für spätere
-lieferbare Evidence gilt `docs/validation/lh01/platform-runs/<target>/<run-id>/`;
-vorher lokal außerhalb des Produktbestands sammeln. Run-ID ist UUID, Ziel eine
-bekannte ID; nie freie Issuewerte als Pfad auswerten. Bestehende Läufe nicht ersetzen.
-Resultat: `result.json`, `report.md`, bereinigte Rohoutputs und SHA-256-Inventar.
+The order is PF01, negatives N01–N07, locked build B01, session/lifecycle S01–S06, keyboard K01, resize/text V01, small/tiny V02, integrity EV01, then isolated diagnostic S07. K01 includes remapping, alternate exit and invalid bindings. EV01 binds the 18 preceding regular cases. Stop unexpected errors or timeouts without automatic repair or retry. S07 deliberately remains Fail/exit1 with both injected errors; the full driver consequently returns exit1, mainStatus Pass and a separate expected diagnostic Fail. Never report that as successful restoration or overall acceptance. External kill/host/power loss remains outside guaranteed restoration.
 
-Ergebnisfelder: Ziel/Run-ID/UTC-Zeit, Produktcommit, Manifest-/Entscheidungs-/
-Driverhash, tatsächliche Versions-/Hostdaten, zugelassener Schreibumfang,
-Case-ID/Soll/Ist/Exitcode/Ergebnis/Dauer/Outputhash, Gesamtstatus, Blocker und
-nächste Aktion. Auch Vorher-/Nachher-Quellstatus und unbeabsichtigte Schreib-/
-Netz-/Zielwirkungen erfassen. Dauer ist eine Messung, keine erfundene Abnahmeschwelle.
-Bei nicht unterstütztem Terminal-Testadapter Blocked statt Modelltest als Ersatz.
+Unix uses PTY/termios; Windows uses native ConPTY with explicit console handles and independent stdin/stdout redirection. The test-only bootstrap creates a controlled host; the product must preserve that host's identity and synthetic context. No new product session is implied. Keep native Windows mode/cursor observations separate from Unix terminal protocols.
 
-Buildrestore: nur freigegebene öffentliche Registry und gesperrte Abhängigkeiten;
-Netzwerk nur für diesen benannten Restore, keine Installationen oder Produkt-
-Netzabfragen. Vorhandene Offline-Caches nutzen, wenn sie vollständig/gebunden sind.
-Wird zusätzliche Berechtigung/Software gebraucht, stoppen und konkrete Aktion nennen.
+Automatically retain JSON, a DE/EN report and synthetic raw files/hashes: actual host/runtime versions, commit/manifest/decision/driver, cases/E01/commands/expected/observed/exits, clean-source checks and limits. Write only new external outputs, temporary files and isolated restore caches. Publish no private session data. Return local paths in chat; distinct review stays Open until another reviewer checks the evidence. No comments, delivery, closure or acceptance without separate authority.
 
-Korrekturen erfolgen zentral unter gesondertem Auftrag. Neue Manifest-/Commit-
-Freigabe führt zu neuem Laufverzeichnis. Betroffene Fälle und gemeinsame
-Sicherheits-/Restorefälle erneut prüfen; volle Abdeckung nur bei vollständigem
-aktiviertem Fallbestand. Keine Ergebnisse verschiedener Commits zu einem
-unqualifizierten Gesamt-PASS zusammenführen.
-
-## EN — Agent contract
-
-Owner: Thorsten Hindermann; prepared on 2026-10-09. The linked JSON is the canonical
-machine-readable hand-off. A hand-off transfers a test instruction; a driver runs
-its approved cases. SHA-256 binds bytes, a commit fixes Git content, and a PTY is
-an automated pseudo-terminal rather than a physical terminal application.
-
-**Prepared, not executable:** Product commit, driver hash, command approval and
-approved Mac A product evidence bindings are absent. Existing feasibility evidence does not replace
-them. Reading an issue grants no execution authority. Require an explicit request
-for the target host and scope; no installation or platform test starts now.
-
-Targets are Mac B/Mac mini M4 Pro on native macOS, native Windows 11 PowerShell,
-and Ubuntu24.04 PowerShell inside WSL2. Record actual hardware/host/OS/runtime and
-WSL/distro versions. Windows and WSL proofs are independent; neither PTY, container
-nor CI results prove actual terminal or assistive acceptance.
-
-Phase A runs approved automated build, contract and session cases after delivered
-Mac A product evidence. Phase B requires separate actual-terminal authority and
-stable UI behavior. Screen readers remain Deferred; Braille hardware proof is
-Excluded because the owner has no display in this personal project. Keyboard/text
-access remains required. No WCAG conformity, full LH-01 or LH-00 acceptance,
-series activation or later-feature authority follows from this preparation.
-
-The future coordinator binds a full product commit, decision hash, actual Mac A
-product proof and driver bytes; all relevant harness/project/lock files must exist
-at that product commit. Approved commands use executable/argument arrays, working
-directory, case ID and expected exit/result conditions, never eval/shell strings.
-A separately authorized plan may be versioned after the product commit: bind its
-manifest hash without a self-referential commit hash. Only explicit owner authority
-permits Executable state. For partial increments, the coordinator alone can disable
-later cases with reason/owner/trigger; the agent must not shrink scope.
-
-Agent sequence: read own/parent issue and pinned contract; reject contradictions;
-check authority, hashes and actual environment; use an isolated product checkout
-with outputs outside source; reject absent tools/wrong host; run negative cases
-before positive builds/session tests. Expected negative nonzero exits can pass only
-when the exact intended rejection and zero effects are observed. Stop on unsafe
-terminal/state loss or timeout, attempt restore and report Fail. Never silently
-repair/retry or borrow another environment's success.
-
-Automatically produce result.json, bilingual report.md, scrubbed synthetic raw
-outputs and a hash inventory. Include target/run UUID/time, commits/hashes, actual
-versions, allowed writes, per-case expectation/observation/exit/outcome/duration/
-output digest and total state, blockers and next action. Verify source unchanged
-and no unintended network/target effects. No private session data or local paths.
-A missing test adapter is Blocked, not permission to substitute model tests.
-
-The implemented PowerShell test driver has Plan, explicit Target, OutputDirectory and
-CheckOnly parameters. CheckOnly does no product/terminal testing. Exit0 means all
-enabled cases fulfilled; Exit1 means actual failure; Exit2 means Blocked prerequisite.
-Each case is Pass, Fail, Blocked or NotRun; mandatory unexecuted cases prevent total
-Pass. Display disabled and practical Deferred/Excluded cases separately. The driver
-now exists; CheckOnly remains Blocked for the Prepared manifest. Product execution
-requires the pinned target plan. Windows terminal automation is still absent; see
-[Mac A increment evidence](session-terminal.md). Do not export probe APIs in product.
-
-Only authorized isolated output may be written; deliverable evidence uses unique
-platform-runs/<target>/<run-uuid> directories. Preserve old results. Restore only
-locked packages from approved public feeds, with narrowly allowed network/cache;
-never install tooling or add product network behavior. Report missing authority/tools.
-A different reviewer checks evidence; missing review stays Open. Local execution
-grants no issue-comment/commit/push/closure authority. The owner separately accepts.
-Central correction and a newly approved commit/manifest require a new evidence run;
-rerun impacted and shared security/restore cases. Mixed commits never imply full Pass.
-
-## Issue-Verknüpfung / Issue links
-
-Die vier veröffentlichten URLs stehen in `platform-handoff.json` unter `issues`.
-Sie sind Koordination, keine fachlichen Quellenupdates. / Published issue URLs in
-the JSON coordinate work; they do not update domain intake sources.
-
-## Verknüpfte Prüf-Issues / Linked validation issues
-
-- [parent #36](https://github.com/hindermath/Show-CommandTui400/issues/36)
-- [macb #37](https://github.com/hindermath/Show-CommandTui400/issues/37)
-- [windows #38](https://github.com/hindermath/Show-CommandTui400/issues/38)
-- [ubuntu-wsl2 #39](https://github.com/hindermath/Show-CommandTui400/issues/39)
-
-Vertrag / Contract: [platform-handoff.md](https://github.com/hindermath/Show-CommandTui400/blob/main/docs/validation/lh01/platform-handoff.md).
-
-## Dokumentationsauswirkung / Documentation impact
-
-**UpdateRequired.** Zielgruppe: Owner, beauftragte Prüfagenten und unabhängige
-Prüfer. Dokumentklasse: Prüfvertrag und koordinierende Issue-Anweisungen.
-Kanonische technische Quelle ist dieser Vertrag mit seinem JSON, Owner Thorsten.
-Leserpfad: LH-01-Issue #2 → Eltern-Issue #36 → Ziel-Hand-off → Vertrag/Startplan →
-spätere gebundene Nachweise und anderes Review. Die vier veröffentlichten Issues
-und versionierten Texte verweisen gegenseitig aufeinander; bestehende fachliche
-Issues bleiben unverändert. DE zuerst/EN danach in derselben Datei, ungefähr B2.
-Distribution sourceOnly; kein Home-Sync. Evidence sind die vorbereiteten Texte,
-Hashbindungen und das unabhängige technische Review, keine ausgeführten
-Plattformbeispiele. Bei Änderung von Umfang, Prüfstand, Driver, Freigabe oder
-Plattformgrenzen erneut bewerten. Die bestehende Feature-Entscheidung
-UpdateRequired bleibt erhalten.
-
-**UpdateRequired.** Audience: owner, commissioned proof agents and distinct
-reviewers. These are a proof contract and coordinating issue instructions. This
-contract and its JSON are the canonical technical source, owned by Thorsten.
-Navigate domain issue #2 → parent #36 → target hand-off → contract/start plan →
-later bound evidence and distinct review. Published issues and versioned texts
-link each other; existing domain issues stay unchanged. German precedes English
-in each file at about B2. Distribution is sourceOnly, without Home sync. Prepared
-texts, hash bindings and distinct technical review are evidence of preparation,
-not executed platform examples. Reevaluate changes to scope, revision, driver,
-authority or platform limits. Preserve the feature's existing UpdateRequired decision.
-
-## DE — Präzisierungen nach unabhängigem PR-Review
-
-Das versionierte [Kommandoschema](approved-commands.schema.json), Version 1,
-definiert `approvedCommands` als Array: commandId, targetId, caseId, executable,
-arguments, workingDirectory, expectedExitCodes, expectedCaseResult und
-expectedOutcome sind Pflicht; weitere Felder sind unzulässig. Argumente sind
-ein Stringarray, erwartete Exitcodes ein nicht leeres Integerarray. Das Schema
-wird lokal gelesen, nicht aus dem Netz geladen. Die leere Prepared-Liste bleibt
-gültig als Vorbereitung, niemals als ausführbarer Auftrag.
-
-T029 validiert vor jedem Aufruf sowohl das Schema als auch semantische Bindungen:
-eindeutige commandIds, bekannte Ziel-/Fall-IDs, Fall-Sollwerte und freigegebene
-Executables. Arbeitsverzeichnisse liegen relativ im isolierten Checkout; absolute
-Pfade, Traversal und Symlinkausbrüche abweisen. Keine Shellausdrücke auswerten.
-Im Executable-Stand müssen alle aktivierten ausführbaren Fälle des gewählten Ziels
-passende Kommandos haben. Preflight und Nachweisintegrität sind Driverprüfungen.
-Struktureller Schema-PASS ist kein Freigabe- oder Ergebnis-PASS.
-
-Jeder Fall und jedes Resultat führen `evidenceIds` mit den einschlägigen
-E01-01–E01-07-Kennungen; der Driver übernimmt und prüft diese Zuordnung und
-berichtet die Abdeckung einschließlich NotRun/Deferred/Excluded. EV01 bezeichnet
-die Nachweisintegrität und ist kein E01-Anforderungskürzel.
-
-S05 prüft einen behandelbaren Produktfehler mit erfolgreichem Restore. S07 prüft
-einen tatsächlichen Wiederherstellungsfehler in einem getrennten diagnostischen
-Lauf (`SeparateFailureRun`). Dieser Fall und sein Gesamtlauf müssen Fail bleiben;
-Primär- und Restorefehler erhalten, positive Läufe stoppen, Exitcode 1 melden.
-Auch ein erwarteter oder injizierter Restorefehler wird niemals zu Pass umgedeutet.
-Das getrennte erwartete Fehlerresultat kann den Schutzmechanismus nachweisen,
-ersetzt aber kein erfolgreiches Wiederherstellungs- oder Gesamtprüfergebnis.
-
-## EN — Clarifications after distinct PR review
-
-The local version 1 [command schema](approved-commands.schema.json) defines the
-approvedCommands array, its required fields and rejects additional fields.
-Arguments are string arrays; expected exit codes are nonempty integer arrays.
-Load the schema locally without network retrieval. An empty Prepared array never
-authorizes execution. T029 validates shape and semantic bindings before invocation:
-unique command IDs, known targets/cases, matching expectations, approved executables
-and checkout-relative directories. Reject rooted paths, traversal and symlink
-escapes; never evaluate shell strings. Every enabled executable target case needs
-approved commands in an Executable plan; preflight/integrity are driver checks.
-Schema validity grants neither execution authority nor a passing test outcome.
-
-Every case/result retains its explicit E01-01–E01-07 evidenceIds. The driver checks
-and reports coverage, including missing/deferred/excluded proof. EV01 identifies
-evidence integrity without colliding with the specification evidence prefix.
-S05 requires successful restoration after a handled product error. S07 requires
-a separate diagnostic failure run: actual restoration failure retains both errors,
-stops positive tests and reports case Fail, overall Fail and exit 1. Even expected
-or injected restoration failure never becomes Pass. That diagnostic can prove
-error reporting, but cannot substitute for successful restore or total acceptance.
+CI evidence belongs only to Ubuntu24.04/azure-glibc or Windows Server2022. Actual Mac B/Windows11/WSL2 proof and independent result review remain separate. Physical terminals/screen readers are Deferred; Braille hardware Excluded because no device is available in this private project, subject to reassessment. No conformity/full acceptance claim. Preserve standalone LH-01 and full LH-00 acceptance after LH-02/before LH-03; no series or later feature starts.

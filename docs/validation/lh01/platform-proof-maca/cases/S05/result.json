@@ -1,0 +1,67 @@
+{
+  "caseId": "S05",
+  "productCommit": "41ec0f34d35c9d9e187e1a101b806d7ac93f6b00",
+  "outcome": "RestoredAndErrorPreserved",
+  "result": "Pass",
+  "evidenceIds": [
+    "E01-04",
+    "E01-06"
+  ],
+  "observations": [
+    {
+      "scenario": "HandledFailure",
+      "exitCode": 0,
+      "result": "Pass",
+      "diagnosticContractSatisfied": true
+    },
+    {
+      "scenario": "AggregateFailure",
+      "exitCode": 0,
+      "result": "Pass",
+      "diagnosticContractSatisfied": true
+    }
+  ],
+  "files": [
+    {
+      "path": "AggregateFailure.json",
+      "sha256": "396e7f02b493b73f535f719399341c81f6ac0a37965d5c3b13e93d799f0416da"
+    },
+    {
+      "path": "AggregateFailure.observation.json",
+      "sha256": "b9381f17980ebb1cd71a6f4e35c8bfaebc5c6a1964abd8df6dcde671d47af1a7"
+    },
+    {
+      "path": "AggregateFailure.observation.json.input-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "AggregateFailure.observation.json.restore-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "AggregateFailure.txt",
+      "sha256": "1f2743e2c163a7b4cb489071c4ad007b14fa3595e21cfefa2c7b6d8853da6f45"
+    },
+    {
+      "path": "HandledFailure.json",
+      "sha256": "01617afdac82ac057a3346b96dfd9d991e998026d11a5a854d78507ecd68890d"
+    },
+    {
+      "path": "HandledFailure.observation.json",
+      "sha256": "3a8c577eee04bee6ff0887d5c54e6de7ee8d980bc8726d743629f8aebeb10be7"
+    },
+    {
+      "path": "HandledFailure.observation.json.input-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "HandledFailure.observation.json.restore-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "HandledFailure.txt",
+      "sha256": "ac59f9f067337585d58c32fca991bb6f7bf7ad5c12f46b11d848777a4f421378"
+    }
+  ],
+  "scope": "automated product/model evidence only; independent review and physical acceptance remain open"
+}

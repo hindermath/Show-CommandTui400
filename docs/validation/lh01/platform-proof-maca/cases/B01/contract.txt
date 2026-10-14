@@ -1,0 +1,11 @@
+  Wiederherzustellende Projekte werden ermittelt...
+  Alle Projekte sind für die Wiederherstellung auf dem neuesten Stand.
+  ShowCommandTui400 -> /private/tmp/lh01-t053-maca-suite-4/build/ShowCommandTui400/bin/net10.0/ShowCommandTui400.dll
+  ShowCommandTui400.Tests -> /private/tmp/lh01-t053-maca-suite-4/build/ShowCommandTui400.Tests/bin/net10.0/ShowCommandTui400.Tests.dll
+
+Der Buildvorgang wurde erfolgreich ausgeführt.
+    0 Warnung(en)
+    0 Fehler
+
+Verstrichene Zeit 00:00:00.60
+{"scope":"model/native doubles only; no GUI or foreign-platform proof","result":"Pass","caseId":"B01","checks":["SEC01-unknown-context-unavailable-no-effect","SEC02-action-text-never-evaluated","SEC03-key-injection-conflict-rejected","SEC04-control-format-display-sanitized","N01","N02","N03","N04","N04-host","N04-VT","N04-native","N05","N06","N06-escape","N06-case","N06-numeric-action","N06-syntax","N07","primary=False;restore=False","primary=False;restore=True","primary=True;restore=False","primary=True;restore=True","aggregate-primary-with-successful-restore","platform-native-doubles","K01-whitelist-context-negative","K02-unavailable-no-effects","K03-root-back","K04-state-preservation","K05-focus-navigation","K06-nested-help-menu","K07-explicit-exit","K08-conflicts-before-init","K09-complete-bindings","K10-real-remap-map","K11-effective-help","A01-safe-text-negative","A02-names-availability-focus-busy-error-legend","A03-idle-no-error","A04-resource-language-parity","R01-invalid-tiny-size","R02-resize-preserves-values-focus","R03-measured-layout-boundary","R04-post-resize-navigation"],"outcome":"LockedBuildAndContractTestsPass","hostAssembliesRedistributed":false}

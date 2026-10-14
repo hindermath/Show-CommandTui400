@@ -30,6 +30,17 @@ if(Test-Path -LiteralPath $build){
     $owned=Get-Content -LiteralPath $marker -Raw|ConvertFrom-Json
     if($owned.productCommit -cne $head){throw 'Build root belongs to another revision'}
 }else{[void](New-Item -ItemType Directory -Path $build);@{productCommit=$head}|ConvertTo-Json|Set-Content -LiteralPath $marker}
+$isolatedEnvironment=@{
+    NUGET_PACKAGES=(Join-Path $build 'nuget-packages')
+    NUGET_HTTP_CACHE_PATH=(Join-Path $build 'nuget-http-cache')
+    DOTNET_CLI_HOME=(Join-Path $build 'dotnet-home')
+    DOTNET_SKIP_FIRST_TIME_EXPERIENCE='1'
+    DOTNET_CLI_TELEMETRY_OPTOUT='1'
+    DOTNET_CLI_WORKLOAD_UPDATE_NOTIFY_DISABLE='1'
+    DOTNET_NOLOGO='1'
+}
+$previousEnvironment=@{}
+foreach($name in $isolatedEnvironment.Keys){$previousEnvironment[$name]=[Environment]::GetEnvironmentVariable($name);[Environment]::SetEnvironmentVariable($name,$isolatedEnvironment[$name])}
 Push-Location $root
 try {
     & dotnet build tests/ShowCommandTui400.Tests/ShowCommandTui400.Tests.csproj -p:RestoreLockedMode=true "-p:RestoreConfigFile=$(Join-Path $root 'src/ShowCommandTui400/NuGet.Config')" "-p:LH01PowerShellHome=$PSHOME" "-p:LH01BuildRoot=$build" | Out-Host
@@ -42,4 +53,4 @@ try {
     $outcome=switch($CaseId){'B01'{'LockedBuildAndContractTestsPass'} 'N05'{'RejectedWithoutDomainEffect'} 'N06'{'RejectedBeforeInit'} 'N07'{'SafeDisplayWithoutControlInjection'} default{'RejectedWithoutStateChange'}}
     if(Test-Path (Join-Path $build 'ShowCommandTui400/bin/net10.0/System.Management.Automation.dll')){throw 'Host assembly copied unexpectedly'}
     @{caseId=$CaseId;result='Pass';outcome=$outcome;scope='model/native doubles only; no GUI or foreign-platform proof';checks=$checks;hostAssembliesRedistributed=(Test-Path (Join-Path $build 'ShowCommandTui400/bin/net10.0/System.Management.Automation.dll'))}|ConvertTo-Json -Depth 8 -Compress
-}finally{Pop-Location}
+}finally{Pop-Location;foreach($name in $previousEnvironment.Keys){[Environment]::SetEnvironmentVariable($name,$previousEnvironment[$name])}}

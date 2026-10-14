@@ -75,6 +75,7 @@ heuristic would otherwise count spec.md as a test.*
 | 2026-10-12 | LH-01 Tastaturaktionen T037–T044 / Keyboard actions | Aktionswhitelist, Kontextprüfung, vollständige Belegungen/Remaps, Navigation, Hilfe und nicht verfügbare Folgeaktionen; 44/63 Aufgaben. Gewöhnliche bytegleiche Intake-Updates und andere Ready-Reviews; begrenzte Mac-A-Produktnachweise, keine fremde Plattform-/A11Y-Abnahme. / Action/context controls, remaps, navigation and local help; traceable provenance and distinct reviews; bounded Mac A evidence only. [Nachweis / Proof](validation/lh01/keyboard-actions.md). |
 
 | 2026-10-14 | LH-01 Textzustand/Größe/Sicherheitsgrenzen T045–T052 / Text state, size and security | Sichere DE/EN-Ressourcen, Resize mit Werterhalt, kleine Ansicht und öffentliche Negativfälle;52/63Aufgaben, begrenzte Mac-A-Produktnachweise. Fremde Prüfstände und volle Abnahme bleiben offen. / Safe bilingual text, resize/recovery and negative public boundaries;52/63tasks, bounded local proof only. [Nachweis / Proof](validation/lh01/text-state-checks.md). |
+| 2026-10-14 | LH-01 Plattformprüfstand T053/T054 / Platform test stand | Frischer Mac-A-Produktnachweis, Windows-ConPTY mit einzeln geprüfter Streamumleitung, 60 gebundene Zielkommandos und native Linux-/Windows-CI. T053 abgeschlossen; echte Zielhosts und anderes Ergebnisreview in T054 offen. / Fresh Mac A proof, native ConPTY, exact stand/commands and bounded native CI; actual target evidence remains open. [Plattformmatrix / Matrix](validation/lh01/platform-matrix.md). |
 
 ## Gesamtstatistik / Overall Statistics
 
@@ -86,29 +87,29 @@ Profil 2 verwendet Git-getrackte Textdateien und sichtbare Git-Aktivitaet. Die W
 
 | Kennzahl / Metric | Wert / Value |
 |---|---:|
-| Textbasis / Text base | 279097 lines |
-| Textdateien / Text files | 1623 |
+| Textbasis / Text base | 302635 lines |
+| Textdateien / Text files | 2057 |
 | Beobachtbarer Zeitraum / Observable period | 2025-10-19..2026-10-14 |
 | Aktivtage / Active days | 15 |
-| Relevante Commits / Relevant commits | 54 |
-| Zeilen je Aktivtag / Lines per active day | 18606.5 |
+| Relevante Commits / Relevant commits | 66 |
+| Zeilen je Aktivtag / Lines per active day | 20175.7 |
 | Peak-Tag im Fenster / Peak day in window | 2026-09-27 / 97728 |
 | Peak-Woche im Fenster / Peak week in window | 2026-10-04 / 159392 |
 | Laengste Serie / Longest streak | 8 days |
-| Speedup vs. 80 lines/day | 232.6x |
-| Speedup vs. 125 lines/day | 148.9x |
-| Methodik / Methodology | v2; source `e81beb5246aa` |
+| Speedup vs. 80 lines/day | 252.2x |
+| Speedup vs. 125 lines/day | 161.4x |
+| Methodik / Methodology | v2; source `81546dd832c5` |
 
 ### Artefaktmix / Artifact Mix
 
 ```text
-Produktiv / Production          [#...................]   0.6% | 1585
-Tests                           [#...................]   3.0% | 8412
-Dokumentation / Documentation   [##############......]  68.4% | 190819
-Skripte / Scripts               [##..................]   9.8% | 27317
-Konfiguration / Configuration   [####................]  18.1% | 50577
+Produktiv / Production          [#...................]   0.5% | 1585
+Tests                           [#...................]   3.0% | 9048
+Dokumentation / Documentation   [##############......]  70.6% | 213649
+Skripte / Scripts               [##..................]   9.0% | 27317
+Konfiguration / Configuration   [###.................]  16.7% | 50644
 Daten und Medien / Data and media [....................]   0.0% | 0
-Sonstiger Text / Other text     [#...................]   0.1% | 387
+Sonstiger Text / Other text     [#...................]   0.1% | 392
 ```
 
 Die Balken teilen die aktuelle getrackte Textbasis in stabile Kategorien. Prozent und Zeilenwert sind die genaue, textorientierte Aussage.
@@ -157,7 +158,7 @@ Wochen / Weeks 27..52 | 2026-04-19..2026-10-17
       133333 | . . . . . . . . . . . . . . . . . . . . . . . . # .
       100000 | . . . . . . . . . . . . . . . . . . . . . . . # # .
        66667 | . . . . . . . . . . . . . . . . . . . . . . . # # .
-       33333 | . . . . . . . . . . . . . . . . . . . . . . . # # .
+       33333 | . . . . . . . . . . . . . . . . . . . . . . . # # #
            0 +-----------------------------------------------------
 ```
 
@@ -191,12 +192,12 @@ Die kumulative Kurve summiert nur das Brutto-Aenderungsvolumen im Fenster. Sie d
 
 ```text
 Last 12 calendar months
-  cap 200000 | . . . . . . . . . . . .
+  cap 500000 | . . . . . . . . . . . .
+      416667 | . . . . . . . . . . . .
+      333333 | . . . . . . . . . . . .
+      250000 | . . . . . . . . . . . .
       166667 | . . . . . . . . . . . #
-      133333 | . . . . . . . . . . . #
-      100000 | . . . . . . . . . . # #
-       66667 | . . . . . . . . . . # #
-       33333 | . . . . . . . . . . # #
+       83333 | . . . . . . . . . . # #
            0 +-------------------------
 ```
 
@@ -208,8 +209,8 @@ Es liegen keine belastbaren Phasendaten vor. Deshalb zeigt dieses Diagramm Monat
 
 ```text
 Scale: 0..500x
-80 lines/day       [#########...........] 232.6x
-125 lines/day      [######..............] 148.9x
+80 lines/day       [##########..........] 252.2x
+125 lines/day      [######..............] 161.4x
 ```
 
 Die Faktoren vergleichen sichtbare Lieferdichte mit den dokumentierten manuellen Referenzen. Sie messen keine Arbeitszeit.
@@ -219,10 +220,10 @@ Die Faktoren vergleichen sichtbare Lieferdichte mit den dokumentierten manuellen
 ### Durchsatzvergleich / Throughput Comparison
 
 ```text
-Scale: 0..20000 lines/day
+Scale: 0..50000 lines/day
 Experienced manual [#...................] 80
 Thorsten solo      [#...................] 125
-Visible repository [###################.] 18606.5
+Visible repository [########............] 20175.7
 ```
 
 Die gemeinsame Skala vergleicht Referenzen und sichtbare Lieferdichte. Sie schreibt die Git-Aktivitaet keiner Person oder KI pauschal zu.
@@ -248,6 +249,6 @@ DE: Das Fenster beginnt am 2025-10-19 und endet am 2026-10-14. Es enthaelt 15 ak
 | 2026-07 | 0 |
 | 2026-08 | 0 |
 | 2026-09 | 109576 |
-| 2026-10 | 188293 |
+| 2026-10 | 212705 |
 
 <!-- project-statistics-v2:end -->

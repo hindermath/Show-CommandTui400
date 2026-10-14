@@ -1,0 +1,21 @@
+{
+  "caseId": "PF01",
+  "productCommit": "b1848b0157158fa4d821c975cfb3cea08753475d",
+  "outcome": "ValidCommitAndHost",
+  "result": "Pass",
+  "evidenceIds": [
+    "E01-06",
+    "E01-07"
+  ],
+  "observations": [
+    {
+      "productCommit": "b1848b0157158fa4d821c975cfb3cea08753475d",
+      "platform": "Windows-2022Server-10.0.20348-SP0",
+      "python": "3.12.10",
+      "executable": "current Python interpreter",
+      "authority": "driver validates target, approval, schema, inventory and hashes before PF01"
+    }
+  ],
+  "files": [],
+  "scope": "automated product/model evidence only; independent review and physical acceptance remain open"
+}

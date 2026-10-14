@@ -13,6 +13,8 @@ DE: Automatisierter Prüfpfad. EN: Automated test scenario, never a product para
 DE: Gebautes Modulmanifest. EN: Built product module manifest.
 .PARAMETER TestAssembly
 DE: Bibliothek mit internen Testdoubles. EN: Friend test assembly with internal seams.
+.PARAMETER ObservationFile
+DE: Neue externe Datei mit synthetischen Ergebnissen. EN: New external synthetic result file.
 .EXAMPLE
 pwsh -NoProfile -File ./session-contract.ps1 -Scenario Normal -Module ./ShowCommandTui400.psd1 -TestAssembly ./ShowCommandTui400.Tests.dll
 #>
@@ -20,7 +22,8 @@ pwsh -NoProfile -File ./session-contract.ps1 -Scenario Normal -Module ./ShowComm
 param(
     [ValidateSet('Normal','Cancel','Repeat','Stop','HandledFailure','RestorationFailure','Redirect','HiddenCursor','InputRedirect','AggregateFailure','Keyboard','Remap','FunctionExit','BindingConflict','Resize','SmallExit','TinyExit','TextState','NegativeSecurity')][string]$Scenario='Normal',
     [Parameter(Mandatory)][string]$Module,
-    [Parameter(Mandatory)][string]$TestAssembly
+    [Parameter(Mandatory)][string]$TestAssembly,
+    [string]$ObservationFile
 )
 Set-StrictMode -Version Latest
 $ErrorActionPreference='Stop'
@@ -34,6 +37,7 @@ function Get-Snapshot {
 }
 $actualLocationBefore=(Get-Location).ProviderPath
 $modulesBefore=@(Get-Module|ForEach-Object Name|Sort-Object) -join ";"
+$redirectBoundary=[ordered]@{Input=[Console]::IsInputRedirected;Output=[Console]::IsOutputRedirected}
 $before=Get-Snapshot
 $scopes=[System.Collections.Generic.List[object]]::new()
 $failure=$null
@@ -105,11 +109,23 @@ $native=[ShowCommandTui400.Tests.ProductHarness]::LastRestore
 $after=Get-Snapshot
 $locationUnchanged=$actualLocationBefore -ceq (Get-Location).ProviderPath
 $unchanged=$locationUnchanged -and (($before|ConvertTo-Json -Compress) -ceq ($after|ConvertTo-Json -Compress))
-if($Scenario -notin @('Redirect','InputRedirect')){Write-Host 'LH01_SHELL_INPUT_READY';$readback=Read-Host 'Synthetic return check'}
+function Write-ProofSignal([string]$Suffix){
+    if($ObservationFile){
+        $signal=[IO.File]::Open($ObservationFile+$Suffix,[IO.FileMode]::CreateNew,[IO.FileAccess]::Write,[IO.FileShare]::None)
+        try{$signal.WriteByte(49)}finally{$signal.Dispose()}
+    }
+}
+if($Scenario -notin @('Redirect','InputRedirect')){Write-ProofSignal '.input-ready';Write-Host 'LH01_SHELL_INPUT_READY';$readback=Read-Host 'Synthetic return check'}
 [ShowCommandTui400.Tests.ProductHarness]::Reset()
-$record=[ordered]@{Scenario=$Scenario;SecurityNegative=$securityNegative;RenderObservations=@([ShowCommandTui400.Tests.ProductHarness]::RenderObservations | ForEach-Object {$_ | ConvertFrom-Json});SyntheticValueRetained=($Scenario -notin @('TextState','Resize') -or [ShowCommandTui400.Tests.ProductHarness]::ObservedViewState.Values['synthetic'] -ceq 'retained');InputObservations=@([ShowCommandTui400.Tests.ProductHarness]::InputObservations | ForEach-Object {$_ | ConvertFrom-Json});Before=$before;After=$after;ContextUnchanged=$unchanged;LocationUnchanged=$locationUnchanged;ModuleSetUnchanged=$moduleSetUnchanged;LeaseAcquisitions=[ShowCommandTui400.Tests.ProductHarness]::LeaseAcquisitions;UiCreations=[ShowCommandTui400.Tests.ProductHarness]::UiCreations;ScopeObservations=@($scopes);NativeRestore=$native;StopCalls=[ShowCommandTui400.Tests.ProductHarness]::StopCalls;PipelineState=$state;IsolatedTestRunspace=($Scenario -eq 'Stop');ShellReadback=$readback;Failure=$failure}
+$record=[ordered]@{Scenario=$Scenario;RedirectBoundary=$redirectBoundary;SecurityNegative=$securityNegative;RenderObservations=@([ShowCommandTui400.Tests.ProductHarness]::RenderObservations | ForEach-Object {$_ | ConvertFrom-Json});SyntheticValueRetained=($Scenario -notin @('TextState','Resize') -or [ShowCommandTui400.Tests.ProductHarness]::ObservedViewState.Values['synthetic'] -ceq 'retained');InputObservations=@([ShowCommandTui400.Tests.ProductHarness]::InputObservations | ForEach-Object {$_ | ConvertFrom-Json});Before=$before;After=$after;ContextUnchanged=$unchanged;LocationUnchanged=$locationUnchanged;ModuleSetUnchanged=$moduleSetUnchanged;LeaseAcquisitions=[ShowCommandTui400.Tests.ProductHarness]::LeaseAcquisitions;UiCreations=[ShowCommandTui400.Tests.ProductHarness]::UiCreations;ScopeObservations=@($scopes);NativeRestore=$native;StopCalls=[ShowCommandTui400.Tests.ProductHarness]::StopCalls;PipelineState=$state;IsolatedTestRunspace=($Scenario -eq 'Stop');ShellReadback=$readback;Failure=$failure}
+if($ObservationFile){
+    $stream=[IO.File]::Open($ObservationFile,[IO.FileMode]::CreateNew,[IO.FileAccess]::Write,[IO.FileShare]::None)
+    $writer=$null
+    try{$writer=[IO.StreamWriter]::new($stream);$writer.WriteLine(($record|ConvertTo-Json -Depth 12 -Compress));$writer.Flush()}finally{if($writer){$writer.Dispose()};$stream.Dispose()}
+}
 Write-Host 'LH01_RESULT'
 $record|ConvertTo-Json -Depth 12 -Compress
+Write-ProofSignal '.restore-ready'
 Write-Host 'LH01_RESTORE_READY'
 Start-Sleep -Milliseconds 500
 if(-not $unchanged){exit 1}
