@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "LH-01 approved commands / Freigegebene Kommandos",
-  "description": "Version 1: array interface; an empty Prepared array grants no execution authority. / Leere Prepared-Liste erlaubt keine Ausf\u00fchrung.",
+  "description": "Version 1: array interface; an empty Prepared array grants no execution authority. / Leere Prepared-Liste erlaubt keine Ausführung.",
   "type": "array",
   "items": {
     "type": "object",
@@ -42,7 +42,8 @@
         "type": "array",
         "items": {
           "type": "string"
-        }
+        },
+        "description": "Only whole argument tokens {buildRoot}, {caseRoot}, {productCommit} are expanded to driver-owned paths/revision. No shell interpolation. / Nur ganze Argumenttokens werden zu isolierten Pfaden und dem gebundenen Commit aufgelöst."
       },
       "workingDirectory": {
         "type": "string",

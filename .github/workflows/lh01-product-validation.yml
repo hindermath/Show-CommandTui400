@@ -1,0 +1,67 @@
+name: LH-01 Product Automation
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  product:
+    name: LH-01 product (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, windows-2022]
+    env:
+      PYTHONUTF8: '1'
+    steps:
+      - uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-dotnet@26b0ec14cb23fa6904739307f278c14f94c95bf1 # v5
+        with:
+          dotnet-version: '10.0.401'
+      - name: Stage verified PowerShell 7.6.6 in runner temp
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $windows = $env:RUNNER_OS -eq 'Windows'
+          $asset = if ($windows) { 'PowerShell-7.6.6-win-x64.zip' } else { 'powershell-7.6.6-linux-x64.tar.gz' }
+          $expected = if ($windows) { '02fe458be20493fbdf43f61ea20610b811ee6c738ab1676c61b9cfcd1a33c860' } else { 'ddbc4a2d113bbd46d283cfedcbcd117a70caefd7673f41f2b4e0000badf103bc' }
+          $archive = Join-Path $env:RUNNER_TEMP $asset
+          Invoke-WebRequest "https://github.com/PowerShell/PowerShell/releases/download/v7.6.6/$asset" -OutFile $archive
+          if ((Get-FileHash $archive -Algorithm SHA256).Hash.ToLowerInvariant() -cne $expected) { throw 'PowerShell release digest mismatch' }
+          $hostRoot = Join-Path $env:RUNNER_TEMP 'lh01-powershell-7.6.6'
+          New-Item -ItemType Directory $hostRoot | Out-Null
+          if ($windows) { Expand-Archive $archive -DestinationPath $hostRoot }
+          else {
+            tar -xzf $archive -C $hostRoot
+            if ($LASTEXITCODE -ne 0) { throw 'PowerShell extraction failed' }
+            chmod +x (Join-Path $hostRoot 'pwsh')
+            if ($LASTEXITCODE -ne 0) { throw 'PowerShell permission failed' }
+          }
+          $hostRoot | Out-File $env:GITHUB_PATH -Append -Encoding utf8
+      - name: Negative cases then locked build and synthetic terminal sessions
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          python3 tests/feasibility/lh01/run-product-suite.py --scope ci --output-root (Join-Path $env:RUNNER_TEMP 'lh01-product-proof')
+          if ($LASTEXITCODE -ne 0) { throw 'Product automation failed; inspect retained evidence' }
+          if (git status --porcelain) { throw 'Product test changed source checkout' }
+      - name: Retain synthetic evidence, excluding build payloads
+        if: always()
+        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6
+        with:
+          name: lh01-product-${{ matrix.os }}
+          path: |
+            ${{ runner.temp }}/lh01-product-proof/*.json
+            ${{ runner.temp }}/lh01-product-proof/*.txt
+            ${{ runner.temp }}/lh01-product-proof/cases/
+          if-no-files-found: warn
+          retention-days: 14

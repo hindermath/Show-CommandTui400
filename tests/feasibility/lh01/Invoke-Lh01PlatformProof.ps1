@@ -57,7 +57,35 @@ try {
     if($manifest.productCommit -notmatch '^[0-9a-f]{40}$'){$blockers.Add('Exact product commit missing')}
     if($manifest.driver.sha256 -notmatch '^[0-9a-f]{64}$' -or (Get-Sha (Resolve-BoundPath $manifest.driver.path)) -cne $manifest.driver.sha256){$blockers.Add('Driver hash missing or mismatched')}
     if($manifest.decisionSha256 -notmatch '^[0-9a-f]{64}$' -or (Get-Sha (Resolve-BoundPath 'specs/002-lh01-tui-foundation/feasibility/decisions.md')) -cne $manifest.decisionSha256){$blockers.Add('Decision hash missing or mismatched')}
-    if(-not $manifest.macAProofReference){$blockers.Add('Mac A product proof missing')}else{[void](Resolve-BoundPath $manifest.macAProofReference)}
+    if(-not $manifest.macAProofReference){$blockers.Add('Mac A product proof missing')}else{
+        # Approval evidence can follow the immutable product commit. Resolve only
+        # within the approval manifest directory, never relative to the product.
+        $proofRelative=[string]$manifest.macAProofReference
+        if([IO.Path]::IsPathRooted($proofRelative) -or $proofRelative -match '(^|[/\\])\.\.([/\\]|$)' -or $proofRelative.Contains('\')){throw 'Invalid approval proof path'}
+        $proofRoot=Split-Path -Parent $planPath
+        $proofPath=[IO.Path]::GetFullPath((Join-Path $proofRoot $proofRelative))
+        if(-not $proofPath.StartsWith($proofRoot+[IO.Path]::DirectorySeparatorChar,[StringComparison]::OrdinalIgnoreCase)){throw 'Proof escapes approval directory'}
+        $ancestor=$proofPath
+        while($ancestor){if(Test-Path -LiteralPath $ancestor){$item=Get-Item -LiteralPath $ancestor -Force;if($item.LinkType -or ($item.Attributes -band [IO.FileAttributes]::ReparsePoint)){throw 'Symlink/reparse in approval proof'}};$ancestor=Split-Path -Parent $ancestor}
+        if(-not $manifest.ContainsKey('macAProofSha256') -or $manifest.macAProofSha256 -notmatch '^[0-9a-f]{64}$' -or (Get-Sha $proofPath) -cne $manifest.macAProofSha256){throw 'Mac A proof hash missing or mismatched'}
+        $proof=Get-Content -LiteralPath $proofPath -Raw|ConvertFrom-Json -AsHashtable
+        if($proof.productCommit -cne $manifest.productCommit -or $proof.mainStatus -cne 'Pass' -or $proof.scope -cne 'maca' -or $proof.diagnosticStatus -cne 'Fail' -or $proof.diagnosticExpectationSatisfied -ne $true){throw 'Mac A proof does not cover approved product revision'}
+        if($proof.environment.hardware.machine_name -notmatch 'MacBook Air' -or $proof.environment.hardware.chip_type -cne 'Apple M2'){throw 'Mac A proof hardware mismatch'}
+        $proofCases=@($proof.cases)
+        if($proofCases.Count -ne 20 -or @($proofCases|Where-Object {$_.expectationSatisfied -ne $true}).Count){throw 'Mac A proof inventory incomplete'}
+        foreach($bound in $proof.files){
+            $relative=[string]$bound.path
+            if([IO.Path]::IsPathRooted($relative) -or $relative.Contains('\') -or $relative -match '(^|/)\.\.(/|$)'){throw 'Invalid raw evidence path'}
+            $file=Join-Path (Split-Path -Parent $proofPath) $relative
+            $current=$file
+            while($current){if(Test-Path -LiteralPath $current){$item=Get-Item -LiteralPath $current -Force;if($item.LinkType -or ($item.Attributes -band [IO.FileAttributes]::ReparsePoint)){throw 'Symlink/reparse raw evidence'}};$current=Split-Path -Parent $current}
+            if($bound.sha256 -notmatch '^[0-9a-f]{64}$' -or (Get-Sha $file) -cne $bound.sha256){throw 'Mac A raw evidence hash mismatch'}
+        }
+    }
+    if($manifest.state -ceq 'Executable'){
+        if(-not $manifest.ContainsKey('fileBindings') -or @($manifest.fileBindings).Count -lt 8){throw 'Execution file bindings missing'}
+        foreach($bound in $manifest.fileBindings){if($bound.sha256 -notmatch '^[0-9a-f]{64}$' -or (Get-Sha (Resolve-BoundPath $bound.path)) -cne $bound.sha256){throw 'Execution file binding mismatch'}}
+    }
     if(-not $manifest.ContainsKey('approval') -or $manifest.approval.owner -cne 'Thorsten Hindermann' -or -not $manifest.approval.requestReference -or -not $manifest.approval.approvedAt){$blockers.Add('Separate target execution approval missing')}
     $head=(& git -C $root rev-parse HEAD).Trim()
     $status=@(& git -C $root status --porcelain --untracked-files=all)
@@ -107,9 +135,10 @@ try {
         $command=$matching[0]
         if($command.expectedCaseResult -cne $case.requiredResult -or $command.expectedOutcome -cne $case.expectedOutcome){throw 'Command/case expectation mismatch'}
         if(($case.id -eq 'S07') -ne ($case.executionPhase -ceq 'SeparateFailureRun')){throw 'S07 failure phase must be isolated'}
+        foreach($argument in $command.arguments){if($argument -match '[{}]' -and $argument -cnotin @('{buildRoot}','{caseRoot}','{productCommit}')){throw 'Unknown or embedded command token'}}
         $working=Resolve-BoundPath $command.workingDirectory
         if(-not(Test-Path -LiteralPath $working -PathType Container)){throw 'Working directory is not a directory'}
-        $toolPath=if($command.executable -in @('pwsh','dotnet','python3')){$command.executable}else{Resolve-BoundPath $command.executable}
+        $toolPath=if($command.executable -in @('pwsh','dotnet','python3','python')){$command.executable}else{Resolve-BoundPath $command.executable}
         $tool=Get-Command $toolPath -CommandType Application -ErrorAction SilentlyContinue
         if(-not $tool){$blockers.Add("Executable unavailable: $($command.executable)")}
     }
@@ -122,7 +151,7 @@ while($ancestor){
     $parent=Split-Path -Parent $ancestor
     if($parent -eq $ancestor){break};$ancestor=$parent
 }
-if($out.StartsWith($root+[IO.Path]::DirectorySeparatorChar,[StringComparison]::OrdinalIgnoreCase)){throw 'Use isolated output outside the source checkout'}
+if($out -eq $root -or $out.StartsWith($root+[IO.Path]::DirectorySeparatorChar,[StringComparison]::OrdinalIgnoreCase)){throw 'Use isolated output outside the source checkout'}
 } catch {$blockers.Add($_.Exception.Message)}
 if($blockers.Count){[ordered]@{status='Blocked';target=$Target;blockers=@($blockers);nextAction='Provide a separately approved complete plan and matching target checkout; no automatic repair'}|ConvertTo-Json -Depth 8;exit 2}
 if($CheckOnly){[ordered]@{status='Ready';target=$Target;productCommit=$head;execution='NotRun'}|ConvertTo-Json;exit 0}
@@ -130,13 +159,20 @@ if($CheckOnly){[ordered]@{status='Ready';target=$Target;productCommit=$head;exec
 $records=[System.Collections.Generic.List[object]]::new()
 $overall='Pass'
 # S07 is a diagnostic failure run and follows all successful cases; its Fail never becomes Pass.
-$ordered=@($manifest.cases|Where-Object enabled|Sort-Object @{Expression={if($_.id -eq 'S07'){9}elseif($_.group -eq 'Preflight'){0}elseif($_.group -eq 'Negative'){1}else{2}}})
+$ordered=@($manifest.cases|Where-Object enabled|Sort-Object @{Expression={if($_.id -eq 'S07'){9}elseif($_.group -eq 'Preflight'){0}elseif($_.group -eq 'Negative'){1}elseif($_.id -eq 'EV01'){3}else{2}}})
 foreach($case in $ordered){
     $command=@($targetCommands|Where-Object caseId -CEQ $case.id)[0]
     $working=Resolve-BoundPath $command.workingDirectory
-    $toolPath=if($command.executable -in @('pwsh','dotnet','python3')){$command.executable}else{Resolve-BoundPath $command.executable}
+    $toolPath=if($command.executable -in @('pwsh','dotnet','python3','python')){$command.executable}else{Resolve-BoundPath $command.executable}
     $executable=(Get-Command $toolPath -CommandType Application).Source
-    $arguments=[string[]]$command.arguments
+    $arguments=[string[]]@($command.arguments|ForEach-Object {
+        switch -CaseSensitive ($_){
+            '{buildRoot}'{Join-Path $out 'build'}
+            '{caseRoot}'{Join-Path $out 'cases'}
+            '{productCommit}'{$head}
+            default{$_}
+        }
+    })
     $watch=[Diagnostics.Stopwatch]::StartNew()
     $info=[Diagnostics.ProcessStartInfo]::new()
     $info.FileName=$executable;$info.WorkingDirectory=$working;$info.UseShellExecute=$false
