@@ -19,7 +19,7 @@ public abstract class NativeTerminalLease : ITerminalLease
     public void Activate()
     {
         ObjectDisposedException.ThrowIf(disposed, this);
-        if (activated) throw new InvalidOperationException("Lease already active");
+        if (activated) throw new InvalidOperationException(ShowCommandTui400.Resources.Messages.Both("LeaseActive"));
         savedControl = Console.TreatControlCAsInput;
         controlChanged = true;
         Console.TreatControlCAsInput = true;
@@ -39,10 +39,10 @@ public abstract class NativeTerminalLease : ITerminalLease
         {
             native.Write(saved); var actual = native.Read();
             Observation = new(native.Platform, Convert.ToHexString(saved), Convert.ToHexString(actual), saved.SequenceEqual(actual), native.ConfiguredEquals(saved, actual), native.Boundary);
-            if (!Observation.ConfiguredEqual) throw new IOException("Native terminal modes differ after restoration");
+            if (!Observation.ConfiguredEqual) throw new IOException(ShowCommandTui400.Resources.Messages.Both("RestoreMismatch"));
         }
         catch (Exception e) { errors.Add(e); }
         if (cursorSaved) try { Console.Out.Write("\u001b[?25r"); Console.Out.Flush(); } catch (Exception e) { errors.Add(e); }
-        if (errors.Count > 0) throw new AggregateException("Terminal restore errors", errors);
+        if (errors.Count > 0) throw new AggregateException(ShowCommandTui400.Resources.Messages.Both("RestoreErrors"), errors);
     }
 }

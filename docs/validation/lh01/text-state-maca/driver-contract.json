@@ -1,0 +1,47 @@
+{
+  "result": "Pass",
+  "checks": [
+    {
+      "case": "prepared",
+      "exitCode": 2,
+      "outputCreated": false,
+      "expectedBlockerObserved": true
+    },
+    {
+      "case": "empty-inventory",
+      "exitCode": 2,
+      "outputCreated": false,
+      "expectedBlockerObserved": true
+    },
+    {
+      "case": "changed-outcome",
+      "exitCode": 2,
+      "outputCreated": false,
+      "expectedBlockerObserved": true
+    },
+    {
+      "case": "changed-order",
+      "exitCode": 2,
+      "outputCreated": false,
+      "expectedBlockerObserved": true
+    },
+    {
+      "case": "missing-evidence",
+      "exitCode": 2,
+      "outputCreated": false,
+      "expectedBlockerObserved": true
+    },
+    {
+      "case": "duplicate-case",
+      "exitCode": 2,
+      "outputCreated": false,
+      "expectedBlockerObserved": true
+    },
+    {
+      "case": "schema",
+      "exitCode": 2,
+      "outputCreated": false,
+      "expectedBlockerObserved": true
+    }
+  ]
+}

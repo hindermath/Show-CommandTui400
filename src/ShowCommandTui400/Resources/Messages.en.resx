@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <data xml:space="preserve" name="Ready">
+    <value>Ready</value>
+  </data>
+  <data xml:space="preserve" name="Focus">
+    <value>Focus</value>
+  </data>
+  <data xml:space="preserve" name="Status">
+    <value>Status</value>
+  </data>
+  <data xml:space="preserve" name="Busy">
+    <value>Busy</value>
+  </data>
+  <data xml:space="preserve" name="Yes">
+    <value>Yes</value>
+  </data>
+  <data xml:space="preserve" name="No">
+    <value>No</value>
+  </data>
+  <data xml:space="preserve" name="Error">
+    <value>Error</value>
+  </data>
+  <data xml:space="preserve" name="NoError">
+    <value>No error</value>
+  </data>
+  <data xml:space="preserve" name="Role">
+    <value>Role: text view with buttons</value>
+  </data>
+  <data xml:space="preserve" name="HelpTitle">
+    <value>Help and actions</value>
+  </data>
+  <data xml:space="preserve" name="Navigation">
+    <value>Tab/Shift+Tab and arrows move focus. Enter activates the button. Page keys scroll help/actions. No target execution.</value>
+  </data>
+  <data xml:space="preserve" name="Available">
+    <value>available</value>
+  </data>
+  <data xml:space="preserve" name="Unavailable">
+    <value>unavailable</value>
+  </data>
+  <data xml:space="preserve" name="ActionRejected">
+    <value>Action unavailable here</value>
+  </data>
+  <data xml:space="preserve" name="Refreshed">
+    <value>View refreshed; values retained</value>
+  </data>
+  <data xml:space="preserve" name="Confirmed">
+    <value>Confirmed; no target execution</value>
+  </data>
+  <data xml:space="preserve" name="Small">
+    <value>Terminal too small. Enlarge the view or exit safely.</value>
+  </data>
+  <data xml:space="preserve" name="SmallKeys">
+    <value>Alt+H help; Alt+X exit; Esc back</value>
+  </data>
+  <data xml:space="preserve" name="SmallHelp">
+    <value>Help: inputs are retained. Alt+X returns to the shell.</value>
+  </data>
+  <data xml:space="preserve" name="CapabilityRejected">
+    <value>An interactive supported ConsoleHost terminal on PowerShell 7.6.4+ is required.</value>
+  </data>
+  <data xml:space="preserve" name="InvalidConfiguration">
+    <value>Invalid or conflicting key binding.</value>
+  </data>
+  <data xml:space="preserve" name="BindingPairs">
+    <value>Key bindings require string pairs.</value>
+  </data>
+  <data xml:space="preserve" name="TerminalInUse">
+    <value>Terminal is already in use.</value>
+  </data>
+  <data xml:space="preserve" name="UnsupportedOS">
+    <value>Unsupported operating system.</value>
+  </data>
+  <data xml:space="preserve" name="NoCaller">
+    <value>No caller runspace.</value>
+  </data>
+  <data xml:space="preserve" name="RestoreFailed">
+    <value>Terminal restoration failed.</value>
+  </data>
+  <data xml:space="preserve" name="CombinedFailure">
+    <value>Operation and restoration failed</value>
+  </data>
+  <data xml:space="preserve" name="Help">
+    <value>Help</value>
+  </data>
+  <data xml:space="preserve" name="Exit">
+    <value>Exit</value>
+  </data>
+  <data xml:space="preserve" name="Back">
+    <value>Back</value>
+  </data>
+  <data xml:space="preserve" name="Refresh">
+    <value>Refresh</value>
+  </data>
+  <data xml:space="preserve" name="Confirm">
+    <value>Confirm</value>
+  </data>
+  <data xml:space="preserve" name="ActionsMenu">
+    <value>Actions</value>
+  </data>
+  <data xml:space="preserve" name="Context">
+    <value>Context selection</value>
+  </data>
+  <data xml:space="preserve" name="AllParameters">
+    <value>All parameters</value>
+  </data>
+  <data xml:space="preserve" name="MoreParameters">
+    <value>More parameters</value>
+  </data>
+  <data xml:space="preserve" name="Details">
+    <value>Details</value>
+  </data>
+  <data xml:space="preserve" name="Select">
+    <value>Select</value>
+  </data>
+  <data xml:space="preserve" name="Edit">
+    <value>Edit</value>
+  </data>
+  <data xml:space="preserve" name="Execute">
+    <value>Execute</value>
+  </data>
+  <data xml:space="preserve" name="SmallTitle">
+    <value>Small</value>
+  </data>
+  <data xml:space="preserve" name="ShortExit">
+    <value>Exit</value>
+  </data>
+  <data xml:space="preserve" name="Root">
+    <value>Start view</value>
+  </data>
+  <data xml:space="preserve" name="LinuxUnsupported">
+    <value>Unsupported Linux terminal/ABI</value>
+  </data>
+  <data xml:space="preserve" name="LinuxWriteFailed">
+    <value>Linux tcsetattr failed</value>
+  </data>
+  <data xml:space="preserve" name="MacUnsupported">
+    <value>Unsupported Darwin terminal/ABI</value>
+  </data>
+  <data xml:space="preserve" name="MacWriteFailed">
+    <value>Darwin tcsetattr failed</value>
+  </data>
+  <data xml:space="preserve" name="InvalidSnapshot">
+    <value>Invalid native snapshot length</value>
+  </data>
+  <data xml:space="preserve" name="LeaseActive">
+    <value>Lease already active</value>
+  </data>
+  <data xml:space="preserve" name="RestoreMismatch">
+    <value>Native terminal modes differ after restoration</value>
+  </data>
+  <data xml:space="preserve" name="RestoreErrors">
+    <value>Terminal restore errors</value>
+  </data>
+  <data xml:space="preserve" name="WindowsMismatch">
+    <value>Windows restoration mismatch</value>
+  </data>
+  <data xml:space="preserve" name="WindowsUnsupported">
+    <value>Unsupported Windows console</value>
+  </data>
+  <data xml:space="preserve" name="UnvalidatedBinding">
+    <value>Binding was not validated</value>
+  </data>
+</root>

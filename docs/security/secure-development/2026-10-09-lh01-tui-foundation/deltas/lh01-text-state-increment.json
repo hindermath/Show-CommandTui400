@@ -1,0 +1,237 @@
+{
+  "schemaVersion": "1.0",
+  "documentType": "SecureDevelopmentGateEvidence",
+  "contextId": "lh01-tui-foundation",
+  "gate": "delta",
+  "mode": "development",
+  "createdAt": "2026-10-14T18:11:21.463602+00:00",
+  "scope": "T045–T052 bounded Mac A text/size/security increment only; no full assurance",
+  "review": {
+    "owner": "Thorsten Hindermann",
+    "reviewer": "Codex /root: author code/security checking in docs/validation/lh01/text-state-checks.md; full distinct review remains T058",
+    "reviewedAt": "2026-10-14T18:11:21.463602+00:00",
+    "reviewDue": "2026-10-21",
+    "residualRisk": "Locked read-only TextView deprecation CS0618; full distinct architecture/assurance review, native foreign hosts and practical assistive acceptance remain open.",
+    "reevaluationTrigger": "Changed source, dependency, host or scope; before subsequent product delivery"
+  },
+  "assessments": [
+    {
+      "id": "INC-TEXT-SIZE-NEGATIVE",
+      "applicability": "Applicable",
+      "implementation": "Fulfilled",
+      "evidence": "docs/accessibility/lh01-text-state.md; docs/validation/lh01/security-negative.md; exact text-state-maca manifest. Safe text, resource parity, resize/recovery and negative zero-effect observations."
+    },
+    {
+      "id": "FULL-PRODUCT-ASSURANCE",
+      "applicability": "Applicable",
+      "implementation": "Partly Fulfilled",
+      "evidence": "T053–T063 remain open; author checks are not full distinct review or foreign-host acceptance.",
+      "nextAction": "T053/T054 bind/run authorized foreign proofs; T058 perform full independent architecture/assurance reassessment before acceptance.",
+      "owner": "Thorsten Hindermann",
+      "dueAt": "Before full LH-01 acceptance"
+    }
+  ],
+  "outcome": "NeedsRemediation",
+  "acceptedRisks": [],
+  "externalComparisonBoundary": "HOSK/GWDG: ExternalComparison only; never local evidence",
+  "runbookApplicability": "N/A",
+  "runbookRationale": "Development-only text/size/security increment; no training/field operation. Linked proofs and scripts provide bounded reproduction.",
+  "changedPaths": [
+    {
+      "path": "src/Directory.Build.props",
+      "rawSha256": "32e91a5ddd7e191c3a2ec198a561a914ddebed129c2eb4a20f16f9839c8e241a"
+    },
+    {
+      "path": "src/ShowCommandTui400/Actions/ActionAvailability.cs",
+      "rawSha256": "746d09e422494e3ea67154eee44d0be70aba7cfdff7261a319c0593b456f71fd"
+    },
+    {
+      "path": "src/ShowCommandTui400/Actions/ActionDescriptor.cs",
+      "rawSha256": "fc7634fc88d36796ec9787071fdbcfae1d8ef07caa3325486c6a2a55b395e6ef"
+    },
+    {
+      "path": "src/ShowCommandTui400/Actions/ActionDispatcher.cs",
+      "rawSha256": "df4683629bd1ebb7239dd0c5d7af409dcdee542b68b7ce7e7e7fd96f031709f1"
+    },
+    {
+      "path": "src/ShowCommandTui400/Actions/KeyBindingMap.cs",
+      "rawSha256": "a1ab6b00e7d9fc55c50646e7658be8b78d4e42d1a5ca95abfb368c51e798f082"
+    },
+    {
+      "path": "src/ShowCommandTui400/Actions/KeyBindingValidator.cs",
+      "rawSha256": "6137f454ea760b8e0c743695a13f909bdc4d27fc14c0a887168b5b7c480901af"
+    },
+    {
+      "path": "src/ShowCommandTui400/Commands/ShowCommandTui400Command.cs",
+      "rawSha256": "7e6f3f98a99c48f333c5fd0759bfb982386f44266e76b9f264378d116cdf9931"
+    },
+    {
+      "path": "src/ShowCommandTui400/NuGet.Config",
+      "rawSha256": "7a77c63a438cdf0524dc336da4bf2191d3f259645de430f5a4c61b3edd52fa9f"
+    },
+    {
+      "path": "src/ShowCommandTui400/Presentation/AccessibleStatePresenter.cs",
+      "rawSha256": "a2e72decaa27f687f1e67ad97f146e74dfc7195644bd2853a4d926628f03f3b9"
+    },
+    {
+      "path": "src/ShowCommandTui400/Presentation/SafeDisplayText.cs",
+      "rawSha256": "abaaec8c5cf8ba6c1e51fdd459028c6e2810232ffd25015b9cdf82de545d5749"
+    },
+    {
+      "path": "src/ShowCommandTui400/Resources/Messages.cs",
+      "rawSha256": "db03305bc10f8e443f52c1c068abe7ebfffc69f2cefa3c3b2feb9a24bb3a7d0e"
+    },
+    {
+      "path": "src/ShowCommandTui400/Resources/Messages.de.resx",
+      "rawSha256": "345126eefbdf14800919ed099c7146002c007a78470f6b51237122b33eeb84af"
+    },
+    {
+      "path": "src/ShowCommandTui400/Resources/Messages.en.resx",
+      "rawSha256": "0c51d1c194130cdebf97e08a9181d5d061d844130c04f74e58b852ba706da981"
+    },
+    {
+      "path": "src/ShowCommandTui400/Session/CallerSessionAdapter.cs",
+      "rawSha256": "1bb6311520f80d439545392a8f41fc0ca493b3405aa91c6ce63cbfc59f1b403e"
+    },
+    {
+      "path": "src/ShowCommandTui400/Session/EntryGuard.cs",
+      "rawSha256": "36bafc3fca560bdad6e8582558caee4f8743b683bceb6dfa605f79f44dd45fa4"
+    },
+    {
+      "path": "src/ShowCommandTui400/Session/SessionContext.cs",
+      "rawSha256": "b704fd55fb59f9d1b0926b051cea46050f0e3ae3a36f7ed1551a76ac2a87c138"
+    },
+    {
+      "path": "src/ShowCommandTui400/ShowCommandTui400.csproj",
+      "rawSha256": "6f7e753909d10c0a53d06f4e1248600851a38eb157b2611b51f2e3f4c4484007"
+    },
+    {
+      "path": "src/ShowCommandTui400/ShowCommandTui400.psd1",
+      "rawSha256": "fbc58b2fb0420865dca62ad9246aa18d3c5cb05f35cd69b648d2fc933185978a"
+    },
+    {
+      "path": "src/ShowCommandTui400/State/ViewState.cs",
+      "rawSha256": "cdfe48ff1fbac007f853bd33eb8e6132a525dbe913f82b2b18f8420d82b639eb"
+    },
+    {
+      "path": "src/ShowCommandTui400/Terminal/ITerminalLease.cs",
+      "rawSha256": "5eacc9062c95ff9e620f2735eb60a267d8af140d2d7b38c49fd96a9013771ca1"
+    },
+    {
+      "path": "src/ShowCommandTui400/Terminal/LinuxTerminalLease.cs",
+      "rawSha256": "f1e94f214ce7ac5860cdb90fcdb192e3449e1f965d36644c0310f7be7216d138"
+    },
+    {
+      "path": "src/ShowCommandTui400/Terminal/MacTerminalLease.cs",
+      "rawSha256": "5f652f78b72cc472de10ff4950a42e2a3bc6baed2492b540536044f0d60df7b6"
+    },
+    {
+      "path": "src/ShowCommandTui400/Terminal/NativeTerminalLease.cs",
+      "rawSha256": "16d9f9d50d11427022d61f13040b21a96fa65c463b492efaff10c81872383c07"
+    },
+    {
+      "path": "src/ShowCommandTui400/Terminal/TerminalApplication.cs",
+      "rawSha256": "b3f35b8da54971b1a5cbd545b4077d607d0331338189aa0ce5e9d57be4af0a8b"
+    },
+    {
+      "path": "src/ShowCommandTui400/Terminal/TerminalLifecycle.cs",
+      "rawSha256": "1c9f7fb6f44019cfc83e04c34fa04aefecd02d42ef575313c897a146e02be993"
+    },
+    {
+      "path": "src/ShowCommandTui400/Terminal/WindowsTerminalLease.cs",
+      "rawSha256": "0307aaebe8be81bc64bf61d0d3e06970d295721c30aeb228ab858a05198f8c03"
+    },
+    {
+      "path": "src/ShowCommandTui400/Views/ActionHelpView.cs",
+      "rawSha256": "d937f0adad2fabe41b9d1c4a91a48d6b83bb33c0477f2bc26d84c5dcf29f5680"
+    },
+    {
+      "path": "src/ShowCommandTui400/Views/NavigationAdapter.cs",
+      "rawSha256": "b342c5f4379738ef2b638a30a3ac2cddeec4e4f8a8926a6dcd4a33f4c438ae68"
+    },
+    {
+      "path": "src/ShowCommandTui400/Views/ResizeCoordinator.cs",
+      "rawSha256": "896e17745b3441148deb0f87a4090e3ba9ed6e24cfd100b402caeece001a92fb"
+    },
+    {
+      "path": "src/ShowCommandTui400/Views/SmallTerminalView.cs",
+      "rawSha256": "cb73e5fc03822b26d5d2dc4e9d112c242474e3019b2fc197ec689ac77bdd924b"
+    },
+    {
+      "path": "src/ShowCommandTui400/packages.lock.json",
+      "rawSha256": "9a50991596ca623b8d4041f1ad193d9f3c18fcadaac18f5df824f2fb7baf4813"
+    },
+    {
+      "path": "tests/ShowCommandTui400.Tests/AccessibleStateTests.cs",
+      "rawSha256": "636ce3835d8fa9a0f1da77ba425b335a8b7d8d77a0c4be07d777a55e9e4ddace"
+    },
+    {
+      "path": "tests/ShowCommandTui400.Tests/ActionContractTests.cs",
+      "rawSha256": "35cc44e77b6751465972642c3902642644516c1a50759b0f5ceb125d0f4f4d2f"
+    },
+    {
+      "path": "tests/ShowCommandTui400.Tests/EntryBoundaryTests.cs",
+      "rawSha256": "f22d24b2617f53ed5704e1d782622e0bdf8e16cc0758b3badf262f1f4755416d"
+    },
+    {
+      "path": "tests/ShowCommandTui400.Tests/KeyBindingTests.cs",
+      "rawSha256": "87622296d29c9cb5ff7ad5fa086e8214c3239b9c491a82b09ecdcc90e7d669f2"
+    },
+    {
+      "path": "tests/ShowCommandTui400.Tests/ProductHarness.cs",
+      "rawSha256": "f294c9aae87b48e65a3647edd7607c303710c58df433b2e5310e9bdca4618f06"
+    },
+    {
+      "path": "tests/ShowCommandTui400.Tests/ResizeStateTests.cs",
+      "rawSha256": "1f0dab7fa3dd31a54ce75920a3aa57299f8d3525125ce28cb537192f8b1494f3"
+    },
+    {
+      "path": "tests/ShowCommandTui400.Tests/SecurityBoundaryTests.cs",
+      "rawSha256": "a9c82254cce211218df7ce97d19f8ae74756846b9320003ca8196e828b3d2cf0"
+    },
+    {
+      "path": "tests/ShowCommandTui400.Tests/ShowCommandTui400.Tests.csproj",
+      "rawSha256": "0ddbbb332f7267bdad22caaa3fe2ec39b31f97633494e2a185dcff6bf0d80ac7"
+    },
+    {
+      "path": "tests/ShowCommandTui400.Tests/TerminalLifecycleTests.cs",
+      "rawSha256": "7c1a43fd9b2d0a537964e82676ef99df4c0eec948dc1ce4f45295acc2a41d58d"
+    },
+    {
+      "path": "tests/ShowCommandTui400.Tests/packages.lock.json",
+      "rawSha256": "be152f8f6783b9c9f74ff2c1700fee5e38815dfbba0a8772872b62e9c88cd998"
+    },
+    {
+      "path": "tests/feasibility/lh01/Invoke-Lh01ContractProof.ps1",
+      "rawSha256": "614ebfaf736b2d5f659b297e2069f61a03ffe1bd7a1cbe25530b1024ee1c3414"
+    },
+    {
+      "path": "tests/feasibility/lh01/Invoke-Lh01PlatformProof.ps1",
+      "rawSha256": "b31da5792498b6400352e12dab39803173f55810d9ceb1a426a0369b38a20abc"
+    },
+    {
+      "path": "tests/feasibility/lh01/README.md",
+      "rawSha256": "bc67f26813b6caf27d09429a0eadf428be7895c96aaf69bd50cab39a90aed752"
+    },
+    {
+      "path": "tests/feasibility/lh01/proof-driver-contract.py",
+      "rawSha256": "5640f8391c91eb70e0964f51c268126302e7129c67198d9cd87b6fbaa4fc33da"
+    },
+    {
+      "path": "tests/feasibility/lh01/proof-tooling-contract.py",
+      "rawSha256": "223cf79d29cc80ab3e066add242b8bb55d5659330e18638c2c06eddab3f858d6"
+    },
+    {
+      "path": "tests/feasibility/lh01/pty-product.py",
+      "rawSha256": "f677e05b0800b6e447f370355bc5827e3baaf2478a08ff78b4d40757ec3e5956"
+    },
+    {
+      "path": "tests/feasibility/lh01/session-contract.ps1",
+      "rawSha256": "ce82b232ae13bb4106ced26e546c7cd39b3bb5cdf5ea1bd79c825d5ef205b492"
+    },
+    {
+      "path": "tests/feasibility/lh01/terminal_probes.py",
+      "rawSha256": "35e7f2b74e27a348a2fd24cd70496c15d8a7572527cc1a61276f289fa428e257"
+    }
+  ]
+}

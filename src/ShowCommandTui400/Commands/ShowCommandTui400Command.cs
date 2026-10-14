@@ -32,11 +32,11 @@ public sealed class ShowCommandTui400Command : PSCmdlet
             bool vt = Host.UI?.SupportsVirtualTerminal == true && (OperatingSystem.IsWindows() || terminalType is "xterm" or "xterm-256color");
             var capability = new EntryCapabilities(version == null ? new Version(0, 0) : new Version(version.Major, version.Minor, version.Patch), Console.IsInputRedirected, Console.IsOutputRedirected, raw, Host.Name, NativeSupported(), vt);
             Dictionary<string, string>? remap = null;
-            if (KeyBinding != null) { remap = new(StringComparer.Ordinal); foreach (DictionaryEntry item in KeyBinding) { if (item.Key is not string k || item.Value is not string v) throw new EntryRejectedException("InvalidConfiguration", "Tastenbelegung erwartet Textpaare. / Key bindings require string pairs."); remap.Add(k, v); } }
+            if (KeyBinding != null) { remap = new(StringComparer.Ordinal); foreach (DictionaryEntry item in KeyBinding) { if (item.Key is not string k || item.Value is not string v) throw new EntryRejectedException("InvalidConfiguration", ShowCommandTui400.Resources.Messages.Both("BindingPairs")); remap.Add(k, v); } }
             var bindings = EntryGuard.Validate(capability, remap);
             var context = CallerSessionAdapter.Capture(this);
             acquired = SessionLease.Wait(0);
-            if (!acquired) throw new EntryRejectedException("InvalidContext", "Terminal ist bereits belegt. / Terminal is already in use.");
+            if (!acquired) throw new EntryRejectedException("InvalidContext", ShowCommandTui400.Resources.Messages.Both("TerminalInUse"));
             ContextObserver?.Invoke(context, SessionState);
             var lease = LeaseFactory();
             TerminalLifecycle.Run(lease, () =>
@@ -56,5 +56,5 @@ public sealed class ShowCommandTui400Command : PSCmdlet
     }
     protected override void StopProcessing() { lock (gate) { stopping = true; StopObserver?.Invoke(); active?.Stop(); } }
     internal static bool NativeSupported() => OperatingSystem.IsWindows() || (OperatingSystem.IsMacOS() && RuntimeInformation.ProcessArchitecture == Architecture.Arm64) || LinuxTerminalLease.IsSupportedPlatform();
-    internal static ITerminalLease CreateLease() => OperatingSystem.IsMacOS() ? new MacTerminalLease() : OperatingSystem.IsLinux() ? new LinuxTerminalLease() : OperatingSystem.IsWindows() ? new WindowsTerminalLease() : throw new EntryRejectedException("CapabilityRejected", "Nicht unterstütztes Betriebssystem. / Unsupported operating system.");
+    internal static ITerminalLease CreateLease() => OperatingSystem.IsMacOS() ? new MacTerminalLease() : OperatingSystem.IsLinux() ? new LinuxTerminalLease() : OperatingSystem.IsWindows() ? new WindowsTerminalLease() : throw new EntryRejectedException("CapabilityRejected", ShowCommandTui400.Resources.Messages.Both("UnsupportedOS"));
 }

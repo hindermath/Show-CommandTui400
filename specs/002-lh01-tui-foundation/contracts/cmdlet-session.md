@@ -30,7 +30,10 @@ ErrorIds; external termination/host failure has explicit restoration limits.
 
 Leserpfad / Reader path: [Datenmodell](../data-model.md) → [Prüfanleitung](../quickstart.md).
 
-## Öffentliche Signatur des ersten Inkrements / First increment public signature
+Aktueller Remap-/Aktionsvertrag: [Aktionen und Terminal](actions-terminal.md).
+Current remap/action contract is linked above; the following subsection records the first increment.
+
+## Historische Signaturbeschreibung T018–T036 / Historical T018–T036 signature description
 
 DE: `Show-CommandTui400 [-KeyBinding <hashtable>] [<CommonParameters>]`.
 Kein Pipelineinput und keine Ausgabeobjekte; Rückkehr zur aufrufenden Sitzung.

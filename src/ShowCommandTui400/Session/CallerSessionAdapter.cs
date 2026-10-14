@@ -6,7 +6,7 @@ internal static class CallerSessionAdapter
 {
     public static SessionContext Capture(PSCmdlet command)
     {
-        var runspace = Runspace.DefaultRunspace ?? throw new EntryRejectedException("InvalidContext", "Keine Aufrufersitzung. / No caller runspace.");
+        var runspace = Runspace.DefaultRunspace ?? throw new EntryRejectedException("InvalidContext", ShowCommandTui400.Resources.Messages.Both("NoCaller"));
         return new(Environment.ProcessId, runspace.InstanceId, command.SessionState.Path.CurrentLocation.Path, command.Host.Name);
     }
 }

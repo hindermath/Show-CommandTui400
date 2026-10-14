@@ -56,3 +56,27 @@ proves F3. The previous ten scenarios remain regression. RestorationFailure stay
 Fail/exit1 with its diagnostic contract satisfied. These are synthetic Mac A
 product proofs, not foreign-host or practical acceptance. Prepared command
 bindings remain unchanged.
+
+## DE — Text-/Größen-/Sicherheitsinkrement T045–T052
+
+B01 führt SecurityBoundaryTests zuerst aus und ergänzt AccessibleStateTests sowie
+ResizeStateTests. Neue Produktfälle: NegativeSecurity, TextState, Resize, SmallExit
+und TinyExit. NegativeSecurity verlangt fünf öffentliche Ablehnungen vor Lease/UI,
+null synthetische Zielaufrufe/beobachtete Netzereignisse und unveränderte Module/
+Sentineldatei. TextState verwendet ausschließlich künstliche Werte über Friend-
+Testseams und prüft echte Hilfe-Scrollpositionen. Resize verändert die Unix-PTY-
+Größe samt SIGWINCH, behält Werte/Fokus und prüft Navigation nach Vergrößern.
+SmallExit/TinyExit prüfen Shellrückkehr bei20x5bzw1x1. Keine private Datenerfassung.
+Alle Ausgaben müssen neue Dateien sein; die bekannten Build-/Ausgabegrenzen gelten.
+Die drei fremden Hand-offs bleiben Prepared; dies implementiert keinen Windows-
+Terminal-Testadapter und genehmigt keine fremden Prüfkommandos.
+
+## EN — Text/size/security increment T045–T052
+
+B01 runs SecurityBoundaryTests first and adds accessible-state/resize model tests.
+Five new product cases cover public negative rejection, controlled zero-effect
+observations, synthetic busy/error rendering, actual help scroll offsets, Unix PTY
+resize/SIGWINCH, state/focus retention and exit at20x5or1x1. Friend seams contain
+synthetic values only. Existing isolated output/build boundaries remain binding.
+All three foreign hand-offs stay Prepared; no Windows terminal adapter or approved
+foreign command binding is supplied by this increment.

@@ -74,6 +74,8 @@ heuristic would otherwise count spec.md as a test.*
 
 | 2026-10-12 | LH-01 Tastaturaktionen T037–T044 / Keyboard actions | Aktionswhitelist, Kontextprüfung, vollständige Belegungen/Remaps, Navigation, Hilfe und nicht verfügbare Folgeaktionen; 44/63 Aufgaben. Gewöhnliche bytegleiche Intake-Updates und andere Ready-Reviews; begrenzte Mac-A-Produktnachweise, keine fremde Plattform-/A11Y-Abnahme. / Action/context controls, remaps, navigation and local help; traceable provenance and distinct reviews; bounded Mac A evidence only. [Nachweis / Proof](validation/lh01/keyboard-actions.md). |
 
+| 2026-10-14 | LH-01 Textzustand/Größe/Sicherheitsgrenzen T045–T052 / Text state, size and security | Sichere DE/EN-Ressourcen, Resize mit Werterhalt, kleine Ansicht und öffentliche Negativfälle;52/63Aufgaben, begrenzte Mac-A-Produktnachweise. Fremde Prüfstände und volle Abnahme bleiben offen. / Safe bilingual text, resize/recovery and negative public boundaries;52/63tasks, bounded local proof only. [Nachweis / Proof](validation/lh01/text-state-checks.md). |
+
 ## Gesamtstatistik / Overall Statistics
 
 <!-- project-statistics-v2:begin -->

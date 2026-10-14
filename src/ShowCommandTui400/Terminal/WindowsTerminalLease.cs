@@ -12,7 +12,7 @@ public sealed class WindowsTerminalLease : ITerminalLease
     public void Activate()
     {
         ObjectDisposedException.ThrowIf(disposed, this);
-        if (active) throw new InvalidOperationException("Lease already active");
+        if (active) throw new InvalidOperationException(ShowCommandTui400.Resources.Messages.Both("LeaseActive"));
         savedControl = Console.TreatControlCAsInput; controlChanged = true;
         Console.TreatControlCAsInput = true; active = true;
     }
@@ -21,7 +21,7 @@ public sealed class WindowsTerminalLease : ITerminalLease
         if (disposed) return; disposed = true;
         var errors = new List<Exception>();
         if (controlChanged) try { Console.TreatControlCAsInput = savedControl; } catch (Exception e) { errors.Add(e); }
-        try { native.Write(saved); var after = native.Read(); Observation = new("Windows", saved.ToString(), after.ToString(), saved == after, saved == after, "Windows console modes/cursor; native target proof outstanding"); if (saved != after) throw new IOException("Windows restoration mismatch"); } catch (Exception e) { errors.Add(e); }
+        try { native.Write(saved); var after = native.Read(); Observation = new("Windows", saved.ToString(), after.ToString(), saved == after, saved == after, "Windows console modes/cursor; native target proof outstanding"); if (saved != after) throw new IOException(ShowCommandTui400.Resources.Messages.Both("WindowsMismatch")); } catch (Exception e) { errors.Add(e); }
         if (errors.Count > 0) throw new AggregateException(errors);
     }
 }
@@ -37,7 +37,7 @@ internal sealed class WindowsConsole : IWindowsConsole
     [DllImport("kernel32.dll", SetLastError = true)][return: MarshalAs(UnmanagedType.Bool)] static extern bool SetConsoleCursorInfo(nint handle, ref Cursor value);
     public WindowsSnapshot Read()
     {
-        if (!OperatingSystem.IsWindows() || !GetConsoleMode(GetStdHandle(-10), out var input) || !GetConsoleMode(GetStdHandle(-11), out var output) || !GetConsoleCursorInfo(GetStdHandle(-11), out var cursor)) throw new IOException("Unsupported Windows console");
+        if (!OperatingSystem.IsWindows() || !GetConsoleMode(GetStdHandle(-10), out var input) || !GetConsoleMode(GetStdHandle(-11), out var output) || !GetConsoleCursorInfo(GetStdHandle(-11), out var cursor)) throw new IOException(ShowCommandTui400.Resources.Messages.Both("WindowsUnsupported"));
         return new(input, output, cursor.Size, cursor.Visible);
     }
     public void Write(WindowsSnapshot value)

@@ -3,7 +3,7 @@ import argparse, fcntl, hashlib, json, os, pty, select, struct, subprocess, term
 from pathlib import Path
 from terminal_probes import TerminalProbes
 parser = argparse.ArgumentParser()
-parser.add_argument('--scenario', choices=['Normal','Cancel','Repeat','Stop','HandledFailure','RestorationFailure','Redirect','HiddenCursor','InputRedirect','AggregateFailure','Keyboard','Remap','FunctionExit','BindingConflict'], required=True)
+parser.add_argument('--scenario', choices=['Normal','Cancel','Repeat','Stop','HandledFailure','RestorationFailure','Redirect','HiddenCursor','InputRedirect','AggregateFailure','Keyboard','Remap','FunctionExit','BindingConflict','Resize','SmallExit','TinyExit','TextState','NegativeSecurity'], required=True)
 parser.add_argument('--output', required=True)
 parser.add_argument('--build-root')
 parser.add_argument('--case-id', choices=['N02','N03','S01','S02','S03','S04','S05','S06','S07'])
@@ -31,7 +31,11 @@ raw=bytearray();start=time.monotonic();ui_at=None;phase=0;ack=False;sample=None;
 sequences = {
     'Keyboard': [('Unknown',b'z'),('Esc',b'\x1b'),('F12',b'\x1b[24~'),('F4',b'\x1bOS'),('F9',b'\x1b[20~'),('F10',b'\x1b[21~'),('F11',b'\x1b[23~'),('Tab',b'\t'),('Enter',b'\r'),('Alt+B',b'\x1bb'),('Shift+Tab',b'\x1b[Z'),('Down',b'\x1b[B'),('Up',b'\x1b[A'),('Right',b'\x1b[C'),('Left',b'\x1b[D'),('PageDown',b'\x1b[6~'),('Enter',b'\r'),('PageUp',b'\x1b[5~'),('Enter',b'\r'),('F5',b'\x1b[15~'),('F1',b'\x1bOP'),('Alt+B',b'\x1bb'),('Alt+M',b'\x1bm'),('Alt+H',b'\x1bh'),('F12',b'\x1b[24~'),('Esc',b'\x1b'),('Alt+X',b'\x1bx')],
     'Remap': [('F1-unbound',b'\x1bOP'),('F5-unbound',b'\x1b[15~'),('F6',b'\x1b[17~'),('F2',b'\x1bOQ'),('Alt+B',b'\x1bb'),('Alt+H',b'\x1bh'),('Esc',b'\x1b'),('Alt+X',b'\x1bx')],
-    'FunctionExit': [('F3',b'\x1bOR')]
+    'FunctionExit': [('F3',b'\x1bOR')],
+    'Resize': [('Tab',b'\t'),('Resize-small',None),('F5-blocked',b'\x1b[15~'),('Alt+H',b'\x1bh'),('Alt+B',b'\x1bb'),('Resize-large',None),('Tab',b'\t'),('Alt+X',b'\x1bx')],
+    'SmallExit': [('Resize-small',None),('Alt+H',b'\x1bh'),('Alt+X',b'\x1bx')],
+    'TinyExit': [('Resize-tiny',None),('Alt+X',b'\x1bx')],
+    'TextState': [('Alt+H',b'\x1bh'),('PageDown',b'\x1b[6~'),('PageUp',b'\x1b[5~'),('Alt+X',b'\x1bx')]
 }
 sequence = sequences.get(args.scenario, [('Ctrl+C',b'\x03')] if args.scenario=='Cancel' else [('Alt+X',b'\x1bx')] * (3 if args.scenario=='Repeat' else 1))
 try:
@@ -41,11 +45,17 @@ try:
             except OSError: continue
             raw.extend(chunk)
             for response in probes.feed(fd,chunk):os.write(master,response)
-        if ui_at is None and b'Show-CommandTui400' in raw and args.scenario in ('Normal','Cancel','Repeat','HiddenCursor','Keyboard','Remap','FunctionExit'):ui_at=time.monotonic()
+        if ui_at is None and b'Show-CommandTui400' in raw and args.scenario in ('Normal','Cancel','Repeat','HiddenCursor','Keyboard','Remap','FunctionExit','Resize','SmallExit','TinyExit','TextState'):ui_at=time.monotonic()
         if ui_at is not None:
             elapsed=time.monotonic()-ui_at
             if phase<len(sequence) and elapsed>.8+phase*.65:
-                label,data=sequence[phase];os.write(master,data);phase+=1;steps.append(label)
+                label,data=sequence[phase]
+                if data is None:
+                    import signal
+                    rows,columns=(5,20) if label=='Resize-small' else (1,1) if label=='Resize-tiny' else (30,110)
+                    fcntl.ioctl(slave,termios.TIOCSWINSZ,struct.pack('HHHH',rows,columns,0,0));os.killpg(process.pid,signal.SIGWINCH)
+                else:os.write(master,data)
+                phase+=1;steps.append(label)
         if not ack and b'LH01_SHELL_INPUT_READY' in raw:os.write(master,b'LH01_ACK\r');ack=True;steps.append('synthetic-shell-readback')
         if sample is None and b'LH01_RESTORE_READY' in raw:sample=termios.tcgetattr(slave)
         if process.poll() is not None:break
@@ -68,7 +78,7 @@ try:
     expected_exit=1 if args.scenario=='RestorationFailure' else 0
     expected_failure=args.scenario=='RestorationFailure'
     ok=not timeout and process.returncode==expected_exit and parsed is not None and parsed['ContextUnchanged']
-    if args.scenario not in ('Redirect','InputRedirect','BindingConflict'):
+    if args.scenario not in ('Redirect','InputRedirect','BindingConflict','NegativeSecurity'):
         ok=ok and parsed['ShellReadback']=='LH01_ACK' and parsed['NativeRestore']['ConfiguredEqual']
     if args.scenario in ('Normal','Repeat','Cancel'):
         ok=ok and b'\x1b[?25h' in raw
@@ -92,6 +102,31 @@ try:
             ok=ok and [v['Action'] for v in observations]==actions and [v['Accepted'] for v in observations]==[i not in (2,3,4,5) for i in range(26)]
 
         if args.scenario=='Remap':ok=ok and observations[0]['Key']=='F6' and observations[0]['Action']=='Refresh' and observations[1]['Key']=='F2' and observations[1]['Context']=='Help'
+    if args.scenario in ('Resize','SmallExit','TinyExit','TextState'):
+        observations=parsed.get('InputObservations',[]) if parsed else []
+        renders=parsed.get('RenderObservations',[]) if parsed else []
+        ok=ok and phase==len(sequence) and parsed['ModuleSetUnchanged'] and parsed['SyntheticValueRetained']
+        ok=ok and observations and observations[-1]['ExitRequested'] and all(not v['ExitRequested'] for v in observations[:-1])
+        if args.scenario in ('Resize','SmallExit','TinyExit'):
+            smalls=[v for v in renders if v['Small']]
+            ok=ok and bool(smalls) and all('Alt+X' in v['Text'] for v in smalls)
+            if args.scenario=='Resize':
+                ok=ok and [v['Key'] for v in observations]==['Tab','F5','Alt+H','Alt+B','Tab','Alt+X']
+                ok=ok and not observations[1]['Accepted'] and observations[1]['Focus']=='ActionsMenu'
+                ok=ok and observations[-2]['Focus']=='Refresh' and observations[-2]['FrameworkFocus']=='Refresh'
+                ok=ok and any(v['Width']==110 and v['Height']==30 and not v['Small'] and v['Focus']=='ActionsMenu' for v in renders)
+            if args.scenario=='TinyExit':ok=ok and any(v['Width']==1 and v['Height']==1 for v in smalls)
+        if args.scenario=='TextState':
+            initial=renders[0]['Text']
+            ok=ok and renders[0]['Busy'] and all(v in initial for v in ['Focus','Busy','Error','synthetic?[2J?error','synthetic?status','unavailable'])
+            ok=ok and all(c not in initial for c in ('\x1b','\x07','\u202e')) and [v['Key'] for v in observations]==['Alt+H','PageDown','PageUp','Alt+X']
+            ok=ok and observations[1]['ScrollTop']>observations[0]['ScrollTop'] and observations[2]['ScrollTop']==observations[0]['ScrollTop']
+            ok=ok and all('synthetic?[2J?error' in v['Text'] for v in renders)
+    if args.scenario=='NegativeSecurity':
+        negative=parsed['SecurityNegative'] if parsed else {}
+        ok=ok and negative.get('Cases')==['UnknownAction','ActionExpression','KeyExpression','Conflict','EscapeLoss']
+        ok=ok and negative.get('TargetCalls')==0 and negative.get('NetworkAttempts')==0 and negative.get('FilesUnchanged')
+        ok=ok and parsed['ModuleSetUnchanged'] and parsed['LeaseAcquisitions']==0 and parsed['UiCreations']==0 and parsed['Failure'] is None and parsed['ShellReadback']=='LH01_ACK'
     if args.scenario=='BindingConflict':ok=ok and parsed['LeaseAcquisitions']==0 and parsed['UiCreations']==0 and parsed['ModuleSetUnchanged'] and parsed['Failure']['ErrorId'].startswith('InvalidConfiguration')
     boundary=bytes(raw).split(b'LH01_SHELL_INPUT_READY')[0]
     import re
@@ -103,7 +138,7 @@ try:
         elif operation==b's':saved_cursor=cursor_visible
         elif operation==b'r' and saved_cursor is not None:cursor_visible=saved_cursor;restore_observed=True
     final_cursor_visible=cursor_visible
-    if args.scenario in ('Normal','Cancel','Repeat','HiddenCursor','Keyboard','Remap','FunctionExit'):ok=ok and restore_observed and cursor_visible==(args.scenario!='HiddenCursor')
+    if args.scenario in ('Normal','Cancel','Repeat','HiddenCursor','Keyboard','Remap','FunctionExit','Resize','SmallExit','TinyExit','TextState'):ok=ok and restore_observed and cursor_visible==(args.scenario!='HiddenCursor')
     binary=Path(command[command.index('-Module')+1]).with_suffix('.dll')
     if not binary.is_absolute():binary=root/binary
     sanitized=raw.decode('utf-8','replace').replace(str(root),'<checkout>')

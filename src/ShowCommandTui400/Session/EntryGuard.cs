@@ -8,7 +8,7 @@ public static class EntryGuard
     public static IReadOnlyDictionary<string, ActionId> Validate(EntryCapabilities capability, IDictionary<string, string>? remap)
     {
         if (capability.PowerShellVersion < new Version(7, 6, 4) || capability.InputRedirected || capability.OutputRedirected || !capability.RawUiAvailable || capability.HostName != "ConsoleHost" || !capability.NativeSupported || !capability.VirtualTerminalSupported)
-            throw new EntryRejectedException("CapabilityRejected", "Interaktive ConsoleHost-Sitzung ab PowerShell 7.6.4 mit unterstütztem Terminal erforderlich. / An interactive supported ConsoleHost terminal on PowerShell 7.6.4+ is required.");
+            throw new EntryRejectedException("CapabilityRejected", ShowCommandTui400.Resources.Messages.Both("CapabilityRejected"));
         return KeyBindingValidator.Validate(remap);
     }
 }

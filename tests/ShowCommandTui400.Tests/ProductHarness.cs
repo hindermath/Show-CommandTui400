@@ -8,13 +8,27 @@ public static class ProductHarness
     public static readonly ManualResetEventSlim Ready = new(false);
     public static int StopCalls;
     public static readonly List<string> InputObservations = new();
+    public static readonly List<string> RenderObservations = new();
+    public static ShowCommandTui400.State.ViewState? ObservedViewState;
     public static int LeaseAcquisitions, UiCreations;
     public static string? ObservedContext;
     public static TerminalRestoreObservation? LastRestore;
     private static string mode = "Real";
     public static void Configure(string requested)
     {
-        if (!new[] { "Real", "HandledFailure", "RestorationFailure", "AggregateFailure" }.Contains(requested)) throw new ArgumentException("Test scenario");
+        if (!new[] { "Real", "HandledFailure", "RestorationFailure", "AggregateFailure", "TextState", "Resize" }.Contains(requested)) throw new ArgumentException("Test scenario");
+        RenderObservations.Clear(); ObservedViewState = null;
+        TerminalApplication.StateInitializer = state =>
+        {
+            ObservedViewState = state;
+            if (requested == "Resize") state.Values["synthetic"] = "retained";
+            if (requested == "TextState")
+            {
+                state.Focus = "ActionsMenu"; state.Values["synthetic"] = "retained";
+                state.Busy = true; state.Error = "synthetic\u001b[2J\u202eerror"; state.Status = "synthetic\u0007status";
+            }
+        };
+        TerminalApplication.RenderObserver = observation => RenderObservations.Add(System.Text.Json.JsonSerializer.Serialize(observation));
         InputObservations.Clear();
         TerminalApplication.InputObserver = observation => InputObservations.Add(System.Text.Json.JsonSerializer.Serialize(observation));
         mode = requested; Ready.Reset(); StopCalls = 0; LeaseAcquisitions=0; UiCreations=0; ObservedContext = null; LastRestore = null;
@@ -25,11 +39,11 @@ public static class ProductHarness
             ObservedContext = System.Text.Json.JsonSerializer.Serialize(new { context.ProcessId, context.RunspaceId, Location = "synthetic-working-directory", Synthetic = state.PSVariable.GetValue("Lh01Synthetic") });
         };
         ShowCommandTui400Command.LeaseFactory = () => {Interlocked.Increment(ref LeaseAcquisitions);return new ObservedLease(ShowCommandTui400Command.CreateLease());};
-        ShowCommandTui400Command.ApplicationFactory = () => {Interlocked.Increment(ref UiCreations);return mode == "Real" ? new ObservedApplication(new TerminalApplication()) : new FaultApplication();};
+        ShowCommandTui400Command.ApplicationFactory = () => {Interlocked.Increment(ref UiCreations);return mode is "Real" or "TextState" or "Resize" ? new ObservedApplication(new TerminalApplication()) : new FaultApplication();};
     }
     public static void Reset()
     {
-        TerminalApplication.InputObserver = null;
+        TerminalApplication.InputObserver = null; TerminalApplication.RenderObserver = null; TerminalApplication.StateInitializer = null;
         ShowCommandTui400Command.LeaseFactory = ShowCommandTui400Command.CreateLease;
         ShowCommandTui400Command.ApplicationFactory = () => new TerminalApplication();
         ShowCommandTui400Command.ContextObserver = null; ShowCommandTui400Command.StopObserver = null;
