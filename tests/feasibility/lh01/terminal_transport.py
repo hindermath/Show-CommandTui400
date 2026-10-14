@@ -76,19 +76,8 @@ class WindowsTerminal:
         import queue, threading
         if os.name != 'nt':
             raise RuntimeError('Native Windows required for ConPTY')
-        # Redirection cases exercise the public capability guard using real pipes.
-        # Both streams are redirected here; isolated stdin/stdout guards also have
-        # their own model contracts. This is not a single-axis ConPTY assertion.
-        self.redirect = scenario in ('InputRedirect', 'Redirect')
+        self.redirect = False
         self.before = None
-        self.native = None
-        if self.redirect:
-            self.process = subprocess.Popen(command, cwd=cwd, env=env,
-                stdin=subprocess.DEVNULL, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
-            self.chunks = queue.Queue()
-            self.reader = threading.Thread(target=self._read_redirect, daemon=True)
-            self.reader.start()
-            return
         self.c, self.w = c, w
         self.k = c.WinDLL('kernel32', use_last_error=True)
         class Coord(c.Structure):

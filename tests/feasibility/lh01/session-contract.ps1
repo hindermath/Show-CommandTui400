@@ -37,6 +37,7 @@ function Get-Snapshot {
 }
 $actualLocationBefore=(Get-Location).ProviderPath
 $modulesBefore=@(Get-Module|ForEach-Object Name|Sort-Object) -join ";"
+$redirectBoundary=[ordered]@{Input=[Console]::IsInputRedirected;Output=[Console]::IsOutputRedirected}
 $before=Get-Snapshot
 $scopes=[System.Collections.Generic.List[object]]::new()
 $failure=$null
@@ -110,7 +111,7 @@ $locationUnchanged=$actualLocationBefore -ceq (Get-Location).ProviderPath
 $unchanged=$locationUnchanged -and (($before|ConvertTo-Json -Compress) -ceq ($after|ConvertTo-Json -Compress))
 if($Scenario -notin @('Redirect','InputRedirect')){Write-Host 'LH01_SHELL_INPUT_READY';$readback=Read-Host 'Synthetic return check'}
 [ShowCommandTui400.Tests.ProductHarness]::Reset()
-$record=[ordered]@{Scenario=$Scenario;SecurityNegative=$securityNegative;RenderObservations=@([ShowCommandTui400.Tests.ProductHarness]::RenderObservations | ForEach-Object {$_ | ConvertFrom-Json});SyntheticValueRetained=($Scenario -notin @('TextState','Resize') -or [ShowCommandTui400.Tests.ProductHarness]::ObservedViewState.Values['synthetic'] -ceq 'retained');InputObservations=@([ShowCommandTui400.Tests.ProductHarness]::InputObservations | ForEach-Object {$_ | ConvertFrom-Json});Before=$before;After=$after;ContextUnchanged=$unchanged;LocationUnchanged=$locationUnchanged;ModuleSetUnchanged=$moduleSetUnchanged;LeaseAcquisitions=[ShowCommandTui400.Tests.ProductHarness]::LeaseAcquisitions;UiCreations=[ShowCommandTui400.Tests.ProductHarness]::UiCreations;ScopeObservations=@($scopes);NativeRestore=$native;StopCalls=[ShowCommandTui400.Tests.ProductHarness]::StopCalls;PipelineState=$state;IsolatedTestRunspace=($Scenario -eq 'Stop');ShellReadback=$readback;Failure=$failure}
+$record=[ordered]@{Scenario=$Scenario;RedirectBoundary=$redirectBoundary;SecurityNegative=$securityNegative;RenderObservations=@([ShowCommandTui400.Tests.ProductHarness]::RenderObservations | ForEach-Object {$_ | ConvertFrom-Json});SyntheticValueRetained=($Scenario -notin @('TextState','Resize') -or [ShowCommandTui400.Tests.ProductHarness]::ObservedViewState.Values['synthetic'] -ceq 'retained');InputObservations=@([ShowCommandTui400.Tests.ProductHarness]::InputObservations | ForEach-Object {$_ | ConvertFrom-Json});Before=$before;After=$after;ContextUnchanged=$unchanged;LocationUnchanged=$locationUnchanged;ModuleSetUnchanged=$moduleSetUnchanged;LeaseAcquisitions=[ShowCommandTui400.Tests.ProductHarness]::LeaseAcquisitions;UiCreations=[ShowCommandTui400.Tests.ProductHarness]::UiCreations;ScopeObservations=@($scopes);NativeRestore=$native;StopCalls=[ShowCommandTui400.Tests.ProductHarness]::StopCalls;PipelineState=$state;IsolatedTestRunspace=($Scenario -eq 'Stop');ShellReadback=$readback;Failure=$failure}
 if($ObservationFile){
     $stream=[IO.File]::Open($ObservationFile,[IO.FileMode]::CreateNew,[IO.FileAccess]::Write,[IO.FileShare]::None)
     $writer=$null

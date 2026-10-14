@@ -24,6 +24,8 @@ if args.build_root:
     command[command.index('-Module')+1]=str(build/'ShowCommandTui400/bin/net10.0/ShowCommandTui400.psd1')
     command[command.index('-TestAssembly')+1]=str(build/'ShowCommandTui400.Tests/bin/net10.0/ShowCommandTui400.Tests.dll')
 command+=['-ObservationFile',str(observation_file)]
+if os.name=='nt' and args.scenario in ('InputRedirect','Redirect'):
+    command[command.index('-File')+1]='tests/feasibility/lh01/redirect-session.ps1'
 env=os.environ.copy();env['TERM']='xterm-256color';env['LC_ALL']='en_US.UTF-8'
 terminal=(WindowsTerminal if os.name=='nt' else UnixTerminal)(command,root,env,args.scenario)
 before=terminal.before
@@ -76,6 +78,8 @@ try:
         ok=ok and parsed['ShellReadback']=='LH01_ACK' and parsed['NativeRestore']['ConfiguredEqual']
     if os.name!='nt' and args.scenario in ('Normal','Repeat','Cancel'):
         ok=ok and b'\x1b[?25h' in raw
+    if args.scenario in ('Redirect','InputRedirect'):
+        ok=ok and parsed['RedirectBoundary']=={'Input':args.scenario=='InputRedirect','Output':args.scenario=='Redirect'}
     if args.scenario=='Repeat':
         observations=parsed['ScopeObservations'];ok=ok and len(observations)==3 and [v['Synthetic'] for v in observations]==[710,711,712] and all(v['ProcessId']==parsed['Before']['Pid'] and v['RunspaceId']==parsed['Before']['Runspace'] for v in observations)
     if args.scenario=='Stop':ok=ok and parsed['StopCalls']>0 and parsed['PipelineState']=='Stopped'
@@ -137,7 +141,7 @@ try:
     if not binary.is_absolute():binary=root/binary
     sanitized=raw.decode('utf-8','replace').replace(str(root),'<checkout>')
     if args.build_root:sanitized=sanitized.replace(str(Path(args.build_root).resolve()),'<build>')
-    record={'sanitizedTranscript':sanitized,'sanitizedTranscriptSha256':hashlib.sha256(sanitized.encode()).hexdigest(),'assemblySha256':hashlib.sha256(binary.read_bytes()).hexdigest(),'finalCursorVisibleAtReturn':final_cursor_visible,'cursorModeRestoreObserved':restore_observed,'initialCursorBoundary':('Windows native restore observation; no Unix mode-25 assertion' if os.name=='nt' else 'synthetic xterm mode-25 protocol emulation; hidden and visible cases; no physical terminal proof'),'scenario':args.scenario,'environment':('synthetic Windows ConPTY; native console restore observation; redirects use real pipes (both streams)' if os.name=='nt' else 'synthetic Unix PTY; no physical terminal/assistive acceptance'),'command':[v.replace(str(root),'<checkout>').replace(str(Path(args.build_root).resolve()),'<build>') if args.build_root else v.replace(str(root),'<checkout>') for v in command],'exitCode':exit_code,'expectedExitCode':expected_exit,'result':'Pass' if ok and not expected_failure else 'Fail','diagnosticContractSatisfied':bool(ok),'failureScope':'injected restoration failure after successful real restore; not actual host restore failure' if expected_failure else None,'timeout':timeout,'steps':steps,'cursorShowObserved':b'\x1b[?25h' in raw,'transcriptSha256':hashlib.sha256(raw).hexdigest(),'termiosBefore':before,'termiosAfter':sample,'observation':parsed}
+    record={'sanitizedTranscript':sanitized,'sanitizedTranscriptSha256':hashlib.sha256(sanitized.encode()).hexdigest(),'assemblySha256':hashlib.sha256(binary.read_bytes()).hexdigest(),'finalCursorVisibleAtReturn':final_cursor_visible,'cursorModeRestoreObserved':restore_observed,'initialCursorBoundary':('Windows native restore observation; no Unix mode-25 assertion' if os.name=='nt' else 'synthetic xterm mode-25 protocol emulation; hidden and visible cases; no physical terminal proof'),'scenario':args.scenario,'environment':('synthetic Windows ConPTY; native console restore observation; redirects use real pipes (one stream per case)' if os.name=='nt' else 'synthetic Unix PTY; no physical terminal/assistive acceptance'),'command':[v.replace(str(root),'<checkout>').replace(str(Path(args.build_root).resolve()),'<build>') if args.build_root else v.replace(str(root),'<checkout>') for v in command],'exitCode':exit_code,'expectedExitCode':expected_exit,'result':'Pass' if ok and not expected_failure else 'Fail','diagnosticContractSatisfied':bool(ok),'failureScope':'injected restoration failure after successful real restore; not actual host restore failure' if expected_failure else None,'timeout':timeout,'steps':steps,'cursorShowObserved':b'\x1b[?25h' in raw,'transcriptSha256':hashlib.sha256(raw).hexdigest(),'termiosBefore':before,'termiosAfter':sample,'observation':parsed}
     output.parent.mkdir(parents=True,exist_ok=True)
     output.write_text(json.dumps(record,ensure_ascii=False,indent=2,default=lambda v:v.hex() if isinstance(v,bytes) else str(v))+'\n')
     outcomes={'N02':'RejectedWithoutStateChange','N03':'RejectedWithoutStateChange','S01':'CallerContextRetained','S02':'RestoredAndShellUsable','S03':'RestoredAndShellUsable','S04':'StoppedAndRestored','S05':'RestoredAndErrorPreserved','S06':'NoLeakedState','S07':'FailWithPrimaryAndRestorationErrorsPreserved','K01':'ActionContractsPass','V01':'ValuesAndFocusRetained','V02':'ExplainedAndSafeExit'}
