@@ -122,6 +122,7 @@ try {
     }
     if($Target -eq 'windows' -and (-not $IsWindows -or [Environment]::OSVersion.Version.Build -lt 22000)){$blockers.Add('Native Windows 11 required')}
     if($Target -eq 'ubuntu-wsl2'){
+        foreach($toolName in @('cmd.exe','wsl.exe')){if(-not(Get-Command $toolName -CommandType Application -ErrorAction SilentlyContinue)){$blockers.Add('WSL host version tool missing: '+$toolName)}}
         if(-not $IsLinux){$blockers.Add('Linux PowerShell required')}else{
             $osRelease=Get-Content /etc/os-release -Raw
             $kernel=Get-Content /proc/sys/kernel/osrelease -Raw

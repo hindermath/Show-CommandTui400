@@ -55,6 +55,10 @@ def main():
         raise ValueError('Product revision mismatch')
     build, output = external(args.build_root), external(args.output_root)
     output.mkdir(parents=True, exist_ok=True)
+    temporary = output / "temporary"
+    temporary.mkdir(exist_ok=True)
+    for name in ("TMPDIR", "TEMP", "TMP"):
+        os.environ[name] = str(temporary)
     case = output / args.case_id
     case.mkdir()  # Existing evidence must never be overwritten.
     observations, files = [], []
