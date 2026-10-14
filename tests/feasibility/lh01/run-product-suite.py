@@ -26,7 +26,7 @@ try:
         command=[sys.executable,str(Path(__file__).with_name('platform-case.py')),
             '--case-id',case['id'],'--build-root',str(out/'build'),
             '--output-root',str(out/'cases'),'--product-commit',head]
-        result=subprocess.run(command,cwd=root,capture_output=True,text=True,timeout=150)
+        result=subprocess.run(command,cwd=root,capture_output=True,text=True,encoding="utf-8",errors="replace",timeout=150)
         text=(result.stdout+result.stderr).replace(str(root),'<checkout>').replace(str(out),'<output>').replace(str(Path.home()),'<user>')
         (out/(case['id']+'.txt')).write_text(text,encoding='utf-8')
         try:record=json.loads(result.stdout.strip().splitlines()[-1])

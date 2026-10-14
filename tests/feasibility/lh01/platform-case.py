@@ -29,7 +29,7 @@ def external(value):
 
 
 def run(command, log):
-    result = subprocess.run(command, cwd=ROOT, capture_output=True, text=True, timeout=110)
+    result = subprocess.run(command, cwd=ROOT, capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=110)
     text = result.stdout + result.stderr
     text = text.replace(str(ROOT), '<checkout>').replace(str(Path.home()), '<user>')
     log.write_text(text, encoding='utf-8')
