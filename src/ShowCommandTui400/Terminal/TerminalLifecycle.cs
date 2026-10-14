@@ -15,6 +15,6 @@ public static class TerminalLifecycle
         if (primary != null) ExceptionDispatchInfo.Capture(primary).Throw();
     }
 }
-public sealed class TerminalRestorationException(Exception inner) : Exception("Terminal konnte nicht vollständig wiederhergestellt werden. / Terminal restoration failed.", inner);
+public sealed class TerminalRestorationException(Exception inner) : Exception(ShowCommandTui400.Resources.Messages.Both("RestoreFailed"), inner);
 
-public sealed class TerminalCombinedFailureException(Exception primary, Exception restore) : AggregateException("Ablauf- und Wiederherstellungsfehler / Operation and restoration failed", primary, restore);
+public sealed class TerminalCombinedFailureException(Exception primary, Exception restore) : AggregateException(ShowCommandTui400.Resources.Messages.Both("CombinedFailure"), primary, restore);

@@ -3,11 +3,13 @@
 **Datum / Date:** 2026-10-08. **Feature:** `002-lh01-tui-foundation`.
 **Git-Branch / Git branch:** `main`; Setup-BRANCH ist Feature-ID, kein neuer Git-Branch / setup identity does not create a branch.
 **Input:** [spec.md](spec.md), ausschließlich LH-01 / LH-01 only.
-**Status:** T018–T044 ausdrücklich beauftragt und begrenzt auf Mac A umgesetzt;
-praktische Abnahme und T045–T063 offen. / T018–T044 explicitly commissioned and
-implemented on Mac A; practical acceptance and T045–T063 remain open.
+**Status:** T018–T052 ausdrücklich beauftragt und begrenzt auf Mac A umgesetzt;
+praktische Abnahme und T053–T063 offen. / T018–T052 explicitly commissioned and
+implemented on Mac A; practical acceptance and T053–T063 remain open.
 Aktueller Nachweis / Current proof: [Sitzung und Terminal](../../docs/validation/lh01/session-terminal.md),
-[Tastaturaktionen](../../docs/validation/lh01/keyboard-actions.md).
+[Tastaturaktionen](../../docs/validation/lh01/keyboard-actions.md),
+[Textzustand/Größe](../../docs/accessibility/lh01-text-state.md),
+[Negativgrenzen](../../docs/validation/lh01/security-negative.md).
 
 ## Zusammenfassung / Summary
 
@@ -67,7 +69,7 @@ tracks authorized publication and its closeout.
 | P05 A11Y/Plattform | Applicable | Praktische Evidence deferred/excluded by owner | Ownergrenzen dokumentiert; kein praktisches PASS und kein CI-Ersatz / evidence limits, no acceptance claim |
 | P06 Sprache/Doku / language/docs | PASS Entwurf / draft | PASS Entwurf / draft | DE/EN, definierte Begriffe, Leserpfad, Textalternative / matching text access |
 | P07 Guidance/Statistik | N/A historischer Planlauf / historical | T014 lokal angewendet / applied locally | Guidance/Register/Referenz80–125 ausgerichtet; Statistikrender bei autorisierter Lieferung offen / render pending authorized delivery |
-| P08 Produktimplementierung / product implementation | Kein Auftrag im Planlauf / no authority during planning | T018–T044 eigener Auftrag / separately commissioned | Eigener Implementierungsauftrag, technische Startchecks/Sicherheitsartefakte und Quellenfrische; praktische Abnahme separat / separate implementation authority and start checks |
+| P08 Produktimplementierung / product implementation | Kein Auftrag im Planlauf / no authority during planning | T018–T052 eigener Auftrag / separately commissioned | Eigener Implementierungsauftrag, technische Startchecks/Sicherheitsartefakte und Quellenfrische; praktische Abnahme separat / separate implementation authority and start checks |
 
 **Gate-Ergebnis:** Technische Auswahl und automatisierte begrenzte Machbarkeit
 liegen vor; anderes Review bewertet die korrigierte Baseline. Vollständige

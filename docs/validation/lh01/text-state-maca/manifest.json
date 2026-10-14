@@ -1,0 +1,342 @@
+{
+  "scope": "T045–T052 Mac A only / nur Mac A",
+  "recordedAt": "2026-10-14T18:17:21.326720+00:00",
+  "baselineCommit": "457f93198d64e403c187cacb11d1f724f21cc23b",
+  "revisionBoundary": "Working source/file hashes, not an approved foreign-host product commit",
+  "host": "Mac A: MacBook Air M2 2023; macOS27.0.1 arm64; PowerShell7.6.6; .NET10.0.12; SDK10.0.401",
+  "assemblySha256": "aa24c6d514f3242152a8b39937ad5482f9ea5401e9b46d23f77e84cff00a0ff2",
+  "evidenceIds": [
+    "E01-03",
+    "E01-05",
+    "E01-06",
+    "E01-01/02/04 regression"
+  ],
+  "productScenarios": 19,
+  "passScenarios": 18,
+  "expectedFail": [
+    "RestorationFailure: Fail/exit1 after real restore; diagnostic contract satisfied"
+  ],
+  "modelGroups": 43,
+  "files": [
+    {
+      "path": "docs/accessibility/lh01-text-state.md",
+      "rawSha256": "55cb49d4ba579cded828322982f13612f8a08f95c3ae1e3939c454c31dfda6ee"
+    },
+    {
+      "path": "docs/lh01/session-and-terminal.md",
+      "rawSha256": "419df3908cc1a0d22dbf6af61ec7768fba8ad446c99cd505fa2ad42df9e8975c"
+    },
+    {
+      "path": "docs/validation/lh01/security-negative.md",
+      "rawSha256": "8fc2042a7cbb4aa56feb5ddaab905034d3b94a9ce10ca73edea27cea5fc9cf96"
+    },
+    {
+      "path": "docs/validation/lh01/text-state-checks.md",
+      "rawSha256": "5f11d1ef999c9f78897abd512e33eb85e341147f536c71a13ddb77a0e94eb7b9"
+    },
+    {
+      "path": "docs/validation/lh01/text-state-maca/AggregateFailure.json",
+      "rawSha256": "49c82ae73e82d07ad888d1c7a31e586ab20a977e6951ca58397b324cbd9d8d2a"
+    },
+    {
+      "path": "docs/validation/lh01/text-state-maca/BindingConflict.json",
+      "rawSha256": "851f094900906b69b1c09e950e7804e86ae8ee7458406438f6a954792d8a5a25"
+    },
+    {
+      "path": "docs/validation/lh01/text-state-maca/Cancel.json",
+      "rawSha256": "ad31f55a67f08422369dcc5d3d2177e128ee020ee70e6782a57bddc4027cd98c"
+    },
+    {
+      "path": "docs/validation/lh01/text-state-maca/FunctionExit.json",
+      "rawSha256": "52fec684dbd0e15063e29b84a1a46e1c836f8e7ef27acf8c08d6a7774501e4f7"
+    },
+    {
+      "path": "docs/validation/lh01/text-state-maca/HandledFailure.json",
+      "rawSha256": "cd3794f5d529e9e4d88a2866d9476ad37d168b06698831fc1a94592a3d1f5fed"
+    },
+    {
+      "path": "docs/validation/lh01/text-state-maca/HiddenCursor.json",
+      "rawSha256": "bf6adcc21793a2adb1754f4b0d9c00f3dc1b1b29bb1c5ca16fcf2b9c1823ef2c"
+    },
+    {
+      "path": "docs/validation/lh01/text-state-maca/InputRedirect.json",
+      "rawSha256": "fbd9a2107729b3d39c70b8e6a4cb8a382601f11d4d859d41d00f70c72e48d27d"
+    },
+    {
+      "path": "docs/validation/lh01/text-state-maca/Keyboard.json",
+      "rawSha256": "96f86e3c76cd876aa7f530e026dd318870e7e301206485c6195c21868ede1f39"
+    },
+    {
+      "path": "docs/validation/lh01/text-state-maca/NegativeSecurity.json",
+      "rawSha256": "83ea95e41877f866f4e30aec028cfd0b1b673bf4f2ec1ca895993e8757c7ddcc"
+    },
+    {
+      "path": "docs/validation/lh01/text-state-maca/Normal.json",
+      "rawSha256": "c7e8f83332b19dde46f2b203e938e6078bdfbf0e7325cbc5a7ee88f17ad969cc"
+    },
+    {
+      "path": "docs/validation/lh01/text-state-maca/Redirect.json",
+      "rawSha256": "222a9cf98f4cfb5c00d52e1cca2a21e4822076e2602caf6b681b0a5d21503057"
+    },
+    {
+      "path": "docs/validation/lh01/text-state-maca/Remap.json",
+      "rawSha256": "b7630d2d4296aa9b3ae3e156eaf0743a4835142c27ea13184cc08d8e27b1fa3e"
+    },
+    {
+      "path": "docs/validation/lh01/text-state-maca/Repeat.json",
+      "rawSha256": "96432b54130228e8f2d545ee27d1eca5c6ddb11b2b4a42f340dfbd7003b36e31"
+    },
+    {
+      "path": "docs/validation/lh01/text-state-maca/Resize.json",
+      "rawSha256": "36c327f04321558d2b80027ce2028b4a2a45d3f8a3a0b0d50fb190480c3e595e"
+    },
+    {
+      "path": "docs/validation/lh01/text-state-maca/RestorationFailure.json",
+      "rawSha256": "2b30f91dfe1d33390ef4931d2f18dded96addade39c9c8a1a039c28bead20d03"
+    },
+    {
+      "path": "docs/validation/lh01/text-state-maca/SmallExit.json",
+      "rawSha256": "7c7f9db5e00297f540abd2b3481bab15e3e91edad5a812680628b7e2cbd48bf6"
+    },
+    {
+      "path": "docs/validation/lh01/text-state-maca/Stop.json",
+      "rawSha256": "fbb5ba789f902789375852bbb01d6e62df9d8cc801e00ad177f4bc3c98b647c8"
+    },
+    {
+      "path": "docs/validation/lh01/text-state-maca/TextState.json",
+      "rawSha256": "3615318c5a38ef001fffaeaf59abd31b616823a6e746ec1c42cc198aa0916eed"
+    },
+    {
+      "path": "docs/validation/lh01/text-state-maca/TinyExit.json",
+      "rawSha256": "e61be5683e70cf01a271a174a9d4545af239d09370911bba1b264dc5169efe15"
+    },
+    {
+      "path": "docs/validation/lh01/text-state-maca/build-contract.json",
+      "rawSha256": "7ebeade085230d1487e8ec224a9140a3ebdff6ee886682b83caf43c4b780a5ae"
+    },
+    {
+      "path": "docs/validation/lh01/text-state-maca/driver-contract.json",
+      "rawSha256": "1e62f10a3d761191b40e5a1d9dd289f79d0a4a0add3e8676e60b3fd8e58a159e"
+    },
+    {
+      "path": "docs/validation/lh01/text-state-maca/test-first.json",
+      "rawSha256": "2ba262a76fc56b23a3f8eabd8c222fc4520d115fcca12fcfe96ebc49424994d1"
+    },
+    {
+      "path": "docs/validation/lh01/text-state-maca/tooling-contract.json",
+      "rawSha256": "1e178321f2e4419490ab358a28ef85283e7c84775389b3a4d3036170df3e0dbc"
+    },
+    {
+      "path": "specs/002-lh01-tui-foundation/contracts/cmdlet-session.md",
+      "rawSha256": "5b70f10f52960ab6cf6c5421ffa5bb0bed5943235273aa3a88bb43dae397a74f"
+    },
+    {
+      "path": "specs/002-lh01-tui-foundation/plan.md",
+      "rawSha256": "a03dc78882c12e766112d70765fbb3e357cb22689184066b41de285bc1be259a"
+    },
+    {
+      "path": "specs/002-lh01-tui-foundation/spec.md",
+      "rawSha256": "b0365b3ac4475918b1c08c47976dbbac84dec3eba57aa47b49ddf758ae96affb"
+    },
+    {
+      "path": "specs/002-lh01-tui-foundation/tasks.md",
+      "rawSha256": "dd77d7b66c898cc02206731e1b72ea6fc8879d739bb5bcc79636117951513893"
+    },
+    {
+      "path": "src/Directory.Build.props",
+      "rawSha256": "32e91a5ddd7e191c3a2ec198a561a914ddebed129c2eb4a20f16f9839c8e241a"
+    },
+    {
+      "path": "src/ShowCommandTui400/Actions/ActionAvailability.cs",
+      "rawSha256": "746d09e422494e3ea67154eee44d0be70aba7cfdff7261a319c0593b456f71fd"
+    },
+    {
+      "path": "src/ShowCommandTui400/Actions/ActionDescriptor.cs",
+      "rawSha256": "fc7634fc88d36796ec9787071fdbcfae1d8ef07caa3325486c6a2a55b395e6ef"
+    },
+    {
+      "path": "src/ShowCommandTui400/Actions/ActionDispatcher.cs",
+      "rawSha256": "df4683629bd1ebb7239dd0c5d7af409dcdee542b68b7ce7e7e7fd96f031709f1"
+    },
+    {
+      "path": "src/ShowCommandTui400/Actions/KeyBindingMap.cs",
+      "rawSha256": "a1ab6b00e7d9fc55c50646e7658be8b78d4e42d1a5ca95abfb368c51e798f082"
+    },
+    {
+      "path": "src/ShowCommandTui400/Actions/KeyBindingValidator.cs",
+      "rawSha256": "6137f454ea760b8e0c743695a13f909bdc4d27fc14c0a887168b5b7c480901af"
+    },
+    {
+      "path": "src/ShowCommandTui400/Commands/ShowCommandTui400Command.cs",
+      "rawSha256": "7e6f3f98a99c48f333c5fd0759bfb982386f44266e76b9f264378d116cdf9931"
+    },
+    {
+      "path": "src/ShowCommandTui400/NuGet.Config",
+      "rawSha256": "7a77c63a438cdf0524dc336da4bf2191d3f259645de430f5a4c61b3edd52fa9f"
+    },
+    {
+      "path": "src/ShowCommandTui400/Presentation/AccessibleStatePresenter.cs",
+      "rawSha256": "a2e72decaa27f687f1e67ad97f146e74dfc7195644bd2853a4d926628f03f3b9"
+    },
+    {
+      "path": "src/ShowCommandTui400/Presentation/SafeDisplayText.cs",
+      "rawSha256": "abaaec8c5cf8ba6c1e51fdd459028c6e2810232ffd25015b9cdf82de545d5749"
+    },
+    {
+      "path": "src/ShowCommandTui400/Resources/Messages.cs",
+      "rawSha256": "db03305bc10f8e443f52c1c068abe7ebfffc69f2cefa3c3b2feb9a24bb3a7d0e"
+    },
+    {
+      "path": "src/ShowCommandTui400/Resources/Messages.de.resx",
+      "rawSha256": "345126eefbdf14800919ed099c7146002c007a78470f6b51237122b33eeb84af"
+    },
+    {
+      "path": "src/ShowCommandTui400/Resources/Messages.en.resx",
+      "rawSha256": "0c51d1c194130cdebf97e08a9181d5d061d844130c04f74e58b852ba706da981"
+    },
+    {
+      "path": "src/ShowCommandTui400/Session/CallerSessionAdapter.cs",
+      "rawSha256": "1bb6311520f80d439545392a8f41fc0ca493b3405aa91c6ce63cbfc59f1b403e"
+    },
+    {
+      "path": "src/ShowCommandTui400/Session/EntryGuard.cs",
+      "rawSha256": "36bafc3fca560bdad6e8582558caee4f8743b683bceb6dfa605f79f44dd45fa4"
+    },
+    {
+      "path": "src/ShowCommandTui400/Session/SessionContext.cs",
+      "rawSha256": "b704fd55fb59f9d1b0926b051cea46050f0e3ae3a36f7ed1551a76ac2a87c138"
+    },
+    {
+      "path": "src/ShowCommandTui400/ShowCommandTui400.csproj",
+      "rawSha256": "6f7e753909d10c0a53d06f4e1248600851a38eb157b2611b51f2e3f4c4484007"
+    },
+    {
+      "path": "src/ShowCommandTui400/ShowCommandTui400.psd1",
+      "rawSha256": "fbc58b2fb0420865dca62ad9246aa18d3c5cb05f35cd69b648d2fc933185978a"
+    },
+    {
+      "path": "src/ShowCommandTui400/State/ViewState.cs",
+      "rawSha256": "cdfe48ff1fbac007f853bd33eb8e6132a525dbe913f82b2b18f8420d82b639eb"
+    },
+    {
+      "path": "src/ShowCommandTui400/Terminal/ITerminalLease.cs",
+      "rawSha256": "5eacc9062c95ff9e620f2735eb60a267d8af140d2d7b38c49fd96a9013771ca1"
+    },
+    {
+      "path": "src/ShowCommandTui400/Terminal/LinuxTerminalLease.cs",
+      "rawSha256": "f1e94f214ce7ac5860cdb90fcdb192e3449e1f965d36644c0310f7be7216d138"
+    },
+    {
+      "path": "src/ShowCommandTui400/Terminal/MacTerminalLease.cs",
+      "rawSha256": "5f652f78b72cc472de10ff4950a42e2a3bc6baed2492b540536044f0d60df7b6"
+    },
+    {
+      "path": "src/ShowCommandTui400/Terminal/NativeTerminalLease.cs",
+      "rawSha256": "16d9f9d50d11427022d61f13040b21a96fa65c463b492efaff10c81872383c07"
+    },
+    {
+      "path": "src/ShowCommandTui400/Terminal/TerminalApplication.cs",
+      "rawSha256": "b3f35b8da54971b1a5cbd545b4077d607d0331338189aa0ce5e9d57be4af0a8b"
+    },
+    {
+      "path": "src/ShowCommandTui400/Terminal/TerminalLifecycle.cs",
+      "rawSha256": "1c9f7fb6f44019cfc83e04c34fa04aefecd02d42ef575313c897a146e02be993"
+    },
+    {
+      "path": "src/ShowCommandTui400/Terminal/WindowsTerminalLease.cs",
+      "rawSha256": "0307aaebe8be81bc64bf61d0d3e06970d295721c30aeb228ab858a05198f8c03"
+    },
+    {
+      "path": "src/ShowCommandTui400/Views/ActionHelpView.cs",
+      "rawSha256": "d937f0adad2fabe41b9d1c4a91a48d6b83bb33c0477f2bc26d84c5dcf29f5680"
+    },
+    {
+      "path": "src/ShowCommandTui400/Views/NavigationAdapter.cs",
+      "rawSha256": "b342c5f4379738ef2b638a30a3ac2cddeec4e4f8a8926a6dcd4a33f4c438ae68"
+    },
+    {
+      "path": "src/ShowCommandTui400/Views/ResizeCoordinator.cs",
+      "rawSha256": "896e17745b3441148deb0f87a4090e3ba9ed6e24cfd100b402caeece001a92fb"
+    },
+    {
+      "path": "src/ShowCommandTui400/Views/SmallTerminalView.cs",
+      "rawSha256": "cb73e5fc03822b26d5d2dc4e9d112c242474e3019b2fc197ec689ac77bdd924b"
+    },
+    {
+      "path": "src/ShowCommandTui400/packages.lock.json",
+      "rawSha256": "9a50991596ca623b8d4041f1ad193d9f3c18fcadaac18f5df824f2fb7baf4813"
+    },
+    {
+      "path": "tests/ShowCommandTui400.Tests/AccessibleStateTests.cs",
+      "rawSha256": "636ce3835d8fa9a0f1da77ba425b335a8b7d8d77a0c4be07d777a55e9e4ddace"
+    },
+    {
+      "path": "tests/ShowCommandTui400.Tests/ActionContractTests.cs",
+      "rawSha256": "35cc44e77b6751465972642c3902642644516c1a50759b0f5ceb125d0f4f4d2f"
+    },
+    {
+      "path": "tests/ShowCommandTui400.Tests/EntryBoundaryTests.cs",
+      "rawSha256": "f22d24b2617f53ed5704e1d782622e0bdf8e16cc0758b3badf262f1f4755416d"
+    },
+    {
+      "path": "tests/ShowCommandTui400.Tests/KeyBindingTests.cs",
+      "rawSha256": "87622296d29c9cb5ff7ad5fa086e8214c3239b9c491a82b09ecdcc90e7d669f2"
+    },
+    {
+      "path": "tests/ShowCommandTui400.Tests/ProductHarness.cs",
+      "rawSha256": "f294c9aae87b48e65a3647edd7607c303710c58df433b2e5310e9bdca4618f06"
+    },
+    {
+      "path": "tests/ShowCommandTui400.Tests/ResizeStateTests.cs",
+      "rawSha256": "1f0dab7fa3dd31a54ce75920a3aa57299f8d3525125ce28cb537192f8b1494f3"
+    },
+    {
+      "path": "tests/ShowCommandTui400.Tests/SecurityBoundaryTests.cs",
+      "rawSha256": "a9c82254cce211218df7ce97d19f8ae74756846b9320003ca8196e828b3d2cf0"
+    },
+    {
+      "path": "tests/ShowCommandTui400.Tests/ShowCommandTui400.Tests.csproj",
+      "rawSha256": "0ddbbb332f7267bdad22caaa3fe2ec39b31f97633494e2a185dcff6bf0d80ac7"
+    },
+    {
+      "path": "tests/ShowCommandTui400.Tests/TerminalLifecycleTests.cs",
+      "rawSha256": "7c1a43fd9b2d0a537964e82676ef99df4c0eec948dc1ce4f45295acc2a41d58d"
+    },
+    {
+      "path": "tests/ShowCommandTui400.Tests/packages.lock.json",
+      "rawSha256": "be152f8f6783b9c9f74ff2c1700fee5e38815dfbba0a8772872b62e9c88cd998"
+    },
+    {
+      "path": "tests/feasibility/lh01/Invoke-Lh01ContractProof.ps1",
+      "rawSha256": "614ebfaf736b2d5f659b297e2069f61a03ffe1bd7a1cbe25530b1024ee1c3414"
+    },
+    {
+      "path": "tests/feasibility/lh01/Invoke-Lh01PlatformProof.ps1",
+      "rawSha256": "b31da5792498b6400352e12dab39803173f55810d9ceb1a426a0369b38a20abc"
+    },
+    {
+      "path": "tests/feasibility/lh01/README.md",
+      "rawSha256": "bc67f26813b6caf27d09429a0eadf428be7895c96aaf69bd50cab39a90aed752"
+    },
+    {
+      "path": "tests/feasibility/lh01/proof-driver-contract.py",
+      "rawSha256": "5640f8391c91eb70e0964f51c268126302e7129c67198d9cd87b6fbaa4fc33da"
+    },
+    {
+      "path": "tests/feasibility/lh01/proof-tooling-contract.py",
+      "rawSha256": "223cf79d29cc80ab3e066add242b8bb55d5659330e18638c2c06eddab3f858d6"
+    },
+    {
+      "path": "tests/feasibility/lh01/pty-product.py",
+      "rawSha256": "f677e05b0800b6e447f370355bc5827e3baaf2478a08ff78b4d40757ec3e5956"
+    },
+    {
+      "path": "tests/feasibility/lh01/session-contract.ps1",
+      "rawSha256": "ce82b232ae13bb4106ced26e546c7cd39b3bb5cdf5ea1bd79c825d5ef205b492"
+    },
+    {
+      "path": "tests/feasibility/lh01/terminal_probes.py",
+      "rawSha256": "35e7f2b74e27a348a2fd24cd70496c15d8a7572527cc1a61276f289fa428e257"
+    }
+  ]
+}

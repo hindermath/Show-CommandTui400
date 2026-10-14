@@ -1,0 +1,6 @@
+{
+  "result": "ExpectedFailure",
+  "stage": "T045/T046 before implementation",
+  "compilerError": "CS0234: missing presentation/resources/resize implementation",
+  "exitCode": 1
+}

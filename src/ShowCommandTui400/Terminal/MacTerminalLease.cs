@@ -22,10 +22,10 @@ public sealed class MacTerminalLease : NativeTerminalLease
         public string Boundary => "Only independently reproduced Darwin PENDIN (0x20000000) excluded from configured comparison; raw bytes retained";
         public byte[] Read()
         {
-            if (!OperatingSystem.IsMacOS() || RuntimeInformation.ProcessArchitecture != Architecture.Arm64 || Marshal.SizeOf<Termios>() != 72 || Marshal.OffsetOf<Termios>(nameof(Termios.InputSpeed)).ToInt32() != 56 || isatty(0) != 1 || tcgetattr(0, out var value) != 0) throw new IOException("Unsupported Darwin terminal/ABI");
+            if (!OperatingSystem.IsMacOS() || RuntimeInformation.ProcessArchitecture != Architecture.Arm64 || Marshal.SizeOf<Termios>() != 72 || Marshal.OffsetOf<Termios>(nameof(Termios.InputSpeed)).ToInt32() != 56 || isatty(0) != 1 || tcgetattr(0, out var value) != 0) throw new IOException(ShowCommandTui400.Resources.Messages.Both("MacUnsupported"));
             return NativeBytes.Serialize(value);
         }
-        public void Write(byte[] bytes) { var value = NativeBytes.Deserialize<Termios>(bytes); if (tcsetattr(0, 0, ref value) != 0) throw new IOException("Darwin tcsetattr failed"); }
+        public void Write(byte[] bytes) { var value = NativeBytes.Deserialize<Termios>(bytes); if (tcsetattr(0, 0, ref value) != 0) throw new IOException(ShowCommandTui400.Resources.Messages.Both("MacWriteFailed")); }
         public bool ConfiguredEquals(byte[] a, byte[] b)
         {
             var x = NativeBytes.Deserialize<Termios>(a); var y = NativeBytes.Deserialize<Termios>(b);
@@ -44,7 +44,7 @@ internal static class NativeBytes
     }
     public static T Deserialize<T>(byte[] bytes) where T : struct
     {
-        if (bytes.Length != Marshal.SizeOf<T>()) throw new ArgumentException("Invalid native snapshot length");
+        if (bytes.Length != Marshal.SizeOf<T>()) throw new ArgumentException(ShowCommandTui400.Resources.Messages.Both("InvalidSnapshot"));
         var ptr = Marshal.AllocHGlobal(bytes.Length);
         try { Marshal.Copy(bytes, 0, ptr, bytes.Length); return Marshal.PtrToStructure<T>(ptr); }
         finally { Marshal.FreeHGlobal(ptr); }

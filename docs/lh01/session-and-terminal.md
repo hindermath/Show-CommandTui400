@@ -96,3 +96,22 @@ exits. F4/F9/F10/F11 stay visibly unavailable.
 The example above really replaces the primary keys. All eight defined function-key
 actions can be remapped; fixed Alt+H/B/X/M and Esc remain reachable. Conflicts fail
 before Init. The legend shows effective bindings. The linked proof records limits.
+
+## DE — Textzustand und Größe bis T052
+
+Die TUI zeigt Namen, Verfügbarkeit, Fokus, Beschäftigtzustand, Status und Fehler
+als Text. Hilfe/Aktionen lassen sich mit Bildtasten blättern. Unterhalb der aus
+den konkreten Knöpfen und Textzeilen abgeleiteten Mindestgröße erscheinen zuerst
+Alt+X Ende und Alt+H Hilfe. Bei1x1ist kein Volltext möglich; Alt+X bleibt wirksam.
+Resize erhält lokale Werte/Fokus, nach Vergrößern ist Navigation wieder möglich.
+Fehlertexte enthalten keine Terminal-Steuerzeichen. Kein zusätzlicher öffentlicher
+Parameter. [Text-/Größennachweis](../accessibility/lh01-text-state.md) und
+[Negativgrenzen](../validation/lh01/security-negative.md).
+
+## EN — Text state and size through T052
+
+Names, availability, focus, busy state, status and errors are text. Page keys scroll
+help/actions. Below the layout-derived minimum, recovery keys appear first. A1x1
+view cannot display full text; Alt+X still exits. Resize retains local values/focus
+and navigation resumes after enlargement. Errors cannot inject terminal control
+characters. No new public parameter. The linked proof records practical limits.

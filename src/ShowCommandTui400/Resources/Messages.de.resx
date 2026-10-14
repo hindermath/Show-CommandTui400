@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <data xml:space="preserve" name="Ready">
+    <value>Bereit</value>
+  </data>
+  <data xml:space="preserve" name="Focus">
+    <value>Fokus</value>
+  </data>
+  <data xml:space="preserve" name="Status">
+    <value>Status</value>
+  </data>
+  <data xml:space="preserve" name="Busy">
+    <value>Beschäftigt</value>
+  </data>
+  <data xml:space="preserve" name="Yes">
+    <value>Ja</value>
+  </data>
+  <data xml:space="preserve" name="No">
+    <value>Nein</value>
+  </data>
+  <data xml:space="preserve" name="Error">
+    <value>Fehler</value>
+  </data>
+  <data xml:space="preserve" name="NoError">
+    <value>Kein Fehler</value>
+  </data>
+  <data xml:space="preserve" name="Role">
+    <value>Rolle: Textansicht mit Knöpfen</value>
+  </data>
+  <data xml:space="preserve" name="HelpTitle">
+    <value>Hilfe und Aktionen</value>
+  </data>
+  <data xml:space="preserve" name="Navigation">
+    <value>Tab/Umschalt+Tab und Pfeile bewegen den Fokus. Enter betätigt den Knopf. Bildtasten blättern Hilfe/Aktionen. Keine Zielausführung.</value>
+  </data>
+  <data xml:space="preserve" name="Available">
+    <value>verfügbar</value>
+  </data>
+  <data xml:space="preserve" name="Unavailable">
+    <value>nicht verfügbar</value>
+  </data>
+  <data xml:space="preserve" name="ActionRejected">
+    <value>Aktion hier nicht verfügbar</value>
+  </data>
+  <data xml:space="preserve" name="Refreshed">
+    <value>Ansicht aktualisiert; Werte erhalten</value>
+  </data>
+  <data xml:space="preserve" name="Confirmed">
+    <value>Bestätigt; keine Zielausführung</value>
+  </data>
+  <data xml:space="preserve" name="Small">
+    <value>Terminal zu klein. Ansicht vergrößern oder sicher beenden.</value>
+  </data>
+  <data xml:space="preserve" name="SmallKeys">
+    <value>Alt+H Hilfe; Alt+X Ende; Esc zurück</value>
+  </data>
+  <data xml:space="preserve" name="SmallHelp">
+    <value>Hilfe: Eingaben bleiben erhalten. Alt+X führt zur Shell zurück.</value>
+  </data>
+  <data xml:space="preserve" name="CapabilityRejected">
+    <value>Interaktive ConsoleHost-Sitzung ab PowerShell 7.6.4 mit unterstütztem Terminal erforderlich.</value>
+  </data>
+  <data xml:space="preserve" name="InvalidConfiguration">
+    <value>Ungültige oder kollidierende Tastenbelegung.</value>
+  </data>
+  <data xml:space="preserve" name="BindingPairs">
+    <value>Tastenbelegung erwartet Textpaare.</value>
+  </data>
+  <data xml:space="preserve" name="TerminalInUse">
+    <value>Terminal ist bereits belegt.</value>
+  </data>
+  <data xml:space="preserve" name="UnsupportedOS">
+    <value>Nicht unterstütztes Betriebssystem.</value>
+  </data>
+  <data xml:space="preserve" name="NoCaller">
+    <value>Keine Aufrufersitzung.</value>
+  </data>
+  <data xml:space="preserve" name="RestoreFailed">
+    <value>Terminal konnte nicht vollständig wiederhergestellt werden.</value>
+  </data>
+  <data xml:space="preserve" name="CombinedFailure">
+    <value>Ablauf- und Wiederherstellungsfehler</value>
+  </data>
+  <data xml:space="preserve" name="Help">
+    <value>Hilfe</value>
+  </data>
+  <data xml:space="preserve" name="Exit">
+    <value>Beenden</value>
+  </data>
+  <data xml:space="preserve" name="Back">
+    <value>Zurück</value>
+  </data>
+  <data xml:space="preserve" name="Refresh">
+    <value>Aktualisieren</value>
+  </data>
+  <data xml:space="preserve" name="Confirm">
+    <value>Bestätigen</value>
+  </data>
+  <data xml:space="preserve" name="ActionsMenu">
+    <value>Aktionen</value>
+  </data>
+  <data xml:space="preserve" name="Context">
+    <value>Kontextauswahl</value>
+  </data>
+  <data xml:space="preserve" name="AllParameters">
+    <value>Alle Parameter</value>
+  </data>
+  <data xml:space="preserve" name="MoreParameters">
+    <value>Weitere Parameter</value>
+  </data>
+  <data xml:space="preserve" name="Details">
+    <value>Details</value>
+  </data>
+  <data xml:space="preserve" name="Select">
+    <value>Auswählen</value>
+  </data>
+  <data xml:space="preserve" name="Edit">
+    <value>Bearbeiten</value>
+  </data>
+  <data xml:space="preserve" name="Execute">
+    <value>Ausführen</value>
+  </data>
+  <data xml:space="preserve" name="SmallTitle">
+    <value>Klein</value>
+  </data>
+  <data xml:space="preserve" name="ShortExit">
+    <value>Ende</value>
+  </data>
+  <data xml:space="preserve" name="Root">
+    <value>Startansicht</value>
+  </data>
+  <data xml:space="preserve" name="LinuxUnsupported">
+    <value>Linux-Terminal oder native Struktur nicht unterstützt.</value>
+  </data>
+  <data xml:space="preserve" name="LinuxWriteFailed">
+    <value>Linux-Terminalzustand konnte nicht gesetzt werden.</value>
+  </data>
+  <data xml:space="preserve" name="MacUnsupported">
+    <value>macOS-Terminal oder native Struktur nicht unterstützt.</value>
+  </data>
+  <data xml:space="preserve" name="MacWriteFailed">
+    <value>macOS-Terminalzustand konnte nicht gesetzt werden.</value>
+  </data>
+  <data xml:space="preserve" name="InvalidSnapshot">
+    <value>Ungültige Länge des nativen Zustandsnachweises.</value>
+  </data>
+  <data xml:space="preserve" name="LeaseActive">
+    <value>Terminalzugriff bereits aktiv.</value>
+  </data>
+  <data xml:space="preserve" name="RestoreMismatch">
+    <value>Native Terminalmodi weichen nach Wiederherstellung ab.</value>
+  </data>
+  <data xml:space="preserve" name="RestoreErrors">
+    <value>Fehler bei Terminalwiederherstellung.</value>
+  </data>
+  <data xml:space="preserve" name="WindowsMismatch">
+    <value>Windows-Terminalzustand nach Wiederherstellung abweichend.</value>
+  </data>
+  <data xml:space="preserve" name="WindowsUnsupported">
+    <value>Windows-Konsole nicht unterstützt.</value>
+  </data>
+  <data xml:space="preserve" name="UnvalidatedBinding">
+    <value>Tastenbelegung wurde nicht geprüft.</value>
+  </data>
+</root>

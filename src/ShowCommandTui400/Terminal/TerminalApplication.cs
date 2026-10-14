@@ -5,13 +5,18 @@ using Terminal.Gui.Views;
 using ShowCommandTui400.Actions;
 using ShowCommandTui400.State;
 using ShowCommandTui400.Views;
+using ShowCommandTui400.Presentation;
+using ShowCommandTui400.Resources;
 namespace ShowCommandTui400.Terminal;
 
 internal interface ITerminalApplication : IDisposable { void Run(IReadOnlyDictionary<string, ActionId> bindings); void Stop(); }
 internal sealed class TerminalApplication : ITerminalApplication
 {
-    internal sealed record InputObservation(string Key, string? Action, string Context, string Focus, string? FrameworkFocus, bool Accepted, bool ExitRequested);
+    internal sealed record InputObservation(string Key, string? Action, string Context, string Focus, string? FrameworkFocus, bool Accepted, bool ExitRequested, int ScrollTop);
     internal static Action<InputObservation>? InputObserver { get; set; }
+    internal sealed record RenderObservation(int Width, int Height, bool Small, string Focus, string Context, bool Busy, string Text);
+    internal static Action<RenderObservation>? RenderObserver { get; set; }
+    internal static Action<ViewState>? StateInitializer { get; set; }
     private readonly object gate = new();
     private IApplication? active;
     private bool stopRequested;
@@ -29,22 +34,28 @@ internal sealed class TerminalApplication : ITerminalApplication
         app.Init("dotnet");
         using Window window = new() { Title = "Show-CommandTui400 — LH-01" };
         var state = new ViewState();
+        StateInitializer?.Invoke(state);
+        var resize = new ResizeCoordinator(state);
+        resize.Update(app.Screen.Width, app.Screen.Height);
         var dispatcher = new ActionDispatcher(state);
         var navigation = new NavigationAdapter(state);
         var map = new KeyBindingMap(bindings);
-        Label text = new() { X = 1, Y = 4, Width = Dim.Fill(1), Height = Dim.Fill(1) };
+        TextView text = new() { X = 1, Y = 5, Width = Dim.Fill(1), Height = Dim.Fill(1), ReadOnly = true, WordWrap = true, CanFocus = false };
         var controls = NavigationAdapter.FocusOrder.Select((name, index) => new Button
         {
-            X = 1 + index * 26, Y = 1, Text = name switch { "Help" => "Hilfe / Help", "ActionsMenu" => "Aktionen / Actions", _ => "Refresh" }, CanFocus = true
+            X = 1, Y = 1 + index, Text = Messages.Both(name), CanFocus = true, Id = name
         }).ToArray();
         // Activation is owned by the action adapter; Enter never runs a target command.
         foreach (var control in controls) window.Add(control);
         window.Add(text);
         void Render()
         {
-            text.Text = $"Fokus / Focus: {state.Focus}\n{state.Status}\n" + ActionHelpView.Render(dispatcher.Context, map);
+            foreach (var control in controls) control.Visible = !resize.IsSmall;
+            text.X = resize.IsSmall ? 0 : 1; text.Y = resize.IsSmall ? 0 : 5;
+            text.Text = resize.IsSmall ? SmallTerminalView.Render(state, dispatcher.Context == ViewContext.Help) : AccessibleStatePresenter.Render(state, dispatcher.Context, map);
             int index = NavigationAdapter.FocusOrder.ToList().IndexOf(state.Focus);
-            if (index >= 0) controls[index].SetFocus();
+            if (!resize.IsSmall && index >= 0) controls[index].SetFocus();
+            RenderObserver?.Invoke(new(state.Width, state.Height, resize.IsSmall, state.Focus, dispatcher.Context.ToString(), state.Busy, text.Text));
         }
         foreach (var pair in controls.Select((control, index) => (control, index)))
         {
@@ -53,6 +64,7 @@ internal sealed class TerminalApplication : ITerminalApplication
                 args.Handled = true;
                 state.Focus = NavigationAdapter.FocusOrder[pair.index];
                 var action = pair.index switch { 0 => ActionId.Help, 1 => ActionId.ActionsMenu, _ => ActionId.Refresh };
+                if (action == ActionId.Refresh) state.Error = null;
                 dispatcher.Dispatch(action, dispatcher.Context); Render();
             };
         }
@@ -75,18 +87,35 @@ internal sealed class TerminalApplication : ITerminalApplication
             }
             key.Handled = true;
             bool accepted;
-            if (navigationKey != null) accepted = navigation.Move(navigationKey);
+            if (resize.IsSmall && action is not (ActionId.Help or ActionId.Back or ActionId.Exit))
+            {
+                accepted = false;
+            }
+            else if (navigationKey is "PageUp" or "PageDown" && dispatcher.Context != ViewContext.Root)
+            {
+                text.ScrollVertical(navigationKey == "PageDown" ? Math.Max(1, text.Viewport.Height - 1) : -Math.Max(1, text.Viewport.Height - 1));
+                accepted = true;
+            }
+            else if (navigationKey != null) accepted = navigation.Move(navigationKey);
             else
             {
                 var result = dispatcher.Dispatch(action!.Value, dispatcher.Context);
                 accepted = result.Accepted;
-                if (!accepted) text.Text = result.Message + "\n" + ActionHelpView.Render(dispatcher.Context, map);
+                if (!accepted) state.Error = result.Message;
+                else if (action == ActionId.Refresh) state.Error = null;
             }
-            if (accepted) Render();
-            InputObserver?.Invoke(new(name ?? navigationKey ?? "Enter", action?.ToString(), dispatcher.Context.ToString(), state.Focus, controls.Select((c, i) => (c, i)).Where(p => p.c.HasFocus).Select(p => NavigationAdapter.FocusOrder[p.i]).FirstOrDefault(), accepted, dispatcher.ExitRequested));
+            if (navigationKey is not ("PageUp" or "PageDown") || dispatcher.Context == ViewContext.Root || resize.IsSmall) Render();
+            InputObserver?.Invoke(new(name ?? navigationKey ?? "Enter", action?.ToString(), dispatcher.Context.ToString(), state.Focus, controls.Select((c, i) => (c, i)).Where(p => p.c.HasFocus).Select(p => NavigationAdapter.FocusOrder[p.i]).FirstOrDefault(), accepted, dispatcher.ExitRequested, text.Viewport.Y));
             if (dispatcher.ExitRequested) app.RequestStop();
         };
-        app.Iteration += (_, _) => { lock (gate) { if (stopRequested) app.RequestStop(); } };
+        app.Iteration += (_, _) =>
+        {
+            if (state.Width != app.Screen.Width || state.Height != app.Screen.Height)
+            {
+                resize.Update(app.Screen.Width, app.Screen.Height); Render();
+            }
+            lock (gate) { if (stopRequested) app.RequestStop(); }
+        };
         lock (gate) { active = app; }
         try { app.Run(window); }
         finally { lock (gate) { active = null; } }
@@ -110,7 +139,7 @@ internal sealed class TerminalApplication : ITerminalApplication
         "F10" => Key.F10,
         "F11" => Key.F11,
         "F12" => Key.F12,
-        _ => throw new InvalidOperationException("Binding was not validated")
+        _ => throw new InvalidOperationException(ShowCommandTui400.Resources.Messages.Both("UnvalidatedBinding"))
     };
     public void Dispose() { Stop(); }
 }

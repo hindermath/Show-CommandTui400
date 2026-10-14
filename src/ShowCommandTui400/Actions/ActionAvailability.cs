@@ -5,17 +5,17 @@ public static class ActionAvailability
     // These are local shell actions only. Later domain features have no handler.
     public static IReadOnlyList<ActionDescriptor> All { get; } = Array.AsReadOnly(new[]
     {
-        Describe(ActionId.Help, "Hilfe", "Help", true), Describe(ActionId.Exit, "Beenden", "Exit", true),
-        Describe(ActionId.Back, "Zurück", "Back", true), Describe(ActionId.Refresh, "Aktualisieren", "Refresh", true),
-        Describe(ActionId.Confirm, "Bestätigen", "Confirm", true), Describe(ActionId.ActionsMenu, "Aktionen", "Actions", true),
-        Describe(ActionId.Context, "Kontextauswahl", "Context selection", false),
-        Describe(ActionId.AllParameters, "Alle Parameter", "All parameters", false),
-        Describe(ActionId.MoreParameters, "Weitere Parameter", "More parameters", false),
-        Describe(ActionId.Details, "Details", "Details", false), Describe(ActionId.Select, "Auswählen", "Select", false),
-        Describe(ActionId.Edit, "Bearbeiten", "Edit", false), Describe(ActionId.Execute, "Ausführen", "Execute", false)
+        Describe(ActionId.Help, true), Describe(ActionId.Exit, true),
+        Describe(ActionId.Back, true), Describe(ActionId.Refresh, true),
+        Describe(ActionId.Confirm, true), Describe(ActionId.ActionsMenu, true),
+        Describe(ActionId.Context, false),
+        Describe(ActionId.AllParameters, false),
+        Describe(ActionId.MoreParameters, false),
+        Describe(ActionId.Details, false), Describe(ActionId.Select, false),
+        Describe(ActionId.Edit, false), Describe(ActionId.Execute, false)
     });
-    private static ActionDescriptor Describe(ActionId id, string de, string en, bool available) =>
-        new(id, de, en, System.Collections.Frozen.FrozenSet.ToFrozenSet(new[] { ViewContext.Root, ViewContext.Help, ViewContext.ActionsMenu }), available);
+    private static ActionDescriptor Describe(ActionId id, bool available) =>
+        new(id, ShowCommandTui400.Resources.Messages.InLanguage(id.ToString(), "de"), ShowCommandTui400.Resources.Messages.InLanguage(id.ToString(), "en"), System.Collections.Frozen.FrozenSet.ToFrozenSet(new[] { ViewContext.Root, ViewContext.Help, ViewContext.ActionsMenu }), available);
     public static bool IsAvailable(ActionId id, ViewContext context) =>
         All.Any(a => a.Id == id && a.Available && a.Contexts.Contains(context));
 }

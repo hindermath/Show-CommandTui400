@@ -30,5 +30,5 @@ public static class KeyBindingValidator
         return result.AsReadOnly();
     }
     private static bool ValidKey(string value) => Fixed.Keys.Contains(value, StringComparer.Ordinal) || value == "Alt+M" || (value.StartsWith('F') && int.TryParse(value.AsSpan(1), out var n) && n is >= 1 and <= 12 && value == "F" + n);
-    private static void Invalid() => throw new EntryRejectedException("InvalidConfiguration", "Ungültige oder kollidierende Tastenbelegung. / Invalid or conflicting key binding.");
+    private static void Invalid() => throw new EntryRejectedException("InvalidConfiguration", ShowCommandTui400.Resources.Messages.Both("InvalidConfiguration"));
 }

@@ -29,10 +29,10 @@ public sealed class LinuxTerminalLease : NativeTerminalLease
         public string Boundary => "Own Linux glibc x64 ABI; native target proof outstanding; no Darwin masks";
         public byte[] Read()
         {
-            if (!IsSupportedPlatform() || Marshal.SizeOf<Termios>() != 60 || Marshal.OffsetOf<Termios>(nameof(Termios.InputSpeed)).ToInt32() != 52 || isatty(0) != 1 || tcgetattr(0, out var value) != 0) throw new IOException("Unsupported Linux terminal/ABI");
+            if (!IsSupportedPlatform() || Marshal.SizeOf<Termios>() != 60 || Marshal.OffsetOf<Termios>(nameof(Termios.InputSpeed)).ToInt32() != 52 || isatty(0) != 1 || tcgetattr(0, out var value) != 0) throw new IOException(ShowCommandTui400.Resources.Messages.Both("LinuxUnsupported"));
             return NativeBytes.Serialize(value);
         }
-        public void Write(byte[] bytes) { var value = NativeBytes.Deserialize<Termios>(bytes); if (tcsetattr(0, 0, ref value) != 0) throw new IOException("Linux tcsetattr failed"); }
+        public void Write(byte[] bytes) { var value = NativeBytes.Deserialize<Termios>(bytes); if (tcsetattr(0, 0, ref value) != 0) throw new IOException(ShowCommandTui400.Resources.Messages.Both("LinuxWriteFailed")); }
         public bool ConfiguredEquals(byte[] a, byte[] b) => a.SequenceEqual(b);
     }
 }

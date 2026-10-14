@@ -36,8 +36,8 @@ try {
     if($LASTEXITCODE -ne 0){throw 'Locked build failed'}
     Import-Module (Join-Path $build 'ShowCommandTui400/bin/net10.0/ShowCommandTui400.psd1')
     Add-Type -Path (Join-Path $build 'ShowCommandTui400.Tests/bin/net10.0/ShowCommandTui400.Tests.dll')
-    $checks=@([ShowCommandTui400.Tests.EntryBoundaryTests]::Run())
-    if($CaseId -eq 'B01'){$checks+=@([ShowCommandTui400.Tests.TerminalLifecycleTests]::Run());$checks+=@([ShowCommandTui400.Tests.ActionContractTests]::Run());$checks+=@([ShowCommandTui400.Tests.KeyBindingTests]::Run())}
+    $checks=@([ShowCommandTui400.Tests.SecurityBoundaryTests]::Run()) + @([ShowCommandTui400.Tests.EntryBoundaryTests]::Run())
+    if($CaseId -eq 'B01'){$checks+=@([ShowCommandTui400.Tests.TerminalLifecycleTests]::Run());$checks+=@([ShowCommandTui400.Tests.ActionContractTests]::Run());$checks+=@([ShowCommandTui400.Tests.KeyBindingTests]::Run());$checks+=@([ShowCommandTui400.Tests.AccessibleStateTests]::Run());$checks+=@([ShowCommandTui400.Tests.ResizeStateTests]::Run())}
     if($CaseId -ne 'B01' -and $CaseId -notin $checks){throw 'Requested negative contract not observed'}
     $outcome=switch($CaseId){'B01'{'LockedBuildAndContractTestsPass'} 'N05'{'RejectedWithoutDomainEffect'} 'N06'{'RejectedBeforeInit'} 'N07'{'SafeDisplayWithoutControlInjection'} default{'RejectedWithoutStateChange'}}
     if(Test-Path (Join-Path $build 'ShowCommandTui400/bin/net10.0/System.Management.Automation.dll')){throw 'Host assembly copied unexpectedly'}
