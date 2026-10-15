@@ -43,8 +43,12 @@ $previousEnvironment=@{}
 foreach($name in $isolatedEnvironment.Keys){$previousEnvironment[$name]=[Environment]::GetEnvironmentVariable($name);[Environment]::SetEnvironmentVariable($name,$isolatedEnvironment[$name])}
 Push-Location $root
 try {
-    & dotnet build tests/ShowCommandTui400.Tests/ShowCommandTui400.Tests.csproj -p:RestoreLockedMode=true "-p:RestoreConfigFile=$(Join-Path $root 'src/ShowCommandTui400/NuGet.Config')" "-p:LH01PowerShellHome=$PSHOME" "-p:LH01BuildRoot=$build" | Out-Host
+    & dotnet build tests/ShowCommandTui400.Tests/ShowCommandTui400.Tests.csproj -p:RestoreLockedMode=true "-p:RestoreConfigFile=$(Join-Path $root 'src/ShowCommandTui400/NuGet.Config')" "-p:LH01BuildRoot=$build" | Out-Host
     if($LASTEXITCODE -ne 0){throw 'Locked build failed'}
+    if($CaseId -eq 'B01'){
+        & python3 (Join-Path $PSScriptRoot 'assert-no-powershell-runtime.py') --assets (Join-Path $build 'ShowCommandTui400/obj/project.assets.json') --output (Join-Path $build 'ShowCommandTui400/bin/net10.0') | Out-Host
+        if($LASTEXITCODE -ne 0){throw 'PowerShell runtime boundary failed'}
+    }
     Import-Module (Join-Path $build 'ShowCommandTui400/bin/net10.0/ShowCommandTui400.psd1')
     Add-Type -Path (Join-Path $build 'ShowCommandTui400.Tests/bin/net10.0/ShowCommandTui400.Tests.dll')
     $checks=@([ShowCommandTui400.Tests.SecurityBoundaryTests]::Run()) + @([ShowCommandTui400.Tests.EntryBoundaryTests]::Run())

@@ -1,5 +1,11 @@
 # Sitzung und Terminal / Session and terminal
 
+DE: Für die ersten manuellen Build-, Import- und Bedienproben auf Mac A siehe
+[Manueller Einstieg auf Mac A](manual-smoke-test-maca.md).
+
+EN: For first manual build, import and usage checks, see
+[Manual first run on Mac A](manual-smoke-test-maca.md).
+
 ## DE — Historischer Stand T018–T036
 
 Der folgende Abschnitt beschreibt die erste gelieferte Generation. Aktuell ergänzt

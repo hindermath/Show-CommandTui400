@@ -2,6 +2,12 @@
 
 Stand / Date: 09.10.2026. Owner: Thorsten Hindermann.
 
+Produkt-Build und IDE-Einrichtung: [portable Entwickleranleitung](lh01/development-setup.md).
+Keine lokalen PowerShell-Pfade für die Kompilierung erforderlich.
+
+Product build and IDE setup: [portable developer guide](lh01/development-setup.md).
+Compilation requires no local PowerShell paths.
+
 ## Einstieg und Grenzen / Entry and boundaries
 
 Dieses Repository ist ein eigenständiges Level-2-Projekt im Workspace

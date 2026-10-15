@@ -11,6 +11,13 @@ Aktueller Nachweis / Current proof: [Sitzung und Terminal](../../docs/validation
 [Textzustand/Größe](../../docs/accessibility/lh01-text-state.md),
 [Negativgrenzen](../../docs/validation/lh01/security-negative.md).
 
+DE: Build-Ergänzung 2026-10-15: SMA7.6.4 als private compile-only NuGet-Referenz;
+Engine weiter ausschließlich vom Host. [Einrichtung](../../docs/lh01/development-setup.md).
+Keine Änderung der Mindestversion oder Sitzungsintegration.
+
+EN: Build amendment 2026-10-15: private compile-only SMA7.6.4 NuGet reference;
+the host still supplies the engine. No minimum-version or session change.
+
 ## Zusammenfassung / Summary
 
 Die technische Auswahl ist in [Entscheidungen](feasibility/decisions.md) begründet:

@@ -77,6 +77,8 @@ heuristic would otherwise count spec.md as a test.*
 | 2026-10-14 | LH-01 Textzustand/Größe/Sicherheitsgrenzen T045–T052 / Text state, size and security | Sichere DE/EN-Ressourcen, Resize mit Werterhalt, kleine Ansicht und öffentliche Negativfälle;52/63Aufgaben, begrenzte Mac-A-Produktnachweise. Fremde Prüfstände und volle Abnahme bleiben offen. / Safe bilingual text, resize/recovery and negative public boundaries;52/63tasks, bounded local proof only. [Nachweis / Proof](validation/lh01/text-state-checks.md). |
 | 2026-10-14 | LH-01 Plattformprüfstand T053/T054 / Platform test stand | Frischer Mac-A-Produktnachweis, Windows-ConPTY mit einzeln geprüfter Streamumleitung, 60 gebundene Zielkommandos und native Linux-/Windows-CI. T053 abgeschlossen; echte Zielhosts und anderes Ergebnisreview in T054 offen. / Fresh Mac A proof, native ConPTY, exact stand/commands and bounded native CI; actual target evidence remains open. [Plattformmatrix / Matrix](validation/lh01/platform-matrix.md). |
 
+| 2026-10-15 | LH-01 portable IDEs und sichtbarer Text / Portable IDEs and visible text | NuGet-Kompilierreferenz statt Hostpfad, Solution und DE/EN-Einrichtung; lesbare Hilfe/Status und Mac-A-Nachprüfungen. Fremdsysteme und volle Abnahme bleiben getrennt. / NuGet compile reference, portable solution, setup and visible help/status; bounded Mac A rechecks only. [Nachweis / Evidence](validation/lh01/ide-portability.md). |
+
 ## Gesamtstatistik / Overall Statistics
 
 <!-- project-statistics-v2:begin -->

@@ -1,4 +1,5 @@
 <Project>
+  <Import Project="../scripts/build/Lh01.PowerShellReference.props" />
   <PropertyGroup><DefaultItemExcludes>$(DefaultItemExcludes);**/bin/**;**/obj/**</DefaultItemExcludes></PropertyGroup>
   <PropertyGroup Condition="'$(LH01BuildRoot)' != ''">
     <BaseIntermediateOutputPath>$(LH01BuildRoot)/$(MSBuildProjectName)/obj/</BaseIntermediateOutputPath>

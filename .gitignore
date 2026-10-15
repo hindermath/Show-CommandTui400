@@ -132,3 +132,10 @@ intakes/*
 **/*.user
 **/*.suo
 **/packages/
+
+# Portable solution; personal IDE state stays local / Lokaler IDE-Zustand
+!ShowCommandTui400.sln
+**/.idea/
+**/.vs/
+**/.vscode/
+!NuGet.Config

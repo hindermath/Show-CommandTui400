@@ -1,5 +1,17 @@
 # LH-01 Plattform-Hand-offs / Platform hand-offs
 
+## Ergänzung: IDE-Prüfung / Amendment: IDE checks
+
+DE: Die [IDE-Hand-off-Anleitung](../../lh01/development-setup.md#plattform-hand-offs)
+führt zusätzliche Prüfungen für Mac B, Windows und WSL2. Die lokale NuGet-Umstellung
+ist noch kein neu freigegebener Produktprüfstand. Die vorhandenen Commit-/Hashbindungen
+bleiben unverändert; IDE-Prüfungen brauchen einen gesondert gelieferten Stand und Auftrag.
+
+EN: The [IDE hand-off guide](../../lh01/development-setup.md#plattform-hand-offs)
+adds Mac B, Windows and WSL2 checks. The local NuGet change is not a newly approved
+product stand. Existing commit/hash bindings remain unchanged; IDE checks require
+a separately delivered revision and target request.
+
 ## DE — Ausführbarer Prüfvertrag
 
 Owner: Thorsten Hindermann. Stand: 2026-10-14. Die Hand-offs [Mac B #37](https://github.com/hindermath/Show-CommandTui400/issues/37), [Windows #38](https://github.com/hindermath/Show-CommandTui400/issues/38) und [Ubuntu/WSL2 #39](https://github.com/hindermath/Show-CommandTui400/issues/39) gehören zum [Prüf-Issue #36](https://github.com/hindermath/Show-CommandTui400/issues/36).

@@ -1,0 +1,12 @@
+<Project>
+  <!-- Compile against the minimum supported API; the caller supplies the engine.
+       Runtime/native assets and dependency propagation must stay excluded. -->
+  <ItemGroup>
+    <PackageReference Include="System.Management.Automation" Version="[7.6.4]"
+                      IncludeAssets="compile" PrivateAssets="all" />
+    <!-- Resolve the upstream PKCS dependency to the patched version, without
+         importing its API or runtime. This does not update the user's host. -->
+    <PackageReference Include="System.Security.Cryptography.Pkcs" Version="[10.0.13]"
+                      IncludeAssets="none" PrivateAssets="all" />
+  </ItemGroup>
+</Project>
