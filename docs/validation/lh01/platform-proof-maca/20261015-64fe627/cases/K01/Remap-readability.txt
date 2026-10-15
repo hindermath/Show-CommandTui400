@@ -1,0 +1,1 @@
+{"result": "Pass", "checks": ["actual-state-text", "actual-help-context", "actual-refresh-status", "no-identical-color-text"], "scope": "synthetic terminal attributes; no physical-terminal or WCAG acceptance"}

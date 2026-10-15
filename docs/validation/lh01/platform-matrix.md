@@ -1,4 +1,45 @@
-# LH-01 Plattformmatrix / Platform matrix
+# Aktuelle Plattformmatrix / Current platform matrix
+
+## DE
+
+Owner: Thorsten Hindermann. Aktualisiert 2026-10-15. Der aktuelle Prüfcommit und
+alle Bindungen stehen im [Manifest](platform-handoff.json), sein Hash in
+[platform-handoff.sha256](platform-handoff.sha256). Der neue vollständige
+[Mac-A-Lauf](platform-proof-maca/20261015-64fe627/suite-result.json) umfasst
+19 reguläre Pass-Fälle und einen getrennten erwarteten S07-Fail. Die gemeinsame
+K01-Gruppe prüft jetzt auch sichtbare Hilfe-/Refresh-Farben bei Standard-/Remap-Tasten.
+
+| Ziel | Aktueller Stand | Review / Abnahme |
+|---|---|---|
+| Mac A, MacBook Air M2 2023 | Vollständige Automationssuite Pass; S07 separat Fail | Keine Vollabnahme |
+| Mac B, Mac mini M4 Pro, #37 | Aktualisierter Auftrag vorbereitet; NotRun | Open |
+| Windows11 nativ, #38 | Aktualisierter Auftrag vorbereitet; NotRun | Open |
+| Ubuntu24.04 / WSL2, #39 | Aktualisierter Auftrag vorbereitet; NotRun | Open |
+| Native Linux-/Windows-Server-CI | Technische PR-Checks des Lieferpakets getrennt prüfen | Kein Zielhostersatz |
+
+IDE-Prüfungen gemäß [Einrichtung](../../lh01/development-setup.md) werden getrennt
+berichtet: Rider/VS Code auf Mac B, Rider/VS Code/Visual Studio auf Windows,
+WSL-Backend beziehungsweise WSL-Fenster unter Ubuntu. Fehlender GUI-Zugriff oder
+fehlende IDE bleibt Open/Blocked; ein CLI-Build ist kein IDE-Nachweis. Keine
+Installation, Reparatur, Issue-Schließung oder Abnahme durch den Prüfagenten.
+Reale Terminal-/Screenreaderabnahme Deferred; Braillehardware Excluded mangels Gerät.
+
+## EN
+
+The current manifest/hash and fresh full Mac A proof are linked above. Nineteen
+regular cases pass; diagnostic S07 deliberately stays Fail. Shared K01 now checks
+actual visible help/refresh colors for default/remapped keys. Mac B, native Windows11
+and Ubuntu24.04/WSL2 remain NotRun with independent review/acceptance Open. Delivery
+CI proves only its native runners. IDE checks are separate; absent UI/IDE access is
+Open/Blocked, not CLI-based acceptance. No installation, repair, closure or acceptance.
+Physical terminal/screen-reader acceptance is Deferred; Braille hardware Excluded.
+
+## Historischer Stand bis PR #48 / Historical state through PR #48
+
+Der folgende frühere Bericht gehört ausschließlich zum alten Prüfcommit und
+seinen Rohbelegen. / The following report belongs only to the old revision/evidence.
+
+### Frühere Plattformmatrix / Earlier matrix
 
 ## DE — Stand und Grenzen
 

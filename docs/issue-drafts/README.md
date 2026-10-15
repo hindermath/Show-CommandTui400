@@ -38,3 +38,14 @@ und [lokale Validierung](../lh00-validation.md) erklären die Grenzen.
 The only active intake is LH-00. ReadyForReview means ready for separate review.
 Draft checklists are for later use; unchecked boxes do not claim acceptance.
 The linked governance mapping and local validation report explain the boundaries.
+
+## Aktuelle Plattform-Issue-Exporte / Current platform issue exports
+
+Die `lh01-platform-*-current.md`-Dateien bilden die veröffentlichbaren aktuellen
+Prüfaufträge #36–#39 ab; keine aktiven Lastenhefte. Vorherige GitHub-Issue-Bodies
+stehen unverändert in `archive/platform-before-20261015/`; Prepared-Entwürfe bleiben
+historisch. Jeder neue Prompt bindet Produkt- und späteren Genehmigungscommit getrennt.
+
+The current platform exports are issue instructions, not active intakes. Previous
+GitHub bodies are preserved in the named archive; Prepared drafts stay historical.
+Each new prompt pins the product and later approval commit separately.

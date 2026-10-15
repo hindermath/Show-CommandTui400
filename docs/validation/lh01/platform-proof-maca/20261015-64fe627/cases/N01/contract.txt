@@ -1,0 +1,15 @@
+  Wiederherzustellende Projekte werden ermittelt...
+  "<checkout>/src/ShowCommandTui400/ShowCommandTui400.csproj" wiederhergestellt (in 21,95 Sek.).
+  "<checkout>/tests/ShowCommandTui400.Tests/ShowCommandTui400.Tests.csproj" wiederhergestellt (in 21,95 Sek.).
+<checkout>/src/ShowCommandTui400/Terminal/TerminalApplication.cs(44,9): warning CS0618: "TextView" ist veraltet: "TextView is superseded by tui-cs/Editor's EditorView, which provides a rope-backed document model, cell-aware rendering, multi-caret editing, undo, syntax highlighting, folding, find/replace, and soft wrap. See https://github.com/tui-cs/Editor for details." [<checkout>/src/ShowCommandTui400/ShowCommandTui400.csproj]
+  ShowCommandTui400 -> /private/tmp/lh01-platform-refresh-20261015/build/ShowCommandTui400/bin/net10.0/ShowCommandTui400.dll
+  ShowCommandTui400.Tests -> /private/tmp/lh01-platform-refresh-20261015/build/ShowCommandTui400.Tests/bin/net10.0/ShowCommandTui400.Tests.dll
+
+Der Buildvorgang wurde erfolgreich ausgeführt.
+
+<checkout>/src/ShowCommandTui400/Terminal/TerminalApplication.cs(44,9): warning CS0618: "TextView" ist veraltet: "TextView is superseded by tui-cs/Editor's EditorView, which provides a rope-backed document model, cell-aware rendering, multi-caret editing, undo, syntax highlighting, folding, find/replace, and soft wrap. See https://github.com/tui-cs/Editor for details." [<checkout>/src/ShowCommandTui400/ShowCommandTui400.csproj]
+    1 Warnung(en)
+    0 Fehler
+
+Verstrichene Zeit 00:00:23.14
+{"scope":"model/native doubles only; no GUI or foreign-platform proof","result":"Pass","caseId":"N01","checks":["SEC01-unknown-context-unavailable-no-effect","SEC02-action-text-never-evaluated","SEC03-key-injection-conflict-rejected","SEC04-control-format-display-sanitized","N01","N02","N03","N04","N04-host","N04-VT","N04-native","N05","N06","N06-escape","N06-case","N06-numeric-action","N06-syntax","N07"],"outcome":"RejectedWithoutStateChange","hostAssembliesRedistributed":false}

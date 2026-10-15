@@ -97,6 +97,13 @@ def main():
             proof = json.loads(raw.read_text(encoding="utf-8-sig"))
             if code != expected or not record['diagnosticContractSatisfied'] or not proof['diagnosticContractSatisfied']:
                 raise RuntimeError(f'Product case failed: {scenario}; exit {code}')
+            if scenario in ('Keyboard', 'Remap'):
+                # The bound target case must check emitted colors as well as state.
+                visibility_code, visibility = run([sys.executable,
+                    str(ROOT / 'tests/feasibility/lh01/assert-readable-text.py'),
+                    '--record', str(raw)], case / (scenario + '-readability.txt'))
+                if visibility_code != 0 or visibility.get('result') != 'Pass':
+                    raise RuntimeError('Unreadable product text: ' + scenario)
             observations.append({'scenario': scenario, 'exitCode': code,
                 'result': proof['result'], 'diagnosticContractSatisfied': True})
     else:

@@ -1,20 +1,24 @@
 # LH-01 Plattform-Hand-offs / Platform hand-offs
 
-## Ergänzung: IDE-Prüfung / Amendment: IDE checks
+## Aktuelle Aktualisierung / Current refresh
 
-DE: Die [IDE-Hand-off-Anleitung](../../lh01/development-setup.md#plattform-hand-offs)
-führt zusätzliche Prüfungen für Mac B, Windows und WSL2. Die lokale NuGet-Umstellung
-ist noch kein neu freigegebener Produktprüfstand. Die vorhandenen Commit-/Hashbindungen
-bleiben unverändert; IDE-Prüfungen brauchen einen gesondert gelieferten Stand und Auftrag.
+DE: Der Ownerauftrag vom 2026-10-15 bindet den aktuellen NuGet-/Sichtbarkeitsstand
+und die gemeinsame K01-Farbprüfung. Das Manifest ist die Quelle für den exakten
+Produktcommit, alle Dateihashes und Kommandos. Der frühere Stand bleibt in
+[Freigabehistorie](platform-approval-history/20261014/platform-handoff.json) und
+seinem bisherigen Nachweisbaum erhalten. Aktuelle vollständige Mac-A-Nachweise:
+[Suite](platform-proof-maca/20261015-64fe627/suite-result.json).
+[IDE-Prüfanweisung](../../lh01/development-setup.md#plattform-hand-offs) gilt
+zusätzlich und getrennt zur Produktautomation. Kein Zielhost wird hier gestartet.
 
-EN: The [IDE hand-off guide](../../lh01/development-setup.md#plattform-hand-offs)
-adds Mac B, Windows and WSL2 checks. The local NuGet change is not a newly approved
-product stand. Existing commit/hash bindings remain unchanged; IDE checks require
-a separately delivered revision and target request.
+EN: The 2026-10-15 owner request updates the approved NuGet/visibility payload
+and shared K01 color checks. The manifest supplies the exact commit/hashes/commands.
+Preserve the linked historical approval and its original evidence. Current full
+Mac A proof and separate IDE instructions are linked above. No target execution.
 
 ## DE — Ausführbarer Prüfvertrag
 
-Owner: Thorsten Hindermann. Stand: 2026-10-14. Die Hand-offs [Mac B #37](https://github.com/hindermath/Show-CommandTui400/issues/37), [Windows #38](https://github.com/hindermath/Show-CommandTui400/issues/38) und [Ubuntu/WSL2 #39](https://github.com/hindermath/Show-CommandTui400/issues/39) gehören zum [Prüf-Issue #36](https://github.com/hindermath/Show-CommandTui400/issues/36).
+Owner: Thorsten Hindermann. Stand: 2026-10-15. Die Hand-offs [Mac B #37](https://github.com/hindermath/Show-CommandTui400/issues/37), [Windows #38](https://github.com/hindermath/Show-CommandTui400/issues/38) und [Ubuntu/WSL2 #39](https://github.com/hindermath/Show-CommandTui400/issues/39) gehören zum [Prüf-Issue #36](https://github.com/hindermath/Show-CommandTui400/issues/36).
 
 Der exakte Produktcommit, Driver-/Dateihashes, der neue Mac-A-Produktnachweis und alle 60 Zielkommandos stehen in [platform-handoff.json](platform-handoff.json). Ein SHA-256 bindet exakte Dateibytes. Ein Commit bezeichnet einen unveränderlichen Git-Stand. Das Manifest darf aus einem späteren Genehmigungscommit stammen; dadurch entsteht kein selbstreferenzieller Hash.
 
@@ -64,7 +68,7 @@ LH-01 bleibt Einzelpilot außerhalb automatischer Serienauswahl. LH-00 bleibt of
 
 ## EN — Executable contract and agent order
 
-Owner: Thorsten Hindermann; updated 2026-10-14. Linked issues #36–#39 define the parent and three targets. The JSON binds the immutable product commit, decisions, driver/files, fresh Mac A evidence and 60 command arrays. Approval evidence may follow the product commit in Git; no self-referential hash is needed. This prepares an executable stand, not an automatic target dispatch. Each agent still needs explicit target authority and the published manifest SHA-256.
+Owner: Thorsten Hindermann; updated 2026-10-15. Linked issues #36–#39 define the parent and three targets. The JSON binds the immutable product commit, decisions, driver/files, fresh Mac A evidence and 60 command arrays. Approval evidence may follow the product commit in Git; no self-referential hash is needed. This prepares an executable stand, not an automatic target dispatch. Each agent still needs explicit target authority and the published manifest SHA-256.
 
 Targets are native Mac B/Mac mini M4 Pro; native Windows11/build22000+; Ubuntu24.04/WSL2 with cmd.exe/wsl.exe available. Require existing PS7.6.4+ on host .NET10, .NET10 SDK and Python3.9+ as python3. Actual automation uses PS7.6.6; the minimum remains a separate model boundary. No installation or repair. Locked restore may use only the configured public feed and isolated caches; product execution has no network or target effects.
 

@@ -1,0 +1,1919 @@
+{
+  "schemaVersion": 1,
+  "scope": "LH-01 product automation only",
+  "state": "Executable",
+  "executionAuthorized": true,
+  "productCommit": "41ec0f34d35c9d9e187e1a101b806d7ac93f6b00",
+  "decisionSha256": "b02a18ced7a9b256332eaef770f0477484a3c2099ce14429d80493607af0b0f4",
+  "macAProofReference": "platform-proof-maca/suite-result.json",
+  "driver": {
+    "path": "tests/feasibility/lh01/Invoke-Lh01PlatformProof.ps1",
+    "sha256": "99fb115b356c90008d9fe3abd1462fa6283e9b73baf4f8ae93c942e80c645c0f"
+  },
+  "approvedCommands": [
+    {
+      "commandId": "macb-PF01",
+      "targetId": "macb",
+      "caseId": "PF01",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "PF01",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "ValidCommitAndHost"
+    },
+    {
+      "commandId": "macb-N01",
+      "targetId": "macb",
+      "caseId": "N01",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "N01",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "RejectedWithoutStateChange"
+    },
+    {
+      "commandId": "macb-N02",
+      "targetId": "macb",
+      "caseId": "N02",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "N02",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "RejectedWithoutStateChange"
+    },
+    {
+      "commandId": "macb-N03",
+      "targetId": "macb",
+      "caseId": "N03",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "N03",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "RejectedWithoutStateChange"
+    },
+    {
+      "commandId": "macb-N04",
+      "targetId": "macb",
+      "caseId": "N04",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "N04",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "RejectedWithoutStateChange"
+    },
+    {
+      "commandId": "macb-N05",
+      "targetId": "macb",
+      "caseId": "N05",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "N05",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "RejectedWithoutDomainEffect"
+    },
+    {
+      "commandId": "macb-N06",
+      "targetId": "macb",
+      "caseId": "N06",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "N06",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "RejectedBeforeInit"
+    },
+    {
+      "commandId": "macb-N07",
+      "targetId": "macb",
+      "caseId": "N07",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "N07",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "SafeDisplayWithoutControlInjection"
+    },
+    {
+      "commandId": "macb-B01",
+      "targetId": "macb",
+      "caseId": "B01",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "B01",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "LockedBuildAndContractTestsPass"
+    },
+    {
+      "commandId": "macb-S01",
+      "targetId": "macb",
+      "caseId": "S01",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "S01",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "CallerContextRetained"
+    },
+    {
+      "commandId": "macb-S02",
+      "targetId": "macb",
+      "caseId": "S02",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "S02",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "RestoredAndShellUsable"
+    },
+    {
+      "commandId": "macb-S03",
+      "targetId": "macb",
+      "caseId": "S03",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "S03",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "RestoredAndShellUsable"
+    },
+    {
+      "commandId": "macb-S04",
+      "targetId": "macb",
+      "caseId": "S04",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "S04",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "StoppedAndRestored"
+    },
+    {
+      "commandId": "macb-S05",
+      "targetId": "macb",
+      "caseId": "S05",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "S05",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "RestoredAndErrorPreserved"
+    },
+    {
+      "commandId": "macb-S06",
+      "targetId": "macb",
+      "caseId": "S06",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "S06",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "NoLeakedState"
+    },
+    {
+      "commandId": "macb-K01",
+      "targetId": "macb",
+      "caseId": "K01",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "K01",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "ActionContractsPass"
+    },
+    {
+      "commandId": "macb-V01",
+      "targetId": "macb",
+      "caseId": "V01",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "V01",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "ValuesAndFocusRetained"
+    },
+    {
+      "commandId": "macb-V02",
+      "targetId": "macb",
+      "caseId": "V02",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "V02",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "ExplainedAndSafeExit"
+    },
+    {
+      "commandId": "macb-S07",
+      "targetId": "macb",
+      "caseId": "S07",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "S07",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        1
+      ],
+      "expectedCaseResult": "Fail",
+      "expectedOutcome": "FailWithPrimaryAndRestorationErrorsPreserved"
+    },
+    {
+      "commandId": "macb-EV01",
+      "targetId": "macb",
+      "caseId": "EV01",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "EV01",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "CompleteAndBound"
+    },
+    {
+      "commandId": "windows-PF01",
+      "targetId": "windows",
+      "caseId": "PF01",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "PF01",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "ValidCommitAndHost"
+    },
+    {
+      "commandId": "windows-N01",
+      "targetId": "windows",
+      "caseId": "N01",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "N01",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "RejectedWithoutStateChange"
+    },
+    {
+      "commandId": "windows-N02",
+      "targetId": "windows",
+      "caseId": "N02",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "N02",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "RejectedWithoutStateChange"
+    },
+    {
+      "commandId": "windows-N03",
+      "targetId": "windows",
+      "caseId": "N03",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "N03",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "RejectedWithoutStateChange"
+    },
+    {
+      "commandId": "windows-N04",
+      "targetId": "windows",
+      "caseId": "N04",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "N04",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "RejectedWithoutStateChange"
+    },
+    {
+      "commandId": "windows-N05",
+      "targetId": "windows",
+      "caseId": "N05",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "N05",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "RejectedWithoutDomainEffect"
+    },
+    {
+      "commandId": "windows-N06",
+      "targetId": "windows",
+      "caseId": "N06",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "N06",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "RejectedBeforeInit"
+    },
+    {
+      "commandId": "windows-N07",
+      "targetId": "windows",
+      "caseId": "N07",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "N07",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "SafeDisplayWithoutControlInjection"
+    },
+    {
+      "commandId": "windows-B01",
+      "targetId": "windows",
+      "caseId": "B01",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "B01",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "LockedBuildAndContractTestsPass"
+    },
+    {
+      "commandId": "windows-S01",
+      "targetId": "windows",
+      "caseId": "S01",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "S01",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "CallerContextRetained"
+    },
+    {
+      "commandId": "windows-S02",
+      "targetId": "windows",
+      "caseId": "S02",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "S02",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "RestoredAndShellUsable"
+    },
+    {
+      "commandId": "windows-S03",
+      "targetId": "windows",
+      "caseId": "S03",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "S03",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "RestoredAndShellUsable"
+    },
+    {
+      "commandId": "windows-S04",
+      "targetId": "windows",
+      "caseId": "S04",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "S04",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "StoppedAndRestored"
+    },
+    {
+      "commandId": "windows-S05",
+      "targetId": "windows",
+      "caseId": "S05",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "S05",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "RestoredAndErrorPreserved"
+    },
+    {
+      "commandId": "windows-S06",
+      "targetId": "windows",
+      "caseId": "S06",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "S06",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "NoLeakedState"
+    },
+    {
+      "commandId": "windows-K01",
+      "targetId": "windows",
+      "caseId": "K01",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "K01",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "ActionContractsPass"
+    },
+    {
+      "commandId": "windows-V01",
+      "targetId": "windows",
+      "caseId": "V01",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "V01",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "ValuesAndFocusRetained"
+    },
+    {
+      "commandId": "windows-V02",
+      "targetId": "windows",
+      "caseId": "V02",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "V02",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "ExplainedAndSafeExit"
+    },
+    {
+      "commandId": "windows-S07",
+      "targetId": "windows",
+      "caseId": "S07",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "S07",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        1
+      ],
+      "expectedCaseResult": "Fail",
+      "expectedOutcome": "FailWithPrimaryAndRestorationErrorsPreserved"
+    },
+    {
+      "commandId": "windows-EV01",
+      "targetId": "windows",
+      "caseId": "EV01",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "EV01",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "CompleteAndBound"
+    },
+    {
+      "commandId": "ubuntu-wsl2-PF01",
+      "targetId": "ubuntu-wsl2",
+      "caseId": "PF01",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "PF01",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "ValidCommitAndHost"
+    },
+    {
+      "commandId": "ubuntu-wsl2-N01",
+      "targetId": "ubuntu-wsl2",
+      "caseId": "N01",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "N01",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "RejectedWithoutStateChange"
+    },
+    {
+      "commandId": "ubuntu-wsl2-N02",
+      "targetId": "ubuntu-wsl2",
+      "caseId": "N02",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "N02",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "RejectedWithoutStateChange"
+    },
+    {
+      "commandId": "ubuntu-wsl2-N03",
+      "targetId": "ubuntu-wsl2",
+      "caseId": "N03",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "N03",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "RejectedWithoutStateChange"
+    },
+    {
+      "commandId": "ubuntu-wsl2-N04",
+      "targetId": "ubuntu-wsl2",
+      "caseId": "N04",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "N04",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "RejectedWithoutStateChange"
+    },
+    {
+      "commandId": "ubuntu-wsl2-N05",
+      "targetId": "ubuntu-wsl2",
+      "caseId": "N05",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "N05",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "RejectedWithoutDomainEffect"
+    },
+    {
+      "commandId": "ubuntu-wsl2-N06",
+      "targetId": "ubuntu-wsl2",
+      "caseId": "N06",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "N06",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "RejectedBeforeInit"
+    },
+    {
+      "commandId": "ubuntu-wsl2-N07",
+      "targetId": "ubuntu-wsl2",
+      "caseId": "N07",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "N07",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "SafeDisplayWithoutControlInjection"
+    },
+    {
+      "commandId": "ubuntu-wsl2-B01",
+      "targetId": "ubuntu-wsl2",
+      "caseId": "B01",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "B01",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "LockedBuildAndContractTestsPass"
+    },
+    {
+      "commandId": "ubuntu-wsl2-S01",
+      "targetId": "ubuntu-wsl2",
+      "caseId": "S01",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "S01",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "CallerContextRetained"
+    },
+    {
+      "commandId": "ubuntu-wsl2-S02",
+      "targetId": "ubuntu-wsl2",
+      "caseId": "S02",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "S02",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "RestoredAndShellUsable"
+    },
+    {
+      "commandId": "ubuntu-wsl2-S03",
+      "targetId": "ubuntu-wsl2",
+      "caseId": "S03",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "S03",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "RestoredAndShellUsable"
+    },
+    {
+      "commandId": "ubuntu-wsl2-S04",
+      "targetId": "ubuntu-wsl2",
+      "caseId": "S04",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "S04",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "StoppedAndRestored"
+    },
+    {
+      "commandId": "ubuntu-wsl2-S05",
+      "targetId": "ubuntu-wsl2",
+      "caseId": "S05",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "S05",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "RestoredAndErrorPreserved"
+    },
+    {
+      "commandId": "ubuntu-wsl2-S06",
+      "targetId": "ubuntu-wsl2",
+      "caseId": "S06",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "S06",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "NoLeakedState"
+    },
+    {
+      "commandId": "ubuntu-wsl2-K01",
+      "targetId": "ubuntu-wsl2",
+      "caseId": "K01",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "K01",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "ActionContractsPass"
+    },
+    {
+      "commandId": "ubuntu-wsl2-V01",
+      "targetId": "ubuntu-wsl2",
+      "caseId": "V01",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "V01",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "ValuesAndFocusRetained"
+    },
+    {
+      "commandId": "ubuntu-wsl2-V02",
+      "targetId": "ubuntu-wsl2",
+      "caseId": "V02",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "V02",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "ExplainedAndSafeExit"
+    },
+    {
+      "commandId": "ubuntu-wsl2-S07",
+      "targetId": "ubuntu-wsl2",
+      "caseId": "S07",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "S07",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        1
+      ],
+      "expectedCaseResult": "Fail",
+      "expectedOutcome": "FailWithPrimaryAndRestorationErrorsPreserved"
+    },
+    {
+      "commandId": "ubuntu-wsl2-EV01",
+      "targetId": "ubuntu-wsl2",
+      "caseId": "EV01",
+      "executable": "python3",
+      "arguments": [
+        "tests/feasibility/lh01/platform-case.py",
+        "--case-id",
+        "EV01",
+        "--build-root",
+        "{buildRoot}",
+        "--output-root",
+        "{caseRoot}",
+        "--product-commit",
+        "{productCommit}"
+      ],
+      "workingDirectory": ".",
+      "expectedExitCodes": [
+        0
+      ],
+      "expectedCaseResult": "Pass",
+      "expectedOutcome": "CompleteAndBound"
+    }
+  ],
+  "minimumPowerShell": "7.6.4",
+  "targets": [
+    {
+      "id": "macb",
+      "expected": "Mac mini M4 Pro; native macOS",
+      "osFamily": "macOS"
+    },
+    {
+      "id": "windows",
+      "expected": "native Windows 11 PowerShell; not WSL",
+      "osFamily": "Windows"
+    },
+    {
+      "id": "ubuntu-wsl2",
+      "expected": "Ubuntu 24.04 in WSL2; Linux PowerShell",
+      "osFamily": "Linux"
+    }
+  ],
+  "cases": [
+    {
+      "id": "PF01",
+      "group": "Preflight",
+      "expectedOutcome": "ValidCommitAndHost",
+      "description": "Commit, driver hashes, authority and host match",
+      "enabled": true,
+      "evidenceIds": [
+        "E01-06",
+        "E01-07"
+      ],
+      "requiredResult": "Pass",
+      "executionPhase": "Main"
+    },
+    {
+      "id": "N01",
+      "group": "Negative",
+      "expectedOutcome": "RejectedWithoutStateChange",
+      "description": "Unsupported PowerShell version",
+      "enabled": true,
+      "evidenceIds": [
+        "E01-01",
+        "E01-06"
+      ],
+      "requiredResult": "Pass",
+      "executionPhase": "Main"
+    },
+    {
+      "id": "N02",
+      "group": "Negative",
+      "expectedOutcome": "RejectedWithoutStateChange",
+      "description": "Redirected stdin",
+      "enabled": true,
+      "evidenceIds": [
+        "E01-01",
+        "E01-06"
+      ],
+      "requiredResult": "Pass",
+      "executionPhase": "Main"
+    },
+    {
+      "id": "N03",
+      "group": "Negative",
+      "expectedOutcome": "RejectedWithoutStateChange",
+      "description": "Redirected stdout",
+      "enabled": true,
+      "evidenceIds": [
+        "E01-01",
+        "E01-06"
+      ],
+      "requiredResult": "Pass",
+      "executionPhase": "Main"
+    },
+    {
+      "id": "N04",
+      "group": "Negative",
+      "expectedOutcome": "RejectedWithoutStateChange",
+      "description": "Missing terminal capability",
+      "enabled": true,
+      "evidenceIds": [
+        "E01-01",
+        "E01-06"
+      ],
+      "requiredResult": "Pass",
+      "executionPhase": "Main"
+    },
+    {
+      "id": "N05",
+      "group": "Negative",
+      "expectedOutcome": "RejectedWithoutDomainEffect",
+      "description": "Unknown action / invalid context",
+      "enabled": true,
+      "evidenceIds": [
+        "E01-02",
+        "E01-06"
+      ],
+      "requiredResult": "Pass",
+      "executionPhase": "Main"
+    },
+    {
+      "id": "N06",
+      "group": "Negative",
+      "expectedOutcome": "RejectedBeforeInit",
+      "description": "Conflicting remap or unreachable help/back/exit",
+      "enabled": true,
+      "evidenceIds": [
+        "E01-02",
+        "E01-06"
+      ],
+      "requiredResult": "Pass",
+      "executionPhase": "Main"
+    },
+    {
+      "id": "N07",
+      "group": "Negative",
+      "expectedOutcome": "SafeDisplayWithoutControlInjection",
+      "description": "Untrusted display control characters",
+      "enabled": true,
+      "evidenceIds": [
+        "E01-03",
+        "E01-06"
+      ],
+      "requiredResult": "Pass",
+      "executionPhase": "Main"
+    },
+    {
+      "id": "B01",
+      "group": "Build",
+      "expectedOutcome": "LockedBuildAndContractTestsPass",
+      "description": "Locked restore, build and domain contract tests",
+      "enabled": true,
+      "evidenceIds": [
+        "E01-06"
+      ],
+      "requiredResult": "Pass",
+      "executionPhase": "Main"
+    },
+    {
+      "id": "S01",
+      "group": "Session",
+      "expectedOutcome": "CallerContextRetained",
+      "description": "Global/function/module synthetic scope, process/runspace/location/preferences",
+      "enabled": true,
+      "evidenceIds": [
+        "E01-01"
+      ],
+      "requiredResult": "Pass",
+      "executionPhase": "Main"
+    },
+    {
+      "id": "S02",
+      "group": "Lifecycle",
+      "expectedOutcome": "RestoredAndShellUsable",
+      "description": "Normal exit, modes/cursor and shell input roundtrip",
+      "enabled": true,
+      "evidenceIds": [
+        "E01-04"
+      ],
+      "requiredResult": "Pass",
+      "executionPhase": "Main"
+    },
+    {
+      "id": "S03",
+      "group": "Lifecycle",
+      "expectedOutcome": "RestoredAndShellUsable",
+      "description": "Ctrl+C cancellation",
+      "enabled": true,
+      "evidenceIds": [
+        "E01-04"
+      ],
+      "requiredResult": "Pass",
+      "executionPhase": "Main"
+    },
+    {
+      "id": "S04",
+      "group": "Lifecycle",
+      "expectedOutcome": "StoppedAndRestored",
+      "description": "Actual PowerShell StopProcessing with clearly isolated test runspace",
+      "enabled": true,
+      "evidenceIds": [
+        "E01-04"
+      ],
+      "requiredResult": "Pass",
+      "executionPhase": "Main"
+    },
+    {
+      "id": "S05",
+      "group": "Lifecycle",
+      "expectedOutcome": "RestoredAndErrorPreserved",
+      "description": "Handled product error with successful restoration and preserved primary error",
+      "enabled": true,
+      "evidenceIds": [
+        "E01-04",
+        "E01-06"
+      ],
+      "requiredResult": "Pass",
+      "executionPhase": "Main"
+    },
+    {
+      "id": "S06",
+      "group": "Lifecycle",
+      "expectedOutcome": "NoLeakedState",
+      "description": "Repeated entry in one caller session",
+      "enabled": true,
+      "evidenceIds": [
+        "E01-01",
+        "E01-04"
+      ],
+      "requiredResult": "Pass",
+      "executionPhase": "Main"
+    },
+    {
+      "id": "K01",
+      "group": "Keyboard",
+      "expectedOutcome": "ActionContractsPass",
+      "description": "Defined keys/alternatives/remap, no target execution",
+      "enabled": true,
+      "evidenceIds": [
+        "E01-02"
+      ],
+      "requiredResult": "Pass",
+      "executionPhase": "Main"
+    },
+    {
+      "id": "V01",
+      "group": "View",
+      "expectedOutcome": "ValuesAndFocusRetained",
+      "description": "Resize, then navigation",
+      "enabled": true,
+      "evidenceIds": [
+        "E01-05"
+      ],
+      "requiredResult": "Pass",
+      "executionPhase": "Main"
+    },
+    {
+      "id": "V02",
+      "group": "View",
+      "expectedOutcome": "ExplainedAndSafeExit",
+      "description": "Too-small surface, help and keyboard exit",
+      "enabled": true,
+      "evidenceIds": [
+        "E01-03",
+        "E01-05"
+      ],
+      "requiredResult": "Pass",
+      "executionPhase": "Main"
+    },
+    {
+      "id": "S07",
+      "group": "RestorationFailure",
+      "expectedOutcome": "FailWithPrimaryAndRestorationErrorsPreserved",
+      "description": "Actual restoration failure; retain both errors and stop positive tests in a separate diagnostic run",
+      "enabled": true,
+      "evidenceIds": [
+        "E01-04",
+        "E01-06"
+      ],
+      "requiredResult": "Fail",
+      "executionPhase": "SeparateFailureRun"
+    },
+    {
+      "id": "EV01",
+      "group": "Evidence",
+      "expectedOutcome": "CompleteAndBound",
+      "description": "Case inventory, hashes, raw outputs, DE/EN report, no private values",
+      "enabled": true,
+      "evidenceIds": [
+        "E01-07"
+      ],
+      "requiredResult": "Pass",
+      "executionPhase": "Main"
+    }
+  ],
+  "physicalTerminalChecks": "Deferred",
+  "screenReaderChecks": "Deferred",
+  "brailleHardwareChecks": "Excluded",
+  "issues": {
+    "parent": "https://github.com/hindermath/Show-CommandTui400/issues/36",
+    "macb": "https://github.com/hindermath/Show-CommandTui400/issues/37",
+    "windows": "https://github.com/hindermath/Show-CommandTui400/issues/38",
+    "ubuntu-wsl2": "https://github.com/hindermath/Show-CommandTui400/issues/39"
+  },
+  "approvedCommandsSchema": "approved-commands.schema.json",
+  "macAProofSha256": "886a33858dcefc22943668264b2fca56c158221de9307d41ea1a8d37f2e37531",
+  "fileBindings": [
+    {
+      "path": ".gitattributes",
+      "sha256": "afc0c1ef08fc0f8d080a53a133809bb4f7112dd35655fd722074e38a23b5c03c"
+    },
+    {
+      "path": "docs/validation/lh01/approved-commands.schema.json",
+      "sha256": "dabe232fe958d44c611dd9bbc26017a0e7ac97306e96ac3ba89f3ab67026a68b"
+    },
+    {
+      "path": "specs/002-lh01-tui-foundation/feasibility/decisions.md",
+      "sha256": "b02a18ced7a9b256332eaef770f0477484a3c2099ce14429d80493607af0b0f4"
+    },
+    {
+      "path": "src/Directory.Build.props",
+      "sha256": "32e91a5ddd7e191c3a2ec198a561a914ddebed129c2eb4a20f16f9839c8e241a"
+    },
+    {
+      "path": "src/ShowCommandTui400/Actions/ActionAvailability.cs",
+      "sha256": "746d09e422494e3ea67154eee44d0be70aba7cfdff7261a319c0593b456f71fd"
+    },
+    {
+      "path": "src/ShowCommandTui400/Actions/ActionDescriptor.cs",
+      "sha256": "fc7634fc88d36796ec9787071fdbcfae1d8ef07caa3325486c6a2a55b395e6ef"
+    },
+    {
+      "path": "src/ShowCommandTui400/Actions/ActionDispatcher.cs",
+      "sha256": "df4683629bd1ebb7239dd0c5d7af409dcdee542b68b7ce7e7e7fd96f031709f1"
+    },
+    {
+      "path": "src/ShowCommandTui400/Actions/KeyBindingMap.cs",
+      "sha256": "a1ab6b00e7d9fc55c50646e7658be8b78d4e42d1a5ca95abfb368c51e798f082"
+    },
+    {
+      "path": "src/ShowCommandTui400/Actions/KeyBindingValidator.cs",
+      "sha256": "6137f454ea760b8e0c743695a13f909bdc4d27fc14c0a887168b5b7c480901af"
+    },
+    {
+      "path": "src/ShowCommandTui400/Commands/ShowCommandTui400Command.cs",
+      "sha256": "7e6f3f98a99c48f333c5fd0759bfb982386f44266e76b9f264378d116cdf9931"
+    },
+    {
+      "path": "src/ShowCommandTui400/NuGet.Config",
+      "sha256": "7a77c63a438cdf0524dc336da4bf2191d3f259645de430f5a4c61b3edd52fa9f"
+    },
+    {
+      "path": "src/ShowCommandTui400/Presentation/AccessibleStatePresenter.cs",
+      "sha256": "a2e72decaa27f687f1e67ad97f146e74dfc7195644bd2853a4d926628f03f3b9"
+    },
+    {
+      "path": "src/ShowCommandTui400/Presentation/SafeDisplayText.cs",
+      "sha256": "abaaec8c5cf8ba6c1e51fdd459028c6e2810232ffd25015b9cdf82de545d5749"
+    },
+    {
+      "path": "src/ShowCommandTui400/Resources/Messages.cs",
+      "sha256": "db03305bc10f8e443f52c1c068abe7ebfffc69f2cefa3c3b2feb9a24bb3a7d0e"
+    },
+    {
+      "path": "src/ShowCommandTui400/Resources/Messages.de.resx",
+      "sha256": "345126eefbdf14800919ed099c7146002c007a78470f6b51237122b33eeb84af"
+    },
+    {
+      "path": "src/ShowCommandTui400/Resources/Messages.en.resx",
+      "sha256": "0c51d1c194130cdebf97e08a9181d5d061d844130c04f74e58b852ba706da981"
+    },
+    {
+      "path": "src/ShowCommandTui400/Session/CallerSessionAdapter.cs",
+      "sha256": "1bb6311520f80d439545392a8f41fc0ca493b3405aa91c6ce63cbfc59f1b403e"
+    },
+    {
+      "path": "src/ShowCommandTui400/Session/EntryGuard.cs",
+      "sha256": "36bafc3fca560bdad6e8582558caee4f8743b683bceb6dfa605f79f44dd45fa4"
+    },
+    {
+      "path": "src/ShowCommandTui400/Session/SessionContext.cs",
+      "sha256": "b704fd55fb59f9d1b0926b051cea46050f0e3ae3a36f7ed1551a76ac2a87c138"
+    },
+    {
+      "path": "src/ShowCommandTui400/ShowCommandTui400.csproj",
+      "sha256": "6f7e753909d10c0a53d06f4e1248600851a38eb157b2611b51f2e3f4c4484007"
+    },
+    {
+      "path": "src/ShowCommandTui400/ShowCommandTui400.psd1",
+      "sha256": "fbc58b2fb0420865dca62ad9246aa18d3c5cb05f35cd69b648d2fc933185978a"
+    },
+    {
+      "path": "src/ShowCommandTui400/State/ViewState.cs",
+      "sha256": "cdfe48ff1fbac007f853bd33eb8e6132a525dbe913f82b2b18f8420d82b639eb"
+    },
+    {
+      "path": "src/ShowCommandTui400/Terminal/ITerminalLease.cs",
+      "sha256": "5eacc9062c95ff9e620f2735eb60a267d8af140d2d7b38c49fd96a9013771ca1"
+    },
+    {
+      "path": "src/ShowCommandTui400/Terminal/LinuxTerminalLease.cs",
+      "sha256": "f1e94f214ce7ac5860cdb90fcdb192e3449e1f965d36644c0310f7be7216d138"
+    },
+    {
+      "path": "src/ShowCommandTui400/Terminal/MacTerminalLease.cs",
+      "sha256": "5f652f78b72cc472de10ff4950a42e2a3bc6baed2492b540536044f0d60df7b6"
+    },
+    {
+      "path": "src/ShowCommandTui400/Terminal/NativeTerminalLease.cs",
+      "sha256": "16d9f9d50d11427022d61f13040b21a96fa65c463b492efaff10c81872383c07"
+    },
+    {
+      "path": "src/ShowCommandTui400/Terminal/TerminalApplication.cs",
+      "sha256": "b3f35b8da54971b1a5cbd545b4077d607d0331338189aa0ce5e9d57be4af0a8b"
+    },
+    {
+      "path": "src/ShowCommandTui400/Terminal/TerminalLifecycle.cs",
+      "sha256": "1c9f7fb6f44019cfc83e04c34fa04aefecd02d42ef575313c897a146e02be993"
+    },
+    {
+      "path": "src/ShowCommandTui400/Terminal/WindowsTerminalLease.cs",
+      "sha256": "0307aaebe8be81bc64bf61d0d3e06970d295721c30aeb228ab858a05198f8c03"
+    },
+    {
+      "path": "src/ShowCommandTui400/Views/ActionHelpView.cs",
+      "sha256": "d937f0adad2fabe41b9d1c4a91a48d6b83bb33c0477f2bc26d84c5dcf29f5680"
+    },
+    {
+      "path": "src/ShowCommandTui400/Views/NavigationAdapter.cs",
+      "sha256": "b342c5f4379738ef2b638a30a3ac2cddeec4e4f8a8926a6dcd4a33f4c438ae68"
+    },
+    {
+      "path": "src/ShowCommandTui400/Views/ResizeCoordinator.cs",
+      "sha256": "896e17745b3441148deb0f87a4090e3ba9ed6e24cfd100b402caeece001a92fb"
+    },
+    {
+      "path": "src/ShowCommandTui400/Views/SmallTerminalView.cs",
+      "sha256": "cb73e5fc03822b26d5d2dc4e9d112c242474e3019b2fc197ec689ac77bdd924b"
+    },
+    {
+      "path": "src/ShowCommandTui400/packages.lock.json",
+      "sha256": "9a50991596ca623b8d4041f1ad193d9f3c18fcadaac18f5df824f2fb7baf4813"
+    },
+    {
+      "path": "tests/Directory.Build.props",
+      "sha256": "32e91a5ddd7e191c3a2ec198a561a914ddebed129c2eb4a20f16f9839c8e241a"
+    },
+    {
+      "path": "tests/ShowCommandTui400.Tests/AccessibleStateTests.cs",
+      "sha256": "636ce3835d8fa9a0f1da77ba425b335a8b7d8d77a0c4be07d777a55e9e4ddace"
+    },
+    {
+      "path": "tests/ShowCommandTui400.Tests/ActionContractTests.cs",
+      "sha256": "35cc44e77b6751465972642c3902642644516c1a50759b0f5ceb125d0f4f4d2f"
+    },
+    {
+      "path": "tests/ShowCommandTui400.Tests/EntryBoundaryTests.cs",
+      "sha256": "f22d24b2617f53ed5704e1d782622e0bdf8e16cc0758b3badf262f1f4755416d"
+    },
+    {
+      "path": "tests/ShowCommandTui400.Tests/KeyBindingTests.cs",
+      "sha256": "87622296d29c9cb5ff7ad5fa086e8214c3239b9c491a82b09ecdcc90e7d669f2"
+    },
+    {
+      "path": "tests/ShowCommandTui400.Tests/ProductHarness.cs",
+      "sha256": "f294c9aae87b48e65a3647edd7607c303710c58df433b2e5310e9bdca4618f06"
+    },
+    {
+      "path": "tests/ShowCommandTui400.Tests/ResizeStateTests.cs",
+      "sha256": "1f0dab7fa3dd31a54ce75920a3aa57299f8d3525125ce28cb537192f8b1494f3"
+    },
+    {
+      "path": "tests/ShowCommandTui400.Tests/SecurityBoundaryTests.cs",
+      "sha256": "a9c82254cce211218df7ce97d19f8ae74756846b9320003ca8196e828b3d2cf0"
+    },
+    {
+      "path": "tests/ShowCommandTui400.Tests/ShowCommandTui400.Tests.csproj",
+      "sha256": "0ddbbb332f7267bdad22caaa3fe2ec39b31f97633494e2a185dcff6bf0d80ac7"
+    },
+    {
+      "path": "tests/ShowCommandTui400.Tests/TerminalLifecycleTests.cs",
+      "sha256": "7c1a43fd9b2d0a537964e82676ef99df4c0eec948dc1ce4f45295acc2a41d58d"
+    },
+    {
+      "path": "tests/ShowCommandTui400.Tests/packages.lock.json",
+      "sha256": "be152f8f6783b9c9f74ff2c1700fee5e38815dfbba0a8772872b62e9c88cd998"
+    },
+    {
+      "path": "tests/feasibility/lh01/Invoke-Lh01ContractProof.ps1",
+      "sha256": "5913aacee4380ca7e011e0d6da53bbc3247dd35a4164af44c5660437e07952fa"
+    },
+    {
+      "path": "tests/feasibility/lh01/Invoke-Lh01PlatformProof.ps1",
+      "sha256": "99fb115b356c90008d9fe3abd1462fa6283e9b73baf4f8ae93c942e80c645c0f"
+    },
+    {
+      "path": "tests/feasibility/lh01/README.md",
+      "sha256": "bc67f26813b6caf27d09429a0eadf428be7895c96aaf69bd50cab39a90aed752"
+    },
+    {
+      "path": "tests/feasibility/lh01/platform-case.py",
+      "sha256": "4311935baec46a8d2c06550c9741412b296953cdfdfe1becdc9ed99c797e4b2b"
+    },
+    {
+      "path": "tests/feasibility/lh01/proof-driver-contract.py",
+      "sha256": "4e6b274637986652d26cdb29320c357ea3de6b7d15856a2ef4f8887d9ba61028"
+    },
+    {
+      "path": "tests/feasibility/lh01/proof-tooling-contract.py",
+      "sha256": "223cf79d29cc80ab3e066add242b8bb55d5659330e18638c2c06eddab3f858d6"
+    },
+    {
+      "path": "tests/feasibility/lh01/pty-product.py",
+      "sha256": "2ee4c704c8257a11ec0f3de8c8761c47843027d37fb2689338e8ceca36650520"
+    },
+    {
+      "path": "tests/feasibility/lh01/redirect-console.cs",
+      "sha256": "58373640b6c2cb849a4c7245b144240588310d70070f5abc2f816886627d01cf"
+    },
+    {
+      "path": "tests/feasibility/lh01/redirect-session.ps1",
+      "sha256": "8b8bca3e0135af699a5650bb3e66ced89ff50b5bf7af4aa3a7aace7637ed0a37"
+    },
+    {
+      "path": "tests/feasibility/lh01/run-product-suite.py",
+      "sha256": "2849d96ff51c3104ef878fff324d35b4ad318be0c9f86cbf686564b9b60de229"
+    },
+    {
+      "path": "tests/feasibility/lh01/session-contract.ps1",
+      "sha256": "aa3044da73c422ac3b02dc5b1a2e5594dd7b029c1fa8e7efdce4436828182bde"
+    },
+    {
+      "path": "tests/feasibility/lh01/terminal_probes.py",
+      "sha256": "35e7f2b74e27a348a2fd24cd70496c15d8a7572527cc1a61276f289fa428e257"
+    },
+    {
+      "path": "tests/feasibility/lh01/terminal_transport.py",
+      "sha256": "8828b4463b40ff4bc61a4329b92f86c3681d8619467a5b6c7f368b3fd35e3563"
+    }
+  ],
+  "approval": {
+    "owner": "Thorsten Hindermann",
+    "approvedAt": "2026-10-14T20:01:00.732281+00:00",
+    "requestReference": "Ownerauftrag in diesem Chat: T053/T054 ausführen; DeliveryMode MergeAndSync mit Admin-Bypass. / Explicit owner request in this conversation.",
+    "scope": "Prüfstand, Kommandobindung und native CI; kein automatischer Zielhoststart. / Stand binding and native CI; no automatic target dispatch.",
+    "targetDispatchRequiresExplicitRequest": true
+  }
+}

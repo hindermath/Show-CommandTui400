@@ -1,0 +1,180 @@
+{
+  "sanitizedTranscript": "\u001b[?1h\u001b=\u001b[?25l\u001b[?25s\u001b[?1049h\u001b[?25l\u001b[?1003h\u001b[?1015h\u001b[?1006h\u001b[?2004h\u001b[?u\u001b[0c\u001b]0;Show-CommandTui400 — LH-01\u001b\\\u001b[1;1H\u001b[39m\u001b[49m┌┤Show-CommandTui400 — LH-01├──────────────────────────────────────────────────────────────────────┐\u001b[2;1H│                                                                                                  │\u001b[3;1H│ \u001b[30m\u001b[107m⟦ Hilfe / Help ⟧\u001b[30m\u001b[49m▖\u001b[39m\u001b[49m                                                                                │\u001b[4;1H│ ⟦ Aktionen / Actions ⟧\u001b[30m\u001b[49m▖\u001b[39m\u001b[49m                                                                          │\u001b[5;1H│ ⟦ Aktualisieren / Refresh ⟧\u001b[30m\u001b[49m▖\u001b[39m\u001b[49m                                                                     │\u001b[6;1H│ \u001b[30m\u001b[49m▝▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▘\u001b[39m\u001b[49m                                                                     │\u001b[7;1H│ Fokus / Focus: Hilfe / Help                                                                      │\u001b[8;1H│ Beschäftigt / Busy: Nein / No                                                                    │\u001b[9;1H│ Status / Status: Bereit / Ready                                                                  │\u001b[10;1H│ Fehler / Error: Kein Fehler / No error                                                           │\u001b[11;1H│ Rolle: Textansicht mit Knöpfen / Role: text view with buttons                                    │\u001b[12;1H│ Startansicht / Start view: Hilfe und Aktionen / Help and actions                                 │\u001b[13;1H│ Tab/Umschalt+Tab und Pfeile bewegen den Fokus. Enter betätigt den Knopf. Bildtasten blättern     │\u001b[14;1H│ Hilfe/Aktionen. Keine Zielausführung. / Tab/Shift+Tab and arrows move focus. Enter activates     │\u001b[15;1H│ the button. Page keys scroll help/actions. No target execution.                                  │\u001b[16;1H│ Alt+H, F1 Hilfe / Help: verfügbar / available                                                    │\u001b[17;1H│ Alt+X, F3 Beenden / Exit: verfügbar / available                                                  │\u001b[18;1H│ Alt+B, Esc, F12 Zurück / Back: verfügbar / available                                             │\u001b[19;1H│ F5 Aktualisieren / Refresh: verfügbar / available                                                │\u001b[20;1H│ Alt+M Aktionen / Actions: verfügbar / available                                                  │\u001b[21;1H│ F4 Kontextauswahl / Context selection: nicht verfügbar / unavailable                             │\u001b[22;1H│ F9 Alle Parameter / All parameters: nicht verfügbar / unavailable                                │\u001b[23;1H│                                                                                                  │\u001b[24;1H└──────────────────────────────────────────────────────────────────────────────────────────────────┘\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[?25l\u001b[1;1H\u001b[1;1H\u001b[39m\u001b[49m┌┤Show-CommandTui400 — LH-01├──────────────────────────────────────────────────────────────────────┐\u001b[2;1H│ \u001b[2;100H│\u001b[3;1H│ \u001b[3;19H\u001b[30m\u001b[49m▖\u001b[3;100H\u001b[39m\u001b[49m│\u001b[4;1H│ \u001b[4;25H\u001b[30m\u001b[49m▖\u001b[4;100H\u001b[39m\u001b[49m│\u001b[5;1H│ \u001b[5;30H\u001b[30m\u001b[49m▖\u001b[5;100H\u001b[39m\u001b[49m│\u001b[6;1H│ \u001b[30m\u001b[49m▝▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▘\u001b[6;100H\u001b[39m\u001b[49m│\u001b[7;1H│ Fokus / Focus: Hilfe / Help                                                                     \u001b[7;100H│\u001b[8;1H│ Beschäftigt / Busy: Nein / No                                                                   \u001b[8;100H│\u001b[9;1H│ Status / Status: Bereit / Ready                                                                 \u001b[9;100H│\u001b[10;1H│ Fehler / Error: Kein Fehler / No error                                                          \u001b[10;100H│\u001b[11;1H│ Rolle: Textansicht mit Knöpfen / Role: text view with buttons                                   \u001b[11;100H│\u001b[12;1H│ Startansicht / Start view: Hilfe und Aktionen / Help and actions                                \u001b[12;100H│\u001b[13;1H│ Tab/Umschalt+Tab und Pfeile bewegen den Fokus. Enter betätigt den Knopf. Bildtasten blättern    \u001b[13;100H│\u001b[14;1H│ Hilfe/Aktionen. Keine Zielausführung. / Tab/Shift+Tab and arrows move focus. Enter activates    \u001b[14;100H│\u001b[15;1H│ the button. Page keys scroll help/actions. No target execution.                                 \u001b[15;100H│\u001b[16;1H│ Alt+H, F1 Hilfe / Help: verfügbar / available                                                   \u001b[16;100H│\u001b[17;1H│ Alt+X, F3 Beenden / Exit: verfügbar / available                                                 \u001b[17;100H│\u001b[18;1H│ Alt+B, Esc, F12 Zurück / Back: verfügbar / available                                            \u001b[18;100H│\u001b[19;1H│ F5 Aktualisieren / Refresh: verfügbar / available                                               \u001b[19;100H│\u001b[20;1H│ Alt+M Aktionen / Actions: verfügbar / available                                                 \u001b[20;100H│\u001b[21;1H│ F4 Kontextauswahl / Context selection: nicht verfügbar / unavailable                            \u001b[21;100H│\u001b[22;1H│ F9 Alle Parameter / All parameters: nicht verfügbar / unavailable                               \u001b[22;100H│\u001b[23;1H│ \u001b[23;100H│\u001b[24;1H└──────────────────────────────────────────────────────────────────────────────────────────────────┘\u001b[?25l\u001b[1;1H\u001b[?2004l\u001b[?1003l\u001b[?1015l\u001b[?1006l\u001b[?1049l\u001b[?25h\u001b[?25rLH01_SHELL_INPUT_READY\r\nLH01_ACK\r\nSynthetic return check: \u001b[6nL\u001b[1;1HLH\u001b[1;1HLH0\u001b[1;1HLH01\u001b[1;1HLH01_\u001b[1;1HLH01_A\u001b[1;1HLH01_AC\u001b[1;1HLH01_ACK\r\nLH01_RESULT\r\n{\"Scenario\":\"HiddenCursor\",\"RedirectBoundary\":{\"Input\":false,\"Output\":false},\"SecurityNegative\":null,\"RenderObservations\":[{\"Width\":100,\"Height\":24,\"Small\":false,\"Focus\":\"Help\",\"Context\":\"Root\",\"Busy\":false,\"Text\":\"Fokus / Focus: Hilfe / Help\\nBeschäftigt / Busy: Nein / No\\nStatus / Status: Bereit / Ready\\nFehler / Error: Kein Fehler / No error\\nRolle: Textansicht mit Knöpfen / Role: text view with buttons\\nStartansicht / Start view: Hilfe und Aktionen / Help and actions\\nTab/Umschalt+Tab und Pfeile bewegen den Fokus. Enter betätigt den Knopf. Bildtasten blättern Hilfe/Aktionen. Keine Zielausführung. / Tab/Shift+Tab and arrows move focus. Enter activates the button. Page keys scroll help/actions. No target execution.\\nAlt+H, F1 Hilfe / Help: verfügbar / available\\nAlt+X, F3 Beenden / Exit: verfügbar / available\\nAlt+B, Esc, F12 Zurück / Back: verfügbar / available\\nF5 Aktualisieren / Refresh: verfügbar / available\\nAlt+M Aktionen / Actions: verfügbar / available\\nF4 Kontextauswahl / Context selection: nicht verfügbar / unavailable\\nF9 Alle Parameter / All parameters: nicht verfügbar / unavailable\\nF10 Weitere Parameter / More parameters: nicht verfügbar / unavailable\\nF11 Details / Details: nicht verfügbar / unavailable\\n Auswählen / Select: nicht verfügbar / unavailable\\n Bearbeiten / Edit: nicht verfügbar / unavailable\\n Ausführen / Execute: nicht verfügbar / unavailable\"},{\"Width\":100,\"Height\":24,\"Small\":false,\"Focus\":\"Help\",\"Context\":\"Root\",\"Busy\":false,\"Text\":\"Fokus / Focus: Hilfe / Help\\nBeschäftigt / Busy: Nein / No\\nStatus / Status: Bereit / Ready\\nFehler / Error: Kein Fehler / No error\\nRolle: Textansicht mit Knöpfen / Role: text view with buttons\\nStartansicht / Start view: Hilfe und Aktionen / Help and actions\\nTab/Umschalt+Tab und Pfeile bewegen den Fokus. Enter betätigt den Knopf. Bildtasten blättern Hilfe/Aktionen. Keine Zielausführung. / Tab/Shift+Tab and arrows move focus. Enter activates the button. Page keys scroll help/actions. No target execution.\\nAlt+H, F1 Hilfe / Help: verfügbar / available\\nAlt+X, F3 Beenden / Exit: verfügbar / available\\nAlt+B, Esc, F12 Zurück / Back: verfügbar / available\\nF5 Aktualisieren / Refresh: verfügbar / available\\nAlt+M Aktionen / Actions: verfügbar / available\\nF4 Kontextauswahl / Context selection: nicht verfügbar / unavailable\\nF9 Alle Parameter / All parameters: nicht verfügbar / unavailable\\nF10 Weitere Parameter / More parameters: nicht verfügbar / unavailable\\nF11 Details / Details: nicht verfügbar / unavailable\\n Auswählen / Select: nicht verfügbar / unavailable\\n Bearbeiten / Edit: nicht verfügbar / unavailable\\n Ausführen / Execute: nicht verfügbar / unavailable\"}],\"SyntheticValueRetained\":true,\"InputObservations\":[{\"Key\":\"Alt+X\",\"Action\":\"Exit\",\"Context\":\"Root\",\"Focus\":\"Help\",\"FrameworkFocus\":\"Help\",\"Accepted\":true,\"ExitRequested\":true,\"ScrollTop\":0}],\"Before\":{\"Pid\":57439,\"Runspace\":\"2f489b78-9273-4250-9268-b584c6b014e6\",\"Location\":\"synthetic-working-directory\",\"Synthetic\":710,\"Preference\":1,\"FunctionResult\":710},\"After\":{\"Pid\":57439,\"Runspace\":\"2f489b78-9273-4250-9268-b584c6b014e6\",\"Location\":\"synthetic-working-directory\",\"Synthetic\":710,\"Preference\":1,\"FunctionResult\":710},\"ContextUnchanged\":true,\"LocationUnchanged\":true,\"ModuleSetUnchanged\":true,\"LeaseAcquisitions\":1,\"UiCreations\":1,\"ScopeObservations\":[{\"ProcessId\":57439,\"RunspaceId\":\"2f489b78-9273-4250-9268-b584c6b014e6\",\"Location\":\"synthetic-working-directory\",\"Synthetic\":710}],\"NativeRestore\":{\"Platform\":\"macOS-arm64\",\"Before\":\"022B0000000000000300000000000000004B000000000000CB0500000000000004FFFF7F171512FF031C1A191113160F010014FF0000000080250000000000008025000000000000\",\"After\":\"022B0000000000000300000000000000004B000000000000CB0500200000000004FFFF7F171512FF031C1A191113160F010014FF0000000080250000000000008025000000000000\",\"RawEqual\":false,\"ConfiguredEqual\":true,\"Boundary\":\"Only independently reproduced Darwin PENDIN (0x20000000) excluded from configured comparison; raw bytes retained\"},\"StopCalls\":0,\"PipelineState\":null,\"IsolatedTestRunspace\":false,\"ShellReadback\":\"LH01_ACK\",\"Failure\":null}\r\nLH01_RESTORE_READY\r\n",
+  "sanitizedTranscriptSha256": "de5b299906a6698b81278db0b76c7a71c5434359774694ef934f3b77edc4958c",
+  "assemblySha256": "3212a1f8863dae65e636eaa9b03387ffd9d54e7a180ad4b4c87b47f3d2bab8c9",
+  "finalCursorVisibleAtReturn": false,
+  "cursorModeRestoreObserved": true,
+  "initialCursorBoundary": "synthetic xterm mode-25 protocol emulation; hidden and visible cases; no physical terminal proof",
+  "scenario": "HiddenCursor",
+  "environment": "synthetic Unix PTY; no physical terminal/assistive acceptance",
+  "command": [
+    "pwsh",
+    "-NoLogo",
+    "-NoProfile",
+    "-File",
+    "tests/feasibility/lh01/session-contract.ps1",
+    "-Scenario",
+    "HiddenCursor",
+    "-Module",
+    "<build>/ShowCommandTui400/bin/net10.0/ShowCommandTui400.psd1",
+    "-TestAssembly",
+    "<build>/ShowCommandTui400.Tests/bin/net10.0/ShowCommandTui400.Tests.dll",
+    "-ObservationFile",
+    "<case>/HiddenCursor.observation.json"
+  ],
+  "exitCode": 0,
+  "expectedExitCode": 0,
+  "result": "Pass",
+  "diagnosticContractSatisfied": true,
+  "failureScope": null,
+  "timeout": false,
+  "steps": [
+    "Alt+X",
+    "synthetic-shell-readback"
+  ],
+  "cursorShowObserved": true,
+  "transcriptSha256": "de5b299906a6698b81278db0b76c7a71c5434359774694ef934f3b77edc4958c",
+  "termiosBefore": [
+    11010,
+    3,
+    19200,
+    1483,
+    9600,
+    9600,
+    [
+      "04",
+      "ff",
+      "ff",
+      "7f",
+      "17",
+      "15",
+      "12",
+      "ff",
+      "03",
+      "1c",
+      "1a",
+      "19",
+      "11",
+      "13",
+      "16",
+      "0f",
+      "01",
+      "00",
+      "14",
+      "ff"
+    ]
+  ],
+  "termiosAfter": [
+    10242,
+    3,
+    19200,
+    195,
+    9600,
+    9600,
+    [
+      "04",
+      "ff",
+      "ff",
+      "7f",
+      "17",
+      "15",
+      "12",
+      "ff",
+      "03",
+      "1c",
+      "1a",
+      "19",
+      "11",
+      "13",
+      "16",
+      "0f",
+      1,
+      0,
+      "14",
+      "ff"
+    ]
+  ],
+  "observation": {
+    "Scenario": "HiddenCursor",
+    "RedirectBoundary": {
+      "Input": false,
+      "Output": false
+    },
+    "SecurityNegative": null,
+    "RenderObservations": [
+      {
+        "Width": 100,
+        "Height": 24,
+        "Small": false,
+        "Focus": "Help",
+        "Context": "Root",
+        "Busy": false,
+        "Text": "Fokus / Focus: Hilfe / Help\nBeschäftigt / Busy: Nein / No\nStatus / Status: Bereit / Ready\nFehler / Error: Kein Fehler / No error\nRolle: Textansicht mit Knöpfen / Role: text view with buttons\nStartansicht / Start view: Hilfe und Aktionen / Help and actions\nTab/Umschalt+Tab und Pfeile bewegen den Fokus. Enter betätigt den Knopf. Bildtasten blättern Hilfe/Aktionen. Keine Zielausführung. / Tab/Shift+Tab and arrows move focus. Enter activates the button. Page keys scroll help/actions. No target execution.\nAlt+H, F1 Hilfe / Help: verfügbar / available\nAlt+X, F3 Beenden / Exit: verfügbar / available\nAlt+B, Esc, F12 Zurück / Back: verfügbar / available\nF5 Aktualisieren / Refresh: verfügbar / available\nAlt+M Aktionen / Actions: verfügbar / available\nF4 Kontextauswahl / Context selection: nicht verfügbar / unavailable\nF9 Alle Parameter / All parameters: nicht verfügbar / unavailable\nF10 Weitere Parameter / More parameters: nicht verfügbar / unavailable\nF11 Details / Details: nicht verfügbar / unavailable\n Auswählen / Select: nicht verfügbar / unavailable\n Bearbeiten / Edit: nicht verfügbar / unavailable\n Ausführen / Execute: nicht verfügbar / unavailable"
+      },
+      {
+        "Width": 100,
+        "Height": 24,
+        "Small": false,
+        "Focus": "Help",
+        "Context": "Root",
+        "Busy": false,
+        "Text": "Fokus / Focus: Hilfe / Help\nBeschäftigt / Busy: Nein / No\nStatus / Status: Bereit / Ready\nFehler / Error: Kein Fehler / No error\nRolle: Textansicht mit Knöpfen / Role: text view with buttons\nStartansicht / Start view: Hilfe und Aktionen / Help and actions\nTab/Umschalt+Tab und Pfeile bewegen den Fokus. Enter betätigt den Knopf. Bildtasten blättern Hilfe/Aktionen. Keine Zielausführung. / Tab/Shift+Tab and arrows move focus. Enter activates the button. Page keys scroll help/actions. No target execution.\nAlt+H, F1 Hilfe / Help: verfügbar / available\nAlt+X, F3 Beenden / Exit: verfügbar / available\nAlt+B, Esc, F12 Zurück / Back: verfügbar / available\nF5 Aktualisieren / Refresh: verfügbar / available\nAlt+M Aktionen / Actions: verfügbar / available\nF4 Kontextauswahl / Context selection: nicht verfügbar / unavailable\nF9 Alle Parameter / All parameters: nicht verfügbar / unavailable\nF10 Weitere Parameter / More parameters: nicht verfügbar / unavailable\nF11 Details / Details: nicht verfügbar / unavailable\n Auswählen / Select: nicht verfügbar / unavailable\n Bearbeiten / Edit: nicht verfügbar / unavailable\n Ausführen / Execute: nicht verfügbar / unavailable"
+      }
+    ],
+    "SyntheticValueRetained": true,
+    "InputObservations": [
+      {
+        "Key": "Alt+X",
+        "Action": "Exit",
+        "Context": "Root",
+        "Focus": "Help",
+        "FrameworkFocus": "Help",
+        "Accepted": true,
+        "ExitRequested": true,
+        "ScrollTop": 0
+      }
+    ],
+    "Before": {
+      "Pid": 57439,
+      "Runspace": "2f489b78-9273-4250-9268-b584c6b014e6",
+      "Location": "synthetic-working-directory",
+      "Synthetic": 710,
+      "Preference": 1,
+      "FunctionResult": 710
+    },
+    "After": {
+      "Pid": 57439,
+      "Runspace": "2f489b78-9273-4250-9268-b584c6b014e6",
+      "Location": "synthetic-working-directory",
+      "Synthetic": 710,
+      "Preference": 1,
+      "FunctionResult": 710
+    },
+    "ContextUnchanged": true,
+    "LocationUnchanged": true,
+    "ModuleSetUnchanged": true,
+    "LeaseAcquisitions": 1,
+    "UiCreations": 1,
+    "ScopeObservations": [
+      {
+        "ProcessId": 57439,
+        "RunspaceId": "2f489b78-9273-4250-9268-b584c6b014e6",
+        "Location": "synthetic-working-directory",
+        "Synthetic": 710
+      }
+    ],
+    "NativeRestore": {
+      "Platform": "macOS-arm64",
+      "Before": "022B0000000000000300000000000000004B000000000000CB0500000000000004FFFF7F171512FF031C1A191113160F010014FF0000000080250000000000008025000000000000",
+      "After": "022B0000000000000300000000000000004B000000000000CB0500200000000004FFFF7F171512FF031C1A191113160F010014FF0000000080250000000000008025000000000000",
+      "RawEqual": false,
+      "ConfiguredEqual": true,
+      "Boundary": "Only independently reproduced Darwin PENDIN (0x20000000) excluded from configured comparison; raw bytes retained"
+    },
+    "StopCalls": 0,
+    "PipelineState": null,
+    "IsolatedTestRunspace": false,
+    "ShellReadback": "LH01_ACK",
+    "Failure": null
+  }
+}
