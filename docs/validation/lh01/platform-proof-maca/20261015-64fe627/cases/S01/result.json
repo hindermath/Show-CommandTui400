@@ -1,0 +1,40 @@
+{
+  "caseId": "S01",
+  "productCommit": "64fe627e5f0799ce1a4f7d5ec1c26ceeea936e9b",
+  "outcome": "CallerContextRetained",
+  "result": "Pass",
+  "evidenceIds": [
+    "E01-01"
+  ],
+  "observations": [
+    {
+      "scenario": "Repeat",
+      "exitCode": 0,
+      "result": "Pass",
+      "diagnosticContractSatisfied": true
+    }
+  ],
+  "files": [
+    {
+      "path": "Repeat.json",
+      "sha256": "70e0dba5e03eeaf3b6746918bef64da4418c14b086d03f729f9de09b3c2c8c51"
+    },
+    {
+      "path": "Repeat.observation.json",
+      "sha256": "9014c93a004fefd8df38385fda7480fa134c2e7871c60ed93517dd4ae5d1d4c5"
+    },
+    {
+      "path": "Repeat.observation.json.input-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "Repeat.observation.json.restore-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "Repeat.txt",
+      "sha256": "59744535994ccaa5d8718b26ef747ed61743caf0e27cbe864523a10031b35b05"
+    }
+  ],
+  "scope": "automated product/model evidence only; independent review and physical acceptance remain open"
+}

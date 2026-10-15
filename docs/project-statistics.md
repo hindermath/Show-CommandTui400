@@ -79,6 +79,8 @@ heuristic would otherwise count spec.md as a test.*
 
 | 2026-10-15 | LH-01 portable IDEs und sichtbarer Text / Portable IDEs and visible text | NuGet-Kompilierreferenz statt Hostpfad, Solution und DE/EN-Einrichtung; lesbare Hilfe/Status und Mac-A-Nachprüfungen. Fremdsysteme und volle Abnahme bleiben getrennt. / NuGet compile reference, portable solution, setup and visible help/status; bounded Mac A rechecks only. [Nachweis / Evidence](validation/lh01/ide-portability.md). |
 
+| 2026-10-15 | LH-01 Prüfstandsrefresh / Test stand refresh | Neuer unveränderlicher Prüfcommit, vollständiger Mac-A-Nachweis, 65 Quellbindungen und aktualisierte Host-/IDE-Prompts; Zielausführung/Abnahme bleibt getrennt. / New pinned stand, complete Mac A proof, bindings and updated host/IDE prompts; no target acceptance. [Nachweis / Evidence](validation/lh01/platform-refresh-20261015.md). |
+
 ## Gesamtstatistik / Overall Statistics
 
 <!-- project-statistics-v2:begin -->

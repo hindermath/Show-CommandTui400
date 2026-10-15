@@ -1,0 +1,131 @@
+{
+  "result": "Pass",
+  "productCommit": "64fe627e5f0799ce1a4f7d5ec1c26ceeea936e9b",
+  "manifestSha256": "71a56f525ed1dfa91f62a54a8018da548284dc58cdffbe695dac413d571b7194",
+  "sourceBindings": 65,
+  "approvedCommands": 60,
+  "baseOnlyBlocker": "Mac B hardware must be Mac mini M4 Pro",
+  "scope": "CheckOnly on actual Mac A; no target execution or output creation",
+  "cases": [
+    {
+      "case": "base",
+      "exitCode": 2,
+      "expectedBlockerObserved": true,
+      "outputCreated": false
+    },
+    {
+      "case": "manifest-hash",
+      "exitCode": 2,
+      "expectedBlockerObserved": true,
+      "outputCreated": false
+    },
+    {
+      "case": "driver-hash",
+      "exitCode": 2,
+      "expectedBlockerObserved": true,
+      "outputCreated": false
+    },
+    {
+      "case": "decision-hash",
+      "exitCode": 2,
+      "expectedBlockerObserved": true,
+      "outputCreated": false
+    },
+    {
+      "case": "file-hash",
+      "exitCode": 2,
+      "expectedBlockerObserved": true,
+      "outputCreated": false
+    },
+    {
+      "case": "proof-hash",
+      "exitCode": 2,
+      "expectedBlockerObserved": true,
+      "outputCreated": false
+    },
+    {
+      "case": "proof-escape",
+      "exitCode": 2,
+      "expectedBlockerObserved": true,
+      "outputCreated": false
+    },
+    {
+      "case": "missing-command",
+      "exitCode": 2,
+      "expectedBlockerObserved": true,
+      "outputCreated": false
+    },
+    {
+      "case": "duplicate-command",
+      "exitCode": 2,
+      "expectedBlockerObserved": true,
+      "outputCreated": false
+    },
+    {
+      "case": "embedded-token",
+      "exitCode": 2,
+      "expectedBlockerObserved": true,
+      "outputCreated": false
+    },
+    {
+      "case": "case-map",
+      "exitCode": 2,
+      "expectedBlockerObserved": true,
+      "outputCreated": false
+    },
+    {
+      "case": "revision",
+      "exitCode": 2,
+      "expectedBlockerObserved": true,
+      "outputCreated": false
+    }
+  ],
+  "independentReview": "Open",
+  "preparedInventoryRegression": {
+    "result": "Pass",
+    "checks": [
+      {
+        "case": "prepared",
+        "exitCode": 2,
+        "outputCreated": false,
+        "expectedBlockerObserved": true
+      },
+      {
+        "case": "empty-inventory",
+        "exitCode": 2,
+        "outputCreated": false,
+        "expectedBlockerObserved": true
+      },
+      {
+        "case": "changed-outcome",
+        "exitCode": 2,
+        "outputCreated": false,
+        "expectedBlockerObserved": true
+      },
+      {
+        "case": "changed-order",
+        "exitCode": 2,
+        "outputCreated": false,
+        "expectedBlockerObserved": true
+      },
+      {
+        "case": "missing-evidence",
+        "exitCode": 2,
+        "outputCreated": false,
+        "expectedBlockerObserved": true
+      },
+      {
+        "case": "duplicate-case",
+        "exitCode": 2,
+        "outputCreated": false,
+        "expectedBlockerObserved": true
+      },
+      {
+        "case": "schema",
+        "exitCode": 2,
+        "outputCreated": false,
+        "expectedBlockerObserved": true
+      }
+    ]
+  }
+}

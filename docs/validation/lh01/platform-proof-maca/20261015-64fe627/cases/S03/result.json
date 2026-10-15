@@ -1,0 +1,40 @@
+{
+  "caseId": "S03",
+  "productCommit": "64fe627e5f0799ce1a4f7d5ec1c26ceeea936e9b",
+  "outcome": "RestoredAndShellUsable",
+  "result": "Pass",
+  "evidenceIds": [
+    "E01-04"
+  ],
+  "observations": [
+    {
+      "scenario": "Cancel",
+      "exitCode": 0,
+      "result": "Pass",
+      "diagnosticContractSatisfied": true
+    }
+  ],
+  "files": [
+    {
+      "path": "Cancel.json",
+      "sha256": "db7ee839bcfee9dcc4745ab17ba00e4189907f59bb8d00cda9c74a2a8f109248"
+    },
+    {
+      "path": "Cancel.observation.json",
+      "sha256": "76c348c1ef7c14e229be219a5c9d9e6b695a8ff0165bf3cc9722ead939d365d8"
+    },
+    {
+      "path": "Cancel.observation.json.input-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "Cancel.observation.json.restore-ready",
+      "sha256": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b"
+    },
+    {
+      "path": "Cancel.txt",
+      "sha256": "15eb3c5891137d973e2c8679b9582b8a9dc28aac6f07ba1aae8fb52ea92f6660"
+    }
+  ],
+  "scope": "automated product/model evidence only; independent review and physical acceptance remain open"
+}

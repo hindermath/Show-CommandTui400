@@ -3,9 +3,9 @@
   "scope": "LH-01 product automation only",
   "state": "Executable",
   "executionAuthorized": true,
-  "productCommit": "41ec0f34d35c9d9e187e1a101b806d7ac93f6b00",
+  "productCommit": "64fe627e5f0799ce1a4f7d5ec1c26ceeea936e9b",
   "decisionSha256": "b02a18ced7a9b256332eaef770f0477484a3c2099ce14429d80493607af0b0f4",
-  "macAProofReference": "platform-proof-maca/suite-result.json",
+  "macAProofReference": "platform-proof-maca/20261015-64fe627/suite-result.json",
   "driver": {
     "path": "tests/feasibility/lh01/Invoke-Lh01PlatformProof.ps1",
     "sha256": "99fb115b356c90008d9fe3abd1462fa6283e9b73baf4f8ae93c942e80c645c0f"
@@ -1674,15 +1674,35 @@
     "ubuntu-wsl2": "https://github.com/hindermath/Show-CommandTui400/issues/39"
   },
   "approvedCommandsSchema": "approved-commands.schema.json",
-  "macAProofSha256": "886a33858dcefc22943668264b2fca56c158221de9307d41ea1a8d37f2e37531",
+  "macAProofSha256": "b40f66f8ddfd38a0bd8f52a1349f0d07c8e0c32b2a0da36f85c16ee3b9ec518b",
   "fileBindings": [
     {
       "path": ".gitattributes",
-      "sha256": "afc0c1ef08fc0f8d080a53a133809bb4f7112dd35655fd722074e38a23b5c03c"
+      "sha256": "7b160bd509f9e2bf818a30e029aeb72291f0bf4dd962f1caa9b1cbd1f3d5f141"
+    },
+    {
+      "path": "NuGet.Config",
+      "sha256": "7a77c63a438cdf0524dc336da4bf2191d3f259645de430f5a4c61b3edd52fa9f"
+    },
+    {
+      "path": "ShowCommandTui400.sln",
+      "sha256": "5eab667189b55829a342bfe8ee1fbe7942cadd57bfaa968a8a4c030bfaa87bee"
+    },
+    {
+      "path": "docs/lh01/development-setup.md",
+      "sha256": "c7da19f72c4ddb074a0d50aeedba60ae5115557b6d16bd3625521980a172f205"
+    },
+    {
+      "path": "docs/lh01/manual-smoke-test-maca.md",
+      "sha256": "4f69ee79ed990acd9e3dcbe112e939f617cc29539a3ec8f26c497b4dfb3784a1"
     },
     {
       "path": "docs/validation/lh01/approved-commands.schema.json",
       "sha256": "dabe232fe958d44c611dd9bbc26017a0e7ac97306e96ac3ba89f3ab67026a68b"
+    },
+    {
+      "path": "scripts/build/Lh01.PowerShellReference.props",
+      "sha256": "b73b5613f5f208f72e24e5ca2210f472e7edfaa6f992e672b6cf5460f912792c"
     },
     {
       "path": "specs/002-lh01-tui-foundation/feasibility/decisions.md",
@@ -1690,7 +1710,7 @@
     },
     {
       "path": "src/Directory.Build.props",
-      "sha256": "32e91a5ddd7e191c3a2ec198a561a914ddebed129c2eb4a20f16f9839c8e241a"
+      "sha256": "faf323920455ea7a323f67d44873591ae985a090d62c9324ccbbbc588fdca5ae"
     },
     {
       "path": "src/ShowCommandTui400/Actions/ActionAvailability.cs",
@@ -1754,7 +1774,7 @@
     },
     {
       "path": "src/ShowCommandTui400/ShowCommandTui400.csproj",
-      "sha256": "6f7e753909d10c0a53d06f4e1248600851a38eb157b2611b51f2e3f4c4484007"
+      "sha256": "72afa3204fc37e1f20b0ad6e3515f681b90f04b9445c38448e8684057f2a915b"
     },
     {
       "path": "src/ShowCommandTui400/ShowCommandTui400.psd1",
@@ -1782,7 +1802,7 @@
     },
     {
       "path": "src/ShowCommandTui400/Terminal/TerminalApplication.cs",
-      "sha256": "b3f35b8da54971b1a5cbd545b4077d607d0331338189aa0ce5e9d57be4af0a8b"
+      "sha256": "40d2b926da4c00e3ea1bc17439bb202ad795491e7a4aef96ff2e5b9008517480"
     },
     {
       "path": "src/ShowCommandTui400/Terminal/TerminalLifecycle.cs",
@@ -1810,11 +1830,11 @@
     },
     {
       "path": "src/ShowCommandTui400/packages.lock.json",
-      "sha256": "9a50991596ca623b8d4041f1ad193d9f3c18fcadaac18f5df824f2fb7baf4813"
+      "sha256": "9b81d0ce86f7d7b153f4f9853a398a03e8d811c209608fc2ad16ad2041dc26a0"
     },
     {
       "path": "tests/Directory.Build.props",
-      "sha256": "32e91a5ddd7e191c3a2ec198a561a914ddebed129c2eb4a20f16f9839c8e241a"
+      "sha256": "faf323920455ea7a323f67d44873591ae985a090d62c9324ccbbbc588fdca5ae"
     },
     {
       "path": "tests/ShowCommandTui400.Tests/AccessibleStateTests.cs",
@@ -1846,7 +1866,7 @@
     },
     {
       "path": "tests/ShowCommandTui400.Tests/ShowCommandTui400.Tests.csproj",
-      "sha256": "0ddbbb332f7267bdad22caaa3fe2ec39b31f97633494e2a185dcff6bf0d80ac7"
+      "sha256": "a90f4533a2af23baa758606499e1f853c3c74e7781441cd704d8b62af2679b67"
     },
     {
       "path": "tests/ShowCommandTui400.Tests/TerminalLifecycleTests.cs",
@@ -1854,11 +1874,11 @@
     },
     {
       "path": "tests/ShowCommandTui400.Tests/packages.lock.json",
-      "sha256": "be152f8f6783b9c9f74ff2c1700fee5e38815dfbba0a8772872b62e9c88cd998"
+      "sha256": "5d71c1d22b0d648782bd58a8502fe41e172e6b45af0b4e4b572311ce22d42d4e"
     },
     {
       "path": "tests/feasibility/lh01/Invoke-Lh01ContractProof.ps1",
-      "sha256": "5913aacee4380ca7e011e0d6da53bbc3247dd35a4164af44c5660437e07952fa"
+      "sha256": "7e400b125625c6a60084cef7960871b3a3f09d45b67bc09418e931f1a367a51d"
     },
     {
       "path": "tests/feasibility/lh01/Invoke-Lh01PlatformProof.ps1",
@@ -1869,16 +1889,24 @@
       "sha256": "bc67f26813b6caf27d09429a0eadf428be7895c96aaf69bd50cab39a90aed752"
     },
     {
+      "path": "tests/feasibility/lh01/assert-no-powershell-runtime.py",
+      "sha256": "adc81d542e1969ab8c1cc4a584943454a94d655b366fb625d16547df0223913b"
+    },
+    {
+      "path": "tests/feasibility/lh01/assert-readable-text.py",
+      "sha256": "27ee605f98bc429bd7a3b615a55164b028ce96d4538a2f1859316434003e87fa"
+    },
+    {
       "path": "tests/feasibility/lh01/platform-case.py",
-      "sha256": "4311935baec46a8d2c06550c9741412b296953cdfdfe1becdc9ed99c797e4b2b"
+      "sha256": "9c4d3de1fe7cbc413a72bf522c4d888ce1ccae95931de5c3f2cda2f9787236c9"
     },
     {
       "path": "tests/feasibility/lh01/proof-driver-contract.py",
-      "sha256": "4e6b274637986652d26cdb29320c357ea3de6b7d15856a2ef4f8887d9ba61028"
+      "sha256": "4191c10963ce758f90f2ecc419f2a0c993a6b99e0eecc652a698e44ac2d48d60"
     },
     {
       "path": "tests/feasibility/lh01/proof-tooling-contract.py",
-      "sha256": "223cf79d29cc80ab3e066add242b8bb55d5659330e18638c2c06eddab3f858d6"
+      "sha256": "d6e8d9724a5f0e2e8a5df3cea8a764213354888b2a014726ec234bb287729459"
     },
     {
       "path": "tests/feasibility/lh01/pty-product.py",
@@ -1911,9 +1939,9 @@
   ],
   "approval": {
     "owner": "Thorsten Hindermann",
-    "approvedAt": "2026-10-14T20:01:00.732281+00:00",
-    "requestReference": "Ownerauftrag in diesem Chat: T053/T054 ausführen; DeliveryMode MergeAndSync mit Admin-Bypass. / Explicit owner request in this conversation.",
-    "scope": "Prüfstand, Kommandobindung und native CI; kein automatischer Zielhoststart. / Stand binding and native CI; no automatic target dispatch.",
+    "approvedAt": "2026-10-15T21:53:29.096261+00:00",
+    "requestReference": "Ownerauftrag 2026-10-15: freigegebenen Prüfstand und Agenten-Prompts #37–#39 aktualisieren; MergeAndSync/Admin-Bypass. / Explicit owner request.",
+    "scope": "Aktueller Produktpayload, gebundene Automationsfälle einschließlich Textfarben und getrennte IDE-Prüfanweisung; kein automatischer Zielhoststart. / Current payload, bound automation including text colors and separate IDE instructions; no automatic target execution.",
     "targetDispatchRequiresExplicitRequest": true
   }
 }

@@ -1,3 +1,12 @@
+# Aktuelle Fortschreibung / Current amendment
+
+Der [Prüfstandsrefresh 2026-10-15](platform-refresh-20261015.md) und sein
+[CheckOnly-Nachweis](platform-refresh-readiness-20261015.json) sind aktuell.
+Der folgende Bericht ist der unveränderte historische Stand aus PR #48.
+
+The linked refresh/evidence is current. The following report is unchanged
+historical PR #48 evidence.
+
 # T053/T054 Prüf- und Lieferstand / Checks and delivery boundary
 
 ## DE
