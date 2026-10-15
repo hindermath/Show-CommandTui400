@@ -1,4 +1,5 @@
 using Terminal.Gui.App;
+using Terminal.Gui.Drawing;
 using Terminal.Gui.Input;
 using Terminal.Gui.ViewBase;
 using Terminal.Gui.Views;
@@ -48,6 +49,9 @@ internal sealed class TerminalApplication : ITerminalApplication
         // Activation is owned by the action adapter; Enter never runs a target command.
         foreach (var control in controls) window.Add(control);
         window.Add(text);
+        // The inherited ReadOnly role can collapse to equal colors. Keep the
+        // window's readable text colors without adding a keyboard focus target.
+        text.SetScheme(new Scheme(text.GetScheme()) { ReadOnly = window.GetScheme().Normal });
         void Render()
         {
             foreach (var control in controls) control.Visible = !resize.IsSmall;

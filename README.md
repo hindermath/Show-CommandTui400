@@ -17,6 +17,14 @@ Level-2 environment is configured. LH-00 has authoring status ReadyForReview;
 there is no installable cmdlet. The eight revised issues are published and verified (see the publication evidence above). The
 linked governance mapping records sources and boundaries.
 
+## Produktentwicklung / Product development
+
+Die [portable Einrichtung](docs/lh01/development-setup.md) beschreibt CLI, Rider,
+VS Code und Visual Studio sowie die getrennten Plattformnachweise.
+
+The [portable setup](docs/lh01/development-setup.md) covers CLI, Rider, VS Code
+and Visual Studio, with separate platform evidence.
+
 ## Koordinierter Governance-Pilot / Coordinated governance pilot
 
 Die [gebundenen Quellen und Prüfgrenzen](docs/maintenance/coordinated-governance-oct03.md)

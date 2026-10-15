@@ -29,3 +29,6 @@ specs/intake-authoring-archive/lh-00/*/docs/validation/lh00/acceptance.md whites
 # Bytegenaue Produktnachweise: keine EOL-Normalisierung der Rohbelege.
 docs/validation/lh01/platform-proof-maca/** -text whitespace=cr-at-eol
 docs/validation/lh01/platform-proof-ci/** -text whitespace=cr-at-eol
+
+# Preserve synthetic IDE recheck evidence hashes across hosts.
+docs/validation/lh01/ide-maca-recheck/** -text whitespace=cr-at-eol

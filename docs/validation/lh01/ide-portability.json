@@ -1,0 +1,112 @@
+{
+  "date": "2026-10-15",
+  "baseCommit": "fa5067c03c49389cd8df37ce28e469c32c66aafd",
+  "revisionScope": "Mac A recheck of delivery sources; existing platform approval unchanged",
+  "host": "Mac A, MacBook Air M2 2023",
+  "dotnetSdk": "10.0.401",
+  "powerShell": "7.6.6",
+  "hostRuntime": "10.0.12",
+  "apiPackage": "7.6.4",
+  "pkcsRestorePin": "10.0.13",
+  "sourceSha256": {
+    "ShowCommandTui400.sln": "5eab667189b55829a342bfe8ee1fbe7942cadd57bfaa968a8a4c030bfaa87bee",
+    "NuGet.Config": "7a77c63a438cdf0524dc336da4bf2191d3f259645de430f5a4c61b3edd52fa9f",
+    "scripts/build/Lh01.PowerShellReference.props": "b73b5613f5f208f72e24e5ca2210f472e7edfaa6f992e672b6cf5460f912792c",
+    "src/Directory.Build.props": "faf323920455ea7a323f67d44873591ae985a090d62c9324ccbbbc588fdca5ae",
+    "tests/Directory.Build.props": "faf323920455ea7a323f67d44873591ae985a090d62c9324ccbbbc588fdca5ae",
+    "src/ShowCommandTui400/ShowCommandTui400.csproj": "72afa3204fc37e1f20b0ad6e3515f681b90f04b9445c38448e8684057f2a915b",
+    "tests/ShowCommandTui400.Tests/ShowCommandTui400.Tests.csproj": "a90f4533a2af23baa758606499e1f853c3c74e7781441cd704d8b62af2679b67",
+    "src/ShowCommandTui400/packages.lock.json": "9b81d0ce86f7d7b153f4f9853a398a03e8d811c209608fc2ad16ad2041dc26a0",
+    "tests/ShowCommandTui400.Tests/packages.lock.json": "5d71c1d22b0d648782bd58a8502fe41e172e6b45af0b4e4b572311ce22d42d4e",
+    "tests/feasibility/lh01/Invoke-Lh01ContractProof.ps1": "7e400b125625c6a60084cef7960871b3a3f09d45b67bc09418e931f1a367a51d",
+    "tests/feasibility/lh01/assert-no-powershell-runtime.py": "adc81d542e1969ab8c1cc4a584943454a94d655b366fb625d16547df0223913b",
+    "tests/feasibility/lh01/run-product-suite.py": "682ea87a892004ddda3a6a5f4f8b71852f1506b8cb411896d0c089d8a67acecd",
+    "src/ShowCommandTui400/Terminal/TerminalApplication.cs": "40d2b926da4c00e3ea1bc17439bb202ad795491e7a4aef96ff2e5b9008517480",
+    "tests/feasibility/lh01/assert-readable-text.py": "27ee605f98bc429bd7a3b615a55164b028ce96d4538a2f1859316434003e87fa"
+  },
+  "checks": {
+    "lockedRestore": "Pass",
+    "cliBuild": "Pass",
+    "freshSourceSnapshotWithSpaces": "Pass",
+    "buildAndPublishBoundary": "Pass",
+    "forbiddenRuntimeNegativeRegression": "Pass",
+    "contractB01": "Pass",
+    "riderBuild": "Pass",
+    "riderCSharpAnalysis": "Pass",
+    "vscode": "Pass",
+    "minimumHost764": "Open",
+    "keyboardPty": "Pass",
+    "macb": "Open",
+    "windows11": "Open",
+    "ubuntuWsl2": "Open",
+    "psScriptAnalyzer": "Pass",
+    "presetMatrix": "Pass, 14/14",
+    "secrets": "Pass, no high/medium findings",
+    "diff": "Pass"
+  },
+  "rider": {
+    "version": "2026.2.3.1",
+    "sdk": "10.0.401",
+    "buildLogSha256": "7a555d1dbdad5682dffb127e3ad8dab19869019a809126c14f8bbf6194d61a27",
+    "errors": 0,
+    "warnings": [
+      "CS0618"
+    ],
+    "evidence": "GUI: cmdlet file diagnostics and full solution reanalysis, no C# reference/compiler errors; own SolutionBuilder log",
+    "recheckBuildLogSha256": "00c09f56e788d9fb94193c39589bc589138874030d5e401fb6be84037b42813f"
+  },
+  "keyboard": {
+    "recordSha256": "4a41a132620e3fd8d3c6dbff930831e185f5fbfc98fba4034f4e45d3e1725772",
+    "result": "Pass",
+    "timeout": false,
+    "exitCode": 0,
+    "retryPerformed": true,
+    "scope": "synthetic Unix PTY; no physical terminal/assistive acceptance",
+    "cursorModeRestoreObserved": true,
+    "diagnosticContractSatisfied": true,
+    "recordPath": "docs/validation/lh01/ide-maca-recheck/Keyboard.json"
+  },
+  "limits": [
+    "PowerShell 7.6.4 minimum host not executed",
+    "Mac B, native Windows11 and Ubuntu/WSL2 remain Open",
+    "existing product approval bindings unchanged",
+    "practical terminal/screen-reader acceptance deferred; Braille hardware excluded",
+    "IDE style/spellcheck and unrelated provider/plugin notices are not suppressed"
+  ],
+  "previousAttempt": {
+    "keyboard": {
+      "recordSha256": "fc7583d56864903244c18c31348a7c70cceb2283f93c3ae40c27f21b4673d8e5",
+      "result": "Fail",
+      "timeout": true,
+      "exitCode": -15,
+      "observation": null,
+      "retryPerformed": false
+    },
+    "limits": [
+      "GUI service startup failed after Rider build",
+      "system load observed 32.37; timeout cause not isolated",
+      "no minimum-host or foreign-platform execution",
+      "no new platform approval or independent review"
+    ]
+  },
+  "vscode": {
+    "version": "1.141.0",
+    "csharpExtension": "2.160.4",
+    "devKit": "3.40.210",
+    "projectsLoaded": 2,
+    "solution": "ShowCommandTui400.sln",
+    "sdk": "10.0.401",
+    "extensionRuntime": "10.0.12, existing Microsoft-signed ASP.NET runtime",
+    "localIgnoredRuntimeSelection": true,
+    "allowInvalidPathsEnabled": false,
+    "signatureValidationDisabled": false,
+    "analysis": "GUI and language-server logs: both real projects loaded; no C# errors/warnings",
+    "build": "Pass, integrated terminal, exit0",
+    "projectLogSha256": "1ccd112f48ab34ab5eff06774c1afd7638ac08b1d6e4811da28d3d22b120700d",
+    "devKitLogSha256": "4af193305d8e6b0d9b4dec90c2176e4f00341e0209c0424b22752c250128e4ef",
+    "buildLogPath": "docs/validation/lh01/ide-maca-recheck/vscode-build.txt",
+    "buildLogSha256": "a8584f175c0efb02ddf58897b16eb0a152a807468ca11c7f969dff8523c9fead",
+    "errors": 0,
+    "warnings": 0
+  }
+}
