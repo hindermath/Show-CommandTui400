@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "contextId": "show-commandtui400-preset-patch-rollout",
+  "platform": "macOS arm64",
+  "controlledSourceCommit": "1c83f2bbad6b720c6f000aa0c90e524e42de54ff",
+  "installationState": "Authorized working-tree candidate before delivery",
+  "python": "Python 3.14.8",
+  "commands": [
+    {
+      "command": "bash",
+      "arguments": [
+        ".specify/presets/secure-development-assurance-governance/scripts/validate-secure-development-assurance.sh",
+        "status",
+        "docs/security/secure-development/2026-10-18-show-commandtui400-preset-patch-rollout"
+      ],
+      "exitCode": 0,
+      "output": "Context: docs/security/secure-development/2026-10-18-show-commandtui400-preset-patch-rollout\nGate baseline: Ready\nGate delta: Ready\nGate closure: Ready\nGate image-impact: Ready\nOverall: Ready\nDecision technicalValidation: Fulfilled\nDecision pilotAuthorization: Open\nDecision projectAcceptance: Open\nDecision generalRelease: Open\nNext action: Complete this repository exact-head technical gates and authorized MergeAndSync. Recheck intake, review freshness, routing and current authority before any later feature execution."
+    },
+    {
+      "command": "pwsh",
+      "arguments": [
+        "-NoProfile",
+        "-File",
+        ".specify/presets/secure-development-assurance-governance/scripts/validate-secure-development-assurance.ps1",
+        "-Action",
+        "Status",
+        "-EvidenceDirectory",
+        "docs/security/secure-development/2026-10-18-show-commandtui400-preset-patch-rollout"
+      ],
+      "exitCode": 0,
+      "output": "Context: docs/security/secure-development/2026-10-18-show-commandtui400-preset-patch-rollout\nGate baseline: Ready\nGate delta: Ready\nGate closure: Ready\nGate image-impact: Ready\nOverall: Ready\nDecision technicalValidation: Fulfilled\nDecision pilotAuthorization: Open\nDecision projectAcceptance: Open\nDecision generalRelease: Open\nNext action: Complete this repository exact-head technical gates and authorized MergeAndSync. Recheck intake, review freshness, routing and current authority before any later feature execution."
+    },
+    {
+      "command": "bash",
+      "arguments": [
+        ".specify/presets/secure-development-assurance-governance/scripts/validate-secure-development-assurance.sh",
+        "review",
+        "baseline",
+        "show-commandtui400-preset-patch-rollout",
+        "training"
+      ],
+      "exitCode": 0,
+      "output": "Reviewed: gate=baseline context=show-commandtui400-preset-patch-rollout mode=training outcome=Ready"
+    },
+    {
+      "command": "pwsh",
+      "arguments": [
+        "-NoProfile",
+        "-File",
+        ".specify/presets/secure-development-assurance-governance/scripts/validate-secure-development-assurance.ps1",
+        "-Action",
+        "Review",
+        "-Gate",
+        "baseline",
+        "-ContextId",
+        "show-commandtui400-preset-patch-rollout",
+        "-Mode",
+        "training"
+      ],
+      "exitCode": 0,
+      "output": "Reviewed: gate=baseline context=show-commandtui400-preset-patch-rollout mode=training outcome=Ready"
+    },
+    {
+      "command": "bash",
+      "arguments": [
+        ".specify/presets/secure-development-assurance-governance/scripts/validate-secure-development-assurance.sh",
+        "review",
+        "delta",
+        "show-commandtui400-preset-patch-rollout",
+        "training"
+      ],
+      "exitCode": 0,
+      "output": "Reviewed: gate=delta context=show-commandtui400-preset-patch-rollout mode=training outcome=Ready"
+    },
+    {
+      "command": "pwsh",
+      "arguments": [
+        "-NoProfile",
+        "-File",
+        ".specify/presets/secure-development-assurance-governance/scripts/validate-secure-development-assurance.ps1",
+        "-Action",
+        "Review",
+        "-Gate",
+        "delta",
+        "-ContextId",
+        "show-commandtui400-preset-patch-rollout",
+        "-Mode",
+        "training"
+      ],
+      "exitCode": 0,
+      "output": "Reviewed: gate=delta context=show-commandtui400-preset-patch-rollout mode=training outcome=Ready"
+    },
+    {
+      "command": "bash",
+      "arguments": [
+        ".specify/presets/secure-development-assurance-governance/scripts/validate-secure-development-assurance.sh",
+        "review",
+        "closure",
+        "show-commandtui400-preset-patch-rollout",
+        "training"
+      ],
+      "exitCode": 0,
+      "output": "Reviewed: gate=closure context=show-commandtui400-preset-patch-rollout mode=training outcome=Ready"
+    },
+    {
+      "command": "pwsh",
+      "arguments": [
+        "-NoProfile",
+        "-File",
+        ".specify/presets/secure-development-assurance-governance/scripts/validate-secure-development-assurance.ps1",
+        "-Action",
+        "Review",
+        "-Gate",
+        "closure",
+        "-ContextId",
+        "show-commandtui400-preset-patch-rollout",
+        "-Mode",
+        "training"
+      ],
+      "exitCode": 0,
+      "output": "Reviewed: gate=closure context=show-commandtui400-preset-patch-rollout mode=training outcome=Ready"
+    },
+    {
+      "command": "bash",
+      "arguments": [
+        ".specify/presets/secure-development-assurance-governance/scripts/validate-secure-development-assurance.sh",
+        "review",
+        "image-impact",
+        "show-commandtui400-preset-patch-rollout",
+        "training"
+      ],
+      "exitCode": 0,
+      "output": "Reviewed: gate=image-impact context=show-commandtui400-preset-patch-rollout mode=training outcome=Ready"
+    },
+    {
+      "command": "pwsh",
+      "arguments": [
+        "-NoProfile",
+        "-File",
+        ".specify/presets/secure-development-assurance-governance/scripts/validate-secure-development-assurance.ps1",
+        "-Action",
+        "Review",
+        "-Gate",
+        "image-impact",
+        "-ContextId",
+        "show-commandtui400-preset-patch-rollout",
+        "-Mode",
+        "training"
+      ],
+      "exitCode": 0,
+      "output": "Reviewed: gate=image-impact context=show-commandtui400-preset-patch-rollout mode=training outcome=Ready"
+    }
+  ],
+  "before": [
+    {
+      "path": "baseline.json",
+      "sha256": "74b3d92fed96428952200dc55842b8ef44445c3bebeba854152f732e5a148da1"
+    },
+    {
+      "path": "closure.json",
+      "sha256": "4d63ad21975773064e9d41ea53735943c92ada5d747d20a7d35642fea602cea4"
+    },
+    {
+      "path": "deltas/fourteen-readme-patches.json",
+      "sha256": "00b27f68c59d84ab1c54dd5d2d37c3fc0509d18a1db46192dd593de9e503d2e4"
+    },
+    {
+      "path": "evidence-matrix.md",
+      "sha256": "0b4336bb23355c5bc33bc611f41ca7b114543dbb525895dc57b6ea43392f234c"
+    },
+    {
+      "path": "image-impact.json",
+      "sha256": "94420b4f6861947c22c522f389ae7a8437533e445fe04cc6014a057924a7eab8"
+    }
+  ],
+  "after": [
+    {
+      "path": "baseline.json",
+      "sha256": "74b3d92fed96428952200dc55842b8ef44445c3bebeba854152f732e5a148da1"
+    },
+    {
+      "path": "closure.json",
+      "sha256": "4d63ad21975773064e9d41ea53735943c92ada5d747d20a7d35642fea602cea4"
+    },
+    {
+      "path": "deltas/fourteen-readme-patches.json",
+      "sha256": "00b27f68c59d84ab1c54dd5d2d37c3fc0509d18a1db46192dd593de9e503d2e4"
+    },
+    {
+      "path": "evidence-matrix.md",
+      "sha256": "0b4336bb23355c5bc33bc611f41ca7b114543dbb525895dc57b6ea43392f234c"
+    },
+    {
+      "path": "image-impact.json",
+      "sha256": "94420b4f6861947c22c522f389ae7a8437533e445fe04cc6014a057924a7eab8"
+    }
+  ],
+  "readOnly": true
+}

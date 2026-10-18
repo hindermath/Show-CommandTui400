@@ -81,6 +81,8 @@ heuristic would otherwise count spec.md as a test.*
 
 | 2026-10-15 | LH-01 Prüfstandsrefresh / Test stand refresh | Neuer unveränderlicher Prüfcommit, vollständiger Mac-A-Nachweis, 65 Quellbindungen und aktualisierte Host-/IDE-Prompts; Zielausführung/Abnahme bleibt getrennt. / New pinned stand, complete Mac A proof, bindings and updated host/IDE prompts; no target acceptance. [Nachweis / Evidence](validation/lh01/platform-refresh-20261015.md). |
 
+| 2026-10-18 | Begrenzter 14-Preset-Patch-Rollout / Bounded fourteen-preset patch rollout | Branch `codex/fourteen-preset-patch-rollout`, Basis `1c83f2b`; vierzehn veroeffentlichte Pakete, aktuelle Guidance und Quellenbindungen gemeinsam aktualisieren. Neuer rein technischer Assurance-Kontext mit vier getrennten Gates und Nullschreibnachweis; keine Erneuerung historischer LH-01-Abnahme oder Intake-Receipts. Produktcode fehlt: Produkt-Build/Test/TUI-Smoke kein Pass. Matrix-/Paritaets-/Security-/Analyse-/Statistik- und exakte CI-Gates vor MergeAndSync; Ergebnisse im Liefer-PR. Keine Community-/weitere Flotten-/Produktfreigabe, keine gemessene KI-Produktivitaet. / Update fourteen immutable packages and bounded technical evidence, preserving feature history and unchanged statistics methodology. Validate applicable governance gates before exact-head delivery, without claiming absent product regression or implementation authority. |
+
 ## Gesamtstatistik / Overall Statistics
 
 <!-- project-statistics-v2:begin -->
