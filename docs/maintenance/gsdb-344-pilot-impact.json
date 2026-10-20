@@ -7,7 +7,20 @@
       "rationale": "Bounded GSDB 3.4.4 and Assurance 0.1.5 adoption; preserve historical and project-specific evidence, reassess changed controls without inferred acceptance.",
       "documents": [
         "README.md",
-        "docs/maintenance/gsdb-344-pilot-2026-10-20.md"
+        "docs/maintenance/gsdb-344-pilot-2026-10-20.md",
+        "docs/maintenance/gsdb-344-external-references.json",
+        "docs/maintenance/governance-review-and-rollout.md",
+        "docs/maintenance/gsdb-coverage-2026-10-20.md",
+        "docs/maintenance/gsdb-coverage-independent-fixes-2026-10-20.md",
+        "docs/maintenance/gsdb-coverage-p3-followup-2026-10-20.md",
+        "docs/maintenance/gsdb-independent-fixes-2026-10-20.md",
+        "docs/maintenance/gsdb-level0-review-2026-10-19.md",
+        "docs/maintenance/gsdb-p3-followup-2026-10-20.md",
+        "docs/maintenance/gsdb-review-remediation-2026-10-20.md",
+        "docs/maintenance/gsdb-source-closure-2026-10-20.md",
+        "docs/maintenance/gsdb-source-review-2026-10-20.json",
+        "docs/maintenance/gsdb-source-review-independent-fixes-2026-10-20.json",
+        "docs/maintenance/gsdb-source-review-p3-followup-2026-10-20.json"
       ],
       "owner": "Thorsten Hindermann",
       "audiences": [
