@@ -83,6 +83,13 @@ heuristic would otherwise count spec.md as a test.*
 
 | 2026-10-18 | Begrenzter 14-Preset-Patch-Rollout / Bounded fourteen-preset patch rollout | Branch `codex/fourteen-preset-patch-rollout`, Basis `1c83f2b`; vierzehn veroeffentlichte Pakete, aktuelle Guidance und Quellenbindungen gemeinsam aktualisieren. Neuer rein technischer Assurance-Kontext mit vier getrennten Gates und Nullschreibnachweis; keine Erneuerung historischer LH-01-Abnahme oder Intake-Receipts. Produktcode fehlt: Produkt-Build/Test/TUI-Smoke kein Pass. Matrix-/Paritaets-/Security-/Analyse-/Statistik- und exakte CI-Gates vor MergeAndSync; Ergebnisse im Liefer-PR. Keine Community-/weitere Flotten-/Produktfreigabe, keine gemessene KI-Produktivitaet. / Update fourteen immutable packages and bounded technical evidence, preserving feature history and unchanged statistics methodology. Validate applicable governance gates before exact-head delivery, without claiming absent product regression or implementation authority. |
 
+### 2026-10-20 - GSDB 3.4.4 / Assurance 0.1.5 Pilot
+
+DE: Manifestgebundene GSDB-Übernahme aus Level 0 d9898356, 157 IDs erhalten;
+Assurance 0.1.5 gezielt integriert, andere 13 Pakete und historische Evidence erhalten.
+[Nachweis / Evidence](maintenance/gsdb-344-pilot-2026-10-20.md).
+EN: Bounded source/preset adoption and new project evidence; no product or fleet acceptance.
+
 ## Gesamtstatistik / Overall Statistics
 
 <!-- project-statistics-v2:begin -->
