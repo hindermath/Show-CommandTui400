@@ -1,5 +1,7 @@
 # Show-CommandTui400
 
+[GSDB 3.4.4: Pilotrollout / pilot rollout](docs/maintenance/gsdb-344-pilot-2026-10-20.md).
+
 Eine OS/400-inspirierte, rein textbasierte Bedienoberfläche für PowerShell 7:
 Befehle finden, Parameter geführt ausfüllen und den fertigen Aufruf in der
 aktuellen Sitzung verwenden.
