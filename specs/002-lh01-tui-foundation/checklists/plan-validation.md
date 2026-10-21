@@ -82,3 +82,54 @@ und Security-/Architecture-Gates berücksichtigen.
 Current evidence/distinct review assess the corrected payload. Deferred/excluded
 proof is not PASS. No automatic tasks/product/delivery. Prior sources stay intact;
 source freshness/security/architecture readiness precedes product start.
+
+## Quellen-/Analysevalidierung 2026-10-21 / Source and analysis validation
+
+### DE
+
+Auftrag: Quellenupdate LH-01, vollständiges anderes Review, gezielter Spec-/Plan-/Tasks-Abgleich und MergeAndSync/Admin-Bypass. Quelle: PR #52/702f163 plus erklärte vorherige Änderungen aus PR #49/#51. [Einzelbewertung](../../../docs/planning/lh00-lh01-gsdb344-assessment.md), [Quellenentscheid](../../../docs/planning/lh00-lh01-gsdb344-source-decisions.md). Sechs unterschiedliche Quellenabweichungen je Vorgängerreceipt sind im Entscheid mit alten/neuen Hashes und Git-Verlauf erklärt. Sämtliche vorherigen Generationen bleiben unverändert archiviert. Die normativen Kontrollauszüge erhalten Text und Vollquellhashbindung, ohne öffentliche Schlüssel-Beispielmarker in den Receipt-Quelldateien zu vervielfältigen oder Secret-Prüfungen abzumildern.
+
+Analyse separat für dieses Feature, ausschließlich lesend: Featurepfade wurden explizit über SPECIFY_FEATURE_DIRECTORY und --paths-only aufgelöst, damit die persistierte Featureauswahl unverändert bleibt. Spec/Plan/Tasks, Constitution und vorhandene Abdeckungstabellen ausgewertet; kein Hook vorhanden. Keine neue offene Critical-/High-/Medium-/Low-Inkonsistenz im Änderungssatz. Die 29 offenen Anwendbarkeitsentscheidungen und die als Not Assessed erfasste Umsetzung sind ausdrücklich Folgearbeit, keine verdeckten Analysebefunde oder bestandene Abnahme.
+
+| Analysebereich | Ergebnis | Zuordnung |
+|---|---|---|
+| Anforderungen/Erfolgskriterien | 21 eindeutige prüfbare Kennungen mit Aufgabenabdeckung plus zwei erhaltene technische OD-Entscheidungen; 100% zugeordnet, nicht 100% implementiert | FR-01-001–011; QG-01-001–005; AC-01-001–005 |
+| Aufgaben | 65 eindeutige IDs; alle bestehenden Checkboxen unverändert | T001–T063; neu T064/T065 |
+| Neue GSDB-Abdeckung | 50/50 Kontroll-IDs, 18 Applicable, 29 Open, 3 begrenzte N/A; Erfüllung getrennt Not Assessed | T064 → T058; T065 → T063 |
+| Constitution | Keine neue Pflichtverletzung; Quellen-/Nachweistreue, DE/EN und Auftragstrennung gewahrt | FR-00-007/008/009 bzw. QG-01-002/004 |
+| Nicht zugeordnete neue Aufgaben | 0 | Neue Aufgaben konkretisieren vorhandene Governance-Anforderungen |
+| Dubletten/Unklarheiten | 0 neue offene Analysebefunde | Fachlicher Umfang und Entscheidungen unverändert |
+
+Routing nach explizit freigegebenem lokalem Refresh Aligned; keine lokale Profil-/Providerkonfiguration versioniert. 14-Preset-Check exakt bestanden, Agenten-/Navigationsparität 7 Tests bestanden. PSScriptAnalyzer1.25.0: 84 Dateien, keine neuen Error/Warning, vier bestehende synthetische Probeausnahmen unverändert. Endgültige Receipt-/Review-, Link-/Secret-/Diff- und Lieferprüfungen werden nach frischen Reviews im abschließenden Nachweisblock ergänzt. Statistikdrift bleibt bis Quellencommit → Rendern → Prüfen → Statistikcommit erwartbar und wird nicht vorzeitig als PASS bezeichnet.
+
+Documentation Impact genau `UpdateRequired`. Owner Thorsten; Zielgruppe Maintainer, Autoren und Lernende ohne Spec-Kit-Vorkenntnisse. Kanonische Quellen sind aktualisierte Intakes, ihre Vorgänger und gebundene Projekt-/GSDB-Dateien; Leserpfad Intake → Receipt/eigenes Review → Zuordnung → Spec/Plan/Tasks → nächste offene Aufgabe. Sprache DE zuerst/EN danach B2, Textalternative für die vollständige tabellarische Zuordnung; kein zusätzliches Diagramm erforderlich. Distribution sourceOnly im Repository, kein Home-Sync oder Flottenrollout. Wiedervorlage bei Quelle/Scope/Rolle und vor betroffenem Gate, spätestens 2027-01-10.
+
+Keine Produkt-/Plattformtests, Installation, Folgefeature, Serienaktivierung oder neue menschliche Risiko-/Pilot-/Vollabnahme aus diesem Auftrag. Der LH-00-Mitgliedshash wurde mit Manifest-/Receipt-Vorgängern nachgeführt, Zustand Ready/Eligible und Kardinalität 1/1/0 Kanten unverändert. Die Plattformbindungen in #37–#39 und der produktive Payload bleiben bytegleich. Reale Terminals/Screenreader Deferred, Braillehardware Excluded; volle LH-00-Abnahme nach LH-02/vor LH-03.
+
+### EN
+
+The explicitly authorised package updates sources and distinct reviews, then aligns technical documents and delivers through exact-head MergeAndSync/admin bypass. The linked source decision explains six distinct predecessor-source drifts per intake with exact history/hashes; preserve all archives. Control excerpts avoid duplicating public key-example markers while retaining full canonical source/hash provenance and strict validation.
+
+Read-only analysis resolves this feature explicitly without persisting feature selection. Compared spec/plan/tasks, Constitution and existing traceability: 21 testable identifiers assigned to 65 unique tasks, no newly unmapped task or open consistency finding. Assigned coverage is not implementation coverage. All 50 changed controls have scope/evidence rows; 29 applicability decisions and unassessed implementation remain owned follow-up work. Existing checkboxes stay unchanged. No extension hook exists.
+
+Routing is Aligned after separately authorised local refresh. Exact fourteen-preset check, seven parity/navigation tests and PowerShell analysis pass with the four pre-existing synthetic probe exceptions. Final receipt/review/link/secret/diff/delivery checks follow below; statistics stay pending until authorised clean-tree rendering and final verification.
+
+One documentation impact: UpdateRequired, Thorsten, maintainers/authors/learners, German-first/English-second B2, canonical source and complete textual reader path stated above. Source-only distribution, no Home/fleet sync. Review source/scope/role changes and affected gates, by 2027-01-10. No product/platform execution, installation, future feature, series activation or new human acceptance. Preserve Ready/Eligible membership, exact target-platform bindings and practical evidence limits.
+
+### Abschließende Quellen-/Reviewprüfung / Final source and review checks
+
+| Prüfung / Check | Ergebnis / Result |
+|---|---|
+| Receipt 37703cb2-bbb5-43a8-892d-847ecd01928c | Bash und PowerShell Exit0; validierter Kandidat bytegleich publiziert / candidate validated and published identically |
+| Review b8cbae27-d13e-499d-bbc2-4f6a84a39cf9 | Ready,0 offene Befunde; vollständiger anderer Prüfer; beide Reviewvalidatoren Exit0 / complete distinct review, both validators pass |
+| Herkunft / Provenance | Lokale Quellen, Kontrollquellhashes und Vorgängerarchive stimmen; historische URL/Inline-Metadaten sind keine neue Retrieval-Behauptung / current local hashes and exact archives, historical snapshots remain historical |
+| Negativfall / Negative case | Manipulierter Zielhash mit Exit2 abgewiesen / tampered digest rejected |
+| Änderungen / Changes | Bisherige Task-Checkboxen, Produktpayload und Plattformbindungen unverändert / existing task states, product and frozen platform bindings unchanged |
+| Secrets | high=0, medium=0; Gitleaks kein Befund / no finding |
+| Lieferung / Delivery | Quellencommit und sauberes Rendern folgen diesem datierten Prüfschritt; endgültige Statistik-/Homogenitäts- und exakte CI-Ergebnisse im Liefer-PR nachweisen / record final rendering and exact-head CI in delivery PR |
+
+DE: Die beiden Analysen finden keine offenen startrelevanten Inkonsistenzen im Quellen-/Dokumentationsänderungssatz. Das erteilt keinen neuen Implementierungsauftrag und schließt keine der neuen Folgeaufgaben oder offenen Produkt-/Rechts-/Plattformabnahmen.
+EN: Both analyses find no open start-relevant inconsistency in this source/documentation change set. No new implementation authority or completion of follow-up tasks, product/legal/platform acceptance follows.
+
+DE: Vor der ersten Git-Lieferung wurden je eine überzählige leere Schlusszeile in zwei neuen Quelldokumenten entfernt. Die Intakes blieben bytegleich. Beide laufenden Authoring-Vorgänge dokumentieren die reinen Formatdeltas und exakte Receipt-Zwischenstände; vorherige Ready-Reviews sind bytegleich archiviert und durch frische unabhängige Reviews überholt. Finale aktuelle Receipt-Validierung schließt die Vorgangsreparatur vor Commit ab.
+EN: Before initial Git delivery, remove one extra blank EOF line in each of two new source documents without changing intake bytes. Both authoring operations record exact format deltas and receipt checkpoints; preserve and supersede prior Ready reviews. Fresh distinct reviews and final current receipt validation close repair before commit.

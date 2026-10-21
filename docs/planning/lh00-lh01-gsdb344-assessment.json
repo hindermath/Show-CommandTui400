@@ -1,0 +1,1963 @@
+{
+  "schemaVersion": "1.0",
+  "documentType": "IntakeSourceAssessment",
+  "date": "2026-10-21",
+  "sourceCommit": "702f163db0237bce683cf6087a45cb3fcc666b6e",
+  "sourceDeltaPath": "docs/maintenance/gsdb-344-control-delta.json",
+  "sourceDeltaSha256": "8a4f98dc50311591a9ede91dafd29a158dba9a65643fb3b0c5fab066900cfaaf",
+  "owner": "Thorsten Hindermann",
+  "reviewDue": "2027-01-10",
+  "reevaluationTrigger": "Changed source, scope, role, release or before relevant acceptance; no inferred product acceptance.",
+  "controls": [
+    {
+      "id": "CL-01-10",
+      "sourcePath": "docs/secure-development/checklisten/CL_01_Standards-Anwendbarkeit.md",
+      "sourceNormalizedSha256": "d52d339fcb61a8585cf425104517e51a88b3826c3311a0a47d17f549b4fb3396",
+      "applicability": "Applicable",
+      "implementation": "Not Assessed",
+      "rationale": "Kontrollauswahl nach Name/Ausgabe, keine gemischten Nummern / Select named edition-specific controls",
+      "requiredEvidence": "Kontrollauswahl mit verlinkten Tests / Linked control/test selection",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Kontrollauswahl mit verlinkten Tests / Linked control/test selection",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-07-02",
+      "sourcePath": "docs/secure-development/checklisten/CL_07_CRA-Anwendbarkeit.md",
+      "sourceNormalizedSha256": "03b972af3e45b7fdc3e297fc1ef4b55d23d105f6dcc77f74b68e24b1c38cc53c",
+      "applicability": "Open",
+      "implementation": "Not Assessed",
+      "rationale": "Klasse und Konformitätspfad setzen geklärte CRA-Anwendbarkeit voraus / Classification follows scoped CRA assessment",
+      "requiredEvidence": "Kernfunktion/Klasse/Rechtsstelle/Pfad oder begründetes N/A / Classification with rationale",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Kernfunktion/Klasse/Rechtsstelle/Pfad oder begründetes N/A / Classification with rationale",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-07-12",
+      "sourcePath": "docs/secure-development/checklisten/CL_07_CRA-Anwendbarkeit.md",
+      "sourceNormalizedSha256": "03b972af3e45b7fdc3e297fc1ef4b55d23d105f6dcc77f74b68e24b1c38cc53c",
+      "applicability": "Open",
+      "implementation": "Not Assessed",
+      "rationale": "Keine N/A-Rechtsausnahme ohne konkreten Produkt-/Rollenbezug / No unsupported legal N/A",
+      "requiredEvidence": "Begründung, genaue Rechtsstelle, Owner, Gegenprüfung und Termin / Full N/A decision record",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Begründung, genaue Rechtsstelle, Owner, Gegenprüfung und Termin / Full N/A decision record",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-08-03",
+      "sourcePath": "docs/secure-development/checklisten/CL_08_Sicherheits-Code-Review.md",
+      "sourceNormalizedSha256": "571b0ee9c2970c09c4a5dd4ef17831d4a2b7f88571265f32037bb784a2b3be17",
+      "applicability": "N/A",
+      "implementation": "Not Assessed",
+      "rationale": "Kein Authentifizierungs-/OAuth-Feature; Host-/GitHub-Anmeldung außerhalb Produktauftrag / No product authentication feature",
+      "requiredEvidence": "Reevaluate bei neuem Authentifizierungsscope / Reassess if authentication is added",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Reevaluate bei neuem Authentifizierungsscope / Reassess if authentication is added",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-08-10",
+      "sourcePath": "docs/secure-development/checklisten/CL_08_Sicherheits-Code-Review.md",
+      "sourceNormalizedSha256": "571b0ee9c2970c09c4a5dd4ef17831d4a2b7f88571265f32037bb784a2b3be17",
+      "applicability": "Applicable",
+      "implementation": "Not Assessed",
+      "rationale": "Pfadkomponenten, Symlink/Reparse und Quellenlimits; Produkt-/Werkzeuggrenzen trennen / Bound paths and tooling I/O",
+      "requiredEvidence": "Traversal/Geschwisterpräfix/Symlink/Redirect-Negativfälle je tatsächlicher I/O-Senke / Sink-specific negative evidence",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Traversal/Geschwisterpräfix/Symlink/Redirect-Negativfälle je tatsächlicher I/O-Senke / Sink-specific negative evidence",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-08-13",
+      "sourcePath": "docs/secure-development/checklisten/CL_08_Sicherheits-Code-Review.md",
+      "sourceNormalizedSha256": "571b0ee9c2970c09c4a5dd4ef17831d4a2b7f88571265f32037bb784a2b3be17",
+      "applicability": "Applicable",
+      "implementation": "Not Assessed",
+      "rationale": "Sprachprofile auch für C#/Bash/PowerShell/Python; MSL ersetzt Review nicht / Language profiles despite MSL",
+      "requiredEvidence": "Betroffene Sprach-/Senkenprofile oder gleichwertige Evidence / Per-language review",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Betroffene Sprach-/Senkenprofile oder gleichwertige Evidence / Per-language review",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-08-12",
+      "sourcePath": "docs/secure-development/checklisten/CL_08_Sicherheits-Code-Review.md",
+      "sourceNormalizedSha256": "571b0ee9c2970c09c4a5dd4ef17831d4a2b7f88571265f32037bb784a2b3be17",
+      "applicability": "Applicable",
+      "implementation": "Not Assessed",
+      "rationale": "Positive/negative Sicherheitsfälle; Quoten nicht aus Fallzahl ableiten / Test both paths; case counts do not prove coverage",
+      "requiredEvidence": "Mindestens 85% Branch-Coverage kritischer Module und 80% Schnittstellen/UI-Flows oder menschlich entschiedene Ausnahme; Messung offen / Measured scoped coverage or human decision",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Mindestens 85% Branch-Coverage kritischer Module und 80% Schnittstellen/UI-Flows oder menschlich entschiedene Ausnahme; Messung offen / Measured scoped coverage or human decision",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-08-06",
+      "sourcePath": "docs/secure-development/checklisten/CL_08_Sicherheits-Code-Review.md",
+      "sourceNormalizedSha256": "571b0ee9c2970c09c4a5dd4ef17831d4a2b7f88571265f32037bb784a2b3be17",
+      "applicability": "Applicable",
+      "implementation": "Not Assessed",
+      "rationale": "SHA-256 für Herkunft; keine Erfindung eigener Verschlüsselung / SHA-256 provenance; no custom encryption",
+      "requiredEvidence": "Hash-Positiv-/Negativtests, übrige Algorithmen nur bei Einsatz / Actual algorithm evidence",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Hash-Positiv-/Negativtests, übrige Algorithmen nur bei Einsatz / Actual algorithm evidence",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-08-02",
+      "sourcePath": "docs/secure-development/checklisten/CL_08_Sicherheits-Code-Review.md",
+      "sourceNormalizedSha256": "571b0ee9c2970c09c4a5dd4ef17831d4a2b7f88571265f32037bb784a2b3be17",
+      "applicability": "Applicable",
+      "implementation": "Not Assessed",
+      "rationale": "Strukturierte Argumente und sichere Anzeige statt Textauswertung / Structured arguments and safe display",
+      "requiredEvidence": "Positive/negative Senkentests; HTML/SQL ohne solche Senke N/A / Sink-specific tests",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Positive/negative Senkentests; HTML/SQL ohne solche Senke N/A / Sink-specific tests",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-09-11",
+      "sourcePath": "docs/secure-development/checklisten/CL_09_KI-Codeerzeugung.md",
+      "sourceNormalizedSha256": "1a1c97d69b74026d76c76e620b4160e54a4f3bfb2c09d6b5f60f891e2a8b7c62",
+      "applicability": "Open",
+      "implementation": "Not Assessed",
+      "rationale": "Ignore-Dateien sind keine technische Zugriffssperre / Ignore files do not establish access control",
+      "requiredEvidence": "Versionsgebundene Werkzeugkonfiguration und Ausschluss-Negativtest / Versioned exclusion evidence",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Versionsgebundene Werkzeugkonfiguration und Ausschluss-Negativtest / Versioned exclusion evidence",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-09-01",
+      "sourcePath": "docs/secure-development/checklisten/CL_09_KI-Codeerzeugung.md",
+      "sourceNormalizedSha256": "1a1c97d69b74026d76c76e620b4160e54a4f3bfb2c09d6b5f60f891e2a8b7c62",
+      "applicability": "Open",
+      "implementation": "Not Assessed",
+      "rationale": "KI-Anbieter, Verträge, Datenflüsse und Kontoeinstellungen nicht erraten / Unknown AI provider properties stay open",
+      "requiredEvidence": "Datierter Inventareintrag und tatsächliche Freigabe ohne private Daten / Scoped authorised tool inventory",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Datierter Inventareintrag und tatsächliche Freigabe ohne private Daten / Scoped authorised tool inventory",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-09-13",
+      "sourcePath": "docs/secure-development/checklisten/CL_09_KI-Codeerzeugung.md",
+      "sourceNormalizedSha256": "1a1c97d69b74026d76c76e620b4160e54a4f3bfb2c09d6b5f60f891e2a8b7c62",
+      "applicability": "Applicable",
+      "implementation": "Not Assessed",
+      "rationale": "Auditspur und Aufbewahrung je Datenzweck; keine pauschale Logfrist / Purpose-bound audit and retention",
+      "requiredEvidence": "Minimierte Metadaten, Integrität, Zugriff und Löschkonzept/-test / Minimized audit and deletion evidence",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Minimierte Metadaten, Integrität, Zugriff und Löschkonzept/-test / Minimized audit and deletion evidence",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-09-05",
+      "sourcePath": "docs/secure-development/checklisten/CL_09_KI-Codeerzeugung.md",
+      "sourceNormalizedSha256": "1a1c97d69b74026d76c76e620b4160e54a4f3bfb2c09d6b5f60f891e2a8b7c62",
+      "applicability": "Applicable",
+      "implementation": "Not Assessed",
+      "rationale": "Paketherkunft vor Installation bewerten / Verify package provenance before installation",
+      "requiredEvidence": "Name/Maintainer/Version/Repository sowie risikoangepasste Scans / Provenance and risk-based scans",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Name/Maintainer/Version/Repository sowie risikoangepasste Scans / Provenance and risk-based scans",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-09-16",
+      "sourcePath": "docs/secure-development/checklisten/CL_09_KI-Codeerzeugung.md",
+      "sourceNormalizedSha256": "1a1c97d69b74026d76c76e620b4160e54a4f3bfb2c09d6b5f60f891e2a8b7c62",
+      "applicability": "Open",
+      "implementation": "Not Assessed",
+      "rationale": "Produkt-AI-SBOM N/A ersetzt kein Werkzeug-/Organisationsscreening / Product AI N/A does not exempt tools",
+      "requiredEvidence": "Getrenntes Screening je Regime/Rolle/Land mit Quellenfassung / Separate scoped screening",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Getrenntes Screening je Regime/Rolle/Land mit Quellenfassung / Separate scoped screening",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-09-06",
+      "sourcePath": "docs/secure-development/checklisten/CL_09_KI-Codeerzeugung.md",
+      "sourceNormalizedSha256": "1a1c97d69b74026d76c76e620b4160e54a4f3bfb2c09d6b5f60f891e2a8b7c62",
+      "applicability": "Applicable",
+      "implementation": "Not Assessed",
+      "rationale": "KI-Codeherkunft/Lizenz ohne Snippet-Pauschalausnahme / No snippet-length licence exemption",
+      "requiredEvidence": "Lizenzentscheidung oder Open mit Owner und Folgeaktion / Licence decision or owned open item",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Lizenzentscheidung oder Open mit Owner und Folgeaktion / Licence decision or owned open item",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-09-12",
+      "sourcePath": "docs/secure-development/checklisten/CL_09_KI-Codeerzeugung.md",
+      "sourceNormalizedSha256": "1a1c97d69b74026d76c76e620b4160e54a4f3bfb2c09d6b5f60f891e2a8b7c62",
+      "applicability": "Open",
+      "implementation": "Not Assessed",
+      "rationale": "KI-Kompetenz und lokale Lernvorgaben; keine erfundenen HR-Nachweise / No fabricated training records",
+      "requiredEvidence": "Ownergeprüfte Maßnahmen je Nutzungskontext; persönliche Details privat / Scoped competence evidence",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Ownergeprüfte Maßnahmen je Nutzungskontext; persönliche Details privat / Scoped competence evidence",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-10-12",
+      "sourcePath": "docs/secure-development/checklisten/CL_10_Sichere-Entwicklungsumgebung.md",
+      "sourceNormalizedSha256": "3403d31987dd1d26f2e76002193ad7aaf856dd516e8c0ebbfa3ab72ff48b562c",
+      "applicability": "Applicable",
+      "implementation": "Not Assessed",
+      "rationale": "Integrität von Entwicklungsnachweisen, Aufbewahrung datenkategorisiert / Scoped development evidence retention",
+      "requiredEvidence": "Owner, Zweck, Integrität, Löschung ohne private Logs / Retention and integrity evidence",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Owner, Zweck, Integrität, Löschung ohne private Logs / Retention and integrity evidence",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-11-11",
+      "sourcePath": "docs/secure-development/checklisten/CL_11_Datenschutz-Folgenabschaetzung.md",
+      "sourceNormalizedSha256": "bd40ec60bb50af1f4a482135b5b982892a64aa55b0dbfbc9777e3957589b2577",
+      "applicability": "Open",
+      "implementation": "Not Assessed",
+      "rationale": "Betroffenenrechte nur für tatsächliche Verarbeitungen zuordnen / Map actual processing and rights",
+      "requiredEvidence": "Rechte-/Fristen-/Identitätsprüfung ohne neue Produktportale zu erfinden / Scoped rights process",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Rechte-/Fristen-/Identitätsprüfung ohne neue Produktportale zu erfinden / Scoped rights process",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-11-06",
+      "sourcePath": "docs/secure-development/checklisten/CL_11_Datenschutz-Folgenabschaetzung.md",
+      "sourceNormalizedSha256": "bd40ec60bb50af1f4a482135b5b982892a64aa55b0dbfbc9777e3957589b2577",
+      "applicability": "Open",
+      "implementation": "Not Assessed",
+      "rationale": "DPIA-Pflicht und benannter DSB nicht unterstellen / Do not assume DPIA/DPO facts",
+      "requiredEvidence": "Nach Schwellenprüfung DSB-Beteiligung soweit benannt oder begründetes N/A / Conditional DPIA involvement",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Nach Schwellenprüfung DSB-Beteiligung soweit benannt oder begründetes N/A / Conditional DPIA involvement",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-11-12",
+      "sourcePath": "docs/secure-development/checklisten/CL_11_Datenschutz-Folgenabschaetzung.md",
+      "sourceNormalizedSha256": "bd40ec60bb50af1f4a482135b5b982892a64aa55b0dbfbc9777e3957589b2577",
+      "applicability": "Open",
+      "implementation": "Not Assessed",
+      "rationale": "Jährliche DPIA-Prüfung ist lokale Regel; Ereignisse separat / Local annual rule, event-driven reassessment",
+      "requiredEvidence": "Datierter Trigger-/Revieweintrag nach DPIA-Schwellenentscheidung / Conditional review record",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Datierter Trigger-/Revieweintrag nach DPIA-Schwellenentscheidung / Conditional review record",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-11-08",
+      "sourcePath": "docs/secure-development/checklisten/CL_11_Datenschutz-Folgenabschaetzung.md",
+      "sourceNormalizedSha256": "bd40ec60bb50af1f4a482135b5b982892a64aa55b0dbfbc9777e3957589b2577",
+      "applicability": "Open",
+      "implementation": "Not Assessed",
+      "rationale": "Verarbeitungsverzeichnis nach tatsächlichen Datenflüssen; lokale Regel getrennt / Processing inventory, separate local rules",
+      "requiredEvidence": "Datensparsame Verarbeitungsliste mit Rollen und Prüfentscheidung / Scoped processing record",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Datensparsame Verarbeitungsliste mit Rollen und Prüfentscheidung / Scoped processing record",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-11-07",
+      "sourcePath": "docs/secure-development/checklisten/CL_11_Datenschutz-Folgenabschaetzung.md",
+      "sourceNormalizedSha256": "bd40ec60bb50af1f4a482135b5b982892a64aa55b0dbfbc9777e3957589b2577",
+      "applicability": "Open",
+      "implementation": "Not Assessed",
+      "rationale": "Konsultation erst bei geklärtem verbleibendem hohen Risiko / Conditional high-risk consultation",
+      "requiredEvidence": "Schwellen-/Zuständigkeitsprüfung; keine Behördenkommunikation / Conditional evidence, no outreach",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Schwellen-/Zuständigkeitsprüfung; keine Behördenkommunikation / Conditional evidence, no outreach",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-07-06",
+      "sourcePath": "docs/secure-development/checklisten/CL_07_CRA-Anwendbarkeit.md",
+      "sourceNormalizedSha256": "03b972af3e45b7fdc3e297fc1ef4b55d23d105f6dcc77f74b68e24b1c38cc53c",
+      "applicability": "Open",
+      "implementation": "Not Assessed",
+      "rationale": "Selbstbewertung/FOSS-Ausnahme nicht pauschal übernehmen / No blanket self-assessment exception",
+      "requiredEvidence": "Begründeter Bewertungspfad nach Rollen-/Klassenprüfung / Conditional assessment route",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Begründeter Bewertungspfad nach Rollen-/Klassenprüfung / Conditional assessment route",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-07-01",
+      "sourcePath": "docs/secure-development/checklisten/CL_07_CRA-Anwendbarkeit.md",
+      "sourceNormalizedSha256": "03b972af3e45b7fdc3e297fc1ef4b55d23d105f6dcc77f74b68e24b1c38cc53c",
+      "applicability": "Open",
+      "implementation": "Not Assessed",
+      "rationale": "CRA-Rolle und Marktbereitstellung nicht aus privatem/FOSS-Projekt ableiten / Do not infer CRA role from private/FOSS label",
+      "requiredEvidence": "Produkt/Version/Markt/Rolle und Rechtsquelle einzeln prüfen / Scoped applicability evidence",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Produkt/Version/Markt/Rolle und Rechtsquelle einzeln prüfen / Scoped applicability evidence",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-07-09",
+      "sourcePath": "docs/secure-development/checklisten/CL_07_CRA-Anwendbarkeit.md",
+      "sourceNormalizedSha256": "03b972af3e45b7fdc3e297fc1ef4b55d23d105f6dcc77f74b68e24b1c38cc53c",
+      "applicability": "Open",
+      "implementation": "Not Assessed",
+      "rationale": "Schwachstellen- und Vorfallfristen getrennt; keine reale Meldung / Separate vulnerability and incident deadlines",
+      "requiredEvidence": "Rollen-/Schwellen-/Fristenmatrix aus Primärquellen nach Screening / Conditional reporting matrix",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Rollen-/Schwellen-/Fristenmatrix aus Primärquellen nach Screening / Conditional reporting matrix",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-07-05",
+      "sourcePath": "docs/secure-development/checklisten/CL_07_CRA-Anwendbarkeit.md",
+      "sourceNormalizedSha256": "03b972af3e45b7fdc3e297fc1ef4b55d23d105f6dcc77f74b68e24b1c38cc53c",
+      "applicability": "Open",
+      "implementation": "Not Assessed",
+      "rationale": "Schwachstelleninventar fachlich nützlich; CRA-Pflichten gesondert offen / Inventory useful; statutory duties separate",
+      "requiredEvidence": "SBOM/Behebung/Offenlegung/Update-Prozess im geklärten Scope / Scoped vulnerability process",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "SBOM/Behebung/Offenlegung/Update-Prozess im geklärten Scope / Scoped vulnerability process",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-01-08",
+      "sourcePath": "docs/secure-development/checklisten/CL_01_Standards-Anwendbarkeit.md",
+      "sourceNormalizedSha256": "d52d339fcb61a8585cf425104517e51a88b3826c3311a0a47d17f549b4fb3396",
+      "applicability": "Applicable",
+      "implementation": "Not Assessed",
+      "rationale": "SAMM als Verbesserung, nicht Zertifikat / SAMM for improvement, not certification",
+      "requiredEvidence": "Datierte Reife-/Lückenbewertung / Dated gap assessment",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Datierte Reife-/Lückenbewertung / Dated gap assessment",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-01-03",
+      "sourcePath": "docs/secure-development/checklisten/CL_01_Standards-Anwendbarkeit.md",
+      "sourceNormalizedSha256": "d52d339fcb61a8585cf425104517e51a88b3826c3311a0a47d17f549b4fb3396",
+      "applicability": "Applicable",
+      "implementation": "Not Assessed",
+      "rationale": "Lieferkette auch für CLI, Skripte und Governance-Artefakte bewerten / Assess delivered CLI, scripts and governance supply chain",
+      "requiredEvidence": "Artefaktinventar, SBOM-/VEX-/Signatur-Anwendbarkeit je Lieferung / Per-delivery inventory and scoped evidence",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Artefaktinventar, SBOM-/VEX-/Signatur-Anwendbarkeit je Lieferung / Per-delivery inventory and scoped evidence",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-01-01",
+      "sourcePath": "docs/secure-development/checklisten/CL_01_Standards-Anwendbarkeit.md",
+      "sourceNormalizedSha256": "d52d339fcb61a8585cf425104517e51a88b3826c3311a0a47d17f549b4fb3396",
+      "applicability": "Applicable",
+      "implementation": "Not Assessed",
+      "rationale": "SSDF 1.1 und CWE-Jahrgang getrennt von Entwürfen / Separate published SSDF/CWE from drafts",
+      "requiredEvidence": "SSDF-/CWE-Zuordnung mit Quellenfassung / Versioned mapping",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "SSDF-/CWE-Zuordnung mit Quellenfassung / Versioned mapping",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-01-11",
+      "sourcePath": "docs/secure-development/checklisten/CL_01_Standards-Anwendbarkeit.md",
+      "sourceNormalizedSha256": "d52d339fcb61a8585cf425104517e51a88b3826c3311a0a47d17f549b4fb3396",
+      "applicability": "Applicable",
+      "implementation": "Not Assessed",
+      "rationale": "Anwendbarkeit getrennt von Erfüllung, Unsicherheit Open / Separate applicability and implementation",
+      "requiredEvidence": "Owner, Grund, Evidence, nächste Maßnahme und Wiedervorlage je Kontrolle / Per-control evidence fields",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Owner, Grund, Evidence, nächste Maßnahme und Wiedervorlage je Kontrolle / Per-control evidence fields",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-01-12",
+      "sourcePath": "docs/secure-development/checklisten/CL_01_Standards-Anwendbarkeit.md",
+      "sourceNormalizedSha256": "d52d339fcb61a8585cf425104517e51a88b3826c3311a0a47d17f549b4fb3396",
+      "applicability": "Open",
+      "implementation": "Not Assessed",
+      "rationale": "Produkt, KI-Werkzeug und Organisation je Rolle/Rechtsregime getrennt; keine private/FOSS-Pauschalausnahme / Separate legal scopes; no blanket exemption",
+      "requiredEvidence": "Ownergeprüftes Screening je Regime mit Land/Rolle/Rechtsfassung; unbekannte Felder Open / Owner-reviewed scoped screening",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Ownergeprüftes Screening je Regime mit Land/Rolle/Rechtsfassung; unbekannte Felder Open / Owner-reviewed scoped screening",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-02-13",
+      "sourcePath": "docs/secure-development/checklisten/CL_02_Sichere-Softwarearchitektur.md",
+      "sourceNormalizedSha256": "45f51a1bf357c8fe13689aa20b81b6b0298114090e834efa20129ff6f3e099d7",
+      "applicability": "Open",
+      "implementation": "Not Assessed",
+      "rationale": "Kein Produkt-Cloudtestat ableiten; C5-Anwendbarkeit für wesentliche Werkzeuge offen / No inferred assurance; tooling applicability open",
+      "requiredEvidence": "Nachweisumfang, Verantwortungen und Ersatznachweise prüfen / Assess assurance scope and gaps",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Nachweisumfang, Verantwortungen und Ersatznachweise prüfen / Assess assurance scope and gaps",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-02-12",
+      "sourcePath": "docs/secure-development/checklisten/CL_02_Sichere-Softwarearchitektur.md",
+      "sourceNormalizedSha256": "45f51a1bf357c8fe13689aa20b81b6b0298114090e834efa20129ff6f3e099d7",
+      "applicability": "Open",
+      "implementation": "Not Assessed",
+      "rationale": "Produkt ohne Cloudfunktion; GitHub/NuGet/KI-Werkzeugbetrieb separat nach C3A prüfen / No product cloud feature; assess tooling separately",
+      "requiredEvidence": "Anbieter-/Datenfluss-/Ausstiegsbewertung oder begründetes N/A je Scope / Scoped provider assessment",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Anbieter-/Datenfluss-/Ausstiegsbewertung oder begründetes N/A je Scope / Scoped provider assessment",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-02-02",
+      "sourcePath": "docs/secure-development/checklisten/CL_02_Sichere-Softwarearchitektur.md",
+      "sourceNormalizedSha256": "45f51a1bf357c8fe13689aa20b81b6b0298114090e834efa20129ff6f3e099d7",
+      "applicability": "Applicable",
+      "implementation": "Not Assessed",
+      "rationale": "Mehrere Schutzschichten für Quellen, Dateien und Ausführung / Layer source, file and execution protection",
+      "requiredEvidence": "Bedrohungsmodell mit Grenzen und Schutzschichten / Boundary and defense mapping",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Bedrohungsmodell mit Grenzen und Schutzschichten / Boundary and defense mapping",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-03-10",
+      "sourcePath": "docs/secure-development/checklisten/CL_03_Krypto-Mindestvorgaben.md",
+      "sourceNormalizedSha256": "be5d2629200268cb202ffba99f34f5d1e11252686496b5e9f7f477f5d7a69db3",
+      "applicability": "Open",
+      "implementation": "Not Assessed",
+      "rationale": "Keine eigenen Produktzertifikate; Werkzeug-Zertifikatsverantwortung offen / No own product certificates; tooling ownership open",
+      "requiredEvidence": "Schlüssel-/Zertifikatinventar nach Scope mit Owner oder N/A / Scoped inventory and responsibility",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Schlüssel-/Zertifikatinventar nach Scope mit Owner oder N/A / Scoped inventory and responsibility",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-03-14",
+      "sourcePath": "docs/secure-development/checklisten/CL_03_Krypto-Mindestvorgaben.md",
+      "sourceNormalizedSha256": "be5d2629200268cb202ffba99f34f5d1e11252686496b5e9f7f477f5d7a69db3",
+      "applicability": "Open",
+      "implementation": "Not Assessed",
+      "rationale": "Kein eigenes Krypto-Modul; Abhängigkeiten/Providerinventar und PQC-Bedarf offen / Own crypto absent; dependency/provider inventory open",
+      "requiredEvidence": "Risikobasierte Inventar-/Migrationsbewertung, keine erfundene Produktimplementierung / Scoped inventory decision",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Risikobasierte Inventar-/Migrationsbewertung, keine erfundene Produktimplementierung / Scoped inventory decision",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-12-05",
+      "sourcePath": "docs/secure-development/checklisten/CL_12_Agentische-KI-Sandbox.md",
+      "sourceNormalizedSha256": "2c02d0730c7a1e4ec93f062499f7ebc68083f5ffce432929459c917918b07fc4",
+      "applicability": "Open",
+      "implementation": "Not Assessed",
+      "rationale": "Werkzeug-/Modellinventar mit Version und begrenztem Scope / Scoped agent tool/model inventory",
+      "requiredEvidence": "Freigaben und Versionen ohne Tokens/Privatkonfiguration / Authorised inventory without secrets",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Freigaben und Versionen ohne Tokens/Privatkonfiguration / Authorised inventory without secrets",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-03-07",
+      "sourcePath": "docs/secure-development/checklisten/CL_03_Krypto-Mindestvorgaben.md",
+      "sourceNormalizedSha256": "be5d2629200268cb202ffba99f34f5d1e11252686496b5e9f7f477f5d7a69db3",
+      "applicability": "Applicable",
+      "implementation": "Not Assessed",
+      "rationale": "TLS für Quellen-/Paket-/Git-Zugriffe ist Werkzeuggrenze, keine neue Produktnetzfunktion / TLS applies to tooling, not a new product network feature",
+      "requiredEvidence": "Transportkonfiguration und Quellen-/Redirectgrenzen belegen / Bound transport evidence",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Transportkonfiguration und Quellen-/Redirectgrenzen belegen / Bound transport evidence",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-05-11",
+      "sourcePath": "docs/secure-development/checklisten/CL_05_Lieferkette-Build-Integritaet.md",
+      "sourceNormalizedSha256": "63d0ef15476da6d5d782c2feb9c74387e4328ce9a9228b47df730a382a99f80b",
+      "applicability": "Applicable",
+      "implementation": "Not Assessed",
+      "rationale": "MIT und Paketlizenzen einzeln; Copyleft nicht pauschal ausschließen / Assess exact licences individually",
+      "requiredEvidence": "Herkunft/Lizenzfassung/Nutzung/Weitergabe je Bestandteil / Per-component provenance and licence decision",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Herkunft/Lizenzfassung/Nutzung/Weitergabe je Bestandteil / Per-component provenance and licence decision",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-05-13",
+      "sourcePath": "docs/secure-development/checklisten/CL_05_Lieferkette-Build-Integritaet.md",
+      "sourceNormalizedSha256": "63d0ef15476da6d5d782c2feb9c74387e4328ce9a9228b47df730a382a99f80b",
+      "applicability": "N/A",
+      "implementation": "Not Assessed",
+      "rationale": "Weder LH-00-Dateiprozess noch LH-01-TUI bindet Produkt-KI ein; KI-Entwicklungswerkzeuge separat / No delivered AI feature; tools separate",
+      "requiredEvidence": "Produkt-AI-SBOM N/A mit Scope, Änderung als Trigger; Werkzeug-Screening bleibt Open / Scoped N/A, separate tools",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Produkt-AI-SBOM N/A mit Scope, Änderung als Trigger; Werkzeug-Screening bleibt Open / Scoped N/A, separate tools",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-06-09",
+      "sourcePath": "docs/secure-development/checklisten/CL_06_Schwachstellenoffenlegung.md",
+      "sourceNormalizedSha256": "b9548318e2d261a4534645167e1576642ec1809aa342ed532b9739c74b63a174",
+      "applicability": "Open",
+      "implementation": "Not Assessed",
+      "rationale": "Support/Backports nicht mit Updateverfügbarkeit verwechseln / Separate support from update availability",
+      "requiredEvidence": "Ownerentscheidung zu unterstützten Versionen und Pflichten / Owner-scoped support decision",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Ownerentscheidung zu unterstützten Versionen und Pflichten / Owner-scoped support decision",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-06-07",
+      "sourcePath": "docs/secure-development/checklisten/CL_06_Schwachstellenoffenlegung.md",
+      "sourceNormalizedSha256": "b9548318e2d261a4534645167e1576642ec1809aa342ed532b9739c74b63a174",
+      "applicability": "Open",
+      "implementation": "Not Assessed",
+      "rationale": "Meldepflichten hängen von Rolle, Ereignis und Rechtsregime ab / Reporting depends on role and regime",
+      "requiredEvidence": "Runbook mit Schwellen/Fristen erst nach Screening; keine Meldung ausführen / Scoped runbook after assessment",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Runbook mit Schwellen/Fristen erst nach Screening; keine Meldung ausführen / Scoped runbook after assessment",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-07-11",
+      "sourcePath": "docs/secure-development/checklisten/CL_07_CRA-Anwendbarkeit.md",
+      "sourceNormalizedSha256": "03b972af3e45b7fdc3e297fc1ef4b55d23d105f6dcc77f74b68e24b1c38cc53c",
+      "applicability": "Open",
+      "implementation": "Not Assessed",
+      "rationale": "Hersteller, Steward und Lieferantenrollen nicht gleichsetzen / Distinguish manufacturer, steward and supplier",
+      "requiredEvidence": "Rollen-/Vertragsmatrix, keine universellen OSS-Pflichten / Scoped responsibilities",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Rollen-/Vertragsmatrix, keine universellen OSS-Pflichten / Scoped responsibilities",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-07-04",
+      "sourcePath": "docs/secure-development/checklisten/CL_07_CRA-Anwendbarkeit.md",
+      "sourceNormalizedSha256": "03b972af3e45b7fdc3e297fc1ef4b55d23d105f6dcc77f74b68e24b1c38cc53c",
+      "applicability": "Open",
+      "implementation": "Not Assessed",
+      "rationale": "Anhang-I-Einzelpunkte erst im geklärten Produkt-/Rollenumfang / Annex I points need scoped assessment",
+      "requiredEvidence": "Punktweise Risiko-/Testzuordnung, keine pauschale Konformität / Pointwise evidence",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Punktweise Risiko-/Testzuordnung, keine pauschale Konformität / Pointwise evidence",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-07-07",
+      "sourcePath": "docs/secure-development/checklisten/CL_07_CRA-Anwendbarkeit.md",
+      "sourceNormalizedSha256": "03b972af3e45b7fdc3e297fc1ef4b55d23d105f6dcc77f74b68e24b1c38cc53c",
+      "applicability": "Open",
+      "implementation": "Not Assessed",
+      "rationale": "Kein CE-/Konformitätsauftrag aus diesem Quellenupdate / No conformity declaration authority here",
+      "requiredEvidence": "Erklärung/Sprachen/CE-Ort nur bei geklärter Pflicht vor Marktbereitstellung / Conditional release evidence",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Erklärung/Sprachen/CE-Ort nur bei geklärter Pflicht vor Marktbereitstellung / Conditional release evidence",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-07-10",
+      "sourcePath": "docs/secure-development/checklisten/CL_07_CRA-Anwendbarkeit.md",
+      "sourceNormalizedSha256": "03b972af3e45b7fdc3e297fc1ef4b55d23d105f6dcc77f74b68e24b1c38cc53c",
+      "applicability": "Open",
+      "implementation": "Not Assessed",
+      "rationale": "Support, Updates, Dokumente und Begleitinformation getrennt / Separate support and retention periods",
+      "requiredEvidence": "Ownergeprüfte Fristenentscheidung im geklärten Scope / Owner-reviewed periods",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Ownergeprüfte Fristenentscheidung im geklärten Scope / Owner-reviewed periods",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-07-08",
+      "sourcePath": "docs/secure-development/checklisten/CL_07_CRA-Anwendbarkeit.md",
+      "sourceNormalizedSha256": "03b972af3e45b7fdc3e297fc1ef4b55d23d105f6dcc77f74b68e24b1c38cc53c",
+      "applicability": "Open",
+      "implementation": "Not Assessed",
+      "rationale": "Technikdossier und personenbezogene Logs getrennt / Separate technical dossier and personal logs",
+      "requiredEvidence": "Anhang-VII-Index und Aufbewahrung nach geklärter Anwendbarkeit / Conditional dossier evidence",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Anhang-VII-Index und Aufbewahrung nach geklärter Anwendbarkeit / Conditional dossier evidence",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-07-03",
+      "sourcePath": "docs/secure-development/checklisten/CL_07_CRA-Anwendbarkeit.md",
+      "sourceNormalizedSha256": "03b972af3e45b7fdc3e297fc1ef4b55d23d105f6dcc77f74b68e24b1c38cc53c",
+      "applicability": "Open",
+      "implementation": "Not Assessed",
+      "rationale": "Keine kritische Produktklasse allein aus Beispielen ableiten / Do not infer critical class from examples",
+      "requiredEvidence": "Anhang-IV-Mapping nach Anwendbarkeitsentscheidung / Conditional category mapping",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Anhang-IV-Mapping nach Anwendbarkeitsentscheidung / Conditional category mapping",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-03-02",
+      "sourcePath": "docs/secure-development/checklisten/CL_03_Krypto-Mindestvorgaben.md",
+      "sourceNormalizedSha256": "be5d2629200268cb202ffba99f34f5d1e11252686496b5e9f7f477f5d7a69db3",
+      "applicability": "N/A",
+      "implementation": "Not Assessed",
+      "rationale": "Keine eigene asymmetrische Kryptografie in diesem Intake-Scope / No own asymmetric crypto in intake scope",
+      "requiredEvidence": "Neubewertung bei Kryptografieänderung; Host/Provider separat / Reassess crypto changes and providers separately",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Neubewertung bei Kryptografieänderung; Host/Provider separat / Reassess crypto changes and providers separately",
+      "reviewDue": "2027-01-10"
+    },
+    {
+      "id": "CL-12-12",
+      "sourcePath": "docs/secure-development/checklisten/CL_12_Agentische-KI-Sandbox.md",
+      "sourceNormalizedSha256": "2c02d0730c7a1e4ec93f062499f7ebc68083f5ffce432929459c917918b07fc4",
+      "applicability": "Applicable",
+      "implementation": "Not Assessed",
+      "rationale": "Quartals-/Anlassprüfung des 14er-Profils; Jahresprüfung zusätzlich / Quarterly/event review plus annual deep review",
+      "requiredEvidence": "14er-Matrix/Overrides/Abdeckung nachweisen; nächster Kontextreview 2027-01-10 / Profile evidence and dated review",
+      "lh00": {
+        "requirements": [
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "acceptance": [
+          "AC-00-005",
+          "AC-00-006",
+          "AC-00-007"
+        ],
+        "boundary": "Intake file process and its tooling; no product legal conclusion."
+      },
+      "lh01": {
+        "requirements": [
+          "QG-01-002",
+          "QG-01-004"
+        ],
+        "acceptance": [
+          "AC-01-005"
+        ],
+        "evidenceCases": [
+          "E01-06",
+          "E01-07"
+        ],
+        "boundary": "TUI/caller session, development tooling and organisation separately."
+      },
+      "owner": "Thorsten Hindermann",
+      "nextAction": "14er-Matrix/Overrides/Abdeckung nachweisen; nächster Kontextreview 2027-01-10 / Profile evidence and dated review",
+      "reviewDue": "2027-01-10"
+    }
+  ]
+}

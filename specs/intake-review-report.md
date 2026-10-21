@@ -1,85 +1,123 @@
-# LH-00 — Unabhängiges vollständiges Review / Independent complete review
+# LH-00: unabhängiges Intake-Review / Independent intake review
 
-## DE — Ergebnis und Prüfgrenze
+## DE — Ergebnis
 
-**Ready**. Review `9484cac7-daee-422f-a72c-a2d886d55c3a`; Receipt `c3321962-0e64-45b7-9d4b-d49f8083d58f`. Ein Ziel, null Worker.
-Critical0, High0, Medium0, Low0; keine offenen Fragen, keine akzeptierten Risiken.
-Anderer Prüfer `/root/lh01_keyboard_intake_review`, Autor `/root`.
+**Ready.** Vollständiges semantisches Review genau eines aktualisierten Intakes,
+`intakes/LH-00.md`, Profil `show-commandtui400-de-en`. Keine offenen Befunde,
+keine akzeptierten Risiken und keine ungeklärten Authoring-Fragen. Dies ist
+keine menschliche Produkt-/Rechtsfreigabe oder vollständige Prozessabnahme.
 
-Vollständig geprüft: Identität/Zielgruppe/Vorwissen, Zweck, Ist-/Zielzustand,
-Scope/Nicht-Ziele, sämtliche Anforderungen und Abnahmekriterien, Governance,
-Abhängigkeiten/Pilotweg, Sicherheit/Datenschutz, A11Y/Plattformen, Sprache/Begriffe,
-Risiken/Nachweise, Quellen und eingebettete Folgeprompts. Die 42 normativen
-FR-/AC-/QG-/OD-Sprachzeilen und das gesamte Intake sind bytegleich zum Vorgänger.
-Alle 87 Datei-Quellenhashes, Ziel, Receipt, Operation und Policybindungen sind
-unabhängig aktuell geprüft. 0 historische SnapshotOnly-Quellen bleiben historische
-Nachweise ohne neuen Remoteabruf. Alle lokalen Intake-Links lösen sich auf.
+Prüfer: separater Agent `/root/gsdb_lh00_independent_review`; Autor: `/root`.
+Das aktuelle Review ersetzt ausdrücklich das archivierte Ergebnis
+`017253c3-5a3e-4274-a44d-3f9bf029b7b3`. Dessen Triplet bleibt bytegenau erhalten; der ältere Vorgänger `9484cac7-daee-422f-a72c-a2d886d55c3a` bleibt ebenfalls historisch.
 
-PR #45 ändert Security0.7.1, Architecture0.6.2 und Sequencing0.2.8 ausschließlich
-in Installationsdokumentation/Metadaten. Die neue Updateentscheidung bewertet
-Quellabweichungen ausdrücklich; keine stille Hashersetzung. Erste fachliche Quelle
-ist der exakte Vorgängerintake. Intake, Receipt und altes Reviewtripel sind anhand
-ihrer Rohhashes UND der bisherigen HEAD-Dateien exakt archiviert.
-Review `1ccc35b4-18e8-4cf0-b8b4-ccd2d91a83d0` wird ausdrücklich supersediert. Aktuelle Herkunft verwendet den
-neuen Receipt-Namespace; ältere SRC-/Authoring-/Lieferaussagen behalten ihren
-historischen Vorgangskontext. Die alte Guidance ohne Produktcode beschreibt den
-Planungsstand vor PR #44; aktueller Auftrag umfasst nur T037–T044 auf Mac A.
+| Bindung | Wert |
+|---|---|
+| Review-ID | c1daa349-7eae-400b-b073-301372ef54b3 |
+| Receipt-ID | 63f5fd74-6d7d-49e1-96e1-805912466b98 |
+| Intake-ID | 2296d99d-f099-4c4d-88f7-789581693eb0 |
+| Ziel-SHA-256 | `bfee30a70a990f07f78ba4f61e8571c88044b15de5b8c9ee3aead5a19a589d53` |
+| Geprüfte Quellenbindungen | 66; null Abweichungen |
+| Geänderte GSDB-Kontrollen | 50 eindeutig; alle kanonischen Quellhashes passend |
+| Anwendbarkeit | 18 Applicable; drei begrenzte N/A;29 Open |
 
-Anforderungen bleiben prüfbar und sprachlich gleich. LH-00 beschreibt ausschließlich
-den Intakeprozess, LH-01 das Sitzungs-/Aktions-/Tastaturfundament. E01-/E01-01–07-
-Fälle ordnen die messbaren Nachweise zu. Spätere Suche, Parameterformulare,
-Aufrufausführung und Geräteadapter werden nicht übernommen. Technische Auswahl
-und native Grenzen sind in ADRs002–006 getrennt begründet; historische ODs bleiben
-als IDs und ursprüngliche Planungspflichten sichtbar.
+Geprüft wurden Identität/Zielgruppe/Vorkenntnisse, Zweck/Scope/Nicht-Ziele,
+zwölf Quell-FR und neun AC je Sprache, atomare prüfbare Aussagen, messbare Abnahme,
+Abhängigkeiten/Ready-Eligible-Serie/Pilotweg, Risiken, Zuständigkeiten und nächste
+Aktionen. Ebenso vollständig geprüft: Quellenupdate und Vorgängerarchive,
+DE/EN-B2-Inhaltsgleichheit und Begriffserklärungen, textuelle Zustände/Mermaid-
+Alternative, Sicherheits-/Datenschutz-/Lieferkettenanforderungen, Plattform- und
+A11Y-Grenzen, genaue Folgeprompt-/Lieferautorität und die 50 Kontrollzuordnungen.
+Die Reviewdimensionen und Quellen-/Policybindungen stehen im separaten JSON.
 
-LH-01 bleibt Einzelpilot außerhalb Serienauswahl. LH-00 bleibt offen; Ready/Eligible
-wird nicht aktiviert. LH-02 braucht eigenen Auftrag und fachlichen LH-01-Abschluss;
-volle LH-00-Abnahme folgt nach LH-02/vor LH-03. Reale Terminals/Screenreader bleiben
-zurückgestellt; physischer Braillenachweis bleibt mangels Hardware im privaten
-persönlichen Projekt gemäß Ownergrund ausgeschlossen. Keine volle WCAG-, Plattform-,
-Feature-, Sicherheits- oder Prozessabnahme. Keine menschliche Risikoannahme.
+Die 66 Quellenhashes und alle 50 Kontrollquellhashes wurden unabhängig berechnet;
+Vorgängerintake, Receipt und Review-Triplet wurden zusätzlich mit den unveränderten
+HEAD-Bytes verglichen. Der kompakte Quellenbestand verliert keine Auditspur:
+ältere Vorfahren bleiben im direkt gebundenen archivierten Receipt. Die
+kanonische KI-Checkliste bleibt unverändert; ihre vollständigen Hashbindungen
+und die exakten normativen Änderungsauszüge begrenzen den dokumentierten
+Quellenlesepfad ohne Lockerung der Secret-Prüfung.
 
-Nächste Aktion: beauftragte T037–T044 nach beiden aktuellen Intake-Reviews und
-Startprüfung fortsetzen. Dieses Review schreibt ausschließlich sein Tripel;
-keine Produktänderung, Serienmutation, Commit-, Remote-, Installations- oder
-Flottenaktion. Maschinenprüfungen stehen nach Ausführung unten.
+### Geschlossener Kandidatenbefund
 
-## EN — Outcome and review boundary
+| ID | Ursprüngliche Schwere | Status | Nachprüfung |
+|---|---|---|---|
+| IR-GSDB-001 | Medium | Closed | Neue Begriffe durch gleichwertiges DE/EN-Glossar erklärt; Zuordnung ergänzt AC-00-005. Am finalen Zielhash erneut geprüft. |
 
-**Ready** for one target and zero workers, with no findings, questions or accepted
-risks. The distinct reviewer is `/root/lh01_keyboard_intake_review`; author `/root`.
-The full review covers identity/audience/prior knowledge, purpose/current/target
-state, scope/non-goals, all requirements/acceptance/governance, dependency/pilot
-order, security/privacy, accessibility/platforms, language/terms, risks/evidence,
-sources and embedded prompts. All 42 normative FR/AC/QG/OD language lines and
-the entire intake remain byte-identical. All 87 File source hashes and target,
-receipt, operation/policy bindings were independently verified. 0 SnapshotOnly
-sources remain historical, without a fresh remote retrieval. Local links resolve.
+Dieser Befund entstand vor Veröffentlichung des Kandidaten und ist kein offenes
+Risiko. Keine Risikoannahme wurde durch den Agenten erteilt.
 
-PR45 changes three preset patch versions for installation documentation/metadata
-only. The new ordinary operation explicitly evaluates drift, retains the exact
-predecessor intake as first domain source and archives all five predecessor files
-against raw hashes and HEAD bytes. The named previous review is expressly
-superseded. Current receipt source IDs are separate from historical source and
-authoring/delivery namespaces. Old no-product guidance predates PR44; the current
-product order is only Mac A T037–T044.
+### Erneute Prüfung nach Formatkorrektur
 
-Requirements and evidence mappings stay testable and bilingual. Process LH00 and
-foundation LH01 scopes remain distinct, without later search, parameter forms,
-invocation or device adapters. ADRs002–006 separately justify technical choices
-and native boundaries; original OD IDs/planning duties retain historical meaning.
-LH01 stays a standalone pilot, LH00 open and Ready/Eligible unactivated. LH02 needs
-its own request and domain completion of LH01; full LH00 acceptance follows LH02
-and precedes LH03. Real terminal/screen-reader proof remains deferred, physical
-Braille proof excluded for the owner's documented hardware reason. No full WCAG,
-platform, feature, security or process acceptance, and no human risk acceptance.
+Der vollständige Intake ist byteidentisch zum vorherigen unabhängigen Review.
+Alle Abschnitte und die semantische Bewertung wurden erneut betrachtet; sämtliche
+66 Quellen-,50 Kontroll-, Request-, Receipt- und Policybindungen wurden erneut
+unabhängig geprüft. Nur zwei Quelldateien änderten sich: exakt eine leere
+Schlusszeile wurde jeweils entfernt. Der aktuelle Dateiinhalt mit genau einem
+zusätzlichen LF reproduziert jeweils den dokumentierten alten SHA-256. Der
+archivierte Receipt-Snapshot unterscheidet sich nur in diesen Quellenhashes.
+Keine Anforderung, Entscheidung, Sprache oder Autorität änderte ihre Bedeutung.
 
-Next continue commissioned T037–T044 after both current reviews and preflight.
-This review writes only its triplet; no implementation, series mutation, commit,
-remote write, installation or fleet action. Executed validator results follow.
+Nachweis: `specs/intake-authoring-operations/23328e17-0a8e-4fd3-84c1-0c31439453b5/pre-delivery-format-repair/receipt-before.json`.
+Das veränderliche Vorgangsjournal wird nicht als künftige Hashbindung aufgenommen.
+Die finale Authoring-Validierung und der Abschluss des noch reparierten Vorgangs
+stehen getrennt unter Verantwortung des Autors; bis dahin keine nachgelagerte
+Startbereitschaft oder Ausführung aus diesem Ready ableiten.
 
-## Ausgeführte Validatoren / Executed validators
+### Grenzen und nächste Aktion
 
-DE: Bash und PowerShell7: `validate-intake-review-result`, jeweils Exit0, Single/Ready/ein Ziel. Das Ergebnis bestätigt den maschinellen Vertrag, keine Produktabnahme.
+Die Einzelbewertungen unterscheiden Anwendbarkeit von Umsetzung. Unbekannte
+Rechts-/Rollen-/Providerfragen bleiben Open; Not Assessed ist kein bestandenes
+Produktgate. Owner und Folgearbeiten bleiben benannt. Bereits erteilte begrenzte
+Pilotentscheidungen bleiben in ihrem ursprünglichen Scope. Exakte Plattform-
+bindungen #37–#39 werden nicht geändert. Reale Terminals/Screenreader bleiben
+Deferred, Braillehardware Excluded. Volle LH-00-Abnahme folgt nach LH-02/vor LH-03.
 
-EN: Bash and PowerShell7 review-result validators each returned Exit0 for Single/Ready/one target. Structural validation does not establish product acceptance.
+Nächste Aktion: zuerst finale Authoring-Validierung und Abschluss der Formatkorrektur
+nachweisen, dann den beauftragten LH-01-Quellenupdate und dessen eigenes unabhängiges
+Review durchführen; anschließend gezielter technischer Abgleich,
+Analyse und autorisierte Lieferung. Keine Produktimplementierung oder Serie starten.
+
+## EN — Outcome
+
+**Ready.** Complete semantic review of one updated intake, with no remaining
+findings, accepted risks or unresolved authoring questions. The distinct reviewer
+and author identities, exact target/receipt/review IDs and hashes are stated
+above. The former review is explicitly superseded and its exact triplet retained.
+
+Reviewed identity, audience and assumed knowledge; purpose, scope and non-goals;
+all twelve source requirements and nine acceptance IDs per language; testability,
+acceptance, dependencies, Ready/Eligible series and standalone pilot order;
+security, privacy, supply chain, accessibility, platforms, authority, prompts,
+source lineage and honest evidence boundaries. All 66 source bindings and
+50 changed-control source hashes independently match. Exact predecessor target,
+receipt and review bytes also match the unchanged HEAD. Older provenance remains
+in the directly bound archived receipt. Public checklist example markers are not
+reproduced as intake input; the full canonical hashes and exact normative excerpts
+preserve the documented source boundary without weakening validation.
+
+Candidate finding IR-GSDB-001 is Closed: equivalent plain DE/EN definitions and
+AC-00-005 mapping were verified at the final target hash. No risk was accepted.
+The control assessment records 18 Applicable, three narrowly scoped N/A and
+29 Open decisions. Unknown legal roles/provider facts and unproved implementation
+remain owned follow-up work, not product compliance or a human approval.
+
+Keep existing pilot decisions and exact platform bindings within their original
+scope. Physical terminals/screen readers remain Deferred; Braille hardware remains
+Excluded. Full LH-00 acceptance follows LH-02 and precedes LH-03. Next: complete
+final authoring validation and repair closure, then the expressly authorised
+LH-01 source update and its own distinct review, followed by
+technical alignment, analysis and bounded delivery. No product or series run.
+
+### EN — Revalidation after formatting correction
+
+The complete target remains byte-identical to the previous distinct review.
+Its full semantic assessment was reconsidered, and all current source, control,
+request, receipt and policy hashes were independently recomputed. Each of the
+two source edits removes exactly one blank EOF line: appending one LF to the
+current bytes reproduces its recorded old hash. The immutable receipt snapshot
+differs only in those source hashes. No requirement, decision, language or scope
+meaning changed. The old Ready triplet is archived and explicitly superseded.
+The mutable operation journal is not hash-bound. Final authoring validation and
+repair closure remain the author's separate gate; do not infer downstream readiness
+or execution while that validation/journal completion is pending.

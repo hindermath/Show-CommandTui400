@@ -876,3 +876,20 @@ platform acceptance, feature run or activation is performed.
 
 [Entscheidung / Decision](../../docs/planning/lh01-source-refresh-decisions.md),
 [Reviewkorrektur / Review correction](../../docs/planning/lh01-source-refresh-review-corrections.md).
+
+## Quellenabgleich 2026-10-21 / Source alignment
+
+DE: Der vorherige Text behält seinen datierten Entwurfs-/Lieferkontext. Maßgeblich für die neue Quellenbewertung sind das aktualisierte LH-00, dessen Receipt und das eigene neue unabhängige Review. [GSDB3.4.4-Zuordnung](../../docs/planning/lh00-lh01-gsdb344-assessment.md) konkretisiert FR-00-007/008/009, AC-00-005/006/007: 50 geänderte Kontrollpassagen sind einzeln auf Produkt-/Werkzeug-/Organisationsscope, Anwendbarkeit, Nachweise und offene Maßnahmen abgebildet. Assurance0.1.5 prüft Bindungen, keine Produktkonformität. Die tatsächlichen Versionen stehen in der aktuellen 14-Preset-Matrix; ältere Versionsangaben im Entwurf sind historisch.
+
+Offene Rechts-/Rollen-/Providerentscheidungen bleiben Open, nicht belegte Umsetzung Not Assessed. N/A wird mit begrenztem Scope, Grund, Quelle, Owner, Gegenprüfung und Wiedervorlage geführt. SSDF-/CWE-/OWASP-Ausgaben, Sprachprofile, positive/negative Pfad-/Quellen-/Argumentprüfungen sowie gemessene Sicherheitsabdeckung sind vor dem jeweils betroffenen Gate nachzuweisen. CL-08-12 verlangt mindestens 85% Branch Coverage kritischer Module und 80% Schnittstellen-/kritische UI-Flow-Abdeckung; Fallzahlen oder grüne CI ersetzen keine Messung. Eine Ausnahme braucht einen menschlichen Entscheid. Quartals-/Anlassreview und Jahresprüfung am 3. Oktober bleiben getrennt. Nächste Kontextwiedervorlage spätestens 2027-01-10, früher bei geändertem Scope/Quelle oder betroffenem Abschluss-/Releasegate.
+
+Technik bleibt managed C#14/MSL, Host-.NET10, Terminal.Gui2.5.0/dotnet, PS>=7.6.4 und in-process PSCmdlet für LH-01. NuGet System.Management.Automation7.6.4 liefert nur Kompilierassets; die laufende Sitzung liefert die Engine. Für LH-00 ist dies Kontext, keine neue Produktfunktion. Bestehende Tasks/Entscheidungen bleiben historisch; die neuen Folgeaufgaben sind offen. Keine Produktimplementierung oder neue Pilotfreigabe durch diesen Abgleich.
+
+EN: Preserve prior dated design/delivery statements as history. The updated intake, receipt and its own new distinct review govern this source alignment. The linked assessment maps all 50 changed GSDB3.4.4 controls to separate product/tooling/organisation scopes, applicability, evidence and owned open actions. Assurance0.1.5 checks binding, not product compliance; use the current fourteen-preset matrix rather than historical version claims.
+
+Unknown legal/role/provider facts stay Open and unproven implementation Not Assessed. Scoped N/A needs rationale, source, owner, distinct check and review trigger. Prove named SSDF/CWE/OWASP editions, language profiles, positive/negative boundary tests and measured coverage before the affected gate. CL-08-12 requires at least 85% critical-module branch coverage and 80% documented public-interface/critical-UI-flow coverage; case counts or green CI are not measurements. Human authority is required for exceptions. Preserve quarterly/event review plus annual 3 October deep review; next context review by 2027-01-10 or earlier on changes/affected closure.
+
+Preserve the separate LH-01 technical choices and compile-only NuGet/host runtime boundary. These are context for LH-00, not a product feature. Existing tasks/decisions stay historical; new follow-up tasks remain open. No new implementation or pilot authority follows.
+
+DE: Die exakten Produkt-/Genehmigungs-/Kommandobindungen in Issues #37–#39 und im Plattformmanifest bleiben unverändert. Neue Governance-Evidence ist kein rückwirkender Nachweis für diesen eingefrorenen Produktstand. Praktische Terminals/Screenreader Deferred, Braillehardware Excluded. Volle LH-00-Abnahme nach LH-02/vor LH-03.
+EN: Keep the existing exact platform issue/manifest bindings. New governance evidence is not retroactive product proof. Retain practical evidence and full acceptance boundaries.

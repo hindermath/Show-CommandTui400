@@ -90,6 +90,10 @@ Assurance 0.1.5 gezielt integriert, andere 13 Pakete und historische Evidence er
 [Nachweis / Evidence](maintenance/gsdb-344-pilot-2026-10-20.md).
 EN: Bounded source/preset adoption and new project evidence; no product or fleet acceptance.
 
+### 2026-10-21 - LH-00/LH-01 Quellen- und Reviewupdate / Source and review update
+
+Gewöhnliche Intake-Updates nach PR #52, 50 einzelne GSDB-Kontrollzuordnungen, Vorgängerarchive und unabhängige Reviews; gezielter Spec-/Plan-/Tasks-Abgleich. Keine Produktimplementierung oder neue Plattformbindung. / Ordinary source updates, individual control mapping, exact archives and distinct reviews with targeted technical alignment; no implementation or platform rebind. [Nachweis / Evidence](../specs/001-lh00-intake-process/checklists/tasks-validation.md).
+
 ## Gesamtstatistik / Overall Statistics
 
 <!-- project-statistics-v2:begin -->

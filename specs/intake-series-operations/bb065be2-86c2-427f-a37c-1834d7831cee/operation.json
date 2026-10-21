@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "1.0",
+  "documentType": "IntakeSeriesOperation",
+  "operationId": "bb065be2-86c2-427f-a37c-1834d7831cee",
+  "type": "Update",
+  "status": "Completed",
+  "authorityEvidence": "specs/intake-authoring-operations/23328e17-0a8e-4fd3-84c1-0c31439453b5/update-decisions.md",
+  "seriesId": "3c0e3e97-1268-4828-aeba-c3f3d17637de",
+  "changes": "Only LH-00 target digest; unchanged Ready/Eligible, root/order, no edges.",
+  "archives": [
+    {
+      "originalPath": "specs/intake-series/lh00-process/manifest.json",
+      "archivePath": "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/bb065be2-86c2-427f-a37c-1834d7831cee/manifest.json",
+      "rawSha256": "a6fb5dbb1259d9b35dd4b3a909ba0a47099fcedfb071e61b60e4c96b5268c040",
+      "normalizedSha256": "a6fb5dbb1259d9b35dd4b3a909ba0a47099fcedfb071e61b60e4c96b5268c040"
+    },
+    {
+      "originalPath": "specs/intake-series/lh00-process/receipt.json",
+      "archivePath": "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/bb065be2-86c2-427f-a37c-1834d7831cee/receipt.json",
+      "rawSha256": "5147c254286facd5eecd71dde13ef4fde636dfa30db71622ed0b1e13607e08f1",
+      "normalizedSha256": "5147c254286facd5eecd71dde13ef4fde636dfa30db71622ed0b1e13607e08f1"
+    }
+  ],
+  "nextAction": "$speckit-intake-series-status specs/intake-series/lh00-process/manifest.json"
+}
