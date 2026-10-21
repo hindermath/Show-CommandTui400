@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "reviewId": "baf56e5f-c971-4db2-8539-3c615aac6341",
+  "reviewId": "b8cbae27-d13e-499d-bbc2-4f6a84a39cf9",
   "mode": "Single",
   "policy": "generic-markdown",
   "targets": [
@@ -21,16 +21,16 @@
   },
   "projectProfile": "show-commandtui400-de-en",
   "authority": {
-    "request": "Owner explicitly authorizes ordinary LH00/LH01 source updates and distinct complete reviews before separately commissioned Mac A T037–T044 and MergeAndSync delivery.",
+    "request": "Owner 2026-10-21 authorises full independent LH-00/LH-01 reviews after ordinary source updates, technical alignment and bounded delivery.",
     "evidence": {
-      "path": "specs/intake-authoring-operations/04991296-9b6b-4b3c-b4a8-199a264ac43b/update-decisions.md",
-      "normalizedSha256": "bba10b3bebeebe08df8eef3c81f15007d4c8ffa7aff300feeba2159cca1a00ab"
+      "path": "specs/intake-authoring-operations/09bc0914-cdad-4b34-8961-1afc474b67f2/update-decisions.md",
+      "normalizedSha256": "c6aaf2d4cb151685f1938ec4a3c284d5a5b7ababb6bf0d1fd91e2d3186d37d0a"
     },
     "targetMutationAllowed": false,
     "implementationAllowed": false,
     "remoteAccessAllowed": false
   },
-  "targetHash": "f86a0e7711cda8290fc0e2c8743b335db6eb71aa69f7340d4a14314d7a152e25",
-  "priorReviewId": "cf380598-13ea-4c9b-8bfd-c52c150aae42",
-  "priorReviewArchive": "specs/intake-review-archive/cf380598-13ea-4c9b-8bfd-c52c150aae42"
+  "targetHash": "25833636ef9e883c792514cc2539ec0bad215a1090e0a8afd712a29e37aa638d",
+  "priorReviewId": "373b3184-daaf-4e63-998d-5beaa4d9af4f",
+  "priorReviewArchive": "specs/intake-review-archive/373b3184-daaf-4e63-998d-5beaa4d9af4f"
 }

@@ -2,7 +2,7 @@
 
 **Datum / Date:** 2026-10-09. **Feature:** `002-lh01-tui-foundation`.
 **Profil / Profile:** `show-commandtui400-de-en`. **Owner:** Thorsten Hindermann.
-**Status:** T001–T053 abgeschlossen; T054 vorbereitet/teilweise nachgewiesen, Zielhostläufe und anderes Ergebnisreview offen; T055–T063 offen. / T001–T053 complete; T054 prepared with native CI, actual target runs/distinct evidence reviews open; T055–T063 open.
+**Status:** T001–T053 abgeschlossen; T054 vorbereitet/teilweise nachgewiesen, Zielhostläufe und anderes Ergebnisreview offen; T055–T065 offen (T064/T065 neu). / T001–T053 complete; T054 prepared with native CI, actual target runs/distinct evidence reviews open; T055–T065 open (new T064/T065).
 
 ## Grundlage und Arbeitsgrenzen / Inputs and work boundaries
 
@@ -460,3 +460,14 @@ EN: Explicit bounded implementation completed through T036,36/63 tasks; authoriz
 delivery follows. Linked proof/review retain actual checks, foreign-host gaps and Prepared
 hand-offs. Injected restore failure stays Fail with satisfied diagnostic contract.
 No full acceptance or T037+ delivery; seven historical/practical checklist gaps remain.
+
+## GSDB3.4.4-Folgeaufgaben / Follow-up tasks — 2026-10-21
+
+Die folgenden Aufgaben sind neu und offen; frühere Checkboxen werden nicht rückwirkend geändert. Der heutige Quellen-/Reviewauftrag erledigt keine Produkt-/Rechts-/Plattformabnahme. Zuordnung: QG-01-002/004, AC-01-005, E01-06/07.
+The new tasks remain open; preserve previous checkboxes. Current source/review delivery is not implementation, legal, platform or product acceptance.
+
+- [ ] T064 Vor dem offenen Sicherheitsabschluss T058 die 50 Kontrollzeilen aus [Zuordnung](../../docs/planning/lh00-lh01-gsdb344-assessment.md) gegen tatsächliche Evidence bewerten: SSDF-/CWE-/OWASP-Ausgabe, Sprachprofile, Lieferketten-/Lizenz-/Auditgrenzen und echte positive/negative I/O-/Argumentfälle; CL-08-12-Abdeckung messen (85% kritische Branches, 80% Schnittstellen/kritische UI-Flows) oder eine menschlich entschiedene Abweichung belegen. Vorhandene Belege nur mit passendem Scope/Commit wiederverwenden, Fehlendes offen lassen; keine neue Produktfunktion/Installation ohne Auftrag. / Before T058 evaluate all 50 rows against actual scoped evidence and measured coverage or a human-decided deviation; preserve missing proof and execution authority.
+- [ ] T065 Vor vollständiger Featureabnahme die Open-Rechts-/Rollen-/Werkzeug-/Organisationszeilen durch Thorsten klären lassen: Land, Rolle, Rechtsfassung, Datenfluss, zuständige Gegenprüfung und nächster Termin; N/A nur mit konkretem Scope und Begründung. Keine Risikoannahme, Anbieterfreigabe, Vertrags-/Behördenkommunikation oder neue Plattformfreigabe durch einen Agenten. Wiedervorlage spätestens 2027-01-10 und am betroffenen Gate; unbekannt bleibt Open. / Before full acceptance obtain owner-scoped decisions on open legal, tooling and organisation rows; no inferred legal exemption or risk acceptance.
+
+Abhängigkeiten: T064 → T058; T065 → T063. Bereits erteilte begrenzte Pilotfreigaben bleiben in ihrem ursprünglichen Scope; keine rückwirkende Vollabnahme.
+Dependencies: new control evidence precedes T058, scoped owner decisions precede full acceptance. Existing limited pilot decisions retain their original scope only.

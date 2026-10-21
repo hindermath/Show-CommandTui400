@@ -1,0 +1,190 @@
+{
+  "schemaVersion": "1.0",
+  "documentType": "IntakeOperation",
+  "operationId": "23328e17-0a8e-4fd3-84c1-0c31439453b5",
+  "type": "Update",
+  "status": "Completed",
+  "createdAt": "2026-10-21T10:55:36.893973Z",
+  "authorityEvidence": "specs/intake-authoring-operations/23328e17-0a8e-4fd3-84c1-0c31439453b5/update-decisions.md",
+  "proposalPath": "specs/intake-authoring-operations/23328e17-0a8e-4fd3-84c1-0c31439453b5/update-decisions.md",
+  "proposalNormalizedSha256": "e4aaaa6fd28fd5756966c27c17862c621db800c703b089363be8b52c4cee41e2",
+  "approval": {
+    "approved": true,
+    "approvedBy": "Thorsten Hindermann",
+    "approvedAt": "2026-10-21T10:55:36.893973Z",
+    "evidence": "Explicit user instruction to implement the approved 2026-10-21 plan including updates, distinct reviews and MergeAndSync/admin delivery."
+  },
+  "stagingDirectory": "N/A",
+  "intakeId": "2296d99d-f099-4c4d-88f7-789581693eb0",
+  "receiptId": "63f5fd74-6d7d-49e1-96e1-805912466b98",
+  "priorReceiptId": "c3321962-0e64-45b7-9d4b-d49f8083d58f",
+  "priorReviewId": "9484cac7-daee-422f-a72c-a2d886d55c3a",
+  "archiveEvidence": [
+    {
+      "originalPath": "intakes/LH-00.md",
+      "archivePath": "specs/intake-authoring-archive/lh-00/c3321962-0e64-45b7-9d4b-d49f8083d58f/intakes/LH-00.md",
+      "rawSha256": "1126780c1b179bb8b98884d4770de5a7c0bccde1b20ba8e4e8e706772a2d0538",
+      "normalizedSha256": "1126780c1b179bb8b98884d4770de5a7c0bccde1b20ba8e4e8e706772a2d0538"
+    },
+    {
+      "originalPath": "specs/intake-authoring-receipts/lh-00.json",
+      "archivePath": "specs/intake-authoring-archive/lh-00/c3321962-0e64-45b7-9d4b-d49f8083d58f/specs/intake-authoring-receipts/lh-00.json",
+      "rawSha256": "0cdf3c141fca155c5de4ba2052cf3c07da28d736520c9286a44aaaff01c6c2cc",
+      "normalizedSha256": "0cdf3c141fca155c5de4ba2052cf3c07da28d736520c9286a44aaaff01c6c2cc"
+    },
+    {
+      "originalPath": "specs/intake-review-request.json",
+      "archivePath": "specs/intake-review-archive/9484cac7-daee-422f-a72c-a2d886d55c3a/intake-review-request.json",
+      "rawSha256": "02f6c0977ae9c65d40bea0acff6fe8f77d282efded602b111821547a07cbaf34",
+      "normalizedSha256": "02f6c0977ae9c65d40bea0acff6fe8f77d282efded602b111821547a07cbaf34"
+    },
+    {
+      "originalPath": "specs/intake-review-result.json",
+      "archivePath": "specs/intake-review-archive/9484cac7-daee-422f-a72c-a2d886d55c3a/intake-review-result.json",
+      "rawSha256": "43e1ef25979de36d3836ede7f3fed039d832128fcd15329cc2aeb8de3770d2bc",
+      "normalizedSha256": "43e1ef25979de36d3836ede7f3fed039d832128fcd15329cc2aeb8de3770d2bc"
+    },
+    {
+      "originalPath": "specs/intake-review-report.md",
+      "archivePath": "specs/intake-review-archive/9484cac7-daee-422f-a72c-a2d886d55c3a/intake-review-report.md",
+      "rawSha256": "95e63e9b2bed64a6086c8eb8cf8d2ccaa3ea233d5c04a9ce2a32513270548b67",
+      "normalizedSha256": "95e63e9b2bed64a6086c8eb8cf8d2ccaa3ea233d5c04a9ce2a32513270548b67"
+    },
+    {
+      "originalPath": "specs/intake-series/lh00-process/manifest.json",
+      "archivePath": "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/bb065be2-86c2-427f-a37c-1834d7831cee/manifest.json",
+      "rawSha256": "a6fb5dbb1259d9b35dd4b3a909ba0a47099fcedfb071e61b60e4c96b5268c040",
+      "normalizedSha256": "a6fb5dbb1259d9b35dd4b3a909ba0a47099fcedfb071e61b60e4c96b5268c040"
+    },
+    {
+      "originalPath": "specs/intake-series/lh00-process/receipt.json",
+      "archivePath": "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/bb065be2-86c2-427f-a37c-1834d7831cee/receipt.json",
+      "rawSha256": "5147c254286facd5eecd71dde13ef4fde636dfa30db71622ed0b1e13607e08f1",
+      "normalizedSha256": "5147c254286facd5eecd71dde13ef4fde636dfa30db71622ed0b1e13607e08f1"
+    }
+  ],
+  "beforeTargetNormalizedSha256": "1126780c1b179bb8b98884d4770de5a7c0bccde1b20ba8e4e8e706772a2d0538",
+  "afterTargetNormalizedSha256": "bfee30a70a990f07f78ba4f61e8571c88044b15de5b8c9ee3aead5a19a589d53",
+  "intendedTargets": [
+    "intakes/LH-00.md",
+    "specs/intake-authoring-receipts/lh-00.json"
+  ],
+  "validatedTargets": [
+    "intakes/LH-00.md",
+    "specs/intake-authoring-receipts/lh-00.json"
+  ],
+  "publishedTargets": [
+    "intakes/LH-00.md",
+    "specs/intake-authoring-receipts/lh-00.json"
+  ],
+  "rollbackBoundary": "Candidate validated in isolated repository before atomic active publication; exact predecessor bytes recover on failure.",
+  "reviewSupersession": "Exact old review triplet archived and active result removed; no current Ready until distinct full review.",
+  "nextAction": "$speckit-intake-review intakes/LH-00.md",
+  "validation": [
+    {
+      "shell": "bash",
+      "command": [
+        "bash",
+        ".specify/presets/intake-authoring-governance/scripts/validate-intake-authoring-receipt.sh",
+        "--receipt",
+        "specs/intake-authoring-receipts/lh-00.json",
+        "--repo",
+        "."
+      ],
+      "exitCode": 0,
+      "output": "PASS: intake authoring 63f5fd74-6d7d-49e1-96e1-805912466b98 is current (ReadyForReview, 66 sources, intakes/LH-00.md)\n",
+      "phase": "CandidateBeforeEOFRepair"
+    },
+    {
+      "shell": "pwsh",
+      "command": [
+        "pwsh",
+        "-NoProfile",
+        "-File",
+        ".specify/presets/intake-authoring-governance/scripts/validate-intake-authoring-receipt.ps1",
+        "-Receipt",
+        "specs/intake-authoring-receipts/lh-00.json",
+        "-Repo",
+        "."
+      ],
+      "exitCode": 0,
+      "output": "PASS: intake authoring 63f5fd74-6d7d-49e1-96e1-805912466b98 is current (ReadyForReview, 66 sources, intakes/LH-00.md)\n",
+      "phase": "CandidateBeforeEOFRepair"
+    },
+    {
+      "shell": "bash",
+      "command": [
+        "bash",
+        ".specify/presets/intake-sequencing-governance/scripts/validate-intake-series-receipt.sh",
+        "--file",
+        "specs/intake-series/lh00-process/receipt.json",
+        "--repo",
+        "."
+      ],
+      "exitCode": 0,
+      "output": "PASS: 3c0e3e97-1268-4828-aeba-c3f3d17637de (1 targets, 1 roots, 0 dependencies)\n",
+      "phase": "CandidateBeforeEOFRepair"
+    },
+    {
+      "shell": "pwsh",
+      "command": [
+        "pwsh",
+        "-NoProfile",
+        "-File",
+        ".specify/presets/intake-sequencing-governance/scripts/validate-intake-series-receipt.ps1",
+        "-File",
+        "specs/intake-series/lh00-process/receipt.json",
+        "-Repo",
+        "."
+      ],
+      "exitCode": 0,
+      "output": "PASS: 3c0e3e97-1268-4828-aeba-c3f3d17637de (1 targets, 1 roots, 0 dependencies)\n",
+      "phase": "CandidateBeforeEOFRepair"
+    },
+    {
+      "phase": "FinalCurrent",
+      "shell": "bash",
+      "exitCode": 0,
+      "output": "PASS: intake authoring 63f5fd74-6d7d-49e1-96e1-805912466b98 is current (ReadyForReview, 66 sources, intakes/LH-00.md)\n"
+    },
+    {
+      "phase": "FinalCurrent",
+      "shell": "pwsh",
+      "exitCode": 0,
+      "output": "PASS: intake authoring 63f5fd74-6d7d-49e1-96e1-805912466b98 is current (ReadyForReview, 66 sources, intakes/LH-00.md)\n"
+    }
+  ],
+  "normativeFRACUnchanged": false,
+  "existingRequirementIdsPreserved": true,
+  "seriesBindingUpdate": {
+    "operationId": "bb065be2-86c2-427f-a37c-1834d7831cee",
+    "stateChanged": false,
+    "orderChanged": false,
+    "dependenciesChanged": false,
+    "count": 1,
+    "authorityEvidence": "specs/intake-authoring-operations/23328e17-0a8e-4fd3-84c1-0c31439453b5/update-decisions.md"
+  },
+  "preDeliveryFormatRepair": {
+    "scope": "Same not-yet-delivered authoring operation; only trailing blank EOF lines removed, intake targets/requirements unchanged. No bare source replacement: original assessment, full archive lineage and fresh distinct review remain required.",
+    "changes": [
+      {
+        "path": "docs/planning/lh00-lh01-gsdb344-control-excerpts.md",
+        "before": "95c99ead9b1369a0f6a2980aa5765abb61bd8c7e91f6b36dd522e666c0e0805b",
+        "after": "819d6811b48e9e5f65b4f2cd4a12399f7909df9d11860745eefe2a05f17710eb",
+        "meaningChanged": false
+      },
+      {
+        "path": "docs/planning/lh00-lh01-gsdb344-source-decisions.md",
+        "before": "a7835a52502dc4241ae096240d0e7d2daf2c4f6616eead2ffeabaefcf4087255",
+        "after": "35d229380ed82217757778ef84e1f83a75d4a84d71efbf78c3940c60f3fa8e45",
+        "meaningChanged": false
+      }
+    ],
+    "receiptBeforePath": "specs/intake-authoring-operations/23328e17-0a8e-4fd3-84c1-0c31439453b5/pre-delivery-format-repair/receipt-before.json",
+    "receiptBeforeSha256": "d99b475b2e9a136b4ef72dd90a375f7d31e0a8bf20aae1ec17d8eb32c8c1bbcb",
+    "receiptAfterSha256": "18a517f077d90f232258ab81fd919e7f61a1ad2d6abbb3b971ce3007583cbcac",
+    "priorReviewArchive": "specs/intake-review-archive/017253c3-5a3e-4274-a44d-3f9bf029b7b3",
+    "newReviewRequestId": "c1daa349-7eae-400b-b073-301372ef54b3",
+    "validation": "Final current Bash and PowerShell receipt validators exit0; fresh complete distinct review supersedes prior Ready. Repair closed before first Git delivery."
+  }
+}
