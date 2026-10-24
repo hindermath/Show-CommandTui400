@@ -1,0 +1,36 @@
+{
+  "schemaVersion": "1.1",
+  "reviewId": "c1daa349-7eae-400b-b073-301372ef54b3",
+  "mode": "Single",
+  "policy": "generic-markdown",
+  "targets": [
+    {
+      "path": "intakes/LH-00.md",
+      "role": "Primary"
+    }
+  ],
+  "series": {
+    "orderedTargetPaths": [],
+    "roots": [],
+    "dependencies": []
+  },
+  "campaign": {
+    "manifestPath": "N/A",
+    "workers": [],
+    "operatorExceptions": []
+  },
+  "projectProfile": "show-commandtui400-de-en",
+  "authority": {
+    "request": "Owner 2026-10-21 authorises full independent LH-00/LH-01 reviews after ordinary source updates, technical alignment and bounded delivery.",
+    "evidence": {
+      "path": "specs/intake-authoring-operations/23328e17-0a8e-4fd3-84c1-0c31439453b5/update-decisions.md",
+      "normalizedSha256": "e4aaaa6fd28fd5756966c27c17862c621db800c703b089363be8b52c4cee41e2"
+    },
+    "targetMutationAllowed": false,
+    "implementationAllowed": false,
+    "remoteAccessAllowed": false
+  },
+  "targetHash": "bfee30a70a990f07f78ba4f61e8571c88044b15de5b8c9ee3aead5a19a589d53",
+  "priorReviewId": "017253c3-5a3e-4274-a44d-3f9bf029b7b3",
+  "priorReviewArchive": "specs/intake-review-archive/017253c3-5a3e-4274-a44d-3f9bf029b7b3"
+}

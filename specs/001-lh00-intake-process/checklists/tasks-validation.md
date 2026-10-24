@@ -854,3 +854,49 @@ EN: Both analyses find no open start-relevant inconsistency in this source/docum
 
 DE: Vor der ersten Git-Lieferung wurden je eine überzählige leere Schlusszeile in zwei neuen Quelldokumenten entfernt. Die Intakes blieben bytegleich. Beide laufenden Authoring-Vorgänge dokumentieren die reinen Formatdeltas und exakte Receipt-Zwischenstände; vorherige Ready-Reviews sind bytegleich archiviert und durch frische unabhängige Reviews überholt. Finale aktuelle Receipt-Validierung schließt die Vorgangsreparatur vor Commit ab.
 EN: Before initial Git delivery, remove one extra blank EOF line in each of two new source documents without changing intake bytes. Both authoring operations record exact format deltas and receipt checkpoints; preserve and supersede prior Ready reviews. Fresh distinct reviews and final current receipt validation close repair before commit.
+
+## Prüfung Dokumentationskohorte 24.10.2026 / Documentation cohort validation
+
+### DE
+
+Ownerauftrag: gewöhnliche Aktualisierung LH-00, vollständiges unabhängiges Review, gezielter Spec-/Plan-/Tasks-Abgleich und MergeAndSync/Admin-Bypass. Ausgangspunkt PR #55/c0267d8. [Quellenbewertung](../../../docs/planning/lh00-lh01-preset-doc-rollout-20261024-decisions.md) erklärt alle vier abweichenden lokalen Bindungen mit alten/neuen Hashes und Git-Verlauf. Vorgängerintake und Receipt sind bytegleich archiviert, erste Quelle ist der Vorgängerintake; historische URL-/Inline-Nachweise bleiben historische Metadaten. Neue Versionsangaben erklären aktuelle Paketidentität, keine automatische Befugnis oder neue Produktanforderung.
+
+Lesende speckit-analyze-Auswertung für dieses Feature: Featurepfade explizit über SPECIFY_FEATURE_DIRECTORY und --paths-only aufgelöst; keine persistierte Featureauswahl geändert und kein Extension-Hook vorhanden. Spec, Plan, Tasks, aktuelle Constitution und bestehende Abdeckungstabellen abgeglichen. Ergebnis: keine neue offene startrelevante Inkonsistenz, keine neue Duplikation oder ungeklärte Bedeutungsabweichung. Bestehende Produkt-/Rechts-/Hilfsmittel-/Plattformnachweise bleiben ausdrücklich offen; eine Quellenprüfung ist kein Umsetzungs-PASS.
+
+| Bereich / Area | Ergebnis / Result | Abdeckung / Coverage |
+|---|---|---|
+| Prüffähige Kennungen / Testable identifiers | 33 mit vorhandener Aufgabenabdeckung, keine neue fachliche ID | FR-001–024; SC-001–009 |
+| Aufgaben / Tasks | 67 eindeutige IDs; alle vorherigen Checkboxen unverändert | Keine neue oder nicht zugeordnete Aufgabe |
+| Quellen / Sources | 14 Pakete/28 Leserpfade mit Version/Pfad/Hash; GSDB und50-Kontroll-Zuordnung unverändert | FR-00-001/002/005/007/008/009 beziehungsweise QG-01-001/002/004 und AC-01-005 |
+| Routing | Aligned nach ausdrücklich freigegebenem lokalem Metadaten-Refresh; keine Modellzugangsprobe daraus behauptet | Rollenvertrag statt Installationspriorität; Codex/Antigravity-Automatik von übrigen Policy-Bezeichnungen getrennt |
+| Verifikation / Verification | 14-Preset-Check exakt; sieben Agenten-/Navigations-/Kompositionstests bestanden | Sechs bestehende Specify-/Plan-/Tasks-Wrapper und fünf Integrationen; keine neue Generierung |
+| Constitution und Nachweisgrenzen / Constitution and limits | Keine neue Pflichtverletzung; N/A/Open/Not Assessed und Ownerentscheidungen erhalten | B2 DE/EN, textuelle Grenzen; keine importierte Level-0-Freigabe |
+
+PSScriptAnalyzer-Nachweis aus dem Rollout bleibt für die unveränderten84 Skriptdateien und vier synthetischen Probeausnahmen gültig; native CI prüft erneut den finalen PR-Head. Receipt-/Reviewvalidatoren, frische unabhängige Reviewidentitäten, Secret-/Link-/Diff- und finale Render-/Homogenitätsprüfungen werden im Abschlussblock bzw. Liefer-PR dokumentiert. Erwarteter Statistikdrift vor Quellencommit/Rendern ist kein PASS.
+
+Documentation Impact genau UpdateRequired. Owner Thorsten; Zielgruppe Maintainer, Lernende und Entwickelnde ohne Spec-Kit-Vorkenntnisse. Quelle: aktualisiertes Intake und gebundene Projekt-/Paketdateien. Leserpfad Intake → Receipt/eigenes Review → Quellenbewertung/DE-EN-Leitfäden → Spec/Plan/Tasks → bestehende nächste Aufgabe. Sprache DE zuerst/EN danach, ungefähr B2. Vollständige Text-/Tabellenalternative; kein zusätzliches Diagramm nötig. Distribution sourceOnly im Repository, kein Home-Sync. Wiedervorlage bei Quelle/Paket/Rolle/Scope/Autorität und vor betroffenem Gate.
+
+Keine Produktimplementierung, Installation, Veröffentlichung eines Pakets, Adapterentwicklung, Serienaktivierung, neue Risiko-/Pilot-/Produktabnahme oder Umbindung #37–#39. Praktische Terminals/Screenreader Deferred, Braillehardware Excluded; volle LH-00-Abnahme weiterhin nach LH-02/vor LH-03. Frühere datierte Nachweise behalten ihren historischen Kontext.
+
+### EN
+
+The explicit request covers ordinary source update, full distinct review, targeted technical alignment and exact-head MergeAndSync/admin delivery after PR #55. The linked source decision explains four local binding drifts with hashes/history. Preserve exact predecessors and historical snapshot metadata. Current package identity never implies new product scope or execution rights.
+
+Read-only analysis resolves this feature without persisting selection and compares spec/plan/tasks, Constitution and existing coverage. All33 testable identifiers are assigned; all67 task IDs/check states remain unchanged. No new open start-relevant inconsistency, duplication or unmapped task. Preserve existing open implementation/legal/practical work. All14 packages/28 language reader paths are bound; reuse unchanged GSDB/control evidence. Current role/discovery limits distinguish metadata from model-access proof. Exact matrix and seven parity/composition tests pass; retain the unchanged script-analysis evidence and explicit synthetic exceptions until final native CI.
+
+One impact decision: UpdateRequired, Thorsten, learner/developer/maintainer audience, source-governed bilingual B2 textual reader path, repository sourceOnly distribution. Review changes before relevant gates. No product, installation, release, adapter, series mutation, platform rebind or inferred acceptance. Preserve all practical and full-process acceptance boundaries.
+
+### Abschließende Quellen-/Reviewnachweise / Final source and review evidence
+
+| Prüfung / Check | Ergebnis / Result |
+|---|---|
+| Receipt `9304294e-85e4-4ed3-9acb-521a549727ed` | Beide installierten Validatoren Exit0; genau geprüfter Kandidat publiziert / both validators pass, exact validated candidate published |
+| Review `105acca7-5c79-4801-b9f7-8302522df3ae` | Ready,0 offene Befunde/Fragen/akzeptierte Risiken; vollständiger anderer Agent; Bash/PowerShell Exit0 / full distinct review, both validators pass |
+| Quellen / Sources | 104 Einträge, alle aktuellen lokalen Bindungen und Archive unabhängig geprüft; historische Snapshots bleiben historisch / all current local bindings and exact archives verified |
+| Leitfäden / Guides | 28 Hashbindungen,14 Paketidentitäten aktuell / current guide hashes and package identities |
+| Negativfall / Negative case | Manipulierter Zielhash mit Exit2 abgewiesen / tampered target digest rejected |
+| Grenzen / Boundaries | Task-IDs/Checkboxen, Produktpayload, Presets, Guidance und Plattformbindungen unverändert / unchanged task states and protected payload |
+| Dokument-/Lieferprüfung / Document and delivery checks | Lokale Links, Secret-/Diff-Prüfung und finale Render-/Homogenitäts-/CI-Ergebnisse im Liefer-PR; kein vorzeitiger Statistik-PASS / record final checks in delivery PR after clean-tree rendering |
+
+DE: Alle vier Quellenabweichungen sind erklärt und durch den gewöhnlichen Vorgang mit exakten Vorgängern aktualisiert. Die zwei Analysen finden keine neuen offenen startrelevanten Widersprüche im Dokumentationsänderungssatz. Keine fehlende Produkt-/Rechts-/Hilfsmittelabnahme wird dadurch geschlossen.
+EN: All four source drifts are assessed and updated through ordinary preserved lineage. Both analyses find no new open start-relevant inconsistency in this documentation change set; missing product/legal/practical acceptance stays open.

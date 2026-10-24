@@ -1,30 +1,30 @@
 {
   "schemaVersion": "2.0",
   "documentType": "IntakeReceipt",
-  "receiptId": "63f5fd74-6d7d-49e1-96e1-805912466b98",
+  "receiptId": "9304294e-85e4-4ed3-9acb-521a549727ed",
   "intakeId": "2296d99d-f099-4c4d-88f7-789581693eb0",
   "generator": {
     "preset": "intake-authoring-governance",
-    "version": "0.3.8"
+    "version": "0.3.10"
   },
-  "createdAt": "2026-10-21T10:55:36.893973Z",
+  "createdAt": "2026-10-24T21:51:40.109245Z",
   "operation": {
-    "operationId": "23328e17-0a8e-4fd3-84c1-0c31439453b5",
+    "operationId": "e31322a1-8e16-46da-a4bf-0daf7c4ca484",
     "type": "Update",
-    "authorityEvidence": "specs/intake-authoring-operations/23328e17-0a8e-4fd3-84c1-0c31439453b5/update-decisions.md"
+    "authorityEvidence": "specs/intake-authoring-operations/e31322a1-8e16-46da-a4bf-0daf7c4ca484/update-decisions.md"
   },
   "status": "ReadyForReview",
   "target": {
     "path": "intakes/LH-00.md",
-    "normalizedSha256": "bfee30a70a990f07f78ba4f61e8571c88044b15de5b8c9ee3aead5a19a589d53"
+    "normalizedSha256": "34f3008345a407bd79c4a52a6b9690fdc063c6002b49258cddc77ec8b2e408ac"
   },
   "sources": [
     {
       "kind": "File",
       "location": "Repository",
-      "path": "specs/intake-authoring-archive/lh-00/c3321962-0e64-45b7-9d4b-d49f8083d58f/intakes/LH-00.md",
-      "label": "specs/intake-authoring-archive/lh-00/c3321962-0e64-45b7-9d4b-d49f8083d58f/intakes/LH-00.md",
-      "normalizedSha256": "1126780c1b179bb8b98884d4770de5a7c0bccde1b20ba8e4e8e706772a2d0538",
+      "path": "specs/intake-authoring-archive/lh-00/63f5fd74-6d7d-49e1-96e1-805912466b98/intakes/LH-00.md",
+      "label": "specs/intake-authoring-archive/lh-00/63f5fd74-6d7d-49e1-96e1-805912466b98/intakes/LH-00.md",
+      "normalizedSha256": "bfee30a70a990f07f78ba4f61e8571c88044b15de5b8c9ee3aead5a19a589d53",
       "gitBlob": "N/A",
       "requestedUrl": "N/A",
       "finalUrl": "N/A",
@@ -34,16 +34,16 @@
       "contentLength": "N/A",
       "redirectChain": [],
       "rawSha256": "N/A",
-      "proofBoundary": "Ordered explicit ordinary update source; scope assessment records meaning and limits.",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
       "sourceId": "SRC001",
       "order": 1
     },
     {
       "kind": "File",
       "location": "Repository",
-      "path": "specs/intake-authoring-operations/23328e17-0a8e-4fd3-84c1-0c31439453b5/update-decisions.md",
-      "label": "specs/intake-authoring-operations/23328e17-0a8e-4fd3-84c1-0c31439453b5/update-decisions.md",
-      "normalizedSha256": "e4aaaa6fd28fd5756966c27c17862c621db800c703b089363be8b52c4cee41e2",
+      "path": "specs/intake-authoring-operations/e31322a1-8e16-46da-a4bf-0daf7c4ca484/update-decisions.md",
+      "label": "specs/intake-authoring-operations/e31322a1-8e16-46da-a4bf-0daf7c4ca484/update-decisions.md",
+      "normalizedSha256": "21ef5cb7ea763f177e88deb18fb8a154275010413704fa442561aff3c9f2147b",
       "gitBlob": "N/A",
       "requestedUrl": "N/A",
       "finalUrl": "N/A",
@@ -53,16 +53,16 @@
       "contentLength": "N/A",
       "redirectChain": [],
       "rawSha256": "N/A",
-      "proofBoundary": "Ordered explicit ordinary update source; scope assessment records meaning and limits.",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
       "sourceId": "SRC002",
       "order": 2
     },
     {
       "kind": "File",
       "location": "Repository",
-      "path": "specs/intake-authoring-archive/lh-00/c3321962-0e64-45b7-9d4b-d49f8083d58f/specs/intake-authoring-receipts/lh-00.json",
-      "label": "specs/intake-authoring-archive/lh-00/c3321962-0e64-45b7-9d4b-d49f8083d58f/specs/intake-authoring-receipts/lh-00.json",
-      "normalizedSha256": "0cdf3c141fca155c5de4ba2052cf3c07da28d736520c9286a44aaaff01c6c2cc",
+      "path": "specs/intake-authoring-archive/lh-00/63f5fd74-6d7d-49e1-96e1-805912466b98/specs/intake-authoring-receipts/lh-00.json",
+      "label": "specs/intake-authoring-archive/lh-00/63f5fd74-6d7d-49e1-96e1-805912466b98/specs/intake-authoring-receipts/lh-00.json",
+      "normalizedSha256": "18a517f077d90f232258ab81fd919e7f61a1ad2d6abbb3b971ce3007583cbcac",
       "gitBlob": "N/A",
       "requestedUrl": "N/A",
       "finalUrl": "N/A",
@@ -72,9 +72,731 @@
       "contentLength": "N/A",
       "redirectChain": [],
       "rawSha256": "N/A",
-      "proofBoundary": "Ordered explicit ordinary update source; scope assessment records meaning and limits.",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
       "sourceId": "SRC003",
       "order": 3
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": "docs/planning/lh00-lh01-preset-doc-rollout-20261024-decisions.md",
+      "label": "docs/planning/lh00-lh01-preset-doc-rollout-20261024-decisions.md",
+      "normalizedSha256": "76a23c7fe6515f6e4b6e3a139e0954031da297e9787691f3cbb4fedb8ef394e1",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
+      "sourceId": "SRC004",
+      "order": 4
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": "docs/planning/lh00-lh01-preset-doc-rollout-20261024-assessment.json",
+      "label": "docs/planning/lh00-lh01-preset-doc-rollout-20261024-assessment.json",
+      "normalizedSha256": "5fa992947e15a184d2504fb9e7b3b82d79e9e61a67259239ffafb7b62b46118d",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
+      "sourceId": "SRC005",
+      "order": 5
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": "docs/maintenance/preset-documentation-rollout-2026-10-24.md",
+      "label": "docs/maintenance/preset-documentation-rollout-2026-10-24.md",
+      "normalizedSha256": "d2dcbf22086b79fffc6568776b1c72a09b619bbe7ec9e29609c5b10ec1b09294",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
+      "sourceId": "SRC006",
+      "order": 6
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": "docs/maintenance/preset-documentation-rollout-2026-10-24-impact.json",
+      "label": "docs/maintenance/preset-documentation-rollout-2026-10-24-impact.json",
+      "normalizedSha256": "c2212c33bf1cf965d9c7117d19b57e4036e02c30fa8509884e6cf23ba6fe3cbd",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
+      "sourceId": "SRC007",
+      "order": 7
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": "docs/maintenance/preset-documentation-rollout-2026-10-24-tests.json",
+      "label": "docs/maintenance/preset-documentation-rollout-2026-10-24-tests.json",
+      "normalizedSha256": "2b6bdde1b8bb7ba5b0f6598d38a79348ffd6729cef307fad0dd01e8a89c45d5d",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
+      "sourceId": "SRC008",
+      "order": 8
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": "docs/maintenance/gsdb-344-preset-source-lock.json",
+      "label": "docs/maintenance/gsdb-344-preset-source-lock.json",
+      "normalizedSha256": "0b329d2b68ccec96dca635f58564348dac88527f7f515f4f422fddf974657a12",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
+      "sourceId": "SRC009",
+      "order": 9
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": "docs/maintenance/gsdb-344-preset-installed-lock.json",
+      "label": "docs/maintenance/gsdb-344-preset-installed-lock.json",
+      "normalizedSha256": "bdffbde41077e82812cedb533f5aae826b0d705ebf9c26d2e9d7e96aed4cbf9a",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
+      "sourceId": "SRC010",
+      "order": 10
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": ".specify/presets/model-routing-governance/commands/speckit.model-routing-refresh.md",
+      "label": ".specify/presets/model-routing-governance/commands/speckit.model-routing-refresh.md",
+      "normalizedSha256": "c52e81e5df023269fd76d23a5b41ae4bc9bf2a2d204751ad73c9ec203b0740fb",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
+      "sourceId": "SRC011",
+      "order": 11
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": ".specify/presets/model-routing-governance/model-routing.json",
+      "label": ".specify/presets/model-routing-governance/model-routing.json",
+      "normalizedSha256": "937bac585623a5409b54e23b0929d0873257bd54535b1f791a8cf5931f7a4322",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
+      "sourceId": "SRC012",
+      "order": 12
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": ".specify/presets/intake-review-governance/model-routing.json",
+      "label": ".specify/presets/intake-review-governance/model-routing.json",
+      "normalizedSha256": "95d4075edd760b4672d6bb799868ed81fac5e50c31f3def60e996073c8559a03",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
+      "sourceId": "SRC013",
+      "order": 13
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": ".specify/presets/security-governance/docs/user-guide.md",
+      "label": ".specify/presets/security-governance/docs/user-guide.md",
+      "normalizedSha256": "70288b75233ecbcbcbc73c34dd83c9631370e568162b70c55344619c41a0cf37",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
+      "sourceId": "SRC014",
+      "order": 14
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": ".specify/presets/security-governance/docs/user-guide.EN.md",
+      "label": ".specify/presets/security-governance/docs/user-guide.EN.md",
+      "normalizedSha256": "8d6629a2cf23c7f49b02f98319314b37a473994ed7a2f7dcb48ab6fd72b54e28",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
+      "sourceId": "SRC015",
+      "order": 15
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": ".specify/presets/secure-development-assurance-governance/docs/user-guide.md",
+      "label": ".specify/presets/secure-development-assurance-governance/docs/user-guide.md",
+      "normalizedSha256": "afa1f7d1c32b12f82d9179403881b596977998f40b27da0f70d62e39aec4bdd7",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
+      "sourceId": "SRC016",
+      "order": 16
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": ".specify/presets/secure-development-assurance-governance/docs/user-guide.EN.md",
+      "label": ".specify/presets/secure-development-assurance-governance/docs/user-guide.EN.md",
+      "normalizedSha256": "c43d264557cf2793c10855370183c6a050fa3e9b7caad9d2641a80b59969d0f7",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
+      "sourceId": "SRC017",
+      "order": 17
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": ".specify/presets/architecture-governance/docs/user-guide.md",
+      "label": ".specify/presets/architecture-governance/docs/user-guide.md",
+      "normalizedSha256": "4549d0c21ac2d634eb1fea0cd2340a22ab5ea6a50ef10a7989135c1b15ffdba9",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
+      "sourceId": "SRC018",
+      "order": 18
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": ".specify/presets/architecture-governance/docs/user-guide.EN.md",
+      "label": ".specify/presets/architecture-governance/docs/user-guide.EN.md",
+      "normalizedSha256": "99eb8748bbaa9e2f6072f1064619bc81d77beaa64c0e12593b9a15ab0d2aabc4",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
+      "sourceId": "SRC019",
+      "order": 19
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": ".specify/presets/isaqb-architecture-governance/docs/user-guide.md",
+      "label": ".specify/presets/isaqb-architecture-governance/docs/user-guide.md",
+      "normalizedSha256": "2f1b1db487832044b90667ae9bce8a3441f5c5424b3b47bf841b3101e62d4226",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
+      "sourceId": "SRC020",
+      "order": 20
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": ".specify/presets/isaqb-architecture-governance/docs/user-guide.EN.md",
+      "label": ".specify/presets/isaqb-architecture-governance/docs/user-guide.EN.md",
+      "normalizedSha256": "46107f9bd81a4687346fa80d08b815b5f9d1116d0aae027ac4dc3ea60d6c91b1",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
+      "sourceId": "SRC021",
+      "order": 21
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": ".specify/presets/a11y-governance/docs/user-guide.md",
+      "label": ".specify/presets/a11y-governance/docs/user-guide.md",
+      "normalizedSha256": "8a8b5431bd7ce969ed7fe4b594a00c26a03d5fe56af89761f756de6cb71a9240",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
+      "sourceId": "SRC022",
+      "order": 22
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": ".specify/presets/a11y-governance/docs/user-guide.EN.md",
+      "label": ".specify/presets/a11y-governance/docs/user-guide.EN.md",
+      "normalizedSha256": "eca8e85cb062bd37d455d6af610b5d46fc4ac06601fd63f29ca0d177cdf2aaea",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
+      "sourceId": "SRC023",
+      "order": 23
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": ".specify/presets/cross-platform-governance/docs/user-guide.md",
+      "label": ".specify/presets/cross-platform-governance/docs/user-guide.md",
+      "normalizedSha256": "74d10f2f3c794c67d1fde348ebdf11cc66848c02366ee37da65c0fa097bec722",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
+      "sourceId": "SRC024",
+      "order": 24
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": ".specify/presets/cross-platform-governance/docs/user-guide.EN.md",
+      "label": ".specify/presets/cross-platform-governance/docs/user-guide.EN.md",
+      "normalizedSha256": "633ac39f38c853e7870ee6caa57ca078e940c6bfbc5d68f06aa25e3dc41b6135",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
+      "sourceId": "SRC025",
+      "order": 25
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": ".specify/presets/agent-parity-governance/docs/user-guide.md",
+      "label": ".specify/presets/agent-parity-governance/docs/user-guide.md",
+      "normalizedSha256": "7e6b79ff507f2d325bc4d32204808f01f6453a7229d7b5164439b5c93dd8b268",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
+      "sourceId": "SRC026",
+      "order": 26
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": ".specify/presets/agent-parity-governance/docs/user-guide.EN.md",
+      "label": ".specify/presets/agent-parity-governance/docs/user-guide.EN.md",
+      "normalizedSha256": "b3b4db0afb217afc3ca3b6b5fef2690f5370568d3ebd9347c930bb39c1127d45",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
+      "sourceId": "SRC027",
+      "order": 27
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": ".specify/presets/model-routing-governance/docs/user-guide.md",
+      "label": ".specify/presets/model-routing-governance/docs/user-guide.md",
+      "normalizedSha256": "fc05ab973be7396991d89f175a17ad9be58438d6bac8e9a356639216052f3326",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
+      "sourceId": "SRC028",
+      "order": 28
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": ".specify/presets/model-routing-governance/docs/user-guide.EN.md",
+      "label": ".specify/presets/model-routing-governance/docs/user-guide.EN.md",
+      "normalizedSha256": "f02f962da834aabb408f48d0591d417b509aeea8625c45f7b2c055cec1e98dab",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
+      "sourceId": "SRC029",
+      "order": 29
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": ".specify/presets/intake-authoring-governance/docs/user-guide.md",
+      "label": ".specify/presets/intake-authoring-governance/docs/user-guide.md",
+      "normalizedSha256": "2b7a50a72bcddc5a5fdb58873ddc691d70db3656a050dee1653832cca674bebf",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
+      "sourceId": "SRC030",
+      "order": 30
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": ".specify/presets/intake-authoring-governance/docs/user-guide.EN.md",
+      "label": ".specify/presets/intake-authoring-governance/docs/user-guide.EN.md",
+      "normalizedSha256": "a2f4aaf05176555ce3ef2ef4a1ac4f107d7bc9e05f47365f18cc30eab8bc54f7",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
+      "sourceId": "SRC031",
+      "order": 31
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": ".specify/presets/intake-review-governance/docs/user-guide.md",
+      "label": ".specify/presets/intake-review-governance/docs/user-guide.md",
+      "normalizedSha256": "b4c371b1d289ef98cbdc3a925dc6d24a6f45d41c0a8aa36fd13e3b22614112f4",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
+      "sourceId": "SRC032",
+      "order": 32
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": ".specify/presets/intake-review-governance/docs/user-guide.EN.md",
+      "label": ".specify/presets/intake-review-governance/docs/user-guide.EN.md",
+      "normalizedSha256": "887404bd791e7bd97ff57c3e82d37d1fbb49898583ee7d9a0b51b4837e032238",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
+      "sourceId": "SRC033",
+      "order": 33
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": ".specify/presets/intake-sequencing-governance/docs/user-guide.md",
+      "label": ".specify/presets/intake-sequencing-governance/docs/user-guide.md",
+      "normalizedSha256": "3923f980109e5ed52bb08ea97ce5255e785a19f6b4924784b1b367145c751803",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
+      "sourceId": "SRC034",
+      "order": 34
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": ".specify/presets/intake-sequencing-governance/docs/user-guide.EN.md",
+      "label": ".specify/presets/intake-sequencing-governance/docs/user-guide.EN.md",
+      "normalizedSha256": "9345e29a49462082f52a76b7aac3ec1cf319f35cbc8b1ae07a15bad197e2d85f",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
+      "sourceId": "SRC035",
+      "order": 35
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": ".specify/presets/autonomous-run-governance/docs/user-guide.md",
+      "label": ".specify/presets/autonomous-run-governance/docs/user-guide.md",
+      "normalizedSha256": "493de75dde3b19911def88890fc1b3b3f461815c1a31ec75b438819ce1898d77",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
+      "sourceId": "SRC036",
+      "order": 36
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": ".specify/presets/autonomous-run-governance/docs/user-guide.EN.md",
+      "label": ".specify/presets/autonomous-run-governance/docs/user-guide.EN.md",
+      "normalizedSha256": "78c651a9adfb421c368214949bec17d8085039ff4e8606b9ab88f61cd2c195cc",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
+      "sourceId": "SRC037",
+      "order": 37
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": ".specify/presets/parallel-autonomous-run-governance/docs/user-guide.md",
+      "label": ".specify/presets/parallel-autonomous-run-governance/docs/user-guide.md",
+      "normalizedSha256": "b65520ee1aab9aaf096b2406a3e1085f0534a20854d820707e7c635280b2a291",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
+      "sourceId": "SRC038",
+      "order": 38
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": ".specify/presets/parallel-autonomous-run-governance/docs/user-guide.EN.md",
+      "label": ".specify/presets/parallel-autonomous-run-governance/docs/user-guide.EN.md",
+      "normalizedSha256": "bd01bccfb72c68c79232c8bfbeb562ccebc0e45876007d927d6f31b846f8bcfc",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
+      "sourceId": "SRC039",
+      "order": 39
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": ".specify/presets/project-statistics-governance/docs/user-guide.md",
+      "label": ".specify/presets/project-statistics-governance/docs/user-guide.md",
+      "normalizedSha256": "f855f64686013e6e5b1952280a2e8c941635930388a28f95e05519a86b6126a2",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
+      "sourceId": "SRC040",
+      "order": 40
+    },
+    {
+      "kind": "File",
+      "location": "Repository",
+      "path": ".specify/presets/project-statistics-governance/docs/user-guide.EN.md",
+      "label": ".specify/presets/project-statistics-governance/docs/user-guide.EN.md",
+      "normalizedSha256": "f63c7a831ef884e16514d1a580818f0e14d6b2881eedf285b3e9515612d79ee4",
+      "gitBlob": "N/A",
+      "requestedUrl": "N/A",
+      "finalUrl": "N/A",
+      "retrievedAt": "N/A",
+      "httpStatus": "N/A",
+      "contentType": "N/A",
+      "contentLength": "N/A",
+      "redirectChain": [],
+      "rawSha256": "N/A",
+      "proofBoundary": "Explicit ordered documentation update source; version and reader-help meaning assessed, no implied run authority.",
+      "sourceId": "SRC041",
+      "order": 41
     },
     {
       "kind": "File",
@@ -92,8 +814,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "Ordered explicit ordinary update source; scope assessment records meaning and limits.",
-      "sourceId": "SRC004",
-      "order": 4
+      "sourceId": "SRC042",
+      "order": 42
     },
     {
       "kind": "File",
@@ -111,8 +833,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "Ordered explicit ordinary update source; scope assessment records meaning and limits.",
-      "sourceId": "SRC005",
-      "order": 5
+      "sourceId": "SRC043",
+      "order": 43
     },
     {
       "kind": "File",
@@ -130,8 +852,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "Ordered explicit ordinary update source; scope assessment records meaning and limits.",
-      "sourceId": "SRC006",
-      "order": 6
+      "sourceId": "SRC044",
+      "order": 44
     },
     {
       "kind": "File",
@@ -149,8 +871,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "Ordered explicit ordinary update source; scope assessment records meaning and limits.",
-      "sourceId": "SRC007",
-      "order": 7
+      "sourceId": "SRC045",
+      "order": 45
     },
     {
       "kind": "File",
@@ -168,8 +890,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "Ordered explicit ordinary update source; scope assessment records meaning and limits.",
-      "sourceId": "SRC008",
-      "order": 8
+      "sourceId": "SRC046",
+      "order": 46
     },
     {
       "kind": "File",
@@ -187,8 +909,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "Ordered explicit ordinary update source; scope assessment records meaning and limits.",
-      "sourceId": "SRC009",
-      "order": 9
+      "sourceId": "SRC047",
+      "order": 47
     },
     {
       "kind": "File",
@@ -206,8 +928,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "Ordered explicit ordinary update source; scope assessment records meaning and limits.",
-      "sourceId": "SRC010",
-      "order": 10
+      "sourceId": "SRC048",
+      "order": 48
     },
     {
       "kind": "File",
@@ -225,8 +947,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "Ordered explicit ordinary update source; scope assessment records meaning and limits.",
-      "sourceId": "SRC011",
-      "order": 11
+      "sourceId": "SRC049",
+      "order": 49
     },
     {
       "kind": "File",
@@ -244,8 +966,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "Ordered explicit ordinary update source; scope assessment records meaning and limits.",
-      "sourceId": "SRC012",
-      "order": 12
+      "sourceId": "SRC050",
+      "order": 50
     },
     {
       "kind": "File",
@@ -263,8 +985,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "Ordered explicit ordinary update source; scope assessment records meaning and limits.",
-      "sourceId": "SRC013",
-      "order": 13
+      "sourceId": "SRC051",
+      "order": 51
     },
     {
       "kind": "File",
@@ -282,8 +1004,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "Ordered explicit ordinary update source; scope assessment records meaning and limits.",
-      "sourceId": "SRC014",
-      "order": 14
+      "sourceId": "SRC052",
+      "order": 52
     },
     {
       "kind": "File",
@@ -301,8 +1023,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "Ordered explicit ordinary update source; scope assessment records meaning and limits.",
-      "sourceId": "SRC015",
-      "order": 15
+      "sourceId": "SRC053",
+      "order": 53
     },
     {
       "kind": "File",
@@ -320,8 +1042,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "Ordered explicit ordinary update source; scope assessment records meaning and limits.",
-      "sourceId": "SRC016",
-      "order": 16
+      "sourceId": "SRC054",
+      "order": 54
     },
     {
       "kind": "File",
@@ -339,8 +1061,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "Ordered explicit ordinary update source; scope assessment records meaning and limits.",
-      "sourceId": "SRC017",
-      "order": 17
+      "sourceId": "SRC055",
+      "order": 55
     },
     {
       "kind": "File",
@@ -358,8 +1080,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "Ordered explicit ordinary update source; scope assessment records meaning and limits.",
-      "sourceId": "SRC018",
-      "order": 18
+      "sourceId": "SRC056",
+      "order": 56
     },
     {
       "kind": "File",
@@ -377,8 +1099,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "Ordered explicit ordinary update source; scope assessment records meaning and limits.",
-      "sourceId": "SRC019",
-      "order": 19
+      "sourceId": "SRC057",
+      "order": 57
     },
     {
       "kind": "File",
@@ -396,8 +1118,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "Ordered explicit ordinary update source; scope assessment records meaning and limits.",
-      "sourceId": "SRC020",
-      "order": 20
+      "sourceId": "SRC058",
+      "order": 58
     },
     {
       "kind": "File",
@@ -415,8 +1137,8 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "Ordered explicit ordinary update source; scope assessment records meaning and limits.",
-      "sourceId": "SRC021",
-      "order": 21
+      "sourceId": "SRC059",
+      "order": 59
     },
     {
       "kind": "File",
@@ -434,12 +1156,12 @@
       "redirectChain": [],
       "rawSha256": "N/A",
       "proofBoundary": "Ordered explicit ordinary update source; scope assessment records meaning and limits.",
-      "sourceId": "SRC022",
-      "order": 22
+      "sourceId": "SRC060",
+      "order": 60
     },
     {
-      "sourceId": "SRC023",
-      "order": 23,
+      "sourceId": "SRC061",
+      "order": 61,
       "kind": "File",
       "label": "docs/maintenance/preset-patches-2026-10-10.md",
       "location": "Repository",
@@ -459,8 +1181,8 @@
       "proofBoundary": "Explicit PR45 source update before T037–T044; intake byte-identical, no new domain scope or retrieval."
     },
     {
-      "sourceId": "SRC024",
-      "order": 24,
+      "sourceId": "SRC062",
+      "order": 62,
       "kind": "File",
       "label": "docs/validation/lh01/registry-alignment.md",
       "location": "Repository",
@@ -480,8 +1202,8 @@
       "proofBoundary": "Current local Update T015; domain scope preserved; no remote retrieval."
     },
     {
-      "sourceId": "SRC025",
-      "order": 25,
+      "sourceId": "SRC063",
+      "order": 63,
       "kind": "File",
       "label": "docs/validation/lh01/registry-alignment-applied.json",
       "location": "Repository",
@@ -501,8 +1223,8 @@
       "proofBoundary": "Current local Update T015; domain scope preserved; no remote retrieval."
     },
     {
-      "sourceId": "SRC026",
-      "order": 26,
+      "sourceId": "SRC064",
+      "order": 64,
       "kind": "File",
       "label": "docs/architecture/decisions/002-lh01-language-msl.md",
       "location": "Repository",
@@ -522,8 +1244,8 @@
       "proofBoundary": "Current local Update T015; domain scope preserved; no remote retrieval."
     },
     {
-      "sourceId": "SRC027",
-      "order": 27,
+      "sourceId": "SRC065",
+      "order": 65,
       "kind": "File",
       "label": "docs/architecture/decisions/003-lh01-runtime.md",
       "location": "Repository",
@@ -543,8 +1265,8 @@
       "proofBoundary": "Current local Update T015; domain scope preserved; no remote retrieval."
     },
     {
-      "sourceId": "SRC028",
-      "order": 28,
+      "sourceId": "SRC066",
+      "order": 66,
       "kind": "File",
       "label": "docs/architecture/decisions/004-lh01-framework.md",
       "location": "Repository",
@@ -564,8 +1286,8 @@
       "proofBoundary": "Current local Update T015; domain scope preserved; no remote retrieval."
     },
     {
-      "sourceId": "SRC029",
-      "order": 29,
+      "sourceId": "SRC067",
+      "order": 67,
       "kind": "File",
       "label": "docs/architecture/decisions/005-lh01-powershell-minimum.md",
       "location": "Repository",
@@ -585,8 +1307,8 @@
       "proofBoundary": "Current local Update T015; domain scope preserved; no remote retrieval."
     },
     {
-      "sourceId": "SRC030",
-      "order": 30,
+      "sourceId": "SRC068",
+      "order": 68,
       "kind": "File",
       "label": "docs/architecture/decisions/006-lh01-session-terminal.md",
       "location": "Repository",
@@ -606,8 +1328,8 @@
       "proofBoundary": "Current local Update T015; domain scope preserved; no remote retrieval."
     },
     {
-      "sourceId": "SRC031",
-      "order": 31,
+      "sourceId": "SRC069",
+      "order": 69,
       "kind": "File",
       "label": "docs/planning/lh01-source-refresh-format-corrections.md",
       "location": "Repository",
@@ -627,8 +1349,8 @@
       "proofBoundary": "Current explicitly named repository source; source order is not conflict precedence."
     },
     {
-      "sourceId": "SRC032",
-      "order": 32,
+      "sourceId": "SRC070",
+      "order": 70,
       "kind": "File",
       "label": "docs/planning/lh01-source-refresh-review-corrections.md",
       "location": "Repository",
@@ -648,8 +1370,8 @@
       "proofBoundary": "Current explicitly named repository source; source order is not conflict precedence."
     },
     {
-      "sourceId": "SRC033",
-      "order": 33,
+      "sourceId": "SRC071",
+      "order": 71,
       "kind": "File",
       "label": "docs/planning/lh01-source-refresh-decisions.md",
       "location": "Repository",
@@ -669,8 +1391,8 @@
       "proofBoundary": "Current explicitly named repository source; source order is not conflict precedence."
     },
     {
-      "sourceId": "SRC034",
-      "order": 34,
+      "sourceId": "SRC072",
+      "order": 72,
       "kind": "File",
       "label": "docs/planning/lh00-collection-language-finalization.md",
       "location": "Repository",
@@ -690,8 +1412,8 @@
       "proofBoundary": "Current explicitly named repository source; source order is not conflict precedence."
     },
     {
-      "sourceId": "SRC035",
-      "order": 35,
+      "sourceId": "SRC073",
+      "order": 73,
       "kind": "File",
       "label": "docs/planning/lh00-collection-correction-decisions.md",
       "location": "Repository",
@@ -711,8 +1433,8 @@
       "proofBoundary": "Current explicitly named repository source; source order is not conflict precedence."
     },
     {
-      "sourceId": "SRC036",
-      "order": 36,
+      "sourceId": "SRC074",
+      "order": 74,
       "kind": "File",
       "label": "docs/planning/lh00-collection-migration-decisions.md",
       "location": "Repository",
@@ -732,8 +1454,8 @@
       "proofBoundary": "Current explicitly named repository source; source order is not conflict precedence."
     },
     {
-      "sourceId": "SRC037",
-      "order": 37,
+      "sourceId": "SRC075",
+      "order": 75,
       "kind": "File",
       "label": "docs/planning/lh00-increment2-update-decisions.md",
       "location": "Repository",
@@ -753,8 +1475,8 @@
       "proofBoundary": "Current explicitly named repository source; source order is not conflict precedence."
     },
     {
-      "sourceId": "SRC038",
-      "order": 38,
+      "sourceId": "SRC076",
+      "order": 76,
       "kind": "File",
       "label": "docs/planning/lh00-macos15-refresh-decisions.md",
       "location": "Repository",
@@ -774,8 +1496,8 @@
       "proofBoundary": "Current explicitly named repository source; source order is not conflict precedence."
     },
     {
-      "sourceId": "SRC039",
-      "order": 39,
+      "sourceId": "SRC077",
+      "order": 77,
       "kind": "File",
       "label": "docs/planning/lh00-v037-refresh-decisions.md",
       "location": "Repository",
@@ -795,8 +1517,8 @@
       "proofBoundary": "Current explicitly named repository source; source order is not conflict precedence."
     },
     {
-      "sourceId": "SRC040",
-      "order": 40,
+      "sourceId": "SRC078",
+      "order": 78,
       "kind": "File",
       "label": "docs/intake-governance.md",
       "location": "Repository",
@@ -816,8 +1538,8 @@
       "proofBoundary": "Current explicitly named repository source; source order is not conflict precedence."
     },
     {
-      "sourceId": "SRC041",
-      "order": 41,
+      "sourceId": "SRC079",
+      "order": 79,
       "kind": "File",
       "label": "docs/Entwicklungsumgebung.md",
       "location": "Repository",
@@ -837,8 +1559,8 @@
       "proofBoundary": "Current explicitly named repository source; source order is not conflict precedence."
     },
     {
-      "sourceId": "SRC042",
-      "order": 42,
+      "sourceId": "SRC080",
+      "order": 80,
       "kind": "File",
       "label": ".specify/memory/intake-authoring-profile.md",
       "location": "Repository",
@@ -858,8 +1580,8 @@
       "proofBoundary": "Current explicitly named repository source; source order is not conflict precedence."
     },
     {
-      "sourceId": "SRC043",
-      "order": 43,
+      "sourceId": "SRC081",
+      "order": 81,
       "kind": "File",
       "label": "docs/Lastenheft-Plan.md",
       "location": "Repository",
@@ -879,8 +1601,8 @@
       "proofBoundary": "Current explicitly named repository source; source order is not conflict precedence."
     },
     {
-      "sourceId": "SRC044",
-      "order": 44,
+      "sourceId": "SRC082",
+      "order": 82,
       "kind": "File",
       "label": "docs/Bedienkonzept.md",
       "location": "Repository",
@@ -900,8 +1622,8 @@
       "proofBoundary": "Current explicitly named repository source; source order is not conflict precedence."
     },
     {
-      "sourceId": "SRC045",
-      "order": 45,
+      "sourceId": "SRC083",
+      "order": 83,
       "kind": "File",
       "label": "constitution.md",
       "location": "Repository",
@@ -916,13 +1638,13 @@
       "lastModified": "N/A",
       "redirectChain": [],
       "rawSha256": "N/A",
-      "normalizedSha256": "097fce80908109319792a7ff5e78169ab35caeb502febff3324172315f754460",
+      "normalizedSha256": "eef6170db105fa13fabb349c3875bd8b3ea67f74bac915ef542fd22ee9decf4a",
       "gitBlob": "N/A",
       "proofBoundary": "Current explicitly named repository source; source order is not conflict precedence."
     },
     {
-      "sourceId": "SRC046",
-      "order": 46,
+      "sourceId": "SRC084",
+      "order": 84,
       "kind": "File",
       "label": "AGENTS.md",
       "location": "Repository",
@@ -937,13 +1659,13 @@
       "lastModified": "N/A",
       "redirectChain": [],
       "rawSha256": "N/A",
-      "normalizedSha256": "11c4aeef2e2db68906f46acb760ae2889e068539bd7111ffbd2b39b2c6cf6b54",
+      "normalizedSha256": "45721ee81c102b6e032b054bfa252ae08408ea311b12c17dd1d379e7092061c3",
       "gitBlob": "N/A",
       "proofBoundary": "Current explicitly named repository source; source order is not conflict precedence."
     },
     {
-      "sourceId": "SRC047",
-      "order": 47,
+      "sourceId": "SRC085",
+      "order": 85,
       "kind": "File",
       "label": "scripts/config/spec-kit-project-statistics-governance-presets.json",
       "location": "Repository",
@@ -958,13 +1680,13 @@
       "lastModified": "N/A",
       "redirectChain": [],
       "rawSha256": "N/A",
-      "normalizedSha256": "c4e606e7679415f35e42b8d0ccf963f2d5b14754fe689d45393279a90196be8f",
+      "normalizedSha256": "2cb57b4651616439b45bee12156b8c513187141100ecb39ac64f3fe9eaa8bcfa",
       "gitBlob": "N/A",
       "proofBoundary": "Current explicitly named repository source; source order is not conflict precedence."
     },
     {
-      "sourceId": "SRC048",
-      "order": 48,
+      "sourceId": "SRC086",
+      "order": 86,
       "kind": "File",
       "label": "docs/maintenance/coordinated-governance-source-lock.json",
       "location": "Repository",
@@ -984,8 +1706,8 @@
       "proofBoundary": "Current explicitly named repository source; source order is not conflict precedence."
     },
     {
-      "sourceId": "SRC049",
-      "order": 49,
+      "sourceId": "SRC087",
+      "order": 87,
       "kind": "File",
       "label": "docs/maintenance/coordinated-governance-oct03.md",
       "location": "Repository",
@@ -1005,8 +1727,8 @@
       "proofBoundary": "Current explicitly named repository source; source order is not conflict precedence."
     },
     {
-      "sourceId": "SRC050",
-      "order": 50,
+      "sourceId": "SRC088",
+      "order": 88,
       "kind": "File",
       "label": "docs/security/README.md",
       "location": "Repository",
@@ -1026,8 +1748,8 @@
       "proofBoundary": "Current explicitly named repository source; source order is not conflict precedence."
     },
     {
-      "sourceId": "SRC051",
-      "order": 51,
+      "sourceId": "SRC089",
+      "order": 89,
       "kind": "File",
       "label": "docs/maintenance/assurance-v013-stable-publication.md",
       "location": "Repository",
@@ -1047,8 +1769,8 @@
       "proofBoundary": "Current explicitly named repository source; source order is not conflict precedence."
     },
     {
-      "sourceId": "SRC052",
-      "order": 52,
+      "sourceId": "SRC090",
+      "order": 90,
       "kind": "File",
       "label": "docs/maintenance/intake-authoring-v037.md",
       "location": "Repository",
@@ -1068,8 +1790,8 @@
       "proofBoundary": "Current explicitly named repository source; source order is not conflict precedence."
     },
     {
-      "sourceId": "SRC053",
-      "order": 53,
+      "sourceId": "SRC091",
+      "order": 91,
       "kind": "File",
       "label": "docs/maintenance/macos-runner-migration.md",
       "location": "Repository",
@@ -1089,8 +1811,8 @@
       "proofBoundary": "Current explicitly named repository source; source order is not conflict precedence."
     },
     {
-      "sourceId": "SRC054",
-      "order": 54,
+      "sourceId": "SRC092",
+      "order": 92,
       "kind": "File",
       "label": "docs/maintenance/macos-runner-documentation-impact.json",
       "location": "Repository",
@@ -1110,8 +1832,8 @@
       "proofBoundary": "Current explicitly named repository source; source order is not conflict precedence."
     },
     {
-      "sourceId": "SRC055",
-      "order": 55,
+      "sourceId": "SRC093",
+      "order": 93,
       "kind": "File",
       "label": ".github/workflows/homogeneity-check.yml",
       "location": "Repository",
@@ -1131,8 +1853,8 @@
       "proofBoundary": "Current explicitly named repository source; source order is not conflict precedence."
     },
     {
-      "sourceId": "SRC056",
-      "order": 56,
+      "sourceId": "SRC094",
+      "order": 94,
       "kind": "File",
       "label": ".github/workflows/powershell-analysis.yml",
       "location": "Repository",
@@ -1152,8 +1874,8 @@
       "proofBoundary": "Current explicitly named repository source; source order is not conflict precedence."
     },
     {
-      "sourceId": "SRC057",
-      "order": 57,
+      "sourceId": "SRC095",
+      "order": 95,
       "kind": "File",
       "label": ".github/workflows/maintenance-tui.yml",
       "location": "Repository",
@@ -1173,8 +1895,8 @@
       "proofBoundary": "Current explicitly named repository source; source order is not conflict precedence."
     },
     {
-      "sourceId": "SRC058",
-      "order": 58,
+      "sourceId": "SRC096",
+      "order": 96,
       "kind": "File",
       "label": ".specify/memory/intake-series-policy.json",
       "location": "Repository",
@@ -1194,8 +1916,8 @@
       "proofBoundary": "Current explicitly named repository source; source order is not conflict precedence."
     },
     {
-      "sourceId": "SRC059",
-      "order": 59,
+      "sourceId": "SRC097",
+      "order": 97,
       "kind": "File",
       "label": "requirements/intake-governance-config.json",
       "location": "Repository",
@@ -1215,8 +1937,8 @@
       "proofBoundary": "Current explicitly named repository source; source order is not conflict precedence."
     },
     {
-      "sourceId": "SRC060",
-      "order": 60,
+      "sourceId": "SRC098",
+      "order": 98,
       "kind": "File",
       "label": "requirements/RequirementsIndex.md",
       "location": "Repository",
@@ -1236,8 +1958,8 @@
       "proofBoundary": "Current explicitly named repository source; source order is not conflict precedence."
     },
     {
-      "sourceId": "SRC061",
-      "order": 61,
+      "sourceId": "SRC099",
+      "order": 99,
       "kind": "File",
       "label": ".specify/memory/constitution.md",
       "location": "Repository",
@@ -1252,13 +1974,13 @@
       "lastModified": "N/A",
       "redirectChain": [],
       "rawSha256": "N/A",
-      "normalizedSha256": "097fce80908109319792a7ff5e78169ab35caeb502febff3324172315f754460",
+      "normalizedSha256": "eef6170db105fa13fabb349c3875bd8b3ea67f74bac915ef542fd22ee9decf4a",
       "gitBlob": "N/A",
       "proofBoundary": "Current explicitly named repository source; source order is not conflict precedence."
     },
     {
-      "sourceId": "SRC062",
-      "order": 62,
+      "sourceId": "SRC100",
+      "order": 100,
       "kind": "File",
       "label": ".specify/memory/intake-authoring-policy.json",
       "location": "Repository",
@@ -1278,8 +2000,8 @@
       "proofBoundary": "Current explicitly named repository source; source order is not conflict precedence."
     },
     {
-      "sourceId": "SRC063",
-      "order": 63,
+      "sourceId": "SRC101",
+      "order": 101,
       "kind": "File",
       "label": "docs/security/regulatory-applicability.md",
       "location": "Repository",
@@ -1299,8 +2021,8 @@
       "proofBoundary": "Current explicitly named repository source; source order is not conflict precedence."
     },
     {
-      "sourceId": "SRC064",
-      "order": 64,
+      "sourceId": "SRC102",
+      "order": 102,
       "kind": "File",
       "label": "docs/security/msl-applicability.md",
       "location": "Repository",
@@ -1320,8 +2042,8 @@
       "proofBoundary": "Current explicitly named repository source; source order is not conflict precedence."
     },
     {
-      "sourceId": "SRC065",
-      "order": 65,
+      "sourceId": "SRC103",
+      "order": 103,
       "kind": "File",
       "label": "docs/validation/lh00/acceptance.md",
       "location": "Repository",
@@ -1341,8 +2063,8 @@
       "proofBoundary": "Current explicitly named repository source; source order is not conflict precedence."
     },
     {
-      "sourceId": "SRC066",
-      "order": 66,
+      "sourceId": "SRC104",
+      "order": 104,
       "kind": "File",
       "label": "docs/validation/lh00/pilot-owner-decision.json",
       "location": "Repository",
@@ -1567,6 +2289,13 @@
       "question": "How are GSDB3.4.4 and prior source changes integrated without extending execution authority?",
       "answer": "Ordinary lineage-preserving source update, 50 scoped control assessments, explicit governance clarification, distinct complete review and targeted technical alignment; no implementation, acceptance or platform rebind.",
       "evidence": "specs/intake-authoring-operations/23328e17-0a8e-4fd3-84c1-0c31439453b5/update-decisions.md"
+    },
+    {
+      "id": "IAD030",
+      "status": "Answered",
+      "question": "How is the 24 October documentation cohort adopted for this intake?",
+      "answer": "Ordinary assessed source update with exact archives, unchanged identities/scope, current reader-help and stable resolver limits, full distinct review and targeted technical alignment. No new product, acceptance or platform authority.",
+      "evidence": "specs/intake-authoring-operations/e31322a1-8e16-46da-a4bf-0daf7c4ca484/update-decisions.md"
     }
   ],
   "openDecisionIds": [],
@@ -1578,14 +2307,14 @@
     "autonomousInvocation": "$speckit-autonomous"
   },
   "deliveryAuthority": "MergeAndSync",
-  "authorityEvidence": "Owner request 2026-10-21: execute approved LH-00/LH-01 update/review/alignment plan; MergeAndSync with Admin-Bypass, no implementation or platform rebind.",
+  "authorityEvidence": "Explicit owner 2026-10-24 ordinary source updates, full independent reviews and targeted technical alignment, MergeAndSync/admin delivery. No product, installation, release, platform rebind or fleet authority.",
   "promptState": "Enabled",
   "provenanceMode": "Supersession",
   "supersedes": {
-    "receiptPath": "specs/intake-authoring-archive/lh-00/c3321962-0e64-45b7-9d4b-d49f8083d58f/specs/intake-authoring-receipts/lh-00.json",
-    "targetNormalizedSha256": "1126780c1b179bb8b98884d4770de5a7c0bccde1b20ba8e4e8e706772a2d0538",
-    "archiveTargetPath": "specs/intake-authoring-archive/lh-00/c3321962-0e64-45b7-9d4b-d49f8083d58f/intakes/LH-00.md",
-    "archiveReceiptPath": "specs/intake-authoring-archive/lh-00/c3321962-0e64-45b7-9d4b-d49f8083d58f/specs/intake-authoring-receipts/lh-00.json"
+    "receiptPath": "specs/intake-authoring-archive/lh-00/63f5fd74-6d7d-49e1-96e1-805912466b98/specs/intake-authoring-receipts/lh-00.json",
+    "targetNormalizedSha256": "bfee30a70a990f07f78ba4f61e8571c88044b15de5b8c9ee3aead5a19a589d53",
+    "archiveTargetPath": "specs/intake-authoring-archive/lh-00/63f5fd74-6d7d-49e1-96e1-805912466b98/intakes/LH-00.md",
+    "archiveReceiptPath": "specs/intake-authoring-archive/lh-00/63f5fd74-6d7d-49e1-96e1-805912466b98/specs/intake-authoring-receipts/lh-00.json"
   },
   "legacyAdoption": {
     "evidenceType": "N/A",
@@ -1593,7 +2322,7 @@
     "priorGitBlob": "N/A"
   },
   "updateAuthorized": true,
-  "updateAuthorityEvidence": "specs/intake-authoring-operations/23328e17-0a8e-4fd3-84c1-0c31439453b5/update-decisions.md",
+  "updateAuthorityEvidence": "specs/intake-authoring-operations/e31322a1-8e16-46da-a4bf-0daf7c4ca484/update-decisions.md",
   "series": {
     "seriesId": "3c0e3e97-1268-4828-aeba-c3f3d17637de",
     "manifestPath": "specs/intake-series/lh00-process/manifest.json",
@@ -1605,11 +2334,11 @@
   "governanceContext": [
     {
       "path": "constitution.md",
-      "normalizedSha256": "097fce80908109319792a7ff5e78169ab35caeb502febff3324172315f754460"
+      "normalizedSha256": "eef6170db105fa13fabb349c3875bd8b3ea67f74bac915ef542fd22ee9decf4a"
     },
     {
       "path": "AGENTS.md",
-      "normalizedSha256": "11c4aeef2e2db68906f46acb760ae2889e068539bd7111ffbd2b39b2c6cf6b54"
+      "normalizedSha256": "45721ee81c102b6e032b054bfa252ae08408ea311b12c17dd1d379e7092061c3"
     },
     {
       "path": ".specify/memory/intake-authoring-policy.json",
@@ -1621,10 +2350,10 @@
     }
   ],
   "updateEvidence": {
-    "decisionsPath": "specs/intake-authoring-operations/23328e17-0a8e-4fd3-84c1-0c31439453b5/update-decisions.md",
-    "operationPath": "specs/intake-authoring-operations/23328e17-0a8e-4fd3-84c1-0c31439453b5/operation.json",
-    "previousReviewId": "9484cac7-daee-422f-a72c-a2d886d55c3a",
-    "previousReviewArchive": "specs/intake-review-archive/9484cac7-daee-422f-a72c-a2d886d55c3a",
-    "previousReceiptNormalizedSha256": "0cdf3c141fca155c5de4ba2052cf3c07da28d736520c9286a44aaaff01c6c2cc"
+    "decisionsPath": "specs/intake-authoring-operations/e31322a1-8e16-46da-a4bf-0daf7c4ca484/update-decisions.md",
+    "operationPath": "specs/intake-authoring-operations/e31322a1-8e16-46da-a4bf-0daf7c4ca484/operation.json",
+    "previousReviewId": "c1daa349-7eae-400b-b073-301372ef54b3",
+    "previousReviewArchive": "specs/intake-review-archive/c1daa349-7eae-400b-b073-301372ef54b3",
+    "previousReceiptNormalizedSha256": "18a517f077d90f232258ab81fd919e7f61a1ad2d6abbb3b971ce3007583cbcac"
   }
 }

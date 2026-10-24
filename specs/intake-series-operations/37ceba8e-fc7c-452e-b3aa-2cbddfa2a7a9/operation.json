@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "1.0",
+  "documentType": "IntakeSeriesOperation",
+  "operationId": "37ceba8e-fc7c-452e-b3aa-2cbddfa2a7a9",
+  "type": "Update",
+  "status": "Completed",
+  "seriesId": "3c0e3e97-1268-4828-aeba-c3f3d17637de",
+  "authorityEvidence": "specs/intake-authoring-operations/e31322a1-8e16-46da-a4bf-0daf7c4ca484/update-decisions.md",
+  "changes": "Only LH-00 target hash; unchanged Ready/Eligible, root, order and zero edges.",
+  "archives": [
+    {
+      "originalPath": "specs/intake-series/lh00-process/manifest.json",
+      "archivePath": "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/37ceba8e-fc7c-452e-b3aa-2cbddfa2a7a9/manifest.json",
+      "rawSha256": "bce2b310c08875a6c05c0be844208e4b1b90987b92fb0ba7cbcc1a5f1acac53d",
+      "normalizedSha256": "bce2b310c08875a6c05c0be844208e4b1b90987b92fb0ba7cbcc1a5f1acac53d"
+    },
+    {
+      "originalPath": "specs/intake-series/lh00-process/receipt.json",
+      "archivePath": "specs/intake-series-archive/3c0e3e97-1268-4828-aeba-c3f3d17637de/37ceba8e-fc7c-452e-b3aa-2cbddfa2a7a9/receipt.json",
+      "rawSha256": "96985b27031e74d431e771d2b9da04be1d025fe12f44a434ccaf27071ec283d7",
+      "normalizedSha256": "96985b27031e74d431e771d2b9da04be1d025fe12f44a434ccaf27071ec283d7"
+    }
+  ]
+}
