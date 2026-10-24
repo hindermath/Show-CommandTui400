@@ -4,7 +4,7 @@ description: Explicitly update one active intake or migrate one approved intake 
 compatibility: Requires spec-kit project structure with .specify/ directory
 metadata:
   author: github-spec-kit
-  source: intake-authoring-governance:commands/speckit.intake-update.md
+  source: intake-authoring-governance:speckit.intake-update.md
 ---
 
 ## User Input
@@ -56,3 +56,15 @@ Update is the only normal command that changes an active intake.
 Finish with updated identities, old/new hashes, lineage, archive paths,
 validation, review invalidation, and exactly one Intake Review next action.
 Never start the review or a downstream command.
+
+## Nutzungshilfe / Reader help
+
+DE: Einen klar begrenzten Arbeitsauftrag mit Herkunft und Änderungsrechten vorbereiten. Diese Command-Erklärung ändert keine Berechtigungen oder Voraussetzungen.
+Die bestehenden technischen Feldnamen und Statuswerte nicht übersetzen oder
+nur zum Bestehen eines Tests verändern. Einführung, Begriffe, Beispiel,
+Ergebnis und Fehlerhilfe stehen im [deutschen Leserpfad](https://github.com/hindermath/spec-kit-preset-intake-authoring-governance/blob/main/docs/user-guide.md).
+
+EN: Prepare a bounded work request with provenance and change authority. This command explanation changes no authority or prerequisites.
+Keep technical field names and states unchanged; never alter them just to pass.
+See the [English reader path](https://github.com/hindermath/spec-kit-preset-intake-authoring-governance/blob/main/docs/user-guide.EN.md)
+for introduction, terms, example, result and troubleshooting.

@@ -1,0 +1,42 @@
+{
+  "schemaVersion": "1.0",
+  "documentType": "SecureDevelopmentGateEvidence",
+  "contextId": "show-commandtui400-documentation-rollout",
+  "gate": "image-impact",
+  "mode": "development",
+  "createdAt": "2026-10-24T17:37:28.710732+02:00",
+  "review": {
+    "owner": "Thorsten Hindermann",
+    "reviewer": "Codex under explicit bounded documentation-rollout technical preparation authority",
+    "reviewedAt": "2026-10-24T17:37:28.710732+02:00",
+    "reviewDue": "2027-01-10",
+    "residualRisk": "Current package/document integrity only. Human decisions preserved; no fresh LH-00/LH-01 provenance, product, physical accessibility, legal or certification acceptance.",
+    "reevaluationTrigger": "Primary source, baseline, preset, scope or authority change; quarterly review."
+  },
+  "assessments": [
+    {
+      "implementation": "Not Assessed",
+      "reason": "No image, toolchain or deployment change in this bounded pilot.",
+      "evidence": "docs/maintenance/preset-documentation-rollout-2026-10-24.md",
+      "reevaluationTrigger": "Image, toolchain or deployment change",
+      "applicability": "N/A",
+      "id": "NO-IMAGE-MUTATION"
+    }
+  ],
+  "outcome": "Ready",
+  "externalComparisonBoundary": "HOSK/GWDG: ExternalComparison only; never local evidence",
+  "verificationScope": "Fourteen published stable packages from Level 0 ded29751b58eece7711e80cf997a89b559812c93; unchanged controlled GSDB 3.4.4 and LH-00/LH-01 artefacts. No Home overlay, model call, toolchain or product implementation.",
+  "runbookApplicability": "N/A",
+  "runbookRationale": "Bounded technical integration; commands and limits are in the separate pilot report.",
+  "imageChecks": {
+    "build": "N/A",
+    "compose": "N/A",
+    "toolchain": "N/A",
+    "ociDigest": "N/A",
+    "sbom": "N/A",
+    "secrets": "N/A",
+    "mounts": "N/A",
+    "network": "N/A",
+    "ci": "N/A"
+  }
+}

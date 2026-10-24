@@ -152,8 +152,8 @@ management and platform acceptance remain LH-00 requirements, not authoring resu
 
 ## Governance-Pilot und Liefergrenzen / Governance pilot and delivery boundaries
 
-DE: Das 14er-Profil bindet Security 0.7.2, Architecture 0.6.3 und Intake
-Authoring 0.3.8 / Review 0.2.5 / Sequencing 0.2.9. Produkt, Werkzeuge und
+DE: Das 14er-Profil bindet Security 0.7.4, Assurance 0.1.8, Architecture 0.6.5 und Intake
+Authoring 0.3.10 / Review 0.2.7 / Sequencing 0.2.11. Produkt, Werkzeuge und
 Organisation werden regulatorisch getrennt bewertet; Ausbildungszweck und
 AI-SBOM N/A ersetzen keine DS-GVO-/KI-VO-Anwendbarkeitspruefung.
 Unbekannte Rollen, Jurisdiktionen oder direkte/vertragliche Pflichten bleiben Open.
@@ -165,7 +165,7 @@ public Level-2-Piloten. C (restliche public Level-2-Verbraucher) und D
 (restliche Flotte) brauchen jeweils einen separaten Auftrag. Admin-Bypass
 ersetzt keine technische Pruefung. Installation startet keine Implementierung.
 
-EN: The fourteen-preset profile binds the five released versions above.
+EN: The fourteen-preset profile binds the six released versions above.
 Assess product, tooling and organisation separately; unknown regulatory
 scope remains Open. Education and AI-SBOM N/A are not blanket exemptions.
 Review the original six presets plus Assurance every 3 October, next
@@ -175,6 +175,12 @@ Level-2 pilots. Further public Level-2 consumers and the remaining fleet each
 need a separate request. Installation grants no product execution authority.
 
 Evidence: [pilot integration](docs/maintenance/coordinated-governance-oct03.md).
+Aktuelle Paketbindung / Current package binding:
+[Dokumentationsrollout / documentation rollout](docs/maintenance/preset-documentation-rollout-2026-10-24.md).
+DE: LH-00/LH-01, Receipts und Archive bleiben unverändert. Geänderte gebundene
+Guidance und Matrix bedeuten Herkunftsdrift, keine aktuelle Produktstartfreigabe.
+EN: Preserve LH-00/LH-01, receipts and archives unchanged. Changed bound guidance
+and matrix mean provenance drift, not current product-start authorization.
 Policy: `docs/maintenance/governance-review-and-rollout.md` in the Level-0 source.
 
 ## macOS-CI-Runner / macOS CI runners

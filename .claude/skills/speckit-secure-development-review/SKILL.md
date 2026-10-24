@@ -5,10 +5,25 @@ description: Ein benanntes Secure-Development-Gate mit begrenzter Evidence-Autor
 compatibility: Requires spec-kit project structure with .specify/ directory
 metadata:
   author: github-spec-kit
-  source: secure-development-assurance-governance:commands/speckit.secure-development-review.md
+  source: secure-development-assurance-governance:speckit.secure-development-review.md
 ---
 
 # Secure Development Review
+
+## Routing / Routing
+
+Im bestehenden Model-Routing gilt `frontier-reasoning` für die fachliche
+Bewertung des benannten Gates. Der Vertrag steht in `model-routing.json`.
+Der direkte Validator bleibt eine modellfreie Skriptprüfung; sein Erfolg ist
+keine fachliche Bewertung oder menschliche Freigabe. Nur ausdrücklich
+autorisierte Review-Evidence darf geändert werden. Fehlende Verträge oder
+unpassende lokale Profile blockieren ohne schwächere Ersatzrolle.
+
+*Stable routing uses frontier-reasoning for the named gate's assessment.
+The contract is in model-routing.json. The direct validator remains model-free;
+its success is neither an assessment nor human approval. Edit only explicitly
+authorized review evidence. Missing contracts or unsuitable local profiles
+block without a weaker fallback role.*
 
 Syntax:
 
@@ -82,3 +97,15 @@ array; one risk uses [{...}], not {...}. Null, booleans, numbers and strings
 are invalid. Empty arrays are allowed except for ReadyWithAcceptedRisks.
 Other outcomes may omit the optional field. Risk metadata requirements and
 all human decision boundaries remain unchanged.*
+
+## Nutzungshilfe / Reader help
+
+DE: Projektgeführte Sicherheitsnachweise auf Bindung und Konsistenz prüfen; technische Ergebnisse und menschliche Entscheidungen trennen. Diese Command-Erklärung ändert keine Berechtigungen oder Voraussetzungen.
+Die bestehenden technischen Feldnamen und Statuswerte nicht übersetzen oder
+nur zum Bestehen eines Tests verändern. Einführung, Begriffe, Beispiel,
+Ergebnis und Fehlerhilfe stehen im [deutschen Leserpfad](https://github.com/hindermath/spec-kit-preset-secure-development-assurance-governance/blob/main/docs/user-guide.md).
+
+EN: Check binding and consistency of project-owned security evidence; separate technical results from human decisions. This command explanation changes no authority or prerequisites.
+Keep technical field names and states unchanged; never alter them just to pass.
+See the [English reader path](https://github.com/hindermath/spec-kit-preset-secure-development-assurance-governance/blob/main/docs/user-guide.EN.md)
+for introduction, terms, example, result and troubleshooting.

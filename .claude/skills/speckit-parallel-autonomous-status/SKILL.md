@@ -4,7 +4,7 @@ description: Inspect a parallel autonomous campaign without changing it.
 compatibility: Requires spec-kit project structure with .specify/ directory
 metadata:
   author: github-spec-kit
-  source: parallel-autonomous-run-governance:commands/speckit.parallel-autonomous-status.md
+  source: parallel-autonomous-run-governance:speckit.parallel-autonomous-status.md
 ---
 
 Read the campaign manifest, state, runtime result files, Git worktrees, and
@@ -23,3 +23,15 @@ arguments, environment values, credentials, or undeclared provider settings.
 
 *DE: Status ist read-only und bietet JSON sowie barrierearmen Text. Fehlende
 Pflichtbindungen werden als `Blocked`, nicht als stiller Standard angezeigt.*
+
+## Nutzungshilfe / Reader help
+
+DE: Mehrere autorisierte Feature-Läufe mit getrennten Arbeitskopien koordinieren. Diese Command-Erklärung ändert keine Berechtigungen oder Voraussetzungen.
+Die bestehenden technischen Feldnamen und Statuswerte nicht übersetzen oder
+nur zum Bestehen eines Tests verändern. Einführung, Begriffe, Beispiel,
+Ergebnis und Fehlerhilfe stehen im [deutschen Leserpfad](https://github.com/hindermath/spec-kit-preset-parallel-autonomous-run-governance/blob/main/docs/user-guide.md).
+
+EN: Coordinate multiple authorized feature runs with isolated working copies. This command explanation changes no authority or prerequisites.
+Keep technical field names and states unchanged; never alter them just to pass.
+See the [English reader path](https://github.com/hindermath/spec-kit-preset-parallel-autonomous-run-governance/blob/main/docs/user-guide.EN.md)
+for introduction, terms, example, result and troubleshooting.

@@ -1,0 +1,78 @@
+{
+  "entries": [
+    {
+      "changeId": "CHG001",
+      "scope": "fourteen-package-documentation-pilot",
+      "decision": "UpdateRequired",
+      "rationale": "Current published package installation, native full command composition and separate technical evidence; preserve historical product evidence and human decisions.",
+      "documents": [
+        "README.md",
+        "AGENTS.md",
+        "CLAUDE.md",
+        "GEMINI.md",
+        ".github/copilot-instructions.md",
+        ".github/agents/copilot-instructions.md",
+        "constitution.md",
+        ".specify/memory/constitution.md",
+        "docs/maintenance/preset-documentation-rollout-2026-10-24.md",
+        "docs/maintenance/gsdb-344-preset-source-lock.json",
+        "docs/maintenance/gsdb-344-preset-installed-lock.json"
+      ],
+      "owner": "Thorsten Hindermann",
+      "audiences": [
+        "Maintainers",
+        "Reviewers"
+      ],
+      "readerPaths": [
+        "README → bounded pilot report → source and installed locks → technical assurance context"
+      ],
+      "canonicalSource": "scripts/config/spec-kit-project-statistics-governance-presets.json",
+      "navigationImpact": "README and synchronized guidance link the new dated report; historical sources and intake archives remain unchanged.",
+      "documentClass": "ReviewEvidence",
+      "languageStrategy": "German first, English second; canonical bilingual checklist content retained.",
+      "languagePartners": [],
+      "platformAndExampleProof": "Bash first on macOS; PowerShell parity and existing repository checks once; actual results recorded separately, native CI remains head-bound.",
+      "distributionClass": "sourceOnly",
+      "homeSyncRequired": false,
+      "evidence": "docs/maintenance/preset-documentation-rollout-2026-10-24.md",
+      "risk": "Changed bound guidance and matrices cause intake provenance drift; this is not product execution authority or human acceptance.",
+      "criticality": "Usage",
+      "reevaluationTrigger": "Package, priority, source, evidence, scope or authority drift."
+    },
+    {
+      "changeId": "CHG002",
+      "scope": "statistics",
+      "decision": "GeneratedUpdate",
+      "rationale": "One canonical renderer update from unchanged Git methodology and project statistics configuration.",
+      "documents": [
+        "docs/project-statistics.md"
+      ],
+      "owner": "Thorsten Hindermann",
+      "audiences": [
+        "Maintainers",
+        "Reviewers"
+      ],
+      "readerPaths": [
+        "README → bounded pilot report → source and installed locks → technical assurance context"
+      ],
+      "canonicalSource": "docs/project-statistics.config.json",
+      "navigationImpact": "README and synchronized guidance link the new dated report; historical sources and intake archives remain unchanged.",
+      "documentClass": "ReviewEvidence",
+      "languageStrategy": "German first, English second; canonical bilingual checklist content retained.",
+      "languagePartners": [],
+      "platformAndExampleProof": "Bash first on macOS; PowerShell parity and existing repository checks once; actual results recorded separately, native CI remains head-bound.",
+      "distributionClass": "sourceOnly",
+      "homeSyncRequired": false,
+      "evidence": "docs/maintenance/preset-documentation-rollout-2026-10-24.md",
+      "risk": "Changed bound guidance and matrices cause intake provenance drift; this is not product execution authority or human acceptance.",
+      "criticality": "Usage",
+      "reevaluationTrigger": "Package, priority, source, evidence, scope or authority drift.",
+      "generatedSource": {
+        "path": "docs/project-statistics.config.json",
+        "renderer": "bash scripts/render-project-statistics.sh --repo ."
+      }
+    }
+  ],
+  "schemaVersion": "1.1",
+  "feature": "show-commandtui400-gsdb344-pilot"
+}

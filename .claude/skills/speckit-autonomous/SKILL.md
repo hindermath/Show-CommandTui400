@@ -5,7 +5,7 @@ description: Execute a complete Spec Kit feature under explicit delivery authori
 compatibility: Requires spec-kit project structure with .specify/ directory
 metadata:
   author: github-spec-kit
-  source: autonomous-run-governance:commands/speckit.autonomous.md
+  source: autonomous-run-governance:speckit.autonomous.md
 ---
 
 ## User Input
@@ -172,3 +172,15 @@ state, follow-ups, remote identifiers when authorized, and exact local/remote
 synchronization. Set `Completed` only when every applicable schema-1.1 closeout
 field is terminal and final validation is `Completed`. Do not start the next
 feature implicitly.
+
+## Nutzungshilfe / Reader help
+
+DE: Genau einen ausdrücklich beauftragten Feature-Lauf kontrolliert durch seine Phasen führen. Diese Command-Erklärung ändert keine Berechtigungen oder Voraussetzungen.
+Die bestehenden technischen Feldnamen und Statuswerte nicht übersetzen oder
+nur zum Bestehen eines Tests verändern. Einführung, Begriffe, Beispiel,
+Ergebnis und Fehlerhilfe stehen im [deutschen Leserpfad](https://github.com/hindermath/spec-kit-preset-autonomous-run-governance/blob/main/docs/user-guide.md).
+
+EN: Guide one explicitly authorized feature run through controlled phases. This command explanation changes no authority or prerequisites.
+Keep technical field names and states unchanged; never alter them just to pass.
+See the [English reader path](https://github.com/hindermath/spec-kit-preset-autonomous-run-governance/blob/main/docs/user-guide.EN.md)
+for introduction, terms, example, result and troubleshooting.

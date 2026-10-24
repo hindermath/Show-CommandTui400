@@ -5,10 +5,8 @@ description: List every currently eligible intake target or exact blockers witho
 compatibility: Requires spec-kit project structure with .specify/ directory
 metadata:
   author: github-spec-kit
-  source: preset:intake-sequencing-governance
+  source: intake-sequencing-governance:speckit.intake-series-next.md
 ---
-
-# Speckit Intake Series Next Skill
 
 ## User Input
 
@@ -35,3 +33,15 @@ Select candidates only from a valid, current named series.
 7. Never start Intake Review, Specify, Autonomous, or Parallel Autonomous.
 
 Finish with a copy-ready suggested command only; do not execute it.
+
+## Nutzungshilfe / Reader help
+
+DE: Abhängigkeiten und Reihenfolge vorhandener Arbeitsaufträge erklären, ohne ihre Arbeit zu starten. Diese Command-Erklärung ändert keine Berechtigungen oder Voraussetzungen.
+Die bestehenden technischen Feldnamen und Statuswerte nicht übersetzen oder
+nur zum Bestehen eines Tests verändern. Einführung, Begriffe, Beispiel,
+Ergebnis und Fehlerhilfe stehen im [deutschen Leserpfad](https://github.com/hindermath/spec-kit-preset-intake-sequencing-governance/blob/main/docs/user-guide.md).
+
+EN: Explain dependencies and order of existing work requests without starting their work. This command explanation changes no authority or prerequisites.
+Keep technical field names and states unchanged; never alter them just to pass.
+See the [English reader path](https://github.com/hindermath/spec-kit-preset-intake-sequencing-governance/blob/main/docs/user-guide.EN.md)
+for introduction, terms, example, result and troubleshooting.

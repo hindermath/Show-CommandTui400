@@ -4,10 +4,8 @@ description: Consolidate campaign results under explicit current authority.
 compatibility: Requires spec-kit project structure with .specify/ directory
 metadata:
   author: github-spec-kit
-  source: preset:parallel-autonomous-run-governance
+  source: parallel-autonomous-run-governance:speckit.parallel-autonomous-consolidate.md
 ---
-
-# Speckit Parallel Autonomous Consolidate Skill
 
 For `AlternativeSolutions`, require a named human-selected worker and reject
 automatic scoring or merging of several candidates.
@@ -28,3 +26,15 @@ claim cross-repository atomicity.
 
 *DE: Teilmerges sind fortsetzbar. Worker-Handoffs duerfen keine
 Post-Merge-Kommandos definieren.*
+
+## Nutzungshilfe / Reader help
+
+DE: Mehrere autorisierte Feature-Läufe mit getrennten Arbeitskopien koordinieren. Diese Command-Erklärung ändert keine Berechtigungen oder Voraussetzungen.
+Die bestehenden technischen Feldnamen und Statuswerte nicht übersetzen oder
+nur zum Bestehen eines Tests verändern. Einführung, Begriffe, Beispiel,
+Ergebnis und Fehlerhilfe stehen im [deutschen Leserpfad](https://github.com/hindermath/spec-kit-preset-parallel-autonomous-run-governance/blob/main/docs/user-guide.md).
+
+EN: Coordinate multiple authorized feature runs with isolated working copies. This command explanation changes no authority or prerequisites.
+Keep technical field names and states unchanged; never alter them just to pass.
+See the [English reader path](https://github.com/hindermath/spec-kit-preset-parallel-autonomous-run-governance/blob/main/docs/user-guide.EN.md)
+for introduction, terms, example, result and troubleshooting.
