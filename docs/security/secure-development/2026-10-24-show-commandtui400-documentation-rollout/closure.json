@@ -1,0 +1,55 @@
+{
+  "schemaVersion": "1.0",
+  "documentType": "SecureDevelopmentGateEvidence",
+  "contextId": "show-commandtui400-documentation-rollout",
+  "gate": "closure",
+  "mode": "development",
+  "createdAt": "2026-10-24T17:37:28.710732+02:00",
+  "review": {
+    "owner": "Thorsten Hindermann",
+    "reviewer": "Codex under explicit bounded documentation-rollout technical preparation authority",
+    "reviewedAt": "2026-10-24T17:37:28.710732+02:00",
+    "reviewDue": "2027-01-10",
+    "residualRisk": "Current package/document integrity only. Human decisions preserved; no fresh LH-00/LH-01 provenance, product, physical accessibility, legal or certification acceptance.",
+    "reevaluationTrigger": "Primary source, baseline, preset, scope or authority change; quarterly review."
+  },
+  "assessments": [
+    {
+      "id": "HUMAN-PRODUCT-DECISIONS",
+      "applicability": "Applicable",
+      "dueAt": "2026-12-31",
+      "owner": "Thorsten Hindermann",
+      "nextAction": "Resolve project-specific product/pilot/general-release decisions separately from this authorised technical rollout.",
+      "evidence": "docs/maintenance/gsdb-344-pilot-2026-10-20.md",
+      "implementation": "Not Fulfilled"
+    }
+  ],
+  "outcome": "Blocked",
+  "externalComparisonBoundary": "HOSK/GWDG: ExternalComparison only; never local evidence",
+  "verificationScope": "Fourteen published stable packages from Level 0 ded29751b58eece7711e80cf997a89b559812c93; unchanged controlled GSDB 3.4.4 and LH-00/LH-01 artefacts. No Home overlay, model call, toolchain or product implementation.",
+  "runbookApplicability": "N/A",
+  "runbookRationale": "Bounded technical integration; commands and limits are in the separate pilot report.",
+  "humanDecisions": {
+    "technicalValidation": {
+      "status": "Open",
+      "authority": "Thorsten Hindermann",
+      "evidence": "Human decision pending; source review and CI do not confer approval."
+    },
+    "pilotAuthorization": {
+      "status": "Open",
+      "authority": "Thorsten Hindermann",
+      "evidence": "Human decision pending; source review and CI do not confer approval."
+    },
+    "projectAcceptance": {
+      "status": "Open",
+      "authority": "Thorsten Hindermann",
+      "evidence": "Human decision pending; source review and CI do not confer approval."
+    },
+    "generalRelease": {
+      "status": "Open",
+      "authority": "Thorsten Hindermann",
+      "evidence": "Human decision pending; source review and CI do not confer approval."
+    }
+  },
+  "nextAction": "Deliver this bounded pilot through exact-head MergeAndSync only after green technical checks and the parent Level-0/Home-Runtime gate. The user waived repeated individual head review for this rollout; historical human product decisions remain unchanged."
+}

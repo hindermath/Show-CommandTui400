@@ -5,7 +5,7 @@ description: Extract, validate, and classify reusable learning from a completed 
 compatibility: Requires spec-kit project structure with .specify/ directory
 metadata:
   author: github-spec-kit
-  source: autonomous-run-governance:commands/speckit.autonomous-retrospective.md
+  source: autonomous-run-governance:speckit.autonomous-retrospective.md
 ---
 
 ## User Input
@@ -44,3 +44,15 @@ merge, bypass, or modify another repository.
 Finish with promoted rules, observations still pending, rejected project
 details, changed surfaces, validation, and the next field gate. Create no empty
 branch or pull request.
+
+## Nutzungshilfe / Reader help
+
+DE: Genau einen ausdrücklich beauftragten Feature-Lauf kontrolliert durch seine Phasen führen. Diese Command-Erklärung ändert keine Berechtigungen oder Voraussetzungen.
+Die bestehenden technischen Feldnamen und Statuswerte nicht übersetzen oder
+nur zum Bestehen eines Tests verändern. Einführung, Begriffe, Beispiel,
+Ergebnis und Fehlerhilfe stehen im [deutschen Leserpfad](https://github.com/hindermath/spec-kit-preset-autonomous-run-governance/blob/main/docs/user-guide.md).
+
+EN: Guide one explicitly authorized feature run through controlled phases. This command explanation changes no authority or prerequisites.
+Keep technical field names and states unchanged; never alter them just to pass.
+See the [English reader path](https://github.com/hindermath/spec-kit-preset-autonomous-run-governance/blob/main/docs/user-guide.EN.md)
+for introduction, terms, example, result and troubleshooting.

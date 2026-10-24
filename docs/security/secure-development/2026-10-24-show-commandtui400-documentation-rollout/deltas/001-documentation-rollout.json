@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0",
+  "documentType": "SecureDevelopmentGateEvidence",
+  "contextId": "show-commandtui400-documentation-rollout",
+  "gate": "delta",
+  "mode": "development",
+  "createdAt": "2026-10-24T15:37:28.710732+00:00",
+  "review": {
+    "owner": "Thorsten Hindermann",
+    "reviewer": "Codex under explicit bounded documentation-rollout technical preparation authority",
+    "reviewedAt": "2026-10-24T15:37:28.710732+00:00",
+    "reviewDue": "2027-01-10",
+    "residualRisk": "Current package/document integrity only. Human decisions preserved; no fresh LH-00/LH-01 provenance, product, physical accessibility, legal or certification acceptance.",
+    "reevaluationTrigger": "Primary source, baseline, preset, scope or authority change; quarterly review."
+  },
+  "assessments": [
+    {
+      "id": "DOCUMENTATION-PACKAGE-INTEGRITY",
+      "applicability": "Applicable",
+      "implementation": "Fulfilled",
+      "evidence": "docs/maintenance/preset-documentation-rollout-2026-10-24.md"
+    }
+  ],
+  "outcome": "Ready",
+  "externalComparisonBoundary": "HOSK/GWDG: ExternalComparison only; never local evidence",
+  "verificationScope": "Fourteen published stable packages from Level 0 ded29751b58eece7711e80cf997a89b559812c93; unchanged controlled GSDB 3.4.4 and LH-00/LH-01 artefacts. No Home overlay, model call, toolchain or product implementation.",
+  "runbookApplicability": "N/A",
+  "runbookRationale": "Bounded technical integration; commands and limits are in the separate pilot report."
+}

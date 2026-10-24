@@ -2,6 +2,8 @@
 
 [GSDB 3.4.4: Pilotrollout / pilot rollout](docs/maintenance/gsdb-344-pilot-2026-10-20.md).
 
+[14 stabile Dokumentationspakete: begrenzter Rollout / fourteen stable documentation packages: bounded rollout](docs/maintenance/preset-documentation-rollout-2026-10-24.md).
+
 Eine OS/400-inspirierte, rein textbasierte Bedienoberfläche für PowerShell 7:
 Befehle finden, Parameter geführt ausfüllen und den fertigen Aufruf in der
 aktuellen Sitzung verwenden.

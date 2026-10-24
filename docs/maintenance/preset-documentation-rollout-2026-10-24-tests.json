@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "platform": "macOS arm64",
+  "baselineCommit": "3721aec0407ea978557d843df888433422a3fa1f",
+  "level0Commit": "ded29751b58eece7711e80cf997a89b559812c93",
+  "scope": "Actual bounded local checks; final native CI is separately bound to the PR head. No human product acceptance.",
+  "checks": [
+    {"command": "bash scripts/install-spec-kit-governance-presets.sh --repo . --preset-config scripts/config/spec-kit-project-statistics-governance-presets.json --force --dry-run", "exitCode": 0, "result": "Previewed fourteen published packages."},
+    {"command": "bash scripts/install-spec-kit-governance-presets.sh --repo . --preset-config scripts/config/spec-kit-project-statistics-governance-presets.json --force", "exitCode": 0, "result": "Installed fourteen published packages; no Home-only overlay."},
+    {"command": "bash scripts/install-spec-kit-governance-presets.sh --repo . --preset-config scripts/config/spec-kit-project-statistics-governance-presets.json --check-only", "exitCode": 0, "result": "Exact fourteen-preset matrix."},
+    {"command": "pwsh -NoProfile -File scripts/install-spec-kit-governance-presets.ps1 -Repo . -PresetConfig scripts/config/spec-kit-project-statistics-governance-presets.json -CheckOnly", "exitCode": 0, "result": "Exact fourteen-preset matrix."},
+    {"command": "python3 scripts/tests/test_spec_kit_agent_surface_parity.py", "exitCode": 0, "result": "Seven unchanged tests passed, including all six composed wrappers and actual installed/source locks."},
+    {"command": "bash scripts/build-secure-development-docs.sh --check", "exitCode": 0, "result": "Unchanged generated controlled documents are current."},
+    {"command": "pwsh -NoProfile -File scripts/validate-documentation-impact.ps1 -Evidence docs/maintenance/preset-documentation-rollout-2026-10-24-impact.json", "exitCode": 0, "result": "Two entries passed after correcting initial changeId format; initial invalid IDs were not passes."},
+    {"command": "pwsh -NoProfile -File scripts/invoke-psscriptanalyzer.ps1", "exitCode": 0, "result": "84 files; no Error/Warning findings. Existing four synthetic LH-01 probe exceptions retained."},
+    {"command": "Bash and PowerShell Assurance Status on the separate 2026-10-24 context", "exitCode": 0, "result": "Baseline/Delta/Image Ready; Closure and Overall Blocked, with all four historical human decisions Open. Status validity is not acceptance."},
+    {"command": "bash scripts/check-homogeneity.sh --dry-run --no-patch .", "exitCode": 1, "result": "26/28; ignored local STATS.md absent in new worktree, plus pre-render statistics drift. Not counted as a full homogeneity pass."},
+    {"command": "git diff --check", "exitCode": 0, "result": "Native generated core whitespace normalized without changing SDK or preset validators."}
+  ],
+  "productPreflight": {"result": "Not executed before source commit", "reason": "Initial requests stopped before product cases: /tmp is a symlink; canonical /private/tmp then required a clean source checkout. One actual suite follows the source commit."},
+  "preservation": "No diff in LH-00/LH-01 intakes, specs, receipts, series, review archives or historical assurance contexts. Their bound current guidance/matrix/constitution changed: no fresh provenance claimed.",
+  "remainingEvidence": "GSDB and strict Assurance regression completion, clean-commit product suite, canonical statistics and native PR CI are recorded in the delivery PR. Pending is not passed."
+}

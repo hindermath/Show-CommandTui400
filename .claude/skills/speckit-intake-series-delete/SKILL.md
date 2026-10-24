@@ -4,7 +4,7 @@ description: Logically delete one intake series through archive and tombstone ev
 compatibility: Requires spec-kit project structure with .specify/ directory
 metadata:
   author: github-spec-kit
-  source: intake-sequencing-governance:commands/speckit.intake-series-delete.md
+  source: intake-sequencing-governance:speckit.intake-series-delete.md
 ---
 
 ## User Input
@@ -24,3 +24,15 @@ Logically delete exactly one named series with explicit current authority.
 6. Do not physically purge evidence or start another command.
 
 Finish with archive and tombstone proof plus one exact safe next action.
+
+## Nutzungshilfe / Reader help
+
+DE: Abhängigkeiten und Reihenfolge vorhandener Arbeitsaufträge erklären, ohne ihre Arbeit zu starten. Diese Command-Erklärung ändert keine Berechtigungen oder Voraussetzungen.
+Die bestehenden technischen Feldnamen und Statuswerte nicht übersetzen oder
+nur zum Bestehen eines Tests verändern. Einführung, Begriffe, Beispiel,
+Ergebnis und Fehlerhilfe stehen im [deutschen Leserpfad](https://github.com/hindermath/spec-kit-preset-intake-sequencing-governance/blob/main/docs/user-guide.md).
+
+EN: Explain dependencies and order of existing work requests without starting their work. This command explanation changes no authority or prerequisites.
+Keep technical field names and states unchanged; never alter them just to pass.
+See the [English reader path](https://github.com/hindermath/spec-kit-preset-intake-sequencing-governance/blob/main/docs/user-guide.EN.md)
+for introduction, terms, example, result and troubleshooting.

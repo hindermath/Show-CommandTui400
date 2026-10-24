@@ -94,6 +94,10 @@ EN: Bounded source/preset adoption and new project evidence; no product or fleet
 
 Gewöhnliche Intake-Updates nach PR #52, 50 einzelne GSDB-Kontrollzuordnungen, Vorgängerarchive und unabhängige Reviews; gezielter Spec-/Plan-/Tasks-Abgleich. Keine Produktimplementierung oder neue Plattformbindung. / Ordinary source updates, individual control mapping, exact archives and distinct reviews with targeted technical alignment; no implementation or platform rebind. [Nachweis / Evidence](../specs/001-lh00-intake-process/checklists/tasks-validation.md).
 
+### 2026-10-24 - Dokumentations-Pilotrollout / Documentation pilot rollout
+
+Vierzehn veröffentlichte Pakete aus Level 0 ded29751, vollständige native Agentenkomposition, getrennte technische Evidence und erhaltene Intakehistorie. Keine Produktimplementierung oder neue Abnahme. / Fourteen published packages, complete native agent composition, separate technical evidence and preserved intake history. No implementation or new acceptance. [Nachweis / Evidence](maintenance/preset-documentation-rollout-2026-10-24.md).
+
 ## Gesamtstatistik / Overall Statistics
 
 <!-- project-statistics-v2:begin -->
