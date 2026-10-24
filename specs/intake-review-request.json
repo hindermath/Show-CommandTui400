@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.1",
-  "reviewId": "c1daa349-7eae-400b-b073-301372ef54b3",
+  "reviewId": "105acca7-5c79-4801-b9f7-8302522df3ae",
   "mode": "Single",
   "policy": "generic-markdown",
   "targets": [
@@ -21,16 +21,16 @@
   },
   "projectProfile": "show-commandtui400-de-en",
   "authority": {
-    "request": "Owner 2026-10-21 authorises full independent LH-00/LH-01 reviews after ordinary source updates, technical alignment and bounded delivery.",
+    "request": "Explicit owner 2026-10-24 full independent intake review after documentation source update; no target mutation/product/remote authority for reviewer.",
     "evidence": {
-      "path": "specs/intake-authoring-operations/23328e17-0a8e-4fd3-84c1-0c31439453b5/update-decisions.md",
-      "normalizedSha256": "e4aaaa6fd28fd5756966c27c17862c621db800c703b089363be8b52c4cee41e2"
+      "path": "specs/intake-authoring-operations/e31322a1-8e16-46da-a4bf-0daf7c4ca484/update-decisions.md",
+      "normalizedSha256": "21ef5cb7ea763f177e88deb18fb8a154275010413704fa442561aff3c9f2147b"
     },
     "targetMutationAllowed": false,
     "implementationAllowed": false,
     "remoteAccessAllowed": false
   },
-  "targetHash": "bfee30a70a990f07f78ba4f61e8571c88044b15de5b8c9ee3aead5a19a589d53",
-  "priorReviewId": "017253c3-5a3e-4274-a44d-3f9bf029b7b3",
-  "priorReviewArchive": "specs/intake-review-archive/017253c3-5a3e-4274-a44d-3f9bf029b7b3"
+  "targetHash": "34f3008345a407bd79c4a52a6b9690fdc063c6002b49258cddc77ec8b2e408ac",
+  "priorReviewId": "c1daa349-7eae-400b-b073-301372ef54b3",
+  "priorReviewArchive": "specs/intake-review-archive/c1daa349-7eae-400b-b073-301372ef54b3"
 }

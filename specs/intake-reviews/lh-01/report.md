@@ -4,127 +4,128 @@
 
 **Ready.** Vollständiges semantisches Review genau eines aktualisierten Intakes,
 `intakes/LH-01.md`, Profil `show-commandtui400-de-en`. Keine offenen Befunde,
-keine angenommenen Risiken und keine ungeklärten Authoring-Fragen. Dieses Ergebnis
-ist keine menschliche Produkt-/Rechtsfreigabe, kein erneuter Machbarkeitsnachweis
-und keine vollständige Plattform-/A11Y-Abnahme.
+ungeklärten Authoring-Fragen oder angenommenen Risiken. Das Ergebnis ist keine
+menschliche Produkt-/Rechtsfreigabe, praktische Plattform-/A11Y-Abnahme oder
+Bestätigung eines Modellzugangs.
 
 Prüfer: separater Agent `/root/gsdb_lh01_independent_review`; Autor: `/root`.
-Das aktuelle Ergebnis ersetzt ausdrücklich Review `373b3184-daaf-4e63-998d-5beaa4d9af4f`;
-dessen drei Dateien bleiben im benannten Vorgängerarchiv bytegenau erhalten.
+Die deklarierte Rolle ist `frontier-reasoning` gemäß gebundenem model-routing.json;
+ein allgemeines coding-review-Beispiel oder Installationspriorität ersetzt sie
+nicht. Keine Modellzugangsprobe, kein Anbieterwechsel und keine Umstellung des
+laufenden Chats wurden aus der Dokumentation abgeleitet.
+
+Dieses Review ersetzt ausdrücklich `b8cbae27-d13e-499d-bbc2-4f6a84a39cf9`. Dessen Request,
+Ergebnis und Bericht bleiben bytegenau im Vorgängerarchiv erhalten.
 
 | Bindung | Wert |
 |---|---|
-| Review-ID | b8cbae27-d13e-499d-bbc2-4f6a84a39cf9 |
-| Receipt-ID | 37703cb2-bbb5-43a8-892d-847ecd01928c |
+| Review-ID | d73832df-d7ec-4888-a7aa-ab1a80076e53 |
+| Receipt-ID | 5166dc4d-afa3-4bd2-a6ad-2776566ec9c2 |
 | Intake-ID | bca39f76-fdb5-440a-b889-b12e8f4f4f78 |
-| Ziel-SHA-256 | `25833636ef9e883c792514cc2539ec0bad215a1090e0a8afd712a29e37aa638d` |
-| Quelleneinträge | 52:50 aktuelle Dateihashes geprüft;2 historische Snapshot-Einträge erhalten |
-| GSDB-Kontrollen | 50 eindeutige IDs und passende kanonische Quellhashes |
-| Anwendbarkeit | 18 Applicable;3 begrenzte N/A;29 Open |
+| Ziel-SHA-256 | `a108e17ea43799d66a15959c4b0ac3c96a3460a5c6b84aedf6b44884a7e44f64` |
+| Quelleneinträge | 90:88 aktuelle File-Hashes geprüft,2 historische Snapshots erhalten |
+| Leserpfade | 14 Pakete,28 Leitfäden mit Version/Pfad/Hash geprüft |
+| GSDB | 37 Dateien bytegleich zur vorherigen Lieferung;50 Kontrollquellhashes passend |
 
 Geprüft wurden Identität, Zielgruppe/Vorkenntnisse, Zweck, Umfang und Nicht-Ziele;
 alle elf FR, fünf QG, fünf AC und zwei OD je Sprache; atomare Anforderungen,
-konkrete Abnahmekriterien und E01-01–07, historische/aktuelle Entscheidungen,
-Abhängigkeiten und der begrenzte Einzelpilotweg. Ebenso vollständig geprüft:
-DE/EN-Gleichwertigkeit mit B2-Ziel und Begriffserklärungen, Textzustände und
-Mermaid-Alternative, Sicherheits-/Datenschutz-/Lieferkettenanforderungen,
-A11Y-/Plattformgrenzen, getrennte Erstellungs-/Review-/Lieferautorität und inaktive
-Folgeprompts. Die einzeln belegten Reviewdimensionen stehen im JSON-Ergebnis.
+Abnahmekriterien und E01-01–07, Entscheidungen, Abhängigkeiten und Einzelpilotweg.
+Vollständig geprüft wurden außerdem DE/EN-Gleichwertigkeit und B2-Ziel,
+Begriffserklärungen, textuelle Zustände/Mermaid-Alternative, Sicherheits-,
+Datenschutz-, Lieferketten-, Plattform- und A11Y-Grenzen, getrennte Autorität und
+inaktive Folgeprompts. Die Reviewdimensionen sind im JSON einzeln dokumentiert.
+Die neue Dokumentation ergänzt diese bestehenden Pflichten; sie führt kein
+Folgefeature ein. Der vorherige Intake-Inhalt ist bytegleich erhalten und um genau
+einen ausdrücklichen DE/EN-Abschnitt ergänzt, ohne eine normative ID zu ändern.
 
-Alle 50 aktuellen Dateiquellenhashes und alle 50 Kontrollquellhashes wurden
-unabhängig berechnet. Zwei weitere Url-/Inline-Einträge erhalten ihre historischen
-Snapshotmetadaten; deren temporäre Rohdaten werden hier nicht erneut geprüft. Der ursprüngliche Vorgängerintake, Receipt und das ursprüngliche Reviewtriplet
-stimmen bytegenau mit HEAD überein; das unmittelbar vorherige Review dieses
-noch nicht gelieferten Vorgangs ist zusätzlich unter seiner eigenen ID archiviert. Die kompakte neue Quellenliste erhält die ältere Auditspur im direkt
-gebundenen archivierten Receipt. Die kanonische KI-Checkliste bleibt unverändert;
-deren vollständige Hashbindung und exakte normative Änderungsauszüge erhalten die
-Quelle ohne Lockerung des strikten Secret-Validators. Historische URL-Evidence
-bleibt SnapshotOnly; dieses Review behauptet keinen erneuten Issue-Abruf.
+Die 88 aktuellen Datei-Prüfsummen wurden unabhängig berechnet. Die28 Leitfäden
+stimmen mit den gebundenen Paketversionen überein. Die37 GSDB-Dateien sind
+bytegleich zur vorherigen Lieferung; die50-Kontroll-Zuordnung und ihre Quellhashes
+sind unverändert. Ihre18 Applicable-,3 begrenzten N/A- und29 Open-Bewertungen
+bleiben getrennt vom offenen Umsetzungsnachweis. Vorgängerintake, Receipt und
+Reviewtriplet wurden bytegenau gegen HEAD geprüft. Kanonischer Ziel-/Receiptinhalt
+stimmt mit dem unabhängig geprüften unveränderlichen Kandidaten überein.
 
-LH-00-Receipt, das eigene aktuelle Ready-Review `c1daa349-7eae-400b-b073-301372ef54b3`
-und die dokumentierte T045-Freigabe sind gebunden. LH-01 erhält weiterhin keine
-Serienmitgliedschaft. Die getrennten technischen Entscheidungen bleiben managed
-C#14/MSL, Host-.NET10, Terminal.Gui2.5.0/dotnet, Mindest-PS7.6.4 und in-process
-PSCmdlet. NuGet liefert ausschließlich Kompilierreferenzen; die laufende
-PowerShell-Sitzung stellt die Engine. Die neuen offenen Folgeaufgaben T064/T065
-ordnen die aktuelle Kontroll-Evidence und menschliche Entscheidungen vor den
-jeweils betroffenen Abschlussgates ein; sie sind keine erledigte Umsetzung.
+Zwei weitere Url-/Inline-Einträge behalten ihre historischen Snapshotmetadaten.
+Die temporären Rohantworten wurden hier nicht erneut abgerufen oder als aktuelle
+Remote-Frische behauptet. Quelle, Leitfaden und tatsächlich ausgefüllter Nachweis
+bleiben verschieden. Starter und Beispiele sind keine fertige Evidence, Prompts
+keine Shell-Kommandos oder Freigaben. Bestehende ausreichende Nutzerautorität
+wird nicht durch eine unnötige neue Genehmigungsrunde ersetzt.
 
-### Erneute Quellenprüfung vor Lieferung
+Der stabile Resolver implementiert automatische lokale Profile nur für Codex und
+Antigravity; Claude/Copilot/OpenCode besitzen Policy-Bezeichnungen ohne solche
+Adapter. Ein Refresh bindet Discovery-Metadaten, keinen getesteten Modellzugang.
+Ein modellaufrufender Preflight kann Kontingent verbrauchen und benötigt passende
+Laufautorität. Hier wurde keine solche Zugangsprobe ausgeführt. Ein Metadatenstatus
+Aligned behauptet weder Zugangstest noch Modellqualität.
 
-Zwei gebundene Quelldateien hatten je eine zusätzliche Leerzeile am Dateiende.
-Unabhängig nachgewiesen: aktueller Inhalt plus genau ein Zeilenumbruch ergibt
-jeweils den kryptografischen Vorhash. Keine normative Textzeile, Intake-Anforderung,
-fachliche ID oder Zielprüfsumme änderte sich. Das unveränderliche Receipt vor der
-Formatkorrektur ist als Checkpoint gebunden. Das frische LH-00-Review
-`c1daa349-7eae-400b-b073-301372ef54b3` und sämtliche aktuellen Quellen wurden erneut
-unabhängig geprüft. Die gesamte fachliche Bewertung bleibt ohne offenen Befund.
-Das alte Ready ist ausdrücklich überholt; das neue Ergebnis verwendet einen neuen
-Request-/Review-ID. Der veränderliche Vorgangsjournal wird nicht an dieses Review
-gebunden, da der Autor noch finale Validatorresultate ergänzt.
+LH-00-Receipt und das eigene vollständige Ready-Review
+`105acca7-5c79-4801-b9f7-8302522df3ae` sowie T045 sind aktuell gebunden. LH-01 bleibt
+außerhalb automatischer Serienauswahl. Die getrennten technischen Entscheidungen
+C#14/MSL, Host-.NET10, Terminal.Gui2.5.0/dotnet, PS>=7.6.4 und in-process PSCmdlet
+mit Compile-only-NuGet/Host-Runtime-Trennung bleiben unverändert. Der unterstützend
+geprüfte technische Abgleich verändert keine Task-Checkbox oder Plattformbindung.
 
 ### Grenzen und nächste Aktion
 
-Applicable/N/A/Open ist von Umsetzung getrennt; Not Assessed ist kein bestandenes
-Produktgate. Unbekannte Rollen, Rechts- und Providerfragen bleiben Open mit Owner,
-Folgeaktion und Wiedervorlage. Ein Agent akzeptiert keine Restrisiken. Bestehende
-begrenzte Pilotentscheidungen und die exakten Plattformbindungen #37–#39 bleiben
-in ihrem ursprünglichen Scope. Reale Terminals/Screenreader bleiben Deferred,
-Braillehardware Excluded mangels Gerät. Volle LH-00-Abnahme folgt nach LH-02/vor
-LH-03; LH-02 braucht fachlichen LH-01-Abschluss und einen eigenen Auftrag.
+Unbekannte Rollen, Provider- oder Rechtsfragen bleiben Open, unbewiesene Umsetzung
+Not Assessed. Ein Agent nimmt keine Restrisiken an. Bestehende begrenzte
+Pilotentscheidungen und exakte Plattformbindungen #37–#39 bleiben in ihrem Scope.
+Physische Terminals/Screenreader bleiben Deferred; Braillehardware mangels Gerät
+Excluded. Die volle LH-00-Abnahme bleibt nach LH-02/vor LH-03; LH-02 braucht
+fachlichen LH-01-Abschluss und einen eigenen Auftrag.
 
 Nächste Aktion: den bereits beauftragten technischen Abgleich und die getrennte
-lesende Analyse abschließen, dann das geprüfte Paket autorisiert liefern.
-Keine Produktimplementierung, Plattformprüfung oder Serienaktivierung starten.
+lesende Analyse abschließen, danach das geprüfte Paket autorisiert liefern.
+Kein Produktlauf, Modellzugangs-Preflight oder Serienübergang folgt aus Ready.
 
 ## EN — Outcome
 
 **Ready.** Complete semantic review of one updated intake, with no remaining
-findings, accepted risks or unresolved authoring questions. Distinct reviewer and
-author identities, exact intake/receipt/review IDs and target hash are recorded
-above. This explicitly supersedes the prior review while retaining its exact
-triplet. Ready is intake quality evidence, not human product/legal approval,
-renewed feasibility proof or practical platform/accessibility acceptance.
+findings, unresolved authoring questions or accepted risks. The distinct reviewer
+and author, exact identities and target hash are listed above. This explicitly
+supersedes the previous review and preserves its exact triplet. It is intake
+quality evidence, not human product/legal approval, practical platform or
+accessibility acceptance, or model-access proof.
 
-Reviewed identity, audience and assumed knowledge; purpose, scope and non-goals;
-all eleven FR, five QG, five AC and two OD per language; atomic requirements,
-measurable acceptance and evidence cases; historical/current decisions,
-dependencies and the standalone pilot route. Also reviewed equivalent German-
-first B2 text and terms, textual states and diagram alternatives, security,
-privacy, supply chain, accessibility, platforms, authority and inactive prompts.
-Individual review dimensions are recorded in the machine-readable result.
+The declared role is frontier-reasoning under the bound model-routing.json,
+independent of installation priority or generic coding-review examples. No
+model-access probe, provider switch or current-chat reconfiguration follows from
+documentation. Reviewed identity, audience and assumed knowledge; purpose, scope
+and non-goals; all eleven FR, five QG, five AC and two OD per language; testability,
+acceptance and E01-01–07; decisions, dependencies and standalone pilot order.
+Also reviewed equivalent German-first B2 text and terminology, textual states and
+diagram alternative, security, privacy, supply chain, platforms, accessibility,
+authority and inactive prompts. Individual dimensions are recorded in the JSON.
 
-All 50 current file-source hashes and all 50 changed-control source hashes
-independently match. Two further URL/Inline entries preserve historical snapshot
-metadata; their temporary raw contents are not independently rechecked here. The original predecessor intake, receipt and review bytes match HEAD; the
-immediately previous review of this undelivered operation is additionally
-archived under its own ID. Older provenance
-remains in the directly bound archived receipt. Preserve the canonical checklist,
-its full source hash and exact changed passages without weakening secret checks.
-Historical URL evidence remains SnapshotOnly; no fresh Issue retrieval is claimed.
-The control assessment records 18 Applicable,3 scoped N/A and29 Open decisions.
-Unknown roles, legal/provider facts and unproven implementation remain owned
-follow-up work; Not Assessed establishes no product compliance.
+The prior full intake is byte-identically preserved plus one explicit bilingual
+documentation section, without normative ID changes. All88 current file hashes
+independently match. All28 guide hashes and package markers match; all37 GSDB
+files match the prior delivery byte-for-byte. The existing50-control assessment
+and canonical source hashes are unchanged:18 Applicable,3 narrowly scoped N/A,
+29 Open, with implementation evidence separate. Exact predecessor target,
+receipt and review bytes match HEAD. Current canonical target and receipt match
+the independently reviewed immutable candidate. Two historical URL/Inline entries
+retain snapshot metadata only; no renewed temporary raw retrieval or lasting
+remote freshness is claimed.
 
-Current LH-00 receipt, its own Ready review and T045 permission are bound. LH-01
-stays outside automatic series selection. Preserve the separate evidenced technical
-choices and compile-only NuGet/current-host runtime boundary. New open T064/T065
-follow-ups align actual control evidence and human decisions before affected
-closure gates; this review does not implement them or accept residual risk.
+A guide, a template starter and filled evidence differ. Prompts are agent input,
+not shell commands or approval. Examples add no product scope and do not require
+another approval when current owner authority already covers the action. The
+stable resolver generates automatic profiles only for Codex/Antigravity; other
+integrations have policy labels without implemented automatic adapters. Refresh
+uses discovery metadata, not model access. Model-calling preflights can consume
+quota and need suitable run authority; none was executed here. Aligned is not
+access or quality proof.
 
-Keep existing limited pilot decisions and exact platform bindings within their
-original scope. Physical terminals/screen readers remain Deferred; Braille hardware
-remains Excluded because no device is available. Full LH-00 acceptance follows
-LH-02 and precedes LH-03; LH-02 needs LH-01 domain completion and its own request.
-Next: complete the authorised technical alignment and separate read-only analysis,
-then bounded delivery. No product, target-platform or series run follows here.
-
-The pre-delivery recheck independently established exact whitespace equivalence:
-each of two current bound source files plus one final newline produces its prior
-cryptographic hash. No normative line, requirement, domain ID or target digest
-changed. Bind the immutable pre-repair receipt checkpoint and current sources,
-request, receipt and fresh LH-00 review; do not bind the still-mutable operation
-journal. The former Ready is explicitly superseded by this new request/review ID.
-The complete semantic conclusion remains Ready with no open findings or accepted
-risks. Current authoring validators are run separately by the author; this review
-runs both small review validators and makes no new product acceptance claim.
+The current LH-00 receipt, its own full Ready review and T045 are bound. Preserve
+standalone LH-01, separate technical choices, compile-reference/host-runtime
+boundary, unchanged task checkboxes and exact frozen platform bindings. Unknown
+roles/legal/provider facts remain owned Open work, unproven implementation Not
+Assessed. No agent accepts risk. Physical terminal/screen-reader evidence stays
+Deferred; Braille hardware stays Excluded because no device exists. Full LH-00
+acceptance follows LH-02 and precedes LH-03; LH-02 needs LH-01 domain completion
+and a separate request. Next: complete authorised targeted alignment and separate
+read-only analysis, then bounded delivery. Ready starts no product, model-access
+preflight or series run.

@@ -1,0 +1,558 @@
+{
+  "schemaVersion": "1.0",
+  "documentType": "IntakeDocumentationSourceAssessment",
+  "date": "2026-10-24",
+  "baseCommit": "c0267d8ddef5ae037accb1bcc222fbf0d73659ad",
+  "previousDeliveryCommit": "3721aec0407ea978557d843df888433422a3fa1f",
+  "authority": "Owner explicitly commissions LH-00/LH-01 updates, independent full reviews, technical alignment and MergeAndSync/admin delivery.",
+  "semantics": "Reader-help/package identity and supported resolver paths only; no new product or acceptance contract.",
+  "GSDB": {
+    "version": "3.4.4",
+    "unchanged": true,
+    "baselineManifestSha256": "d73564dce25433aee2e3d5bc3df1cf18b3f5944c9e4197fff95ab5af2dfd385d",
+    "existingControlAssessment": "docs/planning/lh00-lh01-gsdb344-assessment.json",
+    "existingControlAssessmentSha256": "4afa2fc5bc87b91cb209e9e4a790895368ff7c796d48b518c72c6325be18ed44",
+    "remainingImplementationEvidence": "Unchanged and open under existing tasks; no new compliance inferred."
+  },
+  "presets": [
+    {
+      "id": "security-governance",
+      "version": "v0.7.4",
+      "priority": 10,
+      "guides": [
+        {
+          "path": ".specify/presets/security-governance/docs/user-guide.md",
+          "normalizedSha256": "70288b75233ecbcbcbc73c34dd83c9631370e568162b70c55344619c41a0cf37"
+        },
+        {
+          "path": ".specify/presets/security-governance/docs/user-guide.EN.md",
+          "normalizedSha256": "8d6629a2cf23c7f49b02f98319314b37a473994ed7a2f7dcb48ab6fd72b54e28"
+        }
+      ],
+      "requirementCoverage": {
+        "lh00": [
+          "FR-00-001",
+          "FR-00-002",
+          "FR-00-005",
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "lh01": [
+          "QG-01-001",
+          "QG-01-002",
+          "QG-01-004",
+          "AC-01-005"
+        ]
+      },
+      "decision": "Reuse current semantics and evidence; reader help is neither execution authority nor accepted proof.",
+      "evidenceScope": "Documentation/traceability only; product/platform/legal/human acceptance remains separate."
+    },
+    {
+      "id": "secure-development-assurance-governance",
+      "version": "v0.1.8",
+      "priority": 15,
+      "guides": [
+        {
+          "path": ".specify/presets/secure-development-assurance-governance/docs/user-guide.md",
+          "normalizedSha256": "afa1f7d1c32b12f82d9179403881b596977998f40b27da0f70d62e39aec4bdd7"
+        },
+        {
+          "path": ".specify/presets/secure-development-assurance-governance/docs/user-guide.EN.md",
+          "normalizedSha256": "c43d264557cf2793c10855370183c6a050fa3e9b7caad9d2641a80b59969d0f7"
+        }
+      ],
+      "requirementCoverage": {
+        "lh00": [
+          "FR-00-001",
+          "FR-00-002",
+          "FR-00-005",
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "lh01": [
+          "QG-01-001",
+          "QG-01-002",
+          "QG-01-004",
+          "AC-01-005"
+        ]
+      },
+      "decision": "Reuse current semantics and evidence; reader help is neither execution authority nor accepted proof.",
+      "evidenceScope": "Documentation/traceability only; product/platform/legal/human acceptance remains separate."
+    },
+    {
+      "id": "architecture-governance",
+      "version": "v0.6.5",
+      "priority": 20,
+      "guides": [
+        {
+          "path": ".specify/presets/architecture-governance/docs/user-guide.md",
+          "normalizedSha256": "4549d0c21ac2d634eb1fea0cd2340a22ab5ea6a50ef10a7989135c1b15ffdba9"
+        },
+        {
+          "path": ".specify/presets/architecture-governance/docs/user-guide.EN.md",
+          "normalizedSha256": "99eb8748bbaa9e2f6072f1064619bc81d77beaa64c0e12593b9a15ab0d2aabc4"
+        }
+      ],
+      "requirementCoverage": {
+        "lh00": [
+          "FR-00-001",
+          "FR-00-002",
+          "FR-00-005",
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "lh01": [
+          "QG-01-001",
+          "QG-01-002",
+          "QG-01-004",
+          "AC-01-005"
+        ]
+      },
+      "decision": "Reuse current semantics and evidence; reader help is neither execution authority nor accepted proof.",
+      "evidenceScope": "Documentation/traceability only; product/platform/legal/human acceptance remains separate."
+    },
+    {
+      "id": "isaqb-architecture-governance",
+      "version": "v0.2.5",
+      "priority": 30,
+      "guides": [
+        {
+          "path": ".specify/presets/isaqb-architecture-governance/docs/user-guide.md",
+          "normalizedSha256": "2f1b1db487832044b90667ae9bce8a3441f5c5424b3b47bf841b3101e62d4226"
+        },
+        {
+          "path": ".specify/presets/isaqb-architecture-governance/docs/user-guide.EN.md",
+          "normalizedSha256": "46107f9bd81a4687346fa80d08b815b5f9d1116d0aae027ac4dc3ea60d6c91b1"
+        }
+      ],
+      "requirementCoverage": {
+        "lh00": [
+          "FR-00-001",
+          "FR-00-002",
+          "FR-00-005",
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "lh01": [
+          "QG-01-001",
+          "QG-01-002",
+          "QG-01-004",
+          "AC-01-005"
+        ]
+      },
+      "decision": "Reuse current semantics and evidence; reader help is neither execution authority nor accepted proof.",
+      "evidenceScope": "Documentation/traceability only; product/platform/legal/human acceptance remains separate."
+    },
+    {
+      "id": "a11y-governance",
+      "version": "v0.4.6",
+      "priority": 40,
+      "guides": [
+        {
+          "path": ".specify/presets/a11y-governance/docs/user-guide.md",
+          "normalizedSha256": "8a8b5431bd7ce969ed7fe4b594a00c26a03d5fe56af89761f756de6cb71a9240"
+        },
+        {
+          "path": ".specify/presets/a11y-governance/docs/user-guide.EN.md",
+          "normalizedSha256": "eca8e85cb062bd37d455d6af610b5d46fc4ac06601fd63f29ca0d177cdf2aaea"
+        }
+      ],
+      "requirementCoverage": {
+        "lh00": [
+          "FR-00-001",
+          "FR-00-002",
+          "FR-00-005",
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "lh01": [
+          "QG-01-001",
+          "QG-01-002",
+          "QG-01-004",
+          "AC-01-005"
+        ]
+      },
+      "decision": "Reuse current semantics and evidence; reader help is neither execution authority nor accepted proof.",
+      "evidenceScope": "Documentation/traceability only; product/platform/legal/human acceptance remains separate."
+    },
+    {
+      "id": "cross-platform-governance",
+      "version": "v0.2.5",
+      "priority": 50,
+      "guides": [
+        {
+          "path": ".specify/presets/cross-platform-governance/docs/user-guide.md",
+          "normalizedSha256": "74d10f2f3c794c67d1fde348ebdf11cc66848c02366ee37da65c0fa097bec722"
+        },
+        {
+          "path": ".specify/presets/cross-platform-governance/docs/user-guide.EN.md",
+          "normalizedSha256": "633ac39f38c853e7870ee6caa57ca078e940c6bfbc5d68f06aa25e3dc41b6135"
+        }
+      ],
+      "requirementCoverage": {
+        "lh00": [
+          "FR-00-001",
+          "FR-00-002",
+          "FR-00-005",
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "lh01": [
+          "QG-01-001",
+          "QG-01-002",
+          "QG-01-004",
+          "AC-01-005"
+        ]
+      },
+      "decision": "Reuse current semantics and evidence; reader help is neither execution authority nor accepted proof.",
+      "evidenceScope": "Documentation/traceability only; product/platform/legal/human acceptance remains separate."
+    },
+    {
+      "id": "agent-parity-governance",
+      "version": "v0.4.5",
+      "priority": 60,
+      "guides": [
+        {
+          "path": ".specify/presets/agent-parity-governance/docs/user-guide.md",
+          "normalizedSha256": "7e6b79ff507f2d325bc4d32204808f01f6453a7229d7b5164439b5c93dd8b268"
+        },
+        {
+          "path": ".specify/presets/agent-parity-governance/docs/user-guide.EN.md",
+          "normalizedSha256": "b3b4db0afb217afc3ca3b6b5fef2690f5370568d3ebd9347c930bb39c1127d45"
+        }
+      ],
+      "requirementCoverage": {
+        "lh00": [
+          "FR-00-001",
+          "FR-00-002",
+          "FR-00-005",
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "lh01": [
+          "QG-01-001",
+          "QG-01-002",
+          "QG-01-004",
+          "AC-01-005"
+        ]
+      },
+      "decision": "Reuse current semantics and evidence; reader help is neither execution authority nor accepted proof.",
+      "evidenceScope": "Documentation/traceability only; product/platform/legal/human acceptance remains separate."
+    },
+    {
+      "id": "model-routing-governance",
+      "version": "v0.1.7",
+      "priority": 61,
+      "guides": [
+        {
+          "path": ".specify/presets/model-routing-governance/docs/user-guide.md",
+          "normalizedSha256": "fc05ab973be7396991d89f175a17ad9be58438d6bac8e9a356639216052f3326"
+        },
+        {
+          "path": ".specify/presets/model-routing-governance/docs/user-guide.EN.md",
+          "normalizedSha256": "f02f962da834aabb408f48d0591d417b509aeea8625c45f7b2c055cec1e98dab"
+        }
+      ],
+      "requirementCoverage": {
+        "lh00": [
+          "FR-00-001",
+          "FR-00-002",
+          "FR-00-005",
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "lh01": [
+          "QG-01-001",
+          "QG-01-002",
+          "QG-01-004",
+          "AC-01-005"
+        ]
+      },
+      "decision": "Reuse current semantics and evidence; reader help is neither execution authority nor accepted proof.",
+      "evidenceScope": "Documentation/traceability only; product/platform/legal/human acceptance remains separate."
+    },
+    {
+      "id": "intake-authoring-governance",
+      "version": "v0.3.10",
+      "priority": 64,
+      "guides": [
+        {
+          "path": ".specify/presets/intake-authoring-governance/docs/user-guide.md",
+          "normalizedSha256": "2b7a50a72bcddc5a5fdb58873ddc691d70db3656a050dee1653832cca674bebf"
+        },
+        {
+          "path": ".specify/presets/intake-authoring-governance/docs/user-guide.EN.md",
+          "normalizedSha256": "a2f4aaf05176555ce3ef2ef4a1ac4f107d7bc9e05f47365f18cc30eab8bc54f7"
+        }
+      ],
+      "requirementCoverage": {
+        "lh00": [
+          "FR-00-001",
+          "FR-00-002",
+          "FR-00-005",
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "lh01": [
+          "QG-01-001",
+          "QG-01-002",
+          "QG-01-004",
+          "AC-01-005"
+        ]
+      },
+      "decision": "Reuse current semantics and evidence; reader help is neither execution authority nor accepted proof.",
+      "evidenceScope": "Documentation/traceability only; product/platform/legal/human acceptance remains separate."
+    },
+    {
+      "id": "intake-review-governance",
+      "version": "v0.2.7",
+      "priority": 65,
+      "guides": [
+        {
+          "path": ".specify/presets/intake-review-governance/docs/user-guide.md",
+          "normalizedSha256": "b4c371b1d289ef98cbdc3a925dc6d24a6f45d41c0a8aa36fd13e3b22614112f4"
+        },
+        {
+          "path": ".specify/presets/intake-review-governance/docs/user-guide.EN.md",
+          "normalizedSha256": "887404bd791e7bd97ff57c3e82d37d1fbb49898583ee7d9a0b51b4837e032238"
+        }
+      ],
+      "requirementCoverage": {
+        "lh00": [
+          "FR-00-001",
+          "FR-00-002",
+          "FR-00-005",
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "lh01": [
+          "QG-01-001",
+          "QG-01-002",
+          "QG-01-004",
+          "AC-01-005"
+        ]
+      },
+      "decision": "Reuse current semantics and evidence; reader help is neither execution authority nor accepted proof.",
+      "evidenceScope": "Documentation/traceability only; product/platform/legal/human acceptance remains separate."
+    },
+    {
+      "id": "intake-sequencing-governance",
+      "version": "v0.2.11",
+      "priority": 66,
+      "guides": [
+        {
+          "path": ".specify/presets/intake-sequencing-governance/docs/user-guide.md",
+          "normalizedSha256": "3923f980109e5ed52bb08ea97ce5255e785a19f6b4924784b1b367145c751803"
+        },
+        {
+          "path": ".specify/presets/intake-sequencing-governance/docs/user-guide.EN.md",
+          "normalizedSha256": "9345e29a49462082f52a76b7aac3ec1cf319f35cbc8b1ae07a15bad197e2d85f"
+        }
+      ],
+      "requirementCoverage": {
+        "lh00": [
+          "FR-00-001",
+          "FR-00-002",
+          "FR-00-005",
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "lh01": [
+          "QG-01-001",
+          "QG-01-002",
+          "QG-01-004",
+          "AC-01-005"
+        ]
+      },
+      "decision": "Reuse current semantics and evidence; reader help is neither execution authority nor accepted proof.",
+      "evidenceScope": "Documentation/traceability only; product/platform/legal/human acceptance remains separate."
+    },
+    {
+      "id": "autonomous-run-governance",
+      "version": "v0.4.7",
+      "priority": 70,
+      "guides": [
+        {
+          "path": ".specify/presets/autonomous-run-governance/docs/user-guide.md",
+          "normalizedSha256": "493de75dde3b19911def88890fc1b3b3f461815c1a31ec75b438819ce1898d77"
+        },
+        {
+          "path": ".specify/presets/autonomous-run-governance/docs/user-guide.EN.md",
+          "normalizedSha256": "78c651a9adfb421c368214949bec17d8085039ff4e8606b9ab88f61cd2c195cc"
+        }
+      ],
+      "requirementCoverage": {
+        "lh00": [
+          "FR-00-001",
+          "FR-00-002",
+          "FR-00-005",
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "lh01": [
+          "QG-01-001",
+          "QG-01-002",
+          "QG-01-004",
+          "AC-01-005"
+        ]
+      },
+      "decision": "Reuse current semantics and evidence; reader help is neither execution authority nor accepted proof.",
+      "evidenceScope": "Documentation/traceability only; product/platform/legal/human acceptance remains separate."
+    },
+    {
+      "id": "parallel-autonomous-run-governance",
+      "version": "v0.2.9",
+      "priority": 80,
+      "guides": [
+        {
+          "path": ".specify/presets/parallel-autonomous-run-governance/docs/user-guide.md",
+          "normalizedSha256": "b65520ee1aab9aaf096b2406a3e1085f0534a20854d820707e7c635280b2a291"
+        },
+        {
+          "path": ".specify/presets/parallel-autonomous-run-governance/docs/user-guide.EN.md",
+          "normalizedSha256": "bd01bccfb72c68c79232c8bfbeb562ccebc0e45876007d927d6f31b846f8bcfc"
+        }
+      ],
+      "requirementCoverage": {
+        "lh00": [
+          "FR-00-001",
+          "FR-00-002",
+          "FR-00-005",
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "lh01": [
+          "QG-01-001",
+          "QG-01-002",
+          "QG-01-004",
+          "AC-01-005"
+        ]
+      },
+      "decision": "Reuse current semantics and evidence; reader help is neither execution authority nor accepted proof.",
+      "evidenceScope": "Documentation/traceability only; product/platform/legal/human acceptance remains separate."
+    },
+    {
+      "id": "project-statistics-governance",
+      "version": "v0.1.3",
+      "priority": 90,
+      "guides": [
+        {
+          "path": ".specify/presets/project-statistics-governance/docs/user-guide.md",
+          "normalizedSha256": "f855f64686013e6e5b1952280a2e8c941635930388a28f95e05519a86b6126a2"
+        },
+        {
+          "path": ".specify/presets/project-statistics-governance/docs/user-guide.EN.md",
+          "normalizedSha256": "f63c7a831ef884e16514d1a580818f0e14d6b2881eedf285b3e9515612d79ee4"
+        }
+      ],
+      "requirementCoverage": {
+        "lh00": [
+          "FR-00-001",
+          "FR-00-002",
+          "FR-00-005",
+          "FR-00-007",
+          "FR-00-008",
+          "FR-00-009"
+        ],
+        "lh01": [
+          "QG-01-001",
+          "QG-01-002",
+          "QG-01-004",
+          "AC-01-005"
+        ]
+      },
+      "decision": "Reuse current semantics and evidence; reader help is neither execution authority nor accepted proof.",
+      "evidenceScope": "Documentation/traceability only; product/platform/legal/human acceptance remains separate."
+    }
+  ],
+  "sourceDrift": {
+    "lh-00": [
+      {
+        "path": "constitution.md",
+        "before": "097fce80908109319792a7ff5e78169ab35caeb502febff3324172315f754460",
+        "after": "eef6170db105fa13fabb349c3875bd8b3ea67f74bac915ef542fd22ee9decf4a",
+        "commits": [
+          "f62eb03 docs: integrate fourteen published governance packages in Show pilot"
+        ]
+      },
+      {
+        "path": "AGENTS.md",
+        "before": "11c4aeef2e2db68906f46acb760ae2889e068539bd7111ffbd2b39b2c6cf6b54",
+        "after": "45721ee81c102b6e032b054bfa252ae08408ea311b12c17dd1d379e7092061c3",
+        "commits": [
+          "f62eb03 docs: integrate fourteen published governance packages in Show pilot"
+        ]
+      },
+      {
+        "path": "scripts/config/spec-kit-project-statistics-governance-presets.json",
+        "before": "c4e606e7679415f35e42b8d0ccf963f2d5b14754fe689d45393279a90196be8f",
+        "after": "2cb57b4651616439b45bee12156b8c513187141100ecb39ac64f3fe9eaa8bcfa",
+        "commits": [
+          "f62eb03 docs: integrate fourteen published governance packages in Show pilot"
+        ]
+      },
+      {
+        "path": ".specify/memory/constitution.md",
+        "before": "097fce80908109319792a7ff5e78169ab35caeb502febff3324172315f754460",
+        "after": "eef6170db105fa13fabb349c3875bd8b3ea67f74bac915ef542fd22ee9decf4a",
+        "commits": [
+          "f62eb03 docs: integrate fourteen published governance packages in Show pilot"
+        ]
+      }
+    ],
+    "lh-01": [
+      {
+        "path": "constitution.md",
+        "before": "097fce80908109319792a7ff5e78169ab35caeb502febff3324172315f754460",
+        "after": "eef6170db105fa13fabb349c3875bd8b3ea67f74bac915ef542fd22ee9decf4a",
+        "commits": [
+          "f62eb03 docs: integrate fourteen published governance packages in Show pilot"
+        ]
+      },
+      {
+        "path": ".specify/memory/constitution.md",
+        "before": "097fce80908109319792a7ff5e78169ab35caeb502febff3324172315f754460",
+        "after": "eef6170db105fa13fabb349c3875bd8b3ea67f74bac915ef542fd22ee9decf4a",
+        "commits": [
+          "f62eb03 docs: integrate fourteen published governance packages in Show pilot"
+        ]
+      },
+      {
+        "path": "AGENTS.md",
+        "before": "11c4aeef2e2db68906f46acb760ae2889e068539bd7111ffbd2b39b2c6cf6b54",
+        "after": "45721ee81c102b6e032b054bfa252ae08408ea311b12c17dd1d379e7092061c3",
+        "commits": [
+          "f62eb03 docs: integrate fourteen published governance packages in Show pilot"
+        ]
+      },
+      {
+        "path": "scripts/config/spec-kit-project-statistics-governance-presets.json",
+        "before": "c4e606e7679415f35e42b8d0ccf963f2d5b14754fe689d45393279a90196be8f",
+        "after": "2cb57b4651616439b45bee12156b8c513187141100ecb39ac64f3fe9eaa8bcfa",
+        "commits": [
+          "f62eb03 docs: integrate fourteen published governance packages in Show pilot"
+        ]
+      }
+    ]
+  },
+  "validatorDelta": {
+    "paths": [
+      ".specify/presets/intake-authoring-governance/scripts/validate-intake-authoring-receipt.ps1",
+      ".specify/presets/intake-authoring-governance/scripts/validate-intake-authoring-receipt.sh"
+    ],
+    "meaning": "Accept prior schema-2 generator identities0.3.8/0.3.9; current0.3.10 is still read from own manifest. No hash/path/status/schema checks weakened."
+  }
+}

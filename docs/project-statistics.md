@@ -98,6 +98,10 @@ Gewöhnliche Intake-Updates nach PR #52, 50 einzelne GSDB-Kontrollzuordnungen, V
 
 Vierzehn veröffentlichte Pakete aus Level 0 ded29751, vollständige native Agentenkomposition, getrennte technische Evidence und erhaltene Intakehistorie. Keine Produktimplementierung oder neue Abnahme. / Fourteen published packages, complete native agent composition, separate technical evidence and preserved intake history. No implementation or new acceptance. [Nachweis / Evidence](maintenance/preset-documentation-rollout-2026-10-24.md).
 
+### 2026-10-25 - LH-00/LH-01 Dokumentations-Quellenupdate / Documentation source refresh
+
+Gewöhnliche Updates mit exakten Vorgängerarchiven, aktuellen Leserpfaden und unabhängigen Reviews; Spec/Plan/Tasks gezielt abgeglichen, keine neuen Umsetzungstasks oder Produkt-/Plattformabnahme. / Ordinary lineage-preserving source updates, current reader paths and distinct reviews with targeted technical alignment; no new implementation tasks or acceptance. [Nachweis / Evidence](../specs/001-lh00-intake-process/checklists/tasks-validation.md).
+
 ## Gesamtstatistik / Overall Statistics
 
 <!-- project-statistics-v2:begin -->
