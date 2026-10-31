@@ -6,6 +6,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
 import re
 import subprocess
 import sys
@@ -82,8 +83,10 @@ def run_git_bytes(repo: Path, *arguments: str) -> bytes:
     return result.stdout
 
 
-def relative_path(repo: Path, value: str) -> tuple[str, Path]:
-    candidate = PurePosixPath(value.replace("\\", "/"))
+def relative_path(
+    repo: Path, value: str, *, normalize_separators: bool = True
+) -> tuple[str, Path]:
+    candidate = PurePosixPath(value.replace("\\", "/") if normalize_separators else value)
     if candidate.is_absolute() or not candidate.parts or ".." in candidate.parts:
         fail("AEI005", f"path must be repository-relative without traversal: {value}")
     normalized = candidate.as_posix()
@@ -150,6 +153,26 @@ def staged_name_status(repo: Path) -> dict[str, str]:
             fail("AEI004", "incomplete staged path status")
         result[fields[index]] = status[0]
         index += 1
+    return result
+
+
+def git_nul_fields(raw: bytes) -> list[str]:
+    if raw and not raw.endswith(b"\0"):
+        fail("AEI004", "incomplete NUL-terminated Git path inventory")
+    return [os.fsdecode(field) for field in raw[:-1].split(b"\0")] if raw else []
+
+
+def worktree_name_status(repo: Path) -> dict[str, str]:
+    fields = git_nul_fields(
+        run_git_bytes(repo, "diff", "--name-status", "--no-renames", "-z", "HEAD", "--")
+    )
+    if len(fields) % 2:
+        fail("AEI004", "incomplete worktree path status")
+    result: dict[str, str] = {}
+    for status, path in zip(fields[::2], fields[1::2]):
+        if not path or status not in {"A", "M", "D", "T", "U"} or path in result:
+            fail("AEI004", "invalid worktree path status")
+        result[path] = status
     return result
 
 
@@ -251,14 +274,13 @@ def delivery_command(args: argparse.Namespace) -> str:
             )
         whitespace_allowances[normalized] = expected_hash
 
-    tracked = [
-        line for line in run_git(repo, "diff", "--name-only", "HEAD", "--").splitlines() if line
-    ]
-    untracked = [
-        line
-        for line in run_git(repo, "ls-files", "--others", "--exclude-standard").splitlines()
-        if line
-    ]
+    worktree_status = worktree_name_status(repo) if not args.staged else {}
+    tracked = sorted(worktree_status) if not args.staged else git_nul_fields(
+        run_git_bytes(repo, "diff", "--name-only", "-z", "HEAD", "--")
+    )
+    untracked = git_nul_fields(
+        run_git_bytes(repo, "ls-files", "--others", "--exclude-standard", "-z")
+    )
     staged_status = staged_name_status(repo) if args.staged else {}
     staged_paths = sorted(staged_status)
     if args.staged:
@@ -305,12 +327,15 @@ def delivery_command(args: argparse.Namespace) -> str:
             if validate_text_bytes(raw, path_text, whitespace_allowances.get(path_text, "")):
                 used_allowances.add(path_text)
         else:
-            _, path = relative_path(repo, path_text)
-            if path.exists() and path.is_file():
-                if validate_text_whitespace(
-                    path, path_text, whitespace_allowances.get(path_text, "")
-                ):
-                    used_allowances.add(path_text)
+            _, path = relative_path(repo, path_text, normalize_separators=False)
+            if worktree_status.get(path_text) == "D" and path_text not in intended:
+                continue
+            if path.is_symlink() or not path.is_file():
+                fail("AEI005", f"changed worktree path is not a regular file: {path_text}")
+            if validate_text_whitespace(
+                path, path_text, whitespace_allowances.get(path_text, "")
+            ):
+                used_allowances.add(path_text)
     unused_allowances = sorted(set(whitespace_allowances) - used_allowances)
     if unused_allowances:
         fail(
