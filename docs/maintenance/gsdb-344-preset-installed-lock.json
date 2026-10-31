@@ -38,7 +38,7 @@
       "enabled": true,
       "manifest_hash": "sha256:0034c2dc7da5c64be3e2bceb10fbea435bc0de921def37b4ec5e7203b9719367",
       "fileCount": 67,
-      "contentSha256": "f80590747555adfbc38238f3040a499bdec98a32005b6a0287c79bd9bcde0b37"
+      "contentSha256": "de1bda4787d0aef190d29bad9a329a6b4e6f779fb0b7cdce69f8790e8543df48"
     },
     {
       "id": "cross-platform-governance",
@@ -131,5 +131,5 @@
       "contentSha256": "fd85afeba0588b280169059543e13229c6abbc4d141658c9515ac8f7f3f3f3e1"
     }
   ],
-  "purpose": "Current observed pilot installation for documentation rollout from Level 0 ded29751b58eece7711e80cf997a89b559812c93; not product acceptance."
+  "purpose": "Current observed pilot installation from Level 0 ded29751b58eece7711e80cf997a89b559812c93 with the local autonomous-run-governance security fix; baselineCommit records the original installation, not product acceptance."
 }

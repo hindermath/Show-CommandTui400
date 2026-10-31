@@ -40,11 +40,14 @@ $PresetRoot = Split-Path -Parent $PSScriptRoot
 $Scripts = Join-Path $PresetRoot 'scripts'
 $DeliveryPs = Join-Path $Scripts 'validate-autonomous-delivery-set.ps1'
 $DeliverySh = Join-Path $Scripts 'validate-autonomous-delivery-set.sh'
+$DeliveryCore = Join-Path $Scripts 'autonomous-evidence-core.py'
 $PhasePs = Join-Path $Scripts 'validate-autonomous-phase-result.ps1'
 $PhaseSh = Join-Path $Scripts 'validate-autonomous-phase-result.sh'
 $GatePs = Join-Path $Scripts 'validate-autonomous-gate-evidence.ps1'
 $GateSh = Join-Path $Scripts 'validate-autonomous-gate-evidence.sh'
 $HasBash = $null -ne (Get-Command bash -ErrorAction SilentlyContinue)
+$Python = Get-Command python3 -ErrorAction SilentlyContinue
+if ($null -eq $Python) { $Python = Get-Command python -ErrorAction Stop }
 $Root = Join-Path ([IO.Path]::GetTempPath()) "autonomous-evidence-$([guid]::NewGuid())"
 $Repo = Join-Path $Root 'repo'
 
@@ -72,6 +75,56 @@ try {
     }
     $After = (& git -C $Repo status --porcelain=v1 --untracked-files=all --ignored) -join "`n"
     Assert-EvidenceTest ($Before -eq $After) 'Delivery validation changed repository state'
+
+    if (-not $IsWindows) {
+        $OddRepo = Join-Path $Root 'odd-names'
+        [void](New-Item -ItemType Directory -Path $OddRepo -Force)
+        & git -C $OddRepo init --quiet
+        & git -C $OddRepo config user.name Fixture
+        & git -C $OddRepo config user.email fixture@example.invalid
+        $OddNames = @("line`nbreak.txt", "tab`tname.txt", 'back\slash.txt')
+        [IO.File]::WriteAllText((Join-Path $OddRepo 'ordinary.txt'), "baseline`n", [Text.UTF8Encoding]::new($false))
+        foreach ($Name in $OddNames) {
+            [IO.File]::WriteAllText([IO.Path]::Combine($OddRepo, $Name), "baseline`n", [Text.UTF8Encoding]::new($false))
+        }
+        & git -C $OddRepo add -- .
+        & git -C $OddRepo commit --quiet -m 'special filename baseline'
+        [IO.File]::WriteAllText((Join-Path $OddRepo 'ordinary.txt'), "changed`n", [Text.UTF8Encoding]::new($false))
+        [void](Invoke-Expected { & pwsh -NoProfile -File $DeliveryPs -Repo $OddRepo -Intended ordinary.txt } 0 'Ordinary tracked-file control')
+
+        foreach ($Name in $OddNames) {
+            $OddPath = [IO.Path]::Combine($OddRepo, $Name)
+            [IO.File]::WriteAllText($OddPath, "bad `n", [Text.UTF8Encoding]::new($false))
+            $Rejected = Invoke-Expected { & pwsh -NoProfile -File $DeliveryPs -Repo $OddRepo -Intended ordinary.txt } 2 'Special-name whitespace rejection'
+            Assert-EvidenceTest (($Rejected -join "`n") -match 'AEI007') 'Special-name file bypassed whitespace validation'
+            if ($Name -eq $OddNames[0] -and $HasBash) {
+                [void](Invoke-Expected { & bash $DeliverySh --repo $OddRepo --intended ordinary.txt } 2 'Bash newline-name rejection')
+            }
+            [IO.File]::WriteAllText($OddPath, "clean`n", [Text.UTF8Encoding]::new($false))
+            $Accepted = (Invoke-Expected { & pwsh -NoProfile -File $DeliveryPs -Repo $OddRepo -Intended ordinary.txt } 0 'Special-name clean control') -join "`n" | ConvertFrom-Json
+            Assert-EvidenceTest ($Name -cin $Accepted.trackedPaths) 'Git filename was changed in trackedPaths'
+            Assert-EvidenceTest ($Name -cin $Accepted.checkedPaths) 'Git filename was omitted from checkedPaths'
+            & git -C $OddRepo restore -- $Name
+        }
+
+        Remove-Item -LiteralPath ([IO.Path]::Combine($OddRepo, $OddNames[0]))
+        $Deletion = (Invoke-Expected { & pwsh -NoProfile -File $DeliveryPs -Repo $OddRepo -Intended ordinary.txt } 0 'Tracked deletion control') -join "`n" | ConvertFrom-Json
+        Assert-EvidenceTest ($OddNames[0] -cin $Deletion.trackedPaths) 'Deleted tracked filename was omitted'
+        & git -C $OddRepo restore -- $OddNames[0]
+
+        $UntrackedName = "new`nname.txt"
+        [IO.File]::WriteAllText([IO.Path]::Combine($OddRepo, $UntrackedName), "new`n", [Text.UTF8Encoding]::new($false))
+        $UntrackedResult = (Invoke-Expected { & $Python.Source $DeliveryCore delivery --repo $OddRepo --intended ordinary.txt --intended $UntrackedName } 0 'Untracked newline-name control') -join "`n" | ConvertFrom-Json
+        Assert-EvidenceTest ($UntrackedName -cin $UntrackedResult.intendedUntrackedPaths) 'Untracked Git filename was changed'
+
+        & ln -s ordinary.txt ([IO.Path]::Combine($OddRepo, 'linked.txt'))
+        & git -C $OddRepo add -- linked.txt
+        & git -C $OddRepo commit --quiet -m 'tracked link baseline'
+        Remove-Item -LiteralPath ([IO.Path]::Combine($OddRepo, 'linked.txt'))
+        & ln -s missing.txt ([IO.Path]::Combine($OddRepo, 'linked.txt'))
+        $LinkRejected = Invoke-Expected { & pwsh -NoProfile -File $DeliveryPs -Repo $OddRepo -Intended ordinary.txt } 2 'Changed tracked symlink rejection'
+        Assert-EvidenceTest (($LinkRejected -join "`n") -match 'AEI005') 'Changed tracked symlink was not rejected'
+    }
 
     [IO.File]::WriteAllText((Join-Path $Repo 'delivery.txt'), "bad `n", [Text.UTF8Encoding]::new($false))
     [void](Invoke-Expected { & pwsh -NoProfile -File $DeliveryPs -Repo $Repo -Intended delivery.txt } 2 'PowerShell whitespace rejection')
