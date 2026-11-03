@@ -6,7 +6,7 @@
                       IncludeAssets="compile" PrivateAssets="all" />
     <!-- Resolve the upstream PKCS dependency to the patched version, without
          importing its API or runtime. This does not update the user's host. -->
-    <PackageReference Include="System.Security.Cryptography.Pkcs" Version="[10.0.13]"
+    <PackageReference Include="System.Security.Cryptography.Pkcs" Version="[10.0.14]"
                       IncludeAssets="none" PrivateAssets="all" />
   </ItemGroup>
 </Project>

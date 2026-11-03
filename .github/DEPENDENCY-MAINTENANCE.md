@@ -58,3 +58,26 @@ Nachweis / evidence: YAML round-trip, Dependabot schema and manifest coverage ch
 hosted checks are recorded on the configuration PR before merge.
 Risiko / risk: update proposals still require compatibility and security review.
 Neu pruefen bei / reevaluate on: new manifests, moved paths, changed pins or maintenance ownership.
+
+## Feste PowerShell-API / Fixed PowerShell API
+
+DE: `System.Management.Automation` ist eine private, reine Compile-Referenz auf
+die verbindliche Mindest-API 7.6.4, keine ausgelieferte PowerShell-Engine.
+Versionsupdates dieser Referenz bleiben ausgenommen. Eine neue API-Untergrenze
+benoetigt einen eigenen Kompatibilitaetsnachweis und eine abgestimmte Aenderung
+der Plattformvorgaben. Sicherheitsupdates und Alerts bleiben aktiv und werden
+unter Beachtung dieser Grenze separat bewertet. Die Host-Engine wird ueber den
+bestehenden Host-Wartungsweg aktualisiert. Das separate PKCS-Paket bleibt in der
+normalen Versions- und Sicherheitswartung; es importiert weder API noch Runtime.
+Owner: Repository-Maintainer. Neu pruefen bei geaenderter Mindest-API oder neuen
+Security-Alerts. Nachweis: `assert-no-powershell-runtime.py` und LH-01-Produkttests.
+
+EN: `System.Management.Automation` is a private compile-only reference to the
+required minimum API 7.6.4, not a redistributed PowerShell engine. Version updates
+for this reference are excluded. Raising the minimum API requires separate
+compatibility evidence and an aligned platform-policy change. Security updates
+and alerts remain enabled and require separate assessment against this boundary.
+The host engine follows the existing host-maintenance process. The separate PKCS
+package retains normal version and security maintenance and imports no API or
+runtime. Owner: repository maintainer. Reevaluate after minimum-API changes or new
+security alerts. Evidence: `assert-no-powershell-runtime.py` and LH-01 product tests.
