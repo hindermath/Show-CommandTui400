@@ -1,5 +1,10 @@
 # Show-CommandTui400
 
+Model Routing Governance **0.2.3**: Diese Lieferung aktualisiert die lokale
+Preset-Integration und ihre Resolver. [Nachweis und Grenzen](docs/maintenance/model-routing-v023-installation.md).
+This delivery updates the local preset integration and its resolvers; see the
+linked evidence and verification limits.
+
 [GSDB 3.4.4: Pilotrollout / pilot rollout](docs/maintenance/gsdb-344-pilot-2026-10-20.md).
 
 [14 stabile Dokumentationspakete: begrenzter Rollout / fourteen stable documentation packages: bounded rollout](docs/maintenance/preset-documentation-rollout-2026-10-24.md).
