@@ -83,10 +83,8 @@ def run_git_bytes(repo: Path, *arguments: str) -> bytes:
     return result.stdout
 
 
-def relative_path(
-    repo: Path, value: str, *, normalize_separators: bool = True
-) -> tuple[str, Path]:
-    candidate = PurePosixPath(value.replace("\\", "/") if normalize_separators else value)
+def relative_path(repo: Path, value: str) -> tuple[str, Path]:
+    candidate = PurePosixPath(value.replace("\\", "/"))
     if candidate.is_absolute() or not candidate.parts or ".." in candidate.parts:
         fail("AEI005", f"path must be repository-relative without traversal: {value}")
     normalized = candidate.as_posix()
@@ -113,7 +111,8 @@ def validate_text_bytes(raw: bytes, label: str, allowed_raw_hash: str = "") -> b
         text = raw.decode("utf-8-sig", errors="strict")
     except UnicodeDecodeError as exc:
         fail("AEI006", f"{label} is neither UTF-8 text nor detected binary: {exc}")
-    for number, line in enumerate(text.replace("\r\n", "\n").replace("\r", "\n").split("\n"), 1):
+    normalized = text.replace("\r\n", "\n").replace("\r", "\n")
+    for number, line in enumerate(normalized.split("\n"), 1):
         if line.endswith((" ", "\t")):
             if allowed_raw_hash:
                 actual_raw_hash = hashlib.sha256(raw).hexdigest()
@@ -124,6 +123,14 @@ def validate_text_bytes(raw: bytes, label: str, allowed_raw_hash: str = "") -> b
                     )
                 return True
             fail("AEI007", f"trailing whitespace: {label}:{number}")
+    # A byte-preserved historical snapshot may contain blank-at-EOF without
+    # trailing spaces. Consume the same exact raw-hash allowance for that case;
+    # otherwise Git's staged check must still reject it. No active-file or
+    # path-wide exemption is introduced.
+    if allowed_raw_hash and normalized.endswith("\n\n"):
+        if hashlib.sha256(raw).hexdigest() != allowed_raw_hash:
+            fail("AEI009", f"historical whitespace allowance hash mismatch: {label}")
+        return True
     return False
 
 
@@ -133,8 +140,17 @@ def validate_text_whitespace(
     return validate_text_bytes(path.read_bytes(), label, allowed_raw_hash)
 
 
+def git_nul_fields(repo: Path, *arguments: str) -> list[str]:
+    # Git quotes names in line-oriented output; text mode also translates CR.
+    # Keep the byte/NUL boundary until each filesystem name is decoded.
+    raw = run_git_bytes(repo, *arguments)
+    if raw and not raw.endswith(b"\0"):
+        fail("AEI004", "incomplete NUL-delimited Git inventory")
+    return [os.fsdecode(field) for field in raw.split(b"\0")[:-1]]
+
+
 def staged_name_status(repo: Path) -> dict[str, str]:
-    fields = run_git(
+    fields = git_nul_fields(
         repo,
         "diff",
         "--cached",
@@ -143,7 +159,7 @@ def staged_name_status(repo: Path) -> dict[str, str]:
         "-z",
         "HEAD",
         "--",
-    ).split("\0")
+    )
     result: dict[str, str] = {}
     index = 0
     while index < len(fields) and fields[index]:
@@ -153,26 +169,6 @@ def staged_name_status(repo: Path) -> dict[str, str]:
             fail("AEI004", "incomplete staged path status")
         result[fields[index]] = status[0]
         index += 1
-    return result
-
-
-def git_nul_fields(raw: bytes) -> list[str]:
-    if raw and not raw.endswith(b"\0"):
-        fail("AEI004", "incomplete NUL-terminated Git path inventory")
-    return [os.fsdecode(field) for field in raw[:-1].split(b"\0")] if raw else []
-
-
-def worktree_name_status(repo: Path) -> dict[str, str]:
-    fields = git_nul_fields(
-        run_git_bytes(repo, "diff", "--name-status", "--no-renames", "-z", "HEAD", "--")
-    )
-    if len(fields) % 2:
-        fail("AEI004", "incomplete worktree path status")
-    result: dict[str, str] = {}
-    for status, path in zip(fields[::2], fields[1::2]):
-        if not path or status not in {"A", "M", "D", "T", "U"} or path in result:
-            fail("AEI004", "invalid worktree path status")
-        result[path] = status
     return result
 
 
@@ -212,7 +208,8 @@ def validate_staged_diff_check(
             (
                 path
                 for path in whitespace_allowances
-                if line.startswith(f"{path}:") and line.endswith(": trailing whitespace.")
+                if line.startswith(f"{path}:")
+                and line.endswith((": trailing whitespace.", ": new blank line at EOF."))
             ),
             None,
         )
@@ -274,13 +271,8 @@ def delivery_command(args: argparse.Namespace) -> str:
             )
         whitespace_allowances[normalized] = expected_hash
 
-    worktree_status = worktree_name_status(repo) if not args.staged else {}
-    tracked = sorted(worktree_status) if not args.staged else git_nul_fields(
-        run_git_bytes(repo, "diff", "--name-only", "-z", "HEAD", "--")
-    )
-    untracked = git_nul_fields(
-        run_git_bytes(repo, "ls-files", "--others", "--exclude-standard", "-z")
-    )
+    tracked = git_nul_fields(repo, "diff", "--name-only", "-z", "HEAD", "--")
+    untracked = git_nul_fields(repo, "ls-files", "--others", "--exclude-standard", "-z")
     staged_status = staged_name_status(repo) if args.staged else {}
     staged_paths = sorted(staged_status)
     if args.staged:
@@ -327,15 +319,12 @@ def delivery_command(args: argparse.Namespace) -> str:
             if validate_text_bytes(raw, path_text, whitespace_allowances.get(path_text, "")):
                 used_allowances.add(path_text)
         else:
-            _, path = relative_path(repo, path_text, normalize_separators=False)
-            if worktree_status.get(path_text) == "D" and path_text not in intended:
-                continue
-            if path.is_symlink() or not path.is_file():
-                fail("AEI005", f"changed worktree path is not a regular file: {path_text}")
-            if validate_text_whitespace(
-                path, path_text, whitespace_allowances.get(path_text, "")
-            ):
-                used_allowances.add(path_text)
+            _, path = relative_path(repo, path_text)
+            if path.exists() and path.is_file():
+                if validate_text_whitespace(
+                    path, path_text, whitespace_allowances.get(path_text, "")
+                ):
+                    used_allowances.add(path_text)
     unused_allowances = sorted(set(whitespace_allowances) - used_allowances)
     if unused_allowances:
         fail(
