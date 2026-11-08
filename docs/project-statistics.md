@@ -149,25 +149,25 @@ Profil 2 verwendet Git-getrackte Textdateien und sichtbare Git-Aktivitaet. Die W
 
 | Kennzahl / Metric | Wert / Value |
 |---|---:|
-| Textbasis / Text base | 382125 lines |
-| Textdateien / Text files | 2733 |
+| Textbasis / Text base | 382178 lines |
+| Textdateien / Text files | 2735 |
 | Beobachtbarer Zeitraum / Observable period | 2025-11-16..2026-11-08 |
 | Aktivtage / Active days | 27 |
-| Relevante Commits / Relevant commits | 99 |
-| Zeilen je Aktivtag / Lines per active day | 14152.8 |
+| Relevante Commits / Relevant commits | 100 |
+| Zeilen je Aktivtag / Lines per active day | 14154.7 |
 | Peak-Tag im Fenster / Peak day in window | 2026-09-27 / 97728 |
 | Peak-Woche im Fenster / Peak week in window | 2026-10-04 / 159392 |
 | Laengste Serie / Longest streak | 8 days |
 | Speedup vs. 80 lines/day | 176.9x |
 | Speedup vs. 125 lines/day | 113.2x |
-| Methodik / Methodology | v2; source `929a9c4c5302` |
+| Methodik / Methodology | v2; source `ba7b0ee250e7` |
 
 ### Artefaktmix / Artifact Mix
 
 ```text
 Produktiv / Production          [#...................]   0.4% | 1585
 Tests                           [#...................]   2.6% | 9948
-Dokumentation / Documentation   [##############......]  71.5% | 273302
+Dokumentation / Documentation   [##############......]  71.5% | 273355
 Skripte / Scripts               [##..................]   8.3% | 31700
 Konfiguration / Configuration   [###.................]  17.0% | 65132
 Daten und Medien / Data and media [....................]   0.0% | 0
@@ -285,7 +285,7 @@ Die Faktoren vergleichen sichtbare Lieferdichte mit den dokumentierten manuellen
 Scale: 0..20000 lines/day
 Experienced manual [#...................] 80
 Thorsten solo      [#...................] 125
-Visible repository [##############......] 14152.8
+Visible repository [##############......] 14154.7
 ```
 
 Die gemeinsame Skala vergleicht Referenzen und sichtbare Lieferdichte. Sie schreibt die Git-Aktivitaet keiner Person oder KI pauschal zu.
@@ -311,6 +311,6 @@ DE: Das Fenster beginnt am 2025-11-16 und endet am 2026-11-08. Es enthaelt 27 ak
 | 2026-08 | 0 |
 | 2026-09 | 109576 |
 | 2026-10 | 296001 |
-| 2026-11 | 16854 |
+| 2026-11 | 16997 |
 
 <!-- project-statistics-v2:end -->
