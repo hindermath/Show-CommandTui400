@@ -155,6 +155,20 @@ the technical change; GeneratedUpdate for the existing statistics profiles.
 Existing references remain unchanged. Delivery volume is not a measurement
 of learning outcomes or AI time savings. Current head/platform checks are
 required before merge. Owner: repository maintainer; source-only, no Home sync.
+### 2026-11-12 - Intake Sequencing Governance v0.2.13
+
+DE: Ausschliesslich Intake Sequencing Governance auf das gepruefte
+Dokumentationspatch 0.2.13 aktualisiert. Die anderen 13 Presets und alle
+Runtime-Vertraege bleiben erhalten. Matrizen und Hash-Locks fortgeschrieben;
+Nachweis: [Rollout](maintenance/intake-sequencing-v0213-rollout-2026-11-12.md).
+Documentation Impact: UpdateRequired; Statistikblock: GeneratedUpdate.
+Owner: Thorsten Hindermann. Git-Aktivitaet ist keine Stoppuhrmessung.
+
+EN: Updated only Intake Sequencing Governance to documentation patch 0.2.13,
+retaining the other thirteen packages and runtime contracts. Updated matrices
+and source/installed bindings; see the linked rollout record. Statistics are
+generated from the existing methodology, not measured working time.
+
 ## Gesamtstatistik / Overall Statistics
 
 <!-- project-statistics-v2:begin -->
