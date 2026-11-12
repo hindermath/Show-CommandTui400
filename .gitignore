@@ -12,6 +12,7 @@
 
 # --- Pflichtdateien: Dokumentation / Required: Documentation ---
 !README.md
+!SECURITY.md
 !STATS.md
 !constitution.md
 !Lastenheft*.md
