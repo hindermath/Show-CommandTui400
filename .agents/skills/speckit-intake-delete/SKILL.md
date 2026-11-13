@@ -5,8 +5,10 @@ description: Logically delete active intake artifacts through archive and tombst
 compatibility: Requires spec-kit project structure with .specify/ directory
 metadata:
   author: github-spec-kit
-  source: intake-authoring-governance:speckit.intake-delete.md
+  source: preset:intake-authoring-governance
 ---
+
+# Speckit Intake Delete Skill
 
 ## User Input
 

@@ -5,8 +5,10 @@ description: Inspect the active autonomous Spec Kit run without changing reposit
 compatibility: Requires spec-kit project structure with .specify/ directory
 metadata:
   author: github-spec-kit
-  source: autonomous-run-governance:speckit.autonomous-status.md
+  source: preset:autonomous-run-governance
 ---
+
+# Speckit Autonomous Status Skill
 
 ## User Input
 

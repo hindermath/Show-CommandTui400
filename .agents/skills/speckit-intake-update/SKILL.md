@@ -4,8 +4,10 @@ description: Explicitly update one active intake or migrate one approved intake 
 compatibility: Requires spec-kit project structure with .specify/ directory
 metadata:
   author: github-spec-kit
-  source: intake-authoring-governance:speckit.intake-update.md
+  source: preset:intake-authoring-governance
 ---
+
+# Speckit Intake Update Skill
 
 ## User Input
 

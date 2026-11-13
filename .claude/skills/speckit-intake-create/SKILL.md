@@ -4,7 +4,7 @@ description: Create one new traceable intake or one explicitly approved intake s
 compatibility: Requires spec-kit project structure with .specify/ directory
 metadata:
   author: github-spec-kit
-  source: intake-authoring-governance:speckit.intake-create.md
+  source: intake-authoring-governance:commands/speckit.intake-create.md
 ---
 
 ## User Input

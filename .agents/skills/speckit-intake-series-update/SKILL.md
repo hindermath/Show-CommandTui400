@@ -4,8 +4,10 @@ description: Update one intake series with explicit authority and preserved line
 compatibility: Requires spec-kit project structure with .specify/ directory
 metadata:
   author: github-spec-kit
-  source: intake-sequencing-governance:speckit.intake-series-update.md
+  source: preset:intake-sequencing-governance
 ---
+
+# Speckit Intake Series Update Skill
 
 ## User Input
 

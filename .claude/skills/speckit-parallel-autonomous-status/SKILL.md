@@ -4,7 +4,7 @@ description: Inspect a parallel autonomous campaign without changing it.
 compatibility: Requires spec-kit project structure with .specify/ directory
 metadata:
   author: github-spec-kit
-  source: parallel-autonomous-run-governance:speckit.parallel-autonomous-status.md
+  source: parallel-autonomous-run-governance:commands/speckit.parallel-autonomous-status.md
 ---
 
 Read the campaign manifest, state, runtime result files, Git worktrees, and

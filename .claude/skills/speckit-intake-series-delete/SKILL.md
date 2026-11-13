@@ -4,7 +4,7 @@ description: Logically delete one intake series through archive and tombstone ev
 compatibility: Requires spec-kit project structure with .specify/ directory
 metadata:
   author: github-spec-kit
-  source: intake-sequencing-governance:speckit.intake-series-delete.md
+  source: intake-sequencing-governance:commands/speckit.intake-series-delete.md
 ---
 
 ## User Input

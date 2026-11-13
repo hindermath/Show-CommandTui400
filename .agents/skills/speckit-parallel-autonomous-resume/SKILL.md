@@ -4,8 +4,10 @@ description: Resume a stopped or interrupted campaign after complete revalidatio
 compatibility: Requires spec-kit project structure with .specify/ directory
 metadata:
   author: github-spec-kit
-  source: parallel-autonomous-run-governance:speckit.parallel-autonomous-resume.md
+  source: preset:parallel-autonomous-run-governance
 ---
+
+# Speckit Parallel Autonomous Resume Skill
 
 Revalidate campaign manifest hash, repositories, worktrees, branches, current
 authority, runner profile, worker result contracts, autonomous states,
