@@ -5,8 +5,10 @@ description: Extract, validate, and classify reusable learning from a completed 
 compatibility: Requires spec-kit project structure with .specify/ directory
 metadata:
   author: github-spec-kit
-  source: autonomous-run-governance:speckit.autonomous-retrospective.md
+  source: preset:autonomous-run-governance
 ---
+
+# Speckit Autonomous Retrospective Skill
 
 ## User Input
 

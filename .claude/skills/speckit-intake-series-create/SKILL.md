@@ -4,7 +4,7 @@ description: Create one traceable intake series from explicitly named existing i
 compatibility: Requires spec-kit project structure with .specify/ directory
 metadata:
   author: github-spec-kit
-  source: intake-sequencing-governance:speckit.intake-series-create.md
+  source: intake-sequencing-governance:commands/speckit.intake-series-create.md
 ---
 
 ## User Input

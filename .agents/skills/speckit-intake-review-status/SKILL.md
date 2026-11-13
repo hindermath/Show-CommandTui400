@@ -5,8 +5,10 @@ description: Inspect intake-review result freshness and gate status without chan
 compatibility: Requires spec-kit project structure with .specify/ directory
 metadata:
   author: github-spec-kit
-  source: intake-review-governance:speckit.intake-review-status.md
+  source: preset:intake-review-governance
 ---
+
+# Speckit Intake Review Status Skill
 
 ## User Input
 

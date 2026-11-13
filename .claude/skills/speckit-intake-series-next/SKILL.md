@@ -5,7 +5,7 @@ description: List every currently eligible intake target or exact blockers witho
 compatibility: Requires spec-kit project structure with .specify/ directory
 metadata:
   author: github-spec-kit
-  source: intake-sequencing-governance:speckit.intake-series-next.md
+  source: intake-sequencing-governance:commands/speckit.intake-series-next.md
 ---
 
 ## User Input

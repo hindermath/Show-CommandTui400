@@ -4,8 +4,10 @@ description: Projektstatistik status / Project statistics status
 compatibility: Requires spec-kit project structure with .specify/ directory
 metadata:
   author: github-spec-kit
-  source: project-statistics-governance:speckit.statistics-status.md
+  source: preset:project-statistics-governance
 ---
+
+# Speckit Statistics Status Skill
 
 # Statistik status / Statistics status
 

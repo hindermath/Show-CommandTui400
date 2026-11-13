@@ -5,8 +5,10 @@ description: Ein benanntes Secure-Development-Gate mit begrenzter Evidence-Autor
 compatibility: Requires spec-kit project structure with .specify/ directory
 metadata:
   author: github-spec-kit
-  source: secure-development-assurance-governance:speckit.secure-development-review.md
+  source: preset:secure-development-assurance-governance
 ---
+
+# Speckit Secure Development Review Skill
 
 # Secure Development Review
 

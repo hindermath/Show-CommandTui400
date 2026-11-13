@@ -4,8 +4,10 @@ description: Repair explicitly authorized intake findings and perform a complete
 compatibility: Requires spec-kit project structure with .specify/ directory
 metadata:
   author: github-spec-kit
-  source: intake-review-governance:speckit.intake-repair.md
+  source: preset:intake-review-governance
 ---
+
+# Speckit Intake Repair Skill
 
 ## User Input
 
