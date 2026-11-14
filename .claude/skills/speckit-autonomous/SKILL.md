@@ -5,7 +5,7 @@ description: Execute a complete Spec Kit feature under explicit delivery authori
 compatibility: Requires spec-kit project structure with .specify/ directory
 metadata:
   author: github-spec-kit
-  source: autonomous-run-governance:speckit.autonomous.md
+  source: autonomous-run-governance:commands/speckit.autonomous.md
 ---
 
 ## User Input

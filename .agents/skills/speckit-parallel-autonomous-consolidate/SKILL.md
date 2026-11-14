@@ -4,8 +4,10 @@ description: Consolidate campaign results under explicit current authority.
 compatibility: Requires spec-kit project structure with .specify/ directory
 metadata:
   author: github-spec-kit
-  source: parallel-autonomous-run-governance:speckit.parallel-autonomous-consolidate.md
+  source: preset:parallel-autonomous-run-governance
 ---
+
+# Speckit Parallel Autonomous Consolidate Skill
 
 For `AlternativeSolutions`, require a named human-selected worker and reject
 automatic scoring or merging of several candidates.

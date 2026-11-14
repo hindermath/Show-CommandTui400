@@ -4,8 +4,10 @@ description: Review one intake, an ordered series, or a campaign before Spec Kit
 compatibility: Requires spec-kit project structure with .specify/ directory
 metadata:
   author: github-spec-kit
-  source: intake-review-governance:speckit.intake-review.md
+  source: preset:intake-review-governance
 ---
+
+# Speckit Intake Review Skill
 
 ## User Input
 

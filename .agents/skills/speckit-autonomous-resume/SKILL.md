@@ -5,8 +5,10 @@ description: Resume a paused or interrupted autonomous Spec Kit run after a full
 compatibility: Requires spec-kit project structure with .specify/ directory
 metadata:
   author: github-spec-kit
-  source: autonomous-run-governance:speckit.autonomous-resume.md
+  source: preset:autonomous-run-governance
 ---
+
+# Speckit Autonomous Resume Skill
 
 ## User Input
 

@@ -4,8 +4,10 @@ description: Secure-Development-Evidence vollständig und strikt read-only prüf
 compatibility: Requires spec-kit project structure with .specify/ directory
 metadata:
   author: github-spec-kit
-  source: secure-development-assurance-governance:speckit.secure-development-status.md
+  source: preset:secure-development-assurance-governance
 ---
+
+# Speckit Secure Development Status Skill
 
 # Secure Development Status
 

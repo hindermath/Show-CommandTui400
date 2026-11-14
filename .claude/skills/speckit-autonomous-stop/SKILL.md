@@ -4,7 +4,7 @@ description: Gracefully pause an autonomous Spec Kit run at a safe orchestration
 compatibility: Requires spec-kit project structure with .specify/ directory
 metadata:
   author: github-spec-kit
-  source: autonomous-run-governance:speckit.autonomous-stop.md
+  source: autonomous-run-governance:commands/speckit.autonomous-stop.md
 ---
 
 ## User Input

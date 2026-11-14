@@ -4,7 +4,7 @@ description: Validate current intake-series state without changing files.
 compatibility: Requires spec-kit project structure with .specify/ directory
 metadata:
   author: github-spec-kit
-  source: intake-sequencing-governance:speckit.intake-series-status.md
+  source: intake-sequencing-governance:commands/speckit.intake-series-status.md
 ---
 
 ## User Input

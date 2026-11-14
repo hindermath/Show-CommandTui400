@@ -4,7 +4,7 @@ description: Summarize one intake series without changing files.
 compatibility: Requires spec-kit project structure with .specify/ directory
 metadata:
   author: github-spec-kit
-  source: intake-sequencing-governance:speckit.intake-series-read.md
+  source: intake-sequencing-governance:commands/speckit.intake-series-read.md
 ---
 
 ## User Input

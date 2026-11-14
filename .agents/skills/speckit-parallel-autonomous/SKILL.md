@@ -4,8 +4,10 @@ description: Validate and execute a permission-bounded parallel autonomous campa
 compatibility: Requires spec-kit project structure with .specify/ directory
 metadata:
   author: github-spec-kit
-  source: parallel-autonomous-run-governance:speckit.parallel-autonomous.md
+  source: preset:parallel-autonomous-run-governance
 ---
+
+# Speckit Parallel Autonomous Skill
 
 ## User Input
 

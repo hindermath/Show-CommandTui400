@@ -4,7 +4,7 @@ description: Request a cooperative stop at parallel campaign safe boundaries.
 compatibility: Requires spec-kit project structure with .specify/ directory
 metadata:
   author: github-spec-kit
-  source: parallel-autonomous-run-governance:speckit.parallel-autonomous-stop.md
+  source: parallel-autonomous-run-governance:commands/speckit.parallel-autonomous-stop.md
 ---
 
 Set the campaign stop request after validating identity. Start no new workers.

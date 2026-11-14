@@ -4,7 +4,7 @@ description: Projektstatistik init / Project statistics init
 compatibility: Requires spec-kit project structure with .specify/ directory
 metadata:
   author: github-spec-kit
-  source: project-statistics-governance:speckit.statistics-init.md
+  source: project-statistics-governance:commands/speckit.statistics-init.md
 ---
 
 # Statistik init / Statistics init
