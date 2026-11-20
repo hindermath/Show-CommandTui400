@@ -5,14 +5,14 @@
 Owner: Thorsten Hindermann. Stand: 2026-10-15. Für Auszubildende und andere
 Entwickler gelten dieselben Schritte; Agentenwerkzeuge sind nicht erforderlich.
 
-- .NET10-SDK mit C#14-Unterstützung; ein Runtime-Paket allein genügt nicht.
+- .NET SDK 11 gemäß `global.json` für den Build und .NET 10 für `net10.0`-Tests.
 - Rider beziehungsweise Visual Studio mit .NET10-Unterstützung; in VS Code die
   Microsoft-C#-Erweiterung `ms-dotnettools.csharp`, optional C# Dev Kit für die
   Solution-Ansicht. Visual Studio benötigt die .NET-Entwicklungswerkzeuge.
 - Netzwerkzugriff auf nuget.org beim ersten Restore. Die Repository-Konfiguration
   begrenzt die Paketquellen; keine privaten Feeds oder Anmeldedaten erforderlich.
 - Zum Bauen ist keine PowerShell-Installation nötig. Zum Import und Ausführen:
-  PowerShell mindestens 7.6.4 mit Host-.NET10. Windows PowerShell 5.1 reicht nicht.
+  PowerShell mindestens 7.6.4. Die CI prüft die Host-Versionen 7.6 und 7.7.
 
 Im Repository-Stamm, nach einem frischen Clone:
 
@@ -115,7 +115,7 @@ Praktische Terminal-/Screenreaderabnahme bleibt getrennt; Braillehardware ausges
 
 ## DE — Fehlerdiagnosen und Dokumentationsauswirkung
 
-`dotnet` fehlt oder NETSDK1045: Passendes .NET10-SDK bereitstellen und den tatsächlich
+`dotnet` fehlt oder NETSDK1045: Das .NET SDK aus `global.json` bereitstellen und den tatsächlich
 von der IDE verwendeten Toolset prüfen. NU1301/Restorefehler: Netzwerk/nuget.org
 prüfen; keine privaten Feeds hinzufügen und Lockdateien nicht als Workaround löschen.
 Nicht aufgelöste PowerShell-Typen: Solution-Restore, importierte gemeinsame Props
@@ -144,7 +144,7 @@ Lauf eine erneute Frischeprüfung; historische Nachweise behalten ihren Stand.
 ## EN — Setup, IDEs and execution
 
 Owner/date as above. Apprentices and other developers use the same procedure;
-no agent tooling is required. Install a .NET10 SDK with C#14 support and a compatible
+no agent tooling is required. Install the .NET 11 SDK specified in `global.json`, the .NET 10 runtime for tests, and a compatible
 IDE. VS Code requires Microsoft's C# extension; C# Dev Kit is optional for solution
 views. Visual Studio needs .NET development tools. Restore uses only nuget.org.
 Build requires no installed PowerShell, PSHOME property or local MSBuild file.
@@ -165,7 +165,7 @@ supported SDK/IDE maintenance versions and reload projects after package changes
 Check C# analysis in both projects, resolved PSCmdlet/CmdletAttribute types and a
 successful IDE solution build. The test library uses a custom contract runner,
 not a VSTest adapter; absent IDE test discovery is expected. For execution, use
-fresh PS7.6.4+ on .NET10 and the import commands above in a suitable interactive
+fresh PowerShell 7.6.4 or later and the import commands above in a suitable interactive
 terminal. IDE output panes do not replace a terminal. Rebuilds need a fresh host.
 
 Use the B01 runner with a new external build root, then the publish/output-check

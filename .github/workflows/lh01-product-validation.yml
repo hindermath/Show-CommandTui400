@@ -11,13 +11,14 @@ permissions:
 
 jobs:
   product:
-    name: LH-01 product (${{ matrix.os }})
+    name: LH-01 product (${{ matrix.os }}${{ matrix.powershell == '7.7.0' && ', PowerShell 7.7' || '' }})
     runs-on: ${{ matrix.os }}
     timeout-minutes: 20
     strategy:
       fail-fast: false
       matrix:
         os: [ubuntu-24.04, windows-2022]
+        powershell: ['7.6.6', '7.7.0']
     env:
       PYTHONUTF8: '1'
     steps:
@@ -26,18 +27,27 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-dotnet@0f4a354dd5547a28c70b7853dbd95d5b67886e73 # v6.1.0
         with:
-          dotnet-version: '10.0.401'
-      - name: Stage verified PowerShell 7.6.6 in runner temp
+          global-json-file: global.json
+          dotnet-version: '10.0.x'
+      - name: Stage verified PowerShell in runner temp
         shell: pwsh
+        env:
+          POWERSHELL_VERSION: ${{ matrix.powershell }}
         run: |
           $ErrorActionPreference = 'Stop'
+          $version = $env:POWERSHELL_VERSION
           $windows = $env:RUNNER_OS -eq 'Windows'
-          $asset = if ($windows) { 'PowerShell-7.6.6-win-x64.zip' } else { 'powershell-7.6.6-linux-x64.tar.gz' }
-          $expected = if ($windows) { '02fe458be20493fbdf43f61ea20610b811ee6c738ab1676c61b9cfcd1a33c860' } else { 'ddbc4a2d113bbd46d283cfedcbcd117a70caefd7673f41f2b4e0000badf103bc' }
+          $asset = if ($windows) { "PowerShell-$version-win-x64.zip" } else { "powershell-$version-linux-x64.tar.gz" }
+          $digests = @{
+            'PowerShell-7.6.6-win-x64.zip' = '02fe458be20493fbdf43f61ea20610b811ee6c738ab1676c61b9cfcd1a33c860'
+            'powershell-7.6.6-linux-x64.tar.gz' = 'ddbc4a2d113bbd46d283cfedcbcd117a70caefd7673f41f2b4e0000badf103bc'
+            'PowerShell-7.7.0-win-x64.zip' = '7c74e03b20a75b59715847439d046a6214b1863ee79b187872980f139bb4a05f'
+            'powershell-7.7.0-linux-x64.tar.gz' = 'c89d9c682d2c403dfe726f3df948e359675235a5bd6fab535776de69729ca0cb'
+          }
           $archive = Join-Path $env:RUNNER_TEMP $asset
-          Invoke-WebRequest "https://github.com/PowerShell/PowerShell/releases/download/v7.6.6/$asset" -OutFile $archive
-          if ((Get-FileHash $archive -Algorithm SHA256).Hash.ToLowerInvariant() -cne $expected) { throw 'PowerShell release digest mismatch' }
-          $hostRoot = Join-Path $env:RUNNER_TEMP 'lh01-powershell-7.6.6'
+          Invoke-WebRequest "https://github.com/PowerShell/PowerShell/releases/download/v$version/$asset" -OutFile $archive
+          if ((Get-FileHash $archive -Algorithm SHA256).Hash.ToLowerInvariant() -cne $digests[$asset]) { throw 'PowerShell release digest mismatch' }
+          $hostRoot = Join-Path $env:RUNNER_TEMP "lh01-powershell-$version"
           New-Item -ItemType Directory $hostRoot | Out-Null
           if ($windows) { Expand-Archive $archive -DestinationPath $hostRoot }
           else {
@@ -58,7 +68,7 @@ jobs:
         if: always()
         uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
-          name: lh01-product-${{ matrix.os }}
+          name: lh01-product-${{ matrix.os }}-powershell-${{ matrix.powershell }}
           path: |
             ${{ runner.temp }}/lh01-product-proof/*.json
             ${{ runner.temp }}/lh01-product-proof/*.txt
