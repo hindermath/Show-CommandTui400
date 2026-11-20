@@ -140,3 +140,5 @@ intakes/*
 **/.vs/
 **/.vscode/
 !NuGet.Config
+
+!/global.json
