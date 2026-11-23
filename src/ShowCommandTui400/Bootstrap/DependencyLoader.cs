@@ -8,17 +8,28 @@ namespace Hindermath.ShowCommandTui400.Bootstrap
 {
     // DE: Nur das Modul teilt seine PowerShell-API mit dem Host. NuGet-Bibliotheken bleiben privat.
     // EN: Only the PowerShell API is shared with the host. NuGet libraries remain private.
+    /// <summary>
+    /// DE: Interne Bootstrap-Hilfe für private Modulbibliotheken und gemeinsame Host-APIs.
+    /// EN: Bootstrap infrastructure for private module libraries and shared host APIs.
+    /// </summary>
     public static class DependencyLoader
     {
         private static readonly ConcurrentDictionary<string, ModuleContext> Contexts =
             new ConcurrentDictionary<string, ModuleContext>(OperatingSystem.IsWindows() ? StringComparer.OrdinalIgnoreCase : StringComparer.Ordinal);
 
+        /// <summary>DE: Lädt die kontrollierte Moduldatei. EN: Loads the controlled module file.</summary>
+        /// <param name="assemblyPath">DE: Absoluter Modulpfad. EN: Absolute module path.</param>
+        /// <returns>DE: Die private Modul-Assembly. EN: The private module assembly.</returns>
         public static Assembly LoadModule(string assemblyPath)
         {
             string fullPath = Path.GetFullPath(assemblyPath);
             return Contexts.GetOrAdd(fullPath, path => new ModuleContext(path)).LoadMain();
         }
 
+        /// <summary>DE: Bindet den Testdoppel an den Modulkontext. EN: Binds the test companion to the module context.</summary>
+        /// <param name="modulePath">DE: Kontrollierte Moduldatei. EN: Controlled module file.</param>
+        /// <param name="companionPath">DE: Gebaute Testbibliothek. EN: Built test library.</param>
+        /// <returns>DE: Test-Assembly desselben Kontexts. EN: Test assembly in the same context.</returns>
         public static Assembly LoadCompanion(string modulePath, string companionPath)
         {
             string fullPath = Path.GetFullPath(modulePath);
