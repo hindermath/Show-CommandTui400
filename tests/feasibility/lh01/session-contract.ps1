@@ -28,8 +28,15 @@ param(
 Set-StrictMode -Version Latest
 $ErrorActionPreference='Stop'
 Import-Module (Resolve-Path -LiteralPath $Module).Path
-Add-Type -Path (Resolve-Path -LiteralPath $TestAssembly).Path
-[ShowCommandTui400.Tests.ProductHarness]::Configure($(if($Scenario -in @('TextState','Resize')){$Scenario}elseif($Scenario -in @('HandledFailure','RestorationFailure','AggregateFailure')){$Scenario}else{'Real'}))
+$proofAssembly = [Hindermath.ShowCommandTui400.Bootstrap.DependencyLoader]::LoadCompanion(
+    (Join-Path (Split-Path -Parent (Resolve-Path -LiteralPath $Module).Path) 'ShowCommandTui400.dll'),
+    (Resolve-Path -LiteralPath $TestAssembly).Path)
+# DE: Typen aus demselben privaten Ladekontext verwenden. EN: Use types from the same private load context.
+$lh01NetworkObservation = $proofAssembly.GetType('ShowCommandTui400.Tests.NetworkObservation', $true)
+$lh01ProductHarness = $proofAssembly.GetType('ShowCommandTui400.Tests.ProductHarness', $true)
+$lh01SecurityBoundaryTests = $proofAssembly.GetType('ShowCommandTui400.Tests.SecurityBoundaryTests', $true)
+
+$lh01ProductHarness::Configure($(if($Scenario -in @('TextState','Resize')){$Scenario}elseif($Scenario -in @('HandledFailure','RestorationFailure','AggregateFailure')){$Scenario}else{'Real'}))
 Set-Variable -Name Lh01Synthetic -Scope Global -Value 710
 function global:Get-Lh01Synthetic {710}
 function Get-Snapshot {
@@ -49,7 +56,7 @@ try {
         $script:Lh01TargetCalls=0
         function Invoke-Lh01SyntheticTarget {$script:Lh01TargetCalls++}
         $sandbox=[IO.Directory]::CreateTempSubdirectory('lh01-security-')
-        $network=[ShowCommandTui400.Tests.NetworkObservation]::new()
+        $network=$lh01NetworkObservation::new()
         $rejected=[System.Collections.Generic.List[string]]::new()
         try {
             [IO.File]::WriteAllText((Join-Path $sandbox.FullName 'sentinel.txt'),'synthetic-sentinel')
@@ -65,7 +72,7 @@ try {
                     try {Show-CommandTui400 -KeyBinding $entry.Map;throw 'Expected public rejection'}
                     catch {if($_.FullyQualifiedErrorId -notlike 'InvalidConfiguration*'){throw};$rejected.Add($entry.Name)}
                 }
-                $securityNegative=[ordered]@{Cases=@($rejected);TargetCalls=$script:Lh01TargetCalls;NetworkAttempts=$network.ConnectionAttempts;FilesUnchanged=(@([IO.Directory]::GetFiles($sandbox.FullName)).Count -eq 1 -and [IO.File]::ReadAllText((Join-Path $sandbox.FullName 'sentinel.txt')) -ceq 'synthetic-sentinel');ModelChecks=@([ShowCommandTui400.Tests.SecurityBoundaryTests]::Run())}
+                $securityNegative=[ordered]@{Cases=@($rejected);TargetCalls=$script:Lh01TargetCalls;NetworkAttempts=$network.ConnectionAttempts;FilesUnchanged=(@([IO.Directory]::GetFiles($sandbox.FullName)).Count -eq 1 -and [IO.File]::ReadAllText((Join-Path $sandbox.FullName 'sentinel.txt')) -ceq 'synthetic-sentinel');ModelChecks=@($lh01SecurityBoundaryTests::Run())}
             }finally{Pop-Location}
         }finally{$network.Dispose();Remove-Item -LiteralPath $sandbox.FullName -Recurse -Force}
     } elseif($Scenario -eq 'Stop') {
@@ -77,35 +84,35 @@ try {
             $testRunspace.Open();$pipeline.Runspace=$testRunspace
             [void]$pipeline.AddCommand('Show-CommandTui400')
             $pending=$pipeline.BeginInvoke()
-            if(-not [ShowCommandTui400.Tests.ProductHarness]::Ready.Wait(10000)){throw 'Product readiness timeout'}
+            if(-not $lh01ProductHarness::Ready.Wait(10000)){throw 'Product readiness timeout'}
             # The test seam signals at UI entry; StopProcessing must handle a stop before Init finishes too.
             $pipeline.Stop()
             try {[void]$pipeline.EndInvoke($pending)} catch {if($_.Exception.ToString() -notmatch 'PipelineStopped'){throw}}
             $state=$pipeline.InvocationStateInfo.State.ToString()
-            if([ShowCommandTui400.Tests.ProductHarness]::StopCalls -lt 1 -or $state -ne 'Stopped'){throw 'StopProcessing not observed'}
+            if($lh01ProductHarness::StopCalls -lt 1 -or $state -ne 'Stopped'){throw 'StopProcessing not observed'}
         } finally {$pipeline.Dispose();$testRunspace.Dispose()}
     } elseif($Scenario -eq 'BindingConflict') { Show-CommandTui400 -KeyBinding @{Help='F5'}
     } elseif($Scenario -eq 'Remap') { Show-CommandTui400 -KeyBinding @{Help='F2';Refresh='F6'}
     } elseif($Scenario -in @('Normal','Repeat','HiddenCursor','Keyboard','FunctionExit','Resize','SmallExit','TinyExit','TextState')) {
         if($Scenario -eq 'HiddenCursor'){[Console]::Out.Write("`e[?25l");[Console]::Out.Flush()}
         Show-CommandTui400
-        $scopes.Add(([ShowCommandTui400.Tests.ProductHarness]::ObservedContext | ConvertFrom-Json))
+        $scopes.Add(($lh01ProductHarness::ObservedContext | ConvertFrom-Json))
         if($Scenario -eq 'Repeat') {
             function Invoke-FunctionProof {$Lh01Synthetic=711;Show-CommandTui400}
             Invoke-FunctionProof
-            $scopes.Add(([ShowCommandTui400.Tests.ProductHarness]::ObservedContext | ConvertFrom-Json))
+            $scopes.Add(($lh01ProductHarness::ObservedContext | ConvertFrom-Json))
             $syntheticModule=New-Module -Name Lh01SyntheticModule -ScriptBlock {
                 $script:Lh01Synthetic=712
                 function Invoke-ModuleProof {Show-CommandTui400}
                 Export-ModuleMember -Function Invoke-ModuleProof
             }
-            try {Import-Module $syntheticModule;Invoke-ModuleProof;$scopes.Add(([ShowCommandTui400.Tests.ProductHarness]::ObservedContext | ConvertFrom-Json))}
+            try {Import-Module $syntheticModule;Invoke-ModuleProof;$scopes.Add(($lh01ProductHarness::ObservedContext | ConvertFrom-Json))}
             finally {Remove-Module $syntheticModule}
         }
     } else {Show-CommandTui400}
 } catch {$failure=[ordered]@{ErrorId=$_.FullyQualifiedErrorId;Message=$_.Exception.Message}}
 $moduleSetUnchanged=$modulesBefore -ceq (@(Get-Module|ForEach-Object Name|Sort-Object) -join ";")
-$native=[ShowCommandTui400.Tests.ProductHarness]::LastRestore
+$native=$lh01ProductHarness::LastRestore
 $after=Get-Snapshot
 $locationUnchanged=$actualLocationBefore -ceq (Get-Location).ProviderPath
 $unchanged=$locationUnchanged -and (($before|ConvertTo-Json -Compress) -ceq ($after|ConvertTo-Json -Compress))
@@ -116,8 +123,8 @@ function Write-ProofSignal([string]$Suffix){
     }
 }
 if($Scenario -notin @('Redirect','InputRedirect')){Write-ProofSignal '.input-ready';Write-Host 'LH01_SHELL_INPUT_READY';$readback=Read-Host 'Synthetic return check'}
-[ShowCommandTui400.Tests.ProductHarness]::Reset()
-$record=[ordered]@{Scenario=$Scenario;RedirectBoundary=$redirectBoundary;SecurityNegative=$securityNegative;RenderObservations=@([ShowCommandTui400.Tests.ProductHarness]::RenderObservations | ForEach-Object {$_ | ConvertFrom-Json});SyntheticValueRetained=($Scenario -notin @('TextState','Resize') -or [ShowCommandTui400.Tests.ProductHarness]::ObservedViewState.Values['synthetic'] -ceq 'retained');InputObservations=@([ShowCommandTui400.Tests.ProductHarness]::InputObservations | ForEach-Object {$_ | ConvertFrom-Json});Before=$before;After=$after;ContextUnchanged=$unchanged;LocationUnchanged=$locationUnchanged;ModuleSetUnchanged=$moduleSetUnchanged;LeaseAcquisitions=[ShowCommandTui400.Tests.ProductHarness]::LeaseAcquisitions;UiCreations=[ShowCommandTui400.Tests.ProductHarness]::UiCreations;ScopeObservations=@($scopes);NativeRestore=$native;StopCalls=[ShowCommandTui400.Tests.ProductHarness]::StopCalls;PipelineState=$state;IsolatedTestRunspace=($Scenario -eq 'Stop');ShellReadback=$readback;Failure=$failure}
+$lh01ProductHarness::Reset()
+$record=[ordered]@{Scenario=$Scenario;RedirectBoundary=$redirectBoundary;SecurityNegative=$securityNegative;RenderObservations=@($lh01ProductHarness::RenderObservations | ForEach-Object {$_ | ConvertFrom-Json});SyntheticValueRetained=($Scenario -notin @('TextState','Resize') -or $lh01ProductHarness::ObservedViewState.Values['synthetic'] -ceq 'retained');InputObservations=@($lh01ProductHarness::InputObservations | ForEach-Object {$_ | ConvertFrom-Json});Before=$before;After=$after;ContextUnchanged=$unchanged;LocationUnchanged=$locationUnchanged;ModuleSetUnchanged=$moduleSetUnchanged;LeaseAcquisitions=$lh01ProductHarness::LeaseAcquisitions;UiCreations=$lh01ProductHarness::UiCreations;ScopeObservations=@($scopes);NativeRestore=$native;StopCalls=$lh01ProductHarness::StopCalls;PipelineState=$state;IsolatedTestRunspace=($Scenario -eq 'Stop');ShellReadback=$readback;Failure=$failure}
 if($ObservationFile){
     $stream=[IO.File]::Open($ObservationFile,[IO.FileMode]::CreateNew,[IO.FileAccess]::Write,[IO.FileShare]::None)
     $writer=$null
@@ -129,10 +136,10 @@ Write-ProofSignal '.restore-ready'
 Write-Host 'LH01_RESTORE_READY'
 Start-Sleep -Milliseconds 500
 if(-not $unchanged){exit 1}
-if($Scenario -in @('Redirect','InputRedirect')){if([ShowCommandTui400.Tests.ProductHarness]::LeaseAcquisitions -ne 0 -or [ShowCommandTui400.Tests.ProductHarness]::UiCreations -ne 0 -or -not $moduleSetUnchanged){exit 1};if($failure -and $failure.ErrorId -like 'CapabilityRejected*'){exit 0};exit 1}
+if($Scenario -in @('Redirect','InputRedirect')){if($lh01ProductHarness::LeaseAcquisitions -ne 0 -or $lh01ProductHarness::UiCreations -ne 0 -or -not $moduleSetUnchanged){exit 1};if($failure -and $failure.ErrorId -like 'CapabilityRejected*'){exit 0};exit 1}
 if($readback -cne 'LH01_ACK'){exit 1}
-if($Scenario -eq 'NegativeSecurity'){if($securityNegative.Cases.Count -eq 5 -and $securityNegative.TargetCalls -eq 0 -and $securityNegative.NetworkAttempts -eq 0 -and $securityNegative.FilesUnchanged -and [ShowCommandTui400.Tests.ProductHarness]::LeaseAcquisitions -eq 0 -and [ShowCommandTui400.Tests.ProductHarness]::UiCreations -eq 0 -and $moduleSetUnchanged -and -not $failure){exit 0};exit 1}
-if($Scenario -eq 'BindingConflict'){if($failure.ErrorId -like 'InvalidConfiguration*' -and [ShowCommandTui400.Tests.ProductHarness]::LeaseAcquisitions -eq 0 -and [ShowCommandTui400.Tests.ProductHarness]::UiCreations -eq 0 -and $moduleSetUnchanged){exit 0};exit 1}
+if($Scenario -eq 'NegativeSecurity'){if($securityNegative.Cases.Count -eq 5 -and $securityNegative.TargetCalls -eq 0 -and $securityNegative.NetworkAttempts -eq 0 -and $securityNegative.FilesUnchanged -and $lh01ProductHarness::LeaseAcquisitions -eq 0 -and $lh01ProductHarness::UiCreations -eq 0 -and $moduleSetUnchanged -and -not $failure){exit 0};exit 1}
+if($Scenario -eq 'BindingConflict'){if($failure.ErrorId -like 'InvalidConfiguration*' -and $lh01ProductHarness::LeaseAcquisitions -eq 0 -and $lh01ProductHarness::UiCreations -eq 0 -and $moduleSetUnchanged){exit 0};exit 1}
 if($Scenario -in @('HandledFailure','AggregateFailure')){if($failure -and $failure.ErrorId -like 'HandledFailure*'){exit 0};exit 1}
 if($Scenario -eq 'RestorationFailure'){if($failure -and $failure.ErrorId -like 'RestorationFailure*' -and $failure.Message -match 'synthetic primary failure' -and $failure.Message -match 'synthetic restoration failure'){exit 1};exit 2}
 if($failure){exit 1}
