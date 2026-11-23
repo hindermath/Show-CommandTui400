@@ -6,8 +6,11 @@
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Terminal.Gui" Version="[2.5.0]" />
+    <PackageReference Include="Terminal.Gui" Version="[2.6.0]" />
     <InternalsVisibleTo Include="ShowCommandTui400.Tests" />
     <None Update="ShowCommandTui400.psd1" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="ShowCommandTui400.psm1" CopyToOutputDirectory="PreserveNewest" />
+    <Compile Remove="Bootstrap/DependencyLoader.cs" />
+    <None Include="Bootstrap/DependencyLoader.cs" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 </Project>

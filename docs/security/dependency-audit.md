@@ -34,3 +34,22 @@ Historische LH-00-Bewertungen oben bleiben erhalten. / Prior LH-00 context is pr
 LH-01-Auswahl Terminal.Gui2.5.0 und 24 locked Fixturepakete: vorhandene Contenthash-/Lizenz-/Native-Assetbewertung in specs/002-lh01-tui-foundation/feasibility/native-dependency-assessment.md. Kein neuer Restore oder aktueller Schwachstellen-Freibrief. Produktpackages.lock.json und freigegebene öffentliche Registry erst T019. Onigwrap1.0.11 über TextMateSharp2.0.4 nicht aktivieren; native Oniguruma-Version/Buildherkunft vor Highlighting. Thorsten prüft mindestens monatlich (2026-11-09), vor Release und bei Advisories/Paketwechsel; Updateautomation bleibt eigener Auftrag.
 
 Terminal.Gui2.5.0 and 24 locked fixture packages have existing content/license/native evidence; no new restore or current vulnerability clearance is claimed. Product lock/feed follow at T019. Do not activate Onigwrap/TextMate highlighting before native source/build provenance. Thorsten audits monthly (2026-11-09), before release and on advisory/package changes; automation requires separate authority.
+
+## Terminal.Gui 2.6 und Host-Isolation / Host isolation (2026-11-23)
+
+DE: Terminal.Gui 2.6 benötigt System.Text.Json 11. Der Skriptmoduleinstieg lädt
+die Binärimplementierung und ihre lokalen Bibliotheken in einen privaten
+AssemblyLoadContext. Nur die PowerShell-API bleibt mit dem Host geteilt; eine
+PowerShell-Runtime wird nicht ausgeliefert. Der Cmdlet-Name und die Mindestversion
+PowerShell 7.6.4 bleiben unverändert. Der Loader ist interne Bootstrap-Infrastruktur.
+Die Verträge prüfen die private JSON- und gemeinsame PowerShell-Assembly-Identität;
+Host-Kompatibilität wird mit PowerShell 7.6 und 7.7 geprüft. Physische Terminal- und
+Assistenztechnik-Abnahme bleibt von synthetischen PTY-Nachweisen getrennt.
+
+EN: Terminal.Gui 2.6 requires System.Text.Json 11. The script module entry loads
+the binary implementation and its local libraries into a private AssemblyLoadContext.
+Only the PowerShell API is shared with the host; no PowerShell runtime is shipped.
+The cmdlet name and minimum PowerShell 7.6.4 remain unchanged. The loader is internal
+bootstrap infrastructure. Contracts check private JSON and shared PowerShell assembly
+identity; host compatibility is tested with PowerShell 7.6 and 7.7. Physical terminal
+and assistive-technology acceptance stays separate from synthetic PTY evidence.

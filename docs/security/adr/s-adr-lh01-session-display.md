@@ -57,3 +57,43 @@ review → current intake review. No Home sync; reassess changed scope or baseli
 Die Tabelle ordnet Architekturentwurf zu; sie bescheinigt keine implementierten
 Produktkontrollen oder Standardskonformität. / This maps design evidence, without
 certifying implemented product controls or standards conformity.
+
+## Implementierungsnachtrag 2026-11-23 / Implementation addendum
+
+DE: Terminal.Gui 2.6 benötigt System.Text.Json 11. Der neue Einstieg
+`src/ShowCommandTui400/ShowCommandTui400.psm1` lädt die Binärimplementierung über
+`Bootstrap/DependencyLoader.cs` in einen privaten AssemblyLoadContext. Lokale
+Paketbibliotheken werden aus dem Modulverzeichnis geladen; die PowerShell-API
+bleibt die bereits geladene Host-Assembly. Das erhält den aktuellen Runspace und
+die Mindestversion 7.6.4. Alternativen wären ein höherer Mindesthost oder das
+Ersetzen bereits geladener Hostbibliotheken; die private Ladung erhält den
+bestehenden Hostvertrag. Der Kontext trennt Assembly-Versionen. Modulcode läuft
+weiterhin mit denselben Benutzerrechten; ausschließlich vertrauenswürdige,
+kontrolliert gebaute Moduldateien gehören zum Lieferumfang.
+
+NIST SSDF/CWE gelten für Ladepfade und Supply Chain. BOOT01 prüft private JSON-
+und gemeinsame PowerShell-Identität; B01 und die vollständige synthetische
+Produktsuite wurden nativ mit 7.6.6 und 7.7.0 geprüft. Der erwartete S07-Fehler
+bleibt ein Fehler mit erfülltem Diagnosevertrag. ASVS und verteiltes Zero Trust
+bleiben für dieses lokale Cmdlet N/A nach den bestehenden Anwendbarkeitsnotizen.
+SBOM-/Locked-Restore- und Host-Runtime-Ausschlüsse bleiben verbindlich; kein
+KI-Runtime-Scope und keine Änderung der bestehenden regulatorischen Matrix.
+Physische Terminal-, Screenreader- und Braille-Abnahmen bleiben separate Gates.
+
+EN: Terminal.Gui 2.6 requires System.Text.Json 11. The new script-module entry
+loads the binary implementation through a private AssemblyLoadContext. Local
+package libraries load from the module directory; the PowerShell API remains
+the host's already-loaded assembly. This retains the caller's runspace and
+minimum version 7.6.4. Raising the minimum host or replacing loaded host libraries
+were alternatives; private loading preserves the existing host contract. The
+context separates assembly versions. Module code retains the user's permissions;
+only trusted, controlled module build outputs belong to the distribution.
+
+NIST SSDF/CWE apply to load paths and supply chain. BOOT01 checks private JSON
+and shared PowerShell identity. B01 and the complete synthetic product suite
+were tested natively with 7.6.6 and 7.7.0. Expected S07 failure remains a failure
+with its diagnostic contract satisfied. ASVS and distributed Zero Trust remain
+N/A for this local cmdlet under the existing applicability records. SBOM, locked
+restore and host-runtime exclusion checks remain binding. No AI-runtime scope
+or change to the regulatory matrix is introduced. Physical terminal, screen-reader
+and Braille acceptance remain separate gates.

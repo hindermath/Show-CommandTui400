@@ -50,9 +50,40 @@ try {
         if($LASTEXITCODE -ne 0){throw 'PowerShell runtime boundary failed'}
     }
     Import-Module (Join-Path $build 'ShowCommandTui400/bin/net10.0/ShowCommandTui400.psd1')
-    Add-Type -Path (Join-Path $build 'ShowCommandTui400.Tests/bin/net10.0/ShowCommandTui400.Tests.dll')
-    $checks=@([ShowCommandTui400.Tests.SecurityBoundaryTests]::Run()) + @([ShowCommandTui400.Tests.EntryBoundaryTests]::Run())
-    if($CaseId -eq 'B01'){$checks+=@([ShowCommandTui400.Tests.TerminalLifecycleTests]::Run());$checks+=@([ShowCommandTui400.Tests.ActionContractTests]::Run());$checks+=@([ShowCommandTui400.Tests.KeyBindingTests]::Run());$checks+=@([ShowCommandTui400.Tests.AccessibleStateTests]::Run());$checks+=@([ShowCommandTui400.Tests.ResizeStateTests]::Run())}
+    $proofAssembly = [Hindermath.ShowCommandTui400.Bootstrap.DependencyLoader]::LoadCompanion(
+        (Join-Path $build 'ShowCommandTui400/bin/net10.0/ShowCommandTui400.dll'),
+        (Join-Path $build 'ShowCommandTui400.Tests/bin/net10.0/ShowCommandTui400.Tests.dll'))
+# DE: Typen aus demselben privaten Ladekontext verwenden. EN: Use types from the same private load context.
+$lh01AccessibleStateTests = $proofAssembly.GetType('ShowCommandTui400.Tests.AccessibleStateTests', $true)
+$lh01ActionContractTests = $proofAssembly.GetType('ShowCommandTui400.Tests.ActionContractTests', $true)
+$lh01EntryBoundaryTests = $proofAssembly.GetType('ShowCommandTui400.Tests.EntryBoundaryTests', $true)
+$lh01KeyBindingTests = $proofAssembly.GetType('ShowCommandTui400.Tests.KeyBindingTests', $true)
+$lh01ResizeStateTests = $proofAssembly.GetType('ShowCommandTui400.Tests.ResizeStateTests', $true)
+$lh01SecurityBoundaryTests = $proofAssembly.GetType('ShowCommandTui400.Tests.SecurityBoundaryTests', $true)
+$lh01TerminalLifecycleTests = $proofAssembly.GetType('ShowCommandTui400.Tests.TerminalLifecycleTests', $true)
+
+    $checks=@($lh01SecurityBoundaryTests::Run()) + @($lh01EntryBoundaryTests::Run())
+    if($CaseId -eq 'B01'){$checks+=@($lh01TerminalLifecycleTests::Run());$checks+=@($lh01ActionContractTests::Run());$checks+=@($lh01KeyBindingTests::Run());$checks+=@($lh01AccessibleStateTests::Run());$checks+=@($lh01ResizeStateTests::Run())}
+    if ($CaseId -eq 'B01') {
+        # DE: Die neue JSON-Bibliothek darf weder Host-JSON noch die gemeinsame PowerShell-API ersetzen.
+        # EN: The new JSON library must replace neither host JSON nor the shared PowerShell API.
+        $hostJson = [System.Text.Json.JsonSerializer].Assembly
+        $hostPowerShell = [System.Management.Automation.PSCmdlet].Assembly
+        $moduleAssembly = [Hindermath.ShowCommandTui400.Bootstrap.DependencyLoader]::LoadModule(
+            (Join-Path $build 'ShowCommandTui400/bin/net10.0/ShowCommandTui400.dll'))
+        $moduleContext = [System.Runtime.Loader.AssemblyLoadContext]::GetLoadContext($moduleAssembly)
+        $jsonName = [Reflection.AssemblyName]::GetAssemblyName(
+            (Join-Path $build 'ShowCommandTui400/bin/net10.0/System.Text.Json.dll'))
+        $privateJson = $moduleContext.LoadFromAssemblyName($jsonName)
+        $sharedPowerShell = $moduleContext.LoadFromAssemblyName($hostPowerShell.GetName())
+        if ([object]::ReferenceEquals($hostJson, $privateJson) -or
+            -not [object]::ReferenceEquals($moduleContext, [System.Runtime.Loader.AssemblyLoadContext]::GetLoadContext($privateJson)) -or
+            -not [object]::ReferenceEquals($hostJson, [System.Text.Json.JsonSerializer].Assembly) -or
+            -not [object]::ReferenceEquals($hostPowerShell, $sharedPowerShell)) {
+            throw 'Host/module dependency isolation failed'
+        }
+        $checks += 'BOOT01-private-json-shared-powershell'
+    }
     if($CaseId -ne 'B01' -and $CaseId -notin $checks){throw 'Requested negative contract not observed'}
     $outcome=switch($CaseId){'B01'{'LockedBuildAndContractTestsPass'} 'N05'{'RejectedWithoutDomainEffect'} 'N06'{'RejectedBeforeInit'} 'N07'{'SafeDisplayWithoutControlInjection'} default{'RejectedWithoutStateChange'}}
     if(Test-Path (Join-Path $build 'ShowCommandTui400/bin/net10.0/System.Management.Automation.dll')){throw 'Host assembly copied unexpectedly'}
