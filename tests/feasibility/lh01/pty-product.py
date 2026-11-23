@@ -81,7 +81,7 @@ try:
     if args.scenario in ('Redirect','InputRedirect'):
         ok=ok and parsed['RedirectBoundary']=={'Input':args.scenario=='InputRedirect','Output':args.scenario=='Redirect'}
     if args.scenario=='Repeat':
-        observations=parsed['ScopeObservations'];ok=ok and len(observations)==3 and [v['Synthetic'] for v in observations]==[710,711,712] and all(v['ProcessId']==parsed['Before']['Pid'] and v['RunspaceId']==parsed['Before']['Runspace'] for v in observations)
+        observations=parsed['ScopeObservations'] if parsed is not None else [];ok=ok and len(observations)==3 and [v['Synthetic'] for v in observations]==[710,711,712] and all(v['ProcessId']==parsed['Before']['Pid'] and v['RunspaceId']==parsed['Before']['Runspace'] for v in observations)
     if args.scenario=='Stop':ok=ok and parsed['StopCalls']>0 and parsed['PipelineState']=='Stopped'
     if args.scenario in ('Keyboard','Remap','FunctionExit'):
         observations=parsed.get('InputObservations',[]) if parsed else []
